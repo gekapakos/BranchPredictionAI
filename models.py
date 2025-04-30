@@ -27,3 +27,23 @@ class TwoBitPredictor:
         else:
             if self.state > 0:
                 self.state -= 1
+
+class TwoBitBranchPredictor:
+    def __init__(self, table_bits=10):
+        self.size = 1 << table_bits  # Size of the Pattern History Table (PHT)
+        self.pht = [2] * self.size   # Initialize counters to 'weakly taken' (value 2)
+
+    def predict(self, pc):
+        index = pc % self.size
+        counter = self.pht[index]
+        return counter >= 2  # Predict 'taken' if counter is 2 or 3
+
+    def update(self, pc, taken):
+        index = pc % self.size
+        counter = self.pht[index]
+        if taken:
+            if counter < 3:
+                self.pht[index] += 1
+        else:
+            if counter > 0:
+                self.pht[index] -= 1
