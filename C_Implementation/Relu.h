@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int relu(int x) {
+float relu(float x) {
     return (x < 0) ? 0 : x;
 }
 

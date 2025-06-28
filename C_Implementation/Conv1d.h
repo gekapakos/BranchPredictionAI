@@ -4,15 +4,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *Conv1d(int *input, int input_size,
-            int *kernel, int kernel_size)
+float *Conv1d(float *input, int input_size,
+            float *kernel, int kernel_size)
 {
     int output_size = input_size - kernel_size + 1;
     
     if (output_size <= 0) 
         return NULL;
 
-    int *output = calloc(output_size, sizeof *output);
+    float *output = (float*) calloc(output_size, sizeof(float));
     if (!output) {
         fprintf(stderr, "Memory allocation failed\n");
         return NULL;

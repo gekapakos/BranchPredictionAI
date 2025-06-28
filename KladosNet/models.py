@@ -179,3 +179,121 @@ class RNNLayer(nn.Module):
         out = self.fc(self.rnn_out)                   
         
         return self.softmax(out)
+
+HISTORY_LENGTHS = [42, 78, 150, 294, 582]
+CONV_FILTERS    = [32, 32, 32, 32, 32]
+CONV_WIDTHS     = [7, 7, 7, 7, 7]
+POOL_WIDTHS     = [3, 6, 12, 24, 48]
+
+PC_HASH_BITS    = 12            # bits of hashed PC value
+HASH_DIR_WITH_PC = True         # include branch direction bit
+EMBED_DIM       = 32
+
+USE_LSTM        = True
+LSTM_HIDDEN     = 128
+BIDIRECTIONAL   = True
+
+# MLP
+HIDDEN_NEURONS  = [128, 128]
+
+# --------------------------
+# Helper
+# --------------------------
+
+def hash_width():
+    """Return number of distinct indices for the embedding table."""
+    total_bits = PC_HASH_BITS + (1 if HASH_DIR_WITH_PC else 0)
+    return 1 << total_bits  # 2^(bits)
+
+# --------------------------
+# Slice module
+# --------------------------
+
+class Kladi(nn.Module):
+    """One history slice → embedding → Conv → BN/ReLU → Pool → (optional Bi‑LSTM)."""
+    def __init__(self, history_len:int, conv_width:int, pool_width:int, n_filters:int):
+        super().__init__()
+
+        self.embedding = nn.Embedding(hash_width(), EMBED_DIM)
+        self.conv      = nn.Conv1d(EMBED_DIM, n_filters, conv_width)
+        self.bn_conv   = nn.BatchNorm1d(n_filters)
+        self.act       = nn.ReLU(inplace=True)
+        self.pool      = nn.AvgPool1d(pool_width, stride=pool_width)
+        self.bn_pool   = nn.BatchNorm1d(n_filters)  # "bn_only" activation in original cfg
+
+        self.use_lstm  = USE_LSTM
+        if self.use_lstm:
+            self.bilstm = nn.LSTM(
+                input_size=n_filters,
+                hidden_size=LSTM_HIDDEN,
+                num_layers=1,
+                bidirectional=BIDIRECTIONAL,
+                batch_first=True,
+            )
+            lstm_out_size = LSTM_HIDDEN * (2 if BIDIRECTIONAL else 1)
+            self.out_dim  = lstm_out_size
+        else:
+            # After pooling, sequence length = history_len/ pool_width (integer division)
+            self.out_dim = n_filters
+
+    def forward(self, x:torch.Tensor):
+        """
+        x  : (batch, time)  — sequence of hashed PCs
+        out: (batch, out_dim)
+        """
+        x = self.embedding(x)                 # (B,T,EMBED)
+        x = x.transpose(1,2)                  # (B,EMBED,T)
+        x = self.act(self.bn_conv(self.conv(x)))
+        x = self.pool(x)                      # (B, C, T_out)
+        x = self.bn_pool(x)
+
+        if self.use_lstm:
+            x = x.permute(0,2,1)              # (B,T_out,C)
+            _, (h, _) = self.bilstm(x)        # h: (dir*layers,B,H)
+            if BIDIRECTIONAL:
+                h = torch.cat([h[0],h[1]], dim=1)  # (B,2H)
+            else:
+                h = h.squeeze(0)                  # (B,H)
+            return h
+        else:
+            # Global sum (similar to original sum‑pooling when pool_width == -1)
+            x = x.sum(dim=2)
+            return x            # (B,C)
+
+# --------------------------
+# BranchNet main
+# --------------------------
+
+class KladosNet(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.slices = nn.ModuleList([
+            Kladi(h, w, p, f)
+            for h, w, p, f in zip(HISTORY_LENGTHS, CONV_WIDTHS, POOL_WIDTHS, CONV_FILTERS)
+        ])
+        flattened = sum(s.out_dim for s in self.slices)
+
+        layers = []
+        in_dim = flattened
+        for hid in HIDDEN_NEURONS:
+            layers += [nn.Linear(in_dim, hid), nn.BatchNorm1d(hid), nn.ReLU(inplace=True)]
+            in_dim = hid
+        layers.append(nn.Linear(in_dim, 1))
+        self.mlp = nn.Sequential(*layers)
+
+    @torch.no_grad()
+    def extract_history_slice(self, hist:torch.Tensor, length:int):
+        """Take the last *length* entries from global history."""
+        return hist[:, -length:]
+
+    def forward(self, history:torch.Tensor):
+        """
+        history: (batch, total_history_len)  hashed PC values (ints)
+        returns: (batch,)  probability/logit of branch taken
+        """
+        slice_outputs = []
+        for slice_mod, length in zip(self.slices, HISTORY_LENGTHS):
+            slice_hist = self.extract_history_slice(history, length)
+            slice_outputs.append(slice_mod(slice_hist))
+        x = torch.cat(slice_outputs, dim=1)
+        return self.mlp(x).squeeze(1)

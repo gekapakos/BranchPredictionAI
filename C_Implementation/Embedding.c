@@ -1,6 +1,3 @@
-#ifndef EMBEDDING_H
-#define EMBEDDING_H
-
 // ------------------------------------------------------------
 //  Single‑function «nn.Embedding»‑style lookup in plain C
 //  Parameters match PyTorch‑like signature:
@@ -24,17 +21,16 @@
 #include <stdbool.h> // bool, true, false
 #include <string.h> // memset
 
-float* embedding(const float *weight,
+void embedding_lookup(const float *weight,
                       int num_embeddings,
                       int embedding_dim,
                       const int *indices,
-                      int N)
+                      int N,
+                      float *out)
 {
     /*  Row‑major layout helpers */
     #define WEIGHT_ROW(tok)  ( (tok) * embedding_dim )
     #define OUT_ROW(n)       ( (n)   * embedding_dim )
-
-    float* out = (float*)malloc(N * embedding_dim * sizeof(float));
 
     for (int n = 0; n < N; ++n) {
         int tok = indices[n];
@@ -52,8 +48,40 @@ float* embedding(const float *weight,
 
     #undef WEIGHT_ROW
     #undef OUT_ROW
-
-    return out;
 }
 
-#endif // EMBEDDING_H
+/* Usage example (allocate out before calling):
+
+    int vocab = 10000, dim = 300, N = 4;
+    float *weights = malloc(vocab * dim * sizeof *weights);
+    int   idx[4]   = {42, 1, 9999, 7};
+    float out[4*300];
+
+    embedding_lookup(weights, vocab, dim, idx, N, out);
+*/
+
+// int main()
+// {
+//     // Example usage of embedding_lookup
+//     int num_embeddings = 10000; // Vocabulary size
+//     int embedding_dim = 300;    // Size of each embedding vector
+//     int N = 4;                  // Number of indices to look up
+//     float *weight = (float *)malloc(num_embeddings * embedding_dim * sizeof(float));
+//     int indices[] = {42, 1, 9999, 7}; // Example indices to look up
+//     float *out = (float *)malloc(N * embedding_dim * sizeof(float));
+//     // Initialize weight with some values (for demonstration purposes)
+//     for (int i = 0; i < num_embeddings * embedding_dim; ++i) {
+//         weight[i] = (float)(i % 100) / 100.0f; // Example initialization
+//     }
+//     // Call the embedding lookup function
+//     embedding_lookup(weight, num_embeddings, embedding_dim, indices, N, out);
+//     // Print the output
+//     for (int n = 0; n < N; ++n) {
+//         printf("Embedding for index %d: ", indices[n]);
+//         for (int d = 0; d < embedding_dim; ++d) {
+//             printf("%f ", out[n * embedding_dim + d]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }

@@ -37,7 +37,7 @@ use_Transformer_encoder: False
 use_lstm: False
 lstm_inp_dim: 1
 lstm_hidden_size: 128
-bidirectional: false
+bidirectional: true
 
 # The number of neurons in the hidden fully-connected layers
 hidden_neurons: [128, 128]
