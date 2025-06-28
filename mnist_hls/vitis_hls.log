@@ -1,0 +1,46 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+  **** SW Build 3670227 on Oct 13 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'gkapakos' on host 'gkapakos-Type1ProductConfigId' (Linux_x86_64 version 6.8.0-62-generic) on Sat Jun 28 20:26:29 EEST 2025
+INFO: [HLS 200-10] On os Ubuntu 24.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/mnist_hls'
+Sourcing Tcl script 'build_prj.tcl'
+INFO: [HLS 200-1510] Running: open_project mnist_prj 
+INFO: [HLS 200-10] Opening project '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/mnist_hls/mnist_prj'.
+INFO: [HLS 200-1510] Running: set_top mnist 
+INFO: [HLS 200-1510] Running: add_files firmware/mnist.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/mnist.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb mnist_test.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding test bench file 'mnist_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb firmware/weights 
+INFO: [HLS 200-10] Adding test bench file 'firmware/weights' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_data 
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Opening solution '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/mnist_hls/mnist_prj/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=80
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 80 
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1510] Running: set_part xcvu13p-flga2577-2-e 
+ERROR: [HLS 200-1023] Part 'xcvu13p-flga2577-2-e' is not installed.
+command 'create_platform' returned error code
+    while executing
+"source build_prj.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total CPU user time: 1.57 seconds. Total CPU system time: 0.17 seconds. Total elapsed time: 1.44 seconds; peak allocated memory: 180.094 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sat Jun 28 20:26:30 2025...
