@@ -5,6 +5,8 @@
 #include <math.h>
 #include <string.h>
 #include "weights_io.h"
+#include <time.h>
+
 
 // ===== model constants (match Python config) =====
 enum { SLICES=5, VOCAB_SIZE=4096, E=32, K=7, F=32, H=32 };
@@ -225,6 +227,11 @@ int main(int argc,char** argv){
     if(argc<2){ fprintf(stderr,"usage: %s <weights_out/multi>\n", argv[0]); return 1; }
     const char* WROOT = argv[1];
 
+    clock_t start, end;
+    double cpu_time_used;
+
+    start = clock();
+
     // ---- run all slices & sum (Add) ----
     float merged[H]; for(int j=0;j<H;++j) merged[j]=0.0f;
     for(int i=0;i<SLICES;++i){
@@ -277,5 +284,11 @@ int main(int argc,char** argv){
 
     // print_vec("merged", merged, H); // optional
     printf("y_hat = %.7e\n", y_hat);
+
+    end = clock();
+
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Elapsed time: %.6f seconds\n", cpu_time_used);
+
     return 0;
 }

@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <string.h>
 #include "weights_io.h"
+#include <time.h>
 
 enum { VOCAB_SIZE=128, E=32, T=44, K=3, F=2, P=7, H=16, M=8 };
 static inline float sigmoidf(float x){ return 1.0f/(1.0f+expf(-x)); }
@@ -166,7 +167,7 @@ int main(int argc,char **argv){
     static float Emb[VOCAB_SIZE*E];
     static float ConvW[K*E*F], ConvB[F];
     static float BN1_gamma[F], BN1_beta[F], BN1_mean[F], BN1_var[F];
-    static float LSTM_W_ifog[F*4*H], LSTM_R_ifog[H*4*H], LSTM_b_ifog[4*H];
+    static float LSTM_W_ifog[F*4*H], LSTM_R_ifog[H*4*H], LSTM_b_ifog[4*H]; 
     static float BN2_gamma[H], BN2_beta[H], BN2_mean[H], BN2_var[H];
 
     const float BN1_eps = 1e-3f, BN2_eps = 1e-3f;
@@ -203,6 +204,12 @@ int main(int argc,char **argv){
     }
 
     float slice_vec[H];
+
+    clock_t start, end;
+    double cpu_time_used;
+
+    start = clock();
+
     slice_forward(tokens, Emb,
                   ConvW, ConvB,
                   BN1_gamma, BN1_beta, BN1_mean, BN1_var, BN1_eps,
@@ -248,7 +255,12 @@ int main(int argc,char **argv){
     float y_hat = sigmoidf(y_lin[0]);                                  // final prob
 
     // print_mat_sci("slice_out", merged, 1, H);
-    printf("y_hat = %.7e\n", y_hat);
+    // printf("y_hat = %.7e\n", y_hat);
+
+    end = clock();
+
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Elapsed time: %.6f seconds\n", cpu_time_used);
 
     return 0;
 }
