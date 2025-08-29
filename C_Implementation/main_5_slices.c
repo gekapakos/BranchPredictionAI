@@ -1,41 +1,40 @@
-// main_multi.c
+// main_multi.c  (bin-free, header-backed)
+
+// ===== includes =====
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdint.h>
 #include <math.h>
-#include <string.h>
-#include "weights_io.h"
-#include <time.h>
 
+// bring in the generated arrays
+#include "slice0_weights.h"
+#include "slice1_weights.h"
+#include "slice2_weights.h"
+#include "slice3_weights.h"
+#include "slice4_weights.h"
+#include "head_weights.h"
 
 // ===== model constants (match Python config) =====
-enum { SLICES=5, VOCAB_SIZE=4096, E=32, K=7, F=32, H=32 };
-static const int Tlens[SLICES] = {42, 78, 150, 294, 582};
-static const int Pools[SLICES] = { 3,  6,  12,  24,  48};
-
-// head sizes: Dense(H->M0) -> BN -> ReLU -> Dense(M0->M1) -> BN -> ReLU -> Dense(M1->1)
+enum { VOCAB_SIZE=4096, E=32, K=7, F=32, H=32 };
 enum { M0=128, M1=128 };
+
+// Fixed T/P per slice (no VLA)
+enum { T0=42,  P0=3,  T10=T0-K+1,  T20=T10/P0 };
+enum { T1=78,  P1=6,  T11=T1-K+1,  T21=T11/P1 };
+enum { T2=150, P2=12, T12=T2-K+1,  T22=T12/P2 };
+enum { T3=294, P3=24, T13=T3-K+1,  T23=T13/P3 };
+enum { T4=582, P4=48, T14=T4-K+1,  T24=T14/P4 };
 
 // ===== small utils =====
 static inline float sigmoidf(float x){ return 1.0f/(1.0f+expf(-x)); }
 static inline float tanhf_fast(float x){ return tanhf(x); }
 static inline float reluf(float x){ return x>0.0f? x:0.0f; }
 
-static void path_join3(char* dst, size_t cap, const char* a, const char* b, const char* c){
-    int n = snprintf(dst, cap, "%s/%s/%s", a, b, c);
-    if(n<0 || (size_t)n>=cap){ fprintf(stderr,"path too long\n"); exit(1); }
-}
-static void path_join2(char* dst, size_t cap, const char* a, const char* b){
-    int n = snprintf(dst, cap, "%s/%s", a, b);
-    if(n<0 || (size_t)n>=cap){ fprintf(stderr,"path too long\n"); exit(1); }
-}
-
 // ===== layers (dimensioned by args, not globals) =====
-static inline void embedding_forward_dyn(const int *tokens, int Tlen,
+static inline void embedding_forward_dyn(const int32_t *tokens, int Tlen,
                                          const float *Emb, float *X) // X[Tlen,E]
 {
     for(int t=0;t<Tlen;++t){
-        int idx = tokens[t];
+        int idx = (int)tokens[t];
         if(idx<0 || idx>=VOCAB_SIZE) idx=0;
         const float *row = Emb + idx*E;
         float *dst = X + t*E;
@@ -95,12 +94,13 @@ static inline void avgpool1d_P(const float *Z,int Tlen,int C,int Psz,float *U){
     }
 }
 
-// LSTM (expects gate order [i,f,o,g] in W,R,b; H is global 32)
+// LSTM (expects gate order [i,f,o,g] in W,R,b)
 static inline void lstm_forward_unidir(const float *x,int Tlen,int D,
     const float *W_ifog,const float *R_ifog,const float *b_ifog,
     float *h_last,float *c_last)
 {
-    for(int j=0;j<H;++j){ h_last[j]=0.0f; c_last[j]=0.0f; }
+    int j;
+    for(j=0;j<H;++j){ h_last[j]=0.0f; c_last[j]=0.0f; }
     float z[4*H];
 
     for(int t=0;t<Tlen;++t){
@@ -121,7 +121,7 @@ static inline void lstm_forward_unidir(const float *x,int Tlen,int D,
             for(int g=0; g<4*H; ++g) z[g] += hv * Rh[g];
         }
         // gates
-        for(int j=0;j<H;++j){
+        for(j=0;j<H;++j){
             float i = 1.f/(1.f+expf(-z[0*H + j]));
             float f = 1.f/(1.f+expf(-z[1*H + j]));
             float o = 1.f/(1.f+expf(-z[2*H + j]));
@@ -152,143 +152,101 @@ static inline void dense_forward(const float *x,int In,
     }
 }
 
-static void print_vec(const char* name,const float* v,int n){
-    printf("%s = [", name);
-    for(int i=0;i<n;++i) printf("%s%.7e", i?", ":"", v[i]);
-    printf("]\n");
-}
-
-// forward one slice i; reads weights from base_dir/slice{i}/
-static void run_slice_i(const char* base_dir, int i, float out_tanh[H]){
-    char path[512], sdir[64];
-    snprintf(sdir, sizeof sdir, "slice%d", i);
-
-    // ---- allocate per-slice weights ----
-    static float Emb[VOCAB_SIZE*E];
-    static float ConvW[K*E*F], ConvB[F];
-    static float BN1_gamma[F], BN1_beta[F], BN1_mean[F], BN1_var[F];
-    static float LSTM_W_ifog[F*4*H], LSTM_R_ifog[H*4*H], LSTM_b_ifog[4*H];
-    static float BN2_gamma[H], BN2_beta[H], BN2_mean[H], BN2_var[H];
+// ======================= run all 5 slices (using header arrays) =======================
+static void run_all_slices_unrolled(float merged[H]) {
     const float BN_eps = 1e-3f;
+    int j;
+    for (j=0;j<H;++j) merged[j]=0.0f;
 
-    // ---- load weights ----
-    path_join3(path,sizeof path, base_dir,sdir,"Emb.bin");            load_bin_f32(path, Emb, VOCAB_SIZE*E);
-    path_join3(path,sizeof path, base_dir,sdir,"ConvW.bin");          load_bin_f32(path, ConvW, K*E*F);
-    path_join3(path,sizeof path, base_dir,sdir,"ConvB.bin");          load_bin_f32(path, ConvB, F);
-    path_join3(path,sizeof path, base_dir,sdir,"BN1_gamma.bin");      load_bin_f32(path, BN1_gamma, F);
-    path_join3(path,sizeof path, base_dir,sdir,"BN1_beta.bin");       load_bin_f32(path, BN1_beta,  F);
-    path_join3(path,sizeof path, base_dir,sdir,"BN1_mean.bin");       load_bin_f32(path, BN1_mean,  F);
-    path_join3(path,sizeof path, base_dir,sdir,"BN1_var.bin");        load_bin_f32(path, BN1_var,   F);
-    path_join3(path,sizeof path, base_dir,sdir,"LSTM_W_ifog.bin");    load_bin_f32(path, LSTM_W_ifog, F*4*H);
-    path_join3(path,sizeof path, base_dir,sdir,"LSTM_R_ifog.bin");    load_bin_f32(path, LSTM_R_ifog, H*4*H);
-    path_join3(path,sizeof path, base_dir,sdir,"LSTM_b_ifog.bin");    load_bin_f32(path, LSTM_b_ifog, 4*H);
-    path_join3(path,sizeof path, base_dir,sdir,"BN2_gamma.bin");      load_bin_f32(path, BN2_gamma, H);
-    path_join3(path,sizeof path, base_dir,sdir,"BN2_beta.bin");       load_bin_f32(path, BN2_beta,  H);
-    path_join3(path,sizeof path, base_dir,sdir,"BN2_mean.bin");       load_bin_f32(path, BN2_mean,  H);
-    path_join3(path,sizeof path, base_dir,sdir,"BN2_var.bin");        load_bin_f32(path, BN2_var,   H);
-
-    // ---- load tokens ----
-    int T = Tlens[i], P = Pools[i];
-    int *tokens = (int*)malloc(sizeof(int)*T);
-    path_join3(path,sizeof path, base_dir,sdir,"tokens.bin");
-    FILE *ft = fopen(path,"rb");
-    if(ft){
-        size_t got = fread(tokens,sizeof(int),T,ft); fclose(ft);
-        if(got != (size_t)T){ fprintf(stderr,"tokens.bin len != %d for %s\n", T, sdir); exit(1); }
-    }else{
-        for(int t=0;t<T;++t) tokens[t] = t % VOCAB_SIZE;
+    // -------- slice 0 --------
+    {
+        float X0[T0*E], Y[T10*F], U[T20*F], h[H], c[H];
+        embedding_forward_dyn(tokens0, T0, Emb0, X0);
+        conv1d_valid_dyn(X0, T0, ConvW0, K, ConvB0, Y);
+        bn_time_channel(Y, T10, F, BN1_gamma0, BN1_beta0, BN1_mean0, BN1_var0, BN_eps);
+        apply_activation_time(Y, T10, F, ACT_RELU);
+        avgpool1d_P(Y, T10, F, P0, U);
+        lstm_forward_unidir(U, T20, F, LSTM_W_ifog0, LSTM_R_ifog0, LSTM_b_ifog0, h, c);
+        bn_vector(h, H, BN2_gamma0, BN2_beta0, BN2_mean0, BN2_var0, BN_eps);
+        for (j=0;j<H;++j) merged[j] += tanhf_fast(h[j]);
     }
 
-    // ---- forward ----
-    float *X0 = (float*)malloc(sizeof(float)*T*E);
-    embedding_forward_dyn(tokens, T, Emb, X0);
-
-    const int T1 = T - K + 1;
-    float *Y = (float*)malloc(sizeof(float)*T1*F);
-    conv1d_valid_dyn(X0, T, ConvW, K, ConvB, Y);
-
-    bn_time_channel(Y, T1, F, BN1_gamma, BN1_beta, BN1_mean, BN1_var, BN_eps);
-    apply_activation_time(Y, T1, F, ACT_RELU);
-
-    const int T2 = T1 / P;
-    float *U = (float*)malloc(sizeof(float)*T2*F);
-    avgpool1d_P(Y, T1, F, P, U);
-
-    float h_last[H], c_last[H];
-    lstm_forward_unidir(U, T2, F, LSTM_W_ifog, LSTM_R_ifog, LSTM_b_ifog, h_last, c_last);
-
-    bn_vector(h_last, H, BN2_gamma, BN2_beta, BN2_mean, BN2_var, BN_eps);
-    for(int j=0;j<H;++j) out_tanh[j] = tanhf_fast(h_last[j]);
-
-    free(tokens); free(X0); free(Y); free(U);
-}
-
-int main(int argc,char** argv){
-    if(argc<2){ fprintf(stderr,"usage: %s <weights_out/multi>\n", argv[0]); return 1; }
-    const char* WROOT = argv[1];
-
-    clock_t start, end;
-    double cpu_time_used;
-
-    start = clock();
-
-    // ---- run all slices & sum (Add) ----
-    float merged[H]; for(int j=0;j<H;++j) merged[j]=0.0f;
-    for(int i=0;i<SLICES;++i){
-        float vec[H];
-        run_slice_i(WROOT, i, vec);
-        for(int j=0;j<H;++j) merged[j] += vec[j];
+    // -------- slice 1 --------
+    {
+        float X0[T1*E], Y[T11*F], U[T21*F], h[H], c[H];
+        embedding_forward_dyn(tokens1, T1, Emb1, X0);
+        conv1d_valid_dyn(X0, T1, ConvW1, K, ConvB1, Y);
+        bn_time_channel(Y, T11, F, BN1_gamma1, BN1_beta1, BN1_mean1, BN1_var1, BN_eps);
+        apply_activation_time(Y, T11, F, ACT_RELU);
+        avgpool1d_P(Y, T11, F, P1, U);
+        lstm_forward_unidir(U, T21, F, LSTM_W_ifog1, LSTM_R_ifog1, LSTM_b_ifog1, h, c);
+        bn_vector(h, H, BN2_gamma1, BN2_beta1, BN2_mean1, BN2_var1, BN_eps);
+        for (j=0;j<H;++j) merged[j] += tanhf_fast(h[j]);
     }
 
-    // ---- load head (from root) ----
-    char path[512];
-    // fc_0
-    static float FC0_W[H*M0], FC0_b[M0], FC0_g[M0], FC0_be[M0], FC0_mm[M0], FC0_mv[M0];
-    path_join2(path,sizeof path,WROOT,"fc_0_W.bin");        load_bin_f32(path, FC0_W, H*M0);
-    path_join2(path,sizeof path,WROOT,"fc_0_b.bin");        load_bin_f32(path, FC0_b, M0);
-    path_join2(path,sizeof path,WROOT,"fc_0_bn_gamma.bin"); load_bin_f32(path, FC0_g, M0);
-    path_join2(path,sizeof path,WROOT,"fc_0_bn_beta.bin");  load_bin_f32(path, FC0_be, M0);
-    path_join2(path,sizeof path,WROOT,"fc_0_bn_mean.bin");  load_bin_f32(path, FC0_mm, M0);
-    path_join2(path,sizeof path,WROOT,"fc_0_bn_var.bin");   load_bin_f32(path, FC0_mv, M0);
+    // -------- slice 2 --------
+    {
+        float X0[T2*E], Y[T12*F], U[T22*F], h[H], c[H];
+        embedding_forward_dyn(tokens2, T2, Emb2, X0);
+        conv1d_valid_dyn(X0, T2, ConvW2, K, ConvB2, Y);
+        bn_time_channel(Y, T12, F, BN1_gamma2, BN1_beta2, BN1_mean2, BN1_var2, BN_eps);
+        apply_activation_time(Y, T12, F, ACT_RELU);
+        avgpool1d_P(Y, T12, F, P2, U);
+        lstm_forward_unidir(U, T22, F, LSTM_W_ifog2, LSTM_R_ifog2, LSTM_b_ifog2, h, c);
+        bn_vector(h, H, BN2_gamma2, BN2_beta2, BN2_mean2, BN2_var2, BN_eps);
+        for (j=0;j<H;++j) merged[j] += tanhf_fast(h[j]);
+    }
 
-    // fc_1
-    static float FC1_W[M0*M1], FC1_b[M1], FC1_g[M1], FC1_be[M1], FC1_mm[M1], FC1_mv[M1];
-    path_join2(path,sizeof path,WROOT,"fc_1_W.bin");        load_bin_f32(path, FC1_W, M0*M1);
-    path_join2(path,sizeof path,WROOT,"fc_1_b.bin");        load_bin_f32(path, FC1_b, M1);
-    path_join2(path,sizeof path,WROOT,"fc_1_bn_gamma.bin"); load_bin_f32(path, FC1_g, M1);
-    path_join2(path,sizeof path,WROOT,"fc_1_bn_beta.bin");  load_bin_f32(path, FC1_be, M1);
-    path_join2(path,sizeof path,WROOT,"fc_1_bn_mean.bin");  load_bin_f32(path, FC1_mm, M1);
-    path_join2(path,sizeof path,WROOT,"fc_1_bn_var.bin");   load_bin_f32(path, FC1_mv, M1);
+    // -------- slice 3 --------
+    {
+        float X0[T3*E], Y[T13*F], U[T23*F], h[H], c[H];
+        embedding_forward_dyn(tokens3, T3, Emb3, X0);
+        conv1d_valid_dyn(X0, T3, ConvW3, K, ConvB3, Y);
+        bn_time_channel(Y, T13, F, BN1_gamma3, BN1_beta3, BN1_mean3, BN1_var3, BN_eps);
+        apply_activation_time(Y, T13, F, ACT_RELU);
+        avgpool1d_P(Y, T13, F, P3, U);
+        lstm_forward_unidir(U, T23, F, LSTM_W_ifog3, LSTM_R_ifog3, LSTM_b_ifog3, h, c);
+        bn_vector(h, H, BN2_gamma3, BN2_beta3, BN2_mean3, BN2_var3, BN_eps);
+        for (j=0;j<H;++j) merged[j] += tanhf_fast(h[j]);
+    }
 
-    // output
-    static float OUT_W[M1*1], OUT_b[1];
-    path_join2(path,sizeof path,WROOT,"output_W.bin");      load_bin_f32(path, OUT_W, M1*1);
-    path_join2(path,sizeof path,WROOT,"output_b.bin");      load_bin_f32(path, OUT_b, 1);
+    // -------- slice 4 --------
+    {
+        float X0[T4*E], Y[T14*F], U[T24*F], h[H], c[H];
+        embedding_forward_dyn(tokens4, T4, Emb4, X0);
+        conv1d_valid_dyn(X0, T4, ConvW4, K, ConvB4, Y);
+        bn_time_channel(Y, T14, F, BN1_gamma4, BN1_beta4, BN1_mean4, BN1_var4, BN_eps);
+        apply_activation_time(Y, T14, F, ACT_RELU);
+        avgpool1d_P(Y, T14, F, P4, U);
+        lstm_forward_unidir(U, T24, F, LSTM_W_ifog4, LSTM_R_ifog4, LSTM_b_ifog4, h, c);
+        bn_vector(h, H, BN2_gamma4, BN2_beta4, BN2_mean4, BN2_var4, BN_eps);
+        for (j=0;j<H;++j) merged[j] += tanhf_fast(h[j]);
+    }
+}
 
+// ======================= main =======================
+int main(void) {
+    float merged[H];
+    int j;
+    run_all_slices_unrolled(merged);
+
+    // ---- head forward (uses arrays from head_weights.h) ----
     const float BN_eps = 1e-3f;
 
-    // ---- head forward ----
     float z0[M0];
-    dense_forward(merged, H, FC0_W, FC0_b, M0, z0);
-    bn_vector(z0, M0, FC0_g, FC0_be, FC0_mm, FC0_mv, BN_eps);
-    for(int j=0;j<M0;++j) z0[j] = reluf(z0[j]);
+    dense_forward(merged, H, fc_0_W, fc_0_b, M0, z0);
+    bn_vector(z0, M0, fc_0_bn_gamma, fc_0_bn_beta, fc_0_bn_mean, fc_0_bn_var, BN_eps);
+    for (j=0;j<M0;++j) z0[j] = reluf(z0[j]);
 
     float z1[M1];
-    dense_forward(z0, M0, FC1_W, FC1_b, M1, z1);
-    bn_vector(z1, M1, FC1_g, FC1_be, FC1_mm, FC1_mv, BN_eps);
-    for(int j=0;j<M1;++j) z1[j] = reluf(z1[j]);
+    dense_forward(z0, M0, fc_1_W, fc_1_b, M1, z1);
+    bn_vector(z1, M1, fc_1_bn_gamma, fc_1_bn_beta, fc_1_bn_mean, fc_1_bn_var, BN_eps);
+    for (j=0;j<M1;++j) z1[j] = reluf(z1[j]);
 
     float y_lin[1];
-    dense_forward(z1, M1, OUT_W, OUT_b, 1, y_lin);
+    dense_forward(z1, M1, output_W, output_b, 1, y_lin);
     float y_hat = sigmoidf(y_lin[0]);
 
-    // print_vec("merged", merged, H); // optional
     printf("y_hat = %.7e\n", y_hat);
-
-    end = clock();
-
-    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("Elapsed time: %.6f seconds\n", cpu_time_used);
-
     return 0;
 }

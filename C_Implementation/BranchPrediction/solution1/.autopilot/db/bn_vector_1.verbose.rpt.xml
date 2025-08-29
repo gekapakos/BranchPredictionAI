@@ -1,0 +1,150 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'bn_vector_1'" level="0">
+<item name = "Date">Fri Aug 29 15:46:16 2025
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">BranchPrediction</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.129, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">5761, 5761, 5761, 5761, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">5760, 5760, 45, -, -, 128, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 28, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 5, 1514, 2320, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 286, -</column>
+<column name="Register">-, -, 365, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 2, 1, 4, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="main_faddfsub_32ns_32ns_32_5_full_dsp_1_U132">main_faddfsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
+<column name="main_fdiv_32ns_32ns_32_16_1_U134">main_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
+<column name="main_fmul_32ns_32ns_32_4_max_dsp_1_U133">main_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
+<column name="main_fsqrt_32ns_32ns_32_12_1_U135">main_fsqrt_32ns_32ns_32_12_1, 0, 0, 405, 615, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="c_fu_133_p2">+, 0, 0, 15, 8, 1</column>
+<column name="icmp_ln139_fu_127_p2">icmp, 0, 0, 13, 8, 9</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">205, 47, 1, 47</column>
+<column name="c_0_reg_91">9, 2, 8, 16</column>
+<column name="grp_fu_102_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_102_p0">21, 4, 32, 128</column>
+<column name="grp_fu_102_p1">21, 4, 32, 128</column>
+<column name="v_address0">15, 3, 7, 21</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">46, 0, 46, 0</column>
+<column name="beta_load_reg_215">32, 0, 32, 0</column>
+<column name="c_0_reg_91">8, 0, 8, 0</column>
+<column name="c_reg_147">8, 0, 8, 0</column>
+<column name="gamma_load_reg_210">32, 0, 32, 0</column>
+<column name="mean_load_reg_185">32, 0, 32, 0</column>
+<column name="n_reg_205">32, 0, 32, 0</column>
+<column name="reg_120">32, 0, 32, 0</column>
+<column name="tmp_14_reg_190">32, 0, 32, 0</column>
+<column name="tmp_15_reg_220">32, 0, 32, 0</column>
+<column name="v_addr_reg_170">7, 0, 7, 0</column>
+<column name="v_load_reg_180">32, 0, 32, 0</column>
+<column name="var_load_reg_165">32, 0, 32, 0</column>
+<column name="zext_ln140_reg_152">8, 0, 64, 56</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, bn_vector.1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, bn_vector.1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, bn_vector.1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, bn_vector.1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, bn_vector.1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, bn_vector.1, return value</column>
+<column name="v_address0">out, 7, ap_memory, v, array</column>
+<column name="v_ce0">out, 1, ap_memory, v, array</column>
+<column name="v_we0">out, 1, ap_memory, v, array</column>
+<column name="v_d0">out, 32, ap_memory, v, array</column>
+<column name="v_q0">in, 32, ap_memory, v, array</column>
+<column name="gamma_address0">out, 7, ap_memory, gamma, array</column>
+<column name="gamma_ce0">out, 1, ap_memory, gamma, array</column>
+<column name="gamma_q0">in, 32, ap_memory, gamma, array</column>
+<column name="beta_address0">out, 7, ap_memory, beta, array</column>
+<column name="beta_ce0">out, 1, ap_memory, beta, array</column>
+<column name="beta_q0">in, 32, ap_memory, beta, array</column>
+<column name="mean_address0">out, 7, ap_memory, mean, array</column>
+<column name="mean_ce0">out, 1, ap_memory, mean, array</column>
+<column name="mean_q0">in, 32, ap_memory, mean, array</column>
+<column name="var_address0">out, 7, ap_memory, var, array</column>
+<column name="var_ce0">out, 1, ap_memory, var, array</column>
+<column name="var_q0">in, 32, ap_memory, var, array</column>
+</table>
+</item>
+</section>
+</profile>

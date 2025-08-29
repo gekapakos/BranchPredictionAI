@@ -1,0 +1,86 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'run_all_slices_unrol'" level="0">
+<item name = "Date">Fri Aug 29 15:46:07 2025
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">BranchPrediction</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 9.894, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">96674726, 96914726, 96674726, 96914726, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_lstm_forward_unidir_fu_994">lstm_forward_unidir, 1203934, 1250014, 1203934, 1250014, none</column>
+<column name="grp_generic_tanh_float_s_fu_1025">generic_tanh_float_s, 1, 61, 1, 61, none</column>
+<column name="grp_bn_vector_fu_1036">bn_vector, 1441, 1441, 1441, 1441, none</column>
+<column name="grp_avgpool1d_P_fu_1065">avgpool1d_P, 135961, 135961, 135961, 135961, none</column>
+<column name="grp_avgpool1d_P_1_fu_1071">avgpool1d_P_1, 71449, 71449, 71449, 71449, none</column>
+<column name="grp_avgpool1d_P_2_fu_1077">avgpool1d_P_2, 39193, 39193, 39193, 39193, none</column>
+<column name="grp_avgpool1d_P_3_fu_1083">avgpool1d_P_3, 23065, 23065, 23065, 23065, none</column>
+<column name="grp_avgpool1d_P_4_fu_1089">avgpool1d_P_4, 15001, 15001, 15001, 15001, none</column>
+<column name="grp_conv1d_valid_dyn_fu_1095">conv1d_valid_dyn, 45712513, 45712513, 45712513, 45712513, none</column>
+<column name="grp_conv1d_valid_dyn_1_fu_1103">conv1d_valid_dyn_1, 22856257, 22856257, 22856257, 22856257, none</column>
+<column name="grp_conv1d_valid_dyn_2_fu_1112">conv1d_valid_dyn_2, 11428129, 11428129, 11428129, 11428129, none</column>
+<column name="grp_conv1d_valid_dyn_3_fu_1121">conv1d_valid_dyn_3, 5714065, 5714065, 5714065, 5714065, none</column>
+<column name="grp_conv1d_valid_dyn_4_fu_1130">conv1d_valid_dyn_4, 2857033, 2857033, 2857033, 2857033, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">32, 32, 1, -, -, 32, no</column>
+<column name="- Loop 2">51912, 51912, 1442, -, -, 36, no</column>
+<column name=" + Loop 2.1">1440, 1440, 45, -, -, 32, no</column>
+<column name="- Loop 3">4680, 4680, 130, -, -, 36, no</column>
+<column name=" + Loop 3.1">128, 128, 4, -, -, 32, no</column>
+<column name="- Loop 4">352, 2272, 11 ~ 71, -, -, 32, no</column>
+<column name="- Loop 5">103824, 103824, 1442, -, -, 72, no</column>
+<column name=" + Loop 5.1">1440, 1440, 45, -, -, 32, no</column>
+<column name="- Loop 6">9360, 9360, 130, -, -, 72, no</column>
+<column name=" + Loop 6.1">128, 128, 4, -, -, 32, no</column>
+<column name="- Loop 7">352, 2272, 11 ~ 71, -, -, 32, no</column>
+<column name="- Loop 8">207648, 207648, 1442, -, -, 144, no</column>
+<column name=" + Loop 8.1">1440, 1440, 45, -, -, 32, no</column>
+<column name="- Loop 9">18720, 18720, 130, -, -, 144, no</column>
+<column name=" + Loop 9.1">128, 128, 4, -, -, 32, no</column>
+<column name="- Loop 10">352, 2272, 11 ~ 71, -, -, 32, no</column>
+<column name="- Loop 11">415296, 415296, 1442, -, -, 288, no</column>
+<column name=" + Loop 11.1">1440, 1440, 45, -, -, 32, no</column>
+<column name="- Loop 12">37440, 37440, 130, -, -, 288, no</column>
+<column name=" + Loop 12.1">128, 128, 4, -, -, 32, no</column>
+<column name="- Loop 13">352, 2272, 11 ~ 71, -, -, 32, no</column>
+<column name="- Loop 14">38994, 38994, 67, -, -, 582, no</column>
+<column name=" + Loop 14.1">64, 64, 2, -, -, 32, no</column>
+<column name="- Loop 15">830592, 830592, 1442, -, -, 576, no</column>
+<column name=" + Loop 15.1">1440, 1440, 45, -, -, 32, no</column>
+<column name="- Loop 16">74880, 74880, 130, -, -, 576, no</column>
+<column name=" + Loop 16.1">128, 128, 4, -, -, 32, no</column>
+<column name="- Loop 17">352, 2272, 11 ~ 71, -, -, 32, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
