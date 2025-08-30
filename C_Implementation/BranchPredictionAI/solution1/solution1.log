@@ -1,0 +1,293 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'main_5_slices.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:35:62: error: call to 'exp' is ambiguous
+static inline fx16 sigmoidf(fx16 x){ return fx16(1)/(fx16(1)+hls::exp(-x)); }
+                                                             ^~~~~~~~
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:704:10: note: candidate function
+  double exp(double);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:705:9: note: candidate function
+  float exp(float);
+        ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:706:8: note: candidate function
+  half exp(half);
+       ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:709:10: note: candidate function
+  int8_t exp(int8_t);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:710:11: note: candidate function
+  uint8_t exp(uint8_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:711:11: note: candidate function
+  int16_t exp(int16_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:712:12: note: candidate function
+  uint16_t exp(uint16_t);
+           ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:713:11: note: candidate function
+  int32_t exp(int32_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:714:12: note: candidate function
+  uint32_t exp(uint32_t);
+           ^
+In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:36:47: error: call to 'tanh' is ambiguous
+static inline fx16 tanhf_fast(fx16 x){ return hls::tanh(x); }
+                                              ^~~~~~~~~
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:994:10: note: candidate function
+  double tanh(double);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:995:9: note: candidate function
+  float tanh(float);
+        ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:996:8: note: candidate function
+  half tanh(half);
+       ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1681:10: note: candidate function
+  int8_t tanh(int8_t);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1682:11: note: candidate function
+  uint8_t tanh(uint8_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1683:11: note: candidate function
+  int16_t tanh(int16_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1684:12: note: candidate function
+  uint16_t tanh(uint16_t);
+           ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1685:11: note: candidate function
+  int32_t tanh(int32_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1686:12: note: candidate function
+  uint32_t tanh(uint32_t);
+           ^
+In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:48:20: error: use of undeclared identifier 'B'
+        fx16 acc = B ? B[f] : fx16(0);
+                   ^
+main_5_slices.cpp:48:24: error: use of undeclared identifier 'B'
+        fx16 acc = B ? B[f] : fx16(0);
+                       ^
+main_5_slices.cpp:48:26: error: use of undeclared identifier 'f'
+        fx16 acc = B ? B[f] : fx16(0);
+                         ^
+main_5_slices.cpp:49:30: error: use of undeclared identifier 'dst'
+        for(int e=0;e<E;++e) dst[e]=row[e];
+                             ^
+main_5_slices.cpp:60:26: error: conditional expression is ambiguous; 'const fx16' (aka 'const ap_fixed<16, 6, AP_RND, AP_SAT>') can be converted to 'float' and vice versa
+            fx16 acc = B ? B[f] : 0.0f;
+                         ^ ~~~~   ~~~~
+main_5_slices.cpp:139:39: error: call to 'exp' is ambiguous
+            fx16 i = fx16(1)/(fx16(1)+hls::exp(-z[0*H + j]));
+                                      ^~~~~~~~
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:704:10: note: candidate function
+  double exp(double);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:705:9: note: candidate function
+  float exp(float);
+        ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:706:8: note: candidate function
+  half exp(half);
+       ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:709:10: note: candidate function
+  int8_t exp(int8_t);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:710:11: note: candidate function
+  uint8_t exp(uint8_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:711:11: note: candidate function
+  int16_t exp(int16_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:712:12: note: candidate function
+  uint16_t exp(uint16_t);
+           ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:713:11: note: candidate function
+  int32_t exp(int32_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:714:12: note: candidate function
+  uint32_t exp(uint32_t);
+           ^
+In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:140:39: error: call to 'exp' is ambiguous
+            fx16 f = fx16(1)/(fx16(1)+hls::exp(-z[1*H + j]));
+                                      ^~~~~~~~
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:704:10: note: candidate function
+  double exp(double);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:705:9: note: candidate function
+  float exp(float);
+        ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:706:8: note: candidate function
+  half exp(half);
+       ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:709:10: note: candidate function
+  int8_t exp(int8_t);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:710:11: note: candidate function
+  uint8_t exp(uint8_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:711:11: note: candidate function
+  int16_t exp(int16_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:712:12: note: candidate function
+  uint16_t exp(uint16_t);
+           ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:713:11: note: candidate function
+  int32_t exp(int32_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:714:12: note: candidate function
+  uint32_t exp(uint32_t);
+           ^
+In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:141:39: error: call to 'exp' is ambiguous
+            fx16 o = fx16(1)/(fx16(1)+hls::exp(-z[2*H + j]));
+                                      ^~~~~~~~
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:704:10: note: candidate function
+  double exp(double);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:705:9: note: candidate function
+  float exp(float);
+        ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:706:8: note: candidate function
+  half exp(half);
+       ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:709:10: note: candidate function
+  int8_t exp(int8_t);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:710:11: note: candidate function
+  uint8_t exp(uint8_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:711:11: note: candidate function
+  int16_t exp(int16_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:712:12: note: candidate function
+  uint16_t exp(uint16_t);
+           ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:713:11: note: candidate function
+  int32_t exp(int32_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:714:12: note: candidate function
+  uint32_t exp(uint32_t);
+           ^
+In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:142:22: error: call to 'tanh' is ambiguous
+            fx16 g = hls::tanh(z[3*H + j]);
+                     ^~~~~~~~~
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:994:10: note: candidate function
+  double tanh(double);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:995:9: note: candidate function
+  float tanh(float);
+        ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:996:8: note: candidate function
+  half tanh(half);
+       ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1681:10: note: candidate function
+  int8_t tanh(int8_t);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1682:11: note: candidate function
+  uint8_t tanh(uint8_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1683:11: note: candidate function
+  int16_t tanh(int16_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1684:12: note: candidate function
+  uint16_t tanh(uint16_t);
+           ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1685:11: note: candidate function
+  int32_t tanh(int32_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1686:12: note: candidate function
+  uint32_t tanh(uint32_t);
+           ^
+In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:144:26: error: call to 'tanh' is ambiguous
+            fx16 h = o * hls::tanh(c);
+                         ^~~~~~~~~
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:994:10: note: candidate function
+  double tanh(double);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:995:9: note: candidate function
+  float tanh(float);
+        ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:996:8: note: candidate function
+  half tanh(half);
+       ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1681:10: note: candidate function
+  int8_t tanh(int8_t);
+         ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1682:11: note: candidate function
+  uint8_t tanh(uint8_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1683:11: note: candidate function
+  int16_t tanh(int16_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1684:12: note: candidate function
+  uint16_t tanh(uint16_t);
+           ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1685:11: note: candidate function
+  int32_t tanh(int32_t);
+          ^
+/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/hls_math.h:1686:12: note: candidate function
+  uint32_t tanh(uint32_t);
+           ^
+12 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'main_5_slices.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:37:25: error: use of undeclared identifier 'exp_fx'
+    return one / (one + exp_fx(-x));
+                        ^
+main_5_slices.cpp:39:47: error: use of undeclared identifier 'tanh_fx'; did you mean 'tanhf'?
+static inline fx16 tanhf_fast(fx16 x){ return tanh_fx(x); }
+                                              ^~~~~~~
+                                              tanhf
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:75:14: note: 'tanhf' declared here
+extern float tanhf (float __x) throw (); extern float __tanhf (float __x) throw ();
+             ^
+In file included from main_5_slices.cpp:1:
+main_5_slices.cpp:55:20: error: use of undeclared identifier 'B'
+        fx16 acc = B ? B[f] : fx16(0);
+                   ^
+main_5_slices.cpp:55:24: error: use of undeclared identifier 'B'
+        fx16 acc = B ? B[f] : fx16(0);
+                       ^
+main_5_slices.cpp:55:26: error: use of undeclared identifier 'f'
+        fx16 acc = B ? B[f] : fx16(0);
+                         ^
+main_5_slices.cpp:56:30: error: use of undeclared identifier 'dst'
+        for(int e=0;e<E;++e) dst[e]=row[e];
+                             ^
+main_5_slices.cpp:67:26: error: conditional expression is ambiguous; 'const fx16' (aka 'const ap_fixed<16, 6, AP_RND, AP_SAT>') can be converted to 'float' and vice versa
+            fx16 acc = B ? B[f] : 0.0f;
+                         ^ ~~~~   ~~~~
+7 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
