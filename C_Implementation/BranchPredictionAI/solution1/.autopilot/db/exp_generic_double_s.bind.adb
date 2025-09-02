@@ -2334,7 +2334,7 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>tmp_s</name>
+						<name>tmp_5</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>272</lineNumber>
@@ -4287,7 +4287,7 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>tmp_14</name>
+						<name>tmp_s</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>152</lineNumber>
@@ -4734,7 +4734,7 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>tmp_15</name>
+						<name>tmp_14</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>168</lineNumber>
@@ -5016,7 +5016,7 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>tmp_16</name>
+						<name>tmp_15</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>171</lineNumber>
@@ -6103,7 +6103,7 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>tmp_5</name>
+						<name>tmp_7</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>332</lineNumber>
@@ -6450,7 +6450,7 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>tmp_6</name>
+						<name>tmp_8</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>338</lineNumber>
@@ -6599,7 +6599,7 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>tmp_7</name>
+						<name>tmp_9</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>339</lineNumber>
@@ -6799,7 +6799,7 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>tmp_17</name>
+						<name>tmp_6</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>364</lineNumber>
@@ -16060,15 +16060,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_14_fu_682</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>88</item>
-			</second>
-		</item>
-		<item>
-			<first>tmp_15_fu_717</first>
+			<first>tmp_14_fu_717</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16076,7 +16068,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_16_fu_752</first>
+			<first>tmp_15_fu_752</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16084,7 +16076,15 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_17_fu_977</first>
+			<first>tmp_5_fu_478</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>51</item>
+			</second>
+		</item>
+		<item>
+			<first>tmp_6_fu_977</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16092,7 +16092,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_5_fu_856</first>
+			<first>tmp_7_fu_856</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16100,7 +16100,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_6_fu_925</first>
+			<first>tmp_8_fu_925</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16108,7 +16108,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_7_fu_946</first>
+			<first>tmp_9_fu_946</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16156,11 +16156,11 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_s_fu_478</first>
+			<first>tmp_s_fu_682</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>51</item>
+				<item>88</item>
 			</second>
 		</item>
 		<item>
@@ -17171,15 +17171,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_14_reg_1292</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>88</item>
-			</second>
-		</item>
-		<item>
-			<first>tmp_15_reg_1308</first>
+			<first>tmp_14_reg_1308</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17187,7 +17179,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_16_reg_1329</first>
+			<first>tmp_15_reg_1329</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17195,7 +17187,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_5_reg_1370</first>
+			<first>tmp_7_reg_1370</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17216,6 +17208,14 @@
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>83</item>
+			</second>
+		</item>
+		<item>
+			<first>tmp_s_reg_1292</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>88</item>
 			</second>
 		</item>
 		<item>

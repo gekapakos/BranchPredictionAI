@@ -960,7 +960,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>tmp_16</name>
+						<name>tmp_4</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>80</lineNumber>
@@ -1303,7 +1303,7 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>x_5</name>
+						<name>x_2</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>83</lineNumber>
@@ -1820,7 +1820,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>tmp_i_73</name>
+						<name>tmp_i_50</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>12</lineNumber>
@@ -8970,7 +8970,7 @@
 			</second>
 		</item>
 		<item>
-			<first>x_5_fu_249</first>
+			<first>x_2_fu_249</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9538,7 +9538,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_16_reg_357</first>
+			<first>tmp_4_reg_357</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9554,7 +9554,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_i_73_reg_389</first>
+			<first>tmp_i_50_reg_389</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9570,7 +9570,7 @@
 			</second>
 		</item>
 		<item>
-			<first>x_5_reg_371</first>
+			<first>x_2_reg_371</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

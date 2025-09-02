@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'bn_vector'" level="0">
-<item name = "Date">Tue Sep  2 19:40:17 2025
+<item name = "Date">Tue Sep  2 20:27:27 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -62,10 +62,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="main_faddfsub_32ns_32ns_32_5_full_dsp_1_U56">main_faddfsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
-<column name="main_fdiv_32ns_32ns_32_16_1_U58">main_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
-<column name="main_fmul_32ns_32ns_32_4_max_dsp_1_U57">main_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
-<column name="main_fsqrt_32ns_32ns_32_12_1_U59">main_fsqrt_32ns_32ns_32_12_1, 0, 0, 405, 615, 0</column>
+<column name="main_faddfsub_32ns_32ns_32_5_full_dsp_1_U58">main_faddfsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
+<column name="main_fdiv_32ns_32ns_32_16_1_U60">main_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
+<column name="main_fmul_32ns_32ns_32_4_max_dsp_1_U59">main_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
+<column name="main_fsqrt_32ns_32ns_32_12_1_U61">main_fsqrt_32ns_32ns_32_12_1, 0, 0, 405, 615, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -83,7 +83,7 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="c_fu_133_p2">+, 0, 0, 15, 6, 1</column>
-<column name="icmp_ln153_fu_127_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln202_fu_127_p2">icmp, 0, 0, 11, 6, 7</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -106,12 +106,12 @@
 <column name="mean_load_reg_185">32, 0, 32, 0</column>
 <column name="n_reg_205">32, 0, 32, 0</column>
 <column name="reg_120">32, 0, 32, 0</column>
-<column name="tmp_17_reg_190">32, 0, 32, 0</column>
-<column name="tmp_18_reg_220">32, 0, 32, 0</column>
+<column name="tmp_36_reg_190">32, 0, 32, 0</column>
+<column name="tmp_37_reg_220">32, 0, 32, 0</column>
 <column name="v_addr_reg_170">5, 0, 5, 0</column>
 <column name="v_load_reg_180">32, 0, 32, 0</column>
 <column name="var_load_reg_165">32, 0, 32, 0</column>
-<column name="zext_ln154_reg_152">6, 0, 64, 58</column>
+<column name="zext_ln203_reg_152">6, 0, 64, 58</column>
 </table>
 </item>
 </section>

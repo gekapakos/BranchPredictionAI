@@ -56,12 +56,70 @@ static inline void embedding_forward_dyn(const int32_t *tokens, int Tlen,
     }
 }
 
-static inline void conv1d_valid_dyn(const float *X,int Tlen,
+// static inline void conv1d_valid_dyn(const float *X,int Tlen,
+//                                     const float *W,int Ksz, // W[Ksz,E,F]
+//                                     const float *B, float *Y) // Y[(Tlen-Ksz+1),F]
+// {
+//     const int T1 = Tlen - Ksz + 1;
+//     for(int t=0;t<T1;++t){
+//         for(int f=0; f<F; ++f){
+//             float acc = B ? B[f] : 0.0f;
+//             for(int k=0;k<Ksz;++k){
+//                 const float *xrow = X + (t+k)*E;
+//                 const float *wf   = W + (k*E)*F + f; // stride by Cout on e
+//                 for(int e=0;e<E;++e) acc += xrow[e] * wf[e*F];
+//             }
+//             Y[t*F + f] = acc;
+//         }
+//     }
+// }
+
+// static inline void bn_time_channel(float *Y,int Tlen,int C,
+//     const float *gamma,const float *beta,const float *mean,const float *var,float eps)
+// {
+//     for(int t=0;t<Tlen;++t){
+//         float *yt = Y + t*C;
+//         for(int c=0;c<C;++c){
+//             float nrm = (yt[c]-mean[c]) / sqrtf(var[c]+eps);
+//             yt[c] = gamma[c]*nrm + beta[c];
+//         }
+//     }
+// }
+
+// typedef enum { ACT_RELU, ACT_TANH, ACT_SIGMOID } act_t;
+// static inline void apply_activation_time(float *Y,int Tlen,int C,act_t a){
+//     for(int t=0;t<Tlen;++t){
+//         float *yt = Y + t*C;
+//         for(int c=0;c<C;++c){
+//             float x=yt[c];
+//             yt[c] = (a==ACT_RELU)? reluf(x) : (a==ACT_TANH? tanhf_fast(x) : sigmoidf(x));
+//         }
+//     }
+// }
+
+// static inline void avgpool1d_P(const float *Z,int Tlen,int C,int Psz,float *U){
+//     const int Tout = Tlen / Psz;
+//     for(int u=0;u<Tout;++u){
+//         for(int c=0;c<C;++c){
+//             float acc=0.0f;
+//             for(int p=0;p<Psz;++p) acc += Z[(u*Psz + p)*C + c];
+//             U[u*C + c] = acc / (float)Psz;
+//         }
+//     }
+// }
+
+typedef enum { ACT_RELU, ACT_TANH, ACT_SIGMOID } act_t;
+static inline void conv_bn_act_pool(const float *X,int Tlen,
                                     const float *W,int Ksz, // W[Ksz,E,F]
-                                    const float *B, float *Y) // Y[(Tlen-Ksz+1),F]
-{
+                                    const float *B, float *Y, // Y[(Tlen-Ksz+1),F]
+                                    int C, const float *gamma,
+                                    const float *beta, const float *mean,
+                                    const float *var, float eps, act_t a,
+                                    int Psz, float *U) {
     const int T1 = Tlen - Ksz + 1;
-    for(int t=0;t<T1;++t){
+    int t, c;
+
+    for(t=0;t<T1;++t) {
         for(int f=0; f<F; ++f){
             float acc = B ? B[f] : 0.0f;
             for(int k=0;k<Ksz;++k){
@@ -72,37 +130,28 @@ static inline void conv1d_valid_dyn(const float *X,int Tlen,
             Y[t*F + f] = acc;
         }
     }
-}
 
-static inline void bn_time_channel(float *Y,int Tlen,int C,
-    const float *gamma,const float *beta,const float *mean,const float *var,float eps)
-{
-    for(int t=0;t<Tlen;++t){
+    for(t=0;t<Tlen;++t) {
         float *yt = Y + t*C;
-        for(int c=0;c<C;++c){
+        for(c=0;c<C;++c){
             float nrm = (yt[c]-mean[c]) / sqrtf(var[c]+eps);
             yt[c] = gamma[c]*nrm + beta[c];
         }
     }
-}
 
-typedef enum { ACT_RELU, ACT_TANH, ACT_SIGMOID } act_t;
-static inline void apply_activation_time(float *Y,int Tlen,int C,act_t a){
-    for(int t=0;t<Tlen;++t){
+    for(t = 0;t < Tlen; ++t) {
         float *yt = Y + t*C;
-        for(int c=0;c<C;++c){
-            float x=yt[c];
-            yt[c] = (a==ACT_RELU)? reluf(x) : (a==ACT_TANH? tanhf_fast(x) : sigmoidf(x));
+        for(c = 0;c < C;++c) {
+            float x = yt[c];
+            yt[c] = (a == ACT_RELU) ? reluf(x) : (a == ACT_TANH? tanhf_fast(x) : sigmoidf(x));
         }
     }
-}
 
-static inline void avgpool1d_P(const float *Z,int Tlen,int C,int Psz,float *U){
     const int Tout = Tlen / Psz;
-    for(int u=0;u<Tout;++u){
-        for(int c=0;c<C;++c){
+    for(int u = 0;u < Tout; ++u) {
+        for(c = 0;c < C; ++c){
             float acc=0.0f;
-            for(int p=0;p<Psz;++p) acc += Z[(u*Psz + p)*C + c];
+            for(int p=0;p<Psz;++p) acc += Y[(u*Psz + p)*C + c];
             U[u*C + c] = acc / (float)Psz;
         }
     }
@@ -176,10 +225,13 @@ static void run_all_slices_unrolled(float merged[H]) {
     {
         float X0[T0*E], Y[T10*F], U[T20*F];
         embedding_forward_dyn(tokens0, T0, Emb0, X0);
-        conv1d_valid_dyn(X0, T0, ConvW0, K, ConvB0, Y);
-        bn_time_channel(Y, T10, F, BN1_gamma0, BN1_beta0, BN1_mean0, BN1_var0, BN_eps);
-        apply_activation_time(Y, T10, F, ACT_RELU);
-        avgpool1d_P(Y, T10, F, P0, U);
+        conv_bn_act_pool(X0, T0, ConvW0, K, ConvB0, Y, T10, 
+        BN1_gamma0, BN1_beta0, BN1_mean0, BN1_var0, BN_eps,
+        ACT_RELU, P0, U);
+        // conv1d_valid_dyn(X0, T0, ConvW0, K, ConvB0, Y);
+        // bn_time_channel(Y, T10, F, BN1_gamma0, BN1_beta0, BN1_mean0, BN1_var0, BN_eps);
+        // apply_activation_time(Y, T10, F, ACT_RELU);
+        // avgpool1d_P(Y, T10, F, P0, U);
         lstm_forward_unidir(U, T20, F, LSTM_W_ifog0, LSTM_R_ifog0, LSTM_b_ifog0, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma0, BN2_beta0, BN2_mean0, BN2_var0, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);
@@ -189,10 +241,13 @@ static void run_all_slices_unrolled(float merged[H]) {
     {
         float X0[T1*E], Y[T11*F], U[T21*F];
         embedding_forward_dyn(tokens1, T1, Emb1, X0);
-        conv1d_valid_dyn(X0, T1, ConvW1, K, ConvB1, Y);
-        bn_time_channel(Y, T11, F, BN1_gamma1, BN1_beta1, BN1_mean1, BN1_var1, BN_eps);
-        apply_activation_time(Y, T11, F, ACT_RELU);
-        avgpool1d_P(Y, T11, F, P1, U);
+        conv_bn_act_pool(X0, T1, ConvW1, K, ConvB1, Y, T11, 
+        BN1_gamma1, BN1_beta1, BN1_mean1, BN1_var1, BN_eps,
+        ACT_RELU, P1, U);
+        // conv1d_valid_dyn(X0, T1, ConvW1, K, ConvB1, Y);
+        // bn_time_channel(Y, T11, F, BN1_gamma1, BN1_beta1, BN1_mean1, BN1_var1, BN_eps);
+        // apply_activation_time(Y, T11, F, ACT_RELU);
+        // avgpool1d_P(Y, T11, F, P1, U);
         lstm_forward_unidir(U, T21, F, LSTM_W_ifog1, LSTM_R_ifog1, LSTM_b_ifog1, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma1, BN2_beta1, BN2_mean1, BN2_var1, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);
@@ -202,10 +257,13 @@ static void run_all_slices_unrolled(float merged[H]) {
     {
         float X0[T2*E], Y[T12*F], U[T22*F];
         embedding_forward_dyn(tokens2, T2, Emb2, X0);
-        conv1d_valid_dyn(X0, T2, ConvW2, K, ConvB2, Y);
-        bn_time_channel(Y, T12, F, BN1_gamma2, BN1_beta2, BN1_mean2, BN1_var2, BN_eps);
-        apply_activation_time(Y, T12, F, ACT_RELU);
-        avgpool1d_P(Y, T12, F, P2, U);
+        conv_bn_act_pool(X0, T2, ConvW2, K, ConvB2, Y, T12, 
+        BN1_gamma2, BN1_beta2, BN1_mean2, BN1_var2, BN_eps,
+        ACT_RELU, P2, U);
+        // conv1d_valid_dyn(X0, T2, ConvW2, K, ConvB2, Y);
+        // bn_time_channel(Y, T12, F, BN1_gamma2, BN1_beta2, BN1_mean2, BN1_var2, BN_eps);
+        // apply_activation_time(Y, T12, F, ACT_RELU);
+        // avgpool1d_P(Y, T12, F, P2, U);
         lstm_forward_unidir(U, T22, F, LSTM_W_ifog2, LSTM_R_ifog2, LSTM_b_ifog2, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma2, BN2_beta2, BN2_mean2, BN2_var2, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);
@@ -215,10 +273,13 @@ static void run_all_slices_unrolled(float merged[H]) {
     {
         float X0[T3*E], Y[T13*F], U[T23*F];
         embedding_forward_dyn(tokens3, T3, Emb3, X0);
-        conv1d_valid_dyn(X0, T3, ConvW3, K, ConvB3, Y);
-        bn_time_channel(Y, T13, F, BN1_gamma3, BN1_beta3, BN1_mean3, BN1_var3, BN_eps);
-        apply_activation_time(Y, T13, F, ACT_RELU);
-        avgpool1d_P(Y, T13, F, P3, U);
+        conv_bn_act_pool(X0, T3, ConvW3, K, ConvB3, Y, T13, 
+        BN1_gamma3, BN1_beta3, BN1_mean3, BN1_var3, BN_eps,
+        ACT_RELU, P3, U);
+        // conv1d_valid_dyn(X0, T3, ConvW3, K, ConvB3, Y);
+        // bn_time_channel(Y, T13, F, BN1_gamma3, BN1_beta3, BN1_mean3, BN1_var3, BN_eps);
+        // apply_activation_time(Y, T13, F, ACT_RELU);
+        // avgpool1d_P(Y, T13, F, P3, U);
         lstm_forward_unidir(U, T23, F, LSTM_W_ifog3, LSTM_R_ifog3, LSTM_b_ifog3, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma3, BN2_beta3, BN2_mean3, BN2_var3, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);
@@ -228,10 +289,13 @@ static void run_all_slices_unrolled(float merged[H]) {
     {
         float X0[T4*E], Y[T14*F], U[T24*F];
         embedding_forward_dyn(tokens4, T4, Emb4, X0);
-        conv1d_valid_dyn(X0, T4, ConvW4, K, ConvB4, Y);
-        bn_time_channel(Y, T14, F, BN1_gamma4, BN1_beta4, BN1_mean4, BN1_var4, BN_eps);
-        apply_activation_time(Y, T14, F, ACT_RELU);
-        avgpool1d_P(Y, T14, F, P4, U);
+        conv_bn_act_pool(X0, T4, ConvW4, K, ConvB4, Y, T14, 
+        BN1_gamma4, BN1_beta4, BN1_mean4, BN1_var4, BN_eps,
+        ACT_RELU, P4, U);
+        // conv1d_valid_dyn(X0, T4, ConvW4, K, ConvB4, Y);
+        // bn_time_channel(Y, T14, F, BN1_gamma4, BN1_beta4, BN1_mean4, BN1_var4, BN_eps);
+        // apply_activation_time(Y, T14, F, ACT_RELU);
+        // avgpool1d_P(Y, T14, F, P4, U);
         lstm_forward_unidir(U, T24, F, LSTM_W_ifog4, LSTM_R_ifog4, LSTM_b_ifog4, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma4, BN2_beta4, BN2_mean4, BN2_var4, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);

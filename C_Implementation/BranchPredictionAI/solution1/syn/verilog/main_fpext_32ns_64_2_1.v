@@ -7,7 +7,7 @@
 
 module main_fpext_32ns_64_2_1
 #(parameter
-    ID         = 31,
+    ID         = 34,
     NUM_STAGE  = 2,
     din0_WIDTH = 32,
     dout_WIDTH = 64

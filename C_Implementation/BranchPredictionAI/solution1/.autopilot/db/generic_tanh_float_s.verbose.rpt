@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'generic_tanh_float_s'
 ================================================================
-* Date:           Tue Sep  2 19:40:16 2025
+* Date:           Tue Sep  2 20:27:26 2025
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BranchPredictionAI
@@ -74,13 +74,13 @@
     |                   Instance                  |                  Module                 | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
     +---------------------------------------------+-----------------------------------------+---------+-------+------+------+-----+
     |grp_exp_generic_double_s_fu_89               |exp_generic_double_s                     |       15|     29|  2897|  3269|    0|
-    |main_dadd_64ns_64ns_64_5_full_dsp_1_U33      |main_dadd_64ns_64ns_64_5_full_dsp_1      |        0|      3|   445|  1149|    0|
-    |main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27  |main_faddfsub_32ns_32ns_32_5_full_dsp_1  |        0|      2|   205|   390|    0|
-    |main_fcmp_32ns_32ns_1_2_1_U32                |main_fcmp_32ns_32ns_1_2_1                |        0|      0|    66|   239|    0|
-    |main_fdiv_32ns_32ns_32_16_1_U29              |main_fdiv_32ns_32ns_32_16_1              |        0|      0|   761|   994|    0|
-    |main_fmul_32ns_32ns_32_4_max_dsp_1_U28       |main_fmul_32ns_32ns_32_4_max_dsp_1       |        0|      3|   143|   321|    0|
-    |main_fpext_32ns_64_2_1_U31                   |main_fpext_32ns_64_2_1                   |        0|      0|   100|   138|    0|
-    |main_fptrunc_64ns_32_2_1_U30                 |main_fptrunc_64ns_32_2_1                 |        0|      0|   128|   277|    0|
+    |main_dadd_64ns_64ns_64_5_full_dsp_1_U36      |main_dadd_64ns_64ns_64_5_full_dsp_1      |        0|      3|   445|  1149|    0|
+    |main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30  |main_faddfsub_32ns_32ns_32_5_full_dsp_1  |        0|      2|   205|   390|    0|
+    |main_fcmp_32ns_32ns_1_2_1_U35                |main_fcmp_32ns_32ns_1_2_1                |        0|      0|    66|   239|    0|
+    |main_fdiv_32ns_32ns_32_16_1_U32              |main_fdiv_32ns_32ns_32_16_1              |        0|      0|   761|   994|    0|
+    |main_fmul_32ns_32ns_32_4_max_dsp_1_U31       |main_fmul_32ns_32ns_32_4_max_dsp_1       |        0|      3|   143|   321|    0|
+    |main_fpext_32ns_64_2_1_U34                   |main_fpext_32ns_64_2_1                   |        0|      0|   100|   138|    0|
+    |main_fptrunc_64ns_32_2_1_U33                 |main_fptrunc_64ns_32_2_1                 |        0|      0|   128|   277|    0|
     +---------------------------------------------+-----------------------------------------+---------+-------+------+------+-----+
     |Total                                        |                                         |       15|     37|  4745|  6777|    0|
     +---------------------------------------------+-----------------------------------------+---------+-------+------+------+-----+
@@ -108,7 +108,7 @@
     |icmp_ln849_fu_208_p2    |   icmp   |      0|  0|  11|           8|           7|
     |select_ln67_fu_226_p3   |  select  |      0|  0|  31|           1|          30|
     |select_ln775_fu_295_p3  |  select  |      0|  0|  32|           1|          32|
-    |x_5_fu_249_p3           |  select  |      0|  0|  32|           1|          32|
+    |x_2_fu_249_p3           |  select  |      0|  0|  32|           1|          32|
     |xor_ln112_fu_285_p2     |    xor   |      0|  0|  33|          32|          33|
     |xor_ln84_fu_239_p2      |    xor   |      0|  0|  33|          32|          33|
     |xor_ln95_fu_306_p2      |    xor   |      0|  0|  33|          32|          33|
@@ -153,11 +153,11 @@
     |reg_145                                      |  32|   0|   32|          0|
     |reg_151                                      |  32|   0|   32|          0|
     |resultf_4_reg_72                             |  32|   0|   32|          0|
-    |tmp_16_reg_357                               |   1|   0|    1|          0|
+    |tmp_4_reg_357                                |   1|   0|    1|          0|
     |tmp_V_reg_322                                |   8|   0|    8|          0|
-    |tmp_i_73_reg_389                             |  64|   0|   64|          0|
+    |tmp_i_50_reg_389                             |  64|   0|   64|          0|
     |tmp_i_reg_384                                |  64|   0|   64|          0|
-    |x_5_reg_371                                  |  32|   0|   32|          0|
+    |x_2_reg_371                                  |  32|   0|   32|          0|
     +---------------------------------------------+----+----+-----+-----------+
     |Total                                        | 519|   0|  521|          2|
     +---------------------------------------------+----+----+-----+-----------+
@@ -322,16 +322,16 @@ ST_1 : Operation 103 [1/1] (1.55ns)   --->   "%icmp_ln833_1 = icmp eq i8 %tmp_V,
 ST_1 : Operation 104 [1/1] (2.44ns)   --->   "%icmp_ln833_2 = icmp eq i23 %tmp_V_1, 0" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:75]   --->   Operation 104 'icmp' 'icmp_ln833_2' <Predicate = (!icmp_ln833 & !icmp_ln849)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 105 [1/1] (0.97ns)   --->   "%and_ln75 = and i1 %icmp_ln833_1, %icmp_ln833_2" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:75]   --->   Operation 105 'and' 'and_ln75' <Predicate = (!icmp_ln833 & !icmp_ln849)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 106 [1/1] (0.00ns)   --->   "br i1 %and_ln75, label %._crit_edge56, label %._crit_edge57" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:75]   --->   Operation 106 'br' <Predicate = (!icmp_ln833 & !icmp_ln849)> <Delay = 0.00>
-ST_1 : Operation 107 [2/2] (5.43ns)   --->   "%tmp_16 = fcmp olt float %abst_in, 2.200000e+01" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:80]   --->   Operation 107 'fcmp' 'tmp_16' <Predicate = (!icmp_ln833 & !icmp_ln849 & !and_ln75)> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 107 [2/2] (5.43ns)   --->   "%tmp_4 = fcmp olt float %abst_in, 2.200000e+01" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:80]   --->   Operation 107 'fcmp' 'tmp_4' <Predicate = (!icmp_ln833 & !icmp_ln849 & !and_ln75)> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 108 [5/5] (8.42ns)   --->   "%tmp_s = fadd float %abst_in, 1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:78]   --->   Operation 108 'fadd' 'tmp_s' <Predicate = (!icmp_ln833 & and_ln75) | (!icmp_ln833 & icmp_ln849)> <Delay = 8.42> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 109 [1/1] (2.44ns)   --->   "%icmp_ln837 = icmp eq i23 %tmp_V_1, 0" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:67]   --->   Operation 109 'icmp' 'icmp_ln837' <Predicate = (icmp_ln833)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 110 [1/1] (0.69ns)   --->   "%select_ln67 = select i1 %icmp_ln837, float 1.000000e+00, float 0x7FFFFFFFE0000000" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:67]   --->   Operation 110 'select' 'select_ln67' <Predicate = (icmp_ln833)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_1 : Operation 111 [1/1] (1.90ns)   --->   "br label %._crit_edge_ifconv" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:67]   --->   Operation 111 'br' <Predicate = (icmp_ln833)> <Delay = 1.90>
 
 State 2 <SV = 1> <Delay = 7.33>
-ST_2 : Operation 112 [1/2] (5.43ns)   --->   "%tmp_16 = fcmp olt float %abst_in, 2.200000e+01" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:80]   --->   Operation 112 'fcmp' 'tmp_16' <Predicate = true> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 113 [1/1] (1.90ns)   --->   "br i1 %tmp_16, label %_ifconv, label %._crit_edge_ifconv" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:80]   --->   Operation 113 'br' <Predicate = true> <Delay = 1.90>
-ST_2 : Operation 114 [1/1] (1.55ns)   --->   "%icmp_ln849_1 = icmp ult i8 %tmp_V, 127" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 114 'icmp' 'icmp_ln849_1' <Predicate = (tmp_16)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 112 [1/2] (5.43ns)   --->   "%tmp_4 = fcmp olt float %abst_in, 2.200000e+01" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:80]   --->   Operation 112 'fcmp' 'tmp_4' <Predicate = true> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 113 [1/1] (1.90ns)   --->   "br i1 %tmp_4, label %_ifconv, label %._crit_edge_ifconv" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:80]   --->   Operation 113 'br' <Predicate = true> <Delay = 1.90>
+ST_2 : Operation 114 [1/1] (1.55ns)   --->   "%icmp_ln849_1 = icmp ult i8 %tmp_V, 127" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 114 'icmp' 'icmp_ln849_1' <Predicate = (tmp_4)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 
 State 3 <SV = 2> <Delay = 9.42>
 ST_3 : Operation 115 [1/1] (0.99ns)   --->   "%xor_ln84 = xor i32 %p_Result_5, -2147483648" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:84]   --->   Operation 115 'xor' 'xor_ln84' <Predicate = (icmp_ln849_1)> <Delay = 0.99> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -354,19 +354,19 @@ ST_6 : Operation 124 [2/5] (7.25ns)   --->   "%x_1 = fadd float %abst_in, %abst_
 State 7 <SV = 6> <Delay = 7.95>
 ST_7 : Operation 125 [1/5] (7.25ns)   --->   "%x = fsub float %bitcast_ln84, %abst_in" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:84]   --->   Operation 125 'fsub' 'x' <Predicate = (icmp_ln849_1)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 126 [1/5] (7.25ns)   --->   "%x_1 = fadd float %abst_in, %abst_in" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:87]   --->   Operation 126 'fadd' 'x_1' <Predicate = (!icmp_ln849_1)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 127 [1/1] (0.69ns)   --->   "%x_5 = select i1 %icmp_ln849_1, float %x, float %x_1" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 127 'select' 'x_5' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 127 [1/1] (0.69ns)   --->   "%x_2 = select i1 %icmp_ln849_1, float %x, float %x_1" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 127 'select' 'x_2' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 4.43>
-ST_8 : Operation 128 [1/1] (0.00ns)   --->   "%p_Val2_1 = bitcast float %x_5 to i32" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:310->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:8->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 128 'bitcast' 'p_Val2_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 128 [1/1] (0.00ns)   --->   "%p_Val2_1 = bitcast float %x_2 to i32" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:310->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:8->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 128 'bitcast' 'p_Val2_1' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 129 [1/1] (0.00ns)   --->   "%tmp_V_2 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_1, i32 23, i32 30) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:317->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:8->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 129 'partselect' 'tmp_V_2' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 130 [1/1] (1.55ns)   --->   "%icmp_ln833_3 = icmp eq i8 %tmp_V_2, 0" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:9->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 130 'icmp' 'icmp_ln833_3' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 131 [1/1] (1.81ns)   --->   "br i1 %icmp_ln833_3, label %expm1.exit, label %4" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:9->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 131 'br' <Predicate = true> <Delay = 1.81>
 ST_8 : Operation 132 [1/1] (1.55ns)   --->   "%icmp_ln841 = icmp ult i8 %tmp_V_2, 96" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:10->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 132 'icmp' 'icmp_ln841' <Predicate = (!icmp_ln833_3)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 133 [1/1] (1.81ns)   --->   "br i1 %icmp_ln841, label %expm1.exit, label %5" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:10->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 133 'br' <Predicate = (!icmp_ln833_3)> <Delay = 1.81>
-ST_8 : Operation 134 [2/2] (4.43ns)   --->   "%xd = fpext float %x_5 to double" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:11->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 134 'fpext' 'xd' <Predicate = (!icmp_ln833_3 & !icmp_ln841)> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 134 [2/2] (4.43ns)   --->   "%xd = fpext float %x_2 to double" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:11->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 134 'fpext' 'xd' <Predicate = (!icmp_ln833_3 & !icmp_ln841)> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
 
 State 9 <SV = 8> <Delay = 8.64>
-ST_9 : Operation 135 [1/2] (4.43ns)   --->   "%xd = fpext float %x_5 to double" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:11->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 135 'fpext' 'xd' <Predicate = true> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 135 [1/2] (4.43ns)   --->   "%xd = fpext float %x_2 to double" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:11->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 135 'fpext' 'xd' <Predicate = true> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
 ST_9 : Operation 136 [20/20] (4.21ns)   --->   "%tmp_i = call fastcc double @"exp_generic<double>"(double %xd) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 136 'call' 'tmp_i' <Predicate = true> <Delay = 4.21> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 8.75>
@@ -427,29 +427,29 @@ State 28 <SV = 27> <Delay = 8.42>
 ST_28 : Operation 155 [1/20] (8.42ns)   --->   "%tmp_i = call fastcc double @"exp_generic<double>"(double %xd) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 155 'call' 'tmp_i' <Predicate = true> <Delay = 8.42> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 29 <SV = 28> <Delay = 8.23>
-ST_29 : Operation 156 [5/5] (8.23ns)   --->   "%tmp_i_73 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 156 'dadd' 'tmp_i_73' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 156 [5/5] (8.23ns)   --->   "%tmp_i_50 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 156 'dadd' 'tmp_i_50' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 30 <SV = 29> <Delay = 8.23>
-ST_30 : Operation 157 [4/5] (8.23ns)   --->   "%tmp_i_73 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 157 'dadd' 'tmp_i_73' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 157 [4/5] (8.23ns)   --->   "%tmp_i_50 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 157 'dadd' 'tmp_i_50' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 31 <SV = 30> <Delay = 8.23>
-ST_31 : Operation 158 [3/5] (8.23ns)   --->   "%tmp_i_73 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 158 'dadd' 'tmp_i_73' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 158 [3/5] (8.23ns)   --->   "%tmp_i_50 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 158 'dadd' 'tmp_i_50' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 32 <SV = 31> <Delay = 8.23>
-ST_32 : Operation 159 [2/5] (8.23ns)   --->   "%tmp_i_73 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 159 'dadd' 'tmp_i_73' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 159 [2/5] (8.23ns)   --->   "%tmp_i_50 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 159 'dadd' 'tmp_i_50' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 33 <SV = 32> <Delay = 8.23>
-ST_33 : Operation 160 [1/5] (8.23ns)   --->   "%tmp_i_73 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 160 'dadd' 'tmp_i_73' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 160 [1/5] (8.23ns)   --->   "%tmp_i_50 = fadd double %tmp_i, -1.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 160 'dadd' 'tmp_i_50' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 34 <SV = 33> <Delay = 5.20>
-ST_34 : Operation 161 [2/2] (5.20ns)   --->   "%tmp_15_i = fptrunc double %tmp_i_73 to float" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 161 'fptrunc' 'tmp_15_i' <Predicate = true> <Delay = 5.20> <Core = "Double2Float">   --->   Core 123 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.20> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_34 : Operation 161 [2/2] (5.20ns)   --->   "%tmp_15_i = fptrunc double %tmp_i_50 to float" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 161 'fptrunc' 'tmp_15_i' <Predicate = true> <Delay = 5.20> <Core = "Double2Float">   --->   Core 123 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.20> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
 
 State 35 <SV = 34> <Delay = 5.20>
-ST_35 : Operation 162 [1/2] (5.20ns)   --->   "%tmp_15_i = fptrunc double %tmp_i_73 to float" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 162 'fptrunc' 'tmp_15_i' <Predicate = true> <Delay = 5.20> <Core = "Double2Float">   --->   Core 123 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.20> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_35 : Operation 162 [1/2] (5.20ns)   --->   "%tmp_15_i = fptrunc double %tmp_i_50 to float" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 162 'fptrunc' 'tmp_15_i' <Predicate = true> <Delay = 5.20> <Core = "Double2Float">   --->   Core 123 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.20> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
 ST_35 : Operation 163 [1/1] (1.81ns)   --->   "br label %expm1.exit" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90]   --->   Operation 163 'br' <Predicate = true> <Delay = 1.81>
 
 State 36 <SV = 35> <Delay = 8.42>
-ST_36 : Operation 164 [1/1] (0.00ns)   --->   "%expx = phi float [ %tmp_15_i, %5 ], [ 0.000000e+00, %_ifconv ], [ %x_5, %4 ]"   --->   Operation 164 'phi' 'expx' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 164 [1/1] (0.00ns)   --->   "%expx = phi float [ %tmp_15_i, %5 ], [ 0.000000e+00, %_ifconv ], [ %x_2, %4 ]"   --->   Operation 164 'phi' 'expx' <Predicate = true> <Delay = 0.00>
 ST_36 : Operation 165 [1/1] (0.00ns)   --->   "br i1 %icmp_ln849_1, label %6, label %7" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:92]   --->   Operation 165 'br' <Predicate = true> <Delay = 0.00>
 ST_36 : Operation 166 [5/5] (8.42ns)   --->   "%tmp_12 = fadd float %expx, 2.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:100]   --->   Operation 166 'fadd' 'tmp_12' <Predicate = (!icmp_ln849_1)> <Delay = 8.42> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 ST_36 : Operation 167 [5/5] (8.42ns)   --->   "%tmp_11 = fadd float %expx, 2.000000e+00" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:95]   --->   Operation 167 'fadd' 'tmp_11' <Predicate = (icmp_ln849_1)> <Delay = 8.42> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
@@ -530,7 +530,7 @@ State 61 <SV = 60> <Delay = 7.25>
 ST_61 : Operation 192 [1/5] (7.25ns)   --->   "%resultf_2 = fsub float 1.000000e+00, %tmp_13" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:100]   --->   Operation 192 'fsub' 'resultf_2' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 62 <SV = 61> <Delay = 2.89>
-ST_62 : Operation 193 [1/1] (1.90ns)   --->   "br label %._crit_edge_ifconv"   --->   Operation 193 'br' <Predicate = (!icmp_ln833 & !icmp_ln849 & !and_ln75 & tmp_16 & !icmp_ln849_1)> <Delay = 1.90>
+ST_62 : Operation 193 [1/1] (1.90ns)   --->   "br label %._crit_edge_ifconv"   --->   Operation 193 'br' <Predicate = (!icmp_ln833 & !icmp_ln849 & !and_ln75 & tmp_4 & !icmp_ln849_1)> <Delay = 1.90>
 ST_62 : Operation 194 [1/1] (0.00ns)   --->   "%resultf_4 = phi float [ %resultf, %._crit_edge56 ], [ %resultf_1, %6 ], [ %resultf_2, %7 ], [ 1.000000e+00, %._crit_edge57 ], [ %select_ln67, %1 ]"   --->   Operation 194 'phi' 'resultf_4' <Predicate = true> <Delay = 0.00>
 ST_62 : Operation 195 [1/1] (0.00ns) (grouped into LUT with out node select_ln775)   --->   "%bitcast_ln112 = bitcast float %resultf_4 to i32" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:112]   --->   Operation 195 'bitcast' 'bitcast_ln112' <Predicate = (p_Result_s)> <Delay = 0.00>
 ST_62 : Operation 196 [1/1] (0.00ns) (grouped into LUT with out node select_ln775)   --->   "%xor_ln112 = xor i32 %bitcast_ln112, -2147483648" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:112]   --->   Operation 196 'xor' 'xor_ln112' <Predicate = (p_Result_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -668,14 +668,14 @@ br_ln75         (br            ) [ 000000000000000000000000000000000000000000000
 icmp_ln837      (icmp          ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 select_ln67     (select        ) [ 0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
 br_ln67         (br            ) [ 0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
-tmp_16          (fcmp          ) [ 0011111111111111111111111111111111111111111111111111111111111111111111111111111111100000000]
+tmp_4           (fcmp          ) [ 0011111111111111111111111111111111111111111111111111111111111111111111111111111111100000000]
 br_ln80         (br            ) [ 0111111111111111111111111111111111111111111111111111111111111111111111111111111111100000001]
 icmp_ln849_1    (icmp          ) [ 0001111111111111111111111111111111111111111111111111111111111111111111111111111111100000000]
 xor_ln84        (xor           ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 bitcast_ln84    (bitcast       ) [ 0000111100000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 x               (fsub          ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 x_1             (fadd          ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-x_5             (select        ) [ 0000000011111111111111111111111111111000000000000000000000000000000000000000000000000000000]
+x_2             (select        ) [ 0000000011111111111111111111111111111000000000000000000000000000000000000000000000000000000]
 p_Val2_1        (bitcast       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 tmp_V_2         (partselect    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 icmp_ln833_3    (icmp          ) [ 0000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000]
@@ -684,7 +684,7 @@ icmp_ln841      (icmp          ) [ 000000001000000000000000000000000000000000000
 br_ln10         (br            ) [ 0000000011111111111111111111111111111000000000000000000000000000000000000000000000000000000]
 xd              (fpext         ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 tmp_i           (call          ) [ 0000000000000000000000000000011111000000000000000000000000000000000000000000000000000000000]
-tmp_i_73        (dadd          ) [ 0000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000]
+tmp_i_50        (dadd          ) [ 0000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000]
 tmp_15_i        (fptrunc       ) [ 0000000010000000000000000000000000011000000000000000000000000000000000000000000000000000000]
 br_ln12         (br            ) [ 0000000010000000000000000000000000011000000000000000000000000000000000000000000000000000000]
 expx            (phi           ) [ 0000000000000000000000000000000000001111100000000000000000000001111100000000000000000000000]
@@ -1099,7 +1099,7 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="fcmp(46) " fcode="fcmp"/>
-<opset="tmp_16/1 "/>
+<opset="tmp_4/1 "/>
 </bind>
 </comp>
 
@@ -1111,7 +1111,7 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="dadd(508) " fcode="dadd"/>
-<opset="tmp_i_73/29 "/>
+<opset="tmp_i_50/29 "/>
 </bind>
 </comp>
 
@@ -1337,7 +1337,7 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="249" class="1004" name="x_5_fu_249">
+<comp id="249" class="1004" name="x_2_fu_249">
 <pin_list>
 <pin id="250" dir="0" index="0" bw="1" slack="5"/>
 <pin id="251" dir="0" index="1" bw="32" slack="0"/>
@@ -1346,7 +1346,7 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="x_5/7 "/>
+<opset="x_2/7 "/>
 </bind>
 </comp>
 
@@ -1560,13 +1560,13 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="357" class="1005" name="tmp_16_reg_357">
+<comp id="357" class="1005" name="tmp_4_reg_357">
 <pin_list>
 <pin id="358" dir="0" index="0" bw="1" slack="60"/>
 <pin id="359" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="tmp_16 "/>
+<opset="tmp_4 "/>
 </bind>
 </comp>
 
@@ -1590,13 +1590,13 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="371" class="1005" name="x_5_reg_371">
+<comp id="371" class="1005" name="x_2_reg_371">
 <pin_list>
 <pin id="372" dir="0" index="0" bw="32" slack="1"/>
 <pin id="373" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="x_5 "/>
+<opset="x_2 "/>
 </bind>
 </comp>
 
@@ -1610,13 +1610,13 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="389" class="1005" name="tmp_i_73_reg_389">
+<comp id="389" class="1005" name="tmp_i_50_reg_389">
 <pin_list>
 <pin id="390" dir="0" index="0" bw="64" slack="1"/>
 <pin id="391" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_i_73 "/>
+<opset="tmp_i_50 "/>
 </bind>
 </comp>
 
@@ -1918,7 +1918,7 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 		icmp_ln833_2 : 2
 		and_ln75 : 3
 		br_ln75 : 3
-		tmp_16 : 4
+		tmp_4 : 4
 		tmp_s : 4
 		icmp_ln837 : 2
 		select_ln67 : 3
@@ -1930,7 +1930,7 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 	State 5
 	State 6
 	State 7
-		x_5 : 1
+		x_2 : 1
 	State 8
 		tmp_V_2 : 1
 		icmp_ln833_3 : 2
@@ -2058,7 +2058,7 @@ br_ln79         (br            ) [ 011000000000000000000000000000000000000000000
 |   fpext  |           grp_fu_120           |    0    |    0    |   100   |   138   |
 |----------|--------------------------------|---------|---------|---------|---------|
 |          |       select_ln67_fu_226       |    0    |    0    |    0    |    32   |
-|  select  |           x_5_fu_249           |    0    |    0    |    0    |    32   |
+|  select  |           x_2_fu_249           |    0    |    0    |    0    |    32   |
 |          |       select_ln775_fu_295      |    0    |    0    |    0    |    32   |
 |----------|--------------------------------|---------|---------|---------|---------|
 |          |         xor_ln84_fu_239        |    0    |    0    |    0    |    32   |
@@ -2114,11 +2114,11 @@ N/A
 |    resultf_reg_404   |   32   |
 |  select_ln67_reg_352 |   32   |
 |   tmp_15_i_reg_394   |   32   |
-|    tmp_16_reg_357    |    1   |
+|     tmp_4_reg_357    |    1   |
 |     tmp_V_reg_322    |    8   |
-|   tmp_i_73_reg_389   |   64   |
+|   tmp_i_50_reg_389   |   64   |
 |     tmp_i_reg_384    |   64   |
-|      x_5_reg_371     |   32   |
+|      x_2_reg_371     |   32   |
 +----------------------+--------+
 |         Total        |   558  |
 +----------------------+--------+

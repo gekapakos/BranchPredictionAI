@@ -960,7 +960,7 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>tmp_16</name>
+              <name>tmp_4</name>
               <fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h</fileName>
               <fileDirectory>../../../../../../../../../../wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
               <lineNumber>80</lineNumber>
@@ -984,7 +984,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fcmp_32ns_32ns_1_2_1_U32</rtlName>
+              <rtlName>main_fcmp_32ns_32ns_1_2_1_U35</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1229,7 +1229,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x</originalName>
-              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27</rtlName>
+              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1278,7 +1278,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x</originalName>
-              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27</rtlName>
+              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1303,7 +1303,7 @@
             <Obj>
               <type>0</type>
               <id>32</id>
-              <name>x_5</name>
+              <name>x_2</name>
               <fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h</fileName>
               <fileDirectory>../../../../../../../../../../wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
               <lineNumber>83</lineNumber>
@@ -1327,7 +1327,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x</originalName>
-              <rtlName>x_5_fu_249_p3</rtlName>
+              <rtlName>x_2_fu_249_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1737,7 +1737,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>xd</originalName>
-              <rtlName>main_fpext_32ns_64_2_1_U31</rtlName>
+              <rtlName>main_fpext_32ns_64_2_1_U34</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1820,7 +1820,7 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>tmp_i_73</name>
+              <name>tmp_i_50</name>
               <fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp</fileName>
               <fileDirectory>../../../../../../../../../../wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
               <lineNumber>12</lineNumber>
@@ -1851,7 +1851,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_dadd_64ns_64ns_64_5_full_dsp_1_U33</rtlName>
+              <rtlName>main_dadd_64ns_64ns_64_5_full_dsp_1_U36</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1907,7 +1907,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fptrunc_64ns_32_2_1_U30</rtlName>
+              <rtlName>main_fptrunc_64ns_32_2_1_U33</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2099,7 +2099,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27</rtlName>
+              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2148,7 +2148,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fdiv_32ns_32ns_32_16_1_U29</rtlName>
+              <rtlName>main_fdiv_32ns_32ns_32_16_1_U32</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2197,7 +2197,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>resultf</originalName>
-              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27</rtlName>
+              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2425,7 +2425,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27</rtlName>
+              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2474,7 +2474,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>resultf</originalName>
-              <rtlName>main_fdiv_32ns_32ns_32_16_1_U29</rtlName>
+              <rtlName>main_fdiv_32ns_32ns_32_16_1_U32</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2571,7 +2571,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27</rtlName>
+              <rtlName>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2620,7 +2620,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>resultf</originalName>
-              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U28</rtlName>
+              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U31</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -7862,7 +7862,7 @@
           </second>
         </item>
         <item>
-          <first>main_dadd_64ns_64ns_64_5_full_dsp_1_U33 (main_dadd_64ns_64ns_64_5_full_dsp_1)</first>
+          <first>main_dadd_64ns_64ns_64_5_full_dsp_1_U36 (main_dadd_64ns_64ns_64_5_full_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7881,7 +7881,7 @@
           </second>
         </item>
         <item>
-          <first>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27 (main_faddfsub_32ns_32ns_32_5_full_dsp_1)</first>
+          <first>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30 (main_faddfsub_32ns_32ns_32_5_full_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7900,7 +7900,7 @@
           </second>
         </item>
         <item>
-          <first>main_fcmp_32ns_32ns_1_2_1_U32 (main_fcmp_32ns_32ns_1_2_1)</first>
+          <first>main_fcmp_32ns_32ns_1_2_1_U35 (main_fcmp_32ns_32ns_1_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7919,7 +7919,7 @@
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U29 (main_fdiv_32ns_32ns_32_16_1)</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U32 (main_fdiv_32ns_32ns_32_16_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7938,7 +7938,7 @@
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U28 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U31 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7957,7 +7957,7 @@
           </second>
         </item>
         <item>
-          <first>main_fpext_32ns_64_2_1_U31 (main_fpext_32ns_64_2_1)</first>
+          <first>main_fpext_32ns_64_2_1_U34 (main_fpext_32ns_64_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7976,7 +7976,7 @@
           </second>
         </item>
         <item>
-          <first>main_fptrunc_64ns_32_2_1_U30 (main_fptrunc_64ns_32_2_1)</first>
+          <first>main_fptrunc_64ns_32_2_1_U33 (main_fptrunc_64ns_32_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8237,7 +8237,7 @@
           </second>
         </item>
         <item>
-          <first>x_5_fu_249_p3 ( select ) </first>
+          <first>x_2_fu_249_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -8864,7 +8864,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_16_reg_357</first>
+          <first>tmp_4_reg_357</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8902,7 +8902,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_i_73_reg_389</first>
+          <first>tmp_i_50_reg_389</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8940,7 +8940,7 @@
           </second>
         </item>
         <item>
-          <first>x_5_reg_371</first>
+          <first>x_2_reg_371</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8970,49 +8970,49 @@
           </second>
         </item>
         <item>
-          <first>main_dadd_64ns_64ns_64_5_full_dsp_1_U33</first>
+          <first>main_dadd_64ns_64ns_64_5_full_dsp_1_U36</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27</first>
+          <first>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fcmp_32ns_32ns_1_2_1_U32</first>
+          <first>main_fcmp_32ns_32ns_1_2_1_U35</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U29</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U32</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U28</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U31</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fpext_32ns_64_2_1_U31</first>
+          <first>main_fpext_32ns_64_2_1_U34</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fptrunc_64ns_32_2_1_U30</first>
+          <first>main_fptrunc_64ns_32_2_1_U33</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -9031,7 +9031,7 @@
           </second>
         </item>
         <item>
-          <first>main_dadd_64ns_64ns_64_5_full_dsp_1_U33 (main_dadd_64ns_64ns_64_5_full_dsp_1)</first>
+          <first>main_dadd_64ns_64ns_64_5_full_dsp_1_U36 (main_dadd_64ns_64ns_64_5_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9039,7 +9039,7 @@
           </second>
         </item>
         <item>
-          <first>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27 (main_faddfsub_32ns_32ns_32_5_full_dsp_1)</first>
+          <first>main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30 (main_faddfsub_32ns_32ns_32_5_full_dsp_1)</first>
           <second>
             <count>6</count>
             <item_version>0</item_version>
@@ -9052,7 +9052,7 @@
           </second>
         </item>
         <item>
-          <first>main_fcmp_32ns_32ns_1_2_1_U32 (main_fcmp_32ns_32ns_1_2_1)</first>
+          <first>main_fcmp_32ns_32ns_1_2_1_U35 (main_fcmp_32ns_32ns_1_2_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9060,7 +9060,7 @@
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U29 (main_fdiv_32ns_32ns_32_16_1)</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U32 (main_fdiv_32ns_32ns_32_16_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -9069,7 +9069,7 @@
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U28 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U31 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9077,7 +9077,7 @@
           </second>
         </item>
         <item>
-          <first>main_fpext_32ns_64_2_1_U31 (main_fpext_32ns_64_2_1)</first>
+          <first>main_fpext_32ns_64_2_1_U34 (main_fpext_32ns_64_2_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9085,7 +9085,7 @@
           </second>
         </item>
         <item>
-          <first>main_fptrunc_64ns_32_2_1_U30 (main_fptrunc_64ns_32_2_1)</first>
+          <first>main_fptrunc_64ns_32_2_1_U33 (main_fptrunc_64ns_32_2_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9178,7 +9178,7 @@
           </second>
         </item>
         <item>
-          <first>x_5_fu_249_p3 ( select ) </first>
+          <first>x_2_fu_249_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10354,7 +10354,7 @@
         </second>
       </item>
       <item>
-        <first>x_5_fu_249</first>
+        <first>x_2_fu_249</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10930,7 +10930,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_16_reg_357</first>
+        <first>tmp_4_reg_357</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10946,7 +10946,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_i_73_reg_389</first>
+        <first>tmp_i_50_reg_389</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10962,7 +10962,7 @@
         </second>
       </item>
       <item>
-        <first>x_5_reg_371</first>
+        <first>x_2_reg_371</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

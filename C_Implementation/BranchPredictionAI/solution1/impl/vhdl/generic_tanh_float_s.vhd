@@ -198,7 +198,7 @@ architecture behav of generic_tanh_float_s is
     signal and_ln75_reg_348 : STD_LOGIC_VECTOR (0 downto 0);
     signal select_ln67_fu_226_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_124_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_16_reg_357 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_4_reg_357 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal icmp_ln849_1_fu_234_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -206,8 +206,8 @@ architecture behav of generic_tanh_float_s is
     signal bitcast_ln84_fu_244_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal x_5_fu_249_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal x_5_reg_371 : STD_LOGIC_VECTOR (31 downto 0);
+    signal x_2_fu_249_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal x_2_reg_371 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state7 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
     signal grp_exp_generic_double_s_fu_89_ap_return : STD_LOGIC_VECTOR (63 downto 0);
@@ -215,7 +215,7 @@ architecture behav of generic_tanh_float_s is
     signal ap_CS_fsm_state28 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state28 : signal is "none";
     signal grp_fu_129_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_i_73_reg_389 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_i_50_reg_389 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state33 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state33 : signal is "none";
     signal grp_fu_117_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -423,7 +423,7 @@ begin
         x => grp_fu_120_p1,
         ap_return => grp_exp_generic_double_s_fu_89_ap_return);
 
-    main_faddfsub_32ns_32ns_32_5_full_dsp_1_U27 : component main_faddfsub_32ns_32ns_32_5_full_dsp_1
+    main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30 : component main_faddfsub_32ns_32ns_32_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -439,7 +439,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_100_p2);
 
-    main_fmul_32ns_32ns_32_4_max_dsp_1_U28 : component main_fmul_32ns_32ns_32_4_max_dsp_1
+    main_fmul_32ns_32ns_32_4_max_dsp_1_U31 : component main_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -454,7 +454,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_108_p2);
 
-    main_fdiv_32ns_32ns_32_16_1_U29 : component main_fdiv_32ns_32ns_32_16_1
+    main_fdiv_32ns_32ns_32_16_1_U32 : component main_fdiv_32ns_32ns_32_16_1
     generic map (
         ID => 1,
         NUM_STAGE => 16,
@@ -469,7 +469,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_112_p2);
 
-    main_fptrunc_64ns_32_2_1_U30 : component main_fptrunc_64ns_32_2_1
+    main_fptrunc_64ns_32_2_1_U33 : component main_fptrunc_64ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -478,11 +478,11 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => tmp_i_73_reg_389,
+        din0 => tmp_i_50_reg_389,
         ce => ap_const_logic_1,
         dout => grp_fu_117_p1);
 
-    main_fpext_32ns_64_2_1_U31 : component main_fpext_32ns_64_2_1
+    main_fpext_32ns_64_2_1_U34 : component main_fpext_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -491,11 +491,11 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => x_5_reg_371,
+        din0 => x_2_reg_371,
         ce => ap_const_logic_1,
         dout => grp_fu_120_p1);
 
-    main_fcmp_32ns_32ns_1_2_1_U32 : component main_fcmp_32ns_32ns_1_2_1
+    main_fcmp_32ns_32ns_1_2_1_U35 : component main_fcmp_32ns_32ns_1_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -511,7 +511,7 @@ begin
         opcode => ap_const_lv5_4,
         dout => grp_fu_124_p2);
 
-    main_dadd_64ns_64ns_64_5_full_dsp_1_U33 : component main_dadd_64ns_64ns_64_5_full_dsp_1
+    main_dadd_64ns_64ns_64_5_full_dsp_1_U36 : component main_dadd_64ns_64ns_64_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -576,7 +576,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state8) and (icmp_ln841_fu_275_p2 = ap_const_lv1_1) and (icmp_ln833_3_fu_269_p2 = ap_const_lv1_0))) then 
-                expx_reg_58 <= x_5_reg_371;
+                expx_reg_58 <= x_2_reg_371;
             elsif (((ap_const_logic_1 = ap_CS_fsm_state8) and (icmp_ln833_3_fu_269_p2 = ap_const_lv1_1))) then 
                 expx_reg_58 <= ap_const_lv32_0;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state35)) then 
@@ -592,7 +592,7 @@ begin
                 resultf_4_reg_72 <= select_ln67_fu_226_p3;
             elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_fu_124_p2 = ap_const_lv1_0))) then 
                 resultf_4_reg_72 <= ap_const_lv32_3F800000;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_16_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
+            elsif (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_4_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
                 resultf_4_reg_72 <= reg_139;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state82)) then 
                 resultf_4_reg_72 <= grp_fu_112_p2;
@@ -665,7 +665,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                tmp_16_reg_357 <= grp_fu_124_p2;
+                tmp_4_reg_357 <= grp_fu_124_p2;
             end if;
         end if;
     end process;
@@ -673,7 +673,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state33)) then
-                tmp_i_73_reg_389 <= grp_fu_129_p2;
+                tmp_i_50_reg_389 <= grp_fu_129_p2;
             end if;
         end if;
     end process;
@@ -689,7 +689,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state7)) then
-                x_5_reg_371 <= x_5_fu_249_p3;
+                x_2_reg_371 <= x_2_fu_249_p3;
             end if;
         end if;
     end process;
@@ -951,9 +951,9 @@ begin
     end process;
 
 
-    ap_phi_mux_resultf_4_phi_fu_76_p10_assign_proc : process(reg_139, icmp_ln833_reg_340, icmp_ln849_reg_344, and_ln75_reg_348, tmp_16_reg_357, icmp_ln849_1_reg_361, resultf_4_reg_72, ap_CS_fsm_state62)
+    ap_phi_mux_resultf_4_phi_fu_76_p10_assign_proc : process(reg_139, icmp_ln833_reg_340, icmp_ln849_reg_344, and_ln75_reg_348, tmp_4_reg_357, icmp_ln849_1_reg_361, resultf_4_reg_72, ap_CS_fsm_state62)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_16_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_4_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
             ap_phi_mux_resultf_4_phi_fu_76_p10 <= reg_139;
         else 
             ap_phi_mux_resultf_4_phi_fu_76_p10 <= resultf_4_reg_72;
@@ -1065,7 +1065,7 @@ begin
     icmp_ln849_1_fu_234_p2 <= "1" when (unsigned(tmp_V_reg_322) < unsigned(ap_const_lv8_7F)) else "0";
     icmp_ln849_fu_208_p2 <= "1" when (unsigned(tmp_V_fu_169_p4) < unsigned(ap_const_lv8_48)) else "0";
     p_Result_5_fu_188_p3 <= (ap_const_lv1_0 & trunc_ln368_fu_184_p1);
-    p_Val2_1_fu_256_p1 <= x_5_reg_371;
+    p_Val2_1_fu_256_p1 <= x_2_reg_371;
     p_Val2_s_fu_157_p1 <= t_in;
     select_ln67_fu_226_p3 <= 
         ap_const_lv32_3F800000 when (grp_fu_134_p2(0) = '1') else 
@@ -1077,7 +1077,7 @@ begin
     tmp_V_2_fu_259_p4 <= p_Val2_1_fu_256_p1(30 downto 23);
     tmp_V_fu_169_p4 <= p_Val2_s_fu_157_p1(30 downto 23);
     trunc_ln368_fu_184_p1 <= p_Val2_s_fu_157_p1(31 - 1 downto 0);
-    x_5_fu_249_p3 <= 
+    x_2_fu_249_p3 <= 
         grp_fu_100_p2 when (icmp_ln849_1_reg_361(0) = '1') else 
         grp_fu_100_p2;
     xor_ln112_fu_285_p2 <= (bitcast_ln112_fu_281_p1 xor ap_const_lv32_80000000);

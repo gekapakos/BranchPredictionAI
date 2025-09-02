@@ -55,10 +55,10 @@ struct bn_vector_1 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    main_faddfsub_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* main_faddfsub_32ns_32ns_32_5_full_dsp_1_U131;
-    main_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* main_fmul_32ns_32ns_32_4_max_dsp_1_U132;
-    main_fdiv_32ns_32ns_32_16_1<1,16,32,32,32>* main_fdiv_32ns_32ns_32_16_1_U133;
-    main_fsqrt_32ns_32ns_32_12_1<1,12,32,32,32>* main_fsqrt_32ns_32ns_32_12_1_U134;
+    main_faddfsub_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* main_faddfsub_32ns_32ns_32_5_full_dsp_1_U127;
+    main_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* main_fmul_32ns_32ns_32_4_max_dsp_1_U128;
+    main_fdiv_32ns_32ns_32_16_1<1,16,32,32,32>* main_fdiv_32ns_32ns_32_16_1_U129;
+    main_fsqrt_32ns_32ns_32_12_1<1,12,32,32,32>* main_fsqrt_32ns_32ns_32_12_1_U130;
     sc_signal< sc_lv<46> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<32> > grp_fu_102_p2;
@@ -69,9 +69,9 @@ struct bn_vector_1 : public sc_module {
     sc_signal< sc_lv<8> > c_fu_133_p2;
     sc_signal< sc_lv<8> > c_reg_147;
     sc_signal< sc_logic > ap_CS_fsm_state2;
-    sc_signal< sc_lv<64> > zext_ln154_fu_139_p1;
-    sc_signal< sc_lv<64> > zext_ln154_reg_152;
-    sc_signal< sc_lv<1> > icmp_ln153_fu_127_p2;
+    sc_signal< sc_lv<64> > zext_ln203_fu_139_p1;
+    sc_signal< sc_lv<64> > zext_ln203_reg_152;
+    sc_signal< sc_lv<1> > icmp_ln202_fu_127_p2;
     sc_signal< sc_lv<32> > var_load_reg_165;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<7> > v_addr_reg_170;
@@ -80,7 +80,7 @@ struct bn_vector_1 : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state15;
     sc_signal< sc_lv<32> > mean_load_reg_185;
     sc_signal< sc_lv<32> > grp_fu_115_p2;
-    sc_signal< sc_lv<32> > tmp_14_reg_190;
+    sc_signal< sc_lv<32> > tmp_36_reg_190;
     sc_signal< sc_logic > ap_CS_fsm_state35;
     sc_signal< sc_lv<32> > grp_fu_111_p2;
     sc_signal< sc_lv<32> > n_reg_205;
@@ -88,7 +88,7 @@ struct bn_vector_1 : public sc_module {
     sc_signal< sc_lv<32> > gamma_load_reg_210;
     sc_signal< sc_lv<32> > beta_load_reg_215;
     sc_signal< sc_lv<32> > grp_fu_107_p2;
-    sc_signal< sc_lv<32> > tmp_15_reg_220;
+    sc_signal< sc_lv<32> > tmp_37_reg_220;
     sc_signal< sc_logic > ap_CS_fsm_state40;
     sc_signal< sc_lv<8> > c_0_reg_91;
     sc_signal< sc_logic > ap_CS_fsm_state46;
@@ -210,7 +210,7 @@ struct bn_vector_1 : public sc_module {
     void thread_grp_fu_102_opcode();
     void thread_grp_fu_102_p0();
     void thread_grp_fu_102_p1();
-    void thread_icmp_ln153_fu_127_p2();
+    void thread_icmp_ln202_fu_127_p2();
     void thread_mean_address0();
     void thread_mean_ce0();
     void thread_v_address0();
@@ -219,7 +219,7 @@ struct bn_vector_1 : public sc_module {
     void thread_v_we0();
     void thread_var_address0();
     void thread_var_ce0();
-    void thread_zext_ln154_fu_139_p1();
+    void thread_zext_ln203_fu_139_p1();
     void thread_ap_NS_fsm();
 };
 

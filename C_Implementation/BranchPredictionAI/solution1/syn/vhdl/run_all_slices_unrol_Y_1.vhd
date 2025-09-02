@@ -11,8 +11,8 @@ entity run_all_slices_unrol_Y_1_ram is
     generic(
             MEM_TYPE    : string := "block"; 
             DWIDTH     : integer := 32; 
-            AWIDTH     : integer := 11; 
-            MEM_SIZE    : integer := 1152
+            AWIDTH     : integer := 15; 
+            MEM_SIZE    : integer := 18432
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -72,8 +72,8 @@ use IEEE.std_logic_1164.all;
 entity run_all_slices_unrol_Y_1 is
     generic (
         DataWidth : INTEGER := 32;
-        AddressRange : INTEGER := 1152;
-        AddressWidth : INTEGER := 11);
+        AddressRange : INTEGER := 18432;
+        AddressWidth : INTEGER := 15);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

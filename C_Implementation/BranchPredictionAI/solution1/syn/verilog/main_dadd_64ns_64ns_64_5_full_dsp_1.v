@@ -7,7 +7,7 @@
 
 module main_dadd_64ns_64ns_64_5_full_dsp_1
 #(parameter
-    ID         = 33,
+    ID         = 36,
     NUM_STAGE  = 5,
     din0_WIDTH = 64,
     din1_WIDTH = 64,

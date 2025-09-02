@@ -125,9 +125,9 @@ wire    ap_CS_fsm_state45;
 wire   [7:0] c_fu_133_p2;
 reg   [7:0] c_reg_147;
 wire    ap_CS_fsm_state2;
-wire   [63:0] zext_ln154_fu_139_p1;
-reg   [63:0] zext_ln154_reg_152;
-wire   [0:0] icmp_ln153_fu_127_p2;
+wire   [63:0] zext_ln203_fu_139_p1;
+reg   [63:0] zext_ln203_reg_152;
+wire   [0:0] icmp_ln202_fu_127_p2;
 reg   [31:0] var_load_reg_165;
 wire    ap_CS_fsm_state3;
 reg   [6:0] v_addr_reg_170;
@@ -136,7 +136,7 @@ reg   [31:0] v_load_reg_180;
 wire    ap_CS_fsm_state15;
 reg   [31:0] mean_load_reg_185;
 wire   [31:0] grp_fu_115_p2;
-reg   [31:0] tmp_14_reg_190;
+reg   [31:0] tmp_36_reg_190;
 wire    ap_CS_fsm_state35;
 wire   [31:0] grp_fu_111_p2;
 reg   [31:0] n_reg_205;
@@ -144,7 +144,7 @@ wire    ap_CS_fsm_state36;
 reg   [31:0] gamma_load_reg_210;
 reg   [31:0] beta_load_reg_215;
 wire   [31:0] grp_fu_107_p2;
-reg   [31:0] tmp_15_reg_220;
+reg   [31:0] tmp_37_reg_220;
 wire    ap_CS_fsm_state40;
 reg   [7:0] c_0_reg_91;
 wire    ap_CS_fsm_state46;
@@ -170,7 +170,7 @@ main_faddfsub_32ns_32ns_32_5_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_faddfsub_32ns_32ns_32_5_full_dsp_1_U131(
+main_faddfsub_32ns_32ns_32_5_full_dsp_1_U127(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_102_p0),
@@ -186,7 +186,7 @@ main_fmul_32ns_32ns_32_4_max_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fmul_32ns_32ns_32_4_max_dsp_1_U132(
+main_fmul_32ns_32ns_32_4_max_dsp_1_U128(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(gamma_load_reg_210),
@@ -201,11 +201,11 @@ main_fdiv_32ns_32ns_32_16_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fdiv_32ns_32ns_32_16_1_U133(
+main_fdiv_32ns_32ns_32_16_1_U129(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(reg_120),
-    .din1(tmp_14_reg_190),
+    .din1(tmp_36_reg_190),
     .ce(1'b1),
     .dout(grp_fu_111_p2)
 );
@@ -216,7 +216,7 @@ main_fsqrt_32ns_32ns_32_12_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fsqrt_32ns_32ns_32_12_1_U134(
+main_fsqrt_32ns_32ns_32_12_1_U130(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd0),
@@ -270,19 +270,19 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state20)) begin
-        tmp_14_reg_190 <= grp_fu_115_p2;
+        tmp_36_reg_190 <= grp_fu_115_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state40)) begin
-        tmp_15_reg_220 <= grp_fu_107_p2;
+        tmp_37_reg_220 <= grp_fu_107_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        v_addr_reg_170 <= zext_ln154_reg_152;
+        v_addr_reg_170 <= zext_ln203_reg_152;
     end
 end
 
@@ -293,13 +293,13 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln153_fu_127_p2 == 1'd0))) begin
-        zext_ln154_reg_152[7 : 0] <= zext_ln154_fu_139_p1[7 : 0];
+    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln202_fu_127_p2 == 1'd0))) begin
+        zext_ln203_reg_152[7 : 0] <= zext_ln203_fu_139_p1[7 : 0];
     end
 end
 
 always @ (*) begin
-    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((1'b1 == ap_CS_fsm_state2) & (icmp_ln153_fu_127_p2 == 1'd1)))) begin
+    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((1'b1 == ap_CS_fsm_state2) & (icmp_ln202_fu_127_p2 == 1'd1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -315,7 +315,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln153_fu_127_p2 == 1'd1))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln202_fu_127_p2 == 1'd1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -350,7 +350,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state41)) begin
-        grp_fu_102_p0 = tmp_15_reg_220;
+        grp_fu_102_p0 = tmp_37_reg_220;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         grp_fu_102_p0 = v_load_reg_180;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
@@ -384,7 +384,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state46)) begin
         v_address0 = v_addr_reg_170;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        v_address0 = zext_ln154_reg_152;
+        v_address0 = zext_ln203_reg_152;
     end else begin
         v_address0 = 'bx;
     end
@@ -424,7 +424,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln153_fu_127_p2 == 1'd1))) begin
+            if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln202_fu_127_p2 == 1'd1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -604,24 +604,24 @@ assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
 assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
-assign beta_address0 = zext_ln154_reg_152;
+assign beta_address0 = zext_ln203_reg_152;
 
 assign c_fu_133_p2 = (c_0_reg_91 + 8'd1);
 
-assign gamma_address0 = zext_ln154_reg_152;
+assign gamma_address0 = zext_ln203_reg_152;
 
-assign icmp_ln153_fu_127_p2 = ((c_0_reg_91 == 8'd128) ? 1'b1 : 1'b0);
+assign icmp_ln202_fu_127_p2 = ((c_0_reg_91 == 8'd128) ? 1'b1 : 1'b0);
 
-assign mean_address0 = zext_ln154_reg_152;
+assign mean_address0 = zext_ln203_reg_152;
 
 assign v_d0 = reg_120;
 
-assign var_address0 = zext_ln154_fu_139_p1;
+assign var_address0 = zext_ln203_fu_139_p1;
 
-assign zext_ln154_fu_139_p1 = c_0_reg_91;
+assign zext_ln203_fu_139_p1 = c_0_reg_91;
 
 always @ (posedge ap_clk) begin
-    zext_ln154_reg_152[63:8] <= 56'b00000000000000000000000000000000000000000000000000000000;
+    zext_ln203_reg_152[63:8] <= 56'b00000000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //bn_vector_1
