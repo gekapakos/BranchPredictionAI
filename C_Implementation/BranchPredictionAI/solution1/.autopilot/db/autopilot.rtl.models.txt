@@ -31,8 +31,6 @@ conv_bn_act_pool_ConvW4
 run_all_slices_unrol_LSTM_W_ifog0
 run_all_slices_unrol_LSTM_R_ifog0
 run_all_slices_unrol_LSTM_b_ifog0
-run_all_slices_unrol_BN2_gamma0
-run_all_slices_unrol_BN2_beta0
 run_all_slices_unrol_LSTM_W_ifog1
 run_all_slices_unrol_LSTM_R_ifog1
 run_all_slices_unrol_LSTM_W_ifog2
@@ -51,8 +49,7 @@ run_all_slices_unrol_Y8
 run_all_slices_unrol_X0_1
 run_all_slices_unrol_Y_1
 main_fc_0_W
-main_fc_0_bn_gamma
-main_fc_0_bn_beta
+main_fc_0_bn_var
 main_fc_1_W
 main_merged
 main_z0
@@ -60,11 +57,9 @@ conv_bn_act_pool_4
 exp_generic_double_s
 generic_tanh_float_s
 lstm_forward_unidir
-bn_vector
 conv_bn_act_pool_3
 conv_bn_act_pool_2
 conv_bn_act_pool_1
 conv_bn_act_pool
 run_all_slices_unrol
-bn_vector_1
 main

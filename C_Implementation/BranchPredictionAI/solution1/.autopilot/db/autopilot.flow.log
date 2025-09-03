@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1 opened at Tue Sep 02 20:24:46 EEST 2025
+INFO-FLOW: Workspace /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1 opened at Wed Sep 03 12:29:55 EEST 2025
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -94,7 +94,7 @@ Execute     ap_part_info -name xc7z020-clg484-1 -data info
 Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.59 sec.
+Command   open_solution done; 0.58 sec.
 Execute   set_part xc7z020-clg484-1 -tool vivado 
 Execute     ap_part_info -name xc7z020-clg484-1 -data single -quiet 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
@@ -152,75 +152,82 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "main_5_slices.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E main_5_slices.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp
-Command       clang done; 1.54 sec.
+Command       clang done; 1.55 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.22 sec.
+Command       tidy_31 done; 1.17 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp"  -o "/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/useless.bc
-Command       clang done; 3.32 sec.
-INFO-FLOW: Done: GCC PP time: 6.1 seconds per iteration
+Command       clang done; 3.16 sec.
+INFO-FLOW: Done: GCC PP time: 5.9 seconds per iteration
 Execute       source /tools/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /tools/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source /tools/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp std=gnu++98 -directive=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.27 sec.
+Command       tidy_31 done; 1.21 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp std=gnu++98 -directive=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.27 sec.
+Command       tidy_31 done; 1.16 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/xilinx-dataflow-lawyer.main_5_slices.pp.0.cpp.diag.yml /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/xilinx-dataflow-lawyer.main_5_slices.pp.0.cpp.out.log 2> /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/xilinx-dataflow-lawyer.main_5_slices.pp.0.cpp.err.log 
-Command       ap_eval done; 1.14 sec.
+Command       ap_eval done; 1.09 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/tidy-3.1.main_5_slices.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/tidy-3.1.main_5_slices.pp.0.cpp.out.log 2> /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/tidy-3.1.main_5_slices.pp.0.cpp.err.log 
-Command         ap_eval done; 3.94 sec.
+Command         ap_eval done; 3.14 sec.
 Execute         source /tools/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
 Execute           source /tools/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/xilinx-legacy-rewriter.main_5_slices.pp.0.cpp.out.log 2> /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/xilinx-legacy-rewriter.main_5_slices.pp.0.cpp.err.log 
-Command         ap_eval done; 1.76 sec.
-Command       tidy_31 done; 5.72 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 8.1 seconds per iteration
+Command         ap_eval done; 1.06 sec.
+Command       tidy_31 done; 4.2 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 6.4 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 3.79 sec.
+Command       tidy_31 done; 2.22 sec.
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.bc" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.bc
-Command       clang done; 4.77 sec.
+Command       clang done; 3.13 sec.
 INFO-FLOW: Linking Debug ...
 Execute       llvm-ld /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_5_slices.g.bc -hls-opt -except-internalize main -L/tools/Xilinx/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 2.33 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 2050 ; free virtual = 11740
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 2050 ; free virtual = 11740
+Command       llvm-ld done; 1.55 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 3462 ; free virtual = 13323
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 3462 ; free virtual = 13323
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute         transform -promote-dbg-pointer /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.pp.bc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.pp.0.bc -f 
-Command         transform done; 0.56 sec.
+Command         transform done; 0.38 sec.
 Execute         llvm-ld /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/tools/Xilinx/Vivado/2019.1/lnx64/lib -lfloatconversion -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 2.18 sec.
+Command         llvm-ld done; 1.46 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top main -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g.0.bc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [XFORM 203-603] Inlining function 'reluf' into 'conv_bn_act_pool' (main_5_slices.cpp:146).
-INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:323).
-INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:318).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:193).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:191).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:301).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:285).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:269).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:253).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:237).
-INFO: [XFORM 203-603] Inlining function 'sigmoidf' into 'main' (main_5_slices.cpp:327).
-Command         transform done; 69.91 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 2677.098 ; gain = 1986.000 ; free physical = 945 ; free virtual = 10660
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'conv_bn_act_pool' (main_5_slices.cpp:94).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:251).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:246).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:141).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:139).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:229).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:217).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:205).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:193).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:181).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:245).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:250).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:180).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:192).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:204).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:216).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:228).
+INFO: [XFORM 203-603] Inlining function 'sigmoidf' into 'main' (main_5_slices.cpp:255).
+Command         transform done; 49.56 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 2677.098 ; gain = 1986.000 ; free physical = 2503 ; free virtual = 12378
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g.1.bc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g.2.prechk.bc -f 
@@ -239,22 +246,22 @@ INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1
 INFO: [XFORM 203-602] Inlining function 'generic_fabs<float>' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:62) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_nan<float>' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
 INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanhf' into 'lstm_forward_unidir' (main_5_slices.cpp:38->main_5_slices.cpp:191) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanhf' into 'run_all_slices_unrolled' (main_5_slices.cpp:38->main_5_slices.cpp:237) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:291) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:316) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:321) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward' into 'main' (main_5_slices.cpp:326) automatically.
-Command         transform done; 15.51 sec.
+INFO: [XFORM 203-602] Inlining function 'tanhf' into 'lstm_forward_unidir' (main_5_slices.cpp:38->main_5_slices.cpp:139) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanhf' into 'run_all_slices_unrolled' (main_5_slices.cpp:38->main_5_slices.cpp:181) automatically.
+INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:223) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:244) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward' into 'main' (main_5_slices.cpp:254) automatically.
+Command         transform done; 11.27 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-Command         transform done; 0.32 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:55 ; elapsed = 00:01:57 . Memory (MB): peak = 2682.664 ; gain = 1991.566 ; free physical = 845 ; free virtual = 10569
+Command         transform done; 0.26 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 2682.668 ; gain = 1991.570 ; free physical = 2463 ; free virtual = 12340
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.g.1.bc to /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.o.1.bc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-INFO: [XFORM 203-102] Partitioning array 'y_lin' (main_5_slices.cpp:325) automatically.
+INFO: [XFORM 203-102] Partitioning array 'y_lin' (main_5_slices.cpp:253) automatically.
 INFO: [XFORM 203-102] Automatically partitioning small array 'output_b' completely based on array size.
 INFO: [XFORM 203-102] Partitioning array 'output_b' automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
@@ -272,39 +279,39 @@ INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1
 INFO: [XFORM 203-602] Inlining function 'generic_fabs<float>' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:62) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_nan<float>' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
 INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanhf' into 'lstm_forward_unidir' (main_5_slices.cpp:38->main_5_slices.cpp:191) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanhf' into 'run_all_slices_unrolled' (main_5_slices.cpp:38->main_5_slices.cpp:237) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:291) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:316) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:321) automatically.
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var0' in function 'conv_bn_act_pool.4' (main_5_slices.cpp:137:43).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma0' in function 'conv_bn_act_pool.4' (main_5_slices.cpp:138:13).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var1' in function 'conv_bn_act_pool.3' (main_5_slices.cpp:137:43).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma1' in function 'conv_bn_act_pool.3' (main_5_slices.cpp:138:13).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var2' in function 'conv_bn_act_pool.2' (main_5_slices.cpp:137:43).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma2' in function 'conv_bn_act_pool.2' (main_5_slices.cpp:138:13).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var3' in function 'conv_bn_act_pool.1' (main_5_slices.cpp:137:43).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma3' in function 'conv_bn_act_pool.1' (main_5_slices.cpp:138:13).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var4' in function 'conv_bn_act_pool' (main_5_slices.cpp:137:43).
-WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma4' in function 'conv_bn_act_pool' (main_5_slices.cpp:138:13).
-Command         transform done; 15.73 sec.
+INFO: [XFORM 203-602] Inlining function 'tanhf' into 'lstm_forward_unidir' (main_5_slices.cpp:38->main_5_slices.cpp:139) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanhf' into 'run_all_slices_unrolled' (main_5_slices.cpp:38->main_5_slices.cpp:181) automatically.
+INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:223) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:244) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:249) automatically.
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var0' in function 'conv_bn_act_pool.4' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma0' in function 'conv_bn_act_pool.4' (main_5_slices.cpp:86:13).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var1' in function 'conv_bn_act_pool.3' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma1' in function 'conv_bn_act_pool.3' (main_5_slices.cpp:86:13).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var2' in function 'conv_bn_act_pool.2' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma2' in function 'conv_bn_act_pool.2' (main_5_slices.cpp:86:13).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var3' in function 'conv_bn_act_pool.1' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma3' in function 'conv_bn_act_pool.1' (main_5_slices.cpp:86:13).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var4' in function 'conv_bn_act_pool' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma4' in function 'conv_bn_act_pool' (main_5_slices.cpp:86:13).
+Command         transform done; 11.63 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:108:8) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:114:3) in function 'explog_based::generic_tanh<float>'... converting 3 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:83:10) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:9:10) in function 'explog_based::generic_tanh<float>'... converting 4 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185:19) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:368:3) in function 'exp_reduce_::exp_generic<double>'... converting 12 basic blocks.
-Command         transform done; 0.96 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:02:11 ; elapsed = 00:02:13 . Memory (MB): peak = 2682.668 ; gain = 1991.570 ; free physical = 836 ; free virtual = 10594
+Command         transform done; 0.74 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 2682.672 ; gain = 1991.574 ; free physical = 2417 ; free virtual = 12305
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.o.2.bc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-WARNING: [XFORM 203-631] Renaming function 'run_all_slices_unrolled' to 'run_all_slices_unrol' (main_5_slices.cpp:8:25)
+WARNING: [XFORM 203-631] Renaming function 'run_all_slices_unrolled' to 'run_all_slices_unrol' (main_5_slices.cpp:8:22)
 WARNING: [XFORM 203-631] Renaming function 'explog_based::generic_tanh<float>' to 'generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:57)
 WARNING: [XFORM 203-631] Renaming function 'exp_reduce_::exp_generic<double>' to 'exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185)
-Command         transform done; 15.51 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:27 ; elapsed = 00:02:29 . Memory (MB): peak = 2682.668 ; gain = 1991.570 ; free physical = 834 ; free virtual = 10577
+Command         transform done; 12.02 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:47 ; elapsed = 00:01:49 . Memory (MB): peak = 2682.672 ; gain = 1991.574 ; free physical = 2469 ; free virtual = 12347
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 120.7 sec.
-Command     elaborate done; 148.07 sec.
+Command       opt_and_import_c done; 87.33 sec.
+Command     elaborate done; 108.39 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -316,22 +323,19 @@ WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<float>' to 'generi
 WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3' to 'conv_bn_act_pool_3'.
 WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2' to 'conv_bn_act_pool_2'.
 WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.1' to 'conv_bn_act_pool_1'.
-WARNING: [SYN 201-103] Legalizing function name 'bn_vector.1' to 'bn_vector_1'.
 Execute       get_model_list main -filter all-wo-channel -topdown 
 Execute       preproc_iomode -model main 
-Execute       preproc_iomode -model bn_vector.1 
 Execute       preproc_iomode -model run_all_slices_unrol 
 Execute       preproc_iomode -model conv_bn_act_pool 
 Execute       preproc_iomode -model conv_bn_act_pool.1 
 Execute       preproc_iomode -model conv_bn_act_pool.2 
 Execute       preproc_iomode -model conv_bn_act_pool.3 
-Execute       preproc_iomode -model bn_vector 
 Execute       preproc_iomode -model lstm_forward_unidir 
 Execute       preproc_iomode -model generic_tanh<float> 
 Execute       preproc_iomode -model exp_generic<double> 
 Execute       preproc_iomode -model conv_bn_act_pool.4 
 Execute       get_model_list main -filter all-wo-channel 
-INFO-FLOW: Model list for configure: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main
+INFO-FLOW: Model list for configure: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main
 INFO-FLOW: Configuring Module : conv_bn_act_pool.4 ...
 Execute       set_default_model conv_bn_act_pool.4 
 Execute       apply_spec_resource_limit conv_bn_act_pool.4 
@@ -344,9 +348,6 @@ Execute       apply_spec_resource_limit generic_tanh<float>
 INFO-FLOW: Configuring Module : lstm_forward_unidir ...
 Execute       set_default_model lstm_forward_unidir 
 Execute       apply_spec_resource_limit lstm_forward_unidir 
-INFO-FLOW: Configuring Module : bn_vector ...
-Execute       set_default_model bn_vector 
-Execute       apply_spec_resource_limit bn_vector 
 INFO-FLOW: Configuring Module : conv_bn_act_pool.3 ...
 Execute       set_default_model conv_bn_act_pool.3 
 Execute       apply_spec_resource_limit conv_bn_act_pool.3 
@@ -362,13 +363,10 @@ Execute       apply_spec_resource_limit conv_bn_act_pool
 INFO-FLOW: Configuring Module : run_all_slices_unrol ...
 Execute       set_default_model run_all_slices_unrol 
 Execute       apply_spec_resource_limit run_all_slices_unrol 
-INFO-FLOW: Configuring Module : bn_vector.1 ...
-Execute       set_default_model bn_vector.1 
-Execute       apply_spec_resource_limit bn_vector.1 
 INFO-FLOW: Configuring Module : main ...
 Execute       set_default_model main 
 Execute       apply_spec_resource_limit main 
-INFO-FLOW: Model list for preprocess: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main
+INFO-FLOW: Model list for preprocess: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main
 INFO-FLOW: Preprocessing Module: conv_bn_act_pool.4 ...
 Execute       set_default_model conv_bn_act_pool.4 
 Execute       cdfg_preprocess -model conv_bn_act_pool.4 
@@ -385,10 +383,6 @@ INFO-FLOW: Preprocessing Module: lstm_forward_unidir ...
 Execute       set_default_model lstm_forward_unidir 
 Execute       cdfg_preprocess -model lstm_forward_unidir 
 Execute       rtl_gen_preprocess lstm_forward_unidir 
-INFO-FLOW: Preprocessing Module: bn_vector ...
-Execute       set_default_model bn_vector 
-Execute       cdfg_preprocess -model bn_vector 
-Execute       rtl_gen_preprocess bn_vector 
 INFO-FLOW: Preprocessing Module: conv_bn_act_pool.3 ...
 Execute       set_default_model conv_bn_act_pool.3 
 Execute       cdfg_preprocess -model conv_bn_act_pool.3 
@@ -409,15 +403,11 @@ INFO-FLOW: Preprocessing Module: run_all_slices_unrol ...
 Execute       set_default_model run_all_slices_unrol 
 Execute       cdfg_preprocess -model run_all_slices_unrol 
 Execute       rtl_gen_preprocess run_all_slices_unrol 
-INFO-FLOW: Preprocessing Module: bn_vector.1 ...
-Execute       set_default_model bn_vector.1 
-Execute       cdfg_preprocess -model bn_vector.1 
-Execute       rtl_gen_preprocess bn_vector.1 
 INFO-FLOW: Preprocessing Module: main ...
 Execute       set_default_model main 
 Execute       cdfg_preprocess -model main 
 Execute       rtl_gen_preprocess main 
-INFO-FLOW: Model list for synthesis: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main
+INFO-FLOW: Model list for synthesis: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -425,10 +415,9 @@ Execute       set_default_model conv_bn_act_pool.4
 Execute       schedule -model conv_bn_act_pool.4 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 149.06 seconds; current allocated memory: 601.047 MB.
+INFO: [HLS 200-111]  Elapsed time: 109.34 seconds; current allocated memory: 582.550 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_4.verbose.sched.rpt 
 INFO: [HLS 200-434] Only 0 loops out of a total 11 loops have been pipelined in this design.
-Command       syn_report done; 0.13 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_4.sched.adb -f 
 INFO-FLOW: Finish scheduling conv_bn_act_pool.4.
 Execute       set_default_model conv_bn_act_pool.4 
@@ -439,9 +428,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 602.000 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 583.521 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_4.verbose.bind.rpt 
-Command       syn_report done; 0.19 sec.
+Command       syn_report done; 0.14 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_4.bind.adb -f 
 INFO-FLOW: Finish binding conv_bn_act_pool.4.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -460,8 +449,8 @@ WARNING: [SCHED 204-21] The critical path in module 'exp_generic_double_s' consi
 	'select' operation ('select_ln805', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [56]  (0 ns)
 	'select' operation ('r_exp.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [57]  (0.7 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.22 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 602.810 MB.
+Command       schedule done; 0.17 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 584.357 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.verbose.sched.rpt 
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.sched.adb -f 
 INFO-FLOW: Finish scheduling exp_generic<double>.
@@ -473,9 +462,8 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 603.563 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 585.111 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.verbose.bind.rpt 
-Command       syn_report done; 0.15 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.bind.adb -f 
 INFO-FLOW: Finish binding exp_generic<double>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -485,7 +473,7 @@ Execute       set_default_model generic_tanh<float>
 Execute       schedule -model generic_tanh<float> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 604.028 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 585.545 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.verbose.sched.rpt 
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.sched.adb -f 
 INFO-FLOW: Finish scheduling generic_tanh<float>.
@@ -497,9 +485,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 604.535 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 586.050 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.verbose.bind.rpt 
-Command       syn_report done; 0.18 sec.
+Command       syn_report done; 0.13 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.bind.adb -f 
 INFO-FLOW: Finish binding generic_tanh<float>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -509,10 +497,9 @@ Execute       set_default_model lstm_forward_unidir
 Execute       schedule -model lstm_forward_unidir 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.14 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 605.204 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 586.717 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.verbose.sched.rpt 
-Command       syn_report done; 0.15 sec.
+Command       syn_report done; 0.11 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.sched.adb -f 
 INFO-FLOW: Finish scheduling lstm_forward_unidir.
 Execute       set_default_model lstm_forward_unidir 
@@ -523,34 +510,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 606.044 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 587.558 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.verbose.bind.rpt 
-Command       syn_report done; 0.32 sec.
+Command       syn_report done; 0.24 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.bind.adb -f 
 INFO-FLOW: Finish binding lstm_forward_unidir.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'bn_vector' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model bn_vector 
-Execute       schedule -model bn_vector 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 606.317 MB.
-Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.verbose.sched.rpt 
-Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.sched.adb -f 
-INFO-FLOW: Finish scheduling bn_vector.
-Execute       set_default_model bn_vector 
-Execute       bind -model bn_vector 
-BIND OPTION: model=bn_vector
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 606.552 MB.
-Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.verbose.bind.rpt 
-Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.bind.adb -f 
-INFO-FLOW: Finish binding bn_vector.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -558,10 +522,8 @@ Execute       set_default_model conv_bn_act_pool.3
 Execute       schedule -model conv_bn_act_pool.3 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.11 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 607.194 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 588.290 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.verbose.sched.rpt 
-Command       syn_report done; 0.11 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.sched.adb -f 
 INFO-FLOW: Finish scheduling conv_bn_act_pool.3.
 Execute       set_default_model conv_bn_act_pool.3 
@@ -572,9 +534,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 608.003 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 589.091 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.verbose.bind.rpt 
-Command       syn_report done; 0.18 sec.
+Command       syn_report done; 0.12 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.bind.adb -f 
 INFO-FLOW: Finish binding conv_bn_act_pool.3.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -584,9 +546,8 @@ Execute       set_default_model conv_bn_act_pool.2
 Execute       schedule -model conv_bn_act_pool.2 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 608.670 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 589.787 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.verbose.sched.rpt 
-Command       syn_report done; 0.11 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.sched.adb -f 
 INFO-FLOW: Finish scheduling conv_bn_act_pool.2.
 Execute       set_default_model conv_bn_act_pool.2 
@@ -597,9 +558,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 609.469 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 590.594 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.verbose.bind.rpt 
-Command       syn_report done; 0.17 sec.
+Command       syn_report done; 0.12 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.bind.adb -f 
 INFO-FLOW: Finish binding conv_bn_act_pool.2.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -609,9 +570,8 @@ Execute       set_default_model conv_bn_act_pool.1
 Execute       schedule -model conv_bn_act_pool.1 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 610.106 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 591.233 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.verbose.sched.rpt 
-Command       syn_report done; 0.11 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.sched.adb -f 
 INFO-FLOW: Finish scheduling conv_bn_act_pool.1.
 Execute       set_default_model conv_bn_act_pool.1 
@@ -622,9 +582,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 610.948 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 592.075 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.verbose.bind.rpt 
-Command       syn_report done; 0.18 sec.
+Command       syn_report done; 0.12 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.bind.adb -f 
 INFO-FLOW: Finish binding conv_bn_act_pool.1.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -634,10 +594,8 @@ Execute       set_default_model conv_bn_act_pool
 Execute       schedule -model conv_bn_act_pool 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.11 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 611.583 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 592.711 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.verbose.sched.rpt 
-Command       syn_report done; 0.11 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.sched.adb -f 
 INFO-FLOW: Finish scheduling conv_bn_act_pool.
 Execute       set_default_model conv_bn_act_pool 
@@ -648,9 +606,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 612.394 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 593.511 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.verbose.bind.rpt 
-Command       syn_report done; 0.18 sec.
+Command       syn_report done; 0.12 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.bind.adb -f 
 INFO-FLOW: Finish binding conv_bn_act_pool.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -660,8 +618,10 @@ Execute       set_default_model run_all_slices_unrol
 Execute       schedule -model run_all_slices_unrol 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 612.969 MB.
+Command       schedule done; 0.14 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 594.652 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.verbose.sched.rpt 
+Command       syn_report done; 0.19 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.sched.adb -f 
 INFO-FLOW: Finish scheduling run_all_slices_unrol.
 Execute       set_default_model run_all_slices_unrol 
@@ -672,35 +632,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 1.66 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.78 seconds; current allocated memory: 614.526 MB.
+Command       bind done; 0.88 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.12 seconds; current allocated memory: 597.137 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.verbose.bind.rpt 
-Command       syn_report done; 0.78 sec.
+Command       syn_report done; 0.61 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.bind.adb -f 
 INFO-FLOW: Finish binding run_all_slices_unrol.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'bn_vector_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model bn_vector.1 
-Execute       schedule -model bn_vector.1 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.87 seconds; current allocated memory: 615.143 MB.
-Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.verbose.sched.rpt 
-Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.sched.adb -f 
-INFO-FLOW: Finish scheduling bn_vector.1.
-Execute       set_default_model bn_vector.1 
-Execute       bind -model bn_vector.1 
-BIND OPTION: model=bn_vector.1
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 615.379 MB.
-Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.verbose.bind.rpt 
-Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.bind.adb -f 
-INFO-FLOW: Finish binding bn_vector.1.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'main' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -708,7 +645,7 @@ Execute       set_default_model main
 Execute       schedule -model main 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 615.765 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 598.169 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.verbose.sched.rpt 
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.sched.adb -f 
 INFO-FLOW: Finish scheduling main.
@@ -720,10 +657,10 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.67 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.77 seconds; current allocated memory: 616.575 MB.
+Command       bind done; 0.3 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 599.186 MB.
 Execute       syn_report -verbosereport -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.verbose.bind.rpt 
-Command       syn_report done; 0.91 sec.
+Command       syn_report done; 0.62 sec.
 Execute       db_write -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.bind.adb -f 
 INFO-FLOW: Finish binding main.
 Execute       get_model_list main -filter all-wo-channel 
@@ -732,15 +669,13 @@ Execute       rtl_gen_preprocess conv_bn_act_pool.4
 Execute       rtl_gen_preprocess exp_generic<double> 
 Execute       rtl_gen_preprocess generic_tanh<float> 
 Execute       rtl_gen_preprocess lstm_forward_unidir 
-Execute       rtl_gen_preprocess bn_vector 
 Execute       rtl_gen_preprocess conv_bn_act_pool.3 
 Execute       rtl_gen_preprocess conv_bn_act_pool.2 
 Execute       rtl_gen_preprocess conv_bn_act_pool.1 
 Execute       rtl_gen_preprocess conv_bn_act_pool 
 Execute       rtl_gen_preprocess run_all_slices_unrol 
-Execute       rtl_gen_preprocess bn_vector.1 
 Execute       rtl_gen_preprocess main 
-INFO-FLOW: Model list for RTL generation: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main
+INFO-FLOW: Model list for RTL generation: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -753,15 +688,15 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_4'.
-INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 618.666 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 601.272 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl conv_bn_act_pool.4 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool_4 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl conv_bn_act_pool.4 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool_4 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl conv_bn_act_pool.4 -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/conv_bn_act_pool_4 
 Execute       gen_rtl conv_bn_act_pool.4 -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/conv_bn_act_pool_4 
 Execute       syn_report -csynth -model conv_bn_act_pool.4 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_4_csynth.rpt 
 Execute       syn_report -rtlxml -model conv_bn_act_pool.4 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_4_csynth.xml 
 Execute       syn_report -verbosereport -model conv_bn_act_pool.4 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_4.verbose.rpt 
-Command       syn_report done; 0.22 sec.
+Command       syn_report done; 0.13 sec.
 Execute       db_write -model conv_bn_act_pool.4 -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_4.adb 
 Execute       gen_tb_info conv_bn_act_pool.4 -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_4 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -776,17 +711,16 @@ INFO: [RTGEN 206-100] Generating core module 'main_mul_44ns_49ns_93_2_1': 1 inst
 INFO: [RTGEN 206-100] Generating core module 'main_mul_50ns_50ns_100_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_mul_72ns_13s_84_5_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 623.298 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 605.927 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl exp_generic<double> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/exp_generic_double_s -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl exp_generic<double> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/exp_generic_double_s -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl exp_generic<double> -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/exp_generic_double_s 
 Execute       gen_rtl exp_generic<double> -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/exp_generic_double_s 
 Execute       syn_report -csynth -model exp_generic<double> -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/exp_generic_double_s_csynth.rpt 
 Execute       syn_report -rtlxml -model exp_generic<double> -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/exp_generic_double_s_csynth.xml 
 Execute       syn_report -verbosereport -model exp_generic<double> -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.verbose.rpt 
-Command       syn_report done; 0.2 sec.
+Command       syn_report done; 0.12 sec.
 Execute       db_write -model exp_generic<double> -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.adb 
-Command       db_write done; 0.13 sec.
 Execute       gen_tb_info exp_generic<double> -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_float_s' 
@@ -802,15 +736,15 @@ INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1
 INFO: [RTGEN 206-100] Generating core module 'main_fpext_32ns_64_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fptrunc_64ns_32_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_float_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 627.303 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 609.964 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl generic_tanh<float> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/generic_tanh_float_s -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl generic_tanh<float> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/generic_tanh_float_s -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl generic_tanh<float> -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/generic_tanh_float_s 
 Execute       gen_rtl generic_tanh<float> -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/generic_tanh_float_s 
 Execute       syn_report -csynth -model generic_tanh<float> -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/generic_tanh_float_s_csynth.rpt 
 Execute       syn_report -rtlxml -model generic_tanh<float> -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/generic_tanh_float_s_csynth.xml 
 Execute       syn_report -verbosereport -model generic_tanh<float> -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.verbose.rpt 
-Command       syn_report done; 0.21 sec.
+Command       syn_report done; 0.14 sec.
 Execute       db_write -model generic_tanh<float> -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.adb 
 Execute       gen_tb_info generic_tanh<float> -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -824,39 +758,17 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 2 in
 INFO: [RTGEN 206-100] Generating core module 'main_fexp_32ns_32ns_32_9_full_dsp_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_unidir'.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 630.302 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 612.943 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl lstm_forward_unidir -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/lstm_forward_unidir -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl lstm_forward_unidir -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/lstm_forward_unidir -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl lstm_forward_unidir -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/lstm_forward_unidir 
 Execute       gen_rtl lstm_forward_unidir -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/lstm_forward_unidir 
 Execute       syn_report -csynth -model lstm_forward_unidir -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/lstm_forward_unidir_csynth.rpt 
 Execute       syn_report -rtlxml -model lstm_forward_unidir -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/lstm_forward_unidir_csynth.xml 
 Execute       syn_report -verbosereport -model lstm_forward_unidir -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.verbose.rpt 
-Command       syn_report done; 0.35 sec.
+Command       syn_report done; 0.23 sec.
 Execute       db_write -model lstm_forward_unidir -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.adb 
-Command       db_write done; 0.15 sec.
 Execute       gen_tb_info lstm_forward_unidir -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'bn_vector' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       get_config_rtl -module_prefix 
-Execute       get_config_rtl -module_auto_prefix 
-Execute       create_rtl_model bn_vector -vendor xilinx -mg_file /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'main_faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'bn_vector'.
-INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 633.574 MB.
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl bn_vector -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/bn_vector -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
-Execute       gen_rtl bn_vector -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/bn_vector 
-Execute       gen_rtl bn_vector -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/bn_vector 
-Execute       syn_report -csynth -model bn_vector -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/bn_vector_csynth.rpt 
-Execute       syn_report -rtlxml -model bn_vector -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/bn_vector_csynth.xml 
-Execute       syn_report -verbosereport -model bn_vector -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.verbose.rpt 
-Execute       db_write -model bn_vector -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.adb 
-Execute       gen_tb_info bn_vector -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -869,17 +781,17 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_3'.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 635.843 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 617.215 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl conv_bn_act_pool.3 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool_3 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl conv_bn_act_pool.3 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool_3 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl conv_bn_act_pool.3 -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/conv_bn_act_pool_3 
 Execute       gen_rtl conv_bn_act_pool.3 -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/conv_bn_act_pool_3 
 Execute       syn_report -csynth -model conv_bn_act_pool.3 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_3_csynth.rpt 
 Execute       syn_report -rtlxml -model conv_bn_act_pool.3 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_3_csynth.xml 
 Execute       syn_report -verbosereport -model conv_bn_act_pool.3 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.verbose.rpt 
-Command       syn_report done; 0.2 sec.
+Command       syn_report done; 0.13 sec.
 Execute       db_write -model conv_bn_act_pool.3 -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.adb 
-Command       db_write done; 0.17 sec.
+Command       db_write done; 0.12 sec.
 Execute       gen_tb_info conv_bn_act_pool.3 -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_2' 
@@ -893,17 +805,17 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_2'.
-INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 640.409 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 621.809 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl conv_bn_act_pool.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool_2 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl conv_bn_act_pool.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool_2 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl conv_bn_act_pool.2 -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/conv_bn_act_pool_2 
 Execute       gen_rtl conv_bn_act_pool.2 -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/conv_bn_act_pool_2 
 Execute       syn_report -csynth -model conv_bn_act_pool.2 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_2_csynth.rpt 
 Execute       syn_report -rtlxml -model conv_bn_act_pool.2 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_2_csynth.xml 
 Execute       syn_report -verbosereport -model conv_bn_act_pool.2 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.verbose.rpt 
-Command       syn_report done; 0.19 sec.
+Command       syn_report done; 0.16 sec.
 Execute       db_write -model conv_bn_act_pool.2 -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.adb 
-Command       db_write done; 0.17 sec.
+Command       db_write done; 0.13 sec.
 Execute       gen_tb_info conv_bn_act_pool.2 -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_1' 
@@ -917,17 +829,17 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 645.043 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 626.393 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl conv_bn_act_pool.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool_1 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl conv_bn_act_pool.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool_1 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl conv_bn_act_pool.1 -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/conv_bn_act_pool_1 
 Execute       gen_rtl conv_bn_act_pool.1 -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/conv_bn_act_pool_1 
 Execute       syn_report -csynth -model conv_bn_act_pool.1 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_1_csynth.rpt 
 Execute       syn_report -rtlxml -model conv_bn_act_pool.1 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_1_csynth.xml 
 Execute       syn_report -verbosereport -model conv_bn_act_pool.1 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.verbose.rpt 
-Command       syn_report done; 0.2 sec.
+Command       syn_report done; 0.13 sec.
 Execute       db_write -model conv_bn_act_pool.1 -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.adb 
-Command       db_write done; 0.22 sec.
+Command       db_write done; 0.14 sec.
 Execute       gen_tb_info conv_bn_act_pool.1 -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool' 
@@ -941,17 +853,17 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool'.
-INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 649.576 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 630.964 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl conv_bn_act_pool -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl conv_bn_act_pool -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/conv_bn_act_pool -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl conv_bn_act_pool -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/conv_bn_act_pool 
 Execute       gen_rtl conv_bn_act_pool -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/conv_bn_act_pool 
 Execute       syn_report -csynth -model conv_bn_act_pool -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_csynth.rpt 
 Execute       syn_report -rtlxml -model conv_bn_act_pool -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/conv_bn_act_pool_csynth.xml 
 Execute       syn_report -verbosereport -model conv_bn_act_pool -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.verbose.rpt 
-Command       syn_report done; 0.2 sec.
+Command       syn_report done; 0.13 sec.
 Execute       db_write -model conv_bn_act_pool -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.adb 
-Command       db_write done; 0.22 sec.
+Command       db_write done; 0.15 sec.
 Execute       gen_tb_info conv_bn_act_pool -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrol' 
@@ -960,43 +872,23 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model run_all_slices_unrol -vendor xilinx -mg_file /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrol'.
-Command       create_rtl_model done; 1.02 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.57 seconds; current allocated memory: 665.437 MB.
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl run_all_slices_unrol -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/run_all_slices_unrol -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
-Execute       gen_rtl run_all_slices_unrol -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/run_all_slices_unrol 
-Execute       gen_rtl run_all_slices_unrol -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/run_all_slices_unrol 
-Execute       syn_report -csynth -model run_all_slices_unrol -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/run_all_slices_unrol_csynth.rpt 
-Command       syn_report done; 0.13 sec.
-Execute       syn_report -rtlxml -model run_all_slices_unrol -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/run_all_slices_unrol_csynth.xml 
-Execute       syn_report -verbosereport -model run_all_slices_unrol -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.verbose.rpt 
-Command       syn_report done; 0.73 sec.
-Execute       db_write -model run_all_slices_unrol -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.adb 
-Command       db_write done; 0.24 sec.
-Execute       gen_tb_info run_all_slices_unrol -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'bn_vector_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       get_config_rtl -module_prefix 
-Execute       get_config_rtl -module_auto_prefix 
-Execute       create_rtl_model bn_vector.1 -vendor xilinx -mg_file /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'main_faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'bn_vector_1'.
-INFO: [HLS 200-111]  Elapsed time: 1.23 seconds; current allocated memory: 669.446 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrol'.
+Command       create_rtl_model done; 0.69 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.06 seconds; current allocated memory: 648.559 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl bn_vector.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/bn_vector_1 -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
-Execute       gen_rtl bn_vector.1 -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/bn_vector_1 
-Execute       gen_rtl bn_vector.1 -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/bn_vector_1 
-Execute       syn_report -csynth -model bn_vector.1 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/bn_vector_1_csynth.rpt 
-Execute       syn_report -rtlxml -model bn_vector.1 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/bn_vector_1_csynth.xml 
-Execute       syn_report -verbosereport -model bn_vector.1 -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.verbose.rpt 
-Execute       db_write -model bn_vector.1 -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.adb 
-Command       db_write done; 0.16 sec.
-Execute       gen_tb_info bn_vector.1 -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1 
+Execute       gen_rtl run_all_slices_unrol -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/run_all_slices_unrol -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
+Execute       gen_rtl run_all_slices_unrol -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/run_all_slices_unrol 
+Execute       gen_rtl run_all_slices_unrol -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/run_all_slices_unrol 
+Execute       syn_report -csynth -model run_all_slices_unrol -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/run_all_slices_unrol_csynth.rpt 
+Execute       syn_report -rtlxml -model run_all_slices_unrol -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/run_all_slices_unrol_csynth.xml 
+Execute       syn_report -verbosereport -model run_all_slices_unrol -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.verbose.rpt 
+Command       syn_report done; 0.65 sec.
+Execute       db_write -model run_all_slices_unrol -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.adb 
+Command       db_write done; 0.2 sec.
+Execute       gen_tb_info run_all_slices_unrol -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'main' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1006,24 +898,26 @@ Execute       create_rtl_model main -vendor xilinx -mg_file /home/gkapakos/Deskt
 INFO: [RTGEN 206-500] Setting interface mode on function 'main' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fcmp_32ns_32ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'main'.
-Command       create_rtl_model done; 0.2 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 673.707 MB.
+Command       create_rtl_model done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.16 seconds; current allocated memory: 657.865 MB.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.rtl_wrap.cfg.tcl 
-Execute       gen_rtl main -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/main -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main 
+Execute       gen_rtl main -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/systemc/main -synmodules conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main 
 Execute       gen_rtl main -istop -style xilinx -f -lang vhdl -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/vhdl/main 
 Execute       gen_rtl main -istop -style xilinx -f -lang vlog -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/verilog/main 
 Execute       syn_report -csynth -model main -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/main_csynth.rpt 
 Execute       syn_report -rtlxml -model main -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/syn/report/main_csynth.xml 
 Execute       syn_report -verbosereport -model main -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.verbose.rpt 
-Command       syn_report done; 0.87 sec.
+Command       syn_report done; 0.63 sec.
 Execute       db_write -model main -f -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.adb 
-Command       db_write done; 0.21 sec.
+Command       db_write done; 0.16 sec.
 Execute       gen_tb_info main -p /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main 
 Execute       export_constraint_db -f -tool general -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.constraint.tcl 
 Execute       syn_report -designview -model main -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.design.xml 
-Command       syn_report done; 0.58 sec.
+Command       syn_report done; 0.42 sec.
 Execute       get_config_rtl -disable_wave_debug 
 Execute       syn_report -wcfg -model main -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main_dataflow_ana.wcfg 
 Execute       syn_report -protoinst -model main -o /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.protoinst 
@@ -1031,7 +925,7 @@ Execute       get_config_debug -directory
 Execute       sc_get_clocks main 
 Execute       get_config_export -vivado_clock 
 Execute       sc_get_portdomain main 
-INFO-FLOW: Model list for RTL component generation: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir bn_vector conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol bn_vector.1 main
+INFO-FLOW: Model list for RTL component generation: conv_bn_act_pool.4 exp_generic<double> generic_tanh<float> lstm_forward_unidir conv_bn_act_pool.3 conv_bn_act_pool.2 conv_bn_act_pool.1 conv_bn_act_pool run_all_slices_unrol main
 INFO-FLOW: Handling components in module [conv_bn_act_pool_4] ... 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_4.compgen.tcl 
 INFO-FLOW: Found component main_fadd_32ns_32ns_32_5_full_dsp_1.
@@ -1086,8 +980,6 @@ INFO-FLOW: Found component lstm_forward_unidir_c_slice.
 INFO-FLOW: Append model lstm_forward_unidir_c_slice
 INFO-FLOW: Found component lstm_forward_unidir_z.
 INFO-FLOW: Append model lstm_forward_unidir_z
-INFO-FLOW: Handling components in module [bn_vector] ... 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.compgen.tcl 
 INFO-FLOW: Handling components in module [conv_bn_act_pool_3] ... 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.compgen.tcl 
 INFO-FLOW: Found component conv_bn_act_pool_3_X01.
@@ -1118,10 +1010,6 @@ INFO-FLOW: Found component run_all_slices_unrol_LSTM_R_ifog0.
 INFO-FLOW: Append model run_all_slices_unrol_LSTM_R_ifog0
 INFO-FLOW: Found component run_all_slices_unrol_LSTM_b_ifog0.
 INFO-FLOW: Append model run_all_slices_unrol_LSTM_b_ifog0
-INFO-FLOW: Found component run_all_slices_unrol_BN2_gamma0.
-INFO-FLOW: Append model run_all_slices_unrol_BN2_gamma0
-INFO-FLOW: Found component run_all_slices_unrol_BN2_beta0.
-INFO-FLOW: Append model run_all_slices_unrol_BN2_beta0
 INFO-FLOW: Found component run_all_slices_unrol_LSTM_W_ifog1.
 INFO-FLOW: Append model run_all_slices_unrol_LSTM_W_ifog1
 INFO-FLOW: Found component run_all_slices_unrol_LSTM_R_ifog1.
@@ -1156,16 +1044,12 @@ INFO-FLOW: Found component run_all_slices_unrol_X0_1.
 INFO-FLOW: Append model run_all_slices_unrol_X0_1
 INFO-FLOW: Found component run_all_slices_unrol_Y_1.
 INFO-FLOW: Append model run_all_slices_unrol_Y_1
-INFO-FLOW: Handling components in module [bn_vector_1] ... 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.compgen.tcl 
 INFO-FLOW: Handling components in module [main] ... 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.compgen.tcl 
 INFO-FLOW: Found component main_fc_0_W.
 INFO-FLOW: Append model main_fc_0_W
-INFO-FLOW: Found component main_fc_0_bn_gamma.
-INFO-FLOW: Append model main_fc_0_bn_gamma
-INFO-FLOW: Found component main_fc_0_bn_beta.
-INFO-FLOW: Append model main_fc_0_bn_beta
+INFO-FLOW: Found component main_fc_0_bn_var.
+INFO-FLOW: Append model main_fc_0_bn_var
 INFO-FLOW: Found component main_fc_1_W.
 INFO-FLOW: Append model main_fc_1_W
 INFO-FLOW: Found component main_merged.
@@ -1176,16 +1060,14 @@ INFO-FLOW: Append model conv_bn_act_pool_4
 INFO-FLOW: Append model exp_generic_double_s
 INFO-FLOW: Append model generic_tanh_float_s
 INFO-FLOW: Append model lstm_forward_unidir
-INFO-FLOW: Append model bn_vector
 INFO-FLOW: Append model conv_bn_act_pool_3
 INFO-FLOW: Append model conv_bn_act_pool_2
 INFO-FLOW: Append model conv_bn_act_pool_1
 INFO-FLOW: Append model conv_bn_act_pool
 INFO-FLOW: Append model run_all_slices_unrol
-INFO-FLOW: Append model bn_vector_1
 INFO-FLOW: Append model main
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: main_fadd_32ns_32ns_32_5_full_dsp_1 main_fmul_32ns_32ns_32_4_max_dsp_1 main_fdiv_32ns_32ns_32_16_1 main_fcmp_32ns_32ns_1_2_1 main_fsqrt_32ns_32ns_32_12_1 conv_bn_act_pool_4_X0 conv_bn_act_pool_4_ConvW0 conv_bn_act_pool_4_BN1_var0 main_mul_72ns_13s_84_5_1 main_mul_36ns_43ns_79_2_1 main_mul_44ns_49ns_93_2_1 main_mul_50ns_50ns_100_2_1 main_mac_muladd_16ns_16s_19s_31_1_1 exp_generic_double_s_table_exp_Z1_array_s exp_generic_double_s_table_f_Z3_array_V exp_generic_double_s_table_f_Z2_array_V main_faddfsub_32ns_32ns_32_5_full_dsp_1 main_fptrunc_64ns_32_2_1 main_fpext_32ns_64_2_1 main_dadd_64ns_64ns_64_5_full_dsp_1 main_fexp_32ns_32ns_32_9_full_dsp_1 lstm_forward_unidir_c_slice lstm_forward_unidir_z conv_bn_act_pool_3_X01 conv_bn_act_pool_3_ConvW1 conv_bn_act_pool_2_X04 conv_bn_act_pool_2_ConvW2 conv_bn_act_pool_1_X07 conv_bn_act_pool_1_ConvW3 conv_bn_act_pool_ConvW4 run_all_slices_unrol_LSTM_W_ifog0 run_all_slices_unrol_LSTM_R_ifog0 run_all_slices_unrol_LSTM_b_ifog0 run_all_slices_unrol_BN2_gamma0 run_all_slices_unrol_BN2_beta0 run_all_slices_unrol_LSTM_W_ifog1 run_all_slices_unrol_LSTM_R_ifog1 run_all_slices_unrol_LSTM_W_ifog2 run_all_slices_unrol_LSTM_R_ifog2 run_all_slices_unrol_LSTM_W_ifog3 run_all_slices_unrol_LSTM_R_ifog3 run_all_slices_unrol_tokens4 run_all_slices_unrol_Emb4 run_all_slices_unrol_LSTM_W_ifog4 run_all_slices_unrol_LSTM_R_ifog4 run_all_slices_unrol_Y run_all_slices_unrol_U run_all_slices_unrol_Y2 run_all_slices_unrol_Y5 run_all_slices_unrol_Y8 run_all_slices_unrol_X0_1 run_all_slices_unrol_Y_1 main_fc_0_W main_fc_0_bn_gamma main_fc_0_bn_beta main_fc_1_W main_merged main_z0 conv_bn_act_pool_4 exp_generic_double_s generic_tanh_float_s lstm_forward_unidir bn_vector conv_bn_act_pool_3 conv_bn_act_pool_2 conv_bn_act_pool_1 conv_bn_act_pool run_all_slices_unrol bn_vector_1 main
+INFO-FLOW: All models in this session: main_fadd_32ns_32ns_32_5_full_dsp_1 main_fmul_32ns_32ns_32_4_max_dsp_1 main_fdiv_32ns_32ns_32_16_1 main_fcmp_32ns_32ns_1_2_1 main_fsqrt_32ns_32ns_32_12_1 conv_bn_act_pool_4_X0 conv_bn_act_pool_4_ConvW0 conv_bn_act_pool_4_BN1_var0 main_mul_72ns_13s_84_5_1 main_mul_36ns_43ns_79_2_1 main_mul_44ns_49ns_93_2_1 main_mul_50ns_50ns_100_2_1 main_mac_muladd_16ns_16s_19s_31_1_1 exp_generic_double_s_table_exp_Z1_array_s exp_generic_double_s_table_f_Z3_array_V exp_generic_double_s_table_f_Z2_array_V main_faddfsub_32ns_32ns_32_5_full_dsp_1 main_fptrunc_64ns_32_2_1 main_fpext_32ns_64_2_1 main_dadd_64ns_64ns_64_5_full_dsp_1 main_fexp_32ns_32ns_32_9_full_dsp_1 lstm_forward_unidir_c_slice lstm_forward_unidir_z conv_bn_act_pool_3_X01 conv_bn_act_pool_3_ConvW1 conv_bn_act_pool_2_X04 conv_bn_act_pool_2_ConvW2 conv_bn_act_pool_1_X07 conv_bn_act_pool_1_ConvW3 conv_bn_act_pool_ConvW4 run_all_slices_unrol_LSTM_W_ifog0 run_all_slices_unrol_LSTM_R_ifog0 run_all_slices_unrol_LSTM_b_ifog0 run_all_slices_unrol_LSTM_W_ifog1 run_all_slices_unrol_LSTM_R_ifog1 run_all_slices_unrol_LSTM_W_ifog2 run_all_slices_unrol_LSTM_R_ifog2 run_all_slices_unrol_LSTM_W_ifog3 run_all_slices_unrol_LSTM_R_ifog3 run_all_slices_unrol_tokens4 run_all_slices_unrol_Emb4 run_all_slices_unrol_LSTM_W_ifog4 run_all_slices_unrol_LSTM_R_ifog4 run_all_slices_unrol_Y run_all_slices_unrol_U run_all_slices_unrol_Y2 run_all_slices_unrol_Y5 run_all_slices_unrol_Y8 run_all_slices_unrol_X0_1 run_all_slices_unrol_Y_1 main_fc_0_W main_fc_0_bn_var main_fc_1_W main_merged main_z0 conv_bn_act_pool_4 exp_generic_double_s generic_tanh_float_s lstm_forward_unidir conv_bn_act_pool_3 conv_bn_act_pool_2 conv_bn_act_pool_1 conv_bn_act_pool run_all_slices_unrol main
 INFO-FLOW: To file: write model main_fadd_32ns_32ns_32_5_full_dsp_1
 INFO-FLOW: To file: write model main_fmul_32ns_32ns_32_4_max_dsp_1
 INFO-FLOW: To file: write model main_fdiv_32ns_32ns_32_16_1
@@ -1219,8 +1101,6 @@ INFO-FLOW: To file: write model conv_bn_act_pool_ConvW4
 INFO-FLOW: To file: write model run_all_slices_unrol_LSTM_W_ifog0
 INFO-FLOW: To file: write model run_all_slices_unrol_LSTM_R_ifog0
 INFO-FLOW: To file: write model run_all_slices_unrol_LSTM_b_ifog0
-INFO-FLOW: To file: write model run_all_slices_unrol_BN2_gamma0
-INFO-FLOW: To file: write model run_all_slices_unrol_BN2_beta0
 INFO-FLOW: To file: write model run_all_slices_unrol_LSTM_W_ifog1
 INFO-FLOW: To file: write model run_all_slices_unrol_LSTM_R_ifog1
 INFO-FLOW: To file: write model run_all_slices_unrol_LSTM_W_ifog2
@@ -1239,8 +1119,7 @@ INFO-FLOW: To file: write model run_all_slices_unrol_Y8
 INFO-FLOW: To file: write model run_all_slices_unrol_X0_1
 INFO-FLOW: To file: write model run_all_slices_unrol_Y_1
 INFO-FLOW: To file: write model main_fc_0_W
-INFO-FLOW: To file: write model main_fc_0_bn_gamma
-INFO-FLOW: To file: write model main_fc_0_bn_beta
+INFO-FLOW: To file: write model main_fc_0_bn_var
 INFO-FLOW: To file: write model main_fc_1_W
 INFO-FLOW: To file: write model main_merged
 INFO-FLOW: To file: write model main_z0
@@ -1248,13 +1127,11 @@ INFO-FLOW: To file: write model conv_bn_act_pool_4
 INFO-FLOW: To file: write model exp_generic_double_s
 INFO-FLOW: To file: write model generic_tanh_float_s
 INFO-FLOW: To file: write model lstm_forward_unidir
-INFO-FLOW: To file: write model bn_vector
 INFO-FLOW: To file: write model conv_bn_act_pool_3
 INFO-FLOW: To file: write model conv_bn_act_pool_2
 INFO-FLOW: To file: write model conv_bn_act_pool_1
 INFO-FLOW: To file: write model conv_bn_act_pool
 INFO-FLOW: To file: write model run_all_slices_unrol
-INFO-FLOW: To file: write model bn_vector_1
 INFO-FLOW: To file: write model main
 INFO-FLOW: Finished generating RTL model list.
 
@@ -1328,7 +1205,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 0.66 sec.
+Command       ap_source done; 0.47 sec.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1376,7 +1253,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 0.2 sec.
+Command       ap_source done; 0.14 sec.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1395,7 +1272,6 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet
 INFO: [RTMG 210-278] Implementing memory 'lstm_forward_unidir_z_ram (RAM)' using block RAMs.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1411,7 +1287,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 0.66 sec.
+Command       ap_source done; 0.43 sec.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1427,7 +1303,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 0.79 sec.
+Command       ap_source done; 0.52 sec.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1443,7 +1319,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 1.1 sec.
+Command       ap_source done; 0.69 sec.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1452,7 +1328,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 0.45 sec.
+Command       ap_source done; 0.3 sec.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.compgen.tcl 
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog0' is read-only, switch it to a ROM.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
@@ -1474,22 +1350,6 @@ WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_b_ifog0' is read-only,
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_b_ifog0_rom' using block ROMs.
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_BN2_gamma0' is read-only, switch it to a ROM.
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_BN2_gamma0_rom' using block ROMs.
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_BN2_beta0' is read-only, switch it to a ROM.
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_BN2_beta0_rom' using block ROMs.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
@@ -1593,8 +1453,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet
 INFO: [RTMG 210-278] Implementing memory 'run_all_slices_unrol_Y_1_ram (RAM)' using block RAMs.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 10.64 sec.
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.compgen.tcl 
+Command       ap_source done; 7.52 sec.
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1603,18 +1462,9 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-WARNING: [RTMG 210-274] Memory 'main_fc_0_bn_gamma' is read-only, switch it to a ROM.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-279] Implementing memory 'main_fc_0_bn_gamma_rom' using block ROMs.
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-WARNING: [RTMG 210-274] Memory 'main_fc_0_bn_beta' is read-only, switch it to a ROM.
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-279] Implementing memory 'main_fc_0_bn_beta_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'main_fc_0_bn_var_rom' using auto ROMs.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
@@ -1632,7 +1482,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet
 INFO: [RTMG 210-278] Implementing memory 'main_z0_ram (RAM)' using block RAMs.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 1.44 sec.
+Command       ap_source done; 0.98 sec.
 INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD: read_platform_lib /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/global.setting.tcl
@@ -1692,13 +1542,11 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.compgen.tcl 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/global.setting.tcl 
@@ -1706,13 +1554,11 @@ Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Pa
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.compgen.tcl 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.compgen.tcl 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1738,13 +1584,11 @@ Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Pa
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.compgen.tcl 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.compgen.tcl 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.compgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.compgen.tcl 
 Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1757,7 +1601,7 @@ Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Pa
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=4
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=1
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=70 #gSsdmPorts=4
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=65 #gSsdmPorts=4
 Execute       source /tools/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/global.setting.tcl 
@@ -1792,13 +1636,11 @@ Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Pa
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/exp_generic_double_s.tbgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/generic_tanh_float_s.tbgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/lstm_forward_unidir.tbgen.tcl 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector.tbgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_3.tbgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_2.tbgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool_1.tbgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/conv_bn_act_pool.tbgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/run_all_slices_unrol.tbgen.tcl 
-Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/bn_vector_1.tbgen.tcl 
 Execute       source /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/main.tbgen.tcl 
 Execute       get_config_sdx -target 
 Execute       get_config_sdx -profile 
@@ -1807,10 +1649,10 @@ Execute       get_config_rtl -stall_sig_gen
 Execute       get_config_rtl -profile 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:00 ; elapsed = 00:03:06 . Memory (MB): peak = 2682.668 ; gain = 1991.570 ; free physical = 685 ; free virtual = 10496
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 2682.672 ; gain = 1991.574 ; free physical = 2338 ; free virtual = 12259
 INFO: [VHDL 208-304] Generating VHDL RTL for main.
 INFO: [VLOG 209-307] Generating Verilog RTL for main.
-Command     autosyn done; 37.51 sec.
-Command   csynth_design done; 185.59 sec.
-Command ap_source done; 186.25 sec.
+Command     autosyn done; 25.57 sec.
+Command   csynth_design done; 133.96 sec.
+Command ap_source done; 134.63 sec.
 Execute cleanup_all 

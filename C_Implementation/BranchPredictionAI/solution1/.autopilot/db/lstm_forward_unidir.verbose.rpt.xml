@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'lstm_forward_unidir'" level="0">
-<item name = "Date">Tue Sep  2 20:27:26 2025
+<item name = "Date">Wed Sep  3 12:31:51 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -97,9 +97,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln176_fu_486_p2">+, 0, 0, 15, 9, 9</column>
-<column name="add_ln178_fu_528_p2">+, 0, 0, 12, 12, 12</column>
-<column name="add_ln184_fu_587_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln124_fu_486_p2">+, 0, 0, 15, 9, 9</column>
+<column name="add_ln126_fu_528_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln132_fu_587_p2">+, 0, 0, 12, 12, 12</column>
 <column name="d_fu_476_p2">+, 0, 0, 15, 6, 1</column>
 <column name="g_1_fu_513_p2">+, 0, 0, 15, 8, 1</column>
 <column name="g_3_fu_572_p2">+, 0, 0, 15, 8, 1</column>
@@ -108,18 +108,18 @@
 <column name="j_14_fu_603_p2">+, 0, 0, 15, 6, 1</column>
 <column name="j_fu_421_p2">+, 0, 0, 15, 6, 1</column>
 <column name="t_fu_439_p2">+, 0, 0, 13, 4, 1</column>
-<column name="icmp_ln166_fu_415_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln169_fu_433_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="icmp_ln171_fu_445_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln175_fu_470_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln178_fu_507_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln181_fu_538_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln184_fu_566_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln187_fu_597_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="xor_ln188_fu_629_p2">xor, 0, 0, 33, 32, 33</column>
-<column name="xor_ln189_1_fu_614_p2">xor, 0, 0, 7, 6, 7</column>
-<column name="xor_ln189_fu_643_p2">xor, 0, 0, 33, 32, 33</column>
-<column name="xor_ln190_fu_671_p2">xor, 0, 0, 33, 32, 33</column>
+<column name="icmp_ln114_fu_415_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln117_fu_433_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="icmp_ln119_fu_445_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln123_fu_470_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln126_fu_507_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln129_fu_538_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln132_fu_566_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln135_fu_597_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="xor_ln136_fu_629_p2">xor, 0, 0, 33, 32, 33</column>
+<column name="xor_ln137_1_fu_614_p2">xor, 0, 0, 7, 6, 7</column>
+<column name="xor_ln137_fu_643_p2">xor, 0, 0, 33, 32, 33</column>
+<column name="xor_ln138_fu_671_p2">xor, 0, 0, 33, 32, 33</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -183,19 +183,19 @@
 <column name="shl_ln_reg_724">4, 0, 9, 5</column>
 <column name="t_0_reg_246">4, 0, 4, 0</column>
 <column name="t_reg_701">4, 0, 4, 0</column>
-<column name="tmp_4_reg_920">32, 0, 32, 0</column>
-<column name="tmp_5_reg_875">32, 0, 32, 0</column>
-<column name="tmp_6_reg_890">32, 0, 32, 0</column>
-<column name="tmp_9_reg_895">32, 0, 32, 0</column>
-<column name="trunc_ln177_reg_742">5, 0, 5, 0</column>
-<column name="trunc_ln183_reg_793">5, 0, 5, 0</column>
-<column name="xor_ln189_1_reg_850">6, 0, 6, 0</column>
+<column name="tmp_32_reg_875">32, 0, 32, 0</column>
+<column name="tmp_33_reg_890">32, 0, 32, 0</column>
+<column name="tmp_35_reg_895">32, 0, 32, 0</column>
+<column name="tmp_37_reg_920">32, 0, 32, 0</column>
+<column name="trunc_ln125_reg_742">5, 0, 5, 0</column>
+<column name="trunc_ln131_reg_793">5, 0, 5, 0</column>
+<column name="xor_ln137_1_reg_850">6, 0, 6, 0</column>
 <column name="xv_reg_747">32, 0, 32, 0</column>
 <column name="z_addr_1_reg_770">7, 0, 7, 0</column>
 <column name="z_addr_6_reg_821">7, 0, 7, 0</column>
 <column name="z_load_2_reg_860">32, 0, 32, 0</column>
-<column name="zext_ln171_reg_714">8, 0, 64, 56</column>
-<column name="zext_ln188_reg_839">6, 0, 64, 58</column>
+<column name="zext_ln119_reg_714">8, 0, 64, 56</column>
+<column name="zext_ln136_reg_839">6, 0, 64, 58</column>
 </table>
 </item>
 </section>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'exp_generic_double_s'" level="0">
-<item name = "Date">Tue Sep  2 20:27:25 2025
+<item name = "Date">Wed Sep  3 12:31:51 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -206,14 +206,14 @@
 <column name="select_ln253_reg_1149">54, 0, 54, 0</column>
 <column name="sext_ln1311_1_reg_1178">32, 0, 32, 0</column>
 <column name="sext_ln682_reg_1168">64, 0, 71, 7</column>
-<column name="tmp_13_reg_1229">71, 0, 71, 0</column>
-<column name="tmp_14_reg_1308">40, 0, 40, 0</column>
-<column name="tmp_15_reg_1329">36, 0, 36, 0</column>
-<column name="tmp_7_reg_1370">1, 0, 1, 0</column>
+<column name="tmp_10_reg_1292">20, 0, 20, 0</column>
+<column name="tmp_11_reg_1308">40, 0, 40, 0</column>
+<column name="tmp_12_reg_1329">36, 0, 36, 0</column>
+<column name="tmp_5_reg_1370">1, 0, 1, 0</column>
+<column name="tmp_9_reg_1229">71, 0, 71, 0</column>
 <column name="tmp_V_reg_1132">11, 0, 11, 0</column>
 <column name="tmp_i_reg_1277">34, 0, 43, 9</column>
 <column name="tmp_i_reg_1277_pp0_iter11_reg">34, 0, 43, 9</column>
-<column name="tmp_s_reg_1292">20, 0, 20, 0</column>
 <column name="Z2_V_reg_1239">64, 32, 8, 0</column>
 <column name="and_ln18_reg_1162">64, 32, 1, 0</column>
 <column name="and_ln209_reg_1155">64, 32, 1, 0</column>
@@ -227,7 +227,7 @@
 <column name="r_exp_V_3_reg_1212">64, 32, 13, 0</column>
 <column name="ret_V_4_reg_1266">64, 32, 36, 0</column>
 <column name="select_ln253_reg_1149">5, 2, 54, 0</column>
-<column name="tmp_14_reg_1308">1, 1, 40, 0</column>
+<column name="tmp_11_reg_1308">1, 1, 40, 0</column>
 </table>
 </item>
 </section>

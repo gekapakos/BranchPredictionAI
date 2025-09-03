@@ -185,7 +185,7 @@ generic_tanh_float_s::generic_tanh_float_s(sc_module_name name) : sc_module(name
     main_fptrunc_64ns_32_2_1_U33 = new main_fptrunc_64ns_32_2_1<1,2,64,32>("main_fptrunc_64ns_32_2_1_U33");
     main_fptrunc_64ns_32_2_1_U33->clk(ap_clk);
     main_fptrunc_64ns_32_2_1_U33->reset(ap_rst);
-    main_fptrunc_64ns_32_2_1_U33->din0(tmp_i_50_reg_389);
+    main_fptrunc_64ns_32_2_1_U33->din0(tmp_i_57_reg_389);
     main_fptrunc_64ns_32_2_1_U33->ce(ap_var_for_const0);
     main_fptrunc_64ns_32_2_1_U33->dout(grp_fu_117_p1);
     main_fpext_32ns_64_2_1_U34 = new main_fpext_32ns_64_2_1<1,2,32,64>("main_fpext_32ns_64_2_1_U34");
@@ -310,7 +310,7 @@ generic_tanh_float_s::generic_tanh_float_s(sc_module_name name) : sc_module(name
     sensitive << ( icmp_ln833_reg_340 );
     sensitive << ( icmp_ln849_reg_344 );
     sensitive << ( and_ln75_reg_348 );
-    sensitive << ( tmp_4_reg_357 );
+    sensitive << ( tmp_5_reg_357 );
     sensitive << ( icmp_ln849_1_reg_361 );
     sensitive << ( resultf_4_reg_72 );
     sensitive << ( ap_CS_fsm_state62 );
@@ -540,7 +540,7 @@ generic_tanh_float_s::generic_tanh_float_s(sc_module_name name) : sc_module(name
     sc_trace(mVcdFile, and_ln75_reg_348, "and_ln75_reg_348");
     sc_trace(mVcdFile, select_ln67_fu_226_p3, "select_ln67_fu_226_p3");
     sc_trace(mVcdFile, grp_fu_124_p2, "grp_fu_124_p2");
-    sc_trace(mVcdFile, tmp_4_reg_357, "tmp_4_reg_357");
+    sc_trace(mVcdFile, tmp_5_reg_357, "tmp_5_reg_357");
     sc_trace(mVcdFile, ap_CS_fsm_state2, "ap_CS_fsm_state2");
     sc_trace(mVcdFile, icmp_ln849_1_fu_234_p2, "icmp_ln849_1_fu_234_p2");
     sc_trace(mVcdFile, icmp_ln849_1_reg_361, "icmp_ln849_1_reg_361");
@@ -553,7 +553,7 @@ generic_tanh_float_s::generic_tanh_float_s(sc_module_name name) : sc_module(name
     sc_trace(mVcdFile, tmp_i_reg_384, "tmp_i_reg_384");
     sc_trace(mVcdFile, ap_CS_fsm_state28, "ap_CS_fsm_state28");
     sc_trace(mVcdFile, grp_fu_129_p2, "grp_fu_129_p2");
-    sc_trace(mVcdFile, tmp_i_50_reg_389, "tmp_i_50_reg_389");
+    sc_trace(mVcdFile, tmp_i_57_reg_389, "tmp_i_57_reg_389");
     sc_trace(mVcdFile, ap_CS_fsm_state33, "ap_CS_fsm_state33");
     sc_trace(mVcdFile, grp_fu_117_p1, "grp_fu_117_p1");
     sc_trace(mVcdFile, ap_CS_fsm_state35, "ap_CS_fsm_state35");
@@ -683,7 +683,7 @@ void generic_tanh_float_s::thread_ap_clk_no_reset_() {
                 esl_seteq<1,1,1>(icmp_ln833_reg_340.read(), ap_const_lv1_0) && 
                 esl_seteq<1,1,1>(icmp_ln849_reg_344.read(), ap_const_lv1_0) && 
                 esl_seteq<1,1,1>(ap_const_lv1_0, and_ln75_reg_348.read()) && 
-                esl_seteq<1,1,1>(ap_const_lv1_1, tmp_4_reg_357.read()) && 
+                esl_seteq<1,1,1>(ap_const_lv1_1, tmp_5_reg_357.read()) && 
                 esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln849_1_reg_361.read()))) {
         resultf_4_reg_72 = reg_139.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state82.read())) {
@@ -717,10 +717,10 @@ void generic_tanh_float_s::thread_ap_clk_no_reset_() {
         reg_151 = grp_fu_100_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        tmp_4_reg_357 = grp_fu_124_p2.read();
+        tmp_5_reg_357 = grp_fu_124_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state33.read())) {
-        tmp_i_50_reg_389 = grp_fu_129_p2.read();
+        tmp_i_57_reg_389 = grp_fu_129_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state28.read())) {
         tmp_i_reg_384 = grp_exp_generic_double_s_fu_89_ap_return.read();
@@ -862,7 +862,7 @@ void generic_tanh_float_s::thread_ap_phi_mux_resultf_4_phi_fu_76_p10() {
          esl_seteq<1,1,1>(icmp_ln833_reg_340.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(icmp_ln849_reg_344.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_lv1_0, and_ln75_reg_348.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_1, tmp_4_reg_357.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_1, tmp_5_reg_357.read()) && 
          esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln849_1_reg_361.read()))) {
         ap_phi_mux_resultf_4_phi_fu_76_p10 = reg_139.read();
     } else {

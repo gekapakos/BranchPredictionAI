@@ -98884,7 +98884,7 @@ static inline void embedding_forward_dyn(const int32_t *tokens, int Tlen,
         for(int e=0;e<E;++e) dst[e]=row[e];
     }
 }
-# 111 "main_5_slices.cpp"
+
 typedef enum { ACT_RELU, ACT_TANH, ACT_SIGMOID } act_t;
 static inline void conv_bn_act_pool(const float *X,int Tlen,
                                     const float *W,int Ksz,
@@ -98975,8 +98975,8 @@ static inline void lstm_forward_unidir(const float *x,int Tlen,int D,
 
 static inline void bn_vector(float *v,int C, const float *gamma,const float *beta,const float *mean,const float *var,float eps)
 {
-
-    for(int c=0;c<C;++c){
+#pragma HLS INLINE
+ for(int c=0;c<C;++c){
         float n = (v[c]-mean[c]) / sqrtf(var[c]+eps);
         v[c] = gamma[c]*n + beta[c];
     }
@@ -99005,10 +99005,6 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
         conv_bn_act_pool(X0, T0, ConvW0, K, ConvB0, Y, T10,
         BN1_gamma0, BN1_beta0, BN1_mean0, BN1_var0, BN_eps,
         ACT_RELU, P0, U);
-
-
-
-
         lstm_forward_unidir(U, T20, F, LSTM_W_ifog0, LSTM_R_ifog0, LSTM_b_ifog0, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma0, BN2_beta0, BN2_mean0, BN2_var0, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);
@@ -99021,10 +99017,6 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
         conv_bn_act_pool(X0, T1, ConvW1, K, ConvB1, Y, T11,
         BN1_gamma1, BN1_beta1, BN1_mean1, BN1_var1, BN_eps,
         ACT_RELU, P1, U);
-
-
-
-
         lstm_forward_unidir(U, T21, F, LSTM_W_ifog1, LSTM_R_ifog1, LSTM_b_ifog1, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma1, BN2_beta1, BN2_mean1, BN2_var1, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);
@@ -99037,10 +99029,6 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
         conv_bn_act_pool(X0, T2, ConvW2, K, ConvB2, Y, T12,
         BN1_gamma2, BN1_beta2, BN1_mean2, BN1_var2, BN_eps,
         ACT_RELU, P2, U);
-
-
-
-
         lstm_forward_unidir(U, T22, F, LSTM_W_ifog2, LSTM_R_ifog2, LSTM_b_ifog2, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma2, BN2_beta2, BN2_mean2, BN2_var2, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);
@@ -99053,10 +99041,6 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
         conv_bn_act_pool(X0, T3, ConvW3, K, ConvB3, Y, T13,
         BN1_gamma3, BN1_beta3, BN1_mean3, BN1_var3, BN_eps,
         ACT_RELU, P3, U);
-
-
-
-
         lstm_forward_unidir(U, T23, F, LSTM_W_ifog3, LSTM_R_ifog3, LSTM_b_ifog3, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma3, BN2_beta3, BN2_mean3, BN2_var3, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);
@@ -99069,10 +99053,6 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
         conv_bn_act_pool(X0, T4, ConvW4, K, ConvB4, Y, T14,
         BN1_gamma4, BN1_beta4, BN1_mean4, BN1_var4, BN_eps,
         ACT_RELU, P4, U);
-
-
-
-
         lstm_forward_unidir(U, T24, F, LSTM_W_ifog4, LSTM_R_ifog4, LSTM_b_ifog4, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma4, BN2_beta4, BN2_mean4, BN2_var4, BN_eps);
         for (j=0;j<H;++j) merged[j] += tanhf_fast(h_slice[j]);

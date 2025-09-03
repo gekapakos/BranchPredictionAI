@@ -960,7 +960,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>tmp_4</name>
+						<name>tmp_5</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>80</lineNumber>
@@ -1820,7 +1820,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>tmp_i_50</name>
+						<name>tmp_i_57</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>12</lineNumber>
@@ -1876,7 +1876,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>tmp_15_i</name>
+						<name>tmp_51_i</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>12</lineNumber>
@@ -2075,7 +2075,7 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>tmp_12</name>
+						<name>tmp_41</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>100</lineNumber>
@@ -2124,7 +2124,7 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>tmp_13</name>
+						<name>tmp_42</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>100</lineNumber>
@@ -2401,7 +2401,7 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>tmp_11</name>
+						<name>tmp_40</name>
 						<fileName>/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h</fileName>
 						<fileDirectory>/wrk/2019.1/continuous/2019_05_24_2552052/src/products</fileDirectory>
 						<lineNumber>95</lineNumber>

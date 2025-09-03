@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'generic_tanh_float_s'" level="0">
-<item name = "Date">Tue Sep  2 20:27:26 2025
+<item name = "Date">Wed Sep  3 12:31:51 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -133,9 +133,9 @@
 <column name="reg_145">32, 0, 32, 0</column>
 <column name="reg_151">32, 0, 32, 0</column>
 <column name="resultf_4_reg_72">32, 0, 32, 0</column>
-<column name="tmp_4_reg_357">1, 0, 1, 0</column>
+<column name="tmp_5_reg_357">1, 0, 1, 0</column>
 <column name="tmp_V_reg_322">8, 0, 8, 0</column>
-<column name="tmp_i_50_reg_389">64, 0, 64, 0</column>
+<column name="tmp_i_57_reg_389">64, 0, 64, 0</column>
 <column name="tmp_i_reg_384">64, 0, 64, 0</column>
 <column name="x_2_reg_371">32, 0, 32, 0</column>
 </table>

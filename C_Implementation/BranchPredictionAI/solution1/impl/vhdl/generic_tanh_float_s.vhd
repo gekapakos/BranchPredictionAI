@@ -198,7 +198,7 @@ architecture behav of generic_tanh_float_s is
     signal and_ln75_reg_348 : STD_LOGIC_VECTOR (0 downto 0);
     signal select_ln67_fu_226_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_124_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_4_reg_357 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_5_reg_357 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal icmp_ln849_1_fu_234_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -215,7 +215,7 @@ architecture behav of generic_tanh_float_s is
     signal ap_CS_fsm_state28 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state28 : signal is "none";
     signal grp_fu_129_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_i_50_reg_389 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_i_57_reg_389 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state33 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state33 : signal is "none";
     signal grp_fu_117_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -478,7 +478,7 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => tmp_i_50_reg_389,
+        din0 => tmp_i_57_reg_389,
         ce => ap_const_logic_1,
         dout => grp_fu_117_p1);
 
@@ -592,7 +592,7 @@ begin
                 resultf_4_reg_72 <= select_ln67_fu_226_p3;
             elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_fu_124_p2 = ap_const_lv1_0))) then 
                 resultf_4_reg_72 <= ap_const_lv32_3F800000;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_4_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
+            elsif (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_5_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
                 resultf_4_reg_72 <= reg_139;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state82)) then 
                 resultf_4_reg_72 <= grp_fu_112_p2;
@@ -665,7 +665,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                tmp_4_reg_357 <= grp_fu_124_p2;
+                tmp_5_reg_357 <= grp_fu_124_p2;
             end if;
         end if;
     end process;
@@ -673,7 +673,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state33)) then
-                tmp_i_50_reg_389 <= grp_fu_129_p2;
+                tmp_i_57_reg_389 <= grp_fu_129_p2;
             end if;
         end if;
     end process;
@@ -951,9 +951,9 @@ begin
     end process;
 
 
-    ap_phi_mux_resultf_4_phi_fu_76_p10_assign_proc : process(reg_139, icmp_ln833_reg_340, icmp_ln849_reg_344, and_ln75_reg_348, tmp_4_reg_357, icmp_ln849_1_reg_361, resultf_4_reg_72, ap_CS_fsm_state62)
+    ap_phi_mux_resultf_4_phi_fu_76_p10_assign_proc : process(reg_139, icmp_ln833_reg_340, icmp_ln849_reg_344, and_ln75_reg_348, tmp_5_reg_357, icmp_ln849_1_reg_361, resultf_4_reg_72, ap_CS_fsm_state62)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_4_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_5_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
             ap_phi_mux_resultf_4_phi_fu_76_p10 <= reg_139;
         else 
             ap_phi_mux_resultf_4_phi_fu_76_p10 <= resultf_4_reg_72;

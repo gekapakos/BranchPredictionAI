@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'run_all_slices_unrol'" level="0">
-<item name = "Date">Tue Sep  2 20:27:22 2025
+<item name = "Date">Wed Sep  3 12:31:48 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -24,33 +24,37 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">120400575, 120640575, 120400575, 120640575, none</column>
+<column name="">120400565, 120640565, 120400565, 120640565, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_lstm_forward_unidir_fu_434">lstm_forward_unidir, 1203934, 1250014, 1203934, 1250014, none</column>
-<column name="grp_generic_tanh_float_s_fu_467">generic_tanh_float_s, 1, 61, 1, 61, none</column>
-<column name="grp_conv_bn_act_pool_fu_478">conv_bn_act_pool, 64919860, 64919860, 64919860, 64919860, none</column>
-<column name="grp_conv_bn_act_pool_1_fu_491">conv_bn_act_pool_1, 27732148, 27732148, 27732148, 27732148, none</column>
-<column name="grp_conv_bn_act_pool_2_fu_505">conv_bn_act_pool_2, 12684148, 12684148, 12684148, 12684148, none</column>
-<column name="grp_conv_bn_act_pool_3_fu_519">conv_bn_act_pool_3, 6045750, 6045750, 6045750, 6045750, none</column>
-<column name="grp_conv_bn_act_pool_4_fu_533">conv_bn_act_pool_4, 2950976, 2950976, 2950976, 2950976, none</column>
-<column name="grp_bn_vector_fu_547">bn_vector, 1441, 1441, 1441, 1441, none</column>
+<column name="grp_lstm_forward_unidir_fu_636">lstm_forward_unidir, 1203934, 1250014, 1203934, 1250014, none</column>
+<column name="grp_generic_tanh_float_s_fu_669">generic_tanh_float_s, 1, 61, 1, 61, none</column>
+<column name="grp_conv_bn_act_pool_fu_680">conv_bn_act_pool, 64919860, 64919860, 64919860, 64919860, none</column>
+<column name="grp_conv_bn_act_pool_1_fu_693">conv_bn_act_pool_1, 27732148, 27732148, 27732148, 27732148, none</column>
+<column name="grp_conv_bn_act_pool_2_fu_707">conv_bn_act_pool_2, 12684148, 12684148, 12684148, 12684148, none</column>
+<column name="grp_conv_bn_act_pool_3_fu_721">conv_bn_act_pool_3, 6045750, 6045750, 6045750, 6045750, none</column>
+<column name="grp_conv_bn_act_pool_4_fu_735">conv_bn_act_pool_4, 2950976, 2950976, 2950976, 2950976, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">32, 32, 1, -, -, 32, no</column>
-<column name="- Loop 2">352, 2272, 11 ~ 71, -, -, 32, no</column>
+<column name="- Loop 2">1440, 1440, 45, -, -, 32, no</column>
 <column name="- Loop 3">352, 2272, 11 ~ 71, -, -, 32, no</column>
-<column name="- Loop 4">352, 2272, 11 ~ 71, -, -, 32, no</column>
+<column name="- Loop 4">1440, 1440, 45, -, -, 32, no</column>
 <column name="- Loop 5">352, 2272, 11 ~ 71, -, -, 32, no</column>
-<column name="- Loop 6">38994, 38994, 67, -, -, 582, no</column>
-<column name=" + Loop 6.1">64, 64, 2, -, -, 32, no</column>
+<column name="- Loop 6">1440, 1440, 45, -, -, 32, no</column>
 <column name="- Loop 7">352, 2272, 11 ~ 71, -, -, 32, no</column>
+<column name="- Loop 8">1440, 1440, 45, -, -, 32, no</column>
+<column name="- Loop 9">352, 2272, 11 ~ 71, -, -, 32, no</column>
+<column name="- Loop 10">38994, 38994, 67, -, -, 582, no</column>
+<column name=" + Loop 10.1">64, 64, 2, -, -, 32, no</column>
+<column name="- Loop 11">1440, 1440, 45, -, -, 32, no</column>
+<column name="- Loop 12">352, 2272, 11 ~ 71, -, -, 32, no</column>
 </table>
 </item>
 </section>

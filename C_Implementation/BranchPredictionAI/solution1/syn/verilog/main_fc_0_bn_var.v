@@ -3,22 +3,22 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-(* rom_style = "block" *) module run_all_slices_unrol_BN2_gamma0_rom (
+module main_fc_0_bn_var_rom (
 addr0, ce0, q0, clk);
 
 parameter DWIDTH = 32;
-parameter AWIDTH = 5;
-parameter MEM_SIZE = 32;
+parameter AWIDTH = 7;
+parameter MEM_SIZE = 128;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
 output reg[DWIDTH-1:0] q0;
 input clk;
 
-(* ram_style = "block" *)reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
+reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
 
 initial begin
-    $readmemh("./run_all_slices_unrol_BN2_gamma0_rom.dat", ram);
+    $readmemh("./main_fc_0_bn_var_rom.dat", ram);
 end
 
 
@@ -36,7 +36,7 @@ end
 endmodule
 
 `timescale 1 ns / 1 ps
-module run_all_slices_unrol_BN2_gamma0(
+module main_fc_0_bn_var(
     reset,
     clk,
     address0,
@@ -44,8 +44,8 @@ module run_all_slices_unrol_BN2_gamma0(
     q0);
 
 parameter DataWidth = 32'd32;
-parameter AddressRange = 32'd32;
-parameter AddressWidth = 32'd5;
+parameter AddressRange = 32'd128;
+parameter AddressWidth = 32'd7;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;
@@ -54,7 +54,7 @@ output[DataWidth - 1:0] q0;
 
 
 
-run_all_slices_unrol_BN2_gamma0_rom run_all_slices_unrol_BN2_gamma0_rom_U(
+main_fc_0_bn_var_rom main_fc_0_bn_var_rom_U(
     .clk( clk ),
     .addr0( address0 ),
     .ce0( ce0 ),

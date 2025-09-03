@@ -6,11 +6,11 @@ library ieee;
 use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all;
 
-entity run_all_slices_unrol_BN2_beta0_rom is 
+entity main_fc_0_bn_var_rom is 
     generic(
              DWIDTH     : integer := 32; 
-             AWIDTH     : integer := 5; 
-             MEM_SIZE    : integer := 32
+             AWIDTH     : integer := 7; 
+             MEM_SIZE    : integer := 128
     ); 
     port (
           addr0      : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -21,16 +21,13 @@ entity run_all_slices_unrol_BN2_beta0_rom is
 end entity; 
 
 
-architecture rtl of run_all_slices_unrol_BN2_beta0_rom is 
+architecture rtl of main_fc_0_bn_var_rom is 
 
 signal addr0_tmp : std_logic_vector(AWIDTH-1 downto 0); 
 type mem_array is array (0 to MEM_SIZE-1) of std_logic_vector (DWIDTH-1 downto 0); 
-signal mem : mem_array := (others=>(others=>'0'));
+signal mem : mem_array := (
+    0 to 127=> "00111111100000000000000000000000" );
 
-attribute syn_rom_style : string;
-attribute syn_rom_style of mem : signal is "block_rom";
-attribute ROM_STYLE : string;
-attribute ROM_STYLE of mem : signal is "block";
 
 begin 
 
@@ -61,11 +58,11 @@ end rtl;
 Library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity run_all_slices_unrol_BN2_beta0 is
+entity main_fc_0_bn_var is
     generic (
         DataWidth : INTEGER := 32;
-        AddressRange : INTEGER := 32;
-        AddressWidth : INTEGER := 5);
+        AddressRange : INTEGER := 128;
+        AddressWidth : INTEGER := 7);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;
@@ -74,8 +71,8 @@ entity run_all_slices_unrol_BN2_beta0 is
         q0 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
 end entity;
 
-architecture arch of run_all_slices_unrol_BN2_beta0 is
-    component run_all_slices_unrol_BN2_beta0_rom is
+architecture arch of main_fc_0_bn_var is
+    component main_fc_0_bn_var_rom is
         port (
             clk : IN STD_LOGIC;
             addr0 : IN STD_LOGIC_VECTOR;
@@ -86,7 +83,7 @@ architecture arch of run_all_slices_unrol_BN2_beta0 is
 
 
 begin
-    run_all_slices_unrol_BN2_beta0_rom_U :  component run_all_slices_unrol_BN2_beta0_rom
+    main_fc_0_bn_var_rom_U :  component main_fc_0_bn_var_rom
     port map (
         clk => clk,
         addr0 => address0,

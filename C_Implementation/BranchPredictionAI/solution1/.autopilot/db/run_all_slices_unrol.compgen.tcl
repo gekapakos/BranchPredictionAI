@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 104
+set ID 98
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_W_ifog0
 set CoreName ap_simcore_mem
@@ -87,7 +87,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 105
+set ID 99
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_R_ifog0
 set CoreName ap_simcore_mem
@@ -173,7 +173,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 106
+set ID 100
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_b_ifog0
 set CoreName ap_simcore_mem
@@ -259,179 +259,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 107
-set hasByteEnable 0
-set MemName run_all_slices_unrol_BN2_gamma0
-set CoreName ap_simcore_mem
-set PortList { 1 3 }
-set DataWd 32
-set AddrRange 32
-set AddrWd 5
-set impl_style block
-set TrueReset 0
-set IsROM 1
-set ROMData { "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" "00111111100000000000000000000000" }
-set HasInitializer 1
-set Initializer $ROMData
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 3.254
-set ClkPeriod 10
-set RegisteredInput 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-} else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
-}
-
-
-set CoreName RAM
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
-  }
-}
-
-
-# Memory (RAM/ROM)  definition:
-set ID 108
-set hasByteEnable 0
-set MemName run_all_slices_unrol_BN2_beta0
-set CoreName ap_simcore_mem
-set PortList { 1 3 }
-set DataWd 32
-set AddrRange 32
-set AddrWd 5
-set impl_style block
-set TrueReset 0
-set IsROM 1
-set ROMData { }
-set HasInitializer 1
-set Initializer $ROMData
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 3.254
-set ClkPeriod 10
-set RegisteredInput 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-} else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
-}
-
-
-set CoreName RAM
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
-  }
-}
-
-
-# Memory (RAM/ROM)  definition:
-set ID 109
+set ID 101
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_W_ifog1
 set CoreName ap_simcore_mem
@@ -517,7 +345,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 110
+set ID 102
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_R_ifog1
 set CoreName ap_simcore_mem
@@ -603,7 +431,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 111
+set ID 103
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_W_ifog2
 set CoreName ap_simcore_mem
@@ -689,7 +517,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 112
+set ID 104
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_R_ifog2
 set CoreName ap_simcore_mem
@@ -775,7 +603,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 113
+set ID 105
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_W_ifog3
 set CoreName ap_simcore_mem
@@ -861,7 +689,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 114
+set ID 106
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_R_ifog3
 set CoreName ap_simcore_mem
@@ -947,7 +775,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 115
+set ID 107
 set hasByteEnable 0
 set MemName run_all_slices_unrol_tokens4
 set CoreName ap_simcore_mem
@@ -1030,7 +858,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 116
+set ID 108
 set hasByteEnable 0
 set MemName run_all_slices_unrol_Emb4
 set CoreName ap_simcore_mem
@@ -1113,7 +941,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 117
+set ID 109
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_W_ifog4
 set CoreName ap_simcore_mem
@@ -1199,7 +1027,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 118
+set ID 110
 set hasByteEnable 0
 set MemName run_all_slices_unrol_LSTM_R_ifog4
 set CoreName ap_simcore_mem
@@ -1285,7 +1113,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 119
+set ID 111
 set hasByteEnable 0
 set MemName run_all_slices_unrol_Y
 set CoreName ap_simcore_mem
@@ -1370,7 +1198,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 120
+set ID 112
 set hasByteEnable 0
 set MemName run_all_slices_unrol_U
 set CoreName ap_simcore_mem
@@ -1455,7 +1283,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 121
+set ID 113
 set hasByteEnable 0
 set MemName run_all_slices_unrol_Y2
 set CoreName ap_simcore_mem
@@ -1540,7 +1368,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 122
+set ID 114
 set hasByteEnable 0
 set MemName run_all_slices_unrol_Y5
 set CoreName ap_simcore_mem
@@ -1625,7 +1453,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 123
+set ID 115
 set hasByteEnable 0
 set MemName run_all_slices_unrol_Y8
 set CoreName ap_simcore_mem
@@ -1710,7 +1538,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 124
+set ID 116
 set hasByteEnable 0
 set MemName run_all_slices_unrol_X0_1
 set CoreName ap_simcore_mem
@@ -1795,7 +1623,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 125
+set ID 117
 set hasByteEnable 0
 set MemName run_all_slices_unrol_Y_1
 set CoreName ap_simcore_mem
@@ -1890,7 +1718,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 126 \
+    id 118 \
     name merged \
     reset_level 1 \
     sync_rst true \

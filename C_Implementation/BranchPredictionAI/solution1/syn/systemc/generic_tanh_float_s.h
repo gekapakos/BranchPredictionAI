@@ -82,7 +82,7 @@ struct generic_tanh_float_s : public sc_module {
     sc_signal< sc_lv<1> > and_ln75_reg_348;
     sc_signal< sc_lv<32> > select_ln67_fu_226_p3;
     sc_signal< sc_lv<1> > grp_fu_124_p2;
-    sc_signal< sc_lv<1> > tmp_4_reg_357;
+    sc_signal< sc_lv<1> > tmp_5_reg_357;
     sc_signal< sc_logic > ap_CS_fsm_state2;
     sc_signal< sc_lv<1> > icmp_ln849_1_fu_234_p2;
     sc_signal< sc_lv<1> > icmp_ln849_1_reg_361;
@@ -95,7 +95,7 @@ struct generic_tanh_float_s : public sc_module {
     sc_signal< sc_lv<64> > tmp_i_reg_384;
     sc_signal< sc_logic > ap_CS_fsm_state28;
     sc_signal< sc_lv<64> > grp_fu_129_p2;
-    sc_signal< sc_lv<64> > tmp_i_50_reg_389;
+    sc_signal< sc_lv<64> > tmp_i_57_reg_389;
     sc_signal< sc_logic > ap_CS_fsm_state33;
     sc_signal< sc_lv<32> > grp_fu_117_p1;
     sc_signal< sc_logic > ap_CS_fsm_state35;

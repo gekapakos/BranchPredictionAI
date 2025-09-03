@@ -151,7 +151,7 @@ wire   [0:0] and_ln75_fu_220_p2;
 reg   [0:0] and_ln75_reg_348;
 wire   [31:0] select_ln67_fu_226_p3;
 wire   [0:0] grp_fu_124_p2;
-reg   [0:0] tmp_4_reg_357;
+reg   [0:0] tmp_5_reg_357;
 wire    ap_CS_fsm_state2;
 wire   [0:0] icmp_ln849_1_fu_234_p2;
 reg   [0:0] icmp_ln849_1_reg_361;
@@ -164,7 +164,7 @@ wire   [63:0] grp_exp_generic_double_s_fu_89_ap_return;
 reg   [63:0] tmp_i_reg_384;
 wire    ap_CS_fsm_state28;
 wire   [63:0] grp_fu_129_p2;
-reg   [63:0] tmp_i_50_reg_389;
+reg   [63:0] tmp_i_57_reg_389;
 wire    ap_CS_fsm_state33;
 wire   [31:0] grp_fu_117_p1;
 wire    ap_CS_fsm_state35;
@@ -288,7 +288,7 @@ main_fptrunc_64ns_32_2_1 #(
 main_fptrunc_64ns_32_2_1_U33(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(tmp_i_50_reg_389),
+    .din0(tmp_i_57_reg_389),
     .ce(1'b1),
     .dout(grp_fu_117_p1)
 );
@@ -382,7 +382,7 @@ always @ (posedge ap_clk) begin
         resultf_4_reg_72 <= select_ln67_fu_226_p3;
     end else if (((1'b1 == ap_CS_fsm_state2) & (grp_fu_124_p2 == 1'd0))) begin
         resultf_4_reg_72 <= 32'd1065353216;
-    end else if (((1'b1 == ap_CS_fsm_state62) & (tmp_4_reg_357 == 1'd1) & (icmp_ln849_1_reg_361 == 1'd0) & (1'd0 == and_ln75_reg_348) & (icmp_ln849_reg_344 == 1'd0) & (icmp_ln833_reg_340 == 1'd0))) begin
+    end else if (((1'b1 == ap_CS_fsm_state62) & (tmp_5_reg_357 == 1'd1) & (icmp_ln849_1_reg_361 == 1'd0) & (1'd0 == and_ln75_reg_348) & (icmp_ln849_reg_344 == 1'd0) & (icmp_ln833_reg_340 == 1'd0))) begin
         resultf_4_reg_72 <= reg_139;
     end else if ((1'b1 == ap_CS_fsm_state82)) begin
         resultf_4_reg_72 <= grp_fu_112_p2;
@@ -439,13 +439,13 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        tmp_4_reg_357 <= grp_fu_124_p2;
+        tmp_5_reg_357 <= grp_fu_124_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state33)) begin
-        tmp_i_50_reg_389 <= grp_fu_129_p2;
+        tmp_i_57_reg_389 <= grp_fu_129_p2;
     end
 end
 
@@ -478,7 +478,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state62) & (tmp_4_reg_357 == 1'd1) & (icmp_ln849_1_reg_361 == 1'd0) & (1'd0 == and_ln75_reg_348) & (icmp_ln849_reg_344 == 1'd0) & (icmp_ln833_reg_340 == 1'd0))) begin
+    if (((1'b1 == ap_CS_fsm_state62) & (tmp_5_reg_357 == 1'd1) & (icmp_ln849_1_reg_361 == 1'd0) & (1'd0 == and_ln75_reg_348) & (icmp_ln849_reg_344 == 1'd0) & (icmp_ln833_reg_340 == 1'd0))) begin
         ap_phi_mux_resultf_4_phi_fu_76_p10 = reg_139;
     end else begin
         ap_phi_mux_resultf_4_phi_fu_76_p10 = resultf_4_reg_72;

@@ -28,7 +28,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "120638920",
+    "Latency": "120638908",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -46,8 +46,6 @@
   "Files": {
     "CSource": ["..\/..\/main_5_slices.cpp"],
     "Vhdl": [
-      "impl\/vhdl\/bn_vector.vhd",
-      "impl\/vhdl\/bn_vector_1.vhd",
       "impl\/vhdl\/conv_bn_act_pool.vhd",
       "impl\/vhdl\/conv_bn_act_pool_1.vhd",
       "impl\/vhdl\/conv_bn_act_pool_1_ConvW3.vhd",
@@ -74,8 +72,7 @@
       "impl\/vhdl\/main_dadd_64ns_64ns_64_5_full_dsp_1.vhd",
       "impl\/vhdl\/main_fadd_32ns_32ns_32_5_full_dsp_1.vhd",
       "impl\/vhdl\/main_faddfsub_32ns_32ns_32_5_full_dsp_1.vhd",
-      "impl\/vhdl\/main_fc_0_bn_beta.vhd",
-      "impl\/vhdl\/main_fc_0_bn_gamma.vhd",
+      "impl\/vhdl\/main_fc_0_bn_var.vhd",
       "impl\/vhdl\/main_fc_0_W.vhd",
       "impl\/vhdl\/main_fc_1_W.vhd",
       "impl\/vhdl\/main_fcmp_32ns_32ns_1_2_1.vhd",
@@ -93,8 +90,6 @@
       "impl\/vhdl\/main_mul_72ns_13s_84_5_1.vhd",
       "impl\/vhdl\/main_z0.vhd",
       "impl\/vhdl\/run_all_slices_unrol.vhd",
-      "impl\/vhdl\/run_all_slices_unrol_BN2_beta0.vhd",
-      "impl\/vhdl\/run_all_slices_unrol_BN2_gamma0.vhd",
       "impl\/vhdl\/run_all_slices_unrol_Emb4.vhd",
       "impl\/vhdl\/run_all_slices_unrol_LSTM_b_ifog0.vhd",
       "impl\/vhdl\/run_all_slices_unrol_LSTM_R_ifog0.vhd",
@@ -118,8 +113,6 @@
       "impl\/vhdl\/main.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/bn_vector.v",
-      "impl\/verilog\/bn_vector_1.v",
       "impl\/verilog\/conv_bn_act_pool.v",
       "impl\/verilog\/conv_bn_act_pool_1.v",
       "impl\/verilog\/conv_bn_act_pool_1_ConvW3.v",
@@ -160,10 +153,8 @@
       "impl\/verilog\/main_dadd_64ns_64ns_64_5_full_dsp_1.v",
       "impl\/verilog\/main_fadd_32ns_32ns_32_5_full_dsp_1.v",
       "impl\/verilog\/main_faddfsub_32ns_32ns_32_5_full_dsp_1.v",
-      "impl\/verilog\/main_fc_0_bn_beta.v",
-      "impl\/verilog\/main_fc_0_bn_beta_rom.dat",
-      "impl\/verilog\/main_fc_0_bn_gamma.v",
-      "impl\/verilog\/main_fc_0_bn_gamma_rom.dat",
+      "impl\/verilog\/main_fc_0_bn_var.v",
+      "impl\/verilog\/main_fc_0_bn_var_rom.dat",
       "impl\/verilog\/main_fc_0_W.v",
       "impl\/verilog\/main_fc_0_W_rom.dat",
       "impl\/verilog\/main_fc_1_W.v",
@@ -183,10 +174,6 @@
       "impl\/verilog\/main_mul_72ns_13s_84_5_1.v",
       "impl\/verilog\/main_z0.v",
       "impl\/verilog\/run_all_slices_unrol.v",
-      "impl\/verilog\/run_all_slices_unrol_BN2_beta0.v",
-      "impl\/verilog\/run_all_slices_unrol_BN2_beta0_rom.dat",
-      "impl\/verilog\/run_all_slices_unrol_BN2_gamma0.v",
-      "impl\/verilog\/run_all_slices_unrol_BN2_gamma0_rom.dat",
       "impl\/verilog\/run_all_slices_unrol_Emb4.v",
       "impl\/verilog\/run_all_slices_unrol_Emb4_rom.dat",
       "impl\/verilog\/run_all_slices_unrol_LSTM_b_ifog0.v",
@@ -365,14 +352,13 @@
   "ModuleInfo": {
     "Hierarchy": {
       "ModuleName": "main",
-      "Instances": [
-        {
+      "Instances": [{
           "ModuleName": "run_all_slices_unrol",
-          "InstanceName": "grp_run_all_slices_unrol_fu_379",
+          "InstanceName": "grp_run_all_slices_unrol_fu_439",
           "Instances": [
             {
               "ModuleName": "lstm_forward_unidir",
-              "InstanceName": "grp_lstm_forward_unidir_fu_434",
+              "InstanceName": "grp_lstm_forward_unidir_fu_636",
               "Instances": [{
                   "ModuleName": "generic_tanh_float_s",
                   "InstanceName": "grp_generic_tanh_float_s_fu_325",
@@ -384,7 +370,7 @@
             },
             {
               "ModuleName": "generic_tanh_float_s",
-              "InstanceName": "grp_generic_tanh_float_s_fu_467",
+              "InstanceName": "grp_generic_tanh_float_s_fu_669",
               "Instances": [{
                   "ModuleName": "exp_generic_double_s",
                   "InstanceName": "grp_exp_generic_double_s_fu_89"
@@ -392,35 +378,26 @@
             },
             {
               "ModuleName": "conv_bn_act_pool",
-              "InstanceName": "grp_conv_bn_act_pool_fu_478"
+              "InstanceName": "grp_conv_bn_act_pool_fu_680"
             },
             {
               "ModuleName": "conv_bn_act_pool_1",
-              "InstanceName": "grp_conv_bn_act_pool_1_fu_491"
+              "InstanceName": "grp_conv_bn_act_pool_1_fu_693"
             },
             {
               "ModuleName": "conv_bn_act_pool_2",
-              "InstanceName": "grp_conv_bn_act_pool_2_fu_505"
+              "InstanceName": "grp_conv_bn_act_pool_2_fu_707"
             },
             {
               "ModuleName": "conv_bn_act_pool_3",
-              "InstanceName": "grp_conv_bn_act_pool_3_fu_519"
+              "InstanceName": "grp_conv_bn_act_pool_3_fu_721"
             },
             {
               "ModuleName": "conv_bn_act_pool_4",
-              "InstanceName": "grp_conv_bn_act_pool_4_fu_533"
-            },
-            {
-              "ModuleName": "bn_vector",
-              "InstanceName": "grp_bn_vector_fu_547"
+              "InstanceName": "grp_conv_bn_act_pool_4_fu_735"
             }
           ]
-        },
-        {
-          "ModuleName": "bn_vector_1",
-          "InstanceName": "grp_bn_vector_1_fu_507"
-        }
-      ]
+        }]
     },
     "Info": {
       "conv_bn_act_pool_4": {
@@ -445,13 +422,6 @@
         "isOneStateSeq": "0"
       },
       "lstm_forward_unidir": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "0",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
-      "bn_vector": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -487,13 +457,6 @@
         "isOneStateSeq": "0"
       },
       "run_all_slices_unrol": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "0",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
-      "bn_vector_1": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -745,35 +708,6 @@
           "DSP48E": "61",
           "FF": "8790",
           "LUT": "13946",
-          "URAM": "0"
-        }
-      },
-      "bn_vector": {
-        "Latency": {
-          "LatencyBest": "1441",
-          "LatencyAvg": "1441",
-          "LatencyWorst": "1441",
-          "PipelineII": "1441",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "8.129"
-        },
-        "Loops": [{
-            "Name": "Loop 1",
-            "TripCount": "32",
-            "Latency": "1440",
-            "PipelineII": "",
-            "PipelineDepth": "45"
-          }],
-        "Area": {
-          "DSP48E": "5",
-          "FF": "1871",
-          "LUT": "2632",
-          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
@@ -1183,12 +1117,12 @@
       },
       "run_all_slices_unrol": {
         "Latency": {
-          "LatencyBest": "120400575",
-          "LatencyAvg": "120472575",
-          "LatencyWorst": "120640575",
-          "PipelineIIMin": "120400575",
-          "PipelineIIMax": "120640575",
-          "PipelineII": "120400575 ~ 120640575",
+          "LatencyBest": "120400565",
+          "LatencyAvg": "120472565",
+          "LatencyWorst": "120640565",
+          "PipelineIIMin": "120400565",
+          "PipelineIIMax": "120640565",
+          "PipelineII": "120400565 ~ 120640565",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1208,13 +1142,9 @@
           {
             "Name": "Loop 2",
             "TripCount": "32",
-            "LatencyMin": "352",
-            "LatencyMax": "2272",
-            "Latency": "352 ~ 2272",
+            "Latency": "1440",
             "PipelineII": "",
-            "PipelineDepthMin": "11",
-            "PipelineDepthMax": "71",
-            "PipelineDepth": "11 ~ 71"
+            "PipelineDepth": "45"
           },
           {
             "Name": "Loop 3",
@@ -1230,13 +1160,9 @@
           {
             "Name": "Loop 4",
             "TripCount": "32",
-            "LatencyMin": "352",
-            "LatencyMax": "2272",
-            "Latency": "352 ~ 2272",
+            "Latency": "1440",
             "PipelineII": "",
-            "PipelineDepthMin": "11",
-            "PipelineDepthMax": "71",
-            "PipelineDepth": "11 ~ 71"
+            "PipelineDepth": "45"
           },
           {
             "Name": "Loop 5",
@@ -1251,17 +1177,10 @@
           },
           {
             "Name": "Loop 6",
-            "TripCount": "582",
-            "Latency": "38994",
+            "TripCount": "32",
+            "Latency": "1440",
             "PipelineII": "",
-            "PipelineDepth": "67",
-            "Loops": [{
-                "Name": "Loop 6.1",
-                "TripCount": "32",
-                "Latency": "64",
-                "PipelineII": "",
-                "PipelineDepth": "2"
-              }]
+            "PipelineDepth": "45"
           },
           {
             "Name": "Loop 7",
@@ -1273,53 +1192,74 @@
             "PipelineDepthMin": "11",
             "PipelineDepthMax": "71",
             "PipelineDepth": "11 ~ 71"
+          },
+          {
+            "Name": "Loop 8",
+            "TripCount": "32",
+            "Latency": "1440",
+            "PipelineII": "",
+            "PipelineDepth": "45"
+          },
+          {
+            "Name": "Loop 9",
+            "TripCount": "32",
+            "LatencyMin": "352",
+            "LatencyMax": "2272",
+            "Latency": "352 ~ 2272",
+            "PipelineII": "",
+            "PipelineDepthMin": "11",
+            "PipelineDepthMax": "71",
+            "PipelineDepth": "11 ~ 71"
+          },
+          {
+            "Name": "Loop 10",
+            "TripCount": "582",
+            "Latency": "38994",
+            "PipelineII": "",
+            "PipelineDepth": "67",
+            "Loops": [{
+                "Name": "Loop 10.1",
+                "TripCount": "32",
+                "Latency": "64",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              }]
+          },
+          {
+            "Name": "Loop 11",
+            "TripCount": "32",
+            "Latency": "1440",
+            "PipelineII": "",
+            "PipelineDepth": "45"
+          },
+          {
+            "Name": "Loop 12",
+            "TripCount": "32",
+            "LatencyMin": "352",
+            "LatencyMax": "2272",
+            "Latency": "352 ~ 2272",
+            "PipelineII": "",
+            "PipelineDepthMin": "11",
+            "PipelineDepthMax": "71",
+            "PipelineDepth": "11 ~ 71"
           }
         ],
         "Area": {
-          "BRAM_18K": "739",
-          "DSP48E": "130",
-          "FF": "28290",
-          "LUT": "45396",
-          "URAM": "0"
-        }
-      },
-      "bn_vector_1": {
-        "Latency": {
-          "LatencyBest": "5761",
-          "LatencyAvg": "5761",
-          "LatencyWorst": "5761",
-          "PipelineII": "5761",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "8.129"
-        },
-        "Loops": [{
-            "Name": "Loop 1",
-            "TripCount": "128",
-            "Latency": "5760",
-            "PipelineII": "",
-            "PipelineDepth": "45"
-          }],
-        "Area": {
-          "DSP48E": "5",
-          "FF": "1879",
-          "LUT": "2634",
-          "BRAM_18K": "0",
+          "BRAM_18K": "729",
+          "DSP48E": "128",
+          "FF": "28443",
+          "LUT": "45630",
           "URAM": "0"
         }
       },
       "main": {
         "Latency": {
-          "LatencyBest": "120638920",
-          "LatencyAvg": "120710920",
-          "LatencyWorst": "120878920",
-          "PipelineIIMin": "120638921",
-          "PipelineIIMax": "120878921",
-          "PipelineII": "120638921 ~ 120878921",
+          "LatencyBest": "120638908",
+          "LatencyAvg": "120710908",
+          "LatencyWorst": "120878908",
+          "PipelineIIMin": "120638909",
+          "PipelineIIMax": "120878909",
+          "PipelineII": "120638909 ~ 120878909",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1346,18 +1286,25 @@
           {
             "Name": "Loop 2",
             "TripCount": "128",
+            "Latency": "5760",
+            "PipelineII": "",
+            "PipelineDepth": "45"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "128",
             "Latency": "512",
             "PipelineII": "",
             "PipelineDepth": "4"
           },
           {
-            "Name": "Loop 3",
+            "Name": "Loop 4",
             "TripCount": "128",
             "Latency": "180480",
             "PipelineII": "",
             "PipelineDepth": "1410",
             "Loops": [{
-                "Name": "Loop 3.1",
+                "Name": "Loop 4.1",
                 "TripCount": "128",
                 "Latency": "1408",
                 "PipelineII": "",
@@ -1365,7 +1312,14 @@
               }]
           },
           {
-            "Name": "Loop 4",
+            "Name": "Loop 5",
+            "TripCount": "128",
+            "Latency": "5760",
+            "PipelineII": "",
+            "PipelineDepth": "45"
+          },
+          {
+            "Name": "Loop 6",
             "TripCount": "128",
             "Latency": "512",
             "PipelineII": "",
@@ -1373,10 +1327,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "790",
-          "DSP48E": "140",
-          "FF": "31079",
-          "LUT": "49952",
+          "BRAM_18K": "776",
+          "DSP48E": "133",
+          "FF": "30814",
+          "LUT": "49471",
           "URAM": "0"
         }
       }
@@ -1392,7 +1346,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2025-09-02 20:27:52 EEST",
+    "Time": "2025-09-03 12:32:09 EEST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }
