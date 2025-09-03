@@ -1695,10 +1695,10 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="43" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-:2  %tmp_i_57 = fadd double %tmp_i, -1.000000e+00
+:2  %tmp_i_65 = fadd double %tmp_i, -1.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_i_57"/></StgValue>
+<StgValue><ssdm name="tmp_i_65"/></StgValue>
 </operation>
 </state>
 
@@ -1713,10 +1713,10 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="43" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-:2  %tmp_i_57 = fadd double %tmp_i, -1.000000e+00
+:2  %tmp_i_65 = fadd double %tmp_i, -1.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_i_57"/></StgValue>
+<StgValue><ssdm name="tmp_i_65"/></StgValue>
 </operation>
 </state>
 
@@ -1731,10 +1731,10 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="43" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-:2  %tmp_i_57 = fadd double %tmp_i, -1.000000e+00
+:2  %tmp_i_65 = fadd double %tmp_i, -1.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_i_57"/></StgValue>
+<StgValue><ssdm name="tmp_i_65"/></StgValue>
 </operation>
 </state>
 
@@ -1749,10 +1749,10 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="43" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-:2  %tmp_i_57 = fadd double %tmp_i, -1.000000e+00
+:2  %tmp_i_65 = fadd double %tmp_i, -1.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_i_57"/></StgValue>
+<StgValue><ssdm name="tmp_i_65"/></StgValue>
 </operation>
 </state>
 
@@ -1767,10 +1767,10 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="43" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-:2  %tmp_i_57 = fadd double %tmp_i, -1.000000e+00
+:2  %tmp_i_65 = fadd double %tmp_i, -1.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_i_57"/></StgValue>
+<StgValue><ssdm name="tmp_i_65"/></StgValue>
 </operation>
 </state>
 
@@ -1785,7 +1785,7 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="44" bw="32" op_0_bw="64">
 <![CDATA[
-:3  %tmp_51_i = fptrunc double %tmp_i_57 to float
+:3  %tmp_51_i = fptrunc double %tmp_i_65 to float
 
 ]]></Node>
 <StgValue><ssdm name="tmp_51_i"/></StgValue>
@@ -1803,7 +1803,7 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="44" bw="32" op_0_bw="64">
 <![CDATA[
-:3  %tmp_51_i = fptrunc double %tmp_i_57 to float
+:3  %tmp_51_i = fptrunc double %tmp_i_65 to float
 
 ]]></Node>
 <StgValue><ssdm name="tmp_51_i"/></StgValue>

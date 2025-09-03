@@ -4,7 +4,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-module main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0(
+module main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_1(
     input  [16 - 1:0] in0,
     input  [16 - 1:0] in1,
     input  [19 - 1:0] in2,
@@ -46,7 +46,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0 main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0_U(
+main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_1 main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_1_U(
     .in0( din0 ),
     .in1( din1 ),
     .in2( din2 ),

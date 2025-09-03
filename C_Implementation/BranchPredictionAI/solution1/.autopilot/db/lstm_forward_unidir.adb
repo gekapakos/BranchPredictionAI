@@ -15,40 +15,12 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>x</name>
-              <fileName/>
-              <fileDirectory/>
-              <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <inlineStackInfo class_id="6" tracking_level="0" version="0">
-                <count>0</count>
-                <item_version>0</item_version>
-              </inlineStackInfo>
-              <originalName>x</originalName>
-              <rtlName/>
-              <coreName>RAM</coreName>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <direction>0</direction>
-          <if_type>1</if_type>
-          <array_size>384</array_size>
-          <bit_vecs class_id="7" tracking_level="0" version="0">
-            <count>0</count>
-            <item_version>0</item_version>
-          </bit_vecs>
-        </item>
-        <item class_id_reference="3" object_id="_2">
-          <Value>
-            <Obj>
-              <type>1</type>
-              <id>2</id>
               <name>W_ifog</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
               <contextFuncName/>
-              <inlineStackInfo>
+              <inlineStackInfo class_id="6" tracking_level="0" version="0">
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
@@ -61,16 +33,16 @@
           <direction>0</direction>
           <if_type>1</if_type>
           <array_size>4096</array_size>
-          <bit_vecs>
+          <bit_vecs class_id="7" tracking_level="0" version="0">
             <count>0</count>
             <item_version>0</item_version>
           </bit_vecs>
         </item>
-        <item class_id_reference="3" object_id="_3">
+        <item class_id_reference="3" object_id="_2">
           <Value>
             <Obj>
               <type>1</type>
-              <id>3</id>
+              <id>2</id>
               <name>R_ifog</name>
               <fileName/>
               <fileDirectory/>
@@ -94,11 +66,11 @@
             <item_version>0</item_version>
           </bit_vecs>
         </item>
-        <item class_id_reference="3" object_id="_4">
+        <item class_id_reference="3" object_id="_3">
           <Value>
             <Obj>
               <type>1</type>
-              <id>4</id>
+              <id>3</id>
               <name>b_ifog</name>
               <fileName/>
               <fileDirectory/>
@@ -122,11 +94,11 @@
             <item_version>0</item_version>
           </bit_vecs>
         </item>
-        <item class_id_reference="3" object_id="_5">
+        <item class_id_reference="3" object_id="_4">
           <Value>
             <Obj>
               <type>1</type>
-              <id>5</id>
+              <id>4</id>
               <name>h_last</name>
               <fileName/>
               <fileDirectory/>
@@ -145,6 +117,34 @@
           <direction>2</direction>
           <if_type>1</if_type>
           <array_size>32</array_size>
+          <bit_vecs>
+            <count>0</count>
+            <item_version>0</item_version>
+          </bit_vecs>
+        </item>
+        <item class_id_reference="3" object_id="_5">
+          <Value>
+            <Obj>
+              <type>1</type>
+              <id>6</id>
+              <name>U_slice</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <coreName>RAM</coreName>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <direction>0</direction>
+          <if_type>1</if_type>
+          <array_size>384</array_size>
           <bit_vecs>
             <count>0</count>
             <item_version>0</item_version>
@@ -1921,7 +1921,7 @@
             <Obj>
               <type>0</type>
               <id>61</id>
-              <name>x_addr</name>
+              <name>U_slice_addr</name>
               <fileName>main_5_slices.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>124</lineNumber>
@@ -2665,7 +2665,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U44</rtlName>
+              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U56</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2812,7 +2812,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U42</rtlName>
+              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U54</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -3994,7 +3994,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U44</rtlName>
+              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U56</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -4141,7 +4141,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U42</rtlName>
+              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U54</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -4846,7 +4846,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fexp_32ns_32ns_32_9_full_dsp_1_U48</rtlName>
+              <rtlName>main_fexp_32ns_32ns_32_9_full_dsp_1_U60</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -4895,7 +4895,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U42</rtlName>
+              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U54</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -4944,7 +4944,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>i</originalName>
-              <rtlName>main_fdiv_32ns_32ns_32_16_1_U46</rtlName>
+              <rtlName>main_fdiv_32ns_32ns_32_16_1_U58</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5333,7 +5333,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fexp_32ns_32ns_32_9_full_dsp_1_U49</rtlName>
+              <rtlName>main_fexp_32ns_32ns_32_9_full_dsp_1_U61</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5382,7 +5382,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U43</rtlName>
+              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U55</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5431,7 +5431,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>f</originalName>
-              <rtlName>main_fdiv_32ns_32ns_32_16_1_U47</rtlName>
+              <rtlName>main_fdiv_32ns_32ns_32_16_1_U59</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5821,7 +5821,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fexp_32ns_32ns_32_9_full_dsp_1_U48</rtlName>
+              <rtlName>main_fexp_32ns_32ns_32_9_full_dsp_1_U60</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5870,7 +5870,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U42</rtlName>
+              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U54</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5919,7 +5919,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>o</originalName>
-              <rtlName>main_fdiv_32ns_32ns_32_16_1_U46</rtlName>
+              <rtlName>main_fdiv_32ns_32ns_32_16_1_U58</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -6333,7 +6333,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U44</rtlName>
+              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U56</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -6382,7 +6382,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U45</rtlName>
+              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U57</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -6431,7 +6431,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>c</originalName>
-              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U42</rtlName>
+              <rtlName>main_fadd_32ns_32ns_32_5_full_dsp_1_U54</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -6553,7 +6553,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>h</originalName>
-              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U44</rtlName>
+              <rtlName>main_fmul_32ns_32ns_32_4_max_dsp_1_U56</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -8074,7 +8074,7 @@
         <item class_id_reference="20" object_id="_203">
           <id>201</id>
           <edge_type>1</edge_type>
-          <source_obj>5</source_obj>
+          <source_obj>4</source_obj>
           <sink_obj>20</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8109,7 +8109,7 @@
         <item class_id_reference="20" object_id="_208">
           <id>208</id>
           <edge_type>1</edge_type>
-          <source_obj>6</source_obj>
+          <source_obj>5</source_obj>
           <sink_obj>22</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8326,7 +8326,7 @@
         <item class_id_reference="20" object_id="_239">
           <id>245</id>
           <edge_type>1</edge_type>
-          <source_obj>4</source_obj>
+          <source_obj>3</source_obj>
           <sink_obj>43</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8536,7 +8536,7 @@
         <item class_id_reference="20" object_id="_269">
           <id>278</id>
           <edge_type>1</edge_type>
-          <source_obj>1</source_obj>
+          <source_obj>6</source_obj>
           <sink_obj>61</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8704,7 +8704,7 @@
         <item class_id_reference="20" object_id="_293">
           <id>305</id>
           <edge_type>1</edge_type>
-          <source_obj>2</source_obj>
+          <source_obj>1</source_obj>
           <sink_obj>77</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8907,7 +8907,7 @@
         <item class_id_reference="20" object_id="_322">
           <id>334</id>
           <edge_type>1</edge_type>
-          <source_obj>5</source_obj>
+          <source_obj>4</source_obj>
           <sink_obj>97</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -9075,7 +9075,7 @@
         <item class_id_reference="20" object_id="_346">
           <id>359</id>
           <edge_type>1</edge_type>
-          <source_obj>3</source_obj>
+          <source_obj>2</source_obj>
           <sink_obj>113</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -9635,7 +9635,7 @@
         <item class_id_reference="20" object_id="_426">
           <id>449</id>
           <edge_type>1</edge_type>
-          <source_obj>6</source_obj>
+          <source_obj>5</source_obj>
           <sink_obj>166</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -9747,7 +9747,7 @@
         <item class_id_reference="20" object_id="_442">
           <id>465</id>
           <edge_type>1</edge_type>
-          <source_obj>5</source_obj>
+          <source_obj>4</source_obj>
           <sink_obj>174</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -13918,7 +13918,7 @@
           </second>
         </item>
         <item>
-          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U42 (main_fadd_32ns_32ns_32_5_full_dsp_1)</first>
+          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U54 (main_fadd_32ns_32ns_32_5_full_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -13937,7 +13937,7 @@
           </second>
         </item>
         <item>
-          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U43 (main_fadd_32ns_32ns_32_5_full_dsp_1)</first>
+          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U55 (main_fadd_32ns_32ns_32_5_full_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -13956,7 +13956,7 @@
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U46 (main_fdiv_32ns_32ns_32_16_1)</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U58 (main_fdiv_32ns_32ns_32_16_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -13975,7 +13975,7 @@
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U47 (main_fdiv_32ns_32ns_32_16_1)</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U59 (main_fdiv_32ns_32ns_32_16_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -13994,7 +13994,7 @@
           </second>
         </item>
         <item>
-          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U48 (main_fexp_32ns_32ns_32_9_full_dsp_1)</first>
+          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U60 (main_fexp_32ns_32ns_32_9_full_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -14013,7 +14013,7 @@
           </second>
         </item>
         <item>
-          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U49 (main_fexp_32ns_32ns_32_9_full_dsp_1)</first>
+          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U61 (main_fexp_32ns_32ns_32_9_full_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -14032,7 +14032,7 @@
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U44 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U56 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -14051,7 +14051,7 @@
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U45 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U57 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -16096,56 +16096,56 @@
           </second>
         </item>
         <item>
-          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U42</first>
+          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U54</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U43</first>
+          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U55</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U46</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U58</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U47</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U59</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U48</first>
+          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U60</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U49</first>
+          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U61</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U44</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U56</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U45</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U57</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -16165,7 +16165,7 @@
           </second>
         </item>
         <item>
-          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U42 (main_fadd_32ns_32ns_32_5_full_dsp_1)</first>
+          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U54 (main_fadd_32ns_32ns_32_5_full_dsp_1)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -16177,7 +16177,7 @@
           </second>
         </item>
         <item>
-          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U43 (main_fadd_32ns_32ns_32_5_full_dsp_1)</first>
+          <first>main_fadd_32ns_32ns_32_5_full_dsp_1_U55 (main_fadd_32ns_32ns_32_5_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16185,7 +16185,7 @@
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U46 (main_fdiv_32ns_32ns_32_16_1)</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U58 (main_fdiv_32ns_32ns_32_16_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -16194,7 +16194,7 @@
           </second>
         </item>
         <item>
-          <first>main_fdiv_32ns_32ns_32_16_1_U47 (main_fdiv_32ns_32ns_32_16_1)</first>
+          <first>main_fdiv_32ns_32ns_32_16_1_U59 (main_fdiv_32ns_32ns_32_16_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16202,7 +16202,7 @@
           </second>
         </item>
         <item>
-          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U48 (main_fexp_32ns_32ns_32_9_full_dsp_1)</first>
+          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U60 (main_fexp_32ns_32ns_32_9_full_dsp_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -16211,7 +16211,7 @@
           </second>
         </item>
         <item>
-          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U49 (main_fexp_32ns_32ns_32_9_full_dsp_1)</first>
+          <first>main_fexp_32ns_32ns_32_9_full_dsp_1_U61 (main_fexp_32ns_32ns_32_9_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16219,7 +16219,7 @@
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U44 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U56 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -16230,7 +16230,7 @@
           </second>
         </item>
         <item>
-          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U45 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
+          <first>main_fmul_32ns_32ns_32_4_max_dsp_1_U57 (main_fmul_32ns_32ns_32_4_max_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16438,7 +16438,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>133</item>
+            <item>127</item>
           </second>
         </item>
         <item>
@@ -18507,6 +18507,14 @@
         </second>
       </item>
       <item>
+        <first>U_slice_addr_gep_fu_128</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>61</item>
+        </second>
+      </item>
+      <item>
         <first>W_ifog_addr_gep_fu_141</first>
         <second>
           <count>1</count>
@@ -18880,14 +18888,6 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>99</item>
-        </second>
-      </item>
-      <item>
-        <first>x_addr_gep_fu_128</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>61</item>
         </second>
       </item>
       <item>
@@ -19328,6 +19328,18 @@
       </item>
       <item>
         <first>
+          <first>U_slice</first>
+          <second>0</second>
+        </first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>62</item>
+          <item>62</item>
+        </second>
+      </item>
+      <item>
+        <first>
           <first>W_ifog</first>
           <second>0</second>
         </first>
@@ -19412,18 +19424,6 @@
           <item_version>0</item_version>
           <item>165</item>
           <item>171</item>
-        </second>
-      </item>
-      <item>
-        <first>
-          <first>x</first>
-          <second>0</second>
-        </first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>62</item>
-          <item>62</item>
         </second>
       </item>
       <item>
@@ -19947,6 +19947,14 @@
         </second>
       </item>
       <item>
+        <first>U_slice_addr_reg_737</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>61</item>
+        </second>
+      </item>
+      <item>
         <first>W_ifog_addr_reg_765</first>
         <second>
           <count>1</count>
@@ -20296,14 +20304,6 @@
         </second>
       </item>
       <item>
-        <first>x_addr_reg_737</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>61</item>
-        </second>
-      </item>
-      <item>
         <first>xor_ln137_1_reg_850</first>
         <second>
           <count>1</count>
@@ -20548,6 +20548,22 @@
         </second>
       </item>
       <item>
+        <first>U_slice(p0)</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>load</first>
+            <second>
+              <count>2</count>
+              <item_version>0</item_version>
+              <item>62</item>
+              <item>62</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
         <first>W_ifog(p0)</first>
         <second>
           <count>1</count>
@@ -20604,22 +20620,6 @@
           </item>
         </second>
       </item>
-      <item>
-        <first>x(p0)</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>load</first>
-            <second>
-              <count>2</count>
-              <item_version>0</item_version>
-              <item>62</item>
-              <item>62</item>
-            </second>
-          </item>
-        </second>
-      </item>
     </dp_port_io_nodes>
     <port2core class_id="60" tracking_level="0" version="0">
       <count>5</count>
@@ -20641,7 +20641,7 @@
         <second>RAM</second>
       </item>
       <item>
-        <first>5</first>
+        <first>6</first>
         <second>RAM</second>
       </item>
     </port2core>

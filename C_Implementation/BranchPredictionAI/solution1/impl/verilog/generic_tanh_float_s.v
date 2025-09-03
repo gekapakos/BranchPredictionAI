@@ -164,7 +164,7 @@ wire   [63:0] grp_exp_generic_double_s_fu_89_ap_return;
 reg   [63:0] tmp_i_reg_384;
 wire    ap_CS_fsm_state28;
 wire   [63:0] grp_fu_129_p2;
-reg   [63:0] tmp_i_57_reg_389;
+reg   [63:0] tmp_i_65_reg_389;
 wire    ap_CS_fsm_state33;
 wire   [31:0] grp_fu_117_p1;
 wire    ap_CS_fsm_state35;
@@ -240,7 +240,7 @@ main_faddfsub_32ns_32ns_32_5_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30(
+main_faddfsub_32ns_32ns_32_5_full_dsp_1_U43(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_100_p0),
@@ -256,7 +256,7 @@ main_fmul_32ns_32ns_32_4_max_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fmul_32ns_32ns_32_4_max_dsp_1_U31(
+main_fmul_32ns_32ns_32_4_max_dsp_1_U44(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(abst_in_reg_332),
@@ -271,7 +271,7 @@ main_fdiv_32ns_32ns_32_16_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fdiv_32ns_32ns_32_16_1_U32(
+main_fdiv_32ns_32ns_32_16_1_U45(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_112_p0),
@@ -285,10 +285,10 @@ main_fptrunc_64ns_32_2_1 #(
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 64 ),
     .dout_WIDTH( 32 ))
-main_fptrunc_64ns_32_2_1_U33(
+main_fptrunc_64ns_32_2_1_U46(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(tmp_i_57_reg_389),
+    .din0(tmp_i_65_reg_389),
     .ce(1'b1),
     .dout(grp_fu_117_p1)
 );
@@ -298,7 +298,7 @@ main_fpext_32ns_64_2_1 #(
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-main_fpext_32ns_64_2_1_U34(
+main_fpext_32ns_64_2_1_U47(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(x_2_reg_371),
@@ -312,7 +312,7 @@ main_fcmp_32ns_32ns_1_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-main_fcmp_32ns_32ns_1_2_1_U35(
+main_fcmp_32ns_32ns_1_2_1_U48(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_124_p0),
@@ -328,7 +328,7 @@ main_dadd_64ns_64ns_64_5_full_dsp_1 #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-main_dadd_64ns_64ns_64_5_full_dsp_1_U36(
+main_dadd_64ns_64ns_64_5_full_dsp_1_U49(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(tmp_i_reg_384),
@@ -445,7 +445,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state33)) begin
-        tmp_i_57_reg_389 <= grp_fu_129_p2;
+        tmp_i_65_reg_389 <= grp_fu_129_p2;
     end
 end
 

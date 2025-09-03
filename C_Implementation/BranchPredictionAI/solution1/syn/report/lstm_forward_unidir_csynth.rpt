@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'lstm_forward_unidir'
 ================================================================
-* Date:           Wed Sep  3 12:31:51 2025
+* Date:           Wed Sep  3 16:22:10 2025
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BranchPredictionAI
@@ -86,14 +86,14 @@
     |                 Instance                |                Module               | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
     +-----------------------------------------+-------------------------------------+---------+-------+------+------+-----+
     |grp_generic_tanh_float_s_fu_325          |generic_tanh_float_s                 |       15|     37|  5264|  7619|    0|
-    |main_fadd_32ns_32ns_32_5_full_dsp_1_U42  |main_fadd_32ns_32ns_32_5_full_dsp_1  |        0|      2|   205|   390|    0|
-    |main_fadd_32ns_32ns_32_5_full_dsp_1_U43  |main_fadd_32ns_32ns_32_5_full_dsp_1  |        0|      2|   205|   390|    0|
-    |main_fdiv_32ns_32ns_32_16_1_U46          |main_fdiv_32ns_32ns_32_16_1          |        0|      0|   761|   994|    0|
-    |main_fdiv_32ns_32ns_32_16_1_U47          |main_fdiv_32ns_32ns_32_16_1          |        0|      0|   761|   994|    0|
-    |main_fexp_32ns_32ns_32_9_full_dsp_1_U48  |main_fexp_32ns_32ns_32_9_full_dsp_1  |        0|      7|   277|   924|    0|
-    |main_fexp_32ns_32ns_32_9_full_dsp_1_U49  |main_fexp_32ns_32ns_32_9_full_dsp_1  |        0|      7|   277|   924|    0|
-    |main_fmul_32ns_32ns_32_4_max_dsp_1_U44   |main_fmul_32ns_32ns_32_4_max_dsp_1   |        0|      3|   143|   321|    0|
-    |main_fmul_32ns_32ns_32_4_max_dsp_1_U45   |main_fmul_32ns_32ns_32_4_max_dsp_1   |        0|      3|   143|   321|    0|
+    |main_fadd_32ns_32ns_32_5_full_dsp_1_U54  |main_fadd_32ns_32ns_32_5_full_dsp_1  |        0|      2|   205|   390|    0|
+    |main_fadd_32ns_32ns_32_5_full_dsp_1_U55  |main_fadd_32ns_32ns_32_5_full_dsp_1  |        0|      2|   205|   390|    0|
+    |main_fdiv_32ns_32ns_32_16_1_U58          |main_fdiv_32ns_32ns_32_16_1          |        0|      0|   761|   994|    0|
+    |main_fdiv_32ns_32ns_32_16_1_U59          |main_fdiv_32ns_32ns_32_16_1          |        0|      0|   761|   994|    0|
+    |main_fexp_32ns_32ns_32_9_full_dsp_1_U60  |main_fexp_32ns_32ns_32_9_full_dsp_1  |        0|      7|   277|   924|    0|
+    |main_fexp_32ns_32ns_32_9_full_dsp_1_U61  |main_fexp_32ns_32ns_32_9_full_dsp_1  |        0|      7|   277|   924|    0|
+    |main_fmul_32ns_32ns_32_4_max_dsp_1_U56   |main_fmul_32ns_32ns_32_4_max_dsp_1   |        0|      3|   143|   321|    0|
+    |main_fmul_32ns_32ns_32_4_max_dsp_1_U57   |main_fmul_32ns_32ns_32_4_max_dsp_1   |        0|      3|   143|   321|    0|
     +-----------------------------------------+-------------------------------------+---------+-------+------+------+-----+
     |Total                                    |                                     |       15|     61|  8036| 12877|    0|
     +-----------------------------------------+-------------------------------------+---------+-------+------+------+-----+
@@ -235,31 +235,31 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------+-----+-----+------------+---------------------+--------------+
-|    RTL Ports    | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
-+-----------------+-----+-----+------------+---------------------+--------------+
-|ap_clk           |  in |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
-|ap_rst           |  in |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
-|ap_start         |  in |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
-|ap_done          | out |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
-|ap_idle          | out |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
-|ap_ready         | out |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
-|x_address0       | out |    9|  ap_memory |          x          |     array    |
-|x_ce0            | out |    1|  ap_memory |          x          |     array    |
-|x_q0             |  in |   32|  ap_memory |          x          |     array    |
-|W_ifog_address0  | out |   12|  ap_memory |        W_ifog       |     array    |
-|W_ifog_ce0       | out |    1|  ap_memory |        W_ifog       |     array    |
-|W_ifog_q0        |  in |   32|  ap_memory |        W_ifog       |     array    |
-|R_ifog_address0  | out |   12|  ap_memory |        R_ifog       |     array    |
-|R_ifog_ce0       | out |    1|  ap_memory |        R_ifog       |     array    |
-|R_ifog_q0        |  in |   32|  ap_memory |        R_ifog       |     array    |
-|b_ifog_address0  | out |    7|  ap_memory |        b_ifog       |     array    |
-|b_ifog_ce0       | out |    1|  ap_memory |        b_ifog       |     array    |
-|b_ifog_q0        |  in |   32|  ap_memory |        b_ifog       |     array    |
-|h_last_address0  | out |    5|  ap_memory |        h_last       |     array    |
-|h_last_ce0       | out |    1|  ap_memory |        h_last       |     array    |
-|h_last_we0       | out |    1|  ap_memory |        h_last       |     array    |
-|h_last_d0        | out |   32|  ap_memory |        h_last       |     array    |
-|h_last_q0        |  in |   32|  ap_memory |        h_last       |     array    |
-+-----------------+-----+-----+------------+---------------------+--------------+
++------------------+-----+-----+------------+---------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk            |  in |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
+|ap_rst            |  in |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
+|ap_start          |  in |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
+|ap_done           | out |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
+|ap_idle           | out |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
+|ap_ready          | out |    1| ap_ctrl_hs | lstm_forward_unidir | return value |
+|W_ifog_address0   | out |   12|  ap_memory |        W_ifog       |     array    |
+|W_ifog_ce0        | out |    1|  ap_memory |        W_ifog       |     array    |
+|W_ifog_q0         |  in |   32|  ap_memory |        W_ifog       |     array    |
+|R_ifog_address0   | out |   12|  ap_memory |        R_ifog       |     array    |
+|R_ifog_ce0        | out |    1|  ap_memory |        R_ifog       |     array    |
+|R_ifog_q0         |  in |   32|  ap_memory |        R_ifog       |     array    |
+|b_ifog_address0   | out |    7|  ap_memory |        b_ifog       |     array    |
+|b_ifog_ce0        | out |    1|  ap_memory |        b_ifog       |     array    |
+|b_ifog_q0         |  in |   32|  ap_memory |        b_ifog       |     array    |
+|h_last_address0   | out |    5|  ap_memory |        h_last       |     array    |
+|h_last_ce0        | out |    1|  ap_memory |        h_last       |     array    |
+|h_last_we0        | out |    1|  ap_memory |        h_last       |     array    |
+|h_last_d0         | out |   32|  ap_memory |        h_last       |     array    |
+|h_last_q0         |  in |   32|  ap_memory |        h_last       |     array    |
+|U_slice_address0  | out |    9|  ap_memory |       U_slice       |     array    |
+|U_slice_ce0       | out |    1|  ap_memory |       U_slice       |     array    |
+|U_slice_q0        |  in |   32|  ap_memory |       U_slice       |     array    |
++------------------+-----+-----+------------+---------------------+--------------+
 

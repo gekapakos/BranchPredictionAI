@@ -15,40 +15,12 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>x</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo class_id="6" tracking_level="0" version="0">
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName>x</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>1</if_type>
-				<array_size>384</array_size>
-				<bit_vecs class_id="7" tracking_level="0" version="0">
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_2">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>2</id>
 						<name>W_ifog</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
 						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
+						<inlineStackInfo class_id="6" tracking_level="0" version="0">
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
@@ -61,16 +33,16 @@
 				<direction>0</direction>
 				<if_type>1</if_type>
 				<array_size>4096</array_size>
-				<bit_vecs>
+				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_3">
+			<item class_id_reference="3" object_id="_2">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>3</id>
+						<id>2</id>
 						<name>R_ifog</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -94,11 +66,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_4">
+			<item class_id_reference="3" object_id="_3">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>4</id>
+						<id>3</id>
 						<name>b_ifog</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -122,11 +94,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_5">
+			<item class_id_reference="3" object_id="_4">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>5</id>
+						<id>4</id>
 						<name>h_last</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -145,6 +117,34 @@
 				<direction>2</direction>
 				<if_type>1</if_type>
 				<array_size>32</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_5">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>6</id>
+						<name>U_slice</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>1</if_type>
+				<array_size>384</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -1921,7 +1921,7 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>x_addr</name>
+						<name>U_slice_addr</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
 						<lineNumber>124</lineNumber>
@@ -8074,7 +8074,7 @@
 			<item class_id_reference="20" object_id="_203">
 				<id>201</id>
 				<edge_type>1</edge_type>
-				<source_obj>5</source_obj>
+				<source_obj>4</source_obj>
 				<sink_obj>20</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -8109,7 +8109,7 @@
 			<item class_id_reference="20" object_id="_208">
 				<id>208</id>
 				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
+				<source_obj>5</source_obj>
 				<sink_obj>22</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -8326,7 +8326,7 @@
 			<item class_id_reference="20" object_id="_239">
 				<id>245</id>
 				<edge_type>1</edge_type>
-				<source_obj>4</source_obj>
+				<source_obj>3</source_obj>
 				<sink_obj>43</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -8536,7 +8536,7 @@
 			<item class_id_reference="20" object_id="_269">
 				<id>278</id>
 				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
+				<source_obj>6</source_obj>
 				<sink_obj>61</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -8704,7 +8704,7 @@
 			<item class_id_reference="20" object_id="_293">
 				<id>305</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>1</source_obj>
 				<sink_obj>77</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -8907,7 +8907,7 @@
 			<item class_id_reference="20" object_id="_322">
 				<id>334</id>
 				<edge_type>1</edge_type>
-				<source_obj>5</source_obj>
+				<source_obj>4</source_obj>
 				<sink_obj>97</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -9075,7 +9075,7 @@
 			<item class_id_reference="20" object_id="_346">
 				<id>359</id>
 				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
+				<source_obj>2</source_obj>
 				<sink_obj>113</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -9635,7 +9635,7 @@
 			<item class_id_reference="20" object_id="_426">
 				<id>449</id>
 				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
+				<source_obj>5</source_obj>
 				<sink_obj>166</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -9747,7 +9747,7 @@
 			<item class_id_reference="20" object_id="_442">
 				<id>465</id>
 				<edge_type>1</edge_type>
-				<source_obj>5</source_obj>
+				<source_obj>4</source_obj>
 				<sink_obj>174</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>

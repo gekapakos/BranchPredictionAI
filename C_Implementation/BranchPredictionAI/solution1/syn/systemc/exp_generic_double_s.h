@@ -46,11 +46,11 @@ struct exp_generic_double_s : public sc_module {
     exp_generic_double_s_table_exp_Z1_array_s* table_exp_Z1_array_s_U;
     exp_generic_double_s_table_f_Z3_array_V* table_f_Z3_array_V_U;
     exp_generic_double_s_table_f_Z2_array_V* table_f_Z2_array_V_U;
-    main_mul_72ns_13s_84_5_1<1,5,72,13,84>* main_mul_72ns_13s_84_5_1_U16;
-    main_mul_36ns_43ns_79_2_1<1,2,36,43,79>* main_mul_36ns_43ns_79_2_1_U17;
-    main_mul_44ns_49ns_93_2_1<1,2,44,49,93>* main_mul_44ns_49ns_93_2_1_U18;
-    main_mul_50ns_50ns_100_2_1<1,2,50,50,100>* main_mul_50ns_50ns_100_2_1_U19;
-    main_mac_muladd_16ns_16s_19s_31_1_1<1,1,16,16,19,31>* main_mac_muladd_16ns_16s_19s_31_1_1_U20;
+    main_mul_72ns_13s_84_5_1<1,5,72,13,84>* main_mul_72ns_13s_84_5_1_U29;
+    main_mul_36ns_43ns_79_2_1<1,2,36,43,79>* main_mul_36ns_43ns_79_2_1_U30;
+    main_mul_44ns_49ns_93_2_1<1,2,44,49,93>* main_mul_44ns_49ns_93_2_1_U31;
+    main_mul_50ns_50ns_100_2_1<1,2,50,50,100>* main_mul_50ns_50ns_100_2_1_U32;
+    main_mac_muladd_16ns_16s_19s_31_1_1<1,1,16,16,19,31>* main_mac_muladd_16ns_16s_19s_31_1_1_U33;
     sc_signal< sc_lv<1> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_pp0_stage0;
     sc_signal< sc_logic > ap_enable_reg_pp0_iter0;

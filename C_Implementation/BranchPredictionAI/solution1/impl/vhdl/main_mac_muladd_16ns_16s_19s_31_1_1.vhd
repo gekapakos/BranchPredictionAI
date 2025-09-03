@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0 is
+entity main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_1 is
 port (
     in0:  in  std_logic_vector(16 - 1 downto 0);
     in1:  in  std_logic_vector(16 - 1 downto 0);
@@ -15,7 +15,7 @@ port (
 
 end entity;
 
-architecture behav of main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0 is
+architecture behav of main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_1 is
     signal a       : signed(25-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
@@ -51,7 +51,7 @@ entity main_mac_muladd_16ns_16s_19s_31_1_1 is
 end entity;
 
 architecture arch of main_mac_muladd_16ns_16s_19s_31_1_1 is
-    component main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0 is
+    component main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_1 is
         port (
             in0 : IN STD_LOGIC_VECTOR;
             in1 : IN STD_LOGIC_VECTOR;
@@ -62,7 +62,7 @@ architecture arch of main_mac_muladd_16ns_16s_19s_31_1_1 is
 
 
 begin
-    main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0_U :  component main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0
+    main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_1_U :  component main_mac_muladd_16ns_16s_19s_31_1_1_DSP48_1
     port map (
         in0 => din0,
         in1 => din1,

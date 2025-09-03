@@ -14,9 +14,6 @@ module lstm_forward_unidir (
         ap_done,
         ap_idle,
         ap_ready,
-        x_address0,
-        x_ce0,
-        x_q0,
         W_ifog_address0,
         W_ifog_ce0,
         W_ifog_q0,
@@ -30,7 +27,10 @@ module lstm_forward_unidir (
         h_last_ce0,
         h_last_we0,
         h_last_d0,
-        h_last_q0
+        h_last_q0,
+        U_slice_address0,
+        U_slice_ce0,
+        U_slice_q0
 );
 
 parameter    ap_ST_fsm_state1 = 80'd1;
@@ -120,9 +120,6 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [8:0] x_address0;
-output   x_ce0;
-input  [31:0] x_q0;
 output  [11:0] W_ifog_address0;
 output   W_ifog_ce0;
 input  [31:0] W_ifog_q0;
@@ -137,11 +134,13 @@ output   h_last_ce0;
 output   h_last_we0;
 output  [31:0] h_last_d0;
 input  [31:0] h_last_q0;
+output  [8:0] U_slice_address0;
+output   U_slice_ce0;
+input  [31:0] U_slice_q0;
 
 reg ap_done;
 reg ap_idle;
 reg ap_ready;
-reg x_ce0;
 reg W_ifog_ce0;
 reg R_ifog_ce0;
 reg b_ifog_ce0;
@@ -149,6 +148,7 @@ reg[4:0] h_last_address0;
 reg h_last_ce0;
 reg h_last_we0;
 reg[31:0] h_last_d0;
+reg U_slice_ce0;
 
 (* fsm_encoding = "none" *) reg   [79:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
@@ -402,7 +402,7 @@ main_fadd_32ns_32ns_32_5_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fadd_32ns_32ns_32_5_full_dsp_1_U42(
+main_fadd_32ns_32ns_32_5_full_dsp_1_U54(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_336_p0),
@@ -417,7 +417,7 @@ main_fadd_32ns_32ns_32_5_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fadd_32ns_32ns_32_5_full_dsp_1_U43(
+main_fadd_32ns_32ns_32_5_full_dsp_1_U55(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(tmp_32_reg_875),
@@ -432,7 +432,7 @@ main_fmul_32ns_32ns_32_4_max_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fmul_32ns_32ns_32_4_max_dsp_1_U44(
+main_fmul_32ns_32ns_32_4_max_dsp_1_U56(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_346_p0),
@@ -447,7 +447,7 @@ main_fmul_32ns_32ns_32_4_max_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fmul_32ns_32ns_32_4_max_dsp_1_U45(
+main_fmul_32ns_32ns_32_4_max_dsp_1_U57(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(reg_403),
@@ -462,7 +462,7 @@ main_fdiv_32ns_32ns_32_16_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fdiv_32ns_32ns_32_16_1_U46(
+main_fdiv_32ns_32ns_32_16_1_U58(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd1065353216),
@@ -477,7 +477,7 @@ main_fdiv_32ns_32ns_32_16_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fdiv_32ns_32ns_32_16_1_U47(
+main_fdiv_32ns_32ns_32_16_1_U59(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd1065353216),
@@ -492,7 +492,7 @@ main_fexp_32ns_32ns_32_9_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fexp_32ns_32ns_32_9_full_dsp_1_U48(
+main_fexp_32ns_32ns_32_9_full_dsp_1_U60(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd0),
@@ -507,7 +507,7 @@ main_fexp_32ns_32ns_32_9_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fexp_32ns_32ns_32_9_full_dsp_1_U49(
+main_fexp_32ns_32ns_32_9_full_dsp_1_U61(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd0),
@@ -703,7 +703,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
         shl_ln2_reg_752[11 : 7] <= shl_ln2_fu_500_p3[11 : 7];
-        xv_reg_747 <= x_q0;
+        xv_reg_747 <= U_slice_q0;
     end
 end
 
@@ -791,6 +791,14 @@ always @ (*) begin
         R_ifog_ce0 = 1'b1;
     end else begin
         R_ifog_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state6)) begin
+        U_slice_ce0 = 1'b1;
+    end else begin
+        U_slice_ce0 = 1'b0;
     end
 end
 
@@ -1013,14 +1021,6 @@ always @ (*) begin
         h_last_we0 = 1'b1;
     end else begin
         h_last_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        x_ce0 = 1'b1;
-    end else begin
-        x_ce0 = 1'b0;
     end
 end
 
@@ -1378,6 +1378,8 @@ end
 
 assign R_ifog_address0 = zext_ln132_2_fu_592_p1;
 
+assign U_slice_address0 = zext_ln124_1_fu_491_p1;
+
 assign W_ifog_address0 = zext_ln126_2_fu_533_p1;
 
 assign add_ln124_fu_486_p2 = (zext_ln124_fu_482_p1 + shl_ln_reg_724);
@@ -1577,8 +1579,6 @@ assign t_fu_439_p2 = (t_0_reg_246 + 4'd1);
 assign trunc_ln125_fu_496_p1 = d_0_reg_269[4:0];
 
 assign trunc_ln131_fu_555_p1 = hp_0_reg_291[4:0];
-
-assign x_address0 = zext_ln124_1_fu_491_p1;
 
 assign xor_ln136_fu_629_p2 = (bitcast_ln136_fu_625_p1 ^ 32'd2147483648);
 

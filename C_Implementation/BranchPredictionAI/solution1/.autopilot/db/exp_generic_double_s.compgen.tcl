@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 16
+set id 29
 set name main_mul_72ns_13s_84_5_1
 set corename simcore_mul
 set op mul
@@ -85,7 +85,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 17
+set id 30
 set name main_mul_36ns_43ns_79_2_1
 set corename simcore_mul
 set op mul
@@ -170,7 +170,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 18
+set id 31
 set name main_mul_44ns_49ns_93_2_1
 set corename simcore_mul
 set op mul
@@ -255,7 +255,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 19
+set id 32
 set name main_mul_50ns_50ns_100_2_1
 set corename simcore_mul
 set op mul
@@ -340,7 +340,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 20
+set id 33
 set name main_mac_muladd_16ns_16s_19s_31_1_1
 set corename simcore_mac
 set op mac
@@ -423,7 +423,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 26
+set ID 39
 set hasByteEnable 0
 set MemName exp_generic_double_s_table_exp_Z1_array_s
 set CoreName ap_simcore_mem
@@ -506,7 +506,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 27
+set ID 40
 set hasByteEnable 0
 set MemName exp_generic_double_s_table_f_Z3_array_V
 set CoreName ap_simcore_mem
@@ -589,7 +589,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 28
+set ID 41
 set hasByteEnable 0
 set MemName exp_generic_double_s_table_f_Z2_array_V
 set CoreName ap_simcore_mem
@@ -681,7 +681,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 29 \
+    id 42 \
     name x \
     type other \
     dir I \

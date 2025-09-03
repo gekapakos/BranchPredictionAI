@@ -809,10 +809,10 @@
 
 <Node id="30" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3:2  %empty_50 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 12, i64 12, i64 12)
+.preheader3:2  %empty_58 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 12, i64 12, i64 12)
 
 ]]></Node>
-<StgValue><ssdm name="empty_50"/></StgValue>
+<StgValue><ssdm name="empty_58"/></StgValue>
 </operation>
 
 <operation id="98" st_id="3" stage="1" lat="1">
@@ -919,10 +919,10 @@
 
 <Node id="38" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader2:2  %empty_51 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)
+.preheader2:2  %empty_59 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)
 
 ]]></Node>
-<StgValue><ssdm name="empty_51"/></StgValue>
+<StgValue><ssdm name="empty_59"/></StgValue>
 </operation>
 
 <operation id="105" st_id="4" stage="1" lat="1">
@@ -1140,10 +1140,10 @@
 
 <Node id="54" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.loopexit:2  %empty_52 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
+.loopexit:2  %empty_60 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
 
 ]]></Node>
-<StgValue><ssdm name="empty_52"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </operation>
 
 <operation id="119" st_id="6" stage="1" lat="1">
@@ -1234,10 +1234,10 @@
 
 <Node id="61" bw="9" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %x_addr = getelementptr [384 x float]* %x, i64 0, i64 %zext_ln124_1
+:3  %U_slice_addr = getelementptr [384 x float]* @U_slice, i64 0, i64 %zext_ln124_1
 
 ]]></Node>
-<StgValue><ssdm name="x_addr"/></StgValue>
+<StgValue><ssdm name="U_slice_addr"/></StgValue>
 </operation>
 
 <operation id="125" st_id="6" stage="2" lat="2">
@@ -1250,7 +1250,7 @@
 
 <Node id="62" bw="32" op_0_bw="9">
 <![CDATA[
-:4  %xv = load float* %x_addr, align 4
+:4  %xv = load float* %U_slice_addr, align 4
 
 ]]></Node>
 <StgValue><ssdm name="xv"/></StgValue>
@@ -1300,7 +1300,7 @@
 
 <Node id="62" bw="32" op_0_bw="9">
 <![CDATA[
-:4  %xv = load float* %x_addr, align 4
+:4  %xv = load float* %U_slice_addr, align 4
 
 ]]></Node>
 <StgValue><ssdm name="xv"/></StgValue>
@@ -1378,10 +1378,10 @@
 
 <Node id="69" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_53 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)
+:2  %empty_61 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)
 
 ]]></Node>
-<StgValue><ssdm name="empty_53"/></StgValue>
+<StgValue><ssdm name="empty_61"/></StgValue>
 </operation>
 
 <operation id="134" st_id="8" stage="1" lat="1">
@@ -1827,10 +1827,10 @@
 
 <Node id="92" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader1:2  %empty_54 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
+.preheader1:2  %empty_62 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
 
 ]]></Node>
-<StgValue><ssdm name="empty_54"/></StgValue>
+<StgValue><ssdm name="empty_62"/></StgValue>
 </operation>
 
 <operation id="161" st_id="20" stage="1" lat="1">
@@ -2033,10 +2033,10 @@
 
 <Node id="105" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_55 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)
+:2  %empty_63 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)
 
 ]]></Node>
-<StgValue><ssdm name="empty_55"/></StgValue>
+<StgValue><ssdm name="empty_63"/></StgValue>
 </operation>
 
 <operation id="174" st_id="22" stage="1" lat="1">
@@ -2482,10 +2482,10 @@
 
 <Node id="128" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader:2  %empty_56 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
+.preheader:2  %empty_64 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
 
 ]]></Node>
-<StgValue><ssdm name="empty_56"/></StgValue>
+<StgValue><ssdm name="empty_64"/></StgValue>
 </operation>
 
 <operation id="201" st_id="34" stage="1" lat="1">
