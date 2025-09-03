@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'gkapakos' on host 'gkapakos-Type1ProductConfigId' (Linux_x86_64 version 6.8.0-79-generic) on Wed Sep 03 16:21:37 EEST 2025
+INFO: [HLS 200-10] For user 'gkapakos' on host 'gkapakos-Type1ProductConfigId' (Linux_x86_64 version 6.8.0-79-generic) on Wed Sep 03 17:57:09 EEST 2025
 INFO: [HLS 200-10] On os Ubuntu 24.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation'
 Sourcing Tcl script '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/csynth.tcl'
@@ -16,28 +16,28 @@ INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'main_5_slices.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1491 ; free virtual = 11093
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1491 ; free virtual = 11093
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1522 ; free virtual = 9169
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1522 ; free virtual = 9169
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-603] Inlining function 'reluf' into 'conv_bn_act_pool' (main_5_slices.cpp:94).
-INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:255).
-INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:250).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'conv_bn_act_pool' (main_5_slices.cpp:88).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:264).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:259).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:143).
 INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:141).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:139).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:233).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:221).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:209).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:197).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:185).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:249).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:254).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:184).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:196).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:208).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:220).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:232).
-INFO: [XFORM 203-603] Inlining function 'sigmoidf' into 'main' (main_5_slices.cpp:259).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 894.809 ; gain = 203.711 ; free physical = 1300 ; free virtual = 10946
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:242).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:229).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:216).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:203).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:190).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:258).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:263).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:189).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:202).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:215).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:228).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:241).
+INFO: [XFORM 203-603] Inlining function 'sigmoidf' into 'main' (main_5_slices.cpp:268).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 2677.098 ; gain = 1986.000 ; free physical = 554 ; free virtual = 8253
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
@@ -54,18 +54,14 @@ INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1
 INFO: [XFORM 203-602] Inlining function 'generic_fabs<float>' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:62) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_nan<float>' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
 INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanhf' into 'lstm_forward_unidir' (main_5_slices.cpp:38->main_5_slices.cpp:139) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn.4' into 'run_all_slices_unrolled' (main_5_slices.cpp:179) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanhf' into 'run_all_slices_unrolled' (main_5_slices.cpp:38->main_5_slices.cpp:185) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn.3' into 'run_all_slices_unrolled' (main_5_slices.cpp:191) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn.2' into 'run_all_slices_unrolled' (main_5_slices.cpp:203) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn.1' into 'run_all_slices_unrolled' (main_5_slices.cpp:215) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:227) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:248) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:253) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward' into 'main' (main_5_slices.cpp:258) automatically.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1013.098 ; gain = 322.000 ; free physical = 1239 ; free virtual = 10899
-INFO: [XFORM 203-102] Partitioning array 'y_lin' (main_5_slices.cpp:257) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanhf' into 'lstm_forward_unidir' (main_5_slices.cpp:38->main_5_slices.cpp:141) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanhf' into 'run_all_slices_unrolled' (main_5_slices.cpp:38->main_5_slices.cpp:190) automatically.
+INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:236) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:257) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:262) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward' into 'main' (main_5_slices.cpp:267) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 2682.055 ; gain = 1990.957 ; free physical = 439 ; free virtual = 8153
+INFO: [XFORM 203-102] Partitioning array 'y_lin' (main_5_slices.cpp:266) automatically.
 INFO: [XFORM 203-102] Automatically partitioning small array 'output_b' completely based on array size.
 INFO: [XFORM 203-102] Partitioning array 'output_b' automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
@@ -83,44 +79,53 @@ INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1
 INFO: [XFORM 203-602] Inlining function 'generic_fabs<float>' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:62) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_nan<float>' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
 INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanhf' into 'lstm_forward_unidir' (main_5_slices.cpp:38->main_5_slices.cpp:139) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn.4' into 'run_all_slices_unrolled' (main_5_slices.cpp:179) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanhf' into 'run_all_slices_unrolled' (main_5_slices.cpp:38->main_5_slices.cpp:185) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn.3' into 'run_all_slices_unrolled' (main_5_slices.cpp:191) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn.2' into 'run_all_slices_unrolled' (main_5_slices.cpp:203) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn.1' into 'run_all_slices_unrolled' (main_5_slices.cpp:215) automatically.
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:227) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:248) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:253) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanhf' into 'lstm_forward_unidir' (main_5_slices.cpp:38->main_5_slices.cpp:141) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanhf' into 'run_all_slices_unrolled' (main_5_slices.cpp:38->main_5_slices.cpp:190) automatically.
+INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:236) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:257) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:262) automatically.
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var0' in function 'conv_bn_act_pool.4' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma0' in function 'conv_bn_act_pool.4' (main_5_slices.cpp:86:13).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var1' in function 'conv_bn_act_pool.3' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma1' in function 'conv_bn_act_pool.3' (main_5_slices.cpp:86:13).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var2' in function 'conv_bn_act_pool.2' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma2' in function 'conv_bn_act_pool.2' (main_5_slices.cpp:86:13).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var3' in function 'conv_bn_act_pool.1' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma3' in function 'conv_bn_act_pool.1' (main_5_slices.cpp:86:13).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_var4' in function 'conv_bn_act_pool' (main_5_slices.cpp:85:43).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'BN1_gamma4' in function 'conv_bn_act_pool' (main_5_slices.cpp:86:13).
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:108:8) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:114:3) in function 'explog_based::generic_tanh<float>'... converting 3 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:83:10) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:9:10) in function 'explog_based::generic_tanh<float>'... converting 4 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185:19) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:368:3) in function 'exp_reduce_::exp_generic<double>'... converting 12 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:72:40) to (main_5_slices.cpp:73:24) in function 'conv_bn_act_pool'... converting 3 basic blocks.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1021.020 ; gain = 329.922 ; free physical = 1207 ; free virtual = 10890
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 2682.668 ; gain = 1991.570 ; free physical = 411 ; free virtual = 8148
 WARNING: [XFORM 203-631] Renaming function 'run_all_slices_unrolled' to 'run_all_slices_unrol' (main_5_slices.cpp:8:22)
 WARNING: [XFORM 203-631] Renaming function 'explog_based::generic_tanh<float>' to 'generic_tanh<float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:57)
 WARNING: [XFORM 203-631] Renaming function 'exp_reduce_::exp_generic<double>' to 'exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185)
 INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
 INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
 INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1141.098 ; gain = 450.000 ; free physical = 1155 ; free virtual = 10845
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 2682.668 ; gain = 1991.570 ; free physical = 334 ; free virtual = 8072
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'main' ...
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.4' to 'conv_bn_act_pool_4'.
 WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
 WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<float>' to 'generic_tanh_float_s'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3' to 'conv_bn_act_pool_3'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2' to 'conv_bn_act_pool_2'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.1' to 'conv_bn_act_pool_1'.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool' 
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 27.97 seconds; current allocated memory: 413.244 MB.
-INFO: [HLS 200-434] Only 0 loops out of a total 11 loops have been pipelined in this design.
+INFO: [HLS 200-111]  Elapsed time: 91.57 seconds; current allocated memory: 573.405 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 9 loops have been pipelined in this design.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 414.390 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 574.284 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -135,74 +140,119 @@ WARNING: [SCHED 204-21] The critical path in module 'exp_generic_double_s' consi
 	'select' operation ('select_ln805', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [56]  (0 ns)
 	'select' operation ('r_exp.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [57]  (0.7 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 415.126 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 575.089 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 415.852 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 575.829 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'generic_tanh_float_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 416.316 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 576.296 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 416.811 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 576.765 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'lstm_forward_unidir' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 417.463 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 577.472 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 418.272 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 578.315 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 578.971 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 579.709 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 580.341 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 581.079 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 581.639 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 582.383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 582.973 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 583.721 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrol' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 419.803 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 584.852 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 422.226 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.56 seconds; current allocated memory: 587.302 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'main' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 423.174 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.25 seconds; current allocated memory: 588.314 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 424.213 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 589.336 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool' 
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'main_faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fcmp_32ns_32ns_1_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'main_mac_muladd_11ns_14ns_10ns_23_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'main_sitofp_32s_32_6_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'main_udiv_10ns_7ns_9_14_seq_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool'.
-INFO: [HLS 200-111]  Elapsed time: 0.51 seconds; current allocated memory: 426.394 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_4'.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 591.302 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -212,7 +262,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_mul_44ns_49ns_93_2_1': 1 inst
 INFO: [RTGEN 206-100] Generating core module 'main_mul_50ns_50ns_100_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_mul_72ns_13s_84_5_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 431.411 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 595.549 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_float_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -224,7 +274,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1
 INFO: [RTGEN 206-100] Generating core module 'main_fpext_32ns_64_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fptrunc_64ns_32_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_float_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 435.389 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 599.562 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_unidir' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -233,7 +283,47 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 2 in
 INFO: [RTGEN 206-100] Generating core module 'main_fexp_32ns_32ns_32_9_full_dsp_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_unidir'.
-INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 438.397 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 602.595 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fcmp_32ns_32ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_3'.
+INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 606.709 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fcmp_32ns_32ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 610.802 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fcmp_32ns_32ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 614.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fcmp_32ns_32ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool'.
+INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 618.998 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrol' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -242,7 +332,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrol'.
-INFO: [HLS 200-111]  Elapsed time: 2.87 seconds; current allocated memory: 510.884 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.35 seconds; current allocated memory: 636.118 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'main' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -253,9 +343,10 @@ INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'main'.
-INFO: [HLS 200-111]  Elapsed time: 1.16 seconds; current allocated memory: 522.284 MB.
-INFO: [RTMG 210-282] Generating pipelined core: 'main_udiv_10ns_7ns_9_14_seq_1_div'
-INFO: [RTMG 210-278] Implementing memory 'conv_bn_act_pool_Y_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111]  Elapsed time: 1.3 seconds; current allocated memory: 645.313 MB.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_4_X_slice_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_4_ConvW0_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_4_BN1_var0_rom' using auto ROMs.
 INFO: [RTMG 210-282] Generating pipelined core: 'main_mul_72ns_13s_84_5_1_MulnS_0'
 INFO: [RTMG 210-282] Generating pipelined core: 'main_mul_36ns_43ns_79_2_1_MulnS_1'
 INFO: [RTMG 210-282] Generating pipelined core: 'main_mul_44ns_49ns_93_2_1_MulnS_2'
@@ -265,15 +356,14 @@ INFO: [RTMG 210-279] Implementing memory 'exp_generic_double_s_table_f_Z3_array_
 INFO: [RTMG 210-279] Implementing memory 'exp_generic_double_s_table_f_Z2_array_V_rom' using auto ROMs.
 INFO: [RTMG 210-278] Implementing memory 'lstm_forward_unidir_c_slice_ram (RAM)' using block RAMs with power-on initialization.
 INFO: [RTMG 210-278] Implementing memory 'lstm_forward_unidir_z_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_tokens0_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_Emb0_rom' using auto ROMs.
-INFO: [RTMG 210-278] Implementing memory 'run_all_slices_unrol_X_slice_ram (RAM)' using block RAMs with power-on initialization.
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_ConvW0' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_ConvW0_rom' using block ROMs.
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_ConvB0' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_ConvB0_rom' using block ROMs.
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_BN1_gamma0' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_BN1_gamma0_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_3_X_slice1_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_3_ConvW1_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_2_X_slice2_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_2_ConvW2_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_1_X_slice3_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_1_ConvW3_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_ConvW4_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'run_all_slices_unrol_Y_ram (RAM)' using block RAMs with power-on initialization.
 INFO: [RTMG 210-278] Implementing memory 'run_all_slices_unrol_U_slice_ram (RAM)' using block RAMs with power-on initialization.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog0' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_W_ifog0_rom' using block ROMs.
@@ -281,45 +371,31 @@ WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog0' is read-only,
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_R_ifog0_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_b_ifog0' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_b_ifog0_rom' using block ROMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_BN2_var0_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_tokens1_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_Emb1_rom' using auto ROMs.
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_ConvW1' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_ConvW1_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog1' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_W_ifog1_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog1' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_R_ifog1_rom' using block ROMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_tokens2_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_Emb2_rom' using auto ROMs.
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_ConvW2' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_ConvW2_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog2' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_W_ifog2_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog2' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_R_ifog2_rom' using block ROMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_tokens3_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_Emb3_rom' using auto ROMs.
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_ConvW3' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_ConvW3_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog3' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_W_ifog3_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog3' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_R_ifog3_rom' using block ROMs.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_tokens4_rom' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_Emb4_rom' using auto ROMs.
-WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_ConvW4' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_ConvW4_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog4' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_W_ifog4_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog4' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'run_all_slices_unrol_LSTM_R_ifog4_rom' using block ROMs.
+INFO: [RTMG 210-278] Implementing memory 'run_all_slices_unrol_X_slice_1_ram (RAM)' using block RAMs.
 INFO: [RTMG 210-279] Implementing memory 'main_fc_0_W_rom' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'main_fc_0_bn_var_rom' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'main_fc_1_W_rom' using auto ROMs.
 INFO: [RTMG 210-278] Implementing memory 'main_merged_ram (RAM)' using block RAMs.
 INFO: [RTMG 210-278] Implementing memory 'main_z0_ram (RAM)' using block RAMs.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1382.160 ; gain = 691.062 ; free physical = 914 ; free virtual = 10748
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 2682.668 ; gain = 1991.570 ; free physical = 210 ; free virtual = 8018
 INFO: [VHDL 208-304] Generating VHDL RTL for main.
 INFO: [VLOG 209-307] Generating Verilog RTL for main.
-INFO: [HLS 200-112] Total elapsed time: 74.53 seconds; peak allocated memory: 522.284 MB.
+INFO: [HLS 200-112] Total elapsed time: 121.47 seconds; peak allocated memory: 645.313 MB.

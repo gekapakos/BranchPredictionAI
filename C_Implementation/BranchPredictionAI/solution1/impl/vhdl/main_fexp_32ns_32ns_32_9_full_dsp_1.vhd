@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity main_fexp_32ns_32ns_32_9_full_dsp_1 is
     generic (
-        ID         : integer := 60;
+        ID         : integer := 48;
         NUM_STAGE  : integer := 9;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

@@ -162,7 +162,7 @@
 						<name>z</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>117</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -177,7 +177,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>115</second>
+										<second>117</second>
 									</item>
 								</second>
 							</item>
@@ -207,10 +207,10 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>_ln114</name>
+						<name>_ln116</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -225,7 +225,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -292,10 +292,10 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>icmp_ln114</name>
+						<name>icmp_ln116</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -310,7 +310,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -344,7 +344,7 @@
 						<name>j</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -359,7 +359,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -390,10 +390,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>_ln114</name>
+						<name>_ln116</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -408,7 +408,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -440,10 +440,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>zext_ln114</name>
+						<name>zext_ln116</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -458,7 +458,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -491,7 +491,7 @@
 						<name>h_last_addr</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -506,7 +506,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -538,10 +538,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>h_last_addr_write_ln114</name>
+						<name>h_last_addr_write_ln116</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -556,7 +556,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -590,7 +590,7 @@
 						<name>c_slice_addr</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -605,7 +605,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -637,10 +637,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>c_slice_addr_write_ln114</name>
+						<name>c_slice_addr_write_ln116</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -655,7 +655,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -686,10 +686,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>_ln114</name>
+						<name>_ln116</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>116</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -704,7 +704,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>114</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -734,10 +734,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>_ln117</name>
+						<name>_ln119</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -752,7 +752,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>117</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -819,10 +819,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>icmp_ln117</name>
+						<name>icmp_ln119</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -837,7 +837,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>117</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -871,7 +871,7 @@
 						<name>t</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -886,7 +886,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>117</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -917,10 +917,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>_ln117</name>
+						<name>_ln119</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -935,7 +935,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>117</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -967,10 +967,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>_ln119</name>
+						<name>_ln121</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -985,7 +985,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1052,10 +1052,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>icmp_ln119</name>
+						<name>icmp_ln121</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1070,7 +1070,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1104,7 +1104,7 @@
 						<name>g</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1119,7 +1119,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1150,10 +1150,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>_ln119</name>
+						<name>_ln121</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1168,7 +1168,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1200,10 +1200,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>zext_ln119</name>
+						<name>zext_ln121</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1218,7 +1218,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1251,7 +1251,7 @@
 						<name>b_ifog_addr</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1266,7 +1266,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1301,7 +1301,7 @@
 						<name>b_ifog_load</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1316,7 +1316,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1349,7 +1349,7 @@
 						<name>z_addr</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1364,7 +1364,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1396,10 +1396,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>z_addr_write_ln119</name>
+						<name>z_addr_write_ln121</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1414,7 +1414,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1445,10 +1445,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>_ln119</name>
+						<name>_ln121</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>119</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1463,7 +1463,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>119</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1496,7 +1496,7 @@
 						<name>shl_ln</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>122</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1511,7 +1511,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>122</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1543,10 +1543,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>_ln123</name>
+						<name>_ln125</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>123</lineNumber>
+						<lineNumber>125</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1561,7 +1561,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>123</second>
+										<second>125</second>
 									</item>
 								</second>
 							</item>
@@ -1628,10 +1628,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>icmp_ln123</name>
+						<name>icmp_ln125</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>123</lineNumber>
+						<lineNumber>125</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1646,7 +1646,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>123</second>
+										<second>125</second>
 									</item>
 								</second>
 							</item>
@@ -1680,7 +1680,7 @@
 						<name>d</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>123</lineNumber>
+						<lineNumber>125</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1695,7 +1695,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>123</second>
+										<second>125</second>
 									</item>
 								</second>
 							</item>
@@ -1726,10 +1726,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>_ln123</name>
+						<name>_ln125</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>123</lineNumber>
+						<lineNumber>125</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1744,7 +1744,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>123</second>
+										<second>125</second>
 									</item>
 								</second>
 							</item>
@@ -1776,10 +1776,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>zext_ln124</name>
+						<name>zext_ln126</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1794,7 +1794,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>124</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -1824,10 +1824,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>add_ln124</name>
+						<name>add_ln126</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1842,7 +1842,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>124</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -1873,10 +1873,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>zext_ln124_1</name>
+						<name>zext_ln126_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1891,7 +1891,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>124</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -1924,7 +1924,7 @@
 						<name>U_slice_addr</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1939,7 +1939,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>124</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -1974,7 +1974,7 @@
 						<name>xv</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1989,7 +1989,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>124</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -2019,10 +2019,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>trunc_ln125</name>
+						<name>trunc_ln127</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2037,7 +2037,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>125</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -2070,7 +2070,7 @@
 						<name>shl_ln2</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2085,7 +2085,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>125</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -2117,10 +2117,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>_ln126</name>
+						<name>_ln128</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2135,7 +2135,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2202,10 +2202,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>icmp_ln126</name>
+						<name>icmp_ln128</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2220,7 +2220,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2254,7 +2254,7 @@
 						<name>g_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2269,7 +2269,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2300,10 +2300,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>_ln126</name>
+						<name>_ln128</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2318,7 +2318,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2350,10 +2350,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>zext_ln126</name>
+						<name>zext_ln128</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2368,7 +2368,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2398,10 +2398,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>zext_ln126_1</name>
+						<name>zext_ln128_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2416,7 +2416,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2446,10 +2446,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>add_ln126</name>
+						<name>add_ln128</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2464,7 +2464,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2495,10 +2495,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>zext_ln126_2</name>
+						<name>zext_ln128_2</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2513,7 +2513,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2546,7 +2546,7 @@
 						<name>W_ifog_addr</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2561,7 +2561,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2596,7 +2596,7 @@
 						<name>W_ifog_load</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2611,7 +2611,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2644,7 +2644,7 @@
 						<name>tmp</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2659,7 +2659,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2693,7 +2693,7 @@
 						<name>z_addr_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2708,7 +2708,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2743,7 +2743,7 @@
 						<name>z_load</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2758,7 +2758,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2791,7 +2791,7 @@
 						<name>tmp_s</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2806,7 +2806,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2837,10 +2837,10 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>z_addr_1_write_ln126</name>
+						<name>z_addr_1_write_ln128</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2855,7 +2855,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2887,10 +2887,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>_ln126</name>
+						<name>_ln128</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2905,7 +2905,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>126</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2969,10 +2969,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>_ln129</name>
+						<name>_ln131</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>129</lineNumber>
+						<lineNumber>131</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2987,7 +2987,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>129</second>
+										<second>131</second>
 									</item>
 								</second>
 							</item>
@@ -3054,10 +3054,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>icmp_ln129</name>
+						<name>icmp_ln131</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>129</lineNumber>
+						<lineNumber>131</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3072,7 +3072,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>129</second>
+										<second>131</second>
 									</item>
 								</second>
 							</item>
@@ -3106,7 +3106,7 @@
 						<name>hp</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>129</lineNumber>
+						<lineNumber>131</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3121,7 +3121,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>129</second>
+										<second>131</second>
 									</item>
 								</second>
 							</item>
@@ -3152,10 +3152,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>_ln129</name>
+						<name>_ln131</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>129</lineNumber>
+						<lineNumber>131</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3170,7 +3170,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>129</second>
+										<second>131</second>
 									</item>
 								</second>
 							</item>
@@ -3202,10 +3202,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>zext_ln130</name>
+						<name>zext_ln132</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>130</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3220,7 +3220,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>130</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3253,7 +3253,7 @@
 						<name>h_last_addr_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>130</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3268,7 +3268,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>130</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3303,7 +3303,7 @@
 						<name>hv</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>130</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3318,7 +3318,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>130</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3348,10 +3348,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>trunc_ln131</name>
+						<name>trunc_ln133</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>131</lineNumber>
+						<lineNumber>133</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3366,7 +3366,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>131</second>
+										<second>133</second>
 									</item>
 								</second>
 							</item>
@@ -3399,7 +3399,7 @@
 						<name>shl_ln3</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>131</lineNumber>
+						<lineNumber>133</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3414,7 +3414,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>131</second>
+										<second>133</second>
 									</item>
 								</second>
 							</item>
@@ -3446,10 +3446,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>_ln132</name>
+						<name>_ln134</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3464,7 +3464,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3531,10 +3531,10 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>icmp_ln132</name>
+						<name>icmp_ln134</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3549,7 +3549,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3583,7 +3583,7 @@
 						<name>g_3</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3598,7 +3598,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3629,10 +3629,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>_ln132</name>
+						<name>_ln134</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3647,7 +3647,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3679,10 +3679,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>zext_ln132</name>
+						<name>zext_ln134</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3697,7 +3697,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3727,10 +3727,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>zext_ln132_1</name>
+						<name>zext_ln134_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3745,7 +3745,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3775,10 +3775,10 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>add_ln132</name>
+						<name>add_ln134</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3793,7 +3793,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3824,10 +3824,10 @@
 					<Obj>
 						<type>0</type>
 						<id>112</id>
-						<name>zext_ln132_2</name>
+						<name>zext_ln134_2</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3842,7 +3842,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3875,7 +3875,7 @@
 						<name>R_ifog_addr</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3890,7 +3890,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3925,7 +3925,7 @@
 						<name>R_ifog_load</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3940,7 +3940,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3973,7 +3973,7 @@
 						<name>tmp_38</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3988,7 +3988,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -4022,7 +4022,7 @@
 						<name>z_addr_6</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4037,7 +4037,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -4072,7 +4072,7 @@
 						<name>z_load_5</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4087,7 +4087,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -4120,7 +4120,7 @@
 						<name>tmp_39</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4135,7 +4135,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -4166,10 +4166,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>z_addr_6_write_ln132</name>
+						<name>z_addr_6_write_ln134</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4184,7 +4184,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -4216,10 +4216,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>_ln132</name>
+						<name>_ln134</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4234,7 +4234,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>132</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -4298,10 +4298,10 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>_ln135</name>
+						<name>_ln137</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>137</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4316,7 +4316,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>135</second>
+										<second>137</second>
 									</item>
 								</second>
 							</item>
@@ -4383,10 +4383,10 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>icmp_ln135</name>
+						<name>icmp_ln137</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>137</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4401,7 +4401,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>135</second>
+										<second>137</second>
 									</item>
 								</second>
 							</item>
@@ -4435,7 +4435,7 @@
 						<name>j_14</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>137</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4450,7 +4450,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>135</second>
+										<second>137</second>
 									</item>
 								</second>
 							</item>
@@ -4481,10 +4481,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>_ln135</name>
+						<name>_ln137</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>137</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4499,7 +4499,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>135</second>
+										<second>137</second>
 									</item>
 								</second>
 							</item>
@@ -4531,10 +4531,10 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>zext_ln136</name>
+						<name>zext_ln138</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4549,7 +4549,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4582,7 +4582,7 @@
 						<name>z_addr_2</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4597,7 +4597,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4632,7 +4632,7 @@
 						<name>z_load_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4647,7 +4647,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4677,10 +4677,10 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>bitcast_ln136</name>
+						<name>bitcast_ln138</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4695,7 +4695,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4725,10 +4725,10 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>xor_ln136</name>
+						<name>xor_ln138</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4743,7 +4743,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4774,10 +4774,10 @@
 					<Obj>
 						<type>0</type>
 						<id>137</id>
-						<name>bitcast_ln136_1</name>
+						<name>bitcast_ln138_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4792,7 +4792,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4825,7 +4825,7 @@
 						<name>tmp_30</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4840,7 +4840,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4874,7 +4874,7 @@
 						<name>tmp_31</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4889,7 +4889,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4923,7 +4923,7 @@
 						<name>i</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>138</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4938,7 +4938,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>136</second>
+										<second>138</second>
 									</item>
 								</second>
 							</item>
@@ -4969,10 +4969,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>xor_ln137_1</name>
+						<name>xor_ln139_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4987,7 +4987,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5018,10 +5018,10 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>zext_ln137</name>
+						<name>zext_ln139</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5036,7 +5036,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5069,7 +5069,7 @@
 						<name>z_addr_3</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5084,7 +5084,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5119,7 +5119,7 @@
 						<name>z_load_2</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5134,7 +5134,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5164,10 +5164,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>bitcast_ln137</name>
+						<name>bitcast_ln139</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5182,7 +5182,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5212,10 +5212,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>xor_ln137</name>
+						<name>xor_ln139</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5230,7 +5230,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5261,10 +5261,10 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>bitcast_ln137_1</name>
+						<name>bitcast_ln139_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5279,7 +5279,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5312,7 +5312,7 @@
 						<name>tmp_32</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5327,7 +5327,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5361,7 +5361,7 @@
 						<name>tmp_33</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5376,7 +5376,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5410,7 +5410,7 @@
 						<name>f</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>137</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5425,7 +5425,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>137</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -5459,7 +5459,7 @@
 						<name>or_ln</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5474,7 +5474,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5506,10 +5506,10 @@
 					<Obj>
 						<type>0</type>
 						<id>152</id>
-						<name>zext_ln138</name>
+						<name>zext_ln140</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5524,7 +5524,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5557,7 +5557,7 @@
 						<name>z_addr_4</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5572,7 +5572,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5607,7 +5607,7 @@
 						<name>z_load_3</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5622,7 +5622,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5652,10 +5652,10 @@
 					<Obj>
 						<type>0</type>
 						<id>155</id>
-						<name>bitcast_ln138</name>
+						<name>bitcast_ln140</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5670,7 +5670,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5700,10 +5700,10 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>xor_ln138</name>
+						<name>xor_ln140</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5718,7 +5718,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5749,10 +5749,10 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>bitcast_ln138_1</name>
+						<name>bitcast_ln140_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5767,7 +5767,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5800,7 +5800,7 @@
 						<name>tmp_34</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5815,7 +5815,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5849,7 +5849,7 @@
 						<name>tmp_35</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5864,7 +5864,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5898,7 +5898,7 @@
 						<name>o</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>140</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5913,7 +5913,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>138</second>
+										<second>140</second>
 									</item>
 								</second>
 							</item>
@@ -5944,10 +5944,10 @@
 					<Obj>
 						<type>0</type>
 						<id>161</id>
-						<name>sext_ln139</name>
+						<name>sext_ln141</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>139</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5962,7 +5962,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>139</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -5992,10 +5992,10 @@
 					<Obj>
 						<type>0</type>
 						<id>162</id>
-						<name>zext_ln139</name>
+						<name>zext_ln141</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>139</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6010,7 +6010,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>139</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -6043,7 +6043,7 @@
 						<name>z_addr_5</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>139</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6058,7 +6058,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>139</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -6093,7 +6093,7 @@
 						<name>z_load_4</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>139</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6108,7 +6108,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>139</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -6156,7 +6156,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>139</second>
+										<second>141</second>
 									</item>
 									<item>
 										<first>
@@ -6214,7 +6214,7 @@
 						<name>c_slice_addr_1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>140</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6229,7 +6229,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>140</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -6264,7 +6264,7 @@
 						<name>c_slice_load</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>140</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6279,7 +6279,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>140</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -6312,7 +6312,7 @@
 						<name>tmp_36</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>140</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6327,7 +6327,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>140</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -6361,7 +6361,7 @@
 						<name>tmp_37</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>140</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6376,7 +6376,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>140</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -6410,7 +6410,7 @@
 						<name>c</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>140</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6425,7 +6425,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>140</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -6474,7 +6474,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>141</second>
+										<second>143</second>
 									</item>
 									<item>
 										<first>
@@ -6532,7 +6532,7 @@
 						<name>h</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>141</lineNumber>
+						<lineNumber>143</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6547,7 +6547,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>141</second>
+										<second>143</second>
 									</item>
 								</second>
 							</item>
@@ -6578,10 +6578,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>c_slice_addr_1_write_ln142</name>
+						<name>c_slice_addr_1_write_ln144</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>144</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6596,7 +6596,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>142</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -6631,7 +6631,7 @@
 						<name>h_last_addr_2</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>144</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6646,7 +6646,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>142</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -6678,10 +6678,10 @@
 					<Obj>
 						<type>0</type>
 						<id>175</id>
-						<name>h_last_addr_2_write_ln142</name>
+						<name>h_last_addr_2_write_ln144</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>144</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6696,7 +6696,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>142</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -6727,10 +6727,10 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>_ln135</name>
+						<name>_ln137</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>137</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6745,7 +6745,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>135</second>
+										<second>137</second>
 									</item>
 								</second>
 							</item>
@@ -6809,10 +6809,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>_ln145</name>
+						<name>_ln147</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
-						<lineNumber>145</lineNumber>
+						<lineNumber>147</lineNumber>
 						<contextFuncName>lstm_forward_unidir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6827,7 +6827,7 @@
 											<first>main_5_slices.cpp</first>
 											<second>lstm_forward_unidir</second>
 										</first>
-										<second>145</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -15963,7 +15963,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln124_fu_486</first>
+			<first>add_ln126_fu_486</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -15971,7 +15971,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln126_fu_528</first>
+			<first>add_ln128_fu_528</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -15979,7 +15979,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln132_fu_587</first>
+			<first>add_ln134_fu_587</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -15995,7 +15995,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln136_1_fu_635</first>
+			<first>bitcast_ln138_1_fu_635</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16003,7 +16003,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln136_fu_625</first>
+			<first>bitcast_ln138_fu_625</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16011,7 +16011,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln137_1_fu_649</first>
+			<first>bitcast_ln139_1_fu_649</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16019,7 +16019,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln137_fu_640</first>
+			<first>bitcast_ln139_fu_640</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16027,7 +16027,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln138_1_fu_677</first>
+			<first>bitcast_ln140_1_fu_677</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16035,7 +16035,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln138_fu_667</first>
+			<first>bitcast_ln140_fu_667</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16163,7 +16163,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln114_fu_415</first>
+			<first>icmp_ln116_fu_415</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16171,7 +16171,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln117_fu_433</first>
+			<first>icmp_ln119_fu_433</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16179,7 +16179,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln119_fu_445</first>
+			<first>icmp_ln121_fu_445</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16187,7 +16187,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln123_fu_470</first>
+			<first>icmp_ln125_fu_470</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16195,7 +16195,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln126_fu_507</first>
+			<first>icmp_ln128_fu_507</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16203,7 +16203,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln129_fu_538</first>
+			<first>icmp_ln131_fu_538</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16211,7 +16211,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln132_fu_566</first>
+			<first>icmp_ln134_fu_566</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16219,7 +16219,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln135_fu_597</first>
+			<first>icmp_ln137_fu_597</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16267,7 +16267,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln139_fu_682</first>
+			<first>sext_ln141_fu_682</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16315,7 +16315,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln125_fu_496</first>
+			<first>trunc_ln127_fu_496</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16323,7 +16323,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln131_fu_555</first>
+			<first>trunc_ln133_fu_555</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16331,7 +16331,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln136_fu_629</first>
+			<first>xor_ln138_fu_629</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16339,7 +16339,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln137_1_fu_614</first>
+			<first>xor_ln139_1_fu_614</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16347,7 +16347,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln137_fu_643</first>
+			<first>xor_ln139_fu_643</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16355,7 +16355,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln138_fu_671</first>
+			<first>xor_ln140_fu_671</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16427,7 +16427,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln114_fu_427</first>
+			<first>zext_ln116_fu_427</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16435,7 +16435,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln119_fu_457</first>
+			<first>zext_ln121_fu_457</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16443,7 +16443,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln124_1_fu_491</first>
+			<first>zext_ln126_1_fu_491</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16451,7 +16451,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln124_fu_482</first>
+			<first>zext_ln126_fu_482</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16459,7 +16459,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln126_1_fu_524</first>
+			<first>zext_ln128_1_fu_524</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16467,7 +16467,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln126_2_fu_533</first>
+			<first>zext_ln128_2_fu_533</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16475,7 +16475,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln126_fu_519</first>
+			<first>zext_ln128_fu_519</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16483,7 +16483,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln130_fu_550</first>
+			<first>zext_ln132_fu_550</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16491,7 +16491,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln132_1_fu_583</first>
+			<first>zext_ln134_1_fu_583</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16499,7 +16499,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln132_2_fu_592</first>
+			<first>zext_ln134_2_fu_592</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16507,7 +16507,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln132_fu_578</first>
+			<first>zext_ln134_fu_578</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16515,7 +16515,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln136_fu_609</first>
+			<first>zext_ln138_fu_609</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16523,7 +16523,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln137_fu_620</first>
+			<first>zext_ln139_fu_620</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16531,7 +16531,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln138_fu_662</first>
+			<first>zext_ln140_fu_662</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16539,7 +16539,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln139_fu_685</first>
+			<first>zext_ln141_fu_685</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17419,7 +17419,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln136_1_reg_865</first>
+			<first>bitcast_ln138_1_reg_865</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17427,7 +17427,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln137_1_reg_870</first>
+			<first>bitcast_ln139_1_reg_870</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17435,7 +17435,7 @@
 			</second>
 		</item>
 		<item>
-			<first>bitcast_ln138_1_reg_885</first>
+			<first>bitcast_ln140_1_reg_885</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17728,7 +17728,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln125_reg_742</first>
+			<first>trunc_ln127_reg_742</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17736,7 +17736,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln131_reg_793</first>
+			<first>trunc_ln133_reg_793</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17744,7 +17744,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln137_1_reg_850</first>
+			<first>xor_ln139_1_reg_850</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17816,7 +17816,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln119_reg_714</first>
+			<first>zext_ln121_reg_714</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17824,7 +17824,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln136_reg_839</first>
+			<first>zext_ln138_reg_839</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

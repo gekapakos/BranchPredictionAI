@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity main_fptrunc_64ns_32_2_1 is
     generic (
-        ID         : integer := 46;
+        ID         : integer := 33;
         NUM_STAGE  : integer := 2;
         din0_WIDTH : integer := 64;
         dout_WIDTH : integer := 32

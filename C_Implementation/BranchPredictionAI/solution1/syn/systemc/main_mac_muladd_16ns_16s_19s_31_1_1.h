@@ -4,7 +4,7 @@
 // ==============================================================
 #ifndef __main_mac_muladd_16ns_16s_19s_31_1_1__HH__
 #define __main_mac_muladd_16ns_16s_19s_31_1_1__HH__
-#include "simcore_mac_1.h"
+#include "simcore_mac_0.h"
 #include <systemc>
 
 template<
@@ -22,13 +22,13 @@ SC_MODULE(main_mac_muladd_16ns_16s_19s_31_1_1) {
 
 
 
-    simcore_mac_1<ID, 1, din0_WIDTH, din1_WIDTH, din2_WIDTH, dout_WIDTH> simcore_mac_1_U;
+    simcore_mac_0<ID, 1, din0_WIDTH, din1_WIDTH, din2_WIDTH, dout_WIDTH> simcore_mac_0_U;
 
-    SC_CTOR(main_mac_muladd_16ns_16s_19s_31_1_1):  simcore_mac_1_U ("simcore_mac_1_U") {
-        simcore_mac_1_U.din0(din0);
-        simcore_mac_1_U.din1(din1);
-        simcore_mac_1_U.din2(din2);
-        simcore_mac_1_U.dout(dout);
+    SC_CTOR(main_mac_muladd_16ns_16s_19s_31_1_1):  simcore_mac_0_U ("simcore_mac_0_U") {
+        simcore_mac_0_U.din0(din0);
+        simcore_mac_0_U.din1(din1);
+        simcore_mac_0_U.din2(din2);
+        simcore_mac_0_U.dout(dout);
 
     }
 

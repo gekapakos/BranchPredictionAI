@@ -215,7 +215,7 @@ architecture behav of generic_tanh_float_s is
     signal ap_CS_fsm_state28 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state28 : signal is "none";
     signal grp_fu_129_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_i_65_reg_389 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_i_57_reg_389 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state33 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state33 : signal is "none";
     signal grp_fu_117_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -423,7 +423,7 @@ begin
         x => grp_fu_120_p1,
         ap_return => grp_exp_generic_double_s_fu_89_ap_return);
 
-    main_faddfsub_32ns_32ns_32_5_full_dsp_1_U43 : component main_faddfsub_32ns_32ns_32_5_full_dsp_1
+    main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30 : component main_faddfsub_32ns_32ns_32_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -439,7 +439,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_100_p2);
 
-    main_fmul_32ns_32ns_32_4_max_dsp_1_U44 : component main_fmul_32ns_32ns_32_4_max_dsp_1
+    main_fmul_32ns_32ns_32_4_max_dsp_1_U31 : component main_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -454,7 +454,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_108_p2);
 
-    main_fdiv_32ns_32ns_32_16_1_U45 : component main_fdiv_32ns_32ns_32_16_1
+    main_fdiv_32ns_32ns_32_16_1_U32 : component main_fdiv_32ns_32ns_32_16_1
     generic map (
         ID => 1,
         NUM_STAGE => 16,
@@ -469,7 +469,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_112_p2);
 
-    main_fptrunc_64ns_32_2_1_U46 : component main_fptrunc_64ns_32_2_1
+    main_fptrunc_64ns_32_2_1_U33 : component main_fptrunc_64ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -478,11 +478,11 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => tmp_i_65_reg_389,
+        din0 => tmp_i_57_reg_389,
         ce => ap_const_logic_1,
         dout => grp_fu_117_p1);
 
-    main_fpext_32ns_64_2_1_U47 : component main_fpext_32ns_64_2_1
+    main_fpext_32ns_64_2_1_U34 : component main_fpext_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -495,7 +495,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_120_p1);
 
-    main_fcmp_32ns_32ns_1_2_1_U48 : component main_fcmp_32ns_32ns_1_2_1
+    main_fcmp_32ns_32ns_1_2_1_U35 : component main_fcmp_32ns_32ns_1_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -511,7 +511,7 @@ begin
         opcode => ap_const_lv5_4,
         dout => grp_fu_124_p2);
 
-    main_dadd_64ns_64ns_64_5_full_dsp_1_U49 : component main_dadd_64ns_64ns_64_5_full_dsp_1
+    main_dadd_64ns_64ns_64_5_full_dsp_1_U36 : component main_dadd_64ns_64ns_64_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -673,7 +673,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state33)) then
-                tmp_i_65_reg_389 <= grp_fu_129_p2;
+                tmp_i_57_reg_389 <= grp_fu_129_p2;
             end if;
         end if;
     end process;

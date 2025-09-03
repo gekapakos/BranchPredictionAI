@@ -98913,17 +98913,11 @@ static inline void conv_bn_act_pool(const float *X,int Tlen,
         for(c=0;c<C;++c){
             float nrm = (yt[c]-mean[c]) / sqrtf(var[c]+eps);
             yt[c] = gamma[c]*nrm + beta[c];
-        }
-    }
-
-    for(t = 0;t < Tlen; ++t) {
-        float *yt = Y + t*C;
-        for(c = 0;c < C;++c) {
             float x = yt[c];
             yt[c] = (a == ACT_RELU) ? reluf(x) : (a == ACT_TANH? tanhf_fast(x) : sigmoidf(x));
         }
     }
-
+# 100 "main_5_slices.cpp"
     const int Tout = Tlen / Psz;
     for(int u = 0;u < Tout; ++u) {
         for(c = 0;c < C; ++c){
@@ -98976,7 +98970,7 @@ static inline void lstm_forward_unidir(const float *x,int Tlen,int D,
 static inline void bn_vector(float *v,int C, const float *gamma,const float *beta,const float *mean,const float *var,float eps)
 {
 _ssdm_InlineSelf(0, "");
- for(int c=0;c<C;++c){
+ for(int c = 0; c < C; ++c){
         float n = (v[c]-mean[c]) / sqrtf(var[c]+eps);
         v[c] = gamma[c]*n + beta[c];
     }
@@ -98985,25 +98979,28 @@ _ssdm_InlineSelf(0, "");
 static inline void dense_forward(const float *x,int In,
     const float *W,const float *b,int Out,float *y)
 {
-    for(int j=0;j<Out;++j){
-        float acc = b? b[j] : 0.0f;
-        for(int i=0;i<In;++i) acc += x[i]*W[i*Out + j];
-        y[j]=acc;
+    float acc;
+    for(int j = 0; j < Out; ++j) {
+        acc = b ? b[j] : 0.0f;
+        for(int i = 0; i < In; ++i) {
+            acc += x[i] * W[i * Out + j];
+        }
+        y[j] = acc;
     }
 }
 
 static float Y[T14*F];
 static float U_slice[T24*F];
-static float X_slice[T4*E];
 
 
 static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(merged, 32);
     const float BN_eps = 1e-3f;
     int j;
-    for (j=0;j<H;++j) merged[j]=0.0f;
+    for (j = 0; j < H; ++j) merged[j] = 0.0f;
 
 
     {
+        float X_slice[T0*E];
 
         embedding_forward_dyn(tokens0, T0, Emb0, X_slice);
         conv_bn_act_pool(X_slice, T0, ConvW0, K, ConvB0, Y, T10,
@@ -99016,6 +99013,7 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
 
 
     {
+        float X_slice[T1*E];
 
         embedding_forward_dyn(tokens1, T1, Emb1, X_slice);
         conv_bn_act_pool(X_slice, T1, ConvW1, K, ConvB1, Y, T11,
@@ -99028,6 +99026,7 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
 
 
     {
+        float X_slice[T2*E];
 
         embedding_forward_dyn(tokens2, T2, Emb2, X_slice);
         conv_bn_act_pool(X_slice, T2, ConvW2, K, ConvB2, Y, T12,
@@ -99040,6 +99039,7 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
 
 
     {
+        float X_slice[T3*E];
 
         embedding_forward_dyn(tokens3, T3, Emb3, X_slice);
         conv_bn_act_pool(X_slice, T3, ConvW3, K, ConvB3, Y, T13,
@@ -99052,6 +99052,7 @@ static void run_all_slices_unrolled(float merged[H]) {_ssdm_SpecArrayDimSize(mer
 
 
     {
+        float X_slice[T4*E];
 
         embedding_forward_dyn(tokens4, T4, Emb4, X_slice);
         conv_bn_act_pool(X_slice, T4, ConvW4, K, ConvB4, Y, T14,
