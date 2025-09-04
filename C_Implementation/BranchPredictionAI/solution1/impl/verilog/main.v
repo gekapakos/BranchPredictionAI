@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="main,hls_ip_2019_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.800020,HLS_SYN_LAT=95821796,HLS_SYN_TPT=none,HLS_SYN_MEM=304,HLS_SYN_DSP=81,HLS_SYN_FF=29417,HLS_SYN_LUT=34284,HLS_VERSION=2019_1}" *)
+(* CORE_GENERATION_INFO="main,hls_ip_2019_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.800020,HLS_SYN_LAT=95821796,HLS_SYN_TPT=none,HLS_SYN_MEM=264,HLS_SYN_DSP=81,HLS_SYN_FF=29497,HLS_SYN_LUT=43244,HLS_VERSION=2019_1}" *)
 
 module main (
         ap_clk,
@@ -251,7 +251,7 @@ wire   [7:0] j_fu_662_p2;
 reg   [7:0] j_reg_866;
 wire    ap_CS_fsm_state64;
 reg   [6:0] z0_addr_2_reg_871;
-wire   [0:0] icmp_ln329_fu_656_p2;
+wire   [0:0] icmp_ln339_fu_656_p2;
 wire   [15:0] select_ln69_fu_673_p3;
 reg   [15:0] select_ln69_reg_876;
 wire    ap_CS_fsm_state66;
@@ -280,7 +280,7 @@ wire   [7:0] j_13_fu_765_p2;
 reg   [7:0] j_13_reg_958;
 wire    ap_CS_fsm_state129;
 reg   [6:0] z1_addr_1_reg_963;
-wire   [0:0] icmp_ln334_fu_759_p2;
+wire   [0:0] icmp_ln344_fu_759_p2;
 wire   [15:0] select_ln69_1_fu_776_p3;
 reg   [15:0] select_ln69_1_reg_968;
 wire    ap_CS_fsm_state131;
@@ -322,11 +322,11 @@ reg    grp_run_all_slices_unrol_fu_407_ap_start_reg;
 wire   [63:0] zext_ln189_fu_610_p1;
 wire   [63:0] zext_ln189_1_fu_632_p1;
 wire   [63:0] zext_ln177_fu_649_p1;
-wire   [63:0] zext_ln329_fu_668_p1;
+wire   [63:0] zext_ln339_fu_668_p1;
 wire   [63:0] zext_ln189_2_fu_713_p1;
 wire   [63:0] zext_ln189_3_fu_735_p1;
 wire   [63:0] zext_ln177_5_fu_752_p1;
-wire   [63:0] zext_ln334_fu_771_p1;
+wire   [63:0] zext_ln344_fu_771_p1;
 wire    ap_CS_fsm_state33;
 wire    ap_CS_fsm_state98;
 wire    ap_CS_fsm_state36;
@@ -667,7 +667,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln329_fu_656_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state64))) begin
+    if (((icmp_ln339_fu_656_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state64))) begin
         j_0_i4_reg_350 <= 8'd0;
     end else if (((icmp_ln188_1_fu_701_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state69))) begin
         j_0_i4_reg_350 <= j_12_reg_889;
@@ -836,8 +836,8 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln329_fu_656_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state64))) begin
-        z0_addr_2_reg_871 <= zext_ln329_fu_668_p1;
+    if (((icmp_ln339_fu_656_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state64))) begin
+        z0_addr_2_reg_871 <= zext_ln339_fu_668_p1;
     end
 end
 
@@ -848,8 +848,8 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln334_fu_759_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state129))) begin
-        z1_addr_1_reg_963 <= zext_ln334_fu_771_p1;
+    if (((icmp_ln344_fu_759_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state129))) begin
+        z1_addr_1_reg_963 <= zext_ln344_fu_771_p1;
     end
 end
 
@@ -872,7 +872,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln334_fu_759_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129))) begin
+    if (((icmp_ln344_fu_759_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -888,7 +888,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln334_fu_759_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129))) begin
+    if (((icmp_ln344_fu_759_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -1053,7 +1053,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state67)) begin
         z0_address0 = z0_addr_2_reg_871;
     end else if ((1'b1 == ap_CS_fsm_state64)) begin
-        z0_address0 = zext_ln329_fu_668_p1;
+        z0_address0 = zext_ln339_fu_668_p1;
     end else if (((1'b1 == ap_CS_fsm_state33) | (1'b1 == ap_CS_fsm_state63))) begin
         z0_address0 = z0_addr_reg_838;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
@@ -1095,7 +1095,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state132)) begin
         z1_address0 = z1_addr_1_reg_963;
     end else if ((1'b1 == ap_CS_fsm_state129)) begin
-        z1_address0 = zext_ln334_fu_771_p1;
+        z1_address0 = zext_ln344_fu_771_p1;
     end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state128))) begin
         z1_address0 = z1_addr_reg_930;
     end else if ((1'b1 == ap_CS_fsm_state69)) begin
@@ -1345,7 +1345,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state15;
         end
         ap_ST_fsm_state64 : begin
-            if (((icmp_ln329_fu_656_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state64))) begin
+            if (((icmp_ln339_fu_656_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state64))) begin
                 ap_NS_fsm = ap_ST_fsm_state68;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state65;
@@ -1556,7 +1556,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state80;
         end
         ap_ST_fsm_state129 : begin
-            if (((icmp_ln334_fu_759_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129))) begin
+            if (((icmp_ln344_fu_759_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state130;
@@ -1741,9 +1741,9 @@ assign icmp_ln188_1_fu_701_p2 = ((i_0_i11_reg_374 == 8'd128) ? 1'b1 : 1'b0);
 
 assign icmp_ln188_fu_598_p2 = ((i_0_i_reg_317 == 6'd32) ? 1'b1 : 1'b0);
 
-assign icmp_ln329_fu_656_p2 = ((j_0_reg_339 == 8'd128) ? 1'b1 : 1'b0);
+assign icmp_ln339_fu_656_p2 = ((j_0_reg_339 == 8'd128) ? 1'b1 : 1'b0);
 
-assign icmp_ln334_fu_759_p2 = ((j_1_reg_396 == 8'd128) ? 1'b1 : 1'b0);
+assign icmp_ln344_fu_759_p2 = ((j_1_reg_396 == 8'd128) ? 1'b1 : 1'b0);
 
 assign j_0_i4_cast2_fu_681_p1 = j_0_i4_reg_350;
 
@@ -1785,9 +1785,9 @@ assign zext_ln189_3_fu_735_p1 = add_ln189_1_fu_730_p2;
 
 assign zext_ln189_fu_610_p1 = i_0_i_reg_317;
 
-assign zext_ln329_fu_668_p1 = j_0_reg_339;
+assign zext_ln339_fu_668_p1 = j_0_reg_339;
 
-assign zext_ln334_fu_771_p1 = j_1_reg_396;
+assign zext_ln344_fu_771_p1 = j_1_reg_396;
 
 always @ (posedge ap_clk) begin
     j_0_i_cast4_reg_784[11:8] <= 4'b0000;

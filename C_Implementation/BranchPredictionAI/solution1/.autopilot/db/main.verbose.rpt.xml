@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'main'" level="0">
-<item name = "Date">Thu Sep  4 14:11:45 2025
+<item name = "Date">Thu Sep  4 15:16:12 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -58,12 +58,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 285, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">278, 81, 28716, 33025, 0</column>
+<column name="Instance">238, 81, 28796, 41985, 0</column>
 <column name="Memory">26, -, 32, 8, 0</column>
 <column name="Multiplexer">-, -, -, 966, -</column>
 <column name="Register">-, -, 669, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">108, 36, 27, 64, 0</specialColumn>
+<specialColumn name="Utilization (%)">94, 36, 27, 81, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -77,7 +77,7 @@
 <column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U139">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
 <column name="main_hptosp_16ns_32_2_1_U137">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
 <column name="main_sptohp_32ns_16_2_1_U136">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
-<column name="grp_run_all_slices_unrol_fu_407">run_all_slices_unrol, 278, 77, 27200, 31207, 0</column>
+<column name="grp_run_all_slices_unrol_fu_407">run_all_slices_unrol, 238, 77, 27280, 40167, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -119,8 +119,8 @@
 <column name="icmp_ln186_fu_582_p2">icmp, 0, 0, 13, 8, 9</column>
 <column name="icmp_ln188_1_fu_701_p2">icmp, 0, 0, 13, 8, 9</column>
 <column name="icmp_ln188_fu_598_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln329_fu_656_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln334_fu_759_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln339_fu_656_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln344_fu_759_p2">icmp, 0, 0, 13, 8, 9</column>
 <column name="select_ln69_1_fu_776_p3">select, 0, 0, 16, 1, 16</column>
 <column name="select_ln69_fu_673_p3">select, 0, 0, 16, 1, 16</column>
 </table>

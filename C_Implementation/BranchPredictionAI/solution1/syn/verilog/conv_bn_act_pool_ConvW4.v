@@ -3,7 +3,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-module conv_bn_act_pool_ConvW4_rom (
+(* rom_style = "distributed" *) module conv_bn_act_pool_ConvW4_rom (
 addr0, ce0, q0, clk);
 
 parameter DWIDTH = 16;
@@ -15,7 +15,7 @@ input ce0;
 output reg[DWIDTH-1:0] q0;
 input clk;
 
-reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
+(* ram_style = "distributed" *)reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
 
 initial begin
     $readmemh("./conv_bn_act_pool_ConvW4_rom.dat", ram);

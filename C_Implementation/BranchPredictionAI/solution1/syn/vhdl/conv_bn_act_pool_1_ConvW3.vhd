@@ -2416,6 +2416,10 @@ signal mem : mem_array := (
     7162 => "0010110111100010", 7163 => "1010010011100110", 7164 => "0010100101111111", 
     7165 => "1010100110111011", 7166 => "1010110010111101", 7167 => "1010100011100100" );
 
+attribute syn_rom_style : string;
+attribute syn_rom_style of mem : signal is "select_rom";
+attribute ROM_STYLE : string;
+attribute ROM_STYLE of mem : signal is "distributed";
 
 begin 
 

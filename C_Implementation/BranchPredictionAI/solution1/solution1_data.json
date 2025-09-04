@@ -347,27 +347,27 @@
           "Instances": [
             {
               "ModuleName": "lstm_forward_unidir",
-              "InstanceName": "grp_lstm_forward_unidir_fu_578"
+              "InstanceName": "grp_lstm_forward_unidir_fu_586"
             },
             {
               "ModuleName": "conv_bn_act_pool",
-              "InstanceName": "grp_conv_bn_act_pool_fu_606"
+              "InstanceName": "grp_conv_bn_act_pool_fu_614"
             },
             {
               "ModuleName": "conv_bn_act_pool_1",
-              "InstanceName": "grp_conv_bn_act_pool_1_fu_617"
+              "InstanceName": "grp_conv_bn_act_pool_1_fu_625"
             },
             {
               "ModuleName": "conv_bn_act_pool_2",
-              "InstanceName": "grp_conv_bn_act_pool_2_fu_629"
+              "InstanceName": "grp_conv_bn_act_pool_2_fu_637"
             },
             {
               "ModuleName": "conv_bn_act_pool_3",
-              "InstanceName": "grp_conv_bn_act_pool_3_fu_641"
+              "InstanceName": "grp_conv_bn_act_pool_3_fu_649"
             },
             {
               "ModuleName": "conv_bn_act_pool_4",
-              "InstanceName": "grp_conv_bn_act_pool_4_fu_653"
+              "InstanceName": "grp_conv_bn_act_pool_4_fu_661"
             }
           ]
         }]
@@ -498,10 +498,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "10",
+          "BRAM_18K": "2",
           "DSP48E": "9",
-          "FF": "4066",
-          "LUT": "4051",
+          "FF": "4082",
+          "LUT": "5843",
           "URAM": "0"
         }
       },
@@ -654,10 +654,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "12",
+          "BRAM_18K": "4",
           "DSP48E": "9",
-          "FF": "4069",
-          "LUT": "4050",
+          "FF": "4085",
+          "LUT": "5842",
           "URAM": "0"
         }
       },
@@ -728,10 +728,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "16",
+          "BRAM_18K": "8",
           "DSP48E": "9",
-          "FF": "4072",
-          "LUT": "4055",
+          "FF": "4088",
+          "LUT": "5847",
           "URAM": "0"
         }
       },
@@ -802,10 +802,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "24",
+          "BRAM_18K": "16",
           "DSP48E": "9",
-          "FF": "4075",
-          "LUT": "4059",
+          "FF": "4091",
+          "LUT": "5851",
           "URAM": "0"
         }
       },
@@ -876,10 +876,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "8",
+          "BRAM_18K": "0",
           "DSP48E": "9",
-          "FF": "4078",
-          "LUT": "4059",
+          "FF": "4094",
+          "LUT": "5851",
           "URAM": "0"
         }
       },
@@ -993,10 +993,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "278",
+          "BRAM_18K": "238",
           "DSP48E": "77",
-          "FF": "27200",
-          "LUT": "31207",
+          "FF": "27280",
+          "LUT": "40167",
           "URAM": "0"
         }
       },
@@ -1075,10 +1075,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "304",
+          "BRAM_18K": "264",
           "DSP48E": "81",
-          "FF": "29417",
-          "LUT": "34284",
+          "FF": "29497",
+          "LUT": "43244",
           "URAM": "0"
         }
       }
@@ -1094,7 +1094,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2025-09-04 14:12:05 EEST",
+    "Time": "2025-09-04 15:16:30 EEST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }
