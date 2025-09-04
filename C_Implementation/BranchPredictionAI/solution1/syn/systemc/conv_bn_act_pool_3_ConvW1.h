@@ -22,8 +22,8 @@ struct conv_bn_act_pool_3_ConvW1_ram : public sc_core::sc_module {
   static const unsigned AddressRange = 7168;
   static const unsigned AddressWidth = 13;
 
-//latency = 1
-//input_reg = 1
+//latency = 0
+//input_reg = 0
 //output_reg = 0
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in <sc_logic> ce0;
@@ -7204,23 +7204,19 @@ sc_lv<DataWidth> ram[AddressRange];
         ram[7165] = "0b1010110000000010";
         ram[7166] = "0b0010010011001111";
         ram[7167] = "0b1010011100010110";
+SC_METHOD(prc_comb_0);
+  sensitive<<address0<<ce0;
 
 
-SC_METHOD(prc_write_0);
-  sensitive<<clk.pos();
    }
 
-
-void prc_write_0()
-{
-    if (ce0.read() == sc_dt::Log_1) 
-    {
-            if(address0.read().is_01() && address0.read().to_uint()<AddressRange)
-              q0 = ram[address0.read().to_uint()];
-            else
-              q0 = sc_lv<DataWidth>();
-    }
+void prc_comb_0() {
+  if(address0.read().is_01() && address0.read().to_uint()<AddressRange)
+    q0 = ram[address0.read().to_uint()];
+  else
+    q0 = sc_lv<DataWidth>();
 }
+
 
 
 }; //endmodule

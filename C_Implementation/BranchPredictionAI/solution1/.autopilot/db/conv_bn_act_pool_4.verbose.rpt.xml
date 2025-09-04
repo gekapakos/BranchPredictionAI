@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool_4'" level="0">
-<item name = "Date">Thu Sep  4 15:57:43 2025
+<item name = "Date">Thu Sep  4 16:28:25 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -56,11 +56,11 @@
 <column name="Expression">-, -, 0, 347, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, 9, 920, 1439, -</column>
-<column name="Memory">2, -, 32, 1800, -</column>
+<column name="Memory">2, -, 32, 8, -</column>
 <column name="Multiplexer">-, -, -, 2257, -</column>
-<column name="Register">-, -, 3130, -, -</column>
+<column name="Register">-, -, 3127, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">~0, 4, 3, 10, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 4, 3, 7, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -86,7 +86,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="ConvW0_U">conv_bn_act_pool_4_ConvW0, 0, 16, 1792, 0, 7168, 16, 1, 114688</column>
+<column name="ConvW0_U">conv_bn_act_pool_4_ConvW0, 0, 16, 0, 0, 7168, 16, 1, 114688</column>
 <column name="X_slice_U">conv_bn_act_pool_4_X_slice, 2, 0, 0, 0, 1344, 16, 1, 21504</column>
 <column name="a_bn_U">conv_bn_act_pool_4_a_bn, 0, 16, 8, 0, 32, 16, 1, 512</column>
 </table>
@@ -97,25 +97,25 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln101_fu_8833_p2">+, 0, 0, 15, 6, 6</column>
-<column name="add_ln103_1_fu_8891_p2">+, 0, 0, 17, 13, 13</column>
-<column name="add_ln103_fu_8867_p2">+, 0, 0, 13, 11, 11</column>
+<column name="add_ln101_fu_8834_p2">+, 0, 0, 15, 6, 6</column>
+<column name="add_ln103_1_fu_8892_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln103_fu_8868_p2">+, 0, 0, 13, 11, 11</column>
 <column name="add_ln111_fu_9067_p2">+, 0, 0, 39, 32, 32</column>
-<column name="e_fu_8857_p2">+, 0, 0, 15, 6, 1</column>
-<column name="f_1_fu_8777_p2">+, 0, 0, 15, 6, 1</column>
+<column name="e_fu_8858_p2">+, 0, 0, 15, 6, 1</column>
+<column name="f_1_fu_8778_p2">+, 0, 0, 15, 6, 1</column>
 <column name="f_2_fu_8987_p2">+, 0, 0, 15, 6, 1</column>
-<column name="f_fu_8584_p2">+, 0, 0, 15, 6, 1</column>
-<column name="k_fu_8823_p2">+, 0, 0, 12, 3, 1</column>
-<column name="pc_fu_8794_p2">+, 0, 0, 39, 32, 1</column>
-<column name="t_fu_8765_p2">+, 0, 0, 15, 6, 1</column>
+<column name="f_fu_8585_p2">+, 0, 0, 15, 6, 1</column>
+<column name="k_fu_8824_p2">+, 0, 0, 12, 3, 1</column>
+<column name="pc_fu_8795_p2">+, 0, 0, 39, 32, 1</column>
+<column name="t_fu_8766_p2">+, 0, 0, 15, 6, 1</column>
 <column name="u_fu_9072_p2">+, 0, 0, 39, 32, 1</column>
-<column name="icmp_ln100_fu_8817_p2">icmp, 0, 0, 9, 3, 2</column>
-<column name="icmp_ln103_fu_8851_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln110_fu_8800_p2">icmp, 0, 0, 18, 32, 2</column>
+<column name="icmp_ln100_fu_8818_p2">icmp, 0, 0, 9, 3, 2</column>
+<column name="icmp_ln103_fu_8852_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln110_fu_8801_p2">icmp, 0, 0, 18, 32, 2</column>
 <column name="icmp_ln111_fu_8981_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln94_fu_8578_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln97_fu_8759_p2">icmp, 0, 0, 11, 6, 6</column>
-<column name="icmp_ln98_fu_8771_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln94_fu_8579_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln97_fu_8760_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="icmp_ln98_fu_8772_p2">icmp, 0, 0, 11, 6, 7</column>
 <column name="y_1_fu_8901_p3">select, 0, 0, 16, 1, 16</column>
 </table>
 </item>
@@ -330,10 +330,10 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ConvW0_load_reg_9544">16, 0, 16, 0</column>
 <column name="X_slice_load_reg_9539">16, 0, 16, 0</column>
 <column name="acc_0_reg_1017">16, 0, 16, 0</column>
 <column name="acc_1_reg_1041">16, 0, 16, 0</column>
+<column name="add_ln103_1_reg_9534">13, 0, 13, 0</column>
 <column name="add_ln111_reg_9653">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">49, 0, 49, 0</column>
 <column name="e_0_reg_1053">6, 0, 6, 0</column>

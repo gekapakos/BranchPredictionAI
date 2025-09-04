@@ -99097,11 +99097,7 @@ static half U_slice[T24*F];
 
 
 static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merged, 32);
-#pragma HLS RESOURCE variable=&ConvW0 core=ROM_1P_LUTRAM
-#pragma HLS RESOURCE variable=&ConvW1 core=ROM_1P_LUTRAM
-#pragma HLS RESOURCE variable=&ConvW2 core=ROM_1P_LUTRAM
-#pragma HLS RESOURCE variable=&ConvW3 core=ROM_1P_LUTRAM
-#pragma HLS RESOURCE variable=&ConvW4 core=ROM_1P_LUTRAM
+
 
 
 #pragma HLS ARRAY_PARTITION variable=&BN1_gamma0 complete
@@ -99114,6 +99110,13 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
 #pragma HLS RESOURCE variable=&BN1_var0 core=Register
 #pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog0 complete
 #pragma HLS RESOURCE variable=&LSTM_b_ifog0 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_R_ifog0 complete
+#pragma HLS RESOURCE variable=&LSTM_R_ifog0 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_W_ifog0 complete
+#pragma HLS RESOURCE variable=&LSTM_W_ifog0 core=Register
+#pragma HLS ARRAY_PARTITION variable=&ConvW0 complete
+#pragma HLS RESOURCE variable=&ConvW0 core=Register
+
 
 #pragma HLS ARRAY_PARTITION variable=&BN1_gamma1 complete
 #pragma HLS RESOURCE variable=&BN1_gamma1 core=Register
@@ -99125,6 +99128,13 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
 #pragma HLS RESOURCE variable=&BN1_var1 core=Register
 #pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog1 complete
 #pragma HLS RESOURCE variable=&LSTM_b_ifog1 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_R_ifog1 complete
+#pragma HLS RESOURCE variable=&LSTM_R_ifog1 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_W_ifog1 complete
+#pragma HLS RESOURCE variable=&LSTM_W_ifog1 core=Register
+#pragma HLS ARRAY_PARTITION variable=&ConvW1 complete
+#pragma HLS RESOURCE variable=&ConvW1 core=Register
+
 
 #pragma HLS ARRAY_PARTITION variable=&BN1_gamma2 complete
 #pragma HLS RESOURCE variable=&BN1_gamma2 core=Register
@@ -99136,6 +99146,13 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
 #pragma HLS RESOURCE variable=&BN1_var2 core=Register
 #pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog2 complete
 #pragma HLS RESOURCE variable=&LSTM_b_ifog2 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_R_ifog2 complete
+#pragma HLS RESOURCE variable=&LSTM_R_ifog2 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_W_ifog2 complete
+#pragma HLS RESOURCE variable=&LSTM_W_ifog2 core=Register
+#pragma HLS ARRAY_PARTITION variable=&ConvW2 complete
+#pragma HLS RESOURCE variable=&ConvW2 core=Register
+
 
 #pragma HLS ARRAY_PARTITION variable=&BN1_gamma3 complete
 #pragma HLS RESOURCE variable=&BN1_gamma3 core=Register
@@ -99147,6 +99164,13 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
 #pragma HLS RESOURCE variable=&BN1_var3 core=Register
 #pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog3 complete
 #pragma HLS RESOURCE variable=&LSTM_b_ifog3 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_R_ifog3 complete
+#pragma HLS RESOURCE variable=&LSTM_R_ifog3 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_W_ifog3 complete
+#pragma HLS RESOURCE variable=&LSTM_W_ifog3 core=Register
+#pragma HLS ARRAY_PARTITION variable=&ConvW3 complete
+#pragma HLS RESOURCE variable=&ConvW3 core=Register
+
 
 #pragma HLS ARRAY_PARTITION variable=&BN1_gamma4 complete
 #pragma HLS RESOURCE variable=&BN1_gamma4 core=Register
@@ -99158,6 +99182,12 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
 #pragma HLS RESOURCE variable=&BN1_var4 core=Register
 #pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog4 complete
 #pragma HLS RESOURCE variable=&LSTM_b_ifog4 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_R_ifog4 complete
+#pragma HLS RESOURCE variable=&LSTM_R_ifog4 core=Register
+#pragma HLS ARRAY_PARTITION variable=&LSTM_W_ifog4 complete
+#pragma HLS RESOURCE variable=&LSTM_W_ifog4 core=Register
+#pragma HLS ARRAY_PARTITION variable=&ConvW4 complete
+#pragma HLS RESOURCE variable=&ConvW4 core=Register
 
  const half BN_eps = 1e-3f;
     int j;

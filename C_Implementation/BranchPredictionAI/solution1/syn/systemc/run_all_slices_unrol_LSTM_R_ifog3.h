@@ -22,8 +22,8 @@ struct run_all_slices_unrol_LSTM_R_ifog3_ram : public sc_core::sc_module {
   static const unsigned AddressRange = 4096;
   static const unsigned AddressWidth = 12;
 
-//latency = 1
-//input_reg = 1
+//latency = 0
+//input_reg = 0
 //output_reg = 0
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in <sc_logic> ce0;
@@ -4132,23 +4132,19 @@ sc_lv<DataWidth> ram[AddressRange];
         ram[4093] = "0b0010101101111100";
         ram[4094] = "0b0010110011010010";
         ram[4095] = "0b0010101110111000";
+SC_METHOD(prc_comb_0);
+  sensitive<<address0<<ce0;
 
 
-SC_METHOD(prc_write_0);
-  sensitive<<clk.pos();
    }
 
-
-void prc_write_0()
-{
-    if (ce0.read() == sc_dt::Log_1) 
-    {
-            if(address0.read().is_01() && address0.read().to_uint()<AddressRange)
-              q0 = ram[address0.read().to_uint()];
-            else
-              q0 = sc_lv<DataWidth>();
-    }
+void prc_comb_0() {
+  if(address0.read().is_01() && address0.read().to_uint()<AddressRange)
+    q0 = ram[address0.read().to_uint()];
+  else
+    q0 = sc_lv<DataWidth>();
 }
+
 
 
 }; //endmodule
@@ -4176,7 +4172,6 @@ meminst = new run_all_slices_unrol_LSTM_R_ifog3_ram("run_all_slices_unrol_LSTM_R
 meminst->address0(address0);
 meminst->ce0(ce0);
 meminst->q0(q0);
-
 
 meminst->reset(reset);
 meminst->clk(clk);

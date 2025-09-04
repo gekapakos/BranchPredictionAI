@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'lstm_forward_unidir'" level="0">
-<item name = "Date">Thu Sep  4 15:56:49 2025
+<item name = "Date">Thu Sep  4 16:27:29 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">1205470, 1205470, 1205470, 1205470, none</column>
+<column name="">1107166, 1107166, 1107166, 1107166, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,12 +36,12 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">32, 32, 1, -, -, 32, no</column>
-<column name="- Loop 2">1205436, 1205436, 100453, -, -, 12, no</column>
+<column name="- Loop 2">1107132, 1107132, 92261, -, -, 12, no</column>
 <column name=" + Loop 2.1">128, 128, 1, -, -, 128, no</column>
-<column name=" + Loop 2.2">49248, 49248, 1539, -, -, 32, no</column>
-<column name="  ++ Loop 2.2.1">1536, 1536, 12, -, -, 128, no</column>
-<column name=" + Loop 2.3">49248, 49248, 1539, -, -, 32, no</column>
-<column name="  ++ Loop 2.3.1">1536, 1536, 12, -, -, 128, no</column>
+<column name=" + Loop 2.2">45152, 45152, 1411, -, -, 32, no</column>
+<column name="  ++ Loop 2.2.1">1408, 1408, 11, -, -, 128, no</column>
+<column name=" + Loop 2.3">45152, 45152, 1411, -, -, 32, no</column>
+<column name="  ++ Loop 2.3.1">1408, 1408, 11, -, -, 128, no</column>
 <column name=" + Loop 2.4">1824, 1824, 57, -, -, 32, no</column>
 </table>
 </item>

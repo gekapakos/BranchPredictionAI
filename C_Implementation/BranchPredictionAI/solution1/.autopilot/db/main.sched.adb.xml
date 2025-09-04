@@ -407,14 +407,14 @@
 
 <trans id="449" from="64" to="65">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln341" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln371" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="454" from="64" to="68">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln341" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln371" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -829,7 +829,7 @@
 
 <trans id="521" from="129" to="130">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln346" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln376" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -916,7 +916,7 @@
 :5  call fastcc void @run_all_slices_unrol([32 x half]* %merged) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="call_ln333"/></StgValue>
+<StgValue><ssdm name="call_ln363"/></StgValue>
 </operation>
 </state>
 
@@ -949,7 +949,7 @@
 :4  call void (...)* @_ssdm_op_SpecTopModule() nounwind
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln330"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln360"/></StgValue>
 </operation>
 
 <operation id="139" st_id="2" stage="1" lat="2">
@@ -964,7 +964,7 @@
 :5  call fastcc void @run_all_slices_unrol([32 x half]* %merged) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="call_ln333"/></StgValue>
+<StgValue><ssdm name="call_ln363"/></StgValue>
 </operation>
 
 <operation id="140" st_id="2" stage="1" lat="1">
@@ -1805,7 +1805,7 @@ dense_forward.2.exit:4  br i1 %icmp_ln160, label %bn_vector.exit.preheader, labe
 bn_vector.exit.preheader:0  br label %bn_vector.exit
 
 ]]></Node>
-<StgValue><ssdm name="br_ln341"/></StgValue>
+<StgValue><ssdm name="br_ln371"/></StgValue>
 </operation>
 </state>
 
@@ -2789,10 +2789,10 @@ bn_vector.exit:0  %j_0 = phi i8 [ %j, %6 ], [ 0, %bn_vector.exit.preheader ]
 
 <Node id="118" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-bn_vector.exit:1  %icmp_ln341 = icmp eq i8 %j_0, -128
+bn_vector.exit:1  %icmp_ln371 = icmp eq i8 %j_0, -128
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln341"/></StgValue>
+<StgValue><ssdm name="icmp_ln371"/></StgValue>
 </operation>
 
 <operation id="248" st_id="64" stage="1" lat="1">
@@ -2834,39 +2834,39 @@ bn_vector.exit:3  %j = add i8 %j_0, 1
 
 <Node id="121" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-bn_vector.exit:4  br i1 %icmp_ln341, label %.preheader.preheader, label %6
+bn_vector.exit:4  br i1 %icmp_ln371, label %.preheader.preheader, label %6
 
 ]]></Node>
-<StgValue><ssdm name="br_ln341"/></StgValue>
+<StgValue><ssdm name="br_ln371"/></StgValue>
 </operation>
 
 <operation id="251" st_id="64" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln341" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln371" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="123" bw="64" op_0_bw="8">
 <![CDATA[
-:0  %zext_ln341 = zext i8 %j_0 to i64
+:0  %zext_ln371 = zext i8 %j_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln341"/></StgValue>
+<StgValue><ssdm name="zext_ln371"/></StgValue>
 </operation>
 
 <operation id="252" st_id="64" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln341" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln371" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="124" bw="7" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:1  %z0_addr_2 = getelementptr inbounds [128 x half]* %z0, i64 0, i64 %zext_ln341
+:1  %z0_addr_2 = getelementptr inbounds [128 x half]* %z0, i64 0, i64 %zext_ln371
 
 ]]></Node>
 <StgValue><ssdm name="z0_addr_2"/></StgValue>
@@ -2876,7 +2876,7 @@ bn_vector.exit:4  br i1 %icmp_ln341, label %.preheader.preheader, label %6
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln341" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln371" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2892,7 +2892,7 @@ bn_vector.exit:4  br i1 %icmp_ln341, label %.preheader.preheader, label %6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln341" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln371" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2985,7 +2985,7 @@ bn_vector.exit:4  br i1 %icmp_ln341, label %.preheader.preheader, label %6
 :5  store half %select_ln53, half* %z0_addr_2, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln341"/></StgValue>
+<StgValue><ssdm name="store_ln371"/></StgValue>
 </operation>
 
 <operation id="260" st_id="67" stage="1" lat="1">
@@ -3000,7 +3000,7 @@ bn_vector.exit:4  br i1 %icmp_ln341, label %.preheader.preheader, label %6
 :6  br label %bn_vector.exit
 
 ]]></Node>
-<StgValue><ssdm name="br_ln341"/></StgValue>
+<StgValue><ssdm name="br_ln371"/></StgValue>
 </operation>
 </state>
 
@@ -3826,7 +3826,7 @@ dense_forward.1.exit:4  br i1 %icmp_ln160_5, label %bn_vector.exit3.preheader, l
 bn_vector.exit3.preheader:0  br label %bn_vector.exit3
 
 ]]></Node>
-<StgValue><ssdm name="br_ln346"/></StgValue>
+<StgValue><ssdm name="br_ln376"/></StgValue>
 </operation>
 </state>
 
@@ -4810,10 +4810,10 @@ bn_vector.exit3:0  %j_1 = phi i8 [ %j_13, %11 ], [ 0, %bn_vector.exit3.preheader
 
 <Node id="196" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-bn_vector.exit3:1  %icmp_ln346 = icmp eq i8 %j_1, -128
+bn_vector.exit3:1  %icmp_ln376 = icmp eq i8 %j_1, -128
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln346"/></StgValue>
+<StgValue><ssdm name="icmp_ln376"/></StgValue>
 </operation>
 
 <operation id="368" st_id="129" stage="1" lat="1">
@@ -4855,39 +4855,39 @@ bn_vector.exit3:3  %j_13 = add i8 %j_1, 1
 
 <Node id="199" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-bn_vector.exit3:4  br i1 %icmp_ln346, label %sigmoidf.exit, label %11
+bn_vector.exit3:4  br i1 %icmp_ln376, label %sigmoidf.exit, label %11
 
 ]]></Node>
-<StgValue><ssdm name="br_ln346"/></StgValue>
+<StgValue><ssdm name="br_ln376"/></StgValue>
 </operation>
 
 <operation id="371" st_id="129" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln346" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln376" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="201" bw="64" op_0_bw="8">
 <![CDATA[
-:0  %zext_ln346 = zext i8 %j_1 to i64
+:0  %zext_ln376 = zext i8 %j_1 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln346"/></StgValue>
+<StgValue><ssdm name="zext_ln376"/></StgValue>
 </operation>
 
 <operation id="372" st_id="129" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln346" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln376" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="202" bw="7" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:1  %z1_addr_1 = getelementptr inbounds [128 x half]* %z1, i64 0, i64 %zext_ln346
+:1  %z1_addr_1 = getelementptr inbounds [128 x half]* %z1, i64 0, i64 %zext_ln376
 
 ]]></Node>
 <StgValue><ssdm name="z1_addr_1"/></StgValue>
@@ -4897,7 +4897,7 @@ bn_vector.exit3:4  br i1 %icmp_ln346, label %sigmoidf.exit, label %11
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln346" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln376" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -4913,7 +4913,7 @@ bn_vector.exit3:4  br i1 %icmp_ln346, label %sigmoidf.exit, label %11
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln346" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln376" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -4922,7 +4922,7 @@ bn_vector.exit3:4  br i1 %icmp_ln346, label %sigmoidf.exit, label %11
 sigmoidf.exit:0  ret i32 0
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln353"/></StgValue>
+<StgValue><ssdm name="ret_ln383"/></StgValue>
 </operation>
 </state>
 
@@ -5006,7 +5006,7 @@ sigmoidf.exit:0  ret i32 0
 :5  store half %select_ln53_1, half* %z1_addr_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln346"/></StgValue>
+<StgValue><ssdm name="store_ln376"/></StgValue>
 </operation>
 
 <operation id="380" st_id="132" stage="1" lat="1">
@@ -5021,7 +5021,7 @@ sigmoidf.exit:0  ret i32 0
 :6  br label %bn_vector.exit3
 
 ]]></Node>
-<StgValue><ssdm name="br_ln346"/></StgValue>
+<StgValue><ssdm name="br_ln376"/></StgValue>
 </operation>
 </state>
 </state_list>

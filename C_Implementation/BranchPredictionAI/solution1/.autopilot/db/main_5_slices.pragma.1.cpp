@@ -99097,11 +99097,7 @@ static half U_slice[T24*F];
 
 
 static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merged, 32);
-_ssdm_op_SpecResource(&ConvW0, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
-_ssdm_op_SpecResource(&ConvW1, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
-_ssdm_op_SpecResource(&ConvW2, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
-_ssdm_op_SpecResource(&ConvW3, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
-_ssdm_op_SpecResource(&ConvW4, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
+
 
 
 _ssdm_SpecArrayPartition( &BN1_gamma0, 1, "COMPLETE", 0, "");
@@ -99114,6 +99110,13 @@ _ssdm_SpecArrayPartition( &BN1_var0, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_var0, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &LSTM_b_ifog0, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_b_ifog0, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_R_ifog0, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_R_ifog0, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_W_ifog0, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_W_ifog0, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &ConvW0, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&ConvW0, "", "Register", "", -1, "", "", "", "", "");
+
 
 _ssdm_SpecArrayPartition( &BN1_gamma1, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_gamma1, "", "Register", "", -1, "", "", "", "", "");
@@ -99125,6 +99128,13 @@ _ssdm_SpecArrayPartition( &BN1_var1, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_var1, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &LSTM_b_ifog1, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_b_ifog1, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_R_ifog1, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_R_ifog1, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_W_ifog1, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_W_ifog1, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &ConvW1, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&ConvW1, "", "Register", "", -1, "", "", "", "", "");
+
 
 _ssdm_SpecArrayPartition( &BN1_gamma2, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_gamma2, "", "Register", "", -1, "", "", "", "", "");
@@ -99136,6 +99146,13 @@ _ssdm_SpecArrayPartition( &BN1_var2, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_var2, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &LSTM_b_ifog2, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_b_ifog2, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_R_ifog2, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_R_ifog2, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_W_ifog2, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_W_ifog2, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &ConvW2, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&ConvW2, "", "Register", "", -1, "", "", "", "", "");
+
 
 _ssdm_SpecArrayPartition( &BN1_gamma3, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_gamma3, "", "Register", "", -1, "", "", "", "", "");
@@ -99147,6 +99164,13 @@ _ssdm_SpecArrayPartition( &BN1_var3, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_var3, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &LSTM_b_ifog3, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_b_ifog3, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_R_ifog3, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_R_ifog3, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_W_ifog3, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_W_ifog3, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &ConvW3, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&ConvW3, "", "Register", "", -1, "", "", "", "", "");
+
 
 _ssdm_SpecArrayPartition( &BN1_gamma4, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_gamma4, "", "Register", "", -1, "", "", "", "", "");
@@ -99158,6 +99182,12 @@ _ssdm_SpecArrayPartition( &BN1_var4, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_var4, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &LSTM_b_ifog4, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_b_ifog4, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_R_ifog4, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_R_ifog4, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &LSTM_W_ifog4, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&LSTM_W_ifog4, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &ConvW4, 1, "COMPLETE", 0, "");
+_ssdm_op_SpecResource(&ConvW4, "", "Register", "", -1, "", "", "", "", "");
 
  const half BN_eps = 1e-3f;
     int j;

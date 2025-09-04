@@ -14,8 +14,8 @@ set isEnableWaveformDebug 1
 set C_modelName {lstm_forward_unidir}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ W_ifog int 16 regular {array 4096 { 1 3 } 1 1 }  }
-	{ R_ifog int 16 regular {array 4096 { 1 3 } 1 1 }  }
+	{ W_ifog int 16 regular {array 4096 { 1 } 0 1 }  }
+	{ R_ifog int 16 regular {array 4096 { 1 } 0 1 }  }
 	{ b_ifog int 16 regular {array 128 { 1 } 0 1 }  }
 	{ h_last int 16 regular {array 32 { 2 3 } 1 1 }  }
 	{ U_slice int 16 regular {array 384 { 1 3 } 1 1 } {global 0}  }
@@ -85,7 +85,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1205470", "EstimateLatencyMax" : "1205470",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1107166", "EstimateLatencyMax" : "1107166",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -122,8 +122,8 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	lstm_forward_unidir {
-		W_ifog {Type I LastRead 6 FirstWrite -1}
-		R_ifog {Type I LastRead 7 FirstWrite -1}
+		W_ifog {Type I LastRead 7 FirstWrite -1}
+		R_ifog {Type I LastRead 8 FirstWrite -1}
 		b_ifog {Type I LastRead 3 FirstWrite -1}
 		h_last {Type IO LastRead 5 FirstWrite 1}
 		c_slice {Type IO LastRead -1 FirstWrite -1}
@@ -132,8 +132,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1205470", "Max" : "1205470"}
-	, {"Name" : "Interval", "Min" : "1205470", "Max" : "1205470"}
+	{"Name" : "Latency", "Min" : "1107166", "Max" : "1107166"}
+	, {"Name" : "Interval", "Min" : "1107166", "Max" : "1107166"}
 ]}
 
 set PipelineEnableSignalInfo {[

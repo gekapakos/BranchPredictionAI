@@ -156,7 +156,7 @@ struct main : public sc_module {
     sc_signal< sc_lv<8> > j_reg_866;
     sc_signal< sc_logic > ap_CS_fsm_state64;
     sc_signal< sc_lv<7> > z0_addr_2_reg_871;
-    sc_signal< sc_lv<1> > icmp_ln341_fu_656_p2;
+    sc_signal< sc_lv<1> > icmp_ln371_fu_656_p2;
     sc_signal< sc_lv<16> > select_ln53_fu_673_p3;
     sc_signal< sc_lv<16> > select_ln53_reg_876;
     sc_signal< sc_logic > ap_CS_fsm_state66;
@@ -185,7 +185,7 @@ struct main : public sc_module {
     sc_signal< sc_lv<8> > j_13_reg_958;
     sc_signal< sc_logic > ap_CS_fsm_state129;
     sc_signal< sc_lv<7> > z1_addr_1_reg_963;
-    sc_signal< sc_lv<1> > icmp_ln346_fu_759_p2;
+    sc_signal< sc_lv<1> > icmp_ln376_fu_759_p2;
     sc_signal< sc_lv<16> > select_ln53_1_fu_776_p3;
     sc_signal< sc_lv<16> > select_ln53_1_reg_968;
     sc_signal< sc_logic > ap_CS_fsm_state131;
@@ -227,11 +227,11 @@ struct main : public sc_module {
     sc_signal< sc_lv<64> > zext_ln173_fu_610_p1;
     sc_signal< sc_lv<64> > zext_ln173_1_fu_632_p1;
     sc_signal< sc_lv<64> > zext_ln161_fu_649_p1;
-    sc_signal< sc_lv<64> > zext_ln341_fu_668_p1;
+    sc_signal< sc_lv<64> > zext_ln371_fu_668_p1;
     sc_signal< sc_lv<64> > zext_ln173_2_fu_713_p1;
     sc_signal< sc_lv<64> > zext_ln173_3_fu_735_p1;
     sc_signal< sc_lv<64> > zext_ln161_5_fu_752_p1;
-    sc_signal< sc_lv<64> > zext_ln346_fu_771_p1;
+    sc_signal< sc_lv<64> > zext_ln376_fu_771_p1;
     sc_signal< sc_logic > ap_CS_fsm_state33;
     sc_signal< sc_logic > ap_CS_fsm_state98;
     sc_signal< sc_logic > ap_CS_fsm_state36;
@@ -578,8 +578,8 @@ struct main : public sc_module {
     void thread_icmp_ln170_fu_582_p2();
     void thread_icmp_ln172_1_fu_701_p2();
     void thread_icmp_ln172_fu_598_p2();
-    void thread_icmp_ln341_fu_656_p2();
-    void thread_icmp_ln346_fu_759_p2();
+    void thread_icmp_ln371_fu_656_p2();
+    void thread_icmp_ln376_fu_759_p2();
     void thread_j_0_i4_cast2_fu_681_p1();
     void thread_j_0_i_cast4_fu_578_p1();
     void thread_j_11_fu_588_p2();
@@ -611,8 +611,8 @@ struct main : public sc_module {
     void thread_zext_ln173_2_fu_713_p1();
     void thread_zext_ln173_3_fu_735_p1();
     void thread_zext_ln173_fu_610_p1();
-    void thread_zext_ln341_fu_668_p1();
-    void thread_zext_ln346_fu_771_p1();
+    void thread_zext_ln371_fu_668_p1();
+    void thread_zext_ln376_fu_771_p1();
     void thread_ap_NS_fsm();
     void thread_hdltv_gen();
 };
