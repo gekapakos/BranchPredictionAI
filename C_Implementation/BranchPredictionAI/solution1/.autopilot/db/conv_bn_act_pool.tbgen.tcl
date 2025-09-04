@@ -16,14 +16,12 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ X int 16 regular {array 18624 { 1 3 } 1 1 }  }
 	{ U int 16 regular {array 384 { 0 3 } 0 1 }  }
-	{ Y int 16 regular {array 18432 { 2 3 } 1 1 } {global 2}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "X", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "U", "interface" : "memory", "bitwidth" : 16, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "Y", "interface" : "memory", "bitwidth" : 16, "direction" : "READWRITE", "extern" : 0} ]}
+ 	{ "Name" : "U", "interface" : "memory", "bitwidth" : 16, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 18
+set portNum 13
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -38,11 +36,6 @@ set portList {
 	{ U_ce0 sc_out sc_logic 1 signal 1 } 
 	{ U_we0 sc_out sc_logic 1 signal 1 } 
 	{ U_d0 sc_out sc_lv 16 signal 1 } 
-	{ Y_address0 sc_out sc_lv 15 signal 2 } 
-	{ Y_ce0 sc_out sc_logic 1 signal 2 } 
-	{ Y_we0 sc_out sc_logic 1 signal 2 } 
-	{ Y_d0 sc_out sc_lv 16 signal 2 } 
-	{ Y_q0 sc_in sc_lv 16 signal 2 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -57,21 +50,16 @@ set NewPortList {[
  	{ "name": "U_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "U", "role": "address0" }} , 
  	{ "name": "U_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "U", "role": "ce0" }} , 
  	{ "name": "U_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "U", "role": "we0" }} , 
- 	{ "name": "U_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "U", "role": "d0" }} , 
- 	{ "name": "Y_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":15, "type": "signal", "bundle":{"name": "Y", "role": "address0" }} , 
- 	{ "name": "Y_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Y", "role": "ce0" }} , 
- 	{ "name": "Y_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Y", "role": "we0" }} , 
- 	{ "name": "Y_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "Y", "role": "d0" }} , 
- 	{ "name": "Y_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "Y", "role": "q0" }}  ]}
+ 	{ "name": "U_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "U", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"],
 		"CDFG" : "conv_bn_act_pool",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "65526951", "EstimateLatencyMax" : "65526951",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "46100226", "EstimateLatencyMax" : "46285122",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -82,36 +70,34 @@ set RtlHierarchyInfo {[
 			{"Name" : "X", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "U", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "ConvW4", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "Y", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "BN1_var4", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "BN1_gamma4", "Type" : "Memory", "Direction" : "I"}]},
+			{"Name" : "a_bn", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.ConvW4_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.BN1_var4_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.BN1_gamma4_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_fdiv_32ns_32ns_32_16_1_U112", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_fsqrt_32ns_32ns_32_12_1_U113", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_sptohp_32ns_16_2_1_U114", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hptosp_16ns_32_2_1_U115", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hadd_16ns_16ns_16_5_full_dsp_1_U116", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hmul_16ns_16ns_16_4_max_dsp_1_U117", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hdiv_16ns_16ns_16_7_1_U118", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hcmp_16ns_16ns_1_2_1_U119", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.a_bn_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_fadd_32ns_32ns_32_5_full_dsp_1_U120", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_fmul_32ns_32ns_32_4_max_dsp_1_U121", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_sptohp_32ns_16_2_1_U122", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hptosp_16ns_32_2_1_U123", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hptosp_16ns_32_2_1_U124", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hadd_16ns_16ns_16_5_full_dsp_1_U125", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hmul_16ns_16ns_16_4_max_dsp_1_U126", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hdiv_16ns_16ns_16_7_1_U127", "Parent" : "0"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hcmp_16ns_16ns_1_2_1_U128", "Parent" : "0"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_mux_325_16_1_1_U129", "Parent" : "0"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_mux_325_16_1_1_U130", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	conv_bn_act_pool {
-		X {Type I LastRead 4 FirstWrite -1}
+		X {Type I LastRead 5 FirstWrite -1}
 		U {Type O LastRead -1 FirstWrite 12}
 		ConvW4 {Type I LastRead -1 FirstWrite -1}
-		Y {Type IO LastRead 21 FirstWrite 3}
-		BN1_var4 {Type I LastRead -1 FirstWrite -1}
-		BN1_gamma4 {Type I LastRead -1 FirstWrite -1}}}
+		a_bn {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "65526951", "Max" : "65526951"}
-	, {"Name" : "Interval", "Min" : "65526951", "Max" : "65526951"}
+	{"Name" : "Latency", "Min" : "46100226", "Max" : "46285122"}
+	, {"Name" : "Interval", "Min" : "46100226", "Max" : "46285122"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -120,5 +106,4 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	X { ap_memory {  { X_address0 mem_address 1 15 }  { X_ce0 mem_ce 1 1 }  { X_q0 mem_dout 0 16 } } }
 	U { ap_memory {  { U_address0 mem_address 1 9 }  { U_ce0 mem_ce 1 1 }  { U_we0 mem_we 1 1 }  { U_d0 mem_din 1 16 } } }
-	Y { ap_memory {  { Y_address0 mem_address 1 15 }  { Y_ce0 mem_ce 1 1 }  { Y_we0 mem_we 1 1 }  { Y_d0 mem_din 1 16 }  { Y_q0 mem_dout 0 16 } } }
 }

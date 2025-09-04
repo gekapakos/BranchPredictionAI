@@ -7,7 +7,7 @@
 
 module main_fptrunc_64ns_32_2_1
 #(parameter
-    ID         = 39,
+    ID         = 42,
     NUM_STAGE  = 2,
     din0_WIDTH = 64,
     dout_WIDTH = 32

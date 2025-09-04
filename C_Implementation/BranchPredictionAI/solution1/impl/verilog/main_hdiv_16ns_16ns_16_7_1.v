@@ -7,7 +7,7 @@
 
 module main_hdiv_16ns_16ns_16_7_1
 #(parameter
-    ID         = 7,
+    ID         = 8,
     NUM_STAGE  = 7,
     din0_WIDTH = 16,
     din1_WIDTH = 16,

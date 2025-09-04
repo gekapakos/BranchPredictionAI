@@ -2,8 +2,8 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-#ifndef __conv_bn_act_pool_4_BN1_var0_H__
-#define __conv_bn_act_pool_4_BN1_var0_H__
+#ifndef __run_all_slices_unrol_BN2_var0_H__
+#define __run_all_slices_unrol_BN2_var0_H__
 
 
 #include <systemc>
@@ -16,7 +16,7 @@ using namespace sc_dt;
 #include <iostream>
 #include <fstream>
 
-struct conv_bn_act_pool_4_BN1_var0_ram : public sc_core::sc_module {
+struct run_all_slices_unrol_BN2_var0_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 16;
   static const unsigned AddressRange = 32;
@@ -35,7 +35,7 @@ sc_core::sc_in<bool> clk;
 sc_lv<DataWidth> ram[AddressRange];
 
 
-   SC_CTOR(conv_bn_act_pool_4_BN1_var0_ram) {
+   SC_CTOR(run_all_slices_unrol_BN2_var0_ram) {
         for (unsigned i = 0; i < 32 ; i = i + 1) {
             ram[i] = "0b0011110000000000";
         }
@@ -61,7 +61,7 @@ void prc_write_0()
 }; //endmodule
 
 
-SC_MODULE(conv_bn_act_pool_4_BN1_var0) {
+SC_MODULE(run_all_slices_unrol_BN2_var0) {
 
 
 static const unsigned DataWidth = 16;
@@ -75,11 +75,11 @@ sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
 
-conv_bn_act_pool_4_BN1_var0_ram* meminst;
+run_all_slices_unrol_BN2_var0_ram* meminst;
 
 
-SC_CTOR(conv_bn_act_pool_4_BN1_var0) {
-meminst = new conv_bn_act_pool_4_BN1_var0_ram("conv_bn_act_pool_4_BN1_var0_ram");
+SC_CTOR(run_all_slices_unrol_BN2_var0) {
+meminst = new run_all_slices_unrol_BN2_var0_ram("run_all_slices_unrol_BN2_var0_ram");
 meminst->address0(address0);
 meminst->ce0(ce0);
 meminst->q0(q0);
@@ -87,7 +87,7 @@ meminst->q0(q0);
 meminst->reset(reset);
 meminst->clk(clk);
 }
-~conv_bn_act_pool_4_BN1_var0() {
+~run_all_slices_unrol_BN2_var0() {
     delete meminst;
 }
 

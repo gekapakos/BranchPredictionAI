@@ -7,7 +7,7 @@
 
 module main_fcmp_32ns_32ns_1_2_1
 #(parameter
-    ID         = 41,
+    ID         = 44,
     NUM_STAGE  = 2,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

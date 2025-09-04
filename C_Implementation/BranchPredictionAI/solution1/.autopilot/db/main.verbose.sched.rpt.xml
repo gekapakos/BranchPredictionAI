@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'main'" level="0">
-<item name = "Date">Thu Sep  4 12:28:26 2025
+<item name = "Date">Thu Sep  4 13:25:06 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">121438995, 121678995, 121438995, 121678995, none</column>
+<column name="">95652360, 96250596, 95652360, 96250596, none</column>
 </table>
 </item>
 <item name = "Detail">

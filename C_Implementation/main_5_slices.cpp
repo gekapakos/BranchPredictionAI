@@ -47,7 +47,7 @@ static inline half reluf(half x) {
 }
 
 // ===== layers (dimensioned by args, not globals) =====
-static inline void embedding_forward_dyn(const int32_t *tokens, int Tlen,
+static inline void embedding_forward_dyn(const uint16_t *tokens, int Tlen,
                                          const half *Emb, half *X) // X[Tlen,E]
 {
     for(int t=0;t<Tlen;++t){
@@ -63,51 +63,49 @@ static inline void embedding_forward_dyn(const int32_t *tokens, int Tlen,
 }
 
 typedef enum { ACT_RELU, ACT_TANH, ACT_SIGMOID } act_t;
-static inline void conv_bn_act_pool(const half *X,int Tlen,
-                                    const half *W,int Ksz, // W[Ksz,E,F]
-                                    const half *B, half *Y, // Y[(Tlen-Ksz+1),F]
-                                    int C, const half *gamma,
-                                    const half *beta, const half *mean,
-                                    const half *var, half eps, act_t a,
-                                    int Psz, half *U) {
+static inline void conv_bn_act_pool(
+    const half *X,int Tlen,
+    const half *W,int Ksz,const half *B,
+    int C, const half *gamma,const half *beta,const half *mean,const half *var,
+    half eps, act_t a, int Psz, half *U)
+{
     const int T1 = Tlen - Ksz + 1;
-    int t, c;
-    half acc;
 
-    for(t=0;t<T1;++t) {
-        for(int f=0; f<F; ++f) {
-//            #pragma HLS PIPELINE
-            acc = B ? B[f] : 0.0f;
-            for(int k = 0; k < Ksz; ++k) {
-                const half *xrow = X + (t + k) * E;
-                const half *wf   = W + (k * E) * F + f; // stride by Cout on e
-                for(int e = 0; e < E; ++e) { 
-                    acc += xrow[e] * wf[e * F];
-                }
+    // Precompute BN affine params once
+    half a_bn[F], b_bn[F];
+    for (int f=0; f<F; ++f) {
+        float inv = 1.0f / sqrtf((float)var[f] + (float)eps);
+        float a_f = (float)gamma[f] * inv;
+        float b_f = (float)beta[f]  - (float)mean[f] * a_f;
+        a_bn[f] = (half)a_f;
+        b_bn[f] = (half)b_f;
+    }
+
+    half pool_acc[F];
+    #pragma HLS ARRAY_PARTITION variable=pool_acc complete
+    for (int f=0; f<F; ++f) pool_acc[f] = (half)0.0f;
+
+    int pc = 0, u = 0;
+    for (int t=0; t<T1; ++t) {
+        for (int f=0; f<F; ++f) {
+            half acc = B ? B[f] : (half)0.0f;
+            for (int k=0; k<Ksz; ++k) {
+                const half *xrow = X + (t+k)*E;
+                const half *wf   = W + (k*E)*F + f;
+                for (int e=0; e<E; ++e) acc += xrow[e] * wf[e*F];
             }
-            Y[t*F + f] = acc;
+            // BN (affine) + activation
+            half y = (half)((float)a_bn[f]*(float)acc + (float)b_bn[f]);
+            y = (a==ACT_RELU)? reluf(y) : (a==ACT_TANH? tanhf_fast(y) : sigmoidf(y));
+            pool_acc[f] += y;
         }
-    }
-
-    for(t=0;t<Tlen;++t) {
-        half *yt = Y + t*C;
-        for(c=0;c<C;++c){
-            half nrm = (yt[c]-mean[c]) / sqrtf(var[c]+eps);
-            yt[c] = gamma[c]*nrm + beta[c];
-            half x = yt[c];
-            yt[c] = (a == ACT_RELU) ? reluf(x) : (a == ACT_TANH? tanhf_fast(x) : sigmoidf(x));
-        }
-    }
-
-    const int Tout = Tlen / Psz;
-    for(int u = 0;u < Tout; ++u) {
-        for(c = 0;c < C; ++c){
-            acc = 0.0f;
-            for(int p=0;p<Psz;++p) acc += Y[(u*Psz + p)*C + c];
-            U[u*C + c] = acc / (half)Psz;
+        if (++pc == Psz) {
+            for (int f=0; f<F; ++f) { U[u*F + f] = pool_acc[f] / (half)Psz; pool_acc[f]=(half)0.0f; }
+            pc = 0; ++u;
         }
     }
 }
+
 
 // LSTM (expects gate order [i,f,o,g] in W,R,b)
 static inline void lstm_forward_unidir(const half *x,int Tlen,int D,
@@ -170,7 +168,7 @@ static inline void dense_forward(const half *x,int In,
     }
 }
 
-static half Y[T14*F];
+// static half Y[T14*F];
 static half U_slice[T24*F];
 
 // ======================= run all 5 slices (using header arrays) =======================
@@ -186,7 +184,7 @@ static void run_all_slices_unrolled(half merged[H]) {
         half X_slice[T0*E];
         // #pragma HLS ARRAY_PARTITION variable=Emb0 block factor=128
         embedding_forward_dyn(tokens0, T0, Emb0, X_slice);
-        conv_bn_act_pool(X_slice, T0, ConvW0, K, ConvB0, Y, T10,
+        conv_bn_act_pool(X_slice, T0, ConvW0, K, ConvB0, T10,
         BN1_gamma0, BN1_beta0, BN1_mean0, BN1_var0, BN_eps,
         ACT_RELU, P0, U_slice);
         lstm_forward_unidir(U_slice, T20, F, LSTM_W_ifog0, LSTM_R_ifog0, LSTM_b_ifog0, h_slice, c_slice);
@@ -201,7 +199,7 @@ static void run_all_slices_unrolled(half merged[H]) {
         half X_slice[T1*E];
 		// #pragma HLS ARRAY_PARTITION variable=Emb1 block factor=128
         embedding_forward_dyn(tokens1, T1, Emb1, X_slice);
-        conv_bn_act_pool(X_slice, T1, ConvW1, K, ConvB1, Y, T11,
+        conv_bn_act_pool(X_slice, T1, ConvW1, K, ConvB1, T11,
         BN1_gamma1, BN1_beta1, BN1_mean1, BN1_var1, BN_eps,
         ACT_RELU, P1, U_slice);
         lstm_forward_unidir(U_slice, T21, F, LSTM_W_ifog1, LSTM_R_ifog1, LSTM_b_ifog1, h_slice, c_slice);
@@ -216,7 +214,7 @@ static void run_all_slices_unrolled(half merged[H]) {
         half X_slice[T2*E];
         // #pragma HLS ARRAY_PARTITION variable=Emb1 block factor=128
         embedding_forward_dyn(tokens2, T2, Emb2, X_slice);
-        conv_bn_act_pool(X_slice, T2, ConvW2, K, ConvB2, Y, T12,
+        conv_bn_act_pool(X_slice, T2, ConvW2, K, ConvB2, T12,
         BN1_gamma2, BN1_beta2, BN1_mean2, BN1_var2, BN_eps,
         ACT_RELU, P2, U_slice);
         lstm_forward_unidir(U_slice, T22, F, LSTM_W_ifog2, LSTM_R_ifog2, LSTM_b_ifog2, h_slice, c_slice);
@@ -231,7 +229,7 @@ static void run_all_slices_unrolled(half merged[H]) {
         half X_slice[T3*E];
         // #pragma HLS ARRAY_PARTITION variable=Emb1 block factor=128
         embedding_forward_dyn(tokens3, T3, Emb3, X_slice);
-        conv_bn_act_pool(X_slice, T3, ConvW3, K, ConvB3, Y, T13,
+        conv_bn_act_pool(X_slice, T3, ConvW3, K, ConvB3, T13,
         BN1_gamma3, BN1_beta3, BN1_mean3, BN1_var3, BN_eps,
         ACT_RELU, P3, U_slice);
         lstm_forward_unidir(U_slice, T23, F, LSTM_W_ifog3, LSTM_R_ifog3, LSTM_b_ifog3, h_slice, c_slice);
@@ -246,7 +244,7 @@ static void run_all_slices_unrolled(half merged[H]) {
         half X_slice[T4*E];
         // #pragma HLS ARRAY_PARTITION variable=Emb1 block factor=128
         embedding_forward_dyn(tokens4, T4, Emb4, X_slice);
-        conv_bn_act_pool(X_slice, T4, ConvW4, K, ConvB4, Y, T14,
+        conv_bn_act_pool(X_slice, T4, ConvW4, K, ConvB4, T14,
         BN1_gamma4, BN1_beta4, BN1_mean4, BN1_var4, BN_eps,
         ACT_RELU, P4, U_slice);
         lstm_forward_unidir(U_slice, T24, F, LSTM_W_ifog4, LSTM_R_ifog4, LSTM_b_ifog4, h_slice, c_slice);

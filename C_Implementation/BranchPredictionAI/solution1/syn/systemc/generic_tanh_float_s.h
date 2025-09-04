@@ -47,13 +47,13 @@ struct generic_tanh_float_s : public sc_module {
     sc_trace_file* mVcdFile;
 
     exp_generic_double_s* grp_exp_generic_double_s_fu_89;
-    main_faddfsub_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* main_faddfsub_32ns_32ns_32_5_full_dsp_1_U36;
-    main_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* main_fmul_32ns_32ns_32_4_max_dsp_1_U37;
-    main_fdiv_32ns_32ns_32_16_1<1,16,32,32,32>* main_fdiv_32ns_32ns_32_16_1_U38;
-    main_fptrunc_64ns_32_2_1<1,2,64,32>* main_fptrunc_64ns_32_2_1_U39;
-    main_fpext_32ns_64_2_1<1,2,32,64>* main_fpext_32ns_64_2_1_U40;
-    main_fcmp_32ns_32ns_1_2_1<1,2,32,32,1>* main_fcmp_32ns_32ns_1_2_1_U41;
-    main_dadd_64ns_64ns_64_5_full_dsp_1<1,5,64,64,64>* main_dadd_64ns_64ns_64_5_full_dsp_1_U42;
+    main_faddfsub_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* main_faddfsub_32ns_32ns_32_5_full_dsp_1_U39;
+    main_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* main_fmul_32ns_32ns_32_4_max_dsp_1_U40;
+    main_fdiv_32ns_32ns_32_16_1<1,16,32,32,32>* main_fdiv_32ns_32ns_32_16_1_U41;
+    main_fptrunc_64ns_32_2_1<1,2,64,32>* main_fptrunc_64ns_32_2_1_U42;
+    main_fpext_32ns_64_2_1<1,2,32,64>* main_fpext_32ns_64_2_1_U43;
+    main_fcmp_32ns_32ns_1_2_1<1,2,32,32,1>* main_fcmp_32ns_32ns_1_2_1_U44;
+    main_dadd_64ns_64ns_64_5_full_dsp_1<1,5,64,64,64>* main_dadd_64ns_64ns_64_5_full_dsp_1_U45;
     sc_signal< sc_lv<90> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<32> > grp_fu_100_p2;

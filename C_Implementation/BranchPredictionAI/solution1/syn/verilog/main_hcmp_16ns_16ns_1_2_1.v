@@ -7,7 +7,7 @@
 
 module main_hcmp_16ns_16ns_1_2_1
 #(parameter
-    ID         = 8,
+    ID         = 9,
     NUM_STAGE  = 2,
     din0_WIDTH = 16,
     din1_WIDTH = 16,

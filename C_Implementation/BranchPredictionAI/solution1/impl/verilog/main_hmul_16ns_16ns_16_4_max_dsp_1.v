@@ -7,7 +7,7 @@
 
 module main_hmul_16ns_16ns_16_4_max_dsp_1
 #(parameter
-    ID         = 6,
+    ID         = 7,
     NUM_STAGE  = 4,
     din0_WIDTH = 16,
     din1_WIDTH = 16,

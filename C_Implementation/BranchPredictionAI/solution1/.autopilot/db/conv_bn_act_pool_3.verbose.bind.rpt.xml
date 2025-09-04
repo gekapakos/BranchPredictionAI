@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool_3'" level="0">
-<item name = "Date">Thu Sep  4 12:27:36 2025
+<item name = "Date">Thu Sep  4 13:24:12 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.620, 1.25</column>
+<column name="ap_clk">10.00, 7.979, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">6048401, 6048401, 6048401, 6048401, none</column>
+<column name="">5762586, 5785698, 5762586, 5785698, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,15 +35,12 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">5714064, 5714064, 79362, -, -, 72, no</column>
-<column name=" + Loop 1.1">79360, 79360, 2480, -, -, 32, no</column>
-<column name="  ++ Loop 1.1.1">2478, 2478, 354, -, -, 7, no</column>
-<column name="   +++ Loop 1.1.1.1">352, 352, 11, -, -, 32, no</column>
-<column name="- Loop 2">286572, 286572, 3674, -, -, 78, no</column>
-<column name=" + Loop 2.1">3672, 3672, 51, -, -, 72, no</column>
-<column name="- Loop 3">47762, 47762, 3674, -, -, 13, no</column>
-<column name=" + Loop 3.1">3672, 3672, 51, -, -, 72, no</column>
-<column name="  ++ Loop 3.1.1">42, 42, 7, -, -, 6, no</column>
+<column name="- Loop 1">64, 64, 2, -, -, 32, no</column>
+<column name="- Loop 2">5762520, 5785632, 80035 ~ 80356, -, -, 72, no</column>
+<column name=" + Loop 2.1">80032, 80032, 2501, -, -, 32, no</column>
+<column name="  ++ Loop 2.1.1">2478, 2478, 354, -, -, 7, no</column>
+<column name="   +++ Loop 2.1.1.1">352, 352, 11, -, -, 32, no</column>
+<column name=" + Loop 2.2">320, 320, 10, -, -, 32, no</column>
 </table>
 </item>
 </section>

@@ -480,7 +480,7 @@ main_mul_72ns_13s_84_5_1 #(
     .din0_WIDTH( 72 ),
     .din1_WIDTH( 13 ),
     .dout_WIDTH( 84 ))
-main_mul_72ns_13s_84_5_1_U22(
+main_mul_72ns_13s_84_5_1_U25(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_548_p0),
@@ -495,7 +495,7 @@ main_mul_36ns_43ns_79_2_1 #(
     .din0_WIDTH( 36 ),
     .din1_WIDTH( 43 ),
     .dout_WIDTH( 79 ))
-main_mul_36ns_43ns_79_2_1_U23(
+main_mul_36ns_43ns_79_2_1_U26(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_676_p0),
@@ -510,7 +510,7 @@ main_mul_44ns_49ns_93_2_1 #(
     .din0_WIDTH( 44 ),
     .din1_WIDTH( 49 ),
     .dout_WIDTH( 93 ))
-main_mul_44ns_49ns_93_2_1_U24(
+main_mul_44ns_49ns_93_2_1_U27(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_742_p0),
@@ -525,7 +525,7 @@ main_mul_50ns_50ns_100_2_1 #(
     .din0_WIDTH( 50 ),
     .din1_WIDTH( 50 ),
     .dout_WIDTH( 100 ))
-main_mul_50ns_50ns_100_2_1_U25(
+main_mul_50ns_50ns_100_2_1_U28(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_820_p0),
@@ -541,7 +541,7 @@ main_mac_muladd_16ns_16s_19s_31_1_1 #(
     .din1_WIDTH( 16 ),
     .din2_WIDTH( 19 ),
     .dout_WIDTH( 31 ))
-main_mac_muladd_16ns_16s_19s_31_1_1_U26(
+main_mac_muladd_16ns_16s_19s_31_1_1_U29(
     .din0(grp_fu_1116_p0),
     .din1(m_fix_hi_V_reg_1194),
     .din2(rhs_V_fu_467_p3),

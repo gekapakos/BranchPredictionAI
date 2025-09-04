@@ -641,7 +641,7 @@ begin
         ce0 => table_f_Z2_array_V_ce0,
         q0 => table_f_Z2_array_V_q0);
 
-    main_mul_72ns_13s_84_5_1_U22 : component main_mul_72ns_13s_84_5_1
+    main_mul_72ns_13s_84_5_1_U25 : component main_mul_72ns_13s_84_5_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -656,7 +656,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_548_p2);
 
-    main_mul_36ns_43ns_79_2_1_U23 : component main_mul_36ns_43ns_79_2_1
+    main_mul_36ns_43ns_79_2_1_U26 : component main_mul_36ns_43ns_79_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -671,7 +671,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_676_p2);
 
-    main_mul_44ns_49ns_93_2_1_U24 : component main_mul_44ns_49ns_93_2_1
+    main_mul_44ns_49ns_93_2_1_U27 : component main_mul_44ns_49ns_93_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -686,7 +686,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_742_p2);
 
-    main_mul_50ns_50ns_100_2_1_U25 : component main_mul_50ns_50ns_100_2_1
+    main_mul_50ns_50ns_100_2_1_U28 : component main_mul_50ns_50ns_100_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -701,7 +701,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_820_p2);
 
-    main_mac_muladd_16ns_16s_19s_31_1_1_U26 : component main_mac_muladd_16ns_16s_19s_31_1_1
+    main_mac_muladd_16ns_16s_19s_31_1_1_U29 : component main_mac_muladd_16ns_16s_19s_31_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

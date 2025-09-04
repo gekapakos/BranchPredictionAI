@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity main_hcmp_16ns_16ns_1_2_1 is
     generic (
-        ID         : integer := 8;
+        ID         : integer := 9;
         NUM_STAGE  : integer := 2;
         din0_WIDTH : integer := 16;
         din1_WIDTH : integer := 16;

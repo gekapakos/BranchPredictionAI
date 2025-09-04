@@ -423,7 +423,7 @@ begin
         x => grp_fu_120_p1,
         ap_return => grp_exp_generic_double_s_fu_89_ap_return);
 
-    main_faddfsub_32ns_32ns_32_5_full_dsp_1_U36 : component main_faddfsub_32ns_32ns_32_5_full_dsp_1
+    main_faddfsub_32ns_32ns_32_5_full_dsp_1_U39 : component main_faddfsub_32ns_32ns_32_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -439,7 +439,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_100_p2);
 
-    main_fmul_32ns_32ns_32_4_max_dsp_1_U37 : component main_fmul_32ns_32ns_32_4_max_dsp_1
+    main_fmul_32ns_32ns_32_4_max_dsp_1_U40 : component main_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -454,7 +454,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_108_p2);
 
-    main_fdiv_32ns_32ns_32_16_1_U38 : component main_fdiv_32ns_32ns_32_16_1
+    main_fdiv_32ns_32ns_32_16_1_U41 : component main_fdiv_32ns_32ns_32_16_1
     generic map (
         ID => 1,
         NUM_STAGE => 16,
@@ -469,7 +469,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_112_p2);
 
-    main_fptrunc_64ns_32_2_1_U39 : component main_fptrunc_64ns_32_2_1
+    main_fptrunc_64ns_32_2_1_U42 : component main_fptrunc_64ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -482,7 +482,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_117_p1);
 
-    main_fpext_32ns_64_2_1_U40 : component main_fpext_32ns_64_2_1
+    main_fpext_32ns_64_2_1_U43 : component main_fpext_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -495,7 +495,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_120_p1);
 
-    main_fcmp_32ns_32ns_1_2_1_U41 : component main_fcmp_32ns_32ns_1_2_1
+    main_fcmp_32ns_32ns_1_2_1_U44 : component main_fcmp_32ns_32ns_1_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -511,7 +511,7 @@ begin
         opcode => ap_const_lv5_4,
         dout => grp_fu_124_p2);
 
-    main_dadd_64ns_64ns_64_5_full_dsp_1_U42 : component main_dadd_64ns_64ns_64_5_full_dsp_1
+    main_dadd_64ns_64ns_64_5_full_dsp_1_U45 : component main_dadd_64ns_64ns_64_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,

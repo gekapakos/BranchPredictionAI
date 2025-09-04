@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool'" level="0">
-<item name = "Date">Thu Sep  4 12:28:00 2025
+<item name = "Date">Thu Sep  4 13:24:50 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.129, 1.25</column>
+<column name="ap_clk">10.00, 7.979, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">65526951, 65526951, 65526951, 65526951, none</column>
+<column name="">46100226, 46285122, 46100226, 46285122, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,15 +35,12 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">45712512, 45712512, 79362, -, -, 576, no</column>
-<column name=" + Loop 1.1">79360, 79360, 2480, -, -, 32, no</column>
-<column name="  ++ Loop 1.1.1">2478, 2478, 354, -, -, 7, no</column>
-<column name="   +++ Loop 1.1.1.1">352, 352, 11, -, -, 32, no</column>
-<column name="- Loop 2">17097996, 17097996, 29378, -, -, 582, no</column>
-<column name=" + Loop 2.1">29376, 29376, 51, -, -, 576, no</column>
-<column name="- Loop 3">2716440, 2716440, 226370, -, -, 12, no</column>
-<column name=" + Loop 3.1">226368, 226368, 393, -, -, 576, no</column>
-<column name="  ++ Loop 3.1.1">384, 384, 8, -, -, 48, no</column>
+<column name="- Loop 1">64, 64, 2, -, -, 32, no</column>
+<column name="- Loop 2">46100160, 46285056, 80035 ~ 80356, -, -, 576, no</column>
+<column name=" + Loop 2.1">80032, 80032, 2501, -, -, 32, no</column>
+<column name="  ++ Loop 2.1.1">2478, 2478, 354, -, -, 7, no</column>
+<column name="   +++ Loop 2.1.1.1">352, 352, 11, -, -, 32, no</column>
+<column name=" + Loop 2.2">320, 320, 10, -, -, 32, no</column>
 </table>
 </item>
 </section>

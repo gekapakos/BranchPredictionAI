@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'lstm_forward_unidir'" level="0">
-<item name = "Date">Thu Sep  4 12:28:48 2025
+<item name = "Date">Thu Sep  4 13:25:20 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -71,22 +71,22 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="grp_generic_tanh_float_s_fu_325">generic_tanh_float_s, 15, 37, 5264, 7619, 0</column>
-<column name="main_fadd_32ns_32ns_32_5_full_dsp_1_U50">main_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
-<column name="main_fadd_32ns_32ns_32_5_full_dsp_1_U51">main_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
-<column name="main_fdiv_32ns_32ns_32_16_1_U52">main_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
-<column name="main_fdiv_32ns_32ns_32_16_1_U53">main_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
-<column name="main_fexp_32ns_32ns_32_9_full_dsp_1_U54">main_fexp_32ns_32ns_32_9_full_dsp_1, 0, 7, 277, 924, 0</column>
-<column name="main_fexp_32ns_32ns_32_9_full_dsp_1_U55">main_fexp_32ns_32ns_32_9_full_dsp_1, 0, 7, 277, 924, 0</column>
-<column name="main_hadd_16ns_16ns_16_5_full_dsp_1_U61">main_hadd_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
-<column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U64">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
-<column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U65">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
-<column name="main_hptosp_16ns_32_2_1_U59">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
-<column name="main_hptosp_16ns_32_2_1_U60">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
-<column name="main_hsub_16ns_16ns_16_5_full_dsp_1_U62">main_hsub_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
-<column name="main_hsub_16ns_16ns_16_5_full_dsp_1_U63">main_hsub_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
-<column name="main_sptohp_32ns_16_2_1_U56">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
-<column name="main_sptohp_32ns_16_2_1_U57">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
-<column name="main_sptohp_32ns_16_2_1_U58">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
+<column name="main_fadd_32ns_32ns_32_5_full_dsp_1_U53">main_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
+<column name="main_fadd_32ns_32ns_32_5_full_dsp_1_U54">main_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
+<column name="main_fdiv_32ns_32ns_32_16_1_U55">main_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
+<column name="main_fdiv_32ns_32ns_32_16_1_U56">main_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
+<column name="main_fexp_32ns_32ns_32_9_full_dsp_1_U57">main_fexp_32ns_32ns_32_9_full_dsp_1, 0, 7, 277, 924, 0</column>
+<column name="main_fexp_32ns_32ns_32_9_full_dsp_1_U58">main_fexp_32ns_32ns_32_9_full_dsp_1, 0, 7, 277, 924, 0</column>
+<column name="main_hadd_16ns_16ns_16_5_full_dsp_1_U64">main_hadd_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
+<column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U67">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
+<column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U68">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
+<column name="main_hptosp_16ns_32_2_1_U62">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
+<column name="main_hptosp_16ns_32_2_1_U63">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
+<column name="main_hsub_16ns_16ns_16_5_full_dsp_1_U65">main_hsub_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
+<column name="main_hsub_16ns_16ns_16_5_full_dsp_1_U66">main_hsub_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
+<column name="main_sptohp_32ns_16_2_1_U59">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
+<column name="main_sptohp_32ns_16_2_1_U60">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
+<column name="main_sptohp_32ns_16_2_1_U61">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -105,9 +105,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln128_fu_538_p2">+, 0, 0, 15, 9, 9</column>
-<column name="add_ln130_fu_580_p2">+, 0, 0, 12, 12, 12</column>
-<column name="add_ln136_fu_639_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln126_fu_538_p2">+, 0, 0, 15, 9, 9</column>
+<column name="add_ln128_fu_580_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln134_fu_639_p2">+, 0, 0, 12, 12, 12</column>
 <column name="d_fu_528_p2">+, 0, 0, 15, 6, 1</column>
 <column name="g_1_fu_565_p2">+, 0, 0, 15, 8, 1</column>
 <column name="g_3_fu_624_p2">+, 0, 0, 15, 8, 1</column>
@@ -116,15 +116,15 @@
 <column name="j_14_fu_655_p2">+, 0, 0, 15, 6, 1</column>
 <column name="j_fu_473_p2">+, 0, 0, 15, 6, 1</column>
 <column name="t_fu_491_p2">+, 0, 0, 13, 4, 1</column>
-<column name="icmp_ln118_fu_467_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln121_fu_485_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="icmp_ln123_fu_497_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln127_fu_522_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln130_fu_559_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln133_fu_590_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln136_fu_618_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln139_fu_649_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="xor_ln141_fu_666_p2">xor, 0, 0, 7, 6, 7</column>
+<column name="icmp_ln116_fu_467_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln119_fu_485_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="icmp_ln121_fu_497_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln125_fu_522_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln128_fu_559_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln131_fu_590_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln134_fu_618_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln137_fu_649_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="xor_ln139_fu_666_p2">xor, 0, 0, 7, 6, 7</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -200,15 +200,15 @@
 <column name="tmp_67_reg_913">32, 0, 32, 0</column>
 <column name="tmp_71_reg_908">32, 0, 32, 0</column>
 <column name="tmp_74_reg_933">16, 0, 16, 0</column>
-<column name="trunc_ln129_reg_750">5, 0, 5, 0</column>
-<column name="trunc_ln135_reg_801">5, 0, 5, 0</column>
-<column name="xor_ln141_reg_858">6, 0, 6, 0</column>
+<column name="trunc_ln127_reg_750">5, 0, 5, 0</column>
+<column name="trunc_ln133_reg_801">5, 0, 5, 0</column>
+<column name="xor_ln139_reg_858">6, 0, 6, 0</column>
 <column name="xv_reg_755">16, 0, 16, 0</column>
 <column name="z_addr_1_reg_778">7, 0, 7, 0</column>
 <column name="z_addr_6_reg_829">7, 0, 7, 0</column>
 <column name="z_load_2_reg_868">16, 0, 16, 0</column>
-<column name="zext_ln123_reg_722">8, 0, 64, 56</column>
-<column name="zext_ln140_reg_847">6, 0, 64, 58</column>
+<column name="zext_ln121_reg_722">8, 0, 64, 56</column>
+<column name="zext_ln138_reg_847">6, 0, 64, 58</column>
 </table>
 </item>
 </section>

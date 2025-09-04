@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'run_all_slices_unrol'" level="0">
-<item name = "Date">Thu Sep  4 12:28:15 2025
+<item name = "Date">Thu Sep  4 13:25:00 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">121199628, 121439628, 121199628, 121439628, none</column>
+<column name="">95412993, 96011229, 95412993, 96011229, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_lstm_forward_unidir_fu_600">lstm_forward_unidir, 1208926, 1255006, 1208926, 1255006, none</column>
-<column name="grp_generic_tanh_float_s_fu_634">generic_tanh_float_s, 1, 61, 1, 61, none</column>
-<column name="grp_conv_bn_act_pool_fu_645">conv_bn_act_pool, 65526951, 65526951, 65526951, 65526951, none</column>
-<column name="grp_conv_bn_act_pool_1_fu_660">conv_bn_act_pool_1, 27869799, 27869799, 27869799, 27869799, none</column>
-<column name="grp_conv_bn_act_pool_2_fu_676">conv_bn_act_pool_2, 12711495, 12711495, 12711495, 12711495, none</column>
-<column name="grp_conv_bn_act_pool_3_fu_692">conv_bn_act_pool_3, 6048401, 6048401, 6048401, 6048401, none</column>
-<column name="grp_conv_bn_act_pool_4_fu_708">conv_bn_act_pool_4, 2949379, 2949379, 2949379, 2949379, none</column>
+<column name="grp_lstm_forward_unidir_fu_580">lstm_forward_unidir, 1208926, 1255006, 1208926, 1255006, none</column>
+<column name="grp_generic_tanh_float_s_fu_614">generic_tanh_float_s, 1, 61, 1, 61, none</column>
+<column name="grp_conv_bn_act_pool_fu_625">conv_bn_act_pool, 46100226, 46285122, 46100226, 46285122, none</column>
+<column name="grp_conv_bn_act_pool_1_fu_636">conv_bn_act_pool_1, 23050146, 23142594, 23050146, 23142594, none</column>
+<column name="grp_conv_bn_act_pool_2_fu_648">conv_bn_act_pool_2, 11525106, 11571330, 11525106, 11571330, none</column>
+<column name="grp_conv_bn_act_pool_3_fu_660">conv_bn_act_pool_3, 5762586, 5785698, 5762586, 5785698, none</column>
+<column name="grp_conv_bn_act_pool_4_fu_672">conv_bn_act_pool_4, 2881326, 2892882, 2881326, 2892882, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
