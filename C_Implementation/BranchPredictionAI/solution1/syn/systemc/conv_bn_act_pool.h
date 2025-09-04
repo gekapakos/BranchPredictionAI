@@ -57,17 +57,17 @@ struct conv_bn_act_pool : public sc_module {
 
     conv_bn_act_pool_ConvW4* ConvW4_U;
     conv_bn_act_pool_4_a_bn* a_bn_U;
-    main_fadd_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* main_fadd_32ns_32ns_32_5_full_dsp_1_U94;
-    main_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* main_fmul_32ns_32ns_32_4_max_dsp_1_U95;
-    main_sptohp_32ns_16_2_1<1,2,32,16>* main_sptohp_32ns_16_2_1_U96;
-    main_hptosp_16ns_32_2_1<1,2,16,32>* main_hptosp_16ns_32_2_1_U97;
-    main_hptosp_16ns_32_2_1<1,2,16,32>* main_hptosp_16ns_32_2_1_U98;
-    main_hadd_16ns_16ns_16_5_full_dsp_1<1,5,16,16,16>* main_hadd_16ns_16ns_16_5_full_dsp_1_U99;
-    main_hmul_16ns_16ns_16_4_max_dsp_1<1,4,16,16,16>* main_hmul_16ns_16ns_16_4_max_dsp_1_U100;
-    main_hdiv_16ns_16ns_16_7_1<1,7,16,16,16>* main_hdiv_16ns_16ns_16_7_1_U101;
-    main_hcmp_16ns_16ns_1_2_1<1,2,16,16,1>* main_hcmp_16ns_16ns_1_2_1_U102;
-    main_mux_325_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,5,16>* main_mux_325_16_1_1_U103;
-    main_mux_325_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,5,16>* main_mux_325_16_1_1_U104;
+    main_fadd_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* main_fadd_32ns_32ns_32_5_full_dsp_1_U115;
+    main_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* main_fmul_32ns_32ns_32_4_max_dsp_1_U116;
+    main_sptohp_32ns_16_2_1<1,2,32,16>* main_sptohp_32ns_16_2_1_U117;
+    main_hptosp_16ns_32_2_1<1,2,16,32>* main_hptosp_16ns_32_2_1_U118;
+    main_hptosp_16ns_32_2_1<1,2,16,32>* main_hptosp_16ns_32_2_1_U119;
+    main_hadd_16ns_16ns_16_5_full_dsp_1<1,5,16,16,16>* main_hadd_16ns_16ns_16_5_full_dsp_1_U120;
+    main_hmul_16ns_16ns_16_4_max_dsp_1<1,4,16,16,16>* main_hmul_16ns_16ns_16_4_max_dsp_1_U121;
+    main_hdiv_16ns_16ns_16_7_1<1,7,16,16,16>* main_hdiv_16ns_16ns_16_7_1_U122;
+    main_hcmp_16ns_16ns_1_2_1<1,2,16,16,1>* main_hcmp_16ns_16ns_1_2_1_U123;
+    main_mux_325_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,5,16>* main_mux_325_16_1_1_U124;
+    main_mux_325_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,5,16>* main_mux_325_16_1_1_U125;
     sc_signal< sc_lv<49> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<13> > ConvW4_address0;

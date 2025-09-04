@@ -201,6 +201,7 @@ static void run_all_slices_unrolled(half merged[H]) {
     #pragma HLS RESOURCE variable=LSTM_W_ifog0 core=Register
     #pragma HLS ARRAY_PARTITION variable=ConvW0 complete
     #pragma HLS RESOURCE variable=ConvW0 core=Register
+    #pragma HLS ARRAY_PARTITION variable=Emb0 block factor=128
 
 	// Slice 1
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma1 complete
@@ -219,6 +220,7 @@ static void run_all_slices_unrolled(half merged[H]) {
     #pragma HLS RESOURCE variable=LSTM_W_ifog1 core=Register
     #pragma HLS ARRAY_PARTITION variable=ConvW1 complete
     #pragma HLS RESOURCE variable=ConvW1 core=Register
+    #pragma HLS ARRAY_PARTITION variable=Emb1 block factor=128
 
 	// Slice 2
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma2 complete
@@ -237,6 +239,7 @@ static void run_all_slices_unrolled(half merged[H]) {
     #pragma HLS RESOURCE variable=LSTM_W_ifog2 core=Register
     #pragma HLS ARRAY_PARTITION variable=ConvW2 complete
     #pragma HLS RESOURCE variable=ConvW2 core=Register
+    #pragma HLS ARRAY_PARTITION variable=Emb2 block factor=128
 
 	// Slice 3
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma3 complete
@@ -255,6 +258,7 @@ static void run_all_slices_unrolled(half merged[H]) {
     #pragma HLS RESOURCE variable=LSTM_W_ifog3 core=Register
     #pragma HLS ARRAY_PARTITION variable=ConvW3 complete
     #pragma HLS RESOURCE variable=ConvW3 core=Register
+    #pragma HLS ARRAY_PARTITION variable=Emb3 block factor=128
 
 	// Slice 4
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma4 complete
@@ -273,6 +277,7 @@ static void run_all_slices_unrolled(half merged[H]) {
     #pragma HLS RESOURCE variable=LSTM_W_ifog4 core=Register
     #pragma HLS ARRAY_PARTITION variable=ConvW4 complete
     #pragma HLS RESOURCE variable=ConvW4 core=Register
+    #pragma HLS ARRAY_PARTITION variable=Emb4 block factor=128
     //----------------------------------------------------------//
 
     const half BN_eps = 1e-3f;

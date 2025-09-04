@@ -2067,7 +2067,7 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>shl_ln2</name>
+						<name>shl_ln1</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
 						<lineNumber>135</lineNumber>
@@ -3396,7 +3396,7 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>shl_ln3</name>
+						<name>shl_ln2</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
 						<lineNumber>141</lineNumber>
@@ -17612,7 +17612,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln2_fu_543</first>
+			<first>shl_ln1_fu_543</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17620,7 +17620,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln3_fu_601</first>
+			<first>shl_ln2_fu_601</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19059,7 +19059,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln2_reg_807</first>
+			<first>shl_ln1_reg_807</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19067,7 +19067,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln3_reg_858</first>
+			<first>shl_ln2_reg_858</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

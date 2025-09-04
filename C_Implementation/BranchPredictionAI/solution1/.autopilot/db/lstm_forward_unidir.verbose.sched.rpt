@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'lstm_forward_unidir'
 ================================================================
-* Date:           Thu Sep  4 16:27:27 2025
+* Date:           Thu Sep  4 16:49:49 2025
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BranchPredictionAI
@@ -233,7 +233,7 @@ ST_5 : Operation 136 [1/1] (1.76ns)   --->   "br label %.preheader1" [main_5_sli
 
 State 6 <SV = 5> <Delay = 3.25>
 ST_6 : Operation 137 [1/2] (3.25ns)   --->   "%xv = load half* %U_slice_addr, align 2" [main_5_slices.cpp:134]   --->   Operation 137 'load' 'xv' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
-ST_6 : Operation 138 [1/1] (0.00ns)   --->   "%shl_ln2 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln135, i7 0)" [main_5_slices.cpp:135]   --->   Operation 138 'bitconcatenate' 'shl_ln2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 138 [1/1] (0.00ns)   --->   "%shl_ln1 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln135, i7 0)" [main_5_slices.cpp:135]   --->   Operation 138 'bitconcatenate' 'shl_ln1' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 139 [1/1] (1.76ns)   --->   "br label %6" [main_5_slices.cpp:136]   --->   Operation 139 'br' <Predicate = true> <Delay = 1.76>
 
 State 7 <SV = 6> <Delay = 1.91>
@@ -244,7 +244,7 @@ ST_7 : Operation 143 [1/1] (1.91ns)   --->   "%g_1 = add i8 %g1_0, 1" [main_5_sl
 ST_7 : Operation 144 [1/1] (0.00ns)   --->   "br i1 %icmp_ln136, label %.loopexit.loopexit, label %7" [main_5_slices.cpp:136]   --->   Operation 144 'br' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 145 [1/1] (0.00ns)   --->   "%zext_ln136 = zext i8 %g1_0 to i64" [main_5_slices.cpp:136]   --->   Operation 145 'zext' 'zext_ln136' <Predicate = (!icmp_ln136)> <Delay = 0.00>
 ST_7 : Operation 146 [1/1] (0.00ns)   --->   "%zext_ln136_1 = zext i8 %g1_0 to i12" [main_5_slices.cpp:136]   --->   Operation 146 'zext' 'zext_ln136_1' <Predicate = (!icmp_ln136)> <Delay = 0.00>
-ST_7 : Operation 147 [1/1] (1.54ns)   --->   "%add_ln136 = add i12 %shl_ln2, %zext_ln136_1" [main_5_slices.cpp:136]   --->   Operation 147 'add' 'add_ln136' <Predicate = (!icmp_ln136)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 147 [1/1] (1.54ns)   --->   "%add_ln136 = add i12 %shl_ln1, %zext_ln136_1" [main_5_slices.cpp:136]   --->   Operation 147 'add' 'add_ln136' <Predicate = (!icmp_ln136)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 148 [1/1] (0.00ns)   --->   "%z_addr_1 = getelementptr inbounds [128 x half]* %z, i64 0, i64 %zext_ln136" [main_5_slices.cpp:136]   --->   Operation 148 'getelementptr' 'z_addr_1' <Predicate = (!icmp_ln136)> <Delay = 0.00>
 ST_7 : Operation 149 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 149 'br' <Predicate = (icmp_ln136)> <Delay = 0.00>
 
@@ -298,7 +298,7 @@ ST_18 : Operation 175 [1/1] (1.76ns)   --->   "br label %.preheader" [main_5_sli
 
 State 19 <SV = 6> <Delay = 2.32>
 ST_19 : Operation 176 [1/2] (2.32ns)   --->   "%hv = load half* %h_last_addr_1, align 2" [main_5_slices.cpp:140]   --->   Operation 176 'load' 'hv' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
-ST_19 : Operation 177 [1/1] (0.00ns)   --->   "%shl_ln3 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln141, i7 0)" [main_5_slices.cpp:141]   --->   Operation 177 'bitconcatenate' 'shl_ln3' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 177 [1/1] (0.00ns)   --->   "%shl_ln2 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln141, i7 0)" [main_5_slices.cpp:141]   --->   Operation 177 'bitconcatenate' 'shl_ln2' <Predicate = true> <Delay = 0.00>
 ST_19 : Operation 178 [1/1] (1.76ns)   --->   "br label %9" [main_5_slices.cpp:142]   --->   Operation 178 'br' <Predicate = true> <Delay = 1.76>
 
 State 20 <SV = 7> <Delay = 1.91>
@@ -309,7 +309,7 @@ ST_20 : Operation 182 [1/1] (1.91ns)   --->   "%g_3 = add i8 %g2_0, 1" [main_5_s
 ST_20 : Operation 183 [1/1] (0.00ns)   --->   "br i1 %icmp_ln142, label %.preheader1.loopexit, label %10" [main_5_slices.cpp:142]   --->   Operation 183 'br' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 184 [1/1] (0.00ns)   --->   "%zext_ln142 = zext i8 %g2_0 to i64" [main_5_slices.cpp:142]   --->   Operation 184 'zext' 'zext_ln142' <Predicate = (!icmp_ln142)> <Delay = 0.00>
 ST_20 : Operation 185 [1/1] (0.00ns)   --->   "%zext_ln142_1 = zext i8 %g2_0 to i12" [main_5_slices.cpp:142]   --->   Operation 185 'zext' 'zext_ln142_1' <Predicate = (!icmp_ln142)> <Delay = 0.00>
-ST_20 : Operation 186 [1/1] (1.54ns)   --->   "%add_ln142 = add i12 %shl_ln3, %zext_ln142_1" [main_5_slices.cpp:142]   --->   Operation 186 'add' 'add_ln142' <Predicate = (!icmp_ln142)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 186 [1/1] (1.54ns)   --->   "%add_ln142 = add i12 %shl_ln2, %zext_ln142_1" [main_5_slices.cpp:142]   --->   Operation 186 'add' 'add_ln142' <Predicate = (!icmp_ln142)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_20 : Operation 187 [1/1] (0.00ns)   --->   "%z_addr_6 = getelementptr inbounds [128 x half]* %z, i64 0, i64 %zext_ln142" [main_5_slices.cpp:142]   --->   Operation 187 'getelementptr' 'z_addr_6' <Predicate = (!icmp_ln142)> <Delay = 0.00>
 ST_20 : Operation 188 [1/1] (0.00ns)   --->   "br label %.preheader1"   --->   Operation 188 'br' <Predicate = (icmp_ln142)> <Delay = 0.00>
 

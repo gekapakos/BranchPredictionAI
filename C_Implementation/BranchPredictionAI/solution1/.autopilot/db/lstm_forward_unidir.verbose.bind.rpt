@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'lstm_forward_unidir'
 ================================================================
-* Date:           Thu Sep  4 16:27:29 2025
+* Date:           Thu Sep  4 16:49:51 2025
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BranchPredictionAI
@@ -233,7 +233,7 @@ ST_5 : Operation 136 [1/1] (1.76ns)   --->   "br label %.preheader1" [main_5_sli
 
 State 6 <SV = 5> <Delay = 3.25>
 ST_6 : Operation 137 [1/2] (3.25ns)   --->   "%xv = load half* %U_slice_addr, align 2" [main_5_slices.cpp:134]   --->   Operation 137 'load' 'xv' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
-ST_6 : Operation 138 [1/1] (0.00ns)   --->   "%shl_ln2 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln135, i7 0)" [main_5_slices.cpp:135]   --->   Operation 138 'bitconcatenate' 'shl_ln2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 138 [1/1] (0.00ns)   --->   "%shl_ln1 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln135, i7 0)" [main_5_slices.cpp:135]   --->   Operation 138 'bitconcatenate' 'shl_ln1' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 139 [1/1] (1.76ns)   --->   "br label %6" [main_5_slices.cpp:136]   --->   Operation 139 'br' <Predicate = true> <Delay = 1.76>
 
 State 7 <SV = 6> <Delay = 1.91>
@@ -244,7 +244,7 @@ ST_7 : Operation 143 [1/1] (1.91ns)   --->   "%g_1 = add i8 %g1_0, 1" [main_5_sl
 ST_7 : Operation 144 [1/1] (0.00ns)   --->   "br i1 %icmp_ln136, label %.loopexit.loopexit, label %7" [main_5_slices.cpp:136]   --->   Operation 144 'br' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 145 [1/1] (0.00ns)   --->   "%zext_ln136 = zext i8 %g1_0 to i64" [main_5_slices.cpp:136]   --->   Operation 145 'zext' 'zext_ln136' <Predicate = (!icmp_ln136)> <Delay = 0.00>
 ST_7 : Operation 146 [1/1] (0.00ns)   --->   "%zext_ln136_1 = zext i8 %g1_0 to i12" [main_5_slices.cpp:136]   --->   Operation 146 'zext' 'zext_ln136_1' <Predicate = (!icmp_ln136)> <Delay = 0.00>
-ST_7 : Operation 147 [1/1] (1.54ns)   --->   "%add_ln136 = add i12 %shl_ln2, %zext_ln136_1" [main_5_slices.cpp:136]   --->   Operation 147 'add' 'add_ln136' <Predicate = (!icmp_ln136)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 147 [1/1] (1.54ns)   --->   "%add_ln136 = add i12 %shl_ln1, %zext_ln136_1" [main_5_slices.cpp:136]   --->   Operation 147 'add' 'add_ln136' <Predicate = (!icmp_ln136)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 148 [1/1] (0.00ns)   --->   "%z_addr_1 = getelementptr inbounds [128 x half]* %z, i64 0, i64 %zext_ln136" [main_5_slices.cpp:136]   --->   Operation 148 'getelementptr' 'z_addr_1' <Predicate = (!icmp_ln136)> <Delay = 0.00>
 ST_7 : Operation 149 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 149 'br' <Predicate = (icmp_ln136)> <Delay = 0.00>
 
@@ -298,7 +298,7 @@ ST_18 : Operation 175 [1/1] (1.76ns)   --->   "br label %.preheader" [main_5_sli
 
 State 19 <SV = 6> <Delay = 2.32>
 ST_19 : Operation 176 [1/2] (2.32ns)   --->   "%hv = load half* %h_last_addr_1, align 2" [main_5_slices.cpp:140]   --->   Operation 176 'load' 'hv' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
-ST_19 : Operation 177 [1/1] (0.00ns)   --->   "%shl_ln3 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln141, i7 0)" [main_5_slices.cpp:141]   --->   Operation 177 'bitconcatenate' 'shl_ln3' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 177 [1/1] (0.00ns)   --->   "%shl_ln2 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln141, i7 0)" [main_5_slices.cpp:141]   --->   Operation 177 'bitconcatenate' 'shl_ln2' <Predicate = true> <Delay = 0.00>
 ST_19 : Operation 178 [1/1] (1.76ns)   --->   "br label %9" [main_5_slices.cpp:142]   --->   Operation 178 'br' <Predicate = true> <Delay = 1.76>
 
 State 20 <SV = 7> <Delay = 1.91>
@@ -309,7 +309,7 @@ ST_20 : Operation 182 [1/1] (1.91ns)   --->   "%g_3 = add i8 %g2_0, 1" [main_5_s
 ST_20 : Operation 183 [1/1] (0.00ns)   --->   "br i1 %icmp_ln142, label %.preheader1.loopexit, label %10" [main_5_slices.cpp:142]   --->   Operation 183 'br' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 184 [1/1] (0.00ns)   --->   "%zext_ln142 = zext i8 %g2_0 to i64" [main_5_slices.cpp:142]   --->   Operation 184 'zext' 'zext_ln142' <Predicate = (!icmp_ln142)> <Delay = 0.00>
 ST_20 : Operation 185 [1/1] (0.00ns)   --->   "%zext_ln142_1 = zext i8 %g2_0 to i12" [main_5_slices.cpp:142]   --->   Operation 185 'zext' 'zext_ln142_1' <Predicate = (!icmp_ln142)> <Delay = 0.00>
-ST_20 : Operation 186 [1/1] (1.54ns)   --->   "%add_ln142 = add i12 %shl_ln3, %zext_ln142_1" [main_5_slices.cpp:142]   --->   Operation 186 'add' 'add_ln142' <Predicate = (!icmp_ln142)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 186 [1/1] (1.54ns)   --->   "%add_ln142 = add i12 %shl_ln2, %zext_ln142_1" [main_5_slices.cpp:142]   --->   Operation 186 'add' 'add_ln142' <Predicate = (!icmp_ln142)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_20 : Operation 187 [1/1] (0.00ns)   --->   "%z_addr_6 = getelementptr inbounds [128 x half]* %z, i64 0, i64 %zext_ln142" [main_5_slices.cpp:142]   --->   Operation 187 'getelementptr' 'z_addr_6' <Predicate = (!icmp_ln142)> <Delay = 0.00>
 ST_20 : Operation 188 [1/1] (0.00ns)   --->   "br label %.preheader1"   --->   Operation 188 'br' <Predicate = (icmp_ln142)> <Delay = 0.00>
 
@@ -720,7 +720,7 @@ U_slice_addr    (getelementptr    ) [ 000000100000000000000000000000000000000000
 trunc_ln135     (trunc            ) [ 0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln139        (br               ) [ 0001111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
 xv              (load             ) [ 0000000111111111110000000000000000000000000000000000000000000000000000000000000000000000]
-shl_ln2         (bitconcatenate   ) [ 0000000111111111110000000000000000000000000000000000000000000000000000000000000000000000]
+shl_ln1         (bitconcatenate   ) [ 0000000111111111110000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln136        (br               ) [ 0001111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
 g1_0            (phi              ) [ 0000000100000000000000000000000000000000000000000000000000000000000000000000000000000000]
 icmp_ln136      (icmp             ) [ 0001111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
@@ -750,7 +750,7 @@ h_last_addr_1   (getelementptr    ) [ 000000000000000000010000000000000000000000
 trunc_ln141     (trunc            ) [ 0000000000000000000100000000000000000000000000000000000000000000000000000000000000000000]
 br_ln145        (br               ) [ 0001111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
 hv              (load             ) [ 0000000000000000000011111111111000000000000000000000000000000000000000000000000000000000]
-shl_ln3         (bitconcatenate   ) [ 0000000000000000000011111111111000000000000000000000000000000000000000000000000000000000]
+shl_ln2         (bitconcatenate   ) [ 0000000000000000000011111111111000000000000000000000000000000000000000000000000000000000]
 br_ln142        (br               ) [ 0001111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
 g2_0            (phi              ) [ 0000000000000000000010000000000000000000000000000000000000000000000000000000000000000000]
 icmp_ln142      (icmp             ) [ 0001111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
@@ -2139,7 +2139,7 @@ br_ln145        (br               ) [ 000111111111111111111111111111111111111111
 </bind>
 </comp>
 
-<comp id="543" class="1004" name="shl_ln2_fu_543">
+<comp id="543" class="1004" name="shl_ln1_fu_543">
 <pin_list>
 <pin id="544" dir="0" index="0" bw="12" slack="0"/>
 <pin id="545" dir="0" index="1" bw="5" slack="1"/>
@@ -2148,7 +2148,7 @@ br_ln145        (br               ) [ 000111111111111111111111111111111111111111
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="shl_ln2/6 "/>
+<opset="shl_ln1/6 "/>
 </bind>
 </comp>
 
@@ -2267,7 +2267,7 @@ br_ln145        (br               ) [ 000111111111111111111111111111111111111111
 </bind>
 </comp>
 
-<comp id="601" class="1004" name="shl_ln3_fu_601">
+<comp id="601" class="1004" name="shl_ln2_fu_601">
 <pin_list>
 <pin id="602" dir="0" index="0" bw="12" slack="0"/>
 <pin id="603" dir="0" index="1" bw="5" slack="1"/>
@@ -2276,7 +2276,7 @@ br_ln145        (br               ) [ 000111111111111111111111111111111111111111
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="shl_ln3/19 "/>
+<opset="shl_ln2/19 "/>
 </bind>
 </comp>
 
@@ -2657,13 +2657,13 @@ br_ln145        (br               ) [ 000111111111111111111111111111111111111111
 </bind>
 </comp>
 
-<comp id="807" class="1005" name="shl_ln2_reg_807">
+<comp id="807" class="1005" name="shl_ln1_reg_807">
 <pin_list>
 <pin id="808" dir="0" index="0" bw="12" slack="1"/>
 <pin id="809" dir="1" index="1" bw="12" slack="1"/>
 </pin_list>
 <bind>
-<opset="shl_ln2 "/>
+<opset="shl_ln1 "/>
 </bind>
 </comp>
 
@@ -2747,13 +2747,13 @@ br_ln145        (br               ) [ 000111111111111111111111111111111111111111
 </bind>
 </comp>
 
-<comp id="858" class="1005" name="shl_ln3_reg_858">
+<comp id="858" class="1005" name="shl_ln2_reg_858">
 <pin_list>
 <pin id="859" dir="0" index="0" bw="12" slack="1"/>
 <pin id="860" dir="1" index="1" bw="12" slack="1"/>
 </pin_list>
 <bind>
-<opset="shl_ln3 "/>
+<opset="shl_ln2 "/>
 </bind>
 </comp>
 
@@ -3864,8 +3864,8 @@ br_ln145        (br               ) [ 000111111111111111111111111111111111111111
 |          |   zext_ln149_fu_682   |    0    |    0    |    0    |
 |----------|-----------------------|---------|---------|---------|
 |          |     shl_ln_fu_505     |    0    |    0    |    0    |
-|bitconcatenate|     shl_ln2_fu_543    |    0    |    0    |    0    |
-|          |     shl_ln3_fu_601    |    0    |    0    |    0    |
+|bitconcatenate|     shl_ln1_fu_543    |    0    |    0    |    0    |
+|          |     shl_ln2_fu_601    |    0    |    0    |    0    |
 |          |      or_ln_fu_666     |    0    |    0    |    0    |
 |----------|-----------------------|---------|---------|---------|
 |   trunc  |   trunc_ln135_fu_539  |    0    |    0    |    0    |
@@ -3923,8 +3923,8 @@ Memories:
 |        reg_446       |   32   |
 |        reg_451       |   16   |
 |select_ln47_12_reg_990|   16   |
-|    shl_ln2_reg_807   |   12   |
-|    shl_ln3_reg_858   |   12   |
+|    shl_ln1_reg_807   |   12   |
+|    shl_ln2_reg_858   |   12   |
 |    shl_ln_reg_779    |    9   |
 |      t_0_reg_250     |    4   |
 |       t_reg_766      |    4   |

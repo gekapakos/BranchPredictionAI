@@ -99100,6 +99100,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
 
 
 
+
 _ssdm_SpecArrayPartition( &BN1_gamma0, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&BN1_gamma0, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &BN1_beta0, 1, "COMPLETE", 0, "");
@@ -99116,6 +99117,7 @@ _ssdm_SpecArrayPartition( &LSTM_W_ifog0, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_W_ifog0, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &ConvW0, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&ConvW0, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &Emb0, 1, "BLOCK", 128, "");
 
 
 _ssdm_SpecArrayPartition( &BN1_gamma1, 1, "COMPLETE", 0, "");
@@ -99134,6 +99136,7 @@ _ssdm_SpecArrayPartition( &LSTM_W_ifog1, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_W_ifog1, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &ConvW1, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&ConvW1, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &Emb1, 1, "BLOCK", 128, "");
 
 
 _ssdm_SpecArrayPartition( &BN1_gamma2, 1, "COMPLETE", 0, "");
@@ -99152,6 +99155,7 @@ _ssdm_SpecArrayPartition( &LSTM_W_ifog2, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_W_ifog2, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &ConvW2, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&ConvW2, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &Emb2, 1, "BLOCK", 128, "");
 
 
 _ssdm_SpecArrayPartition( &BN1_gamma3, 1, "COMPLETE", 0, "");
@@ -99170,6 +99174,7 @@ _ssdm_SpecArrayPartition( &LSTM_W_ifog3, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_W_ifog3, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &ConvW3, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&ConvW3, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &Emb3, 1, "BLOCK", 128, "");
 
 
 _ssdm_SpecArrayPartition( &BN1_gamma4, 1, "COMPLETE", 0, "");
@@ -99188,6 +99193,8 @@ _ssdm_SpecArrayPartition( &LSTM_W_ifog4, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&LSTM_W_ifog4, "", "Register", "", -1, "", "", "", "", "");
 _ssdm_SpecArrayPartition( &ConvW4, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecResource(&ConvW4, "", "Register", "", -1, "", "", "", "", "");
+_ssdm_SpecArrayPartition( &Emb4, 1, "BLOCK", 128, "");
+
 
  const half BN_eps = 1e-3f;
     int j;
@@ -99198,7 +99205,6 @@ _ssdm_op_SpecResource(&ConvW4, "", "Register", "", -1, "", "", "", "", "");
 
     {
         half X_slice[T0*E];
-
         embedding_forward_dyn(tokens0, T0, Emb0, X_slice);
         conv_bn_act_pool(X_slice, T0, ConvW0, K, ConvB0, F,
         BN1_gamma0, BN1_beta0, BN1_mean0, BN1_var0, BN_eps,
@@ -99213,7 +99219,6 @@ _ssdm_op_SpecResource(&ConvW4, "", "Register", "", -1, "", "", "", "", "");
 
     {
         half X_slice[T1*E];
-
         embedding_forward_dyn(tokens1, T1, Emb1, X_slice);
         conv_bn_act_pool(X_slice, T1, ConvW1, K, ConvB1, F,
         BN1_gamma1, BN1_beta1, BN1_mean1, BN1_var1, BN_eps,
@@ -99228,7 +99233,6 @@ _ssdm_op_SpecResource(&ConvW4, "", "Register", "", -1, "", "", "", "", "");
 
     {
         half X_slice[T2*E];
-
         embedding_forward_dyn(tokens2, T2, Emb2, X_slice);
         conv_bn_act_pool(X_slice, T2, ConvW2, K, ConvB2, F,
         BN1_gamma2, BN1_beta2, BN1_mean2, BN1_var2, BN_eps,
@@ -99243,7 +99247,6 @@ _ssdm_op_SpecResource(&ConvW4, "", "Register", "", -1, "", "", "", "", "");
 
     {
         half X_slice[T3*E];
-
         embedding_forward_dyn(tokens3, T3, Emb3, X_slice);
         conv_bn_act_pool(X_slice, T3, ConvW3, K, ConvB3, F,
         BN1_gamma3, BN1_beta3, BN1_mean3, BN1_var3, BN_eps,
@@ -99258,7 +99261,6 @@ _ssdm_op_SpecResource(&ConvW4, "", "Register", "", -1, "", "", "", "", "");
 
     {
         half X_slice[T4*E];
-
         embedding_forward_dyn(tokens4, T4, Emb4, X_slice);
         conv_bn_act_pool(X_slice, T4, ConvW4, K, ConvB4, F,
         BN1_gamma4, BN1_beta4, BN1_mean4, BN1_var4, BN_eps,

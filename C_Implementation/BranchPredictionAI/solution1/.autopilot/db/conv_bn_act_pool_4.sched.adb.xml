@@ -3179,10 +3179,10 @@ branch95:1  br label %.preheader4.backedge
 
 <Node id="218" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3:33  %empty_29 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 36, i64 36, i64 36)
+.preheader3:33  %empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 36, i64 36, i64 36)
 
 ]]></Node>
-<StgValue><ssdm name="empty_29"/></StgValue>
+<StgValue><ssdm name="empty_30"/></StgValue>
 </operation>
 
 <operation id="227" st_id="4" stage="1" lat="1">
@@ -3784,10 +3784,10 @@ branch95:1  br label %.preheader4.backedge
 
 <Node id="259" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader2:34  %empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
+.preheader2:34  %empty_31 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
 
 ]]></Node>
-<StgValue><ssdm name="empty_30"/></StgValue>
+<StgValue><ssdm name="empty_31"/></StgValue>
 </operation>
 
 <operation id="267" st_id="5" stage="1" lat="1">
@@ -4074,10 +4074,10 @@ branch95:1  br label %.preheader4.backedge
 
 <Node id="270" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader1:3  %empty_31 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 7, i64 7)
+.preheader1:3  %empty_32 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 7, i64 7)
 
 ]]></Node>
-<StgValue><ssdm name="empty_31"/></StgValue>
+<StgValue><ssdm name="empty_32"/></StgValue>
 </operation>
 
 <operation id="285" st_id="6" stage="1" lat="1">
@@ -4279,10 +4279,10 @@ branch95:1  br label %.preheader4.backedge
 
 <Node id="282" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_32 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
+:3  %empty_33 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
 
 ]]></Node>
-<StgValue><ssdm name="empty_32"/></StgValue>
+<StgValue><ssdm name="empty_33"/></StgValue>
 </operation>
 
 <operation id="298" st_id="7" stage="1" lat="1">
@@ -6712,10 +6712,10 @@ branch63:0  br label %.preheader2.backedge
 
 <Node id="460" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader:35  %empty_33 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
+.preheader:35  %empty_34 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
 
 ]]></Node>
-<StgValue><ssdm name="empty_33"/></StgValue>
+<StgValue><ssdm name="empty_34"/></StgValue>
 </operation>
 
 <operation id="449" st_id="39" stage="1" lat="1">

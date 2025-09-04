@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'conv_bn_act_pool_1'
 ================================================================
-* Date:           Thu Sep  4 16:27:51 2025
+* Date:           Thu Sep  4 16:50:07 2025
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BranchPredictionAI
@@ -347,7 +347,7 @@ ST_4 : Operation 222 [1/1] (0.00ns)   --->   "%pool_acc_2_2 = phi half [ %pool_a
 ST_4 : Operation 223 [1/1] (0.00ns)   --->   "%pool_acc_1_2 = phi half [ %pool_acc_1_0_load, %.preheader3.preheader ], [ %pool_acc_1_2_be, %.preheader3.backedge ]" [main_5_slices.cpp:108]   --->   Operation 223 'phi' 'pool_acc_1_2' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 224 [1/1] (0.00ns)   --->   "%pool_acc_0_2 = phi half [ %pool_acc_0_0_load, %.preheader3.preheader ], [ %pool_acc_0_2_be, %.preheader3.backedge ]" [main_5_slices.cpp:108]   --->   Operation 224 'phi' 'pool_acc_0_2' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 225 [1/1] (0.00ns)   --->   "%t_0 = phi i9 [ 0, %.preheader3.preheader ], [ %t, %.preheader3.backedge ]"   --->   Operation 225 'phi' 't_0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 226 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 288, i64 288, i64 288)"   --->   Operation 226 'speclooptripcount' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 226 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 288, i64 288, i64 288)"   --->   Operation 226 'speclooptripcount' 'empty_45' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 227 [1/1] (1.66ns)   --->   "%icmp_ln97 = icmp eq i9 %t_0, -224" [main_5_slices.cpp:97]   --->   Operation 227 'icmp' 'icmp_ln97' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 228 [1/1] (1.82ns)   --->   "%t = add i9 %t_0, 1" [main_5_slices.cpp:97]   --->   Operation 228 'add' 't' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 229 [1/1] (0.00ns)   --->   "br i1 %icmp_ln97, label %8, label %.preheader2.preheader" [main_5_slices.cpp:97]   --->   Operation 229 'br' <Predicate = true> <Delay = 0.00>
@@ -389,7 +389,7 @@ ST_5 : Operation 262 [1/1] (0.00ns)   --->   "%pool_acc_1_3 = phi half [ %pool_a
 ST_5 : Operation 263 [1/1] (0.00ns)   --->   "%pool_acc_0_3 = phi half [ %pool_acc_0_2, %.preheader2.preheader ], [ %pool_acc_0_3_be, %.preheader2.backedge ]" [main_5_slices.cpp:108]   --->   Operation 263 'phi' 'pool_acc_0_3' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 264 [1/1] (0.00ns)   --->   "%f2_0 = phi i6 [ 0, %.preheader2.preheader ], [ %f_7, %.preheader2.backedge ]"   --->   Operation 264 'phi' 'f2_0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 265 [1/1] (1.42ns)   --->   "%icmp_ln98 = icmp eq i6 %f2_0, -32" [main_5_slices.cpp:98]   --->   Operation 265 'icmp' 'icmp_ln98' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 266 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 266 'speclooptripcount' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 266 [1/1] (0.00ns)   --->   "%empty_46 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 266 'speclooptripcount' 'empty_46' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 267 [1/1] (1.82ns)   --->   "%f_7 = add i6 %f2_0, 1" [main_5_slices.cpp:98]   --->   Operation 267 'add' 'f_7' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 268 [1/1] (0.00ns)   --->   "br i1 %icmp_ln98, label %5, label %.preheader1.preheader" [main_5_slices.cpp:98]   --->   Operation 268 'br' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 269 [1/1] (0.00ns)   --->   "%zext_ln99 = zext i6 %f2_0 to i64" [main_5_slices.cpp:99]   --->   Operation 269 'zext' 'zext_ln99' <Predicate = (!icmp_ln98)> <Delay = 0.00>
@@ -409,7 +409,7 @@ State 6 <SV = 4> <Delay = 3.25>
 ST_6 : Operation 281 [1/1] (0.00ns)   --->   "%acc_0 = phi half [ 0x0, %.preheader1.preheader ], [ %acc_1, %.preheader1.loopexit ]" [main_5_slices.cpp:103]   --->   Operation 281 'phi' 'acc_0' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 282 [1/1] (0.00ns)   --->   "%k_0 = phi i3 [ 0, %.preheader1.preheader ], [ %k, %.preheader1.loopexit ]"   --->   Operation 282 'phi' 'k_0' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 283 [1/1] (1.13ns)   --->   "%icmp_ln100 = icmp eq i3 %k_0, -1" [main_5_slices.cpp:100]   --->   Operation 283 'icmp' 'icmp_ln100' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 284 [1/1] (0.00ns)   --->   "%empty_46 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 7, i64 7)"   --->   Operation 284 'speclooptripcount' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 284 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 7, i64 7)"   --->   Operation 284 'speclooptripcount' 'empty_47' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 285 [1/1] (1.65ns)   --->   "%k = add i3 %k_0, 1" [main_5_slices.cpp:100]   --->   Operation 285 'add' 'k' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 286 [1/1] (0.00ns)   --->   "br i1 %icmp_ln100, label %4, label %1" [main_5_slices.cpp:100]   --->   Operation 286 'br' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 287 [1/1] (0.00ns)   --->   "%zext_ln101 = zext i3 %k_0 to i9" [main_5_slices.cpp:101]   --->   Operation 287 'zext' 'zext_ln101' <Predicate = (!icmp_ln100)> <Delay = 0.00>
@@ -424,7 +424,7 @@ State 7 <SV = 5> <Delay = 5.06>
 ST_7 : Operation 294 [1/1] (0.00ns)   --->   "%acc_1 = phi half [ %acc_0, %1 ], [ %acc, %3 ]"   --->   Operation 294 'phi' 'acc_1' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 295 [1/1] (0.00ns)   --->   "%e_0 = phi i6 [ 0, %1 ], [ %e, %3 ]"   --->   Operation 295 'phi' 'e_0' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 296 [1/1] (1.42ns)   --->   "%icmp_ln103 = icmp eq i6 %e_0, -32" [main_5_slices.cpp:103]   --->   Operation 296 'icmp' 'icmp_ln103' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 297 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 297 'speclooptripcount' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 297 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 297 'speclooptripcount' 'empty_48' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 298 [1/1] (1.82ns)   --->   "%e = add i6 %e_0, 1" [main_5_slices.cpp:103]   --->   Operation 298 'add' 'e' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 299 [1/1] (0.00ns)   --->   "br i1 %icmp_ln103, label %.preheader1.loopexit, label %3" [main_5_slices.cpp:103]   --->   Operation 299 'br' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 300 [1/1] (0.00ns)   --->   "%zext_ln103 = zext i6 %e_0 to i14" [main_5_slices.cpp:103]   --->   Operation 300 'zext' 'zext_ln103' <Predicate = (!icmp_ln103)> <Delay = 0.00>
@@ -671,7 +671,7 @@ ST_39 : Operation 444 [1/1] (0.00ns)   --->   "%pool_acc_0_5 = phi half [ %pool_
 ST_39 : Operation 445 [1/1] (0.00ns)   --->   "%f3_0 = phi i6 [ 0, %.preheader.preheader ], [ %f_8, %.preheader.backedge ]"   --->   Operation 445 'phi' 'f3_0' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 446 [1/1] (0.00ns)   --->   "%zext_ln111 = zext i6 %f3_0 to i32" [main_5_slices.cpp:111]   --->   Operation 446 'zext' 'zext_ln111' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 447 [1/1] (1.42ns)   --->   "%icmp_ln111 = icmp eq i6 %f3_0, -32" [main_5_slices.cpp:111]   --->   Operation 447 'icmp' 'icmp_ln111' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_39 : Operation 448 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 448 'speclooptripcount' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 448 [1/1] (0.00ns)   --->   "%empty_49 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 448 'speclooptripcount' 'empty_49' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 449 [1/1] (1.82ns)   --->   "%f_8 = add i6 %f3_0, 1" [main_5_slices.cpp:111]   --->   Operation 449 'add' 'f_8' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_39 : Operation 450 [1/1] (0.00ns)   --->   "br i1 %icmp_ln111, label %7, label %6" [main_5_slices.cpp:111]   --->   Operation 450 'br' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 451 [1/1] (0.00ns)   --->   "%trunc_ln111 = trunc i6 %f3_0 to i5" [main_5_slices.cpp:111]   --->   Operation 451 'trunc' 'trunc_ln111' <Predicate = (!icmp_ln111)> <Delay = 0.00>

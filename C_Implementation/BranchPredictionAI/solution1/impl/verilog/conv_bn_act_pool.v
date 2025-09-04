@@ -478,7 +478,7 @@ main_fadd_32ns_32ns_32_5_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fadd_32ns_32ns_32_5_full_dsp_1_U94(
+main_fadd_32ns_32ns_32_5_full_dsp_1_U115(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(tmp_88_reg_9578),
@@ -493,7 +493,7 @@ main_fmul_32ns_32ns_32_4_max_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-main_fmul_32ns_32ns_32_4_max_dsp_1_U95(
+main_fmul_32ns_32ns_32_4_max_dsp_1_U116(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(tmp_86_reg_9568),
@@ -507,7 +507,7 @@ main_sptohp_32ns_16_2_1 #(
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 16 ))
-main_sptohp_32ns_16_2_1_U96(
+main_sptohp_32ns_16_2_1_U117(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(tmp_89_reg_9583),
@@ -520,7 +520,7 @@ main_hptosp_16ns_32_2_1 #(
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 16 ),
     .dout_WIDTH( 32 ))
-main_hptosp_16ns_32_2_1_U97(
+main_hptosp_16ns_32_2_1_U118(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(a_bn_q0),
@@ -533,7 +533,7 @@ main_hptosp_16ns_32_2_1 #(
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 16 ),
     .dout_WIDTH( 32 ))
-main_hptosp_16ns_32_2_1_U98(
+main_hptosp_16ns_32_2_1_U119(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(acc_0_reg_1021),
@@ -547,7 +547,7 @@ main_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-main_hadd_16ns_16ns_16_5_full_dsp_1_U99(
+main_hadd_16ns_16ns_16_5_full_dsp_1_U120(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_8459_p0),
@@ -562,7 +562,7 @@ main_hmul_16ns_16ns_16_4_max_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-main_hmul_16ns_16ns_16_4_max_dsp_1_U100(
+main_hmul_16ns_16ns_16_4_max_dsp_1_U121(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(X_load_reg_9543),
@@ -577,7 +577,7 @@ main_hdiv_16ns_16ns_16_7_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-main_hdiv_16ns_16ns_16_7_1_U101(
+main_hdiv_16ns_16ns_16_7_1_U122(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(tmp_10_reg_9652),
@@ -592,7 +592,7 @@ main_hcmp_16ns_16ns_1_2_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 1 ))
-main_hcmp_16ns_16ns_1_2_1_U102(
+main_hcmp_16ns_16ns_1_2_1_U123(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(y_reg_9588),
@@ -639,7 +639,7 @@ main_mux_325_16_1_1 #(
     .din31_WIDTH( 16 ),
     .din32_WIDTH( 5 ),
     .dout_WIDTH( 16 ))
-main_mux_325_16_1_1_U103(
+main_mux_325_16_1_1_U124(
     .din0(pool_acc_0_3_reg_998),
     .din1(pool_acc_1_3_reg_987),
     .din2(pool_acc_2_3_reg_976),
@@ -713,7 +713,7 @@ main_mux_325_16_1_1 #(
     .din31_WIDTH( 16 ),
     .din32_WIDTH( 5 ),
     .dout_WIDTH( 16 ))
-main_mux_325_16_1_1_U104(
+main_mux_325_16_1_1_U125(
     .din0(pool_acc_0_5_reg_4673),
     .din1(pool_acc_1_5_reg_4662),
     .din2(pool_acc_2_5_reg_4651),

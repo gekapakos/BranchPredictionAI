@@ -802,7 +802,7 @@ begin
         ce0 => a_bn_ce0,
         q0 => a_bn_q0);
 
-    main_fadd_32ns_32ns_32_5_full_dsp_1_U94 : component main_fadd_32ns_32ns_32_5_full_dsp_1
+    main_fadd_32ns_32ns_32_5_full_dsp_1_U115 : component main_fadd_32ns_32ns_32_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -817,7 +817,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8439_p2);
 
-    main_fmul_32ns_32ns_32_4_max_dsp_1_U95 : component main_fmul_32ns_32ns_32_4_max_dsp_1
+    main_fmul_32ns_32ns_32_4_max_dsp_1_U116 : component main_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -832,7 +832,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8444_p2);
 
-    main_sptohp_32ns_16_2_1_U96 : component main_sptohp_32ns_16_2_1
+    main_sptohp_32ns_16_2_1_U117 : component main_sptohp_32ns_16_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -845,7 +845,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8448_p1);
 
-    main_hptosp_16ns_32_2_1_U97 : component main_hptosp_16ns_32_2_1
+    main_hptosp_16ns_32_2_1_U118 : component main_hptosp_16ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -858,7 +858,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8451_p1);
 
-    main_hptosp_16ns_32_2_1_U98 : component main_hptosp_16ns_32_2_1
+    main_hptosp_16ns_32_2_1_U119 : component main_hptosp_16ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -871,7 +871,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8455_p1);
 
-    main_hadd_16ns_16ns_16_5_full_dsp_1_U99 : component main_hadd_16ns_16ns_16_5_full_dsp_1
+    main_hadd_16ns_16ns_16_5_full_dsp_1_U120 : component main_hadd_16ns_16ns_16_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -886,7 +886,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8459_p2);
 
-    main_hmul_16ns_16ns_16_4_max_dsp_1_U100 : component main_hmul_16ns_16ns_16_4_max_dsp_1
+    main_hmul_16ns_16ns_16_4_max_dsp_1_U121 : component main_hmul_16ns_16ns_16_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -901,7 +901,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8464_p2);
 
-    main_hdiv_16ns_16ns_16_7_1_U101 : component main_hdiv_16ns_16ns_16_7_1
+    main_hdiv_16ns_16ns_16_7_1_U122 : component main_hdiv_16ns_16ns_16_7_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -916,7 +916,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8469_p2);
 
-    main_hcmp_16ns_16ns_1_2_1_U102 : component main_hcmp_16ns_16ns_1_2_1
+    main_hcmp_16ns_16ns_1_2_1_U123 : component main_hcmp_16ns_16ns_1_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -932,7 +932,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_8474_p2);
 
-    main_mux_325_16_1_1_U103 : component main_mux_325_16_1_1
+    main_mux_325_16_1_1_U124 : component main_mux_325_16_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -1006,7 +1006,7 @@ begin
         din32 => trunc_ln108_reg_9520,
         dout => tmp_9_fu_8912_p34);
 
-    main_mux_325_16_1_1_U104 : component main_mux_325_16_1_1
+    main_mux_325_16_1_1_U125 : component main_mux_325_16_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

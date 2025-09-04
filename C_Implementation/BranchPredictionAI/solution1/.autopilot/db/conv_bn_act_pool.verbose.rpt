@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'conv_bn_act_pool'
 ================================================================
-* Date:           Thu Sep  4 16:28:47 2025
+* Date:           Thu Sep  4 16:50:51 2025
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BranchPredictionAI
@@ -75,23 +75,23 @@
 
 + Detail: 
     * Instance: 
-    +-----------------------------------------+-------------------------------------+---------+-------+-----+-----+-----+
-    |                 Instance                |                Module               | BRAM_18K| DSP48E|  FF | LUT | URAM|
-    +-----------------------------------------+-------------------------------------+---------+-------+-----+-----+-----+
-    |main_fadd_32ns_32ns_32_5_full_dsp_1_U94  |main_fadd_32ns_32ns_32_5_full_dsp_1  |        0|      2|  205|  390|    0|
-    |main_fmul_32ns_32ns_32_4_max_dsp_1_U95   |main_fmul_32ns_32ns_32_4_max_dsp_1   |        0|      3|  143|  321|    0|
-    |main_hadd_16ns_16ns_16_5_full_dsp_1_U99  |main_hadd_16ns_16ns_16_5_full_dsp_1  |        0|      2|  109|  116|    0|
-    |main_hcmp_16ns_16ns_1_2_1_U102           |main_hcmp_16ns_16ns_1_2_1            |        0|      0|   34|   27|    0|
-    |main_hdiv_16ns_16ns_16_7_1_U101          |main_hdiv_16ns_16ns_16_7_1           |        0|      0|  170|  220|    0|
-    |main_hmul_16ns_16ns_16_4_max_dsp_1_U100  |main_hmul_16ns_16ns_16_4_max_dsp_1   |        0|      2|   91|   36|    0|
-    |main_hptosp_16ns_32_2_1_U97              |main_hptosp_16ns_32_2_1              |        0|      0|   52|    9|    0|
-    |main_hptosp_16ns_32_2_1_U98              |main_hptosp_16ns_32_2_1              |        0|      0|   52|    9|    0|
-    |main_mux_325_16_1_1_U103                 |main_mux_325_16_1_1                  |        0|      0|    0|  145|    0|
-    |main_mux_325_16_1_1_U104                 |main_mux_325_16_1_1                  |        0|      0|    0|  145|    0|
-    |main_sptohp_32ns_16_2_1_U96              |main_sptohp_32ns_16_2_1              |        0|      0|   64|   21|    0|
-    +-----------------------------------------+-------------------------------------+---------+-------+-----+-----+-----+
-    |Total                                    |                                     |        0|      9|  920| 1439|    0|
-    +-----------------------------------------+-------------------------------------+---------+-------+-----+-----+-----+
+    +------------------------------------------+-------------------------------------+---------+-------+-----+-----+-----+
+    |                 Instance                 |                Module               | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +------------------------------------------+-------------------------------------+---------+-------+-----+-----+-----+
+    |main_fadd_32ns_32ns_32_5_full_dsp_1_U115  |main_fadd_32ns_32ns_32_5_full_dsp_1  |        0|      2|  205|  390|    0|
+    |main_fmul_32ns_32ns_32_4_max_dsp_1_U116   |main_fmul_32ns_32ns_32_4_max_dsp_1   |        0|      3|  143|  321|    0|
+    |main_hadd_16ns_16ns_16_5_full_dsp_1_U120  |main_hadd_16ns_16ns_16_5_full_dsp_1  |        0|      2|  109|  116|    0|
+    |main_hcmp_16ns_16ns_1_2_1_U123            |main_hcmp_16ns_16ns_1_2_1            |        0|      0|   34|   27|    0|
+    |main_hdiv_16ns_16ns_16_7_1_U122           |main_hdiv_16ns_16ns_16_7_1           |        0|      0|  170|  220|    0|
+    |main_hmul_16ns_16ns_16_4_max_dsp_1_U121   |main_hmul_16ns_16ns_16_4_max_dsp_1   |        0|      2|   91|   36|    0|
+    |main_hptosp_16ns_32_2_1_U118              |main_hptosp_16ns_32_2_1              |        0|      0|   52|    9|    0|
+    |main_hptosp_16ns_32_2_1_U119              |main_hptosp_16ns_32_2_1              |        0|      0|   52|    9|    0|
+    |main_mux_325_16_1_1_U124                  |main_mux_325_16_1_1                  |        0|      0|    0|  145|    0|
+    |main_mux_325_16_1_1_U125                  |main_mux_325_16_1_1                  |        0|      0|    0|  145|    0|
+    |main_sptohp_32ns_16_2_1_U117              |main_sptohp_32ns_16_2_1              |        0|      0|   64|   21|    0|
+    +------------------------------------------+-------------------------------------+---------+-------+-----+-----+-----+
+    |Total                                     |                                     |        0|      9|  920| 1439|    0|
+    +------------------------------------------+-------------------------------------+---------+-------+-----+-----+-----+
 
     * DSP48E: 
     N/A
@@ -877,7 +877,7 @@ ST_4 : Operation 222 [1/1] (0.00ns)   --->   "%pool_acc_2_2 = phi half [ %pool_a
 ST_4 : Operation 223 [1/1] (0.00ns)   --->   "%pool_acc_1_2 = phi half [ %pool_acc_1_0_load, %.preheader3.preheader ], [ %pool_acc_1_2_be, %.preheader3.backedge ]" [main_5_slices.cpp:108]   --->   Operation 223 'phi' 'pool_acc_1_2' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 224 [1/1] (0.00ns)   --->   "%pool_acc_0_2 = phi half [ %pool_acc_0_0_load, %.preheader3.preheader ], [ %pool_acc_0_2_be, %.preheader3.backedge ]" [main_5_slices.cpp:108]   --->   Operation 224 'phi' 'pool_acc_0_2' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 225 [1/1] (0.00ns)   --->   "%t_0 = phi i10 [ 0, %.preheader3.preheader ], [ %t, %.preheader3.backedge ]"   --->   Operation 225 'phi' 't_0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 226 [1/1] (0.00ns)   --->   "%empty_49 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 576, i64 576, i64 576)"   --->   Operation 226 'speclooptripcount' 'empty_49' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 226 [1/1] (0.00ns)   --->   "%empty_50 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 576, i64 576, i64 576)"   --->   Operation 226 'speclooptripcount' 'empty_50' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 227 [1/1] (1.77ns)   --->   "%icmp_ln97 = icmp eq i10 %t_0, -448" [main_5_slices.cpp:97]   --->   Operation 227 'icmp' 'icmp_ln97' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 228 [1/1] (1.73ns)   --->   "%t = add i10 %t_0, 1" [main_5_slices.cpp:97]   --->   Operation 228 'add' 't' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 229 [1/1] (0.00ns)   --->   "br i1 %icmp_ln97, label %8, label %.preheader2.preheader" [main_5_slices.cpp:97]   --->   Operation 229 'br' <Predicate = true> <Delay = 0.00>
@@ -919,7 +919,7 @@ ST_5 : Operation 262 [1/1] (0.00ns)   --->   "%pool_acc_1_3 = phi half [ %pool_a
 ST_5 : Operation 263 [1/1] (0.00ns)   --->   "%pool_acc_0_3 = phi half [ %pool_acc_0_2, %.preheader2.preheader ], [ %pool_acc_0_3_be, %.preheader2.backedge ]" [main_5_slices.cpp:108]   --->   Operation 263 'phi' 'pool_acc_0_3' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 264 [1/1] (0.00ns)   --->   "%f2_0 = phi i6 [ 0, %.preheader2.preheader ], [ %f_9, %.preheader2.backedge ]"   --->   Operation 264 'phi' 'f2_0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 265 [1/1] (1.42ns)   --->   "%icmp_ln98 = icmp eq i6 %f2_0, -32" [main_5_slices.cpp:98]   --->   Operation 265 'icmp' 'icmp_ln98' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 266 [1/1] (0.00ns)   --->   "%empty_50 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 266 'speclooptripcount' 'empty_50' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 266 [1/1] (0.00ns)   --->   "%empty_51 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 266 'speclooptripcount' 'empty_51' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 267 [1/1] (1.82ns)   --->   "%f_9 = add i6 %f2_0, 1" [main_5_slices.cpp:98]   --->   Operation 267 'add' 'f_9' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 268 [1/1] (0.00ns)   --->   "br i1 %icmp_ln98, label %5, label %.preheader1.preheader" [main_5_slices.cpp:98]   --->   Operation 268 'br' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 269 [1/1] (0.00ns)   --->   "%zext_ln99 = zext i6 %f2_0 to i64" [main_5_slices.cpp:99]   --->   Operation 269 'zext' 'zext_ln99' <Predicate = (!icmp_ln98)> <Delay = 0.00>
@@ -939,7 +939,7 @@ State 6 <SV = 4> <Delay = 3.25>
 ST_6 : Operation 281 [1/1] (0.00ns)   --->   "%acc_0 = phi half [ 0x0, %.preheader1.preheader ], [ %acc_1, %.preheader1.loopexit ]" [main_5_slices.cpp:103]   --->   Operation 281 'phi' 'acc_0' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 282 [1/1] (0.00ns)   --->   "%k_0 = phi i3 [ 0, %.preheader1.preheader ], [ %k, %.preheader1.loopexit ]"   --->   Operation 282 'phi' 'k_0' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 283 [1/1] (1.13ns)   --->   "%icmp_ln100 = icmp eq i3 %k_0, -1" [main_5_slices.cpp:100]   --->   Operation 283 'icmp' 'icmp_ln100' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 284 [1/1] (0.00ns)   --->   "%empty_51 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 7, i64 7)"   --->   Operation 284 'speclooptripcount' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 284 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 7, i64 7)"   --->   Operation 284 'speclooptripcount' 'empty_52' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 285 [1/1] (1.65ns)   --->   "%k = add i3 %k_0, 1" [main_5_slices.cpp:100]   --->   Operation 285 'add' 'k' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 286 [1/1] (0.00ns)   --->   "br i1 %icmp_ln100, label %4, label %1" [main_5_slices.cpp:100]   --->   Operation 286 'br' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 287 [1/1] (0.00ns)   --->   "%zext_ln101 = zext i3 %k_0 to i10" [main_5_slices.cpp:101]   --->   Operation 287 'zext' 'zext_ln101' <Predicate = (!icmp_ln100)> <Delay = 0.00>
@@ -954,7 +954,7 @@ State 7 <SV = 5> <Delay = 5.19>
 ST_7 : Operation 294 [1/1] (0.00ns)   --->   "%acc_1 = phi half [ %acc_0, %1 ], [ %acc, %3 ]"   --->   Operation 294 'phi' 'acc_1' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 295 [1/1] (0.00ns)   --->   "%e_0 = phi i6 [ 0, %1 ], [ %e, %3 ]"   --->   Operation 295 'phi' 'e_0' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 296 [1/1] (1.42ns)   --->   "%icmp_ln103 = icmp eq i6 %e_0, -32" [main_5_slices.cpp:103]   --->   Operation 296 'icmp' 'icmp_ln103' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 297 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 297 'speclooptripcount' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 297 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 297 'speclooptripcount' 'empty_53' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 298 [1/1] (1.82ns)   --->   "%e = add i6 %e_0, 1" [main_5_slices.cpp:103]   --->   Operation 298 'add' 'e' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 299 [1/1] (0.00ns)   --->   "br i1 %icmp_ln103, label %.preheader1.loopexit, label %3" [main_5_slices.cpp:103]   --->   Operation 299 'br' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 300 [1/1] (0.00ns)   --->   "%zext_ln103 = zext i6 %e_0 to i15" [main_5_slices.cpp:103]   --->   Operation 300 'zext' 'zext_ln103' <Predicate = (!icmp_ln103)> <Delay = 0.00>
@@ -1201,7 +1201,7 @@ ST_39 : Operation 444 [1/1] (0.00ns)   --->   "%pool_acc_0_5 = phi half [ %pool_
 ST_39 : Operation 445 [1/1] (0.00ns)   --->   "%f3_0 = phi i6 [ 0, %.preheader.preheader ], [ %f_10, %.preheader.backedge ]"   --->   Operation 445 'phi' 'f3_0' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 446 [1/1] (0.00ns)   --->   "%zext_ln111 = zext i6 %f3_0 to i32" [main_5_slices.cpp:111]   --->   Operation 446 'zext' 'zext_ln111' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 447 [1/1] (1.42ns)   --->   "%icmp_ln111 = icmp eq i6 %f3_0, -32" [main_5_slices.cpp:111]   --->   Operation 447 'icmp' 'icmp_ln111' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_39 : Operation 448 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 448 'speclooptripcount' 'empty_53' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 448 [1/1] (0.00ns)   --->   "%empty_54 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 448 'speclooptripcount' 'empty_54' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 449 [1/1] (1.82ns)   --->   "%f_10 = add i6 %f3_0, 1" [main_5_slices.cpp:111]   --->   Operation 449 'add' 'f_10' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_39 : Operation 450 [1/1] (0.00ns)   --->   "br i1 %icmp_ln111, label %7, label %6" [main_5_slices.cpp:111]   --->   Operation 450 'br' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 451 [1/1] (0.00ns)   --->   "%trunc_ln111 = trunc i6 %f3_0 to i5" [main_5_slices.cpp:111]   --->   Operation 451 'trunc' 'trunc_ln111' <Predicate = (!icmp_ln111)> <Delay = 0.00>
@@ -1571,7 +1571,7 @@ pool_acc_2_2       (phi              ) [ 000011111111111111111111111111111111111
 pool_acc_1_2       (phi              ) [ 00001111111111111111111111111111111111100000000000]
 pool_acc_0_2       (phi              ) [ 00001111111111111111111111111111111111100000000000]
 t_0                (phi              ) [ 00001111111111111111111111111111111111100000000000]
-empty_49           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
+empty_50           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
 icmp_ln97          (icmp             ) [ 00001111111111111111111111111111111111111111111111]
 t                  (add              ) [ 00101111111111111111111111111111111111111111111111]
 br_ln97            (br               ) [ 00000000000000000000000000000000000000000000000000]
@@ -1611,7 +1611,7 @@ pool_acc_1_3       (phi              ) [ 000001111111111111111111111111111111111
 pool_acc_0_3       (phi              ) [ 00000111111111111111111111111111111111111111111111]
 f2_0               (phi              ) [ 00000111111111111100000000000000000000000000000000]
 icmp_ln98          (icmp             ) [ 00001111111111111111111111111111111111111111111111]
-empty_50           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
+empty_51           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
 f_9                (add              ) [ 00001111111111111111111111111111111111111111111111]
 br_ln98            (br               ) [ 00000000000000000000000000000000000000000000000000]
 zext_ln99          (zext             ) [ 00000011111111111100000000000000000000000000000000]
@@ -1629,7 +1629,7 @@ br_ln111           (br               ) [ 000011111111111111111111111111111111111
 acc_0              (phi              ) [ 00000011111111111111000000000000000000000000000000]
 k_0                (phi              ) [ 00000011111111111100000000000000000000000000000000]
 icmp_ln100         (icmp             ) [ 00001111111111111111111111111111111111111111111111]
-empty_51           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
+empty_52           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
 k                  (add              ) [ 00001111111111111111111111111111111111111111111111]
 br_ln100           (br               ) [ 00000000000000000000000000000000000000000000000000]
 zext_ln101         (zext             ) [ 00000000000000000000000000000000000000000000000000]
@@ -1641,7 +1641,7 @@ trunc_ln108        (trunc            ) [ 000000000000000000111111111111111111111
 acc_1              (phi              ) [ 00001111111111111111111111111111111111111111111111]
 e_0                (phi              ) [ 00000001000000000000000000000000000000000000000000]
 icmp_ln103         (icmp             ) [ 00001111111111111111111111111111111111111111111111]
-empty_52           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
+empty_53           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
 e                  (add              ) [ 00001111111111111111111111111111111111111111111111]
 br_ln103           (br               ) [ 00000000000000000000000000000000000000000000000000]
 zext_ln103         (zext             ) [ 00000000000000000000000000000000000000000000000000]
@@ -1769,7 +1769,7 @@ pool_acc_0_5       (phi              ) [ 000011111111111111111111111111111111111
 f3_0               (phi              ) [ 00000000000000000000000000000000000000010000000000]
 zext_ln111         (zext             ) [ 00000000000000000000000000000000000000000000000000]
 icmp_ln111         (icmp             ) [ 00001111111111111111111111111111111111111111111111]
-empty_53           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
+empty_54           (speclooptripcount) [ 00000000000000000000000000000000000000000000000000]
 f_10               (add              ) [ 00001111111111111111111111111111111111111111111111]
 br_ln111           (br               ) [ 00000000000000000000000000000000000000000000000000]
 trunc_ln111        (trunc            ) [ 00000000000000000000000000000000000000001111111100]

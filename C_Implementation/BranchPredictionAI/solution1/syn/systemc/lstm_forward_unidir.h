@@ -147,8 +147,8 @@ struct lstm_forward_unidir : public sc_module {
     sc_signal< sc_lv<5> > trunc_ln135_reg_797;
     sc_signal< sc_lv<16> > xv_reg_802;
     sc_signal< sc_logic > ap_CS_fsm_state6;
-    sc_signal< sc_lv<12> > shl_ln2_fu_543_p3;
-    sc_signal< sc_lv<12> > shl_ln2_reg_807;
+    sc_signal< sc_lv<12> > shl_ln1_fu_543_p3;
+    sc_signal< sc_lv<12> > shl_ln1_reg_807;
     sc_signal< sc_lv<8> > g_1_fu_556_p2;
     sc_signal< sc_lv<8> > g_1_reg_815;
     sc_signal< sc_logic > ap_CS_fsm_state7;
@@ -165,8 +165,8 @@ struct lstm_forward_unidir : public sc_module {
     sc_signal< sc_lv<5> > trunc_ln141_reg_848;
     sc_signal< sc_lv<16> > hv_reg_853;
     sc_signal< sc_logic > ap_CS_fsm_state19;
-    sc_signal< sc_lv<12> > shl_ln3_fu_601_p3;
-    sc_signal< sc_lv<12> > shl_ln3_reg_858;
+    sc_signal< sc_lv<12> > shl_ln2_fu_601_p3;
+    sc_signal< sc_lv<12> > shl_ln2_reg_858;
     sc_signal< sc_lv<8> > g_3_fu_614_p2;
     sc_signal< sc_lv<8> > g_3_reg_866;
     sc_signal< sc_logic > ap_CS_fsm_state20;
@@ -563,8 +563,8 @@ struct lstm_forward_unidir : public sc_module {
     void thread_select_ln47_12_fu_747_p3();
     void thread_select_ln47_fu_699_p3();
     void thread_sext_ln149_fu_679_p1();
-    void thread_shl_ln2_fu_543_p3();
-    void thread_shl_ln3_fu_601_p3();
+    void thread_shl_ln1_fu_543_p3();
+    void thread_shl_ln2_fu_601_p3();
     void thread_shl_ln_fu_505_p3();
     void thread_t_fu_481_p2();
     void thread_trunc_ln135_fu_539_p1();

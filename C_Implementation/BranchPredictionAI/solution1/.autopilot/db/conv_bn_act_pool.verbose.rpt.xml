@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool'" level="0">
-<item name = "Date">Thu Sep  4 16:28:47 2025
+<item name = "Date">Thu Sep  4 16:50:51 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -67,17 +67,17 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="main_fadd_32ns_32ns_32_5_full_dsp_1_U94">main_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
-<column name="main_fmul_32ns_32ns_32_4_max_dsp_1_U95">main_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
-<column name="main_hadd_16ns_16ns_16_5_full_dsp_1_U99">main_hadd_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
-<column name="main_hcmp_16ns_16ns_1_2_1_U102">main_hcmp_16ns_16ns_1_2_1, 0, 0, 34, 27, 0</column>
-<column name="main_hdiv_16ns_16ns_16_7_1_U101">main_hdiv_16ns_16ns_16_7_1, 0, 0, 170, 220, 0</column>
-<column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U100">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
-<column name="main_hptosp_16ns_32_2_1_U97">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
-<column name="main_hptosp_16ns_32_2_1_U98">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
-<column name="main_mux_325_16_1_1_U103">main_mux_325_16_1_1, 0, 0, 0, 145, 0</column>
-<column name="main_mux_325_16_1_1_U104">main_mux_325_16_1_1, 0, 0, 0, 145, 0</column>
-<column name="main_sptohp_32ns_16_2_1_U96">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
+<column name="main_fadd_32ns_32ns_32_5_full_dsp_1_U115">main_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
+<column name="main_fmul_32ns_32ns_32_4_max_dsp_1_U116">main_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
+<column name="main_hadd_16ns_16ns_16_5_full_dsp_1_U120">main_hadd_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
+<column name="main_hcmp_16ns_16ns_1_2_1_U123">main_hcmp_16ns_16ns_1_2_1, 0, 0, 34, 27, 0</column>
+<column name="main_hdiv_16ns_16ns_16_7_1_U122">main_hdiv_16ns_16ns_16_7_1, 0, 0, 170, 220, 0</column>
+<column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U121">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
+<column name="main_hptosp_16ns_32_2_1_U118">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
+<column name="main_hptosp_16ns_32_2_1_U119">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
+<column name="main_mux_325_16_1_1_U124">main_mux_325_16_1_1, 0, 0, 0, 145, 0</column>
+<column name="main_mux_325_16_1_1_U125">main_mux_325_16_1_1, 0, 0, 0, 145, 0</column>
+<column name="main_sptohp_32ns_16_2_1_U117">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

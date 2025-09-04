@@ -28,7 +28,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "95142920",
+    "Latency": "95161546",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -56,6 +56,27 @@
       "impl\/vhdl\/conv_bn_act_pool_4.vhd",
       "impl\/vhdl\/conv_bn_act_pool_4_a_bn.vhd",
       "impl\/vhdl\/conv_bn_act_pool_4_X_slice.vhd",
+      "impl\/vhdl\/embedding_forward_dy.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_0.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_1.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_2.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_3.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_4.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_5.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_6.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_7.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_8.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_9.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_10.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_11.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_12.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_13.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_14.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_15.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_16.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_17.vhd",
+      "impl\/vhdl\/embedding_forward_dy_Emb4_18.vhd",
+      "impl\/vhdl\/embedding_forward_dy_tokens4.vhd",
       "impl\/vhdl\/lstm_forward_unidir.vhd",
       "impl\/vhdl\/lstm_forward_unidir_c_slice.vhd",
       "impl\/vhdl\/lstm_forward_unidir_z.vhd",
@@ -79,8 +100,6 @@
       "impl\/vhdl\/main_z0.vhd",
       "impl\/vhdl\/run_all_slices_unrol.vhd",
       "impl\/vhdl\/run_all_slices_unrol_BN2_var0.vhd",
-      "impl\/vhdl\/run_all_slices_unrol_Emb4.vhd",
-      "impl\/vhdl\/run_all_slices_unrol_tokens4.vhd",
       "impl\/vhdl\/run_all_slices_unrol_U_slice.vhd",
       "impl\/vhdl\/run_all_slices_unrol_X_slice_1.vhd",
       "impl\/vhdl\/main.vhd"
@@ -101,6 +120,47 @@
       "impl\/verilog\/conv_bn_act_pool_4_a_bn_rom.dat",
       "impl\/verilog\/conv_bn_act_pool_4_X_slice.v",
       "impl\/verilog\/conv_bn_act_pool_4_X_slice_rom.dat",
+      "impl\/verilog\/embedding_forward_dy.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_0.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_0_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_1.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_1_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_2.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_2_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_3.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_3_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_4.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_4_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_5.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_5_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_6.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_6_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_7.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_7_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_8.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_8_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_9.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_9_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_10.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_10_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_11.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_11_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_12.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_12_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_13.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_13_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_14.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_14_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_15.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_15_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_16.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_16_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_17.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_17_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_Emb4_18.v",
+      "impl\/verilog\/embedding_forward_dy_Emb4_18_rom.dat",
+      "impl\/verilog\/embedding_forward_dy_tokens4.v",
+      "impl\/verilog\/embedding_forward_dy_tokens4_rom.dat",
       "impl\/verilog\/lstm_forward_unidir.v",
       "impl\/verilog\/lstm_forward_unidir_c_slice.v",
       "impl\/verilog\/lstm_forward_unidir_c_slice_ram.dat",
@@ -129,10 +189,6 @@
       "impl\/verilog\/run_all_slices_unrol.v",
       "impl\/verilog\/run_all_slices_unrol_BN2_var0.v",
       "impl\/verilog\/run_all_slices_unrol_BN2_var0_rom.dat",
-      "impl\/verilog\/run_all_slices_unrol_Emb4.v",
-      "impl\/verilog\/run_all_slices_unrol_Emb4_rom.dat",
-      "impl\/verilog\/run_all_slices_unrol_tokens4.v",
-      "impl\/verilog\/run_all_slices_unrol_tokens4_rom.dat",
       "impl\/verilog\/run_all_slices_unrol_U_slice.v",
       "impl\/verilog\/run_all_slices_unrol_U_slice_ram.dat",
       "impl\/verilog\/run_all_slices_unrol_X_slice_1.v",
@@ -295,31 +351,35 @@
       "ModuleName": "main",
       "Instances": [{
           "ModuleName": "run_all_slices_unrol",
-          "InstanceName": "grp_run_all_slices_unrol_fu_407",
+          "InstanceName": "grp_run_all_slices_unrol_fu_443",
           "Instances": [
             {
               "ModuleName": "lstm_forward_unidir",
-              "InstanceName": "grp_lstm_forward_unidir_fu_626"
+              "InstanceName": "grp_lstm_forward_unidir_fu_590"
             },
             {
               "ModuleName": "conv_bn_act_pool",
-              "InstanceName": "grp_conv_bn_act_pool_fu_654"
+              "InstanceName": "grp_conv_bn_act_pool_fu_618"
             },
             {
               "ModuleName": "conv_bn_act_pool_1",
-              "InstanceName": "grp_conv_bn_act_pool_1_fu_665"
+              "InstanceName": "grp_conv_bn_act_pool_1_fu_629"
             },
             {
               "ModuleName": "conv_bn_act_pool_2",
-              "InstanceName": "grp_conv_bn_act_pool_2_fu_677"
+              "InstanceName": "grp_conv_bn_act_pool_2_fu_641"
             },
             {
               "ModuleName": "conv_bn_act_pool_3",
-              "InstanceName": "grp_conv_bn_act_pool_3_fu_689"
+              "InstanceName": "grp_conv_bn_act_pool_3_fu_653"
             },
             {
               "ModuleName": "conv_bn_act_pool_4",
-              "InstanceName": "grp_conv_bn_act_pool_4_fu_701"
+              "InstanceName": "grp_conv_bn_act_pool_4_fu_665"
+            },
+            {
+              "ModuleName": "embedding_forward_dy",
+              "InstanceName": "grp_embedding_forward_dy_fu_677"
             }
           ]
         }]
@@ -354,6 +414,13 @@
         "isOneStateSeq": "0"
       },
       "conv_bn_act_pool_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "embedding_forward_dy": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -761,6 +828,42 @@
           "URAM": "0"
         }
       },
+      "embedding_forward_dy": {
+        "Latency": {
+          "LatencyBest": "57619",
+          "LatencyAvg": "57619",
+          "LatencyWorst": "57619",
+          "PipelineII": "57619",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "5.199"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "582",
+            "Latency": "57618",
+            "PipelineII": "",
+            "PipelineDepth": "99",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "32",
+                "Latency": "96",
+                "PipelineII": "",
+                "PipelineDepth": "3"
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "20",
+          "FF": "90",
+          "LUT": "260",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
       "conv_bn_act_pool": {
         "Latency": {
           "LatencyBest": "46100226",
@@ -837,12 +940,12 @@
       },
       "run_all_slices_unrol": {
         "Latency": {
-          "LatencyBest": "94903553",
-          "LatencyAvg": "95083229",
-          "LatencyWorst": "95261789",
-          "PipelineIIMin": "94903553",
-          "PipelineIIMax": "95261789",
-          "PipelineII": "94903553 ~ 95261789",
+          "LatencyBest": "94922179",
+          "LatencyAvg": "95101855",
+          "LatencyWorst": "95280415",
+          "PipelineIIMin": "94922179",
+          "PipelineIIMax": "95280415",
+          "PipelineII": "94922179 ~ 95280415",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -917,27 +1020,13 @@
           },
           {
             "Name": "Loop 10",
-            "TripCount": "582",
-            "Latency": "38994",
-            "PipelineII": "",
-            "PipelineDepth": "67",
-            "Loops": [{
-                "Name": "Loop 10.1",
-                "TripCount": "32",
-                "Latency": "64",
-                "PipelineII": "",
-                "PipelineDepth": "2"
-              }]
-          },
-          {
-            "Name": "Loop 11",
             "TripCount": "32",
             "Latency": "1568",
             "PipelineII": "",
             "PipelineDepth": "49"
           },
           {
-            "Name": "Loop 12",
+            "Name": "Loop 11",
             "TripCount": "32",
             "Latency": "288",
             "PipelineII": "",
@@ -945,21 +1034,21 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "193",
+          "BRAM_18K": "84",
           "DSP48E": "77",
-          "FF": "27478",
-          "LUT": "31195",
+          "FF": "27500",
+          "LUT": "31343",
           "URAM": "0"
         }
       },
       "main": {
         "Latency": {
-          "LatencyBest": "95142920",
-          "LatencyAvg": "95322596",
-          "LatencyWorst": "95501156",
-          "PipelineIIMin": "95142921",
-          "PipelineIIMax": "95501157",
-          "PipelineII": "95142921 ~ 95501157",
+          "LatencyBest": "95161546",
+          "LatencyAvg": "95341222",
+          "LatencyWorst": "95519782",
+          "PipelineIIMin": "95161547",
+          "PipelineIIMax": "95519783",
+          "PipelineII": "95161547 ~ 95519783",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1027,10 +1116,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "219",
+          "BRAM_18K": "110",
           "DSP48E": "81",
-          "FF": "29695",
-          "LUT": "34272",
+          "FF": "29717",
+          "LUT": "34420",
           "URAM": "0"
         }
       }
@@ -1046,7 +1135,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2025-09-04 16:29:10 EEST",
+    "Time": "2025-09-04 16:51:08 EEST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

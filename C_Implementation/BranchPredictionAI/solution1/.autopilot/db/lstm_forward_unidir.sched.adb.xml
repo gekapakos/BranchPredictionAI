@@ -1387,10 +1387,10 @@
 
 <Node id="64" bw="12" op_0_bw="12" op_1_bw="5" op_2_bw="7">
 <![CDATA[
-:6  %shl_ln2 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln135, i7 0)
+:6  %shl_ln1 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln135, i7 0)
 
 ]]></Node>
-<StgValue><ssdm name="shl_ln2"/></StgValue>
+<StgValue><ssdm name="shl_ln1"/></StgValue>
 </operation>
 
 <operation id="139" st_id="6" stage="1" lat="1">
@@ -1528,7 +1528,7 @@
 
 <Node id="75" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-:2  %add_ln136 = add i12 %shl_ln2, %zext_ln136_1
+:2  %add_ln136 = add i12 %shl_ln1, %zext_ln136_1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln136"/></StgValue>
@@ -2021,10 +2021,10 @@
 
 <Node id="100" bw="12" op_0_bw="12" op_1_bw="5" op_2_bw="7">
 <![CDATA[
-:4  %shl_ln3 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln141, i7 0)
+:4  %shl_ln2 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %trunc_ln141, i7 0)
 
 ]]></Node>
-<StgValue><ssdm name="shl_ln3"/></StgValue>
+<StgValue><ssdm name="shl_ln2"/></StgValue>
 </operation>
 
 <operation id="178" st_id="19" stage="1" lat="1">
@@ -2162,7 +2162,7 @@
 
 <Node id="111" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-:2  %add_ln142 = add i12 %shl_ln3, %zext_ln142_1
+:2  %add_ln142 = add i12 %shl_ln2, %zext_ln142_1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln142"/></StgValue>

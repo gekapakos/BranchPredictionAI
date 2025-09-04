@@ -14833,3 +14833,399 @@ INFO: [RTGEN 206-100] Finished creating RTL model for 'main'.
 INFO: [HLS 200-111]  Elapsed time: 5.6 seconds; current allocated memory: 390.514 MB.
 INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_4_X_slice_rom' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_4_a_bn_rom' using distributed ROMs.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'main_5_slices.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 2036 ; free virtual = 9145
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 2036 ; free virtual = 9145
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'conv_bn_act_pool' (main_5_slices.cpp:107).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:378).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:373).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:151).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:149).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:355).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:341).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:327).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:313).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:299).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:372).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:377).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:297).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:311).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:325).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:339).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:353).
+INFO: [XFORM 203-603] Inlining function 'sigmoidf' into 'main' (main_5_slices.cpp:382).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 1977 ; free virtual = 9065
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:348) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 2025 ; free virtual = 9114
+INFO: [XFORM 203-102] Partitioning array 'y_lin' (main_5_slices.cpp:380) automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'output_b' completely based on array size.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_gamma0'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_beta0'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_mean0'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_var0'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_b_ifog0'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_R_ifog0'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_W_ifog0'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'ConvW0'  in dimension 1: conflict with memory core assignment directive.
+.
+INFO: [XFORM 203-101] Partitioning array 'Emb0'  in dimension 1 with a block factor 128.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_gamma1'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_beta1'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_mean1'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_var1'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_b_ifog1'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_R_ifog1'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_W_ifog1'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'ConvW1'  in dimension 1: conflict with memory core assignment directive.
+.
+INFO: [XFORM 203-101] Partitioning array 'Emb1'  in dimension 1 with a block factor 128.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_gamma2'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_beta2'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_mean2'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_var2'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_b_ifog2'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_R_ifog2'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_W_ifog2'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'ConvW2'  in dimension 1: conflict with memory core assignment directive.
+.
+INFO: [XFORM 203-101] Partitioning array 'Emb2'  in dimension 1 with a block factor 128.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_gamma3'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_beta3'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_mean3'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_var3'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_b_ifog3'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_R_ifog3'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_W_ifog3'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'ConvW3'  in dimension 1: conflict with memory core assignment directive.
+.
+INFO: [XFORM 203-101] Partitioning array 'Emb3'  in dimension 1 with a block factor 128.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_gamma4'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_beta4'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_mean4'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_var4'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_b_ifog4'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_R_ifog4'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'LSTM_W_ifog4'  in dimension 1: conflict with memory core assignment directive.
+.
+WARNING: [XFORM 203-105] Ignore complete array partition directive on 'ConvW4'  in dimension 1: conflict with memory core assignment directive.
+.
+INFO: [XFORM 203-101] Partitioning array 'Emb4'  in dimension 1 with a block factor 128.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:92) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:92) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:92) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:92) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:92) in dimension 1 completely.
+INFO: [XFORM 203-102] Automatically partitioning small array 'output_b' completely based on array size.
+INFO: [XFORM 203-102] Partitioning array 'output_b' automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:371) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:376) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:299:26) to (main_5_slices.cpp:298:28) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:313:26) to (main_5_slices.cpp:312:28) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:327:26) to (main_5_slices.cpp:326:28) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:341:26) to (main_5_slices.cpp:340:28) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:355:26) to (main_5_slices.cpp:354:28) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:146:31) to (main_5_slices.cpp:145:21) in function 'lstm_forward_unidir'... converting 7 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 2049 ; free virtual = 9166
+WARNING: [XFORM 203-631] Renaming function 'run_all_slices_unrolled' to 'run_all_slices_unrol' (main_5_slices.cpp:46:28)
+WARNING: [XFORM 203-631] Renaming function 'embedding_forward_dyn' to 'embedding_forward_dy' (main_5_slices.cpp:61:25)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1009.098 ; gain = 318.000 ; free physical = 1960 ; free virtual = 9082
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'main' ...
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.4' to 'conv_bn_act_pool_4'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3' to 'conv_bn_act_pool_3'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2' to 'conv_bn_act_pool_2'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.1' to 'conv_bn_act_pool_1'.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:189): 'BN1_gamma0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:191): 'BN1_beta0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:193): 'BN1_mean0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:195): 'BN1_var0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:208): 'BN1_gamma1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:210): 'BN1_beta1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:212): 'BN1_mean1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:214): 'BN1_var1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:227): 'BN1_gamma2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:229): 'BN1_beta2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:231): 'BN1_mean2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:233): 'BN1_var2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:246): 'BN1_gamma3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:248): 'BN1_beta3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:250): 'BN1_mean3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:252): 'BN1_var3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:265): 'BN1_gamma4' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:267): 'BN1_beta4' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:269): 'BN1_mean4' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:271): 'BN1_var4' does not exist or is optimized away.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 80.85 seconds; current allocated memory: 259.275 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 6 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.92 seconds; current allocated memory: 266.266 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lstm_forward_unidir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.9 seconds; current allocated memory: 267.013 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.84 seconds; current allocated memory: 267.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.86 seconds; current allocated memory: 269.677 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.83 seconds; current allocated memory: 276.521 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.02 seconds; current allocated memory: 278.330 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.82 seconds; current allocated memory: 285.181 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.99 seconds; current allocated memory: 287.044 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.88 seconds; current allocated memory: 293.888 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'embedding_forward_dy' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.88 seconds; current allocated memory: 294.330 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 294.922 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.76 seconds; current allocated memory: 296.722 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.86 seconds; current allocated memory: 303.574 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrol' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.04 seconds; current allocated memory: 304.782 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 4.24 seconds; current allocated memory: 307.037 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'main' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.66 seconds; current allocated memory: 307.797 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.81 seconds; current allocated memory: 308.784 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hcmp_16ns_16ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hdiv_16ns_16ns_16_7_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_4'.
+INFO: [HLS 200-111]  Elapsed time: 2.33 seconds; current allocated memory: 314.126 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_unidir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fexp_32ns_32ns_32_9_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hcmp_16ns_16ns_1_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hsub_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_unidir'.
+INFO: [HLS 200-111]  Elapsed time: 3.35 seconds; current allocated memory: 329.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hcmp_16ns_16ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hdiv_16ns_16ns_16_7_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_3'.
+INFO: [HLS 200-111]  Elapsed time: 2.32 seconds; current allocated memory: 337.057 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hcmp_16ns_16ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hdiv_16ns_16ns_16_7_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_2'.
+INFO: [HLS 200-111]  Elapsed time: 3.64 seconds; current allocated memory: 355.360 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hcmp_16ns_16ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hdiv_16ns_16ns_16_7_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_1'.
+INFO: [HLS 200-111]  Elapsed time: 3.61 seconds; current allocated memory: 373.644 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'embedding_forward_dy' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'embedding_forward_dy'.
+INFO: [HLS 200-111]  Elapsed time: 3.53 seconds; current allocated memory: 387.583 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hcmp_16ns_16ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hdiv_16ns_16ns_16_7_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool'.
+INFO: [HLS 200-111]  Elapsed time: 1.2 seconds; current allocated memory: 394.334 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrol' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'main_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hcmp_16ns_16ns_1_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrol'.
+INFO: [HLS 200-111]  Elapsed time: 3.65 seconds; current allocated memory: 412.072 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'main' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on function 'main' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'ConvW0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_b_ifog0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'ConvW1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_b_ifog1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'ConvW2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'LSTM_b_ifog2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'ConvW3' will not be exposed as RTL port.
