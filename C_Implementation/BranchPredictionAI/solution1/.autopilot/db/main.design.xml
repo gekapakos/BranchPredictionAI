@@ -5,76 +5,46 @@
 <ModuleName>main</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_run_all_slices_unrol_fu_413</InstName>
+<InstName>grp_run_all_slices_unrol_fu_407</InstName>
 <ModuleName>run_all_slices_unrol</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>413</ID>
+<ID>407</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_lstm_forward_unidir_fu_580</InstName>
+<InstName>grp_lstm_forward_unidir_fu_578</InstName>
 <ModuleName>lstm_forward_unidir</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>580</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_generic_tanh_float_s_fu_325</InstName>
-<ModuleName>generic_tanh_float_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>325</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_exp_generic_double_s_fu_89</InstName>
-<ModuleName>exp_generic_double_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>89</ID>
-</Instance>
-</InstancesList>
-</Instance>
-</InstancesList>
+<ID>578</ID>
 </Instance>
 <Instance>
-<InstName>grp_generic_tanh_float_s_fu_614</InstName>
-<ModuleName>generic_tanh_float_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>614</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_exp_generic_double_s_fu_89</InstName>
-<ModuleName>exp_generic_double_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>89</ID>
-</Instance>
-</InstancesList>
-</Instance>
-<Instance>
-<InstName>grp_conv_bn_act_pool_fu_625</InstName>
+<InstName>grp_conv_bn_act_pool_fu_606</InstName>
 <ModuleName>conv_bn_act_pool</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>625</ID>
+<ID>606</ID>
 </Instance>
 <Instance>
-<InstName>grp_conv_bn_act_pool_1_fu_636</InstName>
+<InstName>grp_conv_bn_act_pool_1_fu_617</InstName>
 <ModuleName>conv_bn_act_pool_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>636</ID>
+<ID>617</ID>
 </Instance>
 <Instance>
-<InstName>grp_conv_bn_act_pool_2_fu_648</InstName>
+<InstName>grp_conv_bn_act_pool_2_fu_629</InstName>
 <ModuleName>conv_bn_act_pool_2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>648</ID>
+<ID>629</ID>
 </Instance>
 <Instance>
-<InstName>grp_conv_bn_act_pool_3_fu_660</InstName>
+<InstName>grp_conv_bn_act_pool_3_fu_641</InstName>
 <ModuleName>conv_bn_act_pool_3</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>660</ID>
+<ID>641</ID>
 </Instance>
 <Instance>
-<InstName>grp_conv_bn_act_pool_4_fu_672</InstName>
+<InstName>grp_conv_bn_act_pool_4_fu_653</InstName>
 <ModuleName>conv_bn_act_pool_4</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>672</ID>
+<ID>653</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -271,252 +241,18 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>exp_generic_double_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
-<TargetInitiationInterval>4294967295</TargetInitiationInterval>
-<EstimatedClockPeriod>9.514</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>19</Best-caseLatency>
-<Average-caseLatency>19</Average-caseLatency>
-<Worst-caseLatency>19</Worst-caseLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>20</PipelineDepth>
-<PipelineType>function</PipelineType>
-</SummaryOfOverallLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<BRAM_18K>15</BRAM_18K>
-<DSP48E>29</DSP48E>
-<FF>2897</FF>
-<LUT>3269</LUT>
-<URAM>0</URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>exp_generic&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>exp_generic&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>exp_generic&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>exp_generic&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>exp_generic&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>exp_generic&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return</name>
-<Object>exp_generic&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>x</name>
-<Object>x</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>generic_tanh_float_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>9.514</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>1</Best-caseLatency>
-<Average-caseLatency>19</Average-caseLatency>
-<Worst-caseLatency>61</Worst-caseLatency>
-<PipelineInitiationInterval>1 ~ 61</PipelineInitiationInterval>
-<PipelineType>none</PipelineType>
-</SummaryOfOverallLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<BRAM_18K>15</BRAM_18K>
-<DSP48E>37</DSP48E>
-<FF>5264</FF>
-<LUT>7619</LUT>
-<URAM>0</URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>generic_tanh&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>generic_tanh&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>generic_tanh&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>generic_tanh&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>generic_tanh&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>generic_tanh&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return</name>
-<Object>generic_tanh&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>t_in</name>
-<Object>t_in</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
 <Name>lstm_forward_unidir</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>9.514</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.440</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>1208926</Best-caseLatency>
-<Average-caseLatency>1222750</Average-caseLatency>
-<Worst-caseLatency>1255006</Worst-caseLatency>
-<PipelineInitiationInterval>1208926 ~ 1255006</PipelineInitiationInterval>
+<Best-caseLatency>1207006</Best-caseLatency>
+<Average-caseLatency>1207006</Average-caseLatency>
+<Worst-caseLatency>1207006</Worst-caseLatency>
+<PipelineInitiationInterval>1207006</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -530,14 +266,9 @@
 <Loop2>
 <Name>Loop 2</Name>
 <TripCount>12</TripCount>
-<Latency>1208892 ~ 1254972</Latency>
-<IterationLatency>
-<range>
-<min>100741</min>
-<max>104581</max>
-</range>
-</IterationLatency>
-<PipelineDepth>100741 ~ 104581</PipelineDepth>
+<Latency>1206972</Latency>
+<IterationLatency>100581</IterationLatency>
+<PipelineDepth>100581</PipelineDepth>
 <Loop2.1>
 <Name>Loop 2.1</Name>
 <TripCount>128</TripCount>
@@ -576,24 +307,19 @@
 <Loop2.4>
 <Name>Loop 2.4</Name>
 <TripCount>32</TripCount>
-<Latency>1984 ~ 5824</Latency>
-<IterationLatency>
-<range>
-<min>62</min>
-<max>182</max>
-</range>
-</IterationLatency>
-<PipelineDepth>62 ~ 182</PipelineDepth>
+<Latency>1824</Latency>
+<IterationLatency>57</IterationLatency>
+<PipelineDepth>57</PipelineDepth>
 </Loop2.4>
 </Loop2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>16</BRAM_18K>
-<DSP48E>65</DSP48E>
-<FF>9370</FF>
-<LUT>13760</LUT>
+<BRAM_18K>1</BRAM_18K>
+<DSP48E>28</DSP48E>
+<FF>4122</FF>
+<LUT>6232</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
@@ -1640,13 +1366,13 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>9.894</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.800</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>95412993</Best-caseLatency>
-<Average-caseLatency>95664669</Average-caseLatency>
-<Worst-caseLatency>96011229</Worst-caseLatency>
-<PipelineInitiationInterval>95412993 ~ 96011229</PipelineInitiationInterval>
+<Best-caseLatency>95402753</Best-caseLatency>
+<Average-caseLatency>95582429</Average-caseLatency>
+<Worst-caseLatency>95760989</Worst-caseLatency>
+<PipelineInitiationInterval>95402753 ~ 95760989</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -1667,14 +1393,9 @@
 <Loop3>
 <Name>Loop 3</Name>
 <TripCount>32</TripCount>
-<Latency>416 ~ 2336</Latency>
-<IterationLatency>
-<range>
-<min>13</min>
-<max>73</max>
-</range>
-</IterationLatency>
-<PipelineDepth>13 ~ 73</PipelineDepth>
+<Latency>288</Latency>
+<IterationLatency>9</IterationLatency>
+<PipelineDepth>9</PipelineDepth>
 </Loop3>
 <Loop4>
 <Name>Loop 4</Name>
@@ -1686,14 +1407,9 @@
 <Loop5>
 <Name>Loop 5</Name>
 <TripCount>32</TripCount>
-<Latency>416 ~ 2336</Latency>
-<IterationLatency>
-<range>
-<min>13</min>
-<max>73</max>
-</range>
-</IterationLatency>
-<PipelineDepth>13 ~ 73</PipelineDepth>
+<Latency>288</Latency>
+<IterationLatency>9</IterationLatency>
+<PipelineDepth>9</PipelineDepth>
 </Loop5>
 <Loop6>
 <Name>Loop 6</Name>
@@ -1705,14 +1421,9 @@
 <Loop7>
 <Name>Loop 7</Name>
 <TripCount>32</TripCount>
-<Latency>416 ~ 2336</Latency>
-<IterationLatency>
-<range>
-<min>13</min>
-<max>73</max>
-</range>
-</IterationLatency>
-<PipelineDepth>13 ~ 73</PipelineDepth>
+<Latency>288</Latency>
+<IterationLatency>9</IterationLatency>
+<PipelineDepth>9</PipelineDepth>
 </Loop7>
 <Loop8>
 <Name>Loop 8</Name>
@@ -1724,14 +1435,9 @@
 <Loop9>
 <Name>Loop 9</Name>
 <TripCount>32</TripCount>
-<Latency>416 ~ 2336</Latency>
-<IterationLatency>
-<range>
-<min>13</min>
-<max>73</max>
-</range>
-</IterationLatency>
-<PipelineDepth>13 ~ 73</PipelineDepth>
+<Latency>288</Latency>
+<IterationLatency>9</IterationLatency>
+<PipelineDepth>9</PipelineDepth>
 </Loop9>
 <Loop10>
 <Name>Loop 10</Name>
@@ -1757,23 +1463,18 @@
 <Loop12>
 <Name>Loop 12</Name>
 <TripCount>32</TripCount>
-<Latency>416 ~ 2336</Latency>
-<IterationLatency>
-<range>
-<min>13</min>
-<max>73</max>
-</range>
-</IterationLatency>
-<PipelineDepth>13 ~ 73</PipelineDepth>
+<Latency>288</Latency>
+<IterationLatency>9</IterationLatency>
+<PipelineDepth>9</PipelineDepth>
 </Loop12>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>308</BRAM_18K>
-<DSP48E>151</DSP48E>
-<FF>37564</FF>
-<LUT>46165</LUT>
+<BRAM_18K>278</BRAM_18K>
+<DSP48E>77</DSP48E>
+<FF>27200</FF>
+<LUT>31207</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
@@ -1907,13 +1608,13 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>9.894</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.800</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>95652360</Best-caseLatency>
-<Average-caseLatency>95904036</Average-caseLatency>
-<Worst-caseLatency>96250596</Worst-caseLatency>
-<PipelineInitiationInterval>95652361 ~ 96250597</PipelineInitiationInterval>
+<Best-caseLatency>95642120</Best-caseLatency>
+<Average-caseLatency>95821796</Average-caseLatency>
+<Worst-caseLatency>96000356</Worst-caseLatency>
+<PipelineInitiationInterval>95642121 ~ 96000357</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -1977,10 +1678,10 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>334</BRAM_18K>
-<DSP48E>155</DSP48E>
-<FF>39781</FF>
-<LUT>49242</LUT>
+<BRAM_18K>304</BRAM_18K>
+<DSP48E>81</DSP48E>
+<FF>29417</FF>
+<LUT>34284</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>

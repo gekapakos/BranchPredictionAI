@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity main_hsub_16ns_16ns_16_5_full_dsp_1 is
     generic (
-        ID         : integer := 65;
+        ID         : integer := 36;
         NUM_STAGE  : integer := 5;
         din0_WIDTH : integer := 16;
         din1_WIDTH : integer := 16;

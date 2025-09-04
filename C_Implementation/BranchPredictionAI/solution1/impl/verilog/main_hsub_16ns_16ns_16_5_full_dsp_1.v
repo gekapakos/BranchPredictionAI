@@ -7,7 +7,7 @@
 
 module main_hsub_16ns_16ns_16_5_full_dsp_1
 #(parameter
-    ID         = 65,
+    ID         = 36,
     NUM_STAGE  = 5,
     din0_WIDTH = 16,
     din1_WIDTH = 16,

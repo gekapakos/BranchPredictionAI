@@ -28,7 +28,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "95652360",
+    "Latency": "95642120",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -61,26 +61,16 @@
       "impl\/vhdl\/conv_bn_act_pool_4_ConvW0.vhd",
       "impl\/vhdl\/conv_bn_act_pool_4_X_slice.vhd",
       "impl\/vhdl\/conv_bn_act_pool_ConvW4.vhd",
-      "impl\/vhdl\/exp_generic_double_s.vhd",
-      "impl\/vhdl\/exp_generic_double_s_table_exp_Z1_array_s.vhd",
-      "impl\/vhdl\/exp_generic_double_s_table_f_Z2_array_V.vhd",
-      "impl\/vhdl\/exp_generic_double_s_table_f_Z3_array_V.vhd",
-      "impl\/vhdl\/generic_tanh_float_s.vhd",
       "impl\/vhdl\/lstm_forward_unidir.vhd",
       "impl\/vhdl\/lstm_forward_unidir_c_slice.vhd",
       "impl\/vhdl\/lstm_forward_unidir_z.vhd",
-      "impl\/vhdl\/main_dadd_64ns_64ns_64_5_full_dsp_1.vhd",
       "impl\/vhdl\/main_fadd_32ns_32ns_32_5_full_dsp_1.vhd",
-      "impl\/vhdl\/main_faddfsub_32ns_32ns_32_5_full_dsp_1.vhd",
       "impl\/vhdl\/main_fc_0_bn_var.vhd",
       "impl\/vhdl\/main_fc_0_W.vhd",
       "impl\/vhdl\/main_fc_1_W.vhd",
-      "impl\/vhdl\/main_fcmp_32ns_32ns_1_2_1.vhd",
       "impl\/vhdl\/main_fdiv_32ns_32ns_32_16_1.vhd",
       "impl\/vhdl\/main_fexp_32ns_32ns_32_9_full_dsp_1.vhd",
       "impl\/vhdl\/main_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
-      "impl\/vhdl\/main_fpext_32ns_64_2_1.vhd",
-      "impl\/vhdl\/main_fptrunc_64ns_32_2_1.vhd",
       "impl\/vhdl\/main_fsqrt_32ns_32ns_32_12_1.vhd",
       "impl\/vhdl\/main_hadd_16ns_16ns_16_5_full_dsp_1.vhd",
       "impl\/vhdl\/main_hcmp_16ns_16ns_1_2_1.vhd",
@@ -88,12 +78,7 @@
       "impl\/vhdl\/main_hmul_16ns_16ns_16_4_max_dsp_1.vhd",
       "impl\/vhdl\/main_hptosp_16ns_32_2_1.vhd",
       "impl\/vhdl\/main_hsub_16ns_16ns_16_5_full_dsp_1.vhd",
-      "impl\/vhdl\/main_mac_muladd_16ns_16s_19s_31_1_1.vhd",
       "impl\/vhdl\/main_merged.vhd",
-      "impl\/vhdl\/main_mul_36ns_43ns_79_2_1.vhd",
-      "impl\/vhdl\/main_mul_44ns_49ns_93_2_1.vhd",
-      "impl\/vhdl\/main_mul_50ns_50ns_100_2_1.vhd",
-      "impl\/vhdl\/main_mul_72ns_13s_84_5_1.vhd",
       "impl\/vhdl\/main_mux_325_16_1_1.vhd",
       "impl\/vhdl\/main_sptohp_32ns_16_2_1.vhd",
       "impl\/vhdl\/main_z0.vhd",
@@ -142,33 +127,20 @@
       "impl\/verilog\/conv_bn_act_pool_4_X_slice_rom.dat",
       "impl\/verilog\/conv_bn_act_pool_ConvW4.v",
       "impl\/verilog\/conv_bn_act_pool_ConvW4_rom.dat",
-      "impl\/verilog\/exp_generic_double_s.v",
-      "impl\/verilog\/exp_generic_double_s_table_exp_Z1_array_s.v",
-      "impl\/verilog\/exp_generic_double_s_table_exp_Z1_array_s_rom.dat",
-      "impl\/verilog\/exp_generic_double_s_table_f_Z2_array_V.v",
-      "impl\/verilog\/exp_generic_double_s_table_f_Z2_array_V_rom.dat",
-      "impl\/verilog\/exp_generic_double_s_table_f_Z3_array_V.v",
-      "impl\/verilog\/exp_generic_double_s_table_f_Z3_array_V_rom.dat",
-      "impl\/verilog\/generic_tanh_float_s.v",
       "impl\/verilog\/lstm_forward_unidir.v",
       "impl\/verilog\/lstm_forward_unidir_c_slice.v",
       "impl\/verilog\/lstm_forward_unidir_c_slice_ram.dat",
       "impl\/verilog\/lstm_forward_unidir_z.v",
-      "impl\/verilog\/main_dadd_64ns_64ns_64_5_full_dsp_1.v",
       "impl\/verilog\/main_fadd_32ns_32ns_32_5_full_dsp_1.v",
-      "impl\/verilog\/main_faddfsub_32ns_32ns_32_5_full_dsp_1.v",
       "impl\/verilog\/main_fc_0_bn_var.v",
       "impl\/verilog\/main_fc_0_bn_var_rom.dat",
       "impl\/verilog\/main_fc_0_W.v",
       "impl\/verilog\/main_fc_0_W_rom.dat",
       "impl\/verilog\/main_fc_1_W.v",
       "impl\/verilog\/main_fc_1_W_rom.dat",
-      "impl\/verilog\/main_fcmp_32ns_32ns_1_2_1.v",
       "impl\/verilog\/main_fdiv_32ns_32ns_32_16_1.v",
       "impl\/verilog\/main_fexp_32ns_32ns_32_9_full_dsp_1.v",
       "impl\/verilog\/main_fmul_32ns_32ns_32_4_max_dsp_1.v",
-      "impl\/verilog\/main_fpext_32ns_64_2_1.v",
-      "impl\/verilog\/main_fptrunc_64ns_32_2_1.v",
       "impl\/verilog\/main_fsqrt_32ns_32ns_32_12_1.v",
       "impl\/verilog\/main_hadd_16ns_16ns_16_5_full_dsp_1.v",
       "impl\/verilog\/main_hcmp_16ns_16ns_1_2_1.v",
@@ -176,12 +148,7 @@
       "impl\/verilog\/main_hmul_16ns_16ns_16_4_max_dsp_1.v",
       "impl\/verilog\/main_hptosp_16ns_32_2_1.v",
       "impl\/verilog\/main_hsub_16ns_16ns_16_5_full_dsp_1.v",
-      "impl\/verilog\/main_mac_muladd_16ns_16s_19s_31_1_1.v",
       "impl\/verilog\/main_merged.v",
-      "impl\/verilog\/main_mul_36ns_43ns_79_2_1.v",
-      "impl\/verilog\/main_mul_44ns_49ns_93_2_1.v",
-      "impl\/verilog\/main_mul_50ns_50ns_100_2_1.v",
-      "impl\/verilog\/main_mul_72ns_13s_84_5_1.v",
       "impl\/verilog\/main_mux_325_16_1_1.v",
       "impl\/verilog\/main_sptohp_32ns_16_2_1.v",
       "impl\/verilog\/main_z0.v",
@@ -221,15 +188,10 @@
     ],
     "Misc": ["impl\/misc\/logo.png"],
     "Subcore": [
-      "impl\/misc\/main_ap_dadd_3_full_dsp_64_ip.tcl",
       "impl\/misc\/main_ap_fadd_3_full_dsp_32_ip.tcl",
-      "impl\/misc\/main_ap_faddfsub_3_full_dsp_32_ip.tcl",
-      "impl\/misc\/main_ap_fcmp_0_no_dsp_32_ip.tcl",
       "impl\/misc\/main_ap_fdiv_14_no_dsp_32_ip.tcl",
       "impl\/misc\/main_ap_fexp_7_full_dsp_32_ip.tcl",
       "impl\/misc\/main_ap_fmul_2_max_dsp_32_ip.tcl",
-      "impl\/misc\/main_ap_fpext_0_no_dsp_32_ip.tcl",
-      "impl\/misc\/main_ap_fptrunc_0_no_dsp_64_ip.tcl",
       "impl\/misc\/main_ap_fsqrt_10_no_dsp_32_ip.tcl",
       "impl\/misc\/main_ap_hadd_3_full_dsp_16_ip.tcl",
       "impl\/misc\/main_ap_hcmp_0_no_dsp_16_ip.tcl",
@@ -248,24 +210,9 @@
     "HasClockedDsp": false,
     "IP": [
       {
-        "name": "main_ap_dadd_3_full_dsp_64",
-        "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name main_ap_dadd_3_full_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
-      },
-      {
         "name": "main_ap_fadd_3_full_dsp_32",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
         "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name main_ap_fadd_3_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
-      },
-      {
-        "name": "main_ap_faddfsub_3_full_dsp_32",
-        "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name main_ap_faddfsub_3_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
-      },
-      {
-        "name": "main_ap_fcmp_0_no_dsp_32",
-        "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name main_ap_fcmp_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Custom CONFIG.result_tlast_behv Null"
       },
       {
         "name": "main_ap_fdiv_14_no_dsp_32",
@@ -281,16 +228,6 @@
         "name": "main_ap_fmul_2_max_dsp_32",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
         "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name main_ap_fmul_2_max_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
-      },
-      {
-        "name": "main_ap_fpext_0_no_dsp_32",
-        "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name main_ap_fpext_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
-      },
-      {
-        "name": "main_ap_fptrunc_0_no_dsp_64",
-        "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name main_ap_fptrunc_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
       },
       {
         "name": "main_ap_fsqrt_10_no_dsp_32",
@@ -406,67 +343,37 @@
       "ModuleName": "main",
       "Instances": [{
           "ModuleName": "run_all_slices_unrol",
-          "InstanceName": "grp_run_all_slices_unrol_fu_413",
+          "InstanceName": "grp_run_all_slices_unrol_fu_407",
           "Instances": [
             {
               "ModuleName": "lstm_forward_unidir",
-              "InstanceName": "grp_lstm_forward_unidir_fu_580",
-              "Instances": [{
-                  "ModuleName": "generic_tanh_float_s",
-                  "InstanceName": "grp_generic_tanh_float_s_fu_325",
-                  "Instances": [{
-                      "ModuleName": "exp_generic_double_s",
-                      "InstanceName": "grp_exp_generic_double_s_fu_89"
-                    }]
-                }]
-            },
-            {
-              "ModuleName": "generic_tanh_float_s",
-              "InstanceName": "grp_generic_tanh_float_s_fu_614",
-              "Instances": [{
-                  "ModuleName": "exp_generic_double_s",
-                  "InstanceName": "grp_exp_generic_double_s_fu_89"
-                }]
+              "InstanceName": "grp_lstm_forward_unidir_fu_578"
             },
             {
               "ModuleName": "conv_bn_act_pool",
-              "InstanceName": "grp_conv_bn_act_pool_fu_625"
+              "InstanceName": "grp_conv_bn_act_pool_fu_606"
             },
             {
               "ModuleName": "conv_bn_act_pool_1",
-              "InstanceName": "grp_conv_bn_act_pool_1_fu_636"
+              "InstanceName": "grp_conv_bn_act_pool_1_fu_617"
             },
             {
               "ModuleName": "conv_bn_act_pool_2",
-              "InstanceName": "grp_conv_bn_act_pool_2_fu_648"
+              "InstanceName": "grp_conv_bn_act_pool_2_fu_629"
             },
             {
               "ModuleName": "conv_bn_act_pool_3",
-              "InstanceName": "grp_conv_bn_act_pool_3_fu_660"
+              "InstanceName": "grp_conv_bn_act_pool_3_fu_641"
             },
             {
               "ModuleName": "conv_bn_act_pool_4",
-              "InstanceName": "grp_conv_bn_act_pool_4_fu_672"
+              "InstanceName": "grp_conv_bn_act_pool_4_fu_653"
             }
           ]
         }]
     },
     "Info": {
       "conv_bn_act_pool_4": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "0",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
-      "exp_generic_double_s": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "1",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
-      "generic_tanh_float_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -598,67 +505,19 @@
           "URAM": "0"
         }
       },
-      "exp_generic_double_s": {
-        "Latency": {
-          "LatencyBest": "19",
-          "LatencyAvg": "19",
-          "LatencyWorst": "19",
-          "PipelineII": "1",
-          "PipelineDepth": "20",
-          "PipelineType": "function"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "9.514"
-        },
-        "Area": {
-          "BRAM_18K": "15",
-          "DSP48E": "29",
-          "FF": "2897",
-          "LUT": "3269",
-          "URAM": "0"
-        }
-      },
-      "generic_tanh_float_s": {
-        "Latency": {
-          "LatencyBest": "1",
-          "LatencyAvg": "19",
-          "LatencyWorst": "61",
-          "PipelineIIMin": "1",
-          "PipelineIIMax": "61",
-          "PipelineII": "1 ~ 61",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "9.514"
-        },
-        "Area": {
-          "BRAM_18K": "15",
-          "DSP48E": "37",
-          "FF": "5264",
-          "LUT": "7619",
-          "URAM": "0"
-        }
-      },
       "lstm_forward_unidir": {
         "Latency": {
-          "LatencyBest": "1208926",
-          "LatencyAvg": "1222750",
-          "LatencyWorst": "1255006",
-          "PipelineIIMin": "1208926",
-          "PipelineIIMax": "1255006",
-          "PipelineII": "1208926 ~ 1255006",
+          "LatencyBest": "1207006",
+          "LatencyAvg": "1207006",
+          "LatencyWorst": "1207006",
+          "PipelineII": "1207006",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "9.514"
+          "Estimate": "8.440"
         },
         "Loops": [
           {
@@ -671,13 +530,9 @@
           {
             "Name": "Loop 2",
             "TripCount": "12",
-            "LatencyMin": "1208892",
-            "LatencyMax": "1254972",
-            "Latency": "1208892 ~ 1254972",
+            "Latency": "1206972",
             "PipelineII": "",
-            "PipelineDepthMin": "100741",
-            "PipelineDepthMax": "104581",
-            "PipelineDepth": "100741 ~ 104581",
+            "PipelineDepth": "100581",
             "Loops": [
               {
                 "Name": "Loop 2.1",
@@ -717,22 +572,18 @@
               {
                 "Name": "Loop 2.4",
                 "TripCount": "32",
-                "LatencyMin": "1984",
-                "LatencyMax": "5824",
-                "Latency": "1984 ~ 5824",
+                "Latency": "1824",
                 "PipelineII": "",
-                "PipelineDepthMin": "62",
-                "PipelineDepthMax": "182",
-                "PipelineDepth": "62 ~ 182"
+                "PipelineDepth": "57"
               }
             ]
           }
         ],
         "Area": {
-          "BRAM_18K": "16",
-          "DSP48E": "65",
-          "FF": "9370",
-          "LUT": "13760",
+          "BRAM_18K": "1",
+          "DSP48E": "28",
+          "FF": "4122",
+          "LUT": "6232",
           "URAM": "0"
         }
       },
@@ -1034,19 +885,19 @@
       },
       "run_all_slices_unrol": {
         "Latency": {
-          "LatencyBest": "95412993",
-          "LatencyAvg": "95664669",
-          "LatencyWorst": "96011229",
-          "PipelineIIMin": "95412993",
-          "PipelineIIMax": "96011229",
-          "PipelineII": "95412993 ~ 96011229",
+          "LatencyBest": "95402753",
+          "LatencyAvg": "95582429",
+          "LatencyWorst": "95760989",
+          "PipelineIIMin": "95402753",
+          "PipelineIIMax": "95760989",
+          "PipelineII": "95402753 ~ 95760989",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "9.894"
+          "Estimate": "8.800"
         },
         "Loops": [
           {
@@ -1066,13 +917,9 @@
           {
             "Name": "Loop 3",
             "TripCount": "32",
-            "LatencyMin": "416",
-            "LatencyMax": "2336",
-            "Latency": "416 ~ 2336",
+            "Latency": "288",
             "PipelineII": "",
-            "PipelineDepthMin": "13",
-            "PipelineDepthMax": "73",
-            "PipelineDepth": "13 ~ 73"
+            "PipelineDepth": "9"
           },
           {
             "Name": "Loop 4",
@@ -1084,13 +931,9 @@
           {
             "Name": "Loop 5",
             "TripCount": "32",
-            "LatencyMin": "416",
-            "LatencyMax": "2336",
-            "Latency": "416 ~ 2336",
+            "Latency": "288",
             "PipelineII": "",
-            "PipelineDepthMin": "13",
-            "PipelineDepthMax": "73",
-            "PipelineDepth": "13 ~ 73"
+            "PipelineDepth": "9"
           },
           {
             "Name": "Loop 6",
@@ -1102,13 +945,9 @@
           {
             "Name": "Loop 7",
             "TripCount": "32",
-            "LatencyMin": "416",
-            "LatencyMax": "2336",
-            "Latency": "416 ~ 2336",
+            "Latency": "288",
             "PipelineII": "",
-            "PipelineDepthMin": "13",
-            "PipelineDepthMax": "73",
-            "PipelineDepth": "13 ~ 73"
+            "PipelineDepth": "9"
           },
           {
             "Name": "Loop 8",
@@ -1120,13 +959,9 @@
           {
             "Name": "Loop 9",
             "TripCount": "32",
-            "LatencyMin": "416",
-            "LatencyMax": "2336",
-            "Latency": "416 ~ 2336",
+            "Latency": "288",
             "PipelineII": "",
-            "PipelineDepthMin": "13",
-            "PipelineDepthMax": "73",
-            "PipelineDepth": "13 ~ 73"
+            "PipelineDepth": "9"
           },
           {
             "Name": "Loop 10",
@@ -1152,38 +987,34 @@
           {
             "Name": "Loop 12",
             "TripCount": "32",
-            "LatencyMin": "416",
-            "LatencyMax": "2336",
-            "Latency": "416 ~ 2336",
+            "Latency": "288",
             "PipelineII": "",
-            "PipelineDepthMin": "13",
-            "PipelineDepthMax": "73",
-            "PipelineDepth": "13 ~ 73"
+            "PipelineDepth": "9"
           }
         ],
         "Area": {
-          "BRAM_18K": "308",
-          "DSP48E": "151",
-          "FF": "37564",
-          "LUT": "46165",
+          "BRAM_18K": "278",
+          "DSP48E": "77",
+          "FF": "27200",
+          "LUT": "31207",
           "URAM": "0"
         }
       },
       "main": {
         "Latency": {
-          "LatencyBest": "95652360",
-          "LatencyAvg": "95904036",
-          "LatencyWorst": "96250596",
-          "PipelineIIMin": "95652361",
-          "PipelineIIMax": "96250597",
-          "PipelineII": "95652361 ~ 96250597",
+          "LatencyBest": "95642120",
+          "LatencyAvg": "95821796",
+          "LatencyWorst": "96000356",
+          "PipelineIIMin": "95642121",
+          "PipelineIIMax": "96000357",
+          "PipelineII": "95642121 ~ 96000357",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "9.894"
+          "Estimate": "8.800"
         },
         "Loops": [
           {
@@ -1244,10 +1075,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "334",
-          "DSP48E": "155",
-          "FF": "39781",
-          "LUT": "49242",
+          "BRAM_18K": "304",
+          "DSP48E": "81",
+          "FF": "29417",
+          "LUT": "34284",
           "URAM": "0"
         }
       }
@@ -1263,7 +1094,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2025-09-04 13:26:07 EEST",
+    "Time": "2025-09-04 14:12:05 EEST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

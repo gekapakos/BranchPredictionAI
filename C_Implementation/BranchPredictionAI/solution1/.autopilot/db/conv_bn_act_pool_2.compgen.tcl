@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 103
+set ID 77
 set hasByteEnable 0
 set MemName conv_bn_act_pool_2_X_slice2
 set CoreName ap_simcore_mem
@@ -84,7 +84,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 104
+set ID 78
 set hasByteEnable 0
 set MemName conv_bn_act_pool_2_ConvW2
 set CoreName ap_simcore_mem
@@ -177,7 +177,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 105 \
+    id 79 \
     name U \
     reset_level 1 \
     sync_rst true \

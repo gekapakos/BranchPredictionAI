@@ -98945,22 +98945,29 @@ enum { T4=582, P4=48, T14=T4-K+1, T24=T14/P4 };
 
 
 static half h_slice[H], c_slice[H];
-
-
+# 50 "main_5_slices.cpp"
 static inline half sigmoidf(half x) {
 #pragma HLS INLINE
- return 1.0f/(1.0f+expf(-x));
+
+ half y = (half)0.2 * x + (half)0.5;
+    if (y < (half)0.0) y = (half)0.0;
+    else if (y > (half)1.0) y = (half)1.0;
+    return y;
 }
 
 static inline half tanhf_fast(half x) {
 #pragma HLS INLINE
- return tanhf(x);
+
+ if (x < (half)-1.0) return (half)-1.0;
+    if (x > (half) 1.0) return (half) 1.0;
+    return x;
 }
 
 static inline half reluf(half x) {
 #pragma HLS INLINE
- return x>0.0f? x:0.0f;
+ return x > (half)0.0 ? x : (half)0.0;
 }
+
 
 
 static inline void embedding_forward_dyn(const uint16_t *tokens, int Tlen,
@@ -99089,6 +99096,7 @@ static half U_slice[T24*F];
 
 
 static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merged, 32);
+# 234 "main_5_slices.cpp"
     const half BN_eps = 1e-3f;
     int j;
     for (j = 0; j < H; ++j) {
@@ -99100,7 +99108,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         half X_slice[T0*E];
 
         embedding_forward_dyn(tokens0, T0, Emb0, X_slice);
-        conv_bn_act_pool(X_slice, T0, ConvW0, K, ConvB0, T10,
+        conv_bn_act_pool(X_slice, T0, ConvW0, K, ConvB0, F,
         BN1_gamma0, BN1_beta0, BN1_mean0, BN1_var0, BN_eps,
         ACT_RELU, P0, U_slice);
         lstm_forward_unidir(U_slice, T20, F, LSTM_W_ifog0, LSTM_R_ifog0, LSTM_b_ifog0, h_slice, c_slice);
@@ -99115,7 +99123,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         half X_slice[T1*E];
 
         embedding_forward_dyn(tokens1, T1, Emb1, X_slice);
-        conv_bn_act_pool(X_slice, T1, ConvW1, K, ConvB1, T11,
+        conv_bn_act_pool(X_slice, T1, ConvW1, K, ConvB1, F,
         BN1_gamma1, BN1_beta1, BN1_mean1, BN1_var1, BN_eps,
         ACT_RELU, P1, U_slice);
         lstm_forward_unidir(U_slice, T21, F, LSTM_W_ifog1, LSTM_R_ifog1, LSTM_b_ifog1, h_slice, c_slice);
@@ -99130,7 +99138,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         half X_slice[T2*E];
 
         embedding_forward_dyn(tokens2, T2, Emb2, X_slice);
-        conv_bn_act_pool(X_slice, T2, ConvW2, K, ConvB2, T12,
+        conv_bn_act_pool(X_slice, T2, ConvW2, K, ConvB2, F,
         BN1_gamma2, BN1_beta2, BN1_mean2, BN1_var2, BN_eps,
         ACT_RELU, P2, U_slice);
         lstm_forward_unidir(U_slice, T22, F, LSTM_W_ifog2, LSTM_R_ifog2, LSTM_b_ifog2, h_slice, c_slice);
@@ -99145,7 +99153,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         half X_slice[T3*E];
 
         embedding_forward_dyn(tokens3, T3, Emb3, X_slice);
-        conv_bn_act_pool(X_slice, T3, ConvW3, K, ConvB3, T13,
+        conv_bn_act_pool(X_slice, T3, ConvW3, K, ConvB3, F,
         BN1_gamma3, BN1_beta3, BN1_mean3, BN1_var3, BN_eps,
         ACT_RELU, P3, U_slice);
         lstm_forward_unidir(U_slice, T23, F, LSTM_W_ifog3, LSTM_R_ifog3, LSTM_b_ifog3, h_slice, c_slice);
@@ -99160,7 +99168,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         half X_slice[T4*E];
 
         embedding_forward_dyn(tokens4, T4, Emb4, X_slice);
-        conv_bn_act_pool(X_slice, T4, ConvW4, K, ConvB4, T14,
+        conv_bn_act_pool(X_slice, T4, ConvW4, K, ConvB4, F,
         BN1_gamma4, BN1_beta4, BN1_mean4, BN1_var4, BN_eps,
         ACT_RELU, P4, U_slice);
         lstm_forward_unidir(U_slice, T24, F, LSTM_W_ifog4, LSTM_R_ifog4, LSTM_b_ifog4, h_slice, c_slice);
