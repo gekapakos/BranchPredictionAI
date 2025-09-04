@@ -6,7 +6,7 @@
 module conv_bn_act_pool_1_ConvW3_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 13;
 parameter MEM_SIZE = 7168;
 
@@ -43,7 +43,7 @@ module conv_bn_act_pool_1_ConvW3(
     ce0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd7168;
 parameter AddressWidth = 32'd13;
 input reset;

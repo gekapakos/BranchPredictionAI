@@ -8,7 +8,7 @@ use ieee.std_logic_unsigned.all;
 
 entity run_all_slices_unrol_LSTM_b_ifog0_rom is 
     generic(
-             DWIDTH     : integer := 32; 
+             DWIDTH     : integer := 16; 
              AWIDTH     : integer := 7; 
              MEM_SIZE    : integer := 128
     ); 
@@ -26,9 +26,7 @@ architecture rtl of run_all_slices_unrol_LSTM_b_ifog0_rom is
 signal addr0_tmp : std_logic_vector(AWIDTH-1 downto 0); 
 type mem_array is array (0 to MEM_SIZE-1) of std_logic_vector (DWIDTH-1 downto 0); 
 signal mem : mem_array := (
-    0 to 31=> "00000000000000000000000000000000", 
-    32 to 63=> "00111111100000000000000000000000", 
-    64 to 127=> "00000000000000000000000000000000" );
+    0 to 31=> "0000000000000000", 32 to 63=> "0011110000000000", 64 to 127=> "0000000000000000" );
 
 attribute syn_rom_style : string;
 attribute syn_rom_style of mem : signal is "block_rom";
@@ -66,7 +64,7 @@ use IEEE.std_logic_1164.all;
 
 entity run_all_slices_unrol_LSTM_b_ifog0 is
     generic (
-        DataWidth : INTEGER := 32;
+        DataWidth : INTEGER := 16;
         AddressRange : INTEGER := 128;
         AddressWidth : INTEGER := 7);
     port (

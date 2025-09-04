@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module lstm_forward_unidir_z_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 7;
 parameter MEM_SIZE = 128;
 
@@ -61,7 +61,7 @@ module lstm_forward_unidir_z(
     ce1,
     q1);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd128;
 parameter AddressWidth = 32'd7;
 input reset;

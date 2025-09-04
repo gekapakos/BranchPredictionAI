@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct lstm_forward_unidir_c_slice_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
+  static const unsigned DataWidth = 16;
   static const unsigned AddressRange = 32;
   static const unsigned AddressWidth = 5;
 
@@ -78,7 +78,7 @@ void prc_write_0()
 SC_MODULE(lstm_forward_unidir_c_slice) {
 
 
-static const unsigned DataWidth = 32;
+static const unsigned DataWidth = 16;
 static const unsigned AddressRange = 32;
 static const unsigned AddressWidth = 5;
 

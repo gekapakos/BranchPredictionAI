@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool'" level="0">
-<item name = "Date">Wed Sep  3 17:58:43 2025
+<item name = "Date">Thu Sep  4 12:28:00 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">64248231, 64248231, 64248231, 64248231, none</column>
+<column name="">65526951, 65526951, 65526951, 65526951, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -39,10 +39,10 @@
 <column name=" + Loop 1.1">79360, 79360, 2480, -, -, 32, no</column>
 <column name="  ++ Loop 1.1.1">2478, 2478, 354, -, -, 7, no</column>
 <column name="   +++ Loop 1.1.1.1">352, 352, 11, -, -, 32, no</column>
-<column name="- Loop 2">15757068, 15757068, 27074, -, -, 582, no</column>
-<column name=" + Loop 2.1">27072, 27072, 47, -, -, 576, no</column>
-<column name="- Loop 3">2778648, 2778648, 231554, -, -, 12, no</column>
-<column name=" + Loop 3.1">231552, 231552, 402, -, -, 576, no</column>
+<column name="- Loop 2">17097996, 17097996, 29378, -, -, 582, no</column>
+<column name=" + Loop 2.1">29376, 29376, 51, -, -, 576, no</column>
+<column name="- Loop 3">2716440, 2716440, 226370, -, -, 12, no</column>
+<column name=" + Loop 3.1">226368, 226368, 393, -, -, 576, no</column>
 <column name="  ++ Loop 3.1.1">384, 384, 8, -, -, 48, no</column>
 </table>
 </item>

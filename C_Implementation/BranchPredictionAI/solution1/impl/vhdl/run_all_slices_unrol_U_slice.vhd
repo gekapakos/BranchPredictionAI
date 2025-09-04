@@ -10,7 +10,7 @@ use ieee.std_logic_unsigned.all;
 entity run_all_slices_unrol_U_slice_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
-            DWIDTH     : integer := 32; 
+            DWIDTH     : integer := 16; 
             AWIDTH     : integer := 9; 
             MEM_SIZE    : integer := 384
     ); 
@@ -71,7 +71,7 @@ use IEEE.std_logic_1164.all;
 
 entity run_all_slices_unrol_U_slice is
     generic (
-        DataWidth : INTEGER := 32;
+        DataWidth : INTEGER := 16;
         AddressRange : INTEGER := 384;
         AddressWidth : INTEGER := 9);
     port (

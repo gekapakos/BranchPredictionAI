@@ -10,7 +10,7 @@ use ieee.std_logic_unsigned.all;
 entity main_z0_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
-            DWIDTH     : integer := 32; 
+            DWIDTH     : integer := 16; 
             AWIDTH     : integer := 7; 
             MEM_SIZE    : integer := 128
     ); 
@@ -71,7 +71,7 @@ use IEEE.std_logic_1164.all;
 
 entity main_z0 is
     generic (
-        DataWidth : INTEGER := 32;
+        DataWidth : INTEGER := 16;
         AddressRange : INTEGER := 128;
         AddressWidth : INTEGER := 7);
     port (

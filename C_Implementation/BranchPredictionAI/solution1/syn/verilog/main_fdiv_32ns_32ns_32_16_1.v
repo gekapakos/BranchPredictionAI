@@ -7,7 +7,7 @@
 
 module main_fdiv_32ns_32ns_32_16_1
 #(parameter
-    ID         = 3,
+    ID         = 1,
     NUM_STAGE  = 16,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

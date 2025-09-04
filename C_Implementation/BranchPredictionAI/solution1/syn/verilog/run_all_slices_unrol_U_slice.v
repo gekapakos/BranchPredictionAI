@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module run_all_slices_unrol_U_slice_ram (addr0, ce0, d0, we0, q0,  clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 9;
 parameter MEM_SIZE = 384;
 
@@ -49,7 +49,7 @@ module run_all_slices_unrol_U_slice(
     d0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd384;
 parameter AddressWidth = 32'd9;
 input reset;

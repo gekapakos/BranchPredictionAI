@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct main_merged_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
+  static const unsigned DataWidth = 16;
   static const unsigned AddressRange = 32;
   static const unsigned AddressWidth = 5;
 
@@ -75,7 +75,7 @@ void prc_write_0()
 SC_MODULE(main_merged) {
 
 
-static const unsigned DataWidth = 32;
+static const unsigned DataWidth = 16;
 static const unsigned AddressRange = 32;
 static const unsigned AddressWidth = 5;
 

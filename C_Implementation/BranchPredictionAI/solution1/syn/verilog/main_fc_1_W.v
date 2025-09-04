@@ -6,7 +6,7 @@
 module main_fc_1_W_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 14;
 parameter MEM_SIZE = 16384;
 
@@ -43,7 +43,7 @@ module main_fc_1_W(
     ce0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd16384;
 parameter AddressWidth = 32'd14;
 input reset;

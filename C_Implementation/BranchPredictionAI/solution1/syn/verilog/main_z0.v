@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module main_z0_ram (addr0, ce0, d0, we0, q0,  clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 7;
 parameter MEM_SIZE = 128;
 
@@ -46,7 +46,7 @@ module main_z0(
     d0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd128;
 parameter AddressWidth = 32'd7;
 input reset;

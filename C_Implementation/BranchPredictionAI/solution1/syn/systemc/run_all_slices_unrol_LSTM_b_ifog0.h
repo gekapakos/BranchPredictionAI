@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct run_all_slices_unrol_LSTM_b_ifog0_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
+  static const unsigned DataWidth = 16;
   static const unsigned AddressRange = 128;
   static const unsigned AddressWidth = 7;
 
@@ -37,13 +37,13 @@ sc_lv<DataWidth> ram[AddressRange];
 
    SC_CTOR(run_all_slices_unrol_LSTM_b_ifog0_ram) {
         for (unsigned i = 0; i < 32 ; i = i + 1) {
-            ram[i] = "0b00000000000000000000000000000000";
+            ram[i] = "0b0000000000000000";
         }
         for (unsigned i = 32; i < 64 ; i = i + 1) {
-            ram[i] = "0b00111111100000000000000000000000";
+            ram[i] = "0b0011110000000000";
         }
         for (unsigned i = 64; i < 128 ; i = i + 1) {
-            ram[i] = "0b00000000000000000000000000000000";
+            ram[i] = "0b0000000000000000";
         }
 
 
@@ -70,7 +70,7 @@ void prc_write_0()
 SC_MODULE(run_all_slices_unrol_LSTM_b_ifog0) {
 
 
-static const unsigned DataWidth = 32;
+static const unsigned DataWidth = 16;
 static const unsigned AddressRange = 128;
 static const unsigned AddressWidth = 7;
 

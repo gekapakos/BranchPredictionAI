@@ -6,7 +6,7 @@
 module main_fc_0_bn_var_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 7;
 parameter MEM_SIZE = 128;
 
@@ -43,7 +43,7 @@ module main_fc_0_bn_var(
     ce0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd128;
 parameter AddressWidth = 32'd7;
 input reset;

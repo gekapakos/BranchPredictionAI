@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct main_z0_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
+  static const unsigned DataWidth = 16;
   static const unsigned AddressRange = 128;
   static const unsigned AddressWidth = 7;
 
@@ -75,7 +75,7 @@ void prc_write_0()
 SC_MODULE(main_z0) {
 
 
-static const unsigned DataWidth = 32;
+static const unsigned DataWidth = 16;
 static const unsigned AddressRange = 128;
 static const unsigned AddressWidth = 7;
 

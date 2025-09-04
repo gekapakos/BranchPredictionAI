@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module run_all_slices_unrol_Y_ram (addr0, ce0, d0, we0, q0,  clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 15;
 parameter MEM_SIZE = 18432;
 
@@ -49,7 +49,7 @@ module run_all_slices_unrol_Y(
     d0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd18432;
 parameter AddressWidth = 32'd15;
 input reset;

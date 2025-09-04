@@ -198,7 +198,7 @@ architecture behav of generic_tanh_float_s is
     signal and_ln75_reg_348 : STD_LOGIC_VECTOR (0 downto 0);
     signal select_ln67_fu_226_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_124_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_5_reg_357 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_2_reg_357 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal icmp_ln849_1_fu_234_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -423,7 +423,7 @@ begin
         x => grp_fu_120_p1,
         ap_return => grp_exp_generic_double_s_fu_89_ap_return);
 
-    main_faddfsub_32ns_32ns_32_5_full_dsp_1_U30 : component main_faddfsub_32ns_32ns_32_5_full_dsp_1
+    main_faddfsub_32ns_32ns_32_5_full_dsp_1_U36 : component main_faddfsub_32ns_32ns_32_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -439,7 +439,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_100_p2);
 
-    main_fmul_32ns_32ns_32_4_max_dsp_1_U31 : component main_fmul_32ns_32ns_32_4_max_dsp_1
+    main_fmul_32ns_32ns_32_4_max_dsp_1_U37 : component main_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -454,7 +454,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_108_p2);
 
-    main_fdiv_32ns_32ns_32_16_1_U32 : component main_fdiv_32ns_32ns_32_16_1
+    main_fdiv_32ns_32ns_32_16_1_U38 : component main_fdiv_32ns_32ns_32_16_1
     generic map (
         ID => 1,
         NUM_STAGE => 16,
@@ -469,7 +469,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_112_p2);
 
-    main_fptrunc_64ns_32_2_1_U33 : component main_fptrunc_64ns_32_2_1
+    main_fptrunc_64ns_32_2_1_U39 : component main_fptrunc_64ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -482,7 +482,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_117_p1);
 
-    main_fpext_32ns_64_2_1_U34 : component main_fpext_32ns_64_2_1
+    main_fpext_32ns_64_2_1_U40 : component main_fpext_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -495,7 +495,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_120_p1);
 
-    main_fcmp_32ns_32ns_1_2_1_U35 : component main_fcmp_32ns_32ns_1_2_1
+    main_fcmp_32ns_32ns_1_2_1_U41 : component main_fcmp_32ns_32ns_1_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -511,7 +511,7 @@ begin
         opcode => ap_const_lv5_4,
         dout => grp_fu_124_p2);
 
-    main_dadd_64ns_64ns_64_5_full_dsp_1_U36 : component main_dadd_64ns_64ns_64_5_full_dsp_1
+    main_dadd_64ns_64ns_64_5_full_dsp_1_U42 : component main_dadd_64ns_64ns_64_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -592,7 +592,7 @@ begin
                 resultf_4_reg_72 <= select_ln67_fu_226_p3;
             elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_fu_124_p2 = ap_const_lv1_0))) then 
                 resultf_4_reg_72 <= ap_const_lv32_3F800000;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_5_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
+            elsif (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_2_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
                 resultf_4_reg_72 <= reg_139;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state82)) then 
                 resultf_4_reg_72 <= grp_fu_112_p2;
@@ -665,7 +665,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                tmp_5_reg_357 <= grp_fu_124_p2;
+                tmp_2_reg_357 <= grp_fu_124_p2;
             end if;
         end if;
     end process;
@@ -951,9 +951,9 @@ begin
     end process;
 
 
-    ap_phi_mux_resultf_4_phi_fu_76_p10_assign_proc : process(reg_139, icmp_ln833_reg_340, icmp_ln849_reg_344, and_ln75_reg_348, tmp_5_reg_357, icmp_ln849_1_reg_361, resultf_4_reg_72, ap_CS_fsm_state62)
+    ap_phi_mux_resultf_4_phi_fu_76_p10_assign_proc : process(reg_139, icmp_ln833_reg_340, icmp_ln849_reg_344, and_ln75_reg_348, tmp_2_reg_357, icmp_ln849_1_reg_361, resultf_4_reg_72, ap_CS_fsm_state62)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_5_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state62) and (tmp_2_reg_357 = ap_const_lv1_1) and (icmp_ln849_1_reg_361 = ap_const_lv1_0) and (ap_const_lv1_0 = and_ln75_reg_348) and (icmp_ln849_reg_344 = ap_const_lv1_0) and (icmp_ln833_reg_340 = ap_const_lv1_0))) then 
             ap_phi_mux_resultf_4_phi_fu_76_p10 <= reg_139;
         else 
             ap_phi_mux_resultf_4_phi_fu_76_p10 <= resultf_4_reg_72;

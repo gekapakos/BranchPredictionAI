@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct run_all_slices_unrol_Y_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
+  static const unsigned DataWidth = 16;
   static const unsigned AddressRange = 18432;
   static const unsigned AddressWidth = 15;
 
@@ -78,7 +78,7 @@ void prc_write_0()
 SC_MODULE(run_all_slices_unrol_Y) {
 
 
-static const unsigned DataWidth = 32;
+static const unsigned DataWidth = 16;
 static const unsigned AddressRange = 18432;
 static const unsigned AddressWidth = 15;
 

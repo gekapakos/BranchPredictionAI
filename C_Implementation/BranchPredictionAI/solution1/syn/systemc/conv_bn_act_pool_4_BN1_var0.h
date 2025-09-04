@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct conv_bn_act_pool_4_BN1_var0_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
+  static const unsigned DataWidth = 16;
   static const unsigned AddressRange = 32;
   static const unsigned AddressWidth = 5;
 
@@ -37,7 +37,7 @@ sc_lv<DataWidth> ram[AddressRange];
 
    SC_CTOR(conv_bn_act_pool_4_BN1_var0_ram) {
         for (unsigned i = 0; i < 32 ; i = i + 1) {
-            ram[i] = "0b00111111100000000000000000000000";
+            ram[i] = "0b0011110000000000";
         }
 
 
@@ -64,7 +64,7 @@ void prc_write_0()
 SC_MODULE(conv_bn_act_pool_4_BN1_var0) {
 
 
-static const unsigned DataWidth = 32;
+static const unsigned DataWidth = 16;
 static const unsigned AddressRange = 32;
 static const unsigned AddressWidth = 5;
 

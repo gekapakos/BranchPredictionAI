@@ -31,14 +31,14 @@
 
 <trans id="237" from="2" to="3">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_5" val="1"/>
+<or_exp><and_exp><literal name="tmp_2" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="238" from="2" to="62">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_5" val="0"/>
+<or_exp><and_exp><literal name="tmp_2" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -852,10 +852,10 @@
 
 <Node id="24" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge57:0  %tmp_5 = fcmp olt float %abst_in, 2.200000e+01
+._crit_edge57:0  %tmp_2 = fcmp olt float %abst_in, 2.200000e+01
 
 ]]></Node>
-<StgValue><ssdm name="tmp_5"/></StgValue>
+<StgValue><ssdm name="tmp_2"/></StgValue>
 </operation>
 
 <operation id="108" st_id="1" stage="5" lat="5">
@@ -937,10 +937,10 @@
 
 <Node id="24" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge57:0  %tmp_5 = fcmp olt float %abst_in, 2.200000e+01
+._crit_edge57:0  %tmp_2 = fcmp olt float %abst_in, 2.200000e+01
 
 ]]></Node>
-<StgValue><ssdm name="tmp_5"/></StgValue>
+<StgValue><ssdm name="tmp_2"/></StgValue>
 </operation>
 
 <operation id="113" st_id="2" stage="1" lat="1">
@@ -952,7 +952,7 @@
 
 <Node id="25" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-._crit_edge57:1  br i1 %tmp_5, label %_ifconv, label %._crit_edge_ifconv
+._crit_edge57:1  br i1 %tmp_2, label %_ifconv, label %._crit_edge_ifconv
 
 ]]></Node>
 <StgValue><ssdm name="br_ln80"/></StgValue>
@@ -962,7 +962,7 @@
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_5" val="1"/>
+<or_exp><and_exp><literal name="tmp_2" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1785,10 +1785,10 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="44" bw="32" op_0_bw="64">
 <![CDATA[
-:3  %tmp_51_i = fptrunc double %tmp_i_57 to float
+:3  %tmp_99_i = fptrunc double %tmp_i_57 to float
 
 ]]></Node>
-<StgValue><ssdm name="tmp_51_i"/></StgValue>
+<StgValue><ssdm name="tmp_99_i"/></StgValue>
 </operation>
 </state>
 
@@ -1803,10 +1803,10 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="44" bw="32" op_0_bw="64">
 <![CDATA[
-:3  %tmp_51_i = fptrunc double %tmp_i_57 to float
+:3  %tmp_99_i = fptrunc double %tmp_i_57 to float
 
 ]]></Node>
-<StgValue><ssdm name="tmp_51_i"/></StgValue>
+<StgValue><ssdm name="tmp_99_i"/></StgValue>
 </operation>
 
 <operation id="163" st_id="35" stage="1" lat="1">
@@ -1836,7 +1836,7 @@ _ifconv:9  br i1 %icmp_ln833_3, label %expm1.exit, label %4
 
 <Node id="47" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-expm1.exit:0  %expx = phi float [ %tmp_51_i, %5 ], [ 0.000000e+00, %_ifconv ], [ %x_2, %4 ]
+expm1.exit:0  %expx = phi float [ %tmp_99_i, %5 ], [ 0.000000e+00, %_ifconv ], [ %x_2, %4 ]
 
 ]]></Node>
 <StgValue><ssdm name="expx"/></StgValue>
@@ -1867,10 +1867,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0  %tmp_41 = fadd float %expx, 2.000000e+00
+:0  %tmp_79 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_41"/></StgValue>
+<StgValue><ssdm name="tmp_79"/></StgValue>
 </operation>
 
 <operation id="167" st_id="36" stage="5" lat="5">
@@ -1883,10 +1883,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="58" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:3  %tmp_40 = fadd float %expx, 2.000000e+00
+:3  %tmp_78 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_40"/></StgValue>
+<StgValue><ssdm name="tmp_78"/></StgValue>
 </operation>
 </state>
 
@@ -1901,10 +1901,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0  %tmp_41 = fadd float %expx, 2.000000e+00
+:0  %tmp_79 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_41"/></StgValue>
+<StgValue><ssdm name="tmp_79"/></StgValue>
 </operation>
 </state>
 
@@ -1919,10 +1919,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0  %tmp_41 = fadd float %expx, 2.000000e+00
+:0  %tmp_79 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_41"/></StgValue>
+<StgValue><ssdm name="tmp_79"/></StgValue>
 </operation>
 </state>
 
@@ -1937,10 +1937,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0  %tmp_41 = fadd float %expx, 2.000000e+00
+:0  %tmp_79 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_41"/></StgValue>
+<StgValue><ssdm name="tmp_79"/></StgValue>
 </operation>
 </state>
 
@@ -1955,10 +1955,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0  %tmp_41 = fadd float %expx, 2.000000e+00
+:0  %tmp_79 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_41"/></StgValue>
+<StgValue><ssdm name="tmp_79"/></StgValue>
 </operation>
 </state>
 
@@ -1973,10 +1973,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -1991,10 +1991,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2009,10 +2009,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2027,10 +2027,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2045,10 +2045,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2063,10 +2063,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2081,10 +2081,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2099,10 +2099,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2117,10 +2117,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2135,10 +2135,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2153,10 +2153,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2171,10 +2171,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2189,10 +2189,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2207,10 +2207,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2225,10 +2225,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2243,10 +2243,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1  %tmp_42 = fdiv float 2.000000e+00, %tmp_41
+:1  %tmp_80 = fdiv float 2.000000e+00, %tmp_79
 
 ]]></Node>
-<StgValue><ssdm name="tmp_42"/></StgValue>
+<StgValue><ssdm name="tmp_80"/></StgValue>
 </operation>
 </state>
 
@@ -2261,7 +2261,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:2  %resultf_2 = fsub float 1.000000e+00, %tmp_42
+:2  %resultf_2 = fsub float 1.000000e+00, %tmp_80
 
 ]]></Node>
 <StgValue><ssdm name="resultf_2"/></StgValue>
@@ -2279,7 +2279,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:2  %resultf_2 = fsub float 1.000000e+00, %tmp_42
+:2  %resultf_2 = fsub float 1.000000e+00, %tmp_80
 
 ]]></Node>
 <StgValue><ssdm name="resultf_2"/></StgValue>
@@ -2297,7 +2297,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:2  %resultf_2 = fsub float 1.000000e+00, %tmp_42
+:2  %resultf_2 = fsub float 1.000000e+00, %tmp_80
 
 ]]></Node>
 <StgValue><ssdm name="resultf_2"/></StgValue>
@@ -2315,7 +2315,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:2  %resultf_2 = fsub float 1.000000e+00, %tmp_42
+:2  %resultf_2 = fsub float 1.000000e+00, %tmp_80
 
 ]]></Node>
 <StgValue><ssdm name="resultf_2"/></StgValue>
@@ -2333,7 +2333,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:2  %resultf_2 = fsub float 1.000000e+00, %tmp_42
+:2  %resultf_2 = fsub float 1.000000e+00, %tmp_80
 
 ]]></Node>
 <StgValue><ssdm name="resultf_2"/></StgValue>
@@ -2349,7 +2349,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 <or_exp><and_exp><literal name="icmp_ln833" val="0"/>
 <literal name="icmp_ln849" val="0"/>
 <literal name="and_ln75" val="0"/>
-<literal name="tmp_5" val="1"/>
+<literal name="tmp_2" val="1"/>
 <literal name="icmp_ln849_1" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -2467,10 +2467,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="58" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:3  %tmp_40 = fadd float %expx, 2.000000e+00
+:3  %tmp_78 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_40"/></StgValue>
+<StgValue><ssdm name="tmp_78"/></StgValue>
 </operation>
 </state>
 
@@ -2485,10 +2485,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="58" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:3  %tmp_40 = fadd float %expx, 2.000000e+00
+:3  %tmp_78 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_40"/></StgValue>
+<StgValue><ssdm name="tmp_78"/></StgValue>
 </operation>
 </state>
 
@@ -2503,10 +2503,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="58" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:3  %tmp_40 = fadd float %expx, 2.000000e+00
+:3  %tmp_78 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_40"/></StgValue>
+<StgValue><ssdm name="tmp_78"/></StgValue>
 </operation>
 </state>
 
@@ -2521,10 +2521,10 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="58" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:3  %tmp_40 = fadd float %expx, 2.000000e+00
+:3  %tmp_78 = fadd float %expx, 2.000000e+00
 
 ]]></Node>
-<StgValue><ssdm name="tmp_40"/></StgValue>
+<StgValue><ssdm name="tmp_78"/></StgValue>
 </operation>
 </state>
 
@@ -2584,7 +2584,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2602,7 +2602,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2620,7 +2620,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2638,7 +2638,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2656,7 +2656,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2674,7 +2674,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2692,7 +2692,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2710,7 +2710,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2728,7 +2728,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2746,7 +2746,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2764,7 +2764,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2782,7 +2782,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2800,7 +2800,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2818,7 +2818,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2836,7 +2836,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>
@@ -2854,7 +2854,7 @@ expm1.exit:1  br i1 %icmp_ln849_1, label %6, label %7
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_40
+:4  %resultf_1 = fdiv float %bitcast_ln95_1, %tmp_78
 
 ]]></Node>
 <StgValue><ssdm name="resultf_1"/></StgValue>

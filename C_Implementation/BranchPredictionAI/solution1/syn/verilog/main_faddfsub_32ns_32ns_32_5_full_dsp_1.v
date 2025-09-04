@@ -7,7 +7,7 @@
 
 module main_faddfsub_32ns_32ns_32_5_full_dsp_1
 #(parameter
-    ID         = 30,
+    ID         = 36,
     NUM_STAGE  = 5,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

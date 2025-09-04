@@ -6,7 +6,7 @@
 module conv_bn_act_pool_3_X_slice1_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 12;
 parameter MEM_SIZE = 2496;
 
@@ -43,7 +43,7 @@ module conv_bn_act_pool_3_X_slice1(
     ce0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd2496;
 parameter AddressWidth = 32'd12;
 input reset;
