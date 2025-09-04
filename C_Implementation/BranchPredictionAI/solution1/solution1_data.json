@@ -80,7 +80,6 @@
       "impl\/vhdl\/main_hsub_16ns_16ns_16_5_full_dsp_1.vhd",
       "impl\/vhdl\/main_merged.vhd",
       "impl\/vhdl\/main_mux_325_16_1_1.vhd",
-      "impl\/vhdl\/main_mux_1287_16_1_1.vhd",
       "impl\/vhdl\/main_sptohp_32ns_16_2_1.vhd",
       "impl\/vhdl\/main_z0.vhd",
       "impl\/vhdl\/run_all_slices_unrol.vhd",
@@ -150,7 +149,6 @@
       "impl\/verilog\/main_hsub_16ns_16ns_16_5_full_dsp_1.v",
       "impl\/verilog\/main_merged.v",
       "impl\/verilog\/main_mux_325_16_1_1.v",
-      "impl\/verilog\/main_mux_1287_16_1_1.v",
       "impl\/verilog\/main_sptohp_32ns_16_2_1.v",
       "impl\/verilog\/main_z0.v",
       "impl\/verilog\/run_all_slices_unrol.v",
@@ -342,31 +340,31 @@
       "ModuleName": "main",
       "Instances": [{
           "ModuleName": "run_all_slices_unrol",
-          "InstanceName": "grp_run_all_slices_unrol_fu_397",
+          "InstanceName": "grp_run_all_slices_unrol_fu_407",
           "Instances": [
             {
               "ModuleName": "lstm_forward_unidir",
-              "InstanceName": "grp_lstm_forward_unidir_fu_576"
+              "InstanceName": "grp_lstm_forward_unidir_fu_628"
             },
             {
               "ModuleName": "conv_bn_act_pool",
-              "InstanceName": "grp_conv_bn_act_pool_fu_598"
+              "InstanceName": "grp_conv_bn_act_pool_fu_656"
             },
             {
               "ModuleName": "conv_bn_act_pool_1",
-              "InstanceName": "grp_conv_bn_act_pool_1_fu_609"
+              "InstanceName": "grp_conv_bn_act_pool_1_fu_667"
             },
             {
               "ModuleName": "conv_bn_act_pool_2",
-              "InstanceName": "grp_conv_bn_act_pool_2_fu_621"
+              "InstanceName": "grp_conv_bn_act_pool_2_fu_679"
             },
             {
               "ModuleName": "conv_bn_act_pool_3",
-              "InstanceName": "grp_conv_bn_act_pool_3_fu_633"
+              "InstanceName": "grp_conv_bn_act_pool_3_fu_691"
             },
             {
               "ModuleName": "conv_bn_act_pool_4",
-              "InstanceName": "grp_conv_bn_act_pool_4_fu_645"
+              "InstanceName": "grp_conv_bn_act_pool_4_fu_703"
             }
           ]
         }]
@@ -582,7 +580,7 @@
           "BRAM_18K": "1",
           "DSP48E": "28",
           "FF": "4105",
-          "LUT": "6373",
+          "LUT": "6228",
           "URAM": "0"
         }
       },
@@ -994,8 +992,8 @@
         "Area": {
           "BRAM_18K": "233",
           "DSP48E": "77",
-          "FF": "27263",
-          "LUT": "40230",
+          "FF": "27343",
+          "LUT": "40163",
           "URAM": "0"
         }
       },
@@ -1076,8 +1074,8 @@
         "Area": {
           "BRAM_18K": "259",
           "DSP48E": "81",
-          "FF": "29480",
-          "LUT": "43307",
+          "FF": "29560",
+          "LUT": "43240",
           "URAM": "0"
         }
       }
@@ -1093,7 +1091,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2025-09-04 15:41:18 EEST",
+    "Time": "2025-09-04 15:58:31 EEST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

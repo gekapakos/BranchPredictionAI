@@ -57,17 +57,17 @@ struct conv_bn_act_pool : public sc_module {
 
     conv_bn_act_pool_ConvW4* ConvW4_U;
     conv_bn_act_pool_4_a_bn* a_bn_U;
-    main_fadd_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* main_fadd_32ns_32ns_32_5_full_dsp_1_U95;
-    main_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* main_fmul_32ns_32ns_32_4_max_dsp_1_U96;
-    main_sptohp_32ns_16_2_1<1,2,32,16>* main_sptohp_32ns_16_2_1_U97;
+    main_fadd_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* main_fadd_32ns_32ns_32_5_full_dsp_1_U94;
+    main_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* main_fmul_32ns_32ns_32_4_max_dsp_1_U95;
+    main_sptohp_32ns_16_2_1<1,2,32,16>* main_sptohp_32ns_16_2_1_U96;
+    main_hptosp_16ns_32_2_1<1,2,16,32>* main_hptosp_16ns_32_2_1_U97;
     main_hptosp_16ns_32_2_1<1,2,16,32>* main_hptosp_16ns_32_2_1_U98;
-    main_hptosp_16ns_32_2_1<1,2,16,32>* main_hptosp_16ns_32_2_1_U99;
-    main_hadd_16ns_16ns_16_5_full_dsp_1<1,5,16,16,16>* main_hadd_16ns_16ns_16_5_full_dsp_1_U100;
-    main_hmul_16ns_16ns_16_4_max_dsp_1<1,4,16,16,16>* main_hmul_16ns_16ns_16_4_max_dsp_1_U101;
-    main_hdiv_16ns_16ns_16_7_1<1,7,16,16,16>* main_hdiv_16ns_16ns_16_7_1_U102;
-    main_hcmp_16ns_16ns_1_2_1<1,2,16,16,1>* main_hcmp_16ns_16ns_1_2_1_U103;
+    main_hadd_16ns_16ns_16_5_full_dsp_1<1,5,16,16,16>* main_hadd_16ns_16ns_16_5_full_dsp_1_U99;
+    main_hmul_16ns_16ns_16_4_max_dsp_1<1,4,16,16,16>* main_hmul_16ns_16ns_16_4_max_dsp_1_U100;
+    main_hdiv_16ns_16ns_16_7_1<1,7,16,16,16>* main_hdiv_16ns_16ns_16_7_1_U101;
+    main_hcmp_16ns_16ns_1_2_1<1,2,16,16,1>* main_hcmp_16ns_16ns_1_2_1_U102;
+    main_mux_325_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,5,16>* main_mux_325_16_1_1_U103;
     main_mux_325_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,5,16>* main_mux_325_16_1_1_U104;
-    main_mux_325_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,5,16>* main_mux_325_16_1_1_U105;
     sc_signal< sc_lv<49> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<13> > ConvW4_address0;
@@ -131,8 +131,8 @@ struct conv_bn_act_pool : public sc_module {
     sc_signal< sc_lv<16> > y_5_fu_8905_p3;
     sc_signal< sc_lv<16> > y_5_reg_9594;
     sc_signal< sc_logic > ap_CS_fsm_state32;
-    sc_signal< sc_lv<16> > tmp_10_fu_8912_p34;
-    sc_signal< sc_lv<16> > tmp_10_reg_9599;
+    sc_signal< sc_lv<16> > tmp_9_fu_8912_p34;
+    sc_signal< sc_lv<16> > tmp_9_reg_9599;
     sc_signal< sc_lv<16> > pool_acc_0_reg_9604;
     sc_signal< sc_logic > ap_CS_fsm_state37;
     sc_signal< sc_lv<6> > f_10_fu_8991_p2;
@@ -141,8 +141,8 @@ struct conv_bn_act_pool : public sc_module {
     sc_signal< sc_lv<5> > trunc_ln111_fu_8997_p1;
     sc_signal< sc_lv<5> > trunc_ln111_reg_9648;
     sc_signal< sc_lv<1> > icmp_ln111_fu_8985_p2;
-    sc_signal< sc_lv<16> > tmp_11_fu_9001_p34;
-    sc_signal< sc_lv<16> > tmp_11_reg_9652;
+    sc_signal< sc_lv<16> > tmp_10_fu_9001_p34;
+    sc_signal< sc_lv<16> > tmp_10_reg_9652;
     sc_signal< sc_lv<32> > add_ln111_fu_9071_p2;
     sc_signal< sc_lv<32> > add_ln111_reg_9657;
     sc_signal< sc_lv<16> > grp_fu_8468_p2;
@@ -413,7 +413,7 @@ struct conv_bn_act_pool : public sc_module {
     sc_signal< sc_lv<13> > tmp_fu_8885_p4;
     sc_signal< sc_lv<13> > add_ln103_9_fu_8895_p2;
     sc_signal< sc_lv<1> > grp_fu_8473_p2;
-    sc_signal< sc_lv<5> > tmp_11_fu_9001_p33;
+    sc_signal< sc_lv<5> > tmp_10_fu_9001_p33;
     sc_signal< sc_lv<32> > zext_ln111_fu_8981_p1;
     sc_signal< sc_lv<49> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
@@ -682,7 +682,7 @@ struct conv_bn_act_pool : public sc_module {
     void thread_shl_ln111_fu_8815_p2();
     void thread_shl_ln8_fu_8843_p3();
     void thread_t_fu_8769_p2();
-    void thread_tmp_11_fu_9001_p33();
+    void thread_tmp_10_fu_9001_p33();
     void thread_tmp_fu_8885_p4();
     void thread_trunc_ln103_fu_8881_p1();
     void thread_trunc_ln108_fu_8851_p1();

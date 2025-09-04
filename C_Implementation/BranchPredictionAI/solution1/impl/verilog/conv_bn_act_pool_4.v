@@ -153,8 +153,8 @@ wire    ap_CS_fsm_state30;
 wire   [15:0] y_1_fu_8901_p3;
 reg   [15:0] y_1_reg_9590;
 wire    ap_CS_fsm_state32;
-wire   [15:0] tmp_2_fu_8908_p34;
-reg   [15:0] tmp_2_reg_9595;
+wire   [15:0] tmp_1_fu_8908_p34;
+reg   [15:0] tmp_1_reg_9595;
 reg   [15:0] pool_acc_0_reg_9600;
 wire    ap_CS_fsm_state37;
 wire   [5:0] f_2_fu_8987_p2;
@@ -163,8 +163,8 @@ wire    ap_CS_fsm_state39;
 wire   [4:0] trunc_ln111_fu_8993_p1;
 reg   [4:0] trunc_ln111_reg_9644;
 wire   [0:0] icmp_ln111_fu_8981_p2;
-wire   [15:0] tmp_3_fu_8997_p34;
-reg   [15:0] tmp_3_reg_9648;
+wire   [15:0] tmp_2_fu_8997_p34;
+reg   [15:0] tmp_2_reg_9648;
 wire   [31:0] add_ln111_fu_9067_p2;
 reg   [31:0] add_ln111_reg_9653;
 wire   [15:0] grp_fu_8464_p2;
@@ -435,7 +435,7 @@ wire   [4:0] trunc_ln103_fu_8877_p1;
 wire   [12:0] tmp_fu_8881_p4;
 wire   [12:0] add_ln103_1_fu_8891_p2;
 wire   [0:0] grp_fu_8469_p2;
-wire   [4:0] tmp_3_fu_8997_p33;
+wire   [4:0] tmp_2_fu_8997_p33;
 wire   [31:0] zext_ln111_fu_8977_p1;
 reg   [48:0] ap_NS_fsm;
 
@@ -588,7 +588,7 @@ main_hdiv_16ns_16ns_16_7_1 #(
 main_hdiv_16ns_16ns_16_7_1_U8(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(tmp_3_reg_9648),
+    .din0(tmp_2_reg_9648),
     .din1(16'd16896),
     .ce(1'b1),
     .dout(grp_fu_8464_p2)
@@ -681,7 +681,7 @@ main_mux_325_16_1_1_U10(
     .din30(pool_acc_30_3_reg_664),
     .din31(pool_acc_31_3_reg_653),
     .din32(trunc_ln108_reg_9516),
-    .dout(tmp_2_fu_8908_p34)
+    .dout(tmp_1_fu_8908_p34)
 );
 
 main_mux_325_16_1_1 #(
@@ -754,8 +754,8 @@ main_mux_325_16_1_1_U11(
     .din29(pool_acc_29_5_reg_4350),
     .din30(pool_acc_30_5_reg_4339),
     .din31(pool_acc_31_5_reg_4328),
-    .din32(tmp_3_fu_8997_p33),
-    .dout(tmp_3_fu_8997_p34)
+    .din32(tmp_2_fu_8997_p33),
+    .dout(tmp_2_fu_8997_p34)
 );
 
 always @ (posedge ap_clk) begin
@@ -2136,7 +2136,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state39) & (icmp_ln111_fu_8981_p2 == 1'd0))) begin
         add_ln111_reg_9653 <= add_ln111_fu_9067_p2;
-        tmp_3_reg_9648 <= tmp_3_fu_8997_p34;
+        tmp_2_reg_9648 <= tmp_2_fu_8997_p34;
         trunc_ln111_reg_9644 <= trunc_ln111_fu_8993_p1;
     end
 end
@@ -2197,7 +2197,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state32)) begin
-        tmp_2_reg_9595 <= tmp_2_fu_8908_p34;
+        tmp_1_reg_9595 <= tmp_1_fu_8908_p34;
         y_1_reg_9590 <= y_1_fu_8901_p3;
     end
 end
@@ -2638,7 +2638,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state33)) begin
-        grp_fu_8455_p0 = tmp_2_reg_9595;
+        grp_fu_8455_p0 = tmp_1_reg_9595;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
         grp_fu_8455_p0 = acc_1_reg_1041;
     end else begin
@@ -3019,7 +3019,7 @@ assign shl_ln4_fu_8839_p3 = {{add_ln101_fu_8833_p2}, {5'd0}};
 
 assign t_fu_8765_p2 = (t_0_reg_641 + 6'd1);
 
-assign tmp_3_fu_8997_p33 = f3_0_reg_4680[4:0];
+assign tmp_2_fu_8997_p33 = f3_0_reg_4680[4:0];
 
 assign tmp_fu_8881_p4 = {{{k_0_reg_1029}, {trunc_ln103_fu_8877_p1}}, {5'd0}};
 

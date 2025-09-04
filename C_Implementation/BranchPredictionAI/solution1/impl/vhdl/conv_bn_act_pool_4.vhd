@@ -235,8 +235,8 @@ architecture behav of conv_bn_act_pool_4 is
     signal y_1_reg_9590 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state32 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state32 : signal is "none";
-    signal tmp_2_fu_8908_p34 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_2_reg_9595 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_1_fu_8908_p34 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_1_reg_9595 : STD_LOGIC_VECTOR (15 downto 0);
     signal pool_acc_0_reg_9600 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state37 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state37 : signal is "none";
@@ -247,8 +247,8 @@ architecture behav of conv_bn_act_pool_4 is
     signal trunc_ln111_fu_8993_p1 : STD_LOGIC_VECTOR (4 downto 0);
     signal trunc_ln111_reg_9644 : STD_LOGIC_VECTOR (4 downto 0);
     signal icmp_ln111_fu_8981_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_3_fu_8997_p34 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_3_reg_9648 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_2_fu_8997_p34 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_2_reg_9648 : STD_LOGIC_VECTOR (15 downto 0);
     signal add_ln111_fu_9067_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal add_ln111_reg_9653 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_8464_p2 : STD_LOGIC_VECTOR (15 downto 0);
@@ -533,7 +533,7 @@ architecture behav of conv_bn_act_pool_4 is
     signal tmp_fu_8881_p4 : STD_LOGIC_VECTOR (12 downto 0);
     signal add_ln103_1_fu_8891_p2 : STD_LOGIC_VECTOR (12 downto 0);
     signal grp_fu_8469_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_3_fu_8997_p33 : STD_LOGIC_VECTOR (4 downto 0);
+    signal tmp_2_fu_8997_p33 : STD_LOGIC_VECTOR (4 downto 0);
     signal zext_ln111_fu_8977_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (48 downto 0);
 
@@ -935,7 +935,7 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => tmp_3_reg_9648,
+        din0 => tmp_2_reg_9648,
         din1 => ap_const_lv16_4200,
         ce => ap_const_logic_1,
         dout => grp_fu_8464_p2);
@@ -1028,7 +1028,7 @@ begin
         din30 => pool_acc_30_3_reg_664,
         din31 => pool_acc_31_3_reg_653,
         din32 => trunc_ln108_reg_9516,
-        dout => tmp_2_fu_8908_p34);
+        dout => tmp_1_fu_8908_p34);
 
     main_mux_325_16_1_1_U11 : component main_mux_325_16_1_1
     generic map (
@@ -1101,8 +1101,8 @@ begin
         din29 => pool_acc_29_5_reg_4350,
         din30 => pool_acc_30_5_reg_4339,
         din31 => pool_acc_31_5_reg_4328,
-        din32 => tmp_3_fu_8997_p33,
-        dout => tmp_3_fu_8997_p34);
+        din32 => tmp_2_fu_8997_p33,
+        dout => tmp_2_fu_8997_p34);
 
 
 
@@ -3003,7 +3003,7 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state39) and (icmp_ln111_fu_8981_p2 = ap_const_lv1_0))) then
                 add_ln111_reg_9653 <= add_ln111_fu_9067_p2;
-                tmp_3_reg_9648 <= tmp_3_fu_8997_p34;
+                tmp_2_reg_9648 <= tmp_2_fu_8997_p34;
                 trunc_ln111_reg_9644 <= trunc_ln111_fu_8993_p1;
             end if;
         end if;
@@ -3084,7 +3084,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state32)) then
-                tmp_2_reg_9595 <= tmp_2_fu_8908_p34;
+                tmp_1_reg_9595 <= tmp_1_fu_8908_p34;
                 y_1_reg_9590 <= y_1_fu_8901_p3;
             end if;
         end if;
@@ -3804,10 +3804,10 @@ begin
     f_2_fu_8987_p2 <= std_logic_vector(unsigned(f3_0_reg_4680) + unsigned(ap_const_lv6_1));
     f_fu_8584_p2 <= std_logic_vector(unsigned(f1_0_reg_310) + unsigned(ap_const_lv6_1));
 
-    grp_fu_8455_p0_assign_proc : process(tmp_2_reg_9595, acc_1_reg_1041, ap_CS_fsm_state13, ap_CS_fsm_state33)
+    grp_fu_8455_p0_assign_proc : process(tmp_1_reg_9595, acc_1_reg_1041, ap_CS_fsm_state13, ap_CS_fsm_state33)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_fu_8455_p0 <= tmp_2_reg_9595;
+            grp_fu_8455_p0 <= tmp_1_reg_9595;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             grp_fu_8455_p0 <= acc_1_reg_1041;
         else 
@@ -3873,7 +3873,7 @@ begin
     shl_ln111_fu_8811_p2 <= std_logic_vector(shift_left(unsigned(u_1_fu_254),to_integer(unsigned('0' & ap_const_lv32_5(31-1 downto 0)))));
     shl_ln4_fu_8839_p3 <= (add_ln101_fu_8833_p2 & ap_const_lv5_0);
     t_fu_8765_p2 <= std_logic_vector(unsigned(t_0_reg_641) + unsigned(ap_const_lv6_1));
-    tmp_3_fu_8997_p33 <= f3_0_reg_4680(5 - 1 downto 0);
+    tmp_2_fu_8997_p33 <= f3_0_reg_4680(5 - 1 downto 0);
     tmp_fu_8881_p4 <= ((k_0_reg_1029 & trunc_ln103_fu_8877_p1) & ap_const_lv5_0);
     trunc_ln103_fu_8877_p1 <= e_0_reg_1053(5 - 1 downto 0);
     trunc_ln108_fu_8847_p1 <= f2_0_reg_1005(5 - 1 downto 0);

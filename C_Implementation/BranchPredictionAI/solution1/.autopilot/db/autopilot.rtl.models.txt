@@ -13,7 +13,6 @@ conv_bn_act_pool_4_a_bn
 main_fdiv_32ns_32ns_32_16_1
 main_fexp_32ns_32ns_32_9_full_dsp_1
 main_hsub_16ns_16ns_16_5_full_dsp_1
-main_mux_1287_16_1_1
 lstm_forward_unidir_c_slice
 lstm_forward_unidir_z
 conv_bn_act_pool_3_X_slice1
@@ -27,6 +26,7 @@ main_fsqrt_32ns_32ns_32_12_1
 run_all_slices_unrol_U_slice
 run_all_slices_unrol_LSTM_W_ifog0
 run_all_slices_unrol_LSTM_R_ifog0
+run_all_slices_unrol_LSTM_b_ifog0
 run_all_slices_unrol_BN2_var0
 run_all_slices_unrol_LSTM_W_ifog1
 run_all_slices_unrol_LSTM_R_ifog1

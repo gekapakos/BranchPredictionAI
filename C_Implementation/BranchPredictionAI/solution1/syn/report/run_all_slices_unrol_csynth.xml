@@ -100,8 +100,8 @@
 <Resources>
 <BRAM_18K>233</BRAM_18K>
 <DSP48E>77</DSP48E>
-<FF>27263</FF>
-<LUT>40230</LUT>
+<FF>27343</FF>
+<LUT>40163</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

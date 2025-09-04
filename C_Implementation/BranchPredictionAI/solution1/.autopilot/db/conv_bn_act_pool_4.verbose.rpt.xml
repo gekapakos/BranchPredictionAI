@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool_4'" level="0">
-<item name = "Date">Thu Sep  4 15:40:37 2025
+<item name = "Date">Thu Sep  4 15:57:43 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -512,8 +512,8 @@
 <column name="shl_ln4_reg_9506">6, 0, 11, 5</column>
 <column name="t_0_reg_641">6, 0, 6, 0</column>
 <column name="t_reg_9467">6, 0, 6, 0</column>
-<column name="tmp_2_reg_9595">16, 0, 16, 0</column>
-<column name="tmp_3_reg_9648">16, 0, 16, 0</column>
+<column name="tmp_1_reg_9595">16, 0, 16, 0</column>
+<column name="tmp_2_reg_9648">16, 0, 16, 0</column>
 <column name="tmp_86_reg_9564">32, 0, 32, 0</column>
 <column name="tmp_87_reg_9569">32, 0, 32, 0</column>
 <column name="tmp_88_reg_9574">32, 0, 32, 0</column>

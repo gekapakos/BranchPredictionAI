@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'run_all_slices_unrol'" level="0">
-<item name = "Date">Thu Sep  4 15:40:25 2025
+<item name = "Date">Thu Sep  4 15:57:33 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -31,12 +31,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_lstm_forward_unidir_fu_576">lstm_forward_unidir, 1205470, 1205470, 1205470, 1205470, none</column>
-<column name="grp_conv_bn_act_pool_fu_598">conv_bn_act_pool, 46100226, 46285122, 46100226, 46285122, none</column>
-<column name="grp_conv_bn_act_pool_1_fu_609">conv_bn_act_pool_1, 23050146, 23142594, 23050146, 23142594, none</column>
-<column name="grp_conv_bn_act_pool_2_fu_621">conv_bn_act_pool_2, 11525106, 11571330, 11525106, 11571330, none</column>
-<column name="grp_conv_bn_act_pool_3_fu_633">conv_bn_act_pool_3, 5762586, 5785698, 5762586, 5785698, none</column>
-<column name="grp_conv_bn_act_pool_4_fu_645">conv_bn_act_pool_4, 2881326, 2892882, 2881326, 2892882, none</column>
+<column name="grp_lstm_forward_unidir_fu_628">lstm_forward_unidir, 1205470, 1205470, 1205470, 1205470, none</column>
+<column name="grp_conv_bn_act_pool_fu_656">conv_bn_act_pool, 46100226, 46285122, 46100226, 46285122, none</column>
+<column name="grp_conv_bn_act_pool_1_fu_667">conv_bn_act_pool_1, 23050146, 23142594, 23050146, 23142594, none</column>
+<column name="grp_conv_bn_act_pool_2_fu_679">conv_bn_act_pool_2, 11525106, 11571330, 11525106, 11571330, none</column>
+<column name="grp_conv_bn_act_pool_3_fu_691">conv_bn_act_pool_3, 5762586, 5785698, 5762586, 5785698, none</column>
+<column name="grp_conv_bn_act_pool_4_fu_703">conv_bn_act_pool_4, 2881326, 2892882, 2881326, 2892882, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

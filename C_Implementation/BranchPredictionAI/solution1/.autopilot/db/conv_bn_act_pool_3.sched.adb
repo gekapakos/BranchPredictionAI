@@ -11654,7 +11654,7 @@
 					<Obj>
 						<type>0</type>
 						<id>313</id>
-						<name>tmp_4</name>
+						<name>tmp_3</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
 						<lineNumber>108</lineNumber>
@@ -18876,7 +18876,7 @@
 					<Obj>
 						<type>0</type>
 						<id>465</id>
-						<name>tmp_5</name>
+						<name>tmp_4</name>
 						<fileName>main_5_slices.cpp</fileName>
 						<fileDirectory>/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation</fileDirectory>
 						<lineNumber>111</lineNumber>

@@ -237,8 +237,8 @@ architecture behav of conv_bn_act_pool is
     signal y_5_reg_9594 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state32 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state32 : signal is "none";
-    signal tmp_10_fu_8912_p34 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_10_reg_9599 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_9_fu_8912_p34 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_9_reg_9599 : STD_LOGIC_VECTOR (15 downto 0);
     signal pool_acc_0_reg_9604 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state37 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state37 : signal is "none";
@@ -249,8 +249,8 @@ architecture behav of conv_bn_act_pool is
     signal trunc_ln111_fu_8997_p1 : STD_LOGIC_VECTOR (4 downto 0);
     signal trunc_ln111_reg_9648 : STD_LOGIC_VECTOR (4 downto 0);
     signal icmp_ln111_fu_8985_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_11_fu_9001_p34 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_11_reg_9652 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_10_fu_9001_p34 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_10_reg_9652 : STD_LOGIC_VECTOR (15 downto 0);
     signal add_ln111_fu_9071_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal add_ln111_reg_9657 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_8468_p2 : STD_LOGIC_VECTOR (15 downto 0);
@@ -535,7 +535,7 @@ architecture behav of conv_bn_act_pool is
     signal tmp_fu_8885_p4 : STD_LOGIC_VECTOR (12 downto 0);
     signal add_ln103_9_fu_8895_p2 : STD_LOGIC_VECTOR (12 downto 0);
     signal grp_fu_8473_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_11_fu_9001_p33 : STD_LOGIC_VECTOR (4 downto 0);
+    signal tmp_10_fu_9001_p33 : STD_LOGIC_VECTOR (4 downto 0);
     signal zext_ln111_fu_8981_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (48 downto 0);
 
@@ -802,7 +802,7 @@ begin
         ce0 => a_bn_ce0,
         q0 => a_bn_q0);
 
-    main_fadd_32ns_32ns_32_5_full_dsp_1_U95 : component main_fadd_32ns_32ns_32_5_full_dsp_1
+    main_fadd_32ns_32ns_32_5_full_dsp_1_U94 : component main_fadd_32ns_32ns_32_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -817,7 +817,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8439_p2);
 
-    main_fmul_32ns_32ns_32_4_max_dsp_1_U96 : component main_fmul_32ns_32ns_32_4_max_dsp_1
+    main_fmul_32ns_32ns_32_4_max_dsp_1_U95 : component main_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -832,7 +832,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8444_p2);
 
-    main_sptohp_32ns_16_2_1_U97 : component main_sptohp_32ns_16_2_1
+    main_sptohp_32ns_16_2_1_U96 : component main_sptohp_32ns_16_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -845,7 +845,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8448_p1);
 
-    main_hptosp_16ns_32_2_1_U98 : component main_hptosp_16ns_32_2_1
+    main_hptosp_16ns_32_2_1_U97 : component main_hptosp_16ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -858,7 +858,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8451_p1);
 
-    main_hptosp_16ns_32_2_1_U99 : component main_hptosp_16ns_32_2_1
+    main_hptosp_16ns_32_2_1_U98 : component main_hptosp_16ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -871,7 +871,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8455_p1);
 
-    main_hadd_16ns_16ns_16_5_full_dsp_1_U100 : component main_hadd_16ns_16ns_16_5_full_dsp_1
+    main_hadd_16ns_16ns_16_5_full_dsp_1_U99 : component main_hadd_16ns_16ns_16_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -886,7 +886,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8459_p2);
 
-    main_hmul_16ns_16ns_16_4_max_dsp_1_U101 : component main_hmul_16ns_16ns_16_4_max_dsp_1
+    main_hmul_16ns_16ns_16_4_max_dsp_1_U100 : component main_hmul_16ns_16ns_16_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -901,7 +901,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_8464_p2);
 
-    main_hdiv_16ns_16ns_16_7_1_U102 : component main_hdiv_16ns_16ns_16_7_1
+    main_hdiv_16ns_16ns_16_7_1_U101 : component main_hdiv_16ns_16ns_16_7_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -911,12 +911,12 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => tmp_11_reg_9652,
+        din0 => tmp_10_reg_9652,
         din1 => ap_const_lv16_5200,
         ce => ap_const_logic_1,
         dout => grp_fu_8468_p2);
 
-    main_hcmp_16ns_16ns_1_2_1_U103 : component main_hcmp_16ns_16ns_1_2_1
+    main_hcmp_16ns_16ns_1_2_1_U102 : component main_hcmp_16ns_16ns_1_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -932,7 +932,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_8473_p2);
 
-    main_mux_325_16_1_1_U104 : component main_mux_325_16_1_1
+    main_mux_325_16_1_1_U103 : component main_mux_325_16_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -1004,9 +1004,9 @@ begin
         din30 => pool_acc_30_3_reg_668,
         din31 => pool_acc_31_3_reg_657,
         din32 => trunc_ln108_reg_9520,
-        dout => tmp_10_fu_8912_p34);
+        dout => tmp_9_fu_8912_p34);
 
-    main_mux_325_16_1_1_U105 : component main_mux_325_16_1_1
+    main_mux_325_16_1_1_U104 : component main_mux_325_16_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -1077,8 +1077,8 @@ begin
         din29 => pool_acc_29_5_reg_4354,
         din30 => pool_acc_30_5_reg_4343,
         din31 => pool_acc_31_5_reg_4332,
-        din32 => tmp_11_fu_9001_p33,
-        dout => tmp_11_fu_9001_p34);
+        din32 => tmp_10_fu_9001_p33,
+        dout => tmp_10_fu_9001_p34);
 
 
 
@@ -2979,7 +2979,7 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state39) and (icmp_ln111_fu_8985_p2 = ap_const_lv1_0))) then
                 add_ln111_reg_9657 <= add_ln111_fu_9071_p2;
-                tmp_11_reg_9652 <= tmp_11_fu_9001_p34;
+                tmp_10_reg_9652 <= tmp_10_fu_9001_p34;
                 trunc_ln111_reg_9648 <= trunc_ln111_fu_8997_p1;
             end if;
         end if;
@@ -3059,15 +3059,6 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state32)) then
-                tmp_10_reg_9599 <= tmp_10_fu_8912_p34;
-                y_5_reg_9594 <= y_5_fu_8905_p3;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state19)) then
                 tmp_86_reg_9568 <= grp_fu_8451_p1;
                 tmp_87_reg_9573 <= grp_fu_8455_p1;
@@ -3095,6 +3086,15 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state12)) then
                 tmp_92_reg_9553 <= grp_fu_8464_p2;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if ((ap_const_logic_1 = ap_CS_fsm_state32)) then
+                tmp_9_reg_9599 <= tmp_9_fu_8912_p34;
+                y_5_reg_9594 <= y_5_fu_8905_p3;
             end if;
         end if;
     end process;
@@ -3780,10 +3780,10 @@ begin
     f_9_fu_8781_p2 <= std_logic_vector(unsigned(f2_0_reg_1009) + unsigned(ap_const_lv6_1));
     f_fu_8588_p2 <= std_logic_vector(unsigned(f1_0_reg_314) + unsigned(ap_const_lv6_1));
 
-    grp_fu_8459_p0_assign_proc : process(tmp_10_reg_9599, acc_1_reg_1045, ap_CS_fsm_state13, ap_CS_fsm_state33)
+    grp_fu_8459_p0_assign_proc : process(tmp_9_reg_9599, acc_1_reg_1045, ap_CS_fsm_state13, ap_CS_fsm_state33)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_fu_8459_p0 <= tmp_10_reg_9599;
+            grp_fu_8459_p0 <= tmp_9_reg_9599;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             grp_fu_8459_p0 <= acc_1_reg_1045;
         else 
@@ -3849,7 +3849,7 @@ begin
     shl_ln111_fu_8815_p2 <= std_logic_vector(shift_left(unsigned(u_5_fu_258),to_integer(unsigned('0' & ap_const_lv32_5(31-1 downto 0)))));
     shl_ln8_fu_8843_p3 <= (add_ln101_fu_8837_p2 & ap_const_lv5_0);
     t_fu_8769_p2 <= std_logic_vector(unsigned(t_0_reg_645) + unsigned(ap_const_lv10_1));
-    tmp_11_fu_9001_p33 <= f3_0_reg_4684(5 - 1 downto 0);
+    tmp_10_fu_9001_p33 <= f3_0_reg_4684(5 - 1 downto 0);
     tmp_fu_8885_p4 <= ((k_0_reg_1033 & trunc_ln103_fu_8881_p1) & ap_const_lv5_0);
     trunc_ln103_fu_8881_p1 <= e_0_reg_1057(5 - 1 downto 0);
     trunc_ln108_fu_8851_p1 <= f2_0_reg_1009(5 - 1 downto 0);

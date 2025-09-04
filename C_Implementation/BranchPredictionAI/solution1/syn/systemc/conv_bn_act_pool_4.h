@@ -133,8 +133,8 @@ struct conv_bn_act_pool_4 : public sc_module {
     sc_signal< sc_lv<16> > y_1_fu_8901_p3;
     sc_signal< sc_lv<16> > y_1_reg_9590;
     sc_signal< sc_logic > ap_CS_fsm_state32;
-    sc_signal< sc_lv<16> > tmp_2_fu_8908_p34;
-    sc_signal< sc_lv<16> > tmp_2_reg_9595;
+    sc_signal< sc_lv<16> > tmp_1_fu_8908_p34;
+    sc_signal< sc_lv<16> > tmp_1_reg_9595;
     sc_signal< sc_lv<16> > pool_acc_0_reg_9600;
     sc_signal< sc_logic > ap_CS_fsm_state37;
     sc_signal< sc_lv<6> > f_2_fu_8987_p2;
@@ -143,8 +143,8 @@ struct conv_bn_act_pool_4 : public sc_module {
     sc_signal< sc_lv<5> > trunc_ln111_fu_8993_p1;
     sc_signal< sc_lv<5> > trunc_ln111_reg_9644;
     sc_signal< sc_lv<1> > icmp_ln111_fu_8981_p2;
-    sc_signal< sc_lv<16> > tmp_3_fu_8997_p34;
-    sc_signal< sc_lv<16> > tmp_3_reg_9648;
+    sc_signal< sc_lv<16> > tmp_2_fu_8997_p34;
+    sc_signal< sc_lv<16> > tmp_2_reg_9648;
     sc_signal< sc_lv<32> > add_ln111_fu_9067_p2;
     sc_signal< sc_lv<32> > add_ln111_reg_9653;
     sc_signal< sc_lv<16> > grp_fu_8464_p2;
@@ -415,7 +415,7 @@ struct conv_bn_act_pool_4 : public sc_module {
     sc_signal< sc_lv<13> > tmp_fu_8881_p4;
     sc_signal< sc_lv<13> > add_ln103_1_fu_8891_p2;
     sc_signal< sc_lv<1> > grp_fu_8469_p2;
-    sc_signal< sc_lv<5> > tmp_3_fu_8997_p33;
+    sc_signal< sc_lv<5> > tmp_2_fu_8997_p33;
     sc_signal< sc_lv<32> > zext_ln111_fu_8977_p1;
     sc_signal< sc_lv<49> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
@@ -682,7 +682,7 @@ struct conv_bn_act_pool_4 : public sc_module {
     void thread_shl_ln111_fu_8811_p2();
     void thread_shl_ln4_fu_8839_p3();
     void thread_t_fu_8765_p2();
-    void thread_tmp_3_fu_8997_p33();
+    void thread_tmp_2_fu_8997_p33();
     void thread_tmp_fu_8881_p4();
     void thread_trunc_ln103_fu_8877_p1();
     void thread_trunc_ln108_fu_8847_p1();

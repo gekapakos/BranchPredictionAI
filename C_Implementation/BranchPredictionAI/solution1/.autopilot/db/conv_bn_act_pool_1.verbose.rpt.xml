@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool_1'" level="0">
-<item name = "Date">Thu Sep  4 15:40:51 2025
+<item name = "Date">Thu Sep  4 15:58:00 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -67,17 +67,17 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="main_fadd_32ns_32ns_32_5_full_dsp_1_U81">main_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
-<column name="main_fmul_32ns_32ns_32_4_max_dsp_1_U82">main_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
-<column name="main_hadd_16ns_16ns_16_5_full_dsp_1_U86">main_hadd_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
-<column name="main_hcmp_16ns_16ns_1_2_1_U89">main_hcmp_16ns_16ns_1_2_1, 0, 0, 34, 27, 0</column>
-<column name="main_hdiv_16ns_16ns_16_7_1_U88">main_hdiv_16ns_16ns_16_7_1, 0, 0, 170, 220, 0</column>
-<column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U87">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
+<column name="main_fadd_32ns_32ns_32_5_full_dsp_1_U80">main_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
+<column name="main_fmul_32ns_32ns_32_4_max_dsp_1_U81">main_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
+<column name="main_hadd_16ns_16ns_16_5_full_dsp_1_U85">main_hadd_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
+<column name="main_hcmp_16ns_16ns_1_2_1_U88">main_hcmp_16ns_16ns_1_2_1, 0, 0, 34, 27, 0</column>
+<column name="main_hdiv_16ns_16ns_16_7_1_U87">main_hdiv_16ns_16ns_16_7_1, 0, 0, 170, 220, 0</column>
+<column name="main_hmul_16ns_16ns_16_4_max_dsp_1_U86">main_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
+<column name="main_hptosp_16ns_32_2_1_U83">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
 <column name="main_hptosp_16ns_32_2_1_U84">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
-<column name="main_hptosp_16ns_32_2_1_U85">main_hptosp_16ns_32_2_1, 0, 0, 52, 9, 0</column>
+<column name="main_mux_325_16_1_1_U89">main_mux_325_16_1_1, 0, 0, 0, 145, 0</column>
 <column name="main_mux_325_16_1_1_U90">main_mux_325_16_1_1, 0, 0, 0, 145, 0</column>
-<column name="main_mux_325_16_1_1_U91">main_mux_325_16_1_1, 0, 0, 0, 145, 0</column>
-<column name="main_sptohp_32ns_16_2_1_U83">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
+<column name="main_sptohp_32ns_16_2_1_U82">main_sptohp_32ns_16_2_1, 0, 0, 64, 21, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -512,13 +512,13 @@
 <column name="shl_ln7_reg_9510">9, 0, 14, 5</column>
 <column name="t_0_reg_645">9, 0, 9, 0</column>
 <column name="t_reg_9471">9, 0, 9, 0</column>
+<column name="tmp_7_reg_9599">16, 0, 16, 0</column>
 <column name="tmp_86_reg_9568">32, 0, 32, 0</column>
 <column name="tmp_87_reg_9573">32, 0, 32, 0</column>
 <column name="tmp_88_reg_9578">32, 0, 32, 0</column>
 <column name="tmp_89_reg_9583">32, 0, 32, 0</column>
-<column name="tmp_8_reg_9599">16, 0, 16, 0</column>
+<column name="tmp_8_reg_9652">16, 0, 16, 0</column>
 <column name="tmp_92_reg_9553">16, 0, 16, 0</column>
-<column name="tmp_9_reg_9652">16, 0, 16, 0</column>
 <column name="tmp_s_reg_9662">16, 0, 16, 0</column>
 <column name="trunc_ln108_reg_9520">5, 0, 5, 0</column>
 <column name="trunc_ln111_reg_9648">5, 0, 5, 0</column>

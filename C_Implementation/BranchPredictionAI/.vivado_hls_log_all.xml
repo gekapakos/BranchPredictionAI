@@ -3,51 +3,29 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog4' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:15.761+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog4' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:15.605+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog3' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:10.392+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog3' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:10.194+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog2' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:09.980+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog2' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:09.779+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog1' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:09.590+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog1' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:09.396+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog0' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:09.121+0300" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog0' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:08.884+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog4' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.313+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog4' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.222+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'ConvW4' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.219+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog3' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.217+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog3' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.215+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'ConvW3' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.212+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog2' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.210+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog2' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.208+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'ConvW2' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.206+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog1' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.204+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog1' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.202+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'ConvW1' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.199+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog0' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.198+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog0' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.196+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Global array 'ConvW0' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:41:02.194+0300" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.1' to 'conv_bn_act_pool_1'." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:39:34.999+0300" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2' to 'conv_bn_act_pool_2'." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:39:34.972+0300" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3' to 'conv_bn_act_pool_3'." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:39:34.971+0300" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.4' to 'conv_bn_act_pool_4'." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:39:34.969+0300" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-631] Renaming function 'run_all_slices_unrolled' to 'run_all_slices_unrol' (main_5_slices.cpp:46:28)" projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:39:34.945+0300" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'LSTM_b_ifog0'  accessed through non-constant indices on dimension 1 (main_5_slices.cpp:129:34), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:39:31.777+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog4' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:29.232+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog4' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:29.057+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog3' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:23.808+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog3' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:23.633+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog2' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:23.444+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog2' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:23.261+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog1' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:23.077+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog1' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:22.855+0300" type="Warning"/>
+        <logs message="@W [IMPL-104] Cannot find __unknown_generator__, check your platform lib" projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:22.763+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_R_ifog0' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:22.619+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'run_all_slices_unrol_LSTM_W_ifog0' is read-only, switch it to a ROM." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:22.409+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_b_ifog4' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:15.844+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog4' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:15.750+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_W_ifog4' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:15.746+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'ConvW4' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:15.743+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_b_ifog3' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:15.740+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'LSTM_R_ifog3' will not be exposed as RTL port." projectName="BranchPredictionAI" solutionName="solution1" date="2025-09-04T15:58:15.738+0300" type="Warning"/>
       </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

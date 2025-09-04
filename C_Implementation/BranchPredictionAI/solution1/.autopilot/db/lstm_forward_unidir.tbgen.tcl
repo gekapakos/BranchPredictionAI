@@ -16,16 +16,18 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ W_ifog int 16 regular {array 4096 { 1 3 } 1 1 }  }
 	{ R_ifog int 16 regular {array 4096 { 1 3 } 1 1 }  }
+	{ b_ifog int 16 regular {array 128 { 1 } 0 1 }  }
 	{ h_last int 16 regular {array 32 { 2 3 } 1 1 }  }
 	{ U_slice int 16 regular {array 384 { 1 3 } 1 1 } {global 0}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "W_ifog", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "R_ifog", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
+ 	{ "Name" : "b_ifog", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "h_last", "interface" : "memory", "bitwidth" : 16, "direction" : "READWRITE"} , 
  	{ "Name" : "U_slice", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY", "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 20
+set portNum 23
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -39,14 +41,17 @@ set portList {
 	{ R_ifog_address0 sc_out sc_lv 12 signal 1 } 
 	{ R_ifog_ce0 sc_out sc_logic 1 signal 1 } 
 	{ R_ifog_q0 sc_in sc_lv 16 signal 1 } 
-	{ h_last_address0 sc_out sc_lv 5 signal 2 } 
-	{ h_last_ce0 sc_out sc_logic 1 signal 2 } 
-	{ h_last_we0 sc_out sc_logic 1 signal 2 } 
-	{ h_last_d0 sc_out sc_lv 16 signal 2 } 
-	{ h_last_q0 sc_in sc_lv 16 signal 2 } 
-	{ U_slice_address0 sc_out sc_lv 9 signal 3 } 
-	{ U_slice_ce0 sc_out sc_logic 1 signal 3 } 
-	{ U_slice_q0 sc_in sc_lv 16 signal 3 } 
+	{ b_ifog_address0 sc_out sc_lv 7 signal 2 } 
+	{ b_ifog_ce0 sc_out sc_logic 1 signal 2 } 
+	{ b_ifog_q0 sc_in sc_lv 16 signal 2 } 
+	{ h_last_address0 sc_out sc_lv 5 signal 3 } 
+	{ h_last_ce0 sc_out sc_logic 1 signal 3 } 
+	{ h_last_we0 sc_out sc_logic 1 signal 3 } 
+	{ h_last_d0 sc_out sc_lv 16 signal 3 } 
+	{ h_last_q0 sc_in sc_lv 16 signal 3 } 
+	{ U_slice_address0 sc_out sc_lv 9 signal 4 } 
+	{ U_slice_ce0 sc_out sc_logic 1 signal 4 } 
+	{ U_slice_q0 sc_in sc_lv 16 signal 4 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -61,6 +66,9 @@ set NewPortList {[
  	{ "name": "R_ifog_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "R_ifog", "role": "address0" }} , 
  	{ "name": "R_ifog_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "R_ifog", "role": "ce0" }} , 
  	{ "name": "R_ifog_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "R_ifog", "role": "q0" }} , 
+ 	{ "name": "b_ifog_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "b_ifog", "role": "address0" }} , 
+ 	{ "name": "b_ifog_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "b_ifog", "role": "ce0" }} , 
+ 	{ "name": "b_ifog_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "b_ifog", "role": "q0" }} , 
  	{ "name": "h_last_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "h_last", "role": "address0" }} , 
  	{ "name": "h_last_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "h_last", "role": "ce0" }} , 
  	{ "name": "h_last_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "h_last", "role": "we0" }} , 
@@ -71,7 +79,7 @@ set NewPortList {[
  	{ "name": "U_slice_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "U_slice", "role": "q0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"],
 		"CDFG" : "lstm_forward_unidir",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -87,6 +95,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "W_ifog", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "R_ifog", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "b_ifog", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "h_last", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "c_slice", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "U_slice", "Type" : "Memory", "Direction" : "I"}]},
@@ -108,14 +117,14 @@ set RtlHierarchyInfo {[
 	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hmul_16ns_16ns_16_4_max_dsp_1_U38", "Parent" : "0"},
 	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hmul_16ns_16ns_16_4_max_dsp_1_U39", "Parent" : "0"},
 	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hcmp_16ns_16ns_1_2_1_U40", "Parent" : "0"},
-	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hcmp_16ns_16ns_1_2_1_U41", "Parent" : "0"},
-	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_mux_1287_16_1_1_U42", "Parent" : "0"}]}
+	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.main_hcmp_16ns_16ns_1_2_1_U41", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	lstm_forward_unidir {
 		W_ifog {Type I LastRead 6 FirstWrite -1}
 		R_ifog {Type I LastRead 7 FirstWrite -1}
+		b_ifog {Type I LastRead 3 FirstWrite -1}
 		h_last {Type IO LastRead 5 FirstWrite 1}
 		c_slice {Type IO LastRead -1 FirstWrite -1}
 		U_slice {Type I LastRead 4 FirstWrite -1}}}
@@ -133,6 +142,7 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	W_ifog { ap_memory {  { W_ifog_address0 mem_address 1 12 }  { W_ifog_ce0 mem_ce 1 1 }  { W_ifog_q0 mem_dout 0 16 } } }
 	R_ifog { ap_memory {  { R_ifog_address0 mem_address 1 12 }  { R_ifog_ce0 mem_ce 1 1 }  { R_ifog_q0 mem_dout 0 16 } } }
+	b_ifog { ap_memory {  { b_ifog_address0 mem_address 1 7 }  { b_ifog_ce0 mem_ce 1 1 }  { b_ifog_q0 mem_dout 0 16 } } }
 	h_last { ap_memory {  { h_last_address0 mem_address 1 5 }  { h_last_ce0 mem_ce 1 1 }  { h_last_we0 mem_we 1 1 }  { h_last_d0 mem_din 1 16 }  { h_last_q0 mem_dout 0 16 } } }
 	U_slice { ap_memory {  { U_slice_address0 mem_address 1 9 }  { U_slice_ce0 mem_ce 1 1 }  { U_slice_q0 mem_dout 0 16 } } }
 }
