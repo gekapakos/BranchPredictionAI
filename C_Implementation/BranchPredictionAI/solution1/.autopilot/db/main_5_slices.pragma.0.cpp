@@ -98945,7 +98945,8 @@ enum { T4=582, P4=48, T14=T4-K+1, T24=T14/P4 };
 
 
 static half h_slice[H], c_slice[H];
-# 50 "main_5_slices.cpp"
+
+
 static inline half sigmoidf(half x) {
 #pragma HLS INLINE
 
@@ -99101,7 +99102,38 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
 #pragma HLS RESOURCE variable=&ConvW2 core=ROM_1P_LUTRAM
 #pragma HLS RESOURCE variable=&ConvW3 core=ROM_1P_LUTRAM
 #pragma HLS RESOURCE variable=&ConvW4 core=ROM_1P_LUTRAM
-# 244 "main_5_slices.cpp"
+
+
+#pragma HLS ARRAY_PARTITION variable=&BN1_gamma0 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_beta0 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_mean0 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_var0 complete
+#pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog0 complete
+
+#pragma HLS ARRAY_PARTITION variable=&BN1_gamma1 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_beta1 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_mean1 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_var1 complete
+#pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog1 complete
+
+#pragma HLS ARRAY_PARTITION variable=&BN1_gamma2 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_beta2 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_mean2 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_var2 complete
+#pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog2 complete
+
+#pragma HLS ARRAY_PARTITION variable=&BN1_gamma3 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_beta3 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_mean3 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_var3 complete
+#pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog3 complete
+
+#pragma HLS ARRAY_PARTITION variable=&BN1_gamma4 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_beta4 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_mean4 complete
+#pragma HLS ARRAY_PARTITION variable=&BN1_var4 complete
+#pragma HLS ARRAY_PARTITION variable=&LSTM_b_ifog4 complete
+
  const half BN_eps = 1e-3f;
     int j;
     for (j = 0; j < H; ++j) {

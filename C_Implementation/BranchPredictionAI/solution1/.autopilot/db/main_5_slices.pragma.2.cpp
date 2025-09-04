@@ -98945,7 +98945,8 @@ enum { T4=582, P4=48, T14=T4-K+1, T24=T14/P4 };
 
 
 static half h_slice[H], c_slice[H];
-# 50 "main_5_slices.cpp"
+
+
 static inline half sigmoidf(half x) {
 _ssdm_InlineSelf(0, "");
 
@@ -99101,7 +99102,38 @@ _ssdm_op_SpecResource(&ConvW1, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
 _ssdm_op_SpecResource(&ConvW2, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
 _ssdm_op_SpecResource(&ConvW3, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
 _ssdm_op_SpecResource(&ConvW4, "", "ROM_1P_LUTRAM", "", -1, "", "", "", "", "");
-# 244 "main_5_slices.cpp"
+
+
+_ssdm_SpecArrayPartition( &BN1_gamma0, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_beta0, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_mean0, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_var0, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &LSTM_b_ifog0, 1, "COMPLETE", 0, "");
+
+_ssdm_SpecArrayPartition( &BN1_gamma1, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_beta1, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_mean1, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_var1, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &LSTM_b_ifog1, 1, "COMPLETE", 0, "");
+
+_ssdm_SpecArrayPartition( &BN1_gamma2, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_beta2, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_mean2, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_var2, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &LSTM_b_ifog2, 1, "COMPLETE", 0, "");
+
+_ssdm_SpecArrayPartition( &BN1_gamma3, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_beta3, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_mean3, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_var3, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &LSTM_b_ifog3, 1, "COMPLETE", 0, "");
+
+_ssdm_SpecArrayPartition( &BN1_gamma4, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_beta4, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_mean4, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &BN1_var4, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( &LSTM_b_ifog4, 1, "COMPLETE", 0, "");
+
  const half BN_eps = 1e-3f;
     int j;
     for (j = 0; j < H; ++j) {
