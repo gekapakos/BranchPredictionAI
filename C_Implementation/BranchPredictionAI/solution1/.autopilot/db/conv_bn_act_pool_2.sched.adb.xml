@@ -3259,7 +3259,7 @@ branch95:1  br label %.preheader4.backedge
 :0  ret void
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln115"/></StgValue>
+<StgValue><ssdm name="ret_ln116"/></StgValue>
 </operation>
 </state>
 
@@ -6841,7 +6841,7 @@ branch63:0  br label %.preheader2.backedge
 :2  store i32 %u, i32* %u_3
 
 ]]></Node>
-<StgValue><ssdm name="store_ln113"/></StgValue>
+<StgValue><ssdm name="store_ln114"/></StgValue>
 </operation>
 
 <operation id="457" st_id="39" stage="1" lat="1">
@@ -6857,7 +6857,7 @@ branch63:0  br label %.preheader2.backedge
 :3  store i32 0, i32* %pc_3
 
 ]]></Node>
-<StgValue><ssdm name="store_ln113"/></StgValue>
+<StgValue><ssdm name="store_ln114"/></StgValue>
 </operation>
 
 <operation id="458" st_id="39" stage="1" lat="1">
@@ -6873,7 +6873,7 @@ branch63:0  br label %.preheader2.backedge
 :4  br label %.preheader3.backedge
 
 ]]></Node>
-<StgValue><ssdm name="br_ln113"/></StgValue>
+<StgValue><ssdm name="br_ln114"/></StgValue>
 </operation>
 </state>
 

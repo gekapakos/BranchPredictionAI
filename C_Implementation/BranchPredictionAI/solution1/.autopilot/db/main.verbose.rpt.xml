@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'main'" level="0">
-<item name = "Date">Thu Sep  4 16:50:59 2025
+<item name = "Date">Fri Sep  5 12:54:27 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -103,8 +103,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln173_1_fu_802_p2">+, 0, 0, 19, 14, 14</column>
-<column name="add_ln173_fu_699_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln178_1_fu_802_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln178_fu_699_p2">+, 0, 0, 12, 12, 12</column>
 <column name="c_5_fu_818_p2">+, 0, 0, 15, 8, 1</column>
 <column name="c_fu_715_p2">+, 0, 0, 15, 8, 1</column>
 <column name="i_1_fu_779_p2">+, 0, 0, 15, 8, 1</column>
@@ -113,14 +113,14 @@
 <column name="j_12_fu_763_p2">+, 0, 0, 15, 8, 1</column>
 <column name="j_13_fu_837_p2">+, 0, 0, 15, 8, 1</column>
 <column name="j_fu_734_p2">+, 0, 0, 15, 8, 1</column>
-<column name="icmp_ln160_5_fu_812_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln160_fu_709_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln170_1_fu_757_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln170_fu_654_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln172_1_fu_773_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln172_fu_670_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln373_fu_728_p2">icmp, 0, 0, 13, 8, 9</column>
-<column name="icmp_ln378_fu_831_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln164_5_fu_812_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln164_fu_709_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln174_1_fu_757_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln174_fu_654_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln176_1_fu_773_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln176_fu_670_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln377_fu_728_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="icmp_ln382_fu_831_p2">icmp, 0, 0, 13, 8, 9</column>
 <column name="select_ln53_1_fu_848_p3">select, 0, 0, 16, 1, 16</column>
 <column name="select_ln53_fu_745_p3">select, 0, 0, 16, 1, 16</column>
 </table>
@@ -198,8 +198,8 @@
 <column name="z0_addr_reg_910">7, 0, 7, 0</column>
 <column name="z1_addr_1_reg_1035">7, 0, 7, 0</column>
 <column name="z1_addr_reg_1002">7, 0, 7, 0</column>
-<column name="zext_ln171_1_reg_966">8, 0, 64, 56</column>
-<column name="zext_ln171_reg_869">8, 0, 64, 56</column>
+<column name="zext_ln175_1_reg_966">8, 0, 64, 56</column>
+<column name="zext_ln175_reg_869">8, 0, 64, 56</column>
 </table>
 </item>
 </section>

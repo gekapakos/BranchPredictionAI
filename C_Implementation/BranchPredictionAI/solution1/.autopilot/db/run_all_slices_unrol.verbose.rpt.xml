@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'run_all_slices_unrol'" level="0">
-<item name = "Date">Thu Sep  4 16:50:55 2025
+<item name = "Date">Fri Sep  5 12:54:23 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -154,17 +154,17 @@
 <column name="and_ln47_3_fu_1078_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln47_4_fu_1149_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln47_fu_865_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln160_1_fu_893_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln160_2_fu_964_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln160_3_fu_1035_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln160_4_fu_1106_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln160_fu_822_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln285_fu_805_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln298_fu_841_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln312_fu_912_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln326_fu_983_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln340_fu_1054_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln354_fu_1125_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln164_1_fu_893_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln164_2_fu_964_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln164_3_fu_1035_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln164_4_fu_1106_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln164_fu_822_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln289_fu_805_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln302_fu_841_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln316_fu_912_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln330_fu_983_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln344_fu_1054_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln358_fu_1125_p2">icmp, 0, 0, 11, 6, 7</column>
 <column name="or_ln47_1_fu_950_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln47_2_fu_1021_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln47_3_fu_1092_p2">or, 0, 0, 2, 1, 1</column>

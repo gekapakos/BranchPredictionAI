@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'conv_bn_act_pool_1'
 ================================================================
-* Date:           Thu Sep  4 16:50:07 2025
+* Date:           Fri Sep  5 12:53:30 2025
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BranchPredictionAI
@@ -352,7 +352,7 @@ ST_4 : Operation 227 [1/1] (1.66ns)   --->   "%icmp_ln97 = icmp eq i9 %t_0, -224
 ST_4 : Operation 228 [1/1] (1.82ns)   --->   "%t = add i9 %t_0, 1" [main_5_slices.cpp:97]   --->   Operation 228 'add' 't' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 229 [1/1] (0.00ns)   --->   "br i1 %icmp_ln97, label %8, label %.preheader2.preheader" [main_5_slices.cpp:97]   --->   Operation 229 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 230 [1/1] (1.76ns)   --->   "br label %.preheader2" [main_5_slices.cpp:98]   --->   Operation 230 'br' <Predicate = (!icmp_ln97)> <Delay = 1.76>
-ST_4 : Operation 231 [1/1] (0.00ns)   --->   "ret void" [main_5_slices.cpp:115]   --->   Operation 231 'ret' <Predicate = (icmp_ln97)> <Delay = 0.00>
+ST_4 : Operation 231 [1/1] (0.00ns)   --->   "ret void" [main_5_slices.cpp:116]   --->   Operation 231 'ret' <Predicate = (icmp_ln97)> <Delay = 0.00>
 
 State 5 <SV = 3> <Delay = 5.02>
 ST_5 : Operation 232 [1/1] (0.00ns)   --->   "%pool_acc_31_3 = phi half [ %pool_acc_31_2, %.preheader2.preheader ], [ %pool_acc_31_3_be, %.preheader2.backedge ]" [main_5_slices.cpp:108]   --->   Operation 232 'phi' 'pool_acc_31_3' <Predicate = true> <Delay = 0.00>
@@ -677,11 +677,11 @@ ST_39 : Operation 450 [1/1] (0.00ns)   --->   "br i1 %icmp_ln111, label %7, labe
 ST_39 : Operation 451 [1/1] (0.00ns)   --->   "%trunc_ln111 = trunc i6 %f3_0 to i5" [main_5_slices.cpp:111]   --->   Operation 451 'trunc' 'trunc_ln111' <Predicate = (!icmp_ln111)> <Delay = 0.00>
 ST_39 : Operation 452 [1/1] (3.20ns)   --->   "%tmp_8 = call half @_ssdm_op_Mux.ap_auto.32half.i5(half %pool_acc_0_5, half %pool_acc_1_5, half %pool_acc_2_5, half %pool_acc_3_5, half %pool_acc_4_5, half %pool_acc_5_5, half %pool_acc_6_5, half %pool_acc_7_5, half %pool_acc_8_5, half %pool_acc_9_5, half %pool_acc_10_5, half %pool_acc_11_5, half %pool_acc_12_5, half %pool_acc_13_5, half %pool_acc_14_5, half %pool_acc_15_5, half %pool_acc_16_5, half %pool_acc_17_5, half %pool_acc_18_5, half %pool_acc_19_5, half %pool_acc_20_5, half %pool_acc_21_5, half %pool_acc_22_5, half %pool_acc_23_5, half %pool_acc_24_5, half %pool_acc_25_5, half %pool_acc_26_5, half %pool_acc_27_5, half %pool_acc_28_5, half %pool_acc_29_5, half %pool_acc_30_5, half %pool_acc_31_5, i5 %trunc_ln111)" [main_5_slices.cpp:111]   --->   Operation 452 'mux' 'tmp_8' <Predicate = (!icmp_ln111)> <Delay = 3.20> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 3.20> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_39 : Operation 453 [1/1] (2.55ns)   --->   "%add_ln111 = add nsw i32 %shl_ln111, %zext_ln111" [main_5_slices.cpp:111]   --->   Operation 453 'add' 'add_ln111' <Predicate = (!icmp_ln111)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_39 : Operation 454 [1/1] (0.00ns)   --->   "%u_4_load_1 = load i32* %u_4" [main_5_slices.cpp:112]   --->   Operation 454 'load' 'u_4_load_1' <Predicate = (icmp_ln111)> <Delay = 0.00>
-ST_39 : Operation 455 [1/1] (2.55ns)   --->   "%u = add nsw i32 %u_4_load_1, 1" [main_5_slices.cpp:112]   --->   Operation 455 'add' 'u' <Predicate = (icmp_ln111)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_39 : Operation 456 [1/1] (1.76ns)   --->   "store i32 %u, i32* %u_4" [main_5_slices.cpp:113]   --->   Operation 456 'store' <Predicate = (icmp_ln111)> <Delay = 1.76>
-ST_39 : Operation 457 [1/1] (1.76ns)   --->   "store i32 0, i32* %pc_4" [main_5_slices.cpp:113]   --->   Operation 457 'store' <Predicate = (icmp_ln111)> <Delay = 1.76>
-ST_39 : Operation 458 [1/1] (1.76ns)   --->   "br label %.preheader3.backedge" [main_5_slices.cpp:113]   --->   Operation 458 'br' <Predicate = (icmp_ln111)> <Delay = 1.76>
+ST_39 : Operation 454 [1/1] (0.00ns)   --->   "%u_4_load_1 = load i32* %u_4" [main_5_slices.cpp:113]   --->   Operation 454 'load' 'u_4_load_1' <Predicate = (icmp_ln111)> <Delay = 0.00>
+ST_39 : Operation 455 [1/1] (2.55ns)   --->   "%u = add nsw i32 %u_4_load_1, 1" [main_5_slices.cpp:113]   --->   Operation 455 'add' 'u' <Predicate = (icmp_ln111)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 456 [1/1] (1.76ns)   --->   "store i32 %u, i32* %u_4" [main_5_slices.cpp:114]   --->   Operation 456 'store' <Predicate = (icmp_ln111)> <Delay = 1.76>
+ST_39 : Operation 457 [1/1] (1.76ns)   --->   "store i32 0, i32* %pc_4" [main_5_slices.cpp:114]   --->   Operation 457 'store' <Predicate = (icmp_ln111)> <Delay = 1.76>
+ST_39 : Operation 458 [1/1] (1.76ns)   --->   "br label %.preheader3.backedge" [main_5_slices.cpp:114]   --->   Operation 458 'br' <Predicate = (icmp_ln111)> <Delay = 1.76>
 
 State 40 <SV = 5> <Delay = 7.97>
 ST_40 : Operation 459 [7/7] (7.97ns)   --->   "%tmp_s = fdiv half %tmp_8, 0x4038000000000000" [main_5_slices.cpp:111]   --->   Operation 459 'hdiv' 'tmp_s' <Predicate = true> <Delay = 7.97> <Core = "HDiv">   --->   Core 92 'HDiv' <Latency = 6> <II = 1> <Delay = 7.97> <FuncUnit> <Opcode : 'hdiv'> <InPorts = 2> <OutPorts = 1>
@@ -1015,9 +1015,9 @@ The critical path consists of the following:
 
  <State 39>: 4.32ns
 The critical path consists of the following:
-	'load' operation ('u_4_load_1', main_5_slices.cpp:112) on local variable 'u' [569]  (0 ns)
-	'add' operation ('u', main_5_slices.cpp:112) [570]  (2.55 ns)
-	'store' operation ('store_ln113', main_5_slices.cpp:113) of variable 'u', main_5_slices.cpp:112 on local variable 'u' [571]  (1.77 ns)
+	'load' operation ('u_4_load_1', main_5_slices.cpp:113) on local variable 'u' [569]  (0 ns)
+	'add' operation ('u', main_5_slices.cpp:113) [570]  (2.55 ns)
+	'store' operation ('store_ln114', main_5_slices.cpp:114) of variable 'u', main_5_slices.cpp:113 on local variable 'u' [571]  (1.77 ns)
 
  <State 40>: 7.98ns
 The critical path consists of the following:

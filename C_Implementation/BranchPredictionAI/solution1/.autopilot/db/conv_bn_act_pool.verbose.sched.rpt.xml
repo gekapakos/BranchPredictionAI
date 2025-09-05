@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool'" level="0">
-<item name = "Date">Thu Sep  4 16:50:15 2025
+<item name = "Date">Fri Sep  5 12:53:39 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>

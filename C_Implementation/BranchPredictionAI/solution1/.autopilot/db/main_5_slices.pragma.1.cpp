@@ -99025,7 +99025,8 @@ _ssdm_SpecArrayPartition( pool_acc, 1, "COMPLETE", 0, "");
         }
         if (++pc == Psz) {
             for (int f=0; f<F; ++f) { U[u*F + f] = pool_acc[f] / (half)Psz; pool_acc[f]=(half)0.0f; }
-            pc = 0; ++u;
+            pc = 0;
+            ++u;
         }
     }
 }
@@ -99037,45 +99038,48 @@ static inline void lstm_forward_unidir(const half *x,int Tlen,int D,
     half *h_last,half *c_last)
 {
     int j;
-    for(j=0;j<H;++j){ h_last[j]=0.0f; c_last[j]=0.0f; }
+    for(j = 0; j < H; ++j) {
+        h_last[j] = 0.0f;
+        c_last[j] = 0.0f;
+    }
     half z[4*H];
 
-    for(int t=0;t<Tlen;++t){
+    for(int t = 0; t < Tlen; ++t) {
 
         for(int g=0; g<4*H; ++g) z[g] = b_ifog[g];
 
 
         const half *xt = x + t*D;
-        for(int d=0; d<D; ++d){
+        for(int d = 0; d < D; ++d) {
             half xv = xt[d];
-            const half *Wd = W_ifog + d*(4*H);
+            const half *Wd = W_ifog + d * (4 * H);
             for(int g=0; g<4*H; ++g) z[g] += xv * Wd[g];
         }
 
-        for(int hp=0; hp<H; ++hp){
+        for(int hp = 0; hp < H; ++hp){
             half hv = h_last[hp];
-            const half *Rh = R_ifog + hp*(4*H);
+            const half *Rh = R_ifog + hp * (4 * H);
             for(int g=0; g<4*H; ++g) z[g] += hv * Rh[g];
         }
 
-        for(j=0;j<H;++j){
-            half i = 1.f/(1.f+expf(-z[0*H + j]));
-            half f = 1.f/(1.f+expf(-z[1*H + j]));
-            half o = 1.f/(1.f+expf(-z[2*H + j]));
-            half g = tanhf_fast(z[3*H + j]);
+        for(j = 0; j < H; ++j) {
+            half i = 1.f / (1.f + expf(-z[0 * H + j]));
+            half f = 1.f / (1.f + expf(-z[1 * H + j]));
+            half o = 1.f / (1.f + expf(-z[2 * H + j]));
+            half g = tanhf_fast(z[3 * H + j]);
             half c = f * c_last[j] + i * g;
             half h = o * tanhf_fast(c);
-            c_last[j]=c; h_last[j]=h;
+            c_last[j] = c; h_last[j] = h;
         }
     }
 }
 
-static inline void bn_vector(half *v,int C, const half *gamma,const half *beta,const half *mean,const half *var,half eps)
+static inline void bn_vector(half *v, int C, const half *gamma, const half *beta, const half *mean, const half *var, half eps)
 {
 _ssdm_InlineSelf(0, "");
  for(int c = 0; c < C; ++c){
-        half n = (v[c]-mean[c]) / sqrtf(var[c]+eps);
-        v[c] = gamma[c]*n + beta[c];
+        half n = (v[c] - mean[c]) / sqrtf(var[c] + eps);
+        v[c] = gamma[c] * n + beta[c];
     }
 }
 
@@ -99086,12 +99090,12 @@ static inline void dense_forward(const half *x,int In,
     for(int j = 0; j < Out; ++j) {
         acc = b ? b[j] : 0.0f;
         for(int i = 0; i < In; ++i) {
+
             acc += x[i] * W[i * Out + j];
         }
         y[j] = acc;
     }
 }
-
 
 static half U_slice[T24*F];
 
