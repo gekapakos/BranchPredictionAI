@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'embedding_forward_dy'
 ================================================================
-* Date:           Fri Sep  5 18:20:15 2025
+* Date:           Fri Sep  5 20:29:32 2025
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BranchPredictionAI
@@ -254,8 +254,8 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'phi' operation ('e') with incoming values : ('e', main_5_slices.cpp:67) [40]  (0 ns)
 	'add' operation ('add_ln68_2', main_5_slices.cpp:68) [51]  (1.73 ns)
-	'getelementptr' operation ('Emb4_10_addr', main_5_slices.cpp:68) [63]  (0 ns)
-	'load' operation ('Emb4_10_load', main_5_slices.cpp:68) on array 'Emb4_10' [95]  (3.25 ns)
+	'getelementptr' operation ('Emb4_7_addr', main_5_slices.cpp:68) [60]  (0 ns)
+	'load' operation ('Emb4_7_load', main_5_slices.cpp:68) on array 'Emb4_7' [104]  (3.25 ns)
 
  <State 5>: 3.25ns
 The critical path consists of the following:

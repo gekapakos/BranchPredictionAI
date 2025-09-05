@@ -51,7 +51,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5760282", "EstimateLatencyMax" : "5783394",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2730522", "EstimateLatencyMax" : "2753634",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -87,8 +87,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "5760282", "Max" : "5783394"}
-	, {"Name" : "Interval", "Min" : "5760282", "Max" : "5783394"}
+	{"Name" : "Latency", "Min" : "2730522", "Max" : "2753634"}
+	, {"Name" : "Interval", "Min" : "2730522", "Max" : "2753634"}
 ]}
 
 set PipelineEnableSignalInfo {[

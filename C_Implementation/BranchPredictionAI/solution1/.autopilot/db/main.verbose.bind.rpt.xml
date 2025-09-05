@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'main'" level="0">
-<item name = "Date">Fri Sep  5 18:20:36 2025
+<item name = "Date">Fri Sep  5 20:30:00 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.800, 1.25</column>
+<column name="ap_clk">10.00, 8.981, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">95125834, 95484070, 95125834, 95484070, none</column>
+<column name="">48164554, 48522790, 48164554, 48522790, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_run_all_slices_unrol_fu_457">run_all_slices_unrol, 94886467, 95244703, 94886467, 95244703, none</column>
+<column name="grp_run_all_slices_unrol_fu_457">run_all_slices_unrol, 47925187, 48283423, 47925187, 48283423, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'run_all_slices_unrol'" level="0">
-<item name = "Date">Fri Sep  5 18:21:03 2025
+<item name = "Date">Fri Sep  5 20:30:47 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.800, 1.25</column>
+<column name="ap_clk">10.00, 8.981, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">94886467, 95244703, 94886467, 95244703, none</column>
+<column name="">47925187, 48283423, 47925187, 48283423, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,11 +32,11 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
 <column name="grp_lstm_forward_unidir_fu_604">lstm_forward_unidir, 1107166, 1107166, 1107166, 1107166, none</column>
-<column name="grp_conv_bn_act_pool_fu_632">conv_bn_act_pool, 46081794, 46266690, 46081794, 46266690, none</column>
-<column name="grp_conv_bn_act_pool_1_fu_641">conv_bn_act_pool_1, 23040930, 23133378, 23040930, 23133378, none</column>
-<column name="grp_conv_bn_act_pool_2_fu_651">conv_bn_act_pool_2, 11520498, 11566722, 11520498, 11566722, none</column>
-<column name="grp_conv_bn_act_pool_3_fu_661">conv_bn_act_pool_3, 5760282, 5783394, 5760282, 5783394, none</column>
-<column name="grp_conv_bn_act_pool_4_fu_671">conv_bn_act_pool_4, 2880174, 2891730, 2880174, 2891730, none</column>
+<column name="grp_conv_bn_act_pool_fu_632">conv_bn_act_pool, 21843714, 22028610, 21843714, 22028610, none</column>
+<column name="grp_conv_bn_act_pool_1_fu_641">conv_bn_act_pool_1, 10921890, 11014338, 10921890, 11014338, none</column>
+<column name="grp_conv_bn_act_pool_2_fu_651">conv_bn_act_pool_2, 5460978, 5507202, 5460978, 5507202, none</column>
+<column name="grp_conv_bn_act_pool_3_fu_661">conv_bn_act_pool_3, 2730522, 2753634, 2730522, 2753634, none</column>
+<column name="grp_conv_bn_act_pool_4_fu_671">conv_bn_act_pool_4, 1365294, 1376850, 1365294, 1376850, none</column>
 <column name="grp_embedding_forward_dy_fu_681">embedding_forward_dy, 57619, 57619, 57619, 57619, none</column>
 </table>
 </item>
@@ -67,23 +67,23 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 476, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">51, 77, 26045, 29264, 0</column>
+<column name="Instance">51, 77, 30390, 37232, 0</column>
 <column name="Memory">33, -, 432, 88, 0</column>
 <column name="Multiplexer">-, -, -, 2180, -</column>
 <column name="Register">-, -, 908, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">30, 35, 25, 60, 0</specialColumn>
+<specialColumn name="Utilization (%)">30, 35, 29, 75, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_conv_bn_act_pool_fu_632">conv_bn_act_pool, 0, 9, 4068, 4192, 0</column>
-<column name="grp_conv_bn_act_pool_1_fu_641">conv_bn_act_pool_1, 16, 9, 4065, 4192, 0</column>
-<column name="grp_conv_bn_act_pool_2_fu_651">conv_bn_act_pool_2, 8, 9, 4062, 4188, 0</column>
-<column name="grp_conv_bn_act_pool_3_fu_661">conv_bn_act_pool_3, 4, 9, 4059, 4183, 0</column>
-<column name="grp_conv_bn_act_pool_4_fu_671">conv_bn_act_pool_4, 2, 9, 4056, 4184, 0</column>
+<column name="grp_conv_bn_act_pool_fu_632">conv_bn_act_pool, 0, 9, 4937, 5843, 0</column>
+<column name="grp_conv_bn_act_pool_1_fu_641">conv_bn_act_pool_1, 16, 9, 4934, 5814, 0</column>
+<column name="grp_conv_bn_act_pool_2_fu_651">conv_bn_act_pool_2, 8, 9, 4931, 5781, 0</column>
+<column name="grp_conv_bn_act_pool_3_fu_661">conv_bn_act_pool_3, 4, 9, 4928, 5750, 0</column>
+<column name="grp_conv_bn_act_pool_4_fu_671">conv_bn_act_pool_4, 2, 9, 4925, 5719, 0</column>
 <column name="grp_embedding_forward_dy_fu_681">embedding_forward_dy, 20, 0, 90, 260, 0</column>
 <column name="grp_lstm_forward_unidir_fu_604">lstm_forward_unidir, 1, 28, 4095, 6220, 0</column>
 <column name="main_fdiv_32ns_32ns_32_16_1_U133">main_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
@@ -154,17 +154,17 @@
 <column name="and_ln47_3_fu_1082_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln47_4_fu_1153_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln47_fu_869_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln169_1_fu_897_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln169_2_fu_968_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln169_3_fu_1039_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln169_4_fu_1110_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln169_fu_826_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln294_fu_809_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln307_fu_845_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln321_fu_916_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln335_fu_987_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln349_fu_1058_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln363_fu_1129_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln174_1_fu_897_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln174_2_fu_968_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln174_3_fu_1039_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln174_4_fu_1110_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln174_fu_826_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln299_fu_809_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln312_fu_845_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln326_fu_916_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln340_fu_987_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln354_fu_1058_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln368_fu_1129_p2">icmp, 0, 0, 11, 6, 7</column>
 <column name="or_ln47_1_fu_954_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln47_2_fu_1025_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln47_3_fu_1096_p2">or, 0, 0, 2, 1, 1</column>

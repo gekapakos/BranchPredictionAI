@@ -78,15 +78,17 @@ static inline void conv_bn_act_pool(
     half eps, act_t a, int Psz, half *U)
 {
     const int T1 = Tlen - Ksz + 1;
+    int t, f, k, e;
 
     // Precompute BN affine params once
     half a_bn[F], b_bn[F];
+    float inv, a_f, b_f;
     #pragma HLS ARRAY_PARTITION variable=a_bn complete
     #pragma HLS ARRAY_PARTITION variable=b_bn complete
     BNParamsLoop: for (int f = 0; f < F; ++f) {
-        float inv = 1.0f / sqrtf((float)var[f] + (float)eps);
-        float a_f = (float)gamma[f] * inv;
-        float b_f = (float)beta[f]  - (float)mean[f] * a_f;
+        inv = 1.0f / sqrtf((float)var[f] + (float)eps);
+        a_f = (float)gamma[f] * inv;
+        b_f = (float)beta[f]  - (float)mean[f] * a_f;
         a_bn[f] = (half)a_f;
         b_bn[f] = (half)b_f;
     }
@@ -96,21 +98,24 @@ static inline void conv_bn_act_pool(
     InitPoolAcc: for (int f = 0; f < F; ++f) pool_acc[f] = (half)0.0f;
 
     int pc = 0, u = 0;
-    Loop1Big: for (int t = 0; t < T1; ++t) {
-        Loop2Big: for (int f = 0; f < F; ++f) {
+    Loop1Big: for (t = 0; t < T1; ++t) {
+        Loop2Big: for (f = 0; f < F; ++f) {
             half acc = B ? B[f] : (half)0.0f;
-            Loop3_1Big: for (int k = 0; k < Ksz; ++k) {
+            Loop3_1Big: for (k = 0; k < Ksz; ++k) {
                 const half *xrow = X + (t + k) * E;
                 const half *wf   = W + (k * E) * F + f;
-                Loop4Big: for (int e = 0; e < E; ++e) acc += xrow[e] * wf[e*F];
+                Loop4Big: for (e = 0; e < E; ++e) {
+                    #pragma HLS UNROLL
+                    acc += xrow[e] * wf[e*F];
+                }
             }
             // BN (affine) + activation
-            half y = (half)((float)a_bn[f]*(float)acc + (float)b_bn[f]);
-            y = (a==ACT_RELU)? reluf(y) : (a==ACT_TANH? tanhf_fast(y) : sigmoidf(y));
+            half y = (half)((float)a_bn[f] * (float)acc + (float)b_bn[f]);
+            y = (a == ACT_RELU) ? reluf(y) : (a == ACT_TANH ? tanhf_fast(y) : sigmoidf(y));
             pool_acc[f] += y;
         }
         if (++pc == Psz) {
-            Loop3_2Big: for (int f = 0; f < F; ++f) { 
+            Loop3_2Big: for (f = 0; f < F; ++f) { 
                 U[u*F + f] = pool_acc[f] / (half)Psz; 
                 pool_acc[f] = (half)0.0f; 
             }
@@ -142,7 +147,7 @@ static inline void lstm_forward_unidir(const half *x,int Tlen,int D,
         Loop2_2LSTM: for(int d = 0; d < D; ++d) {
             half xv = xt[d];
             const half *Wd = W_ifog + d * (4 * H);
-            Loop3_2_1LSTM: for(int g=0; g<4*H; ++g) z[g] += xv * Wd[g];
+            Loop3_2_1LSTM: for(int g = 0; g < 4 * H; ++g) z[g] += xv * Wd[g];
         }
         // recurrent part
         Loop2_3LSTM: for(int hp = 0; hp < H; ++hp){

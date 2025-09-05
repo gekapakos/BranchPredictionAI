@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'run_all_slices_unrol'" level="0">
-<item name = "Date">Fri Sep  5 18:20:29 2025
+<item name = "Date">Fri Sep  5 20:29:53 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.800, 1.25</column>
+<column name="ap_clk">10.00, 8.981, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">94886467, 95244703, 94886467, 95244703, none</column>
+<column name="">47925187, 48283423, 47925187, 48283423, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,11 +32,11 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
 <column name="grp_lstm_forward_unidir_fu_604">lstm_forward_unidir, 1107166, 1107166, 1107166, 1107166, none</column>
-<column name="grp_conv_bn_act_pool_fu_632">conv_bn_act_pool, 46081794, 46266690, 46081794, 46266690, none</column>
-<column name="grp_conv_bn_act_pool_1_fu_641">conv_bn_act_pool_1, 23040930, 23133378, 23040930, 23133378, none</column>
-<column name="grp_conv_bn_act_pool_2_fu_651">conv_bn_act_pool_2, 11520498, 11566722, 11520498, 11566722, none</column>
-<column name="grp_conv_bn_act_pool_3_fu_661">conv_bn_act_pool_3, 5760282, 5783394, 5760282, 5783394, none</column>
-<column name="grp_conv_bn_act_pool_4_fu_671">conv_bn_act_pool_4, 2880174, 2891730, 2880174, 2891730, none</column>
+<column name="grp_conv_bn_act_pool_fu_632">conv_bn_act_pool, 21843714, 22028610, 21843714, 22028610, none</column>
+<column name="grp_conv_bn_act_pool_1_fu_641">conv_bn_act_pool_1, 10921890, 11014338, 10921890, 11014338, none</column>
+<column name="grp_conv_bn_act_pool_2_fu_651">conv_bn_act_pool_2, 5460978, 5507202, 5460978, 5507202, none</column>
+<column name="grp_conv_bn_act_pool_3_fu_661">conv_bn_act_pool_3, 2730522, 2753634, 2730522, 2753634, none</column>
+<column name="grp_conv_bn_act_pool_4_fu_671">conv_bn_act_pool_4, 1365294, 1376850, 1365294, 1376850, none</column>
 <column name="grp_embedding_forward_dy_fu_681">embedding_forward_dy, 57619, 57619, 57619, 57619, none</column>
 </table>
 </item>

@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'gkapakos' on host 'gkapakos-Type1ProductConfigId' (Linux_x86_64 version 6.8.0-79-generic) on Fri Sep 05 18:16:33 EEST 2025
+INFO: [HLS 200-10] For user 'gkapakos' on host 'gkapakos-Type1ProductConfigId' (Linux_x86_64 version 6.8.0-79-generic) on Fri Sep 05 20:25:33 EEST 2025
 INFO: [HLS 200-10] On os Ubuntu 24.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation'
 Sourcing Tcl script '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/solution1/csynth.tcl'
@@ -16,32 +16,37 @@ INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'main_5_slices.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1120 ; free virtual = 11364
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1117 ; free virtual = 11361
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1205 ; free virtual = 11234
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1205 ; free virtual = 11234
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-603] Inlining function 'reluf' into 'conv_bn_act_pool' (main_5_slices.cpp:109).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'conv_bn_act_pool' (main_5_slices.cpp:114).
+INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:392).
 INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:387).
-INFO: [XFORM 203-603] Inlining function 'reluf' into 'main' (main_5_slices.cpp:382).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:160).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:158).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:364).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:350).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:336).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:322).
-INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:308).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:381).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:165).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'lstm_forward_unidir' (main_5_slices.cpp:163).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:369).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:355).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:341).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:327).
+INFO: [XFORM 203-603] Inlining function 'tanhf_fast' into 'run_all_slices_unrolled' (main_5_slices.cpp:313).
 INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:386).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:306).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:320).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:334).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:348).
-INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:362).
-INFO: [XFORM 203-603] Inlining function 'sigmoidf' into 'main' (main_5_slices.cpp:391).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:42 ; elapsed = 00:01:44 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 947 ; free virtual = 11338
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'main' (main_5_slices.cpp:391).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:311).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:325).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:339).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:353).
+INFO: [XFORM 203-603] Inlining function 'bn_vector' into 'run_all_slices_unrolled' (main_5_slices.cpp:367).
+INFO: [XFORM 203-603] Inlining function 'sigmoidf' into 'main' (main_5_slices.cpp:396).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 1238 ; free virtual = 11349
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:357) automatically.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:20 ; elapsed = 00:02:22 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 793 ; free virtual = 11162
-INFO: [XFORM 203-102] Partitioning array 'y_lin' (main_5_slices.cpp:389) automatically.
+INFO: [XFORM 203-602] Inlining function 'embedding_forward_dyn' into 'run_all_slices_unrolled' (main_5_slices.cpp:362) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:15 ; elapsed = 00:02:16 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 1226 ; free virtual = 11323
+INFO: [HLS 200-489] Unrolling loop 'Loop4Big' (main_5_slices.cpp:107) in function 'conv_bn_act_pool' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop4Big' (main_5_slices.cpp:107) in function 'conv_bn_act_pool.1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop4Big' (main_5_slices.cpp:107) in function 'conv_bn_act_pool.2' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop4Big' (main_5_slices.cpp:107) in function 'conv_bn_act_pool.3' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop4Big' (main_5_slices.cpp:107) in function 'conv_bn_act_pool.4' completely with a factor of 32.
+INFO: [XFORM 203-102] Partitioning array 'y_lin' (main_5_slices.cpp:394) automatically.
 INFO: [XFORM 203-102] Automatically partitioning small array 'output_b' completely based on array size.
 WARNING: [XFORM 203-105] Ignore complete array partition directive on 'BN1_gamma0'  in dimension 1: conflict with memory core assignment directive.
 .
@@ -130,26 +135,88 @@ WARNING: [XFORM 203-105] Ignore complete array partition directive on 'ConvW4'  
 INFO: [XFORM 203-101] Partitioning array 'Emb4'  in dimension 1 with a block factor 128.
 INFO: [XFORM 203-101] Partitioning array 'a_bn'  in dimension 1 completely.
 INFO: [XFORM 203-101] Partitioning array 'b_bn'  in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:94) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:94) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:94) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:94) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:94) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:96) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:96) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:96) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:96) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_acc' (main_5_slices.cpp:96) in dimension 1 completely.
 INFO: [XFORM 203-102] Automatically partitioning small array 'output_b' completely based on array size.
 INFO: [XFORM 203-102] Partitioning array 'output_b' automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:380) automatically.
-INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:385) automatically.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:307:47) to (main_5_slices.cpp:307:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:321:47) to (main_5_slices.cpp:321:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:335:47) to (main_5_slices.cpp:335:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:349:47) to (main_5_slices.cpp:349:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:363:47) to (main_5_slices.cpp:363:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:154:46) to (main_5_slices.cpp:154:40) in function 'lstm_forward_unidir'... converting 7 basic blocks.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:03:01 ; elapsed = 00:03:03 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 736 ; free virtual = 11154
+INFO: [XFORM 203-602] Inlining function 'dense_forward.2' into 'main' (main_5_slices.cpp:385) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'main' (main_5_slices.cpp:390) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:312:47) to (main_5_slices.cpp:312:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:326:47) to (main_5_slices.cpp:326:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:340:47) to (main_5_slices.cpp:340:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:354:47) to (main_5_slices.cpp:354:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:368:47) to (main_5_slices.cpp:368:41) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (main_5_slices.cpp:159:46) to (main_5_slices.cpp:159:40) in function 'lstm_forward_unidir'... converting 7 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:02:55 ; elapsed = 00:02:57 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 1187 ; free virtual = 11340
 WARNING: [XFORM 203-631] Renaming function 'run_all_slices_unrolled' to 'run_all_slices_unrol' (main_5_slices.cpp:46:41)
 WARNING: [XFORM 203-631] Renaming function 'embedding_forward_dyn' to 'embedding_forward_dy' (main_5_slices.cpp:61:45)
 INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
 INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
 INTERNAL-INFO: never seen llvm instruction 'sptohp'(532)
@@ -182,12 +249,66 @@ INTERNAL-INFO: never seen llvm instruction 'hcmp'(539)
 INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
-INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
-INTERNAL-INFO: never seen llvm instruction 'sptohp'(532)
-INTERNAL-INFO: never seen llvm instruction 'hcmp'(539)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hdiv'(537)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
@@ -198,12 +319,66 @@ INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hdiv'(537)
 INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
-INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
-INTERNAL-INFO: never seen llvm instruction 'sptohp'(532)
-INTERNAL-INFO: never seen llvm instruction 'hcmp'(539)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hdiv'(537)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
@@ -212,6 +387,146 @@ INTERNAL-INFO: never seen llvm instruction 'sptohp'(532)
 INTERNAL-INFO: never seen llvm instruction 'hcmp'(539)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hdiv'(537)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
+INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
+INTERNAL-INFO: never seen llvm instruction 'sptohp'(532)
+INTERNAL-INFO: never seen llvm instruction 'hcmp'(539)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hdiv'(537)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
+INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
+INTERNAL-INFO: never seen llvm instruction 'sptohp'(532)
+INTERNAL-INFO: never seen llvm instruction 'hcmp'(539)
+INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
+INTERNAL-INFO: never seen llvm instruction 'hdiv'(537)
 INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hptosp'(533)
@@ -275,142 +590,142 @@ INTERNAL-INFO: never seen llvm instruction 'sptohp'(532)
 INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
 INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
 INTERNAL-INFO: never seen llvm instruction 'hcmp'(539)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:03:03 ; elapsed = 00:03:05 . Memory (MB): peak = 1009.098 ; gain = 318.000 ; free physical = 659 ; free virtual = 11074
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:58 ; elapsed = 00:03:00 . Memory (MB): peak = 1009.098 ; gain = 318.000 ; free physical = 1091 ; free virtual = 11225
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'main' ...
 WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.4' to 'conv_bn_act_pool_4'.
 WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3' to 'conv_bn_act_pool_3'.
 WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2' to 'conv_bn_act_pool_2'.
 WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.1' to 'conv_bn_act_pool_1'.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:198): 'BN1_gamma0' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:200): 'BN1_beta0' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:202): 'BN1_mean0' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:204): 'BN1_var0' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:217): 'BN1_gamma1' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:219): 'BN1_beta1' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:221): 'BN1_mean1' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:223): 'BN1_var1' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:236): 'BN1_gamma2' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:238): 'BN1_beta2' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:240): 'BN1_mean2' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:242): 'BN1_var2' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:255): 'BN1_gamma3' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:257): 'BN1_beta3' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:259): 'BN1_mean3' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:261): 'BN1_var3' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:274): 'BN1_gamma4' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:276): 'BN1_beta4' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:278): 'BN1_mean4' does not exist or is optimized away.
-WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:280): 'BN1_var4' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:203): 'BN1_gamma0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:205): 'BN1_beta0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:207): 'BN1_mean0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:209): 'BN1_var0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:222): 'BN1_gamma1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:224): 'BN1_beta1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:226): 'BN1_mean1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:228): 'BN1_var1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:241): 'BN1_gamma2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:243): 'BN1_beta2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:245): 'BN1_mean2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:247): 'BN1_var2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:260): 'BN1_gamma3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:262): 'BN1_beta3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:264): 'BN1_mean3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:266): 'BN1_var3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:279): 'BN1_gamma4' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:281): 'BN1_beta4' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:283): 'BN1_mean4' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'Register' (main_5_slices.cpp:285): 'BN1_var4' does not exist or is optimized away.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 186.57 seconds; current allocated memory: 260.056 MB.
-INFO: [HLS 200-434] Only 0 loops out of a total 6 loops have been pipelined in this design.
+INFO: [HLS 200-111]  Elapsed time: 180.83 seconds; current allocated memory: 269.469 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 3.55 seconds; current allocated memory: 267.103 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.6 seconds; current allocated memory: 277.813 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'lstm_forward_unidir' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 3.54 seconds; current allocated memory: 267.850 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.64 seconds; current allocated memory: 278.572 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 2.13 seconds; current allocated memory: 268.717 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.13 seconds; current allocated memory: 279.441 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 3.43 seconds; current allocated memory: 270.573 MB.
+INFO: [HLS 200-111]  Elapsed time: 3.15 seconds; current allocated memory: 282.299 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 3.84 seconds; current allocated memory: 277.457 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.46 seconds; current allocated memory: 290.628 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 4.7 seconds; current allocated memory: 279.289 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.44 seconds; current allocated memory: 293.516 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 3.25 seconds; current allocated memory: 286.168 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.26 seconds; current allocated memory: 301.855 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 4.48 seconds; current allocated memory: 288.022 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.13 seconds; current allocated memory: 304.759 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 3.14 seconds; current allocated memory: 294.900 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.13 seconds; current allocated memory: 313.093 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'embedding_forward_dy' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 3.25 seconds; current allocated memory: 295.330 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.23 seconds; current allocated memory: 313.560 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.79 seconds; current allocated memory: 295.933 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 314.126 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.11 seconds; current allocated memory: 297.740 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.82 seconds; current allocated memory: 316.933 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 3.13 seconds; current allocated memory: 304.621 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.19 seconds; current allocated memory: 325.307 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrol' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 3.4 seconds; current allocated memory: 305.856 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.11 seconds; current allocated memory: 326.574 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 4.74 seconds; current allocated memory: 308.121 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.19 seconds; current allocated memory: 328.956 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'main' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 4.12 seconds; current allocated memory: 308.909 MB.
+INFO: [HLS 200-111]  Elapsed time: 4.53 seconds; current allocated memory: 329.796 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 2.06 seconds; current allocated memory: 309.903 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.15 seconds; current allocated memory: 330.767 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -424,7 +739,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instan
 INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_4'.
-INFO: [HLS 200-111]  Elapsed time: 2.8 seconds; current allocated memory: 315.336 MB.
+INFO: [HLS 200-111]  Elapsed time: 3.03 seconds; current allocated memory: 338.834 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_unidir' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -438,7 +753,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instan
 INFO: [RTGEN 206-100] Generating core module 'main_hsub_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_unidir'.
-INFO: [HLS 200-111]  Elapsed time: 3.87 seconds; current allocated memory: 330.322 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.44 seconds; current allocated memory: 358.198 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -452,7 +767,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instan
 INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_3'.
-INFO: [HLS 200-111]  Elapsed time: 2.69 seconds; current allocated memory: 338.362 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.87 seconds; current allocated memory: 368.775 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -466,7 +781,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instan
 INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_2'.
-INFO: [HLS 200-111]  Elapsed time: 4.19 seconds; current allocated memory: 356.775 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.79 seconds; current allocated memory: 394.082 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -480,12 +795,12 @@ INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instan
 INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_1'.
-INFO: [HLS 200-111]  Elapsed time: 4.24 seconds; current allocated memory: 375.170 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.79 seconds; current allocated memory: 419.330 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'embedding_forward_dy' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'embedding_forward_dy'.
-INFO: [HLS 200-111]  Elapsed time: 4.07 seconds; current allocated memory: 389.112 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.77 seconds; current allocated memory: 437.627 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -499,7 +814,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 2 instan
 INFO: [RTGEN 206-100] Generating core module 'main_mux_325_16_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool'.
-INFO: [HLS 200-111]  Elapsed time: 1.36 seconds; current allocated memory: 395.915 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.68 seconds; current allocated memory: 447.020 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrol' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -511,7 +826,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1
 INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrol'.
-INFO: [HLS 200-111]  Elapsed time: 4.37 seconds; current allocated memory: 413.635 MB.
+INFO: [HLS 200-111]  Elapsed time: 8.06 seconds; current allocated memory: 469.032 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'main' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -544,7 +859,7 @@ INFO: [RTGEN 206-100] Generating core module 'main_hmul_16ns_16ns_16_4_max_dsp_1
 INFO: [RTGEN 206-100] Generating core module 'main_hptosp_16ns_32_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'main_sptohp_32ns_16_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'main'.
-INFO: [HLS 200-111]  Elapsed time: 5.05 seconds; current allocated memory: 421.100 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.32 seconds; current allocated memory: 476.548 MB.
 INFO: [RTMG 210-279] Implementing memory 'conv_bn_act_pool_4_X_slice_rom' using auto ROMs.
 @W [IMPL-104] Cannot find __unknown_generator__, check your platform lib
 INFO: [RTMG 210-278] Implementing memory 'lstm_forward_unidir_c_slice_ram (RAM)' using distributed RAMs with power-on initialization.
@@ -595,7 +910,7 @@ INFO: [RTMG 210-279] Implementing memory 'main_fc_0_bn_var_rom' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'main_fc_1_W_rom' using auto ROMs.
 INFO: [RTMG 210-278] Implementing memory 'main_merged_ram (RAM)' using distributed RAMs.
 INFO: [RTMG 210-278] Implementing memory 'main_z0_ram (RAM)' using block RAMs.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:04:38 ; elapsed = 00:04:45 . Memory (MB): peak = 1143.113 ; gain = 452.016 ; free physical = 335 ; free virtual = 10852
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:05:21 ; elapsed = 00:05:30 . Memory (MB): peak = 1141.105 ; gain = 450.008 ; free physical = 625 ; free virtual = 10883
 INFO: [VHDL 208-304] Generating VHDL RTL for main.
 INFO: [VLOG 209-307] Generating Verilog RTL for main.
-INFO: [HLS 200-112] Total elapsed time: 285.48 seconds; peak allocated memory: 421.100 MB.
+INFO: [HLS 200-112] Total elapsed time: 329.85 seconds; peak allocated memory: 476.548 MB.

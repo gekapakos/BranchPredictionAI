@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_bn_act_pool_3'" level="0">
-<item name = "Date">Fri Sep  5 18:19:56 2025
+<item name = "Date">Fri Sep  5 20:28:59 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 7.979, 1.25</column>
+<column name="ap_clk">10.00, 8.981, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">5760282, 5783394, 5760282, 5783394, none</column>
+<column name="">2730522, 2753634, 2730522, 2753634, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,10 +36,9 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- InitPoolAcc">64, 64, 2, -, -, 32, no</column>
-<column name="- Loop1Big">5760216, 5783328, 80003 ~ 80324, -, -, 72, no</column>
-<column name=" + Loop2Big">80000, 80000, 2500, -, -, 32, no</column>
-<column name="  ++ Loop3_1Big">2478, 2478, 354, -, -, 7, no</column>
-<column name="   +++ Loop4Big">352, 352, 11, -, -, 32, no</column>
+<column name="- Loop1Big">2730456, 2753568, 37923 ~ 38244, -, -, 72, no</column>
+<column name=" + Loop2Big">37920, 37920, 1185, -, -, 32, no</column>
+<column name="  ++ Loop3_1Big">1162, 1162, 166, -, -, 7, no</column>
 <column name=" + Loop3_2Big">320, 320, 10, -, -, 32, no</column>
 </table>
 </item>
