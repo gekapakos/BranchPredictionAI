@@ -81,6 +81,8 @@ static inline void conv_bn_act_pool(
 
     // Precompute BN affine params once
     half a_bn[F], b_bn[F];
+    #pragma HLS ARRAY_PARTITION variable=a_bn complete
+    #pragma HLS ARRAY_PARTITION variable=b_bn complete
     BNParamsLoop: for (int f = 0; f < F; ++f) {
         float inv = 1.0f / sqrtf((float)var[f] + (float)eps);
         float a_f = (float)gamma[f] * inv;
@@ -97,10 +99,10 @@ static inline void conv_bn_act_pool(
     Loop1Big: for (int t = 0; t < T1; ++t) {
         Loop2Big: for (int f = 0; f < F; ++f) {
             half acc = B ? B[f] : (half)0.0f;
-            Loop3_1Big: for (int k=0; k<Ksz; ++k) {
-                const half *xrow = X + (t+k)*E;
-                const half *wf   = W + (k*E)*F + f;
-                Loop4Big: for (int e=0; e<E; ++e) acc += xrow[e] * wf[e*F];
+            Loop3_1Big: for (int k = 0; k < Ksz; ++k) {
+                const half *xrow = X + (t + k) * E;
+                const half *wf   = W + (k * E) * F + f;
+                Loop4Big: for (int e = 0; e < E; ++e) acc += xrow[e] * wf[e*F];
             }
             // BN (affine) + activation
             half y = (half)((float)a_bn[f]*(float)acc + (float)b_bn[f]);
@@ -108,7 +110,10 @@ static inline void conv_bn_act_pool(
             pool_acc[f] += y;
         }
         if (++pc == Psz) {
-            Loop3_2Big: for (int f = 0; f < F; ++f) { U[u*F + f] = pool_acc[f] / (half)Psz; pool_acc[f]=(half)0.0f; }
+            Loop3_2Big: for (int f = 0; f < F; ++f) { 
+                U[u*F + f] = pool_acc[f] / (half)Psz; 
+                pool_acc[f] = (half)0.0f; 
+            }
             pc = 0; 
             ++u;
         }

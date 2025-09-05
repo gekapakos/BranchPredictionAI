@@ -2,32 +2,32 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;main_5_slices.cpp&apos; ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 2015 ; free virtual = 13044"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 2015 ; free virtual = 13044"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1120 ; free virtual = 11364"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 817.098 ; gain = 126.000 ; free physical = 1117 ; free virtual = 11361"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;reluf&apos; into &apos;conv_bn_act_pool&apos; (main_5_slices.cpp:107)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;reluf&apos; into &apos;conv_bn_act_pool&apos; (main_5_slices.cpp:109)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;reluf&apos; into &apos;main&apos; (main_5_slices.cpp:387)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;reluf&apos; into &apos;main&apos; (main_5_slices.cpp:382)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;reluf&apos; into &apos;main&apos; (main_5_slices.cpp:377)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;lstm_forward_unidir&apos; (main_5_slices.cpp:155)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;lstm_forward_unidir&apos; (main_5_slices.cpp:153)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:359)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:345)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:331)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:317)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:303)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;main&apos; (main_5_slices.cpp:376)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;lstm_forward_unidir&apos; (main_5_slices.cpp:160)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;lstm_forward_unidir&apos; (main_5_slices.cpp:158)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:364)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:350)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:336)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:322)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;tanhf_fast&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:308)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;main&apos; (main_5_slices.cpp:381)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:301)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:315)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:329)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:343)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:357)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;sigmoidf&apos; into &apos;main&apos; (main_5_slices.cpp:386)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 3064 ; free virtual = 13566"/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;main&apos; (main_5_slices.cpp:386)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:306)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:320)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:334)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:348)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bn_vector&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:362)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;sigmoidf&apos; into &apos;main&apos; (main_5_slices.cpp:391)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:01:42 ; elapsed = 00:01:44 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 947 ; free virtual = 11338"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;embedding_forward_dyn&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:352) automatically."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 3052 ; free virtual = 13544"/>
-	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_120" tag="" content="Partitioning array &apos;y_lin&apos; (main_5_slices.cpp:384) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;embedding_forward_dyn&apos; into &apos;run_all_slices_unrolled&apos; (main_5_slices.cpp:357) automatically."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:02:20 ; elapsed = 00:02:22 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 793 ; free virtual = 11162"/>
+	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_120" tag="" content="Partitioning array &apos;y_lin&apos; (main_5_slices.cpp:389) automatically."/>
 	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_115" tag="" content="Automatically partitioning small array &apos;output_b&apos; completely based on array size."/>
 	<Message severity="WARNING" prefix="[XFORM 203-105]" key="XFORM_PARTITION_IGNORE_113" tag="ARRAY,SDX_ARRAY" content="Ignore complete array partition directive on &apos;BN1_gamma0&apos;  in dimension 1: conflict with memory core assignment directive.
 ."/>
@@ -114,160 +114,162 @@
 	<Message severity="WARNING" prefix="[XFORM 203-105]" key="XFORM_PARTITION_IGNORE_113" tag="ARRAY,SDX_ARRAY" content="Ignore complete array partition directive on &apos;ConvW4&apos;  in dimension 1: conflict with memory core assignment directive.
 ."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;Emb4&apos;  in dimension 1 with a block factor 128."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:92) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:92) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:92) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:92) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:92) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;a_bn&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;b_bn&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:94) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:94) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:94) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:94) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pool_acc&apos; (main_5_slices.cpp:94) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_115" tag="" content="Automatically partitioning small array &apos;output_b&apos; completely based on array size."/>
 	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_120" tag="" content="Partitioning array &apos;output_b&apos; automatically."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;dense_forward.2&apos; into &apos;main&apos; (main_5_slices.cpp:375) automatically."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;dense_forward.1&apos; into &apos;main&apos; (main_5_slices.cpp:380) automatically."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:303:26) to (main_5_slices.cpp:302:28) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:317:26) to (main_5_slices.cpp:316:28) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:331:26) to (main_5_slices.cpp:330:28) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:345:26) to (main_5_slices.cpp:344:28) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:359:26) to (main_5_slices.cpp:358:28) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:150:35) to (main_5_slices.cpp:149:27) in function &apos;lstm_forward_unidir&apos;... converting 7 basic blocks."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 3044 ; free virtual = 13564"/>
-	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;run_all_slices_unrolled&apos; to &apos;run_all_slices_unrol&apos; (main_5_slices.cpp:46:28)"/>
-	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;embedding_forward_dyn&apos; to &apos;embedding_forward_dy&apos; (main_5_slices.cpp:61:25)"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 1009.098 ; gain = 318.000 ; free physical = 2944 ; free virtual = 13473"/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;dense_forward.2&apos; into &apos;main&apos; (main_5_slices.cpp:380) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;dense_forward.1&apos; into &apos;main&apos; (main_5_slices.cpp:385) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:307:47) to (main_5_slices.cpp:307:41) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:321:47) to (main_5_slices.cpp:321:41) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:335:47) to (main_5_slices.cpp:335:41) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:349:47) to (main_5_slices.cpp:349:41) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:363:47) to (main_5_slices.cpp:363:41) in function &apos;run_all_slices_unrolled&apos;... converting 4 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (main_5_slices.cpp:154:46) to (main_5_slices.cpp:154:40) in function &apos;lstm_forward_unidir&apos;... converting 7 basic blocks."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:03:01 ; elapsed = 00:03:03 . Memory (MB): peak = 881.098 ; gain = 190.000 ; free physical = 736 ; free virtual = 11154"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;run_all_slices_unrolled&apos; to &apos;run_all_slices_unrol&apos; (main_5_slices.cpp:46:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;embedding_forward_dyn&apos; to &apos;embedding_forward_dy&apos; (main_5_slices.cpp:61:45)"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:03:03 ; elapsed = 00:03:05 . Memory (MB): peak = 1009.098 ; gain = 318.000 ; free physical = 659 ; free virtual = 11074"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;main&apos; ..."/>
 	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;conv_bn_act_pool.4&apos; to &apos;conv_bn_act_pool_4&apos;."/>
 	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;conv_bn_act_pool.3&apos; to &apos;conv_bn_act_pool_3&apos;."/>
 	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;conv_bn_act_pool.2&apos; to &apos;conv_bn_act_pool_2&apos;."/>
 	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;conv_bn_act_pool.1&apos; to &apos;conv_bn_act_pool_1&apos;."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:193): &apos;BN1_gamma0&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:195): &apos;BN1_beta0&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:197): &apos;BN1_mean0&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:199): &apos;BN1_var0&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:212): &apos;BN1_gamma1&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:214): &apos;BN1_beta1&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:216): &apos;BN1_mean1&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:218): &apos;BN1_var1&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:231): &apos;BN1_gamma2&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:233): &apos;BN1_beta2&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:235): &apos;BN1_mean2&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:237): &apos;BN1_var2&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:250): &apos;BN1_gamma3&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:252): &apos;BN1_beta3&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:254): &apos;BN1_mean3&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:256): &apos;BN1_var3&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:269): &apos;BN1_gamma4&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:271): &apos;BN1_beta4&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:273): &apos;BN1_mean4&apos; does not exist or is optimized away."/>
-	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:275): &apos;BN1_var4&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:198): &apos;BN1_gamma0&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:200): &apos;BN1_beta0&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:202): &apos;BN1_mean0&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:204): &apos;BN1_var0&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:217): &apos;BN1_gamma1&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:219): &apos;BN1_beta1&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:221): &apos;BN1_mean1&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:223): &apos;BN1_var1&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:236): &apos;BN1_gamma2&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:238): &apos;BN1_beta2&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:240): &apos;BN1_mean2&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:242): &apos;BN1_var2&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:255): &apos;BN1_gamma3&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:257): &apos;BN1_beta3&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:259): &apos;BN1_mean3&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:261): &apos;BN1_var3&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:274): &apos;BN1_gamma4&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:276): &apos;BN1_beta4&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:278): &apos;BN1_mean4&apos; does not exist or is optimized away."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_433" tag="" content="Cannot apply memory assignment of &apos;Register&apos; (main_5_slices.cpp:280): &apos;BN1_var4&apos; does not exist or is optimized away."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;conv_bn_act_pool_4&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 101.43 seconds; current allocated memory: 259.238 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 186.57 seconds; current allocated memory: 260.056 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 0 loops out of a total 6 loops have been pipelined in this design."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.07 seconds; current allocated memory: 266.249 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.55 seconds; current allocated memory: 267.103 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;lstm_forward_unidir&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.14 seconds; current allocated memory: 267.010 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.54 seconds; current allocated memory: 267.850 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.9 seconds; current allocated memory: 267.857 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.13 seconds; current allocated memory: 268.717 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;conv_bn_act_pool_3&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.23 seconds; current allocated memory: 269.703 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.43 seconds; current allocated memory: 270.573 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3 seconds; current allocated memory: 276.547 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.84 seconds; current allocated memory: 277.457 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;conv_bn_act_pool_2&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.49 seconds; current allocated memory: 278.359 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.7 seconds; current allocated memory: 279.289 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.97 seconds; current allocated memory: 285.210 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.25 seconds; current allocated memory: 286.168 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;conv_bn_act_pool_1&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.38 seconds; current allocated memory: 287.056 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.48 seconds; current allocated memory: 288.022 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.05 seconds; current allocated memory: 293.899 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.14 seconds; current allocated memory: 294.900 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;embedding_forward_dy&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.16 seconds; current allocated memory: 294.312 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.25 seconds; current allocated memory: 295.330 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.71 seconds; current allocated memory: 294.906 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.79 seconds; current allocated memory: 295.933 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;conv_bn_act_pool&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.08 seconds; current allocated memory: 296.732 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.11 seconds; current allocated memory: 297.740 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.97 seconds; current allocated memory: 303.582 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.13 seconds; current allocated memory: 304.621 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;run_all_slices_unrol&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.28 seconds; current allocated memory: 304.806 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.4 seconds; current allocated memory: 305.856 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.63 seconds; current allocated memory: 307.053 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.74 seconds; current allocated memory: 308.121 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;main&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.02 seconds; current allocated memory: 307.829 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.12 seconds; current allocated memory: 308.909 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.98 seconds; current allocated memory: 308.801 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.06 seconds; current allocated memory: 309.903 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;conv_bn_act_pool_4&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -278,10 +280,10 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hdiv_16ns_16ns_16_7_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hmul_16ns_16ns_16_4_max_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hptosp_16ns_32_2_1&apos;: 2 instance(s)."/>
-	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 3 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_sptohp_32ns_16_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;conv_bn_act_pool_4&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.65 seconds; current allocated memory: 314.157 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.8 seconds; current allocated memory: 315.336 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;lstm_forward_unidir&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -295,7 +297,7 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hsub_16ns_16ns_16_5_full_dsp_1&apos;: 2 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_sptohp_32ns_16_2_1&apos;: 2 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;lstm_forward_unidir&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.84 seconds; current allocated memory: 329.129 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.87 seconds; current allocated memory: 330.322 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;conv_bn_act_pool_3&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -306,10 +308,10 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hdiv_16ns_16ns_16_7_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hmul_16ns_16ns_16_4_max_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hptosp_16ns_32_2_1&apos;: 2 instance(s)."/>
-	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 3 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_sptohp_32ns_16_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;conv_bn_act_pool_3&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.52 seconds; current allocated memory: 337.072 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.69 seconds; current allocated memory: 338.362 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;conv_bn_act_pool_2&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -320,10 +322,10 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hdiv_16ns_16ns_16_7_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hmul_16ns_16ns_16_4_max_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hptosp_16ns_32_2_1&apos;: 2 instance(s)."/>
-	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 3 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_sptohp_32ns_16_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;conv_bn_act_pool_2&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.08 seconds; current allocated memory: 355.373 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.19 seconds; current allocated memory: 356.775 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;conv_bn_act_pool_1&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -334,15 +336,15 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hdiv_16ns_16ns_16_7_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hmul_16ns_16ns_16_4_max_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hptosp_16ns_32_2_1&apos;: 2 instance(s)."/>
-	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 3 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_sptohp_32ns_16_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;conv_bn_act_pool_1&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.01 seconds; current allocated memory: 373.659 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.24 seconds; current allocated memory: 375.170 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;embedding_forward_dy&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;embedding_forward_dy&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.99 seconds; current allocated memory: 387.598 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.07 seconds; current allocated memory: 389.112 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;conv_bn_act_pool&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -353,10 +355,10 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hdiv_16ns_16ns_16_7_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hmul_16ns_16ns_16_4_max_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hptosp_16ns_32_2_1&apos;: 2 instance(s)."/>
-	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_mux_325_16_1_1&apos;: 3 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_sptohp_32ns_16_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;conv_bn_act_pool&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.28 seconds; current allocated memory: 394.350 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.36 seconds; current allocated memory: 395.915 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;run_all_slices_unrol&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -368,7 +370,7 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hptosp_16ns_32_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_sptohp_32ns_16_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;run_all_slices_unrol&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.17 seconds; current allocated memory: 412.087 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.37 seconds; current allocated memory: 413.635 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;main&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -401,9 +403,8 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_hptosp_16ns_32_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;main_sptohp_32ns_16_2_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;main&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.75 seconds; current allocated memory: 419.527 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 5.05 seconds; current allocated memory: 421.100 MB."/>
 	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;conv_bn_act_pool_4_X_slice_rom&apos; using auto ROMs."/>
-	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;conv_bn_act_pool_4_a_bn_rom&apos; using distributed ROMs."/>
 	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;lstm_forward_unidir_c_slice_ram (RAM)&apos; using distributed RAMs with power-on initialization."/>
 	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;lstm_forward_unidir_z_ram (RAM)&apos; using block RAMs."/>
 	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;conv_bn_act_pool_3_X_slice1_rom&apos; using auto ROMs."/>
@@ -437,7 +438,7 @@
 	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;main_fc_1_W_rom&apos; using auto ROMs."/>
 	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;main_merged_ram (RAM)&apos; using distributed RAMs."/>
 	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;main_z0_ram (RAM)&apos; using block RAMs."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:03:07 ; elapsed = 00:03:15 . Memory (MB): peak = 1143.113 ; gain = 452.016 ; free physical = 2402 ; free virtual = 13018"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:04:38 ; elapsed = 00:04:45 . Memory (MB): peak = 1143.113 ; gain = 452.016 ; free physical = 335 ; free virtual = 10852"/>
 	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for main."/>
 	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for main."/>
 </Messages>

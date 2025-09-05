@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'embedding_forward_dy'" level="0">
-<item name = "Date">Fri Sep  5 12:53:37 2025
+<item name = "Date">Fri Sep  5 18:20:16 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">57618, 57618, 99, -, -, 582, no</column>
-<column name=" + Loop 1.1">96, 96, 3, -, -, 32, no</column>
+<column name="- EmbOuterLoop">57618, 57618, 99, -, -, 582, no</column>
+<column name=" + EmbInnerLoop">96, 96, 3, -, -, 32, no</column>
 </table>
 </item>
 </section>

@@ -9,7 +9,6 @@ main_hcmp_16ns_16ns_1_2_1
 main_mux_325_16_1_1
 conv_bn_act_pool_4_X_slice
 conv_bn_act_pool_4_ConvW0
-conv_bn_act_pool_4_a_bn
 main_fdiv_32ns_32ns_32_16_1
 main_fexp_32ns_32ns_32_9_full_dsp_1
 main_hsub_16ns_16ns_16_5_full_dsp_1

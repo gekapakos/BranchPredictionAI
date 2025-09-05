@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'run_all_slices_unrol'" level="0">
-<item name = "Date">Fri Sep  5 12:53:45 2025
+<item name = "Date">Fri Sep  5 18:20:25 2025
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BranchPredictionAI</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">94922179, 95280415, 94922179, 95280415, none</column>
+<column name="">94886467, 95244703, 94886467, 95244703, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,17 +35,17 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">32, 32, 1, -, -, 32, no</column>
-<column name="- Loop 2">1568, 1568, 49, -, -, 32, no</column>
-<column name="- Loop 3">288, 288, 9, -, -, 32, no</column>
-<column name="- Loop 4">1568, 1568, 49, -, -, 32, no</column>
-<column name="- Loop 5">288, 288, 9, -, -, 32, no</column>
-<column name="- Loop 6">1568, 1568, 49, -, -, 32, no</column>
-<column name="- Loop 7">288, 288, 9, -, -, 32, no</column>
-<column name="- Loop 8">1568, 1568, 49, -, -, 32, no</column>
-<column name="- Loop 9">288, 288, 9, -, -, 32, no</column>
-<column name="- Loop 10">1568, 1568, 49, -, -, 32, no</column>
-<column name="- Loop 11">288, 288, 9, -, -, 32, no</column>
+<column name="- MergedLoop">32, 32, 1, -, -, 32, no</column>
+<column name="- Loop_BN">1568, 1568, 49, -, -, 32, no</column>
+<column name="- MergedLoop0">288, 288, 9, -, -, 32, no</column>
+<column name="- Loop_BN">1568, 1568, 49, -, -, 32, no</column>
+<column name="- MergedLoop1">288, 288, 9, -, -, 32, no</column>
+<column name="- Loop_BN">1568, 1568, 49, -, -, 32, no</column>
+<column name="- MergedLoop2">288, 288, 9, -, -, 32, no</column>
+<column name="- Loop_BN">1568, 1568, 49, -, -, 32, no</column>
+<column name="- MergedLoop3">288, 288, 9, -, -, 32, no</column>
+<column name="- Loop_BN">1568, 1568, 49, -, -, 32, no</column>
+<column name="- MergedLoop4">288, 288, 9, -, -, 32, no</column>
 </table>
 </item>
 </section>

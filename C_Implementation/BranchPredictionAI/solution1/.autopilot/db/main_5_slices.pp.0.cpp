@@ -98974,13 +98974,13 @@ static inline half reluf(half x) {
 static inline void embedding_forward_dyn(const uint16_t *tokens, int Tlen,
                                          const half *Emb, half *X)
 {
-    for(int t=0;t<Tlen;++t){
+    EmbOuterLoop: for(int t = 0; t < Tlen; ++t) {
         int idx = (int)tokens[t];
         if(idx < 0 || idx >= VOCAB_SIZE) idx=0;
 
         const half *row = Emb + idx*E;
         half *dst = X + t*E;
-        for(int e=0;e<E;++e) {
+        EmbInnerLoop: for(int e = 0; e < E; ++e) {
             dst[e]=row[e];
         }
     }
@@ -98997,7 +98997,9 @@ static inline void conv_bn_act_pool(
 
 
     half a_bn[F], b_bn[F];
-    for (int f=0; f<F; ++f) {
+#pragma HLS ARRAY_PARTITION variable=&a_bn complete
+#pragma HLS ARRAY_PARTITION variable=&b_bn complete
+ BNParamsLoop: for (int f = 0; f < F; ++f) {
         float inv = 1.0f / sqrtf((float)var[f] + (float)eps);
         float a_f = (float)gamma[f] * inv;
         float b_f = (float)beta[f] - (float)mean[f] * a_f;
@@ -99007,16 +99009,16 @@ static inline void conv_bn_act_pool(
 
     half pool_acc[F];
 #pragma HLS ARRAY_PARTITION variable=&pool_acc complete
- for (int f=0; f<F; ++f) pool_acc[f] = (half)0.0f;
+ InitPoolAcc: for (int f = 0; f < F; ++f) pool_acc[f] = (half)0.0f;
 
     int pc = 0, u = 0;
-    for (int t=0; t<T1; ++t) {
-        for (int f=0; f<F; ++f) {
+    Loop1Big: for (int t = 0; t < T1; ++t) {
+        Loop2Big: for (int f = 0; f < F; ++f) {
             half acc = B ? B[f] : (half)0.0f;
-            for (int k=0; k<Ksz; ++k) {
-                const half *xrow = X + (t+k)*E;
-                const half *wf = W + (k*E)*F + f;
-                for (int e=0; e<E; ++e) acc += xrow[e] * wf[e*F];
+            Loop3_1Big: for (int k = 0; k < Ksz; ++k) {
+                const half *xrow = X + (t + k) * E;
+                const half *wf = W + (k * E) * F + f;
+                Loop4Big: for (int e = 0; e < E; ++e) acc += xrow[e] * wf[e*F];
             }
 
             half y = (half)((float)a_bn[f]*(float)acc + (float)b_bn[f]);
@@ -99024,7 +99026,10 @@ static inline void conv_bn_act_pool(
             pool_acc[f] += y;
         }
         if (++pc == Psz) {
-            for (int f=0; f<F; ++f) { U[u*F + f] = pool_acc[f] / (half)Psz; pool_acc[f]=(half)0.0f; }
+            Loop3_2Big: for (int f = 0; f < F; ++f) {
+                U[u*F + f] = pool_acc[f] / (half)Psz;
+                pool_acc[f] = (half)0.0f;
+            }
             pc = 0;
             ++u;
         }
@@ -99044,25 +99049,25 @@ static inline void lstm_forward_unidir(const half *x,int Tlen,int D,
     }
     half z[4*H];
 
-    for(int t = 0; t < Tlen; ++t) {
+    Loop1LSTM: for(int t = 0; t < Tlen; ++t) {
 
-        for(int g=0; g<4*H; ++g) z[g] = b_ifog[g];
+        Loop2_1LSTM: for(int g=0; g<4*H; ++g) z[g] = b_ifog[g];
 
 
         const half *xt = x + t*D;
-        for(int d = 0; d < D; ++d) {
+        Loop2_2LSTM: for(int d = 0; d < D; ++d) {
             half xv = xt[d];
             const half *Wd = W_ifog + d * (4 * H);
-            for(int g=0; g<4*H; ++g) z[g] += xv * Wd[g];
+            Loop3_2_1LSTM: for(int g=0; g<4*H; ++g) z[g] += xv * Wd[g];
         }
 
-        for(int hp = 0; hp < H; ++hp){
+        Loop2_3LSTM: for(int hp = 0; hp < H; ++hp){
             half hv = h_last[hp];
             const half *Rh = R_ifog + hp * (4 * H);
-            for(int g=0; g<4*H; ++g) z[g] += hv * Rh[g];
+            Loop3_3_1LSTM: for(int g = 0; g < 4 * H; ++g) z[g] += hv * Rh[g];
         }
 
-        for(j = 0; j < H; ++j) {
+        Loop2_4LSTM: for(j = 0; j < H; ++j) {
             half i = 1.f / (1.f + expf(-z[0 * H + j]));
             half f = 1.f / (1.f + expf(-z[1 * H + j]));
             half o = 1.f / (1.f + expf(-z[2 * H + j]));
@@ -99077,7 +99082,7 @@ static inline void lstm_forward_unidir(const half *x,int Tlen,int D,
 static inline void bn_vector(half *v, int C, const half *gamma, const half *beta, const half *mean, const half *var, half eps)
 {
 #pragma HLS INLINE
- for(int c = 0; c < C; ++c){
+ Loop_BN: for(int c = 0; c < C; ++c){
         half n = (v[c] - mean[c]) / sqrtf(var[c] + eps);
         v[c] = gamma[c] * n + beta[c];
     }
@@ -99087,9 +99092,9 @@ static inline void dense_forward(const half *x,int In,
     const half *W,const half *b,int Out,half *y)
 {
     half acc;
-    for(int j = 0; j < Out; ++j) {
+    OuterLoopDense: for(int j = 0; j < Out; ++j) {
         acc = b ? b[j] : 0.0f;
-        for(int i = 0; i < In; ++i) {
+        InnerLoopDense: for(int i = 0; i < In; ++i) {
 
             acc += x[i] * W[i * Out + j];
         }
@@ -99202,7 +99207,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
 
  const half BN_eps = 1e-3f;
     int j;
-    for (j = 0; j < H; ++j) {
+    MergedLoop: for (j = 0; j < H; ++j) {
         merged[j] = 0.0f;
     }
 
@@ -99215,7 +99220,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         ACT_RELU, P0, U_slice);
         lstm_forward_unidir(U_slice, T20, F, LSTM_W_ifog0, LSTM_R_ifog0, LSTM_b_ifog0, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma0, BN2_beta0, BN2_mean0, BN2_var0, BN_eps);
-        for (j = 0; j < H; ++j) {
+        MergedLoop0: for (j = 0; j < H; ++j) {
             merged[j] += tanhf_fast(h_slice[j]);
         }
     }
@@ -99229,7 +99234,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         ACT_RELU, P1, U_slice);
         lstm_forward_unidir(U_slice, T21, F, LSTM_W_ifog1, LSTM_R_ifog1, LSTM_b_ifog1, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma1, BN2_beta1, BN2_mean1, BN2_var1, BN_eps);
-        for (j = 0; j < H; ++j) {
+        MergedLoop1: for (j = 0; j < H; ++j) {
             merged[j] += tanhf_fast(h_slice[j]);
         }
     }
@@ -99243,7 +99248,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         ACT_RELU, P2, U_slice);
         lstm_forward_unidir(U_slice, T22, F, LSTM_W_ifog2, LSTM_R_ifog2, LSTM_b_ifog2, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma2, BN2_beta2, BN2_mean2, BN2_var2, BN_eps);
-        for (j = 0; j < H; ++j) {
+        MergedLoop2: for (j = 0; j < H; ++j) {
             merged[j] += tanhf_fast(h_slice[j]);
         }
     }
@@ -99257,7 +99262,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         ACT_RELU, P3, U_slice);
         lstm_forward_unidir(U_slice, T23, F, LSTM_W_ifog3, LSTM_R_ifog3, LSTM_b_ifog3, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma3, BN2_beta3, BN2_mean3, BN2_var3, BN_eps);
-        for (j = 0; j < H; ++j) {
+        MergedLoop3: for (j = 0; j < H; ++j) {
             merged[j] += tanhf_fast(h_slice[j]);
         }
     }
@@ -99271,7 +99276,7 @@ static void run_all_slices_unrolled(half merged[H]) {_ssdm_SpecArrayDimSize(merg
         ACT_RELU, P4, U_slice);
         lstm_forward_unidir(U_slice, T24, F, LSTM_W_ifog4, LSTM_R_ifog4, LSTM_b_ifog4, h_slice, c_slice);
         bn_vector(h_slice, H, BN2_gamma4, BN2_beta4, BN2_mean4, BN2_var4, BN_eps);
-        for (j = 0; j < H; ++j) {
+        MergedLoop4: for (j = 0; j < H; ++j) {
             merged[j] += tanhf_fast(h_slice[j]);
         }
     }
@@ -99290,12 +99295,12 @@ int main(void) {
     half z0[M0];
     dense_forward(merged, H, fc_0_W, fc_0_b, M0, z0);
     bn_vector(z0, M0, fc_0_bn_gamma, fc_0_bn_beta, fc_0_bn_mean, fc_0_bn_var, BN_eps);
-    for (j=0;j<M0;++j) z0[j] = reluf(z0[j]);
+    ReLULoop1: for (j = 0; j < M0; ++j) z0[j] = reluf(z0[j]);
 
     half z1[M1];
     dense_forward(z0, M0, fc_1_W, fc_1_b, M1, z1);
     bn_vector(z1, M1, fc_1_bn_gamma, fc_1_bn_beta, fc_1_bn_mean, fc_1_bn_var, BN_eps);
-    for (j = 0; j < M1; ++j) z1[j] = reluf(z1[j]);
+    ReLULoop2: for (j = 0; j < M1; ++j) z1[j] = reluf(z1[j]);
 
     half y_lin[1];
     dense_forward(z1, M1, output_W, output_b, 1, y_lin);

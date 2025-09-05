@@ -28,16 +28,16 @@
 <Interval-max>57619</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<Loop1>
+<EmbOuterLoop>
 <TripCount>582</TripCount>
 <Latency>57618</Latency>
 <IterationLatency>99</IterationLatency>
-<Loop1.1>
+<EmbInnerLoop>
 <TripCount>32</TripCount>
 <Latency>96</Latency>
 <IterationLatency>3</IterationLatency>
-</Loop1.1>
-</Loop1>
+</EmbInnerLoop>
+</EmbOuterLoop>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
