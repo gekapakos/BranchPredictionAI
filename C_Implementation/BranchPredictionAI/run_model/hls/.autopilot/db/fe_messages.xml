@@ -1,0 +1,282 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:77:9" msg_body="unused parameter 'C'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:365:66" msg_body="unused parameter 'y_hat_out'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sigmoidf" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tanhf_fast" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reluf" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a_bn complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:87:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b_bn complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=pool_acc complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:101:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:112:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:127:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_bn_act_pool" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:146:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lstm_forward_unidir" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:153:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lstm_forward_unidir" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lstm_forward_unidir" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lstm_forward_unidir" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lstm_forward_unidir" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:173:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lstm_forward_unidir" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:177:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lstm_forward_unidir" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:183:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lstm_forward_unidir" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:197:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bn_vector" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bn_vector" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:210:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_forward" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:228:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_gamma0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:229:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_beta0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:230:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_mean0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:231:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_var0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:232:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=LSTM_b_ifog0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:240:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_gamma1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:241:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_beta1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:242:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_mean1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:243:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_var1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:244:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=LSTM_b_ifog1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:252:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_gamma2 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:253:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_beta2 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:254:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_mean2 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:255:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_var2 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=LSTM_b_ifog2 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:264:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_gamma3 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:265:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_beta3 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_mean3 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:267:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_var3 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:268:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=LSTM_b_ifog3 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:276:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_gamma4 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:277:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_beta4 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:278:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_mean4 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:279:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=BN1_var4 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:280:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_all_slices_unrolled" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=LSTM_b_ifog4 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="run_model" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=run_model" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../main_5_slices.cpp:366:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="run_model" ARG_PragmaIsValid="1" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../main_5_slices.cpp:122:35" msg_body="Inlining function 'reluf(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'">
+        <args Callee="reluf(half)" Callee-DebugLoc="File ../main_5_slices.cpp Line 51 Column 0" Caller="conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)" Caller-DebugLoc="File ../main_5_slices.cpp Line 79 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../main_5_slices.cpp:122:79" msg_body="Inlining function 'sigmoidf(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'">
+        <args Callee="sigmoidf(half)" Callee-DebugLoc="File ../main_5_slices.cpp Line 34 Column 0" Caller="conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)" Caller-DebugLoc="File ../main_5_slices.cpp Line 79 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../main_5_slices.cpp:122:63" msg_body="Inlining function 'tanhf_fast(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'">
+        <args Callee="tanhf_fast(half)" Callee-DebugLoc="File ../main_5_slices.cpp Line 43 Column 0" Caller="conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)" Caller-DebugLoc="File ../main_5_slices.cpp Line 79 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../main_5_slices.cpp:187:22" msg_body="Inlining function 'tanhf_fast(half)' into 'lstm_forward_unidir(half const*, int, int, half const*, half const*, half const*, half*, half*)'">
+        <args Callee="tanhf_fast(half)" Callee-DebugLoc="File ../main_5_slices.cpp Line 43 Column 0" Caller="lstm_forward_unidir(half const*, int, int, half const*, half const*, half const*, half*, half*)" Caller-DebugLoc="File ../main_5_slices.cpp Line 143 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../main_5_slices.cpp:302:9" msg_body="Inlining function 'bn_vector(half*, int, half const*, half const*, half const*, half const*, half)' into 'run_all_slices_unrolled(half*)'">
+        <args Callee="bn_vector(half*, int, half const*, half const*, half const*, half const*, half)" Callee-DebugLoc="File ../main_5_slices.cpp Line 196 Column 0" Caller="run_all_slices_unrolled(half*)" Caller-DebugLoc="File ../main_5_slices.cpp Line 223 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../main_5_slices.cpp:360:26" msg_body="Inlining function 'tanhf_fast(half)' into 'run_all_slices_unrolled(half*)'">
+        <args Callee="tanhf_fast(half)" Callee-DebugLoc="File ../main_5_slices.cpp Line 43 Column 0" Caller="run_all_slices_unrolled(half*)" Caller-DebugLoc="File ../main_5_slices.cpp Line 223 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../main_5_slices.cpp:376:5" msg_body="Inlining function 'bn_vector(half*, int, half const*, half const*, half const*, half const*, half)' into 'run_model(half*)'">
+        <args Callee="bn_vector(half*, int, half const*, half const*, half const*, half const*, half)" Callee-DebugLoc="File ../main_5_slices.cpp Line 196 Column 0" Caller="run_model(half*)" Caller-DebugLoc="File ../main_5_slices.cpp Line 365 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../main_5_slices.cpp:377:49" msg_body="Inlining function 'reluf(half)' into 'run_model(half*)'">
+        <args Callee="reluf(half)" Callee-DebugLoc="File ../main_5_slices.cpp Line 51 Column 0" Caller="run_model(half*)" Caller-DebugLoc="File ../main_5_slices.cpp Line 365 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="../main_5_slices.cpp:79:0" msg_body="Unrolling loop 'Loop4Big' (../main_5_slices.cpp:115:27) in function 'conv_bn_act_pool' partially with a factor of 2">
+        <args Factor="2" LoopLoc="../main_5_slices.cpp:115:27" LoopName="Loop4Big"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice4_weights.h:18349:0" msg_body="Applying array_partition to 'LSTM_b_ifog4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="LSTM_b_ifog4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice4_weights.h:17315:0" msg_body="Applying array_partition to 'BN1_var4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_var4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice4_weights.h:17309:0" msg_body="Applying array_partition to 'BN1_mean4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_mean4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice4_weights.h:17303:0" msg_body="Applying array_partition to 'BN1_beta4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_beta4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice4_weights.h:17297:0" msg_body="Applying array_partition to 'BN1_gamma4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_gamma4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice3_weights.h:18349:0" msg_body="Applying array_partition to 'LSTM_b_ifog3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="LSTM_b_ifog3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice3_weights.h:17315:0" msg_body="Applying array_partition to 'BN1_var3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_var3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice3_weights.h:17309:0" msg_body="Applying array_partition to 'BN1_mean3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_mean3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice3_weights.h:17303:0" msg_body="Applying array_partition to 'BN1_beta3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_beta3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice3_weights.h:17297:0" msg_body="Applying array_partition to 'BN1_gamma3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_gamma3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice2_weights.h:18349:0" msg_body="Applying array_partition to 'LSTM_b_ifog2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="LSTM_b_ifog2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice2_weights.h:17315:0" msg_body="Applying array_partition to 'BN1_var2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_var2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice2_weights.h:17309:0" msg_body="Applying array_partition to 'BN1_mean2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_mean2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice2_weights.h:17303:0" msg_body="Applying array_partition to 'BN1_beta2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_beta2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice2_weights.h:17297:0" msg_body="Applying array_partition to 'BN1_gamma2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_gamma2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice1_weights.h:18349:0" msg_body="Applying array_partition to 'LSTM_b_ifog1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="LSTM_b_ifog1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice1_weights.h:17315:0" msg_body="Applying array_partition to 'BN1_var1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_var1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice1_weights.h:17309:0" msg_body="Applying array_partition to 'BN1_mean1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_mean1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice1_weights.h:17303:0" msg_body="Applying array_partition to 'BN1_beta1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_beta1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice1_weights.h:17297:0" msg_body="Applying array_partition to 'BN1_gamma1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="BN1_gamma1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../slice0_weights.h:18349:0" msg_body="Applying array_partition to 'LSTM_b_ifog0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="LSTM_b_ifog0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../main_5_slices.cpp:84:10" msg_body="Applying array_partition to 'a_bn': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="a_bn"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../main_5_slices.cpp:84:19" msg_body="Applying array_partition to 'b_bn': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b_bn"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../main_5_slices.cpp:98:10" msg_body="Applying array_partition to 'pool_acc': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="pool_acc"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="../main_5_slices.cpp:384:10" msg_body="Automatically partitioning small array 'y_lin' completely based on array size.">
+        <args Value="y_lin"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../main_5_slices.cpp:150:10" msg_body="array_partition dim=1 type=cyclic factor=5 variable=z 1 lstm_forward_unidir ../main_5_slices.cpp:150:10 ../main_5_slices.cpp:183:9z">
+        <args PragmaFunction="lstm_forward_unidir" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=5 variable=z" PragmaSrcLoc="../main_5_slices.cpp:183:9" PragmaSrcLoc-DebugLoc="File ../main_5_slices.cpp Line 183 Column 9" PragmaType="array_partition" VarName="z" varLoc="../main_5_slices.cpp:150:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../main_5_slices.cpp:183:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=5 dim=1' for array 'z' due to pipeline pragma">
+        <args Dim="1" Factor="5" Mode="cyclic" Name="z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../main_5_slices.cpp:384:10" msg_body="array_partition dim=1 type=complete  variable=y_lin 1 run_model ../main_5_slices.cpp:384:10 y_lin">
+        <args PragmaFunction="run_model" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=y_lin" PragmaType="array_partition" VarName="y_lin" varLoc="../main_5_slices.cpp:384:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../main_5_slices.cpp:384:10" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'y_lin' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="y_lin" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../main_5_slices.cpp:150:10" msg_body="Applying array_partition to 'z': Cyclic partitioning with factor 5 on dimension 1.">
+        <args Dim="1" Factor="5" Mode="Cyclic" UOName="z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../main_5_slices.cpp:384:10" msg_body="Applying array_partition to 'y_lin': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="y_lin"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

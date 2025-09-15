@@ -85,7 +85,9 @@ static inline void conv_bn_act_pool(
     float inv, a_f, b_f;
     #pragma HLS ARRAY_PARTITION variable=a_bn complete
     #pragma HLS ARRAY_PARTITION variable=b_bn complete
+
     BNParamsLoop: for (int f = 0; f < F; ++f) {
+        #pragma HLS PIPELINE 
         inv = 1.0f / sqrtf((float)var[f] + (float)eps);
         a_f = (float)gamma[f] * inv;
         b_f = (float)beta[f]  - (float)mean[f] * a_f;
@@ -95,17 +97,23 @@ static inline void conv_bn_act_pool(
 
     half pool_acc[F];
     #pragma HLS ARRAY_PARTITION variable=pool_acc complete
-    InitPoolAcc: for (int f = 0; f < F; ++f) pool_acc[f] = (half)0.0f;
+    InitPoolAcc: for (int f = 0; f < F; ++f) { 
+        #pragma HLS PIPELINE
+        pool_acc[f] = (half)0.0f;
+    }
 
     int pc = 0, u = 0;
     Loop1Big: for (t = 0; t < T1; ++t) {
+        #pragma HLS PIPELINE off
         Loop2Big: for (f = 0; f < F; ++f) {
+            #pragma HLS PIPELINE off
             half acc = B ? B[f] : (half)0.0f;
             Loop3_1Big: for (k = 0; k < Ksz; ++k) {
+                #pragma HLS PIPELINE off
                 const half *xrow = X + (t + k) * E;
                 const half *wf   = W + (k * E) * F + f;
                 Loop4Big: for (e = 0; e < E; ++e) {
-                    #pragma HLS UNROLL
+                    #pragma HLS UNROLL factor=2
                     acc += xrow[e] * wf[e*F];
                 }
             }
@@ -115,7 +123,9 @@ static inline void conv_bn_act_pool(
             pool_acc[f] += y;
         }
         if (++pc == Psz) {
-            Loop3_2Big: for (f = 0; f < F; ++f) { 
+            Loop3_2Big: for (f = 0; f < F; ++f) {
+                #pragma HLS PIPELINE
+				// #pragma HLS UNROLL factor=4
                 U[u*F + f] = pool_acc[f] / (half)Psz; 
                 pool_acc[f] = (half)0.0f; 
             }
@@ -132,31 +142,45 @@ static inline void lstm_forward_unidir(const half *x,int Tlen,int D,
     half *h_last,half *c_last)
 {
     int j;
-    for(j = 0; j < H; ++j) { 
+    for(j = 0; j < H; ++j) {
+        #pragma HLS PIPELINE
         h_last[j] = 0.0f; 
         c_last[j] = 0.0f; 
     }
     half z[4*H];
 
     Loop1LSTM: for(int t = 0; t < Tlen; ++t) {
+        #pragma HLS PIPELINE off
         // z = b
-        Loop2_1LSTM: for(int g=0; g<4*H; ++g) z[g] = b_ifog[g];
+        Loop2_1LSTM: for(int g=0; g<4*H; ++g) {
+            #pragma HLS PIPELINE
+            z[g] = b_ifog[g];
+        }
 
         // input part
         const half *xt = x + t*D;
         Loop2_2LSTM: for(int d = 0; d < D; ++d) {
+            #pragma HLS PIPELINE off
             half xv = xt[d];
             const half *Wd = W_ifog + d * (4 * H);
-            Loop3_2_1LSTM: for(int g = 0; g < 4 * H; ++g) z[g] += xv * Wd[g];
+            Loop3_2_1LSTM: for(int g = 0; g < 4 * H; ++g) {
+                #pragma HLS PIPELINE
+                z[g] += xv * Wd[g];
+            }
         }
         // recurrent part
-        Loop2_3LSTM: for(int hp = 0; hp < H; ++hp){
+        Loop2_3LSTM: for(int hp = 0; hp < H; ++hp) {
+            #pragma HLS PIPELINE off
             half hv = h_last[hp];
             const half *Rh = R_ifog + hp * (4 * H);
-            Loop3_3_1LSTM: for(int g = 0; g < 4 * H; ++g) z[g] += hv * Rh[g];
+            Loop3_3_1LSTM: for(int g = 0; g < 4 * H; ++g) {
+                #pragma HLS PIPELINE
+                z[g] += hv * Rh[g];
+            }
         }
         // gates
         Loop2_4LSTM: for(j = 0; j < H; ++j) {
+            #pragma HLS PIPELINE
             half i = 1.f / (1.f + expf(-z[0 * H + j]));
             half f = 1.f / (1.f + expf(-z[1 * H + j]));
             half o = 1.f / (1.f + expf(-z[2 * H + j]));
@@ -171,7 +195,8 @@ static inline void lstm_forward_unidir(const half *x,int Tlen,int D,
 static inline void bn_vector(half *v, int C, const half *gamma, const half *beta, const half *mean, const half *var, half eps)
 {
     #pragma HLS INLINE
-    Loop_BN: for(int c = 0; c < C; ++c){
+    Loop_BN: for(int c = 0; c < C; ++c) {
+        #pragma HLS PIPELINE
         half n = (v[c] - mean[c]) / sqrtf(var[c] + eps);
         v[c] = gamma[c] * n + beta[c];
     }
@@ -182,9 +207,10 @@ static inline void dense_forward(const half *x,int In,
 {
     half acc;
     OuterLoopDense: for(int j = 0; j < Out; ++j) {
-        acc = b ? b[j] : 0.0f;
+        #pragma HLS PIPELINE off
+        acc = b ? b[j] : (half)0.0f;
         InnerLoopDense: for(int i = 0; i < In; ++i) {
-            // #pragma HLS PIPELINE
+            // #pragma HLS UNROLL
             acc += x[i] * W[i * Out + j];
         }
         y[j] = acc;
@@ -200,98 +226,63 @@ static void run_all_slices_unrolled(half merged[H]) {
     //----------------------------------------------------------//
 	// Slice 0
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma0 complete
-    #pragma HLS RESOURCE variable=BN1_gamma0 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_beta0  complete
-    #pragma HLS RESOURCE variable=BN1_beta0 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_mean0  complete
-    #pragma HLS RESOURCE variable=BN1_mean0 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_var0   complete
-    #pragma HLS RESOURCE variable=BN1_var0 core=Register
     #pragma HLS ARRAY_PARTITION variable=LSTM_b_ifog0 complete
-    #pragma HLS RESOURCE variable=LSTM_b_ifog0 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog0 complete
-    #pragma HLS RESOURCE variable=LSTM_R_ifog0 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog0 complete
-    #pragma HLS RESOURCE variable=LSTM_W_ifog0 core=Register
-    #pragma HLS ARRAY_PARTITION variable=ConvW0 complete
-    #pragma HLS RESOURCE variable=ConvW0 core=Register
-    #pragma HLS ARRAY_PARTITION variable=Emb0 block factor=128
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog0 complete
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog0 complete
+    // #pragma HLS ARRAY_PARTITION variable=ConvW0 complete
+    // #pragma HLS ARRAY_PARTITION variable=Emb0 block factor=128
+    // #pragma HLS BIND_STORAGE variable=Emb0 type=ram_t2p impl=bram
 
 	// Slice 1
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma1 complete
-    #pragma HLS RESOURCE variable=BN1_gamma1 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_beta1  complete
-    #pragma HLS RESOURCE variable=BN1_beta1 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_mean1  complete
-    #pragma HLS RESOURCE variable=BN1_mean1 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_var1   complete
-    #pragma HLS RESOURCE variable=BN1_var1 core=Register
     #pragma HLS ARRAY_PARTITION variable=LSTM_b_ifog1 complete
-    #pragma HLS RESOURCE variable=LSTM_b_ifog1 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog1 complete
-    #pragma HLS RESOURCE variable=LSTM_R_ifog1 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog1 complete
-    #pragma HLS RESOURCE variable=LSTM_W_ifog1 core=Register
-    #pragma HLS ARRAY_PARTITION variable=ConvW1 complete
-    #pragma HLS RESOURCE variable=ConvW1 core=Register
-    #pragma HLS ARRAY_PARTITION variable=Emb1 block factor=128
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog1 complete
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog1 complete
+    // #pragma HLS ARRAY_PARTITION variable=ConvW1 complete
+    // #pragma HLS ARRAY_PARTITION variable=Emb1 block factor=128
+    // #pragma HLS BIND_STORAGE variable=Emb1 type=ram_t2p impl=bram
 
 	// Slice 2
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma2 complete
-    #pragma HLS RESOURCE variable=BN1_gamma2 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_beta2  complete
-    #pragma HLS RESOURCE variable=BN1_beta2 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_mean2  complete
-    #pragma HLS RESOURCE variable=BN1_mean2 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_var2   complete
-    #pragma HLS RESOURCE variable=BN1_var2 core=Register
     #pragma HLS ARRAY_PARTITION variable=LSTM_b_ifog2 complete
-    #pragma HLS RESOURCE variable=LSTM_b_ifog2 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog2 complete
-    #pragma HLS RESOURCE variable=LSTM_R_ifog2 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog2 complete
-    #pragma HLS RESOURCE variable=LSTM_W_ifog2 core=Register
-    #pragma HLS ARRAY_PARTITION variable=ConvW2 complete
-    #pragma HLS RESOURCE variable=ConvW2 core=Register
-    #pragma HLS ARRAY_PARTITION variable=Emb2 block factor=128
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog2 complete
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog2 complete
+    // #pragma HLS ARRAY_PARTITION variable=ConvW2 complete
+    // #pragma HLS ARRAY_PARTITION variable=Emb2 block factor=128
+    // #pragma HLS BIND_STORAGE variable=Emb2 type=ram_t2p impl=bram
 
 	// Slice 3
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma3 complete
-    #pragma HLS RESOURCE variable=BN1_gamma3 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_beta3  complete
-    #pragma HLS RESOURCE variable=BN1_beta3 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_mean3  complete
-    #pragma HLS RESOURCE variable=BN1_mean3 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_var3   complete
-    #pragma HLS RESOURCE variable=BN1_var3 core=Register
     #pragma HLS ARRAY_PARTITION variable=LSTM_b_ifog3 complete
-    #pragma HLS RESOURCE variable=LSTM_b_ifog3 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog3 complete
-    #pragma HLS RESOURCE variable=LSTM_R_ifog3 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog3 complete
-    #pragma HLS RESOURCE variable=LSTM_W_ifog3 core=Register
-    #pragma HLS ARRAY_PARTITION variable=ConvW3 complete
-    #pragma HLS RESOURCE variable=ConvW3 core=Register
-    #pragma HLS ARRAY_PARTITION variable=Emb3 block factor=128
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog3 complete
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog3 complete
+    // #pragma HLS ARRAY_PARTITION variable=ConvW3 complete
+    // #pragma HLS ARRAY_PARTITION variable=Emb3 block factor=128
+    // #pragma HLS BIND_STORAGE variable=Emb3 type=ram_t2p impl=bram
 
 	// Slice 4
     #pragma HLS ARRAY_PARTITION variable=BN1_gamma4 complete
-    #pragma HLS RESOURCE variable=BN1_gamma4 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_beta4  complete
-    #pragma HLS RESOURCE variable=BN1_beta4 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_mean4  complete
-    #pragma HLS RESOURCE variable=BN1_mean4 core=Register
     #pragma HLS ARRAY_PARTITION variable=BN1_var4   complete
-    #pragma HLS RESOURCE variable=BN1_var4 core=Register
     #pragma HLS ARRAY_PARTITION variable=LSTM_b_ifog4 complete
-    #pragma HLS RESOURCE variable=LSTM_b_ifog4 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog4 complete
-    #pragma HLS RESOURCE variable=LSTM_R_ifog4 core=Register
-    #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog4 complete
-    #pragma HLS RESOURCE variable=LSTM_W_ifog4 core=Register
-    #pragma HLS ARRAY_PARTITION variable=ConvW4 complete
-    #pragma HLS RESOURCE variable=ConvW4 core=Register
-    #pragma HLS ARRAY_PARTITION variable=Emb4 block factor=128
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_R_ifog4 complete
+    // #pragma HLS ARRAY_PARTITION variable=LSTM_W_ifog4 complete
+    // #pragma HLS ARRAY_PARTITION variable=ConvW4 complete
+    // #pragma HLS ARRAY_PARTITION variable=Emb4 block factor=128
+    // #pragma HLS BIND_STORAGE variable=Emb4 type=ram_t2p impl=bram
     //----------------------------------------------------------//
 
     const half BN_eps = 1e-3f;
@@ -371,8 +362,7 @@ static void run_all_slices_unrolled(half merged[H]) {
     }
 }
 
-// ======================= main =======================
-int main(void) {
+void run_model(half *y_hat_out) {
     #pragma HLS TOP
     half merged[H];
     int j;
@@ -394,7 +384,14 @@ int main(void) {
     half y_lin[1];
     dense_forward(z1, M1, output_W, output_b, 1, y_lin);
     half y_hat = sigmoidf(y_lin[0]);
-
-    printf("y_hat = %.7e\n", y_hat);
-    return 0;
 }
+
+// ======================= main =======================
+// int main(void) {
+
+//     half y;
+//     run_model(&y);
+//     printf("y_hat = %.7e\n", (float)y);
+//     return 0;
+//     return 0;
+// }

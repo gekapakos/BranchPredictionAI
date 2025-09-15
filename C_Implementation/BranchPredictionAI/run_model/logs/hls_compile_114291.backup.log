@@ -1,0 +1,1606 @@
+INFO: [HLS 200-2005] Using work_dir /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/head_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/head_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/main_5_slices.cpp' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/main_5_slices.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice0_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice0_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice1_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice1_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice2_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice2_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice3_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice3_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice4_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice4_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=run_model' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-3' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-3'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(15)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3.76 seconds. CPU system time: 0.38 seconds. Elapsed time: 3.89 seconds; current allocated memory: 233.789 MB.
+INFO: [HLS 200-10] Analyzing design file '../main_5_slices.cpp' ... 
+WARNING: [HLS 207-5292] unused parameter 'C' (../main_5_slices.cpp:77:9)
+WARNING: [HLS 207-5292] unused parameter 'y_hat_out' (../main_5_slices.cpp:354:66)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 19.31 seconds. CPU system time: 1.52 seconds. Elapsed time: 20.93 seconds; current allocated memory: 236.117 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,942 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,120 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,830 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,733 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,733 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,918 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,990 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,990 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,990 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,753 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,237 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,766 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 50,821 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 39,837 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 39,827 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 39,743 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'reluf(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)' (../main_5_slices.cpp:123:35)
+INFO: [HLS 214-131] Inlining function 'sigmoidf(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)' (../main_5_slices.cpp:123:79)
+INFO: [HLS 214-131] Inlining function 'tanhf_fast(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)' (../main_5_slices.cpp:123:63)
+INFO: [HLS 214-131] Inlining function 'tanhf_fast(half)' into 'lstm_forward_unidir(half const*, int, int, half const*, half const*, half const*, half*, half*)' (../main_5_slices.cpp:181:22)
+INFO: [HLS 214-131] Inlining function 'bn_vector(half*, int, half const*, half const*, half const*, half const*, half)' into 'run_all_slices_unrolled(half*)' (../main_5_slices.cpp:291:9)
+INFO: [HLS 214-131] Inlining function 'tanhf_fast(half)' into 'run_all_slices_unrolled(half*)' (../main_5_slices.cpp:349:26)
+INFO: [HLS 214-131] Inlining function 'bn_vector(half*, int, half const*, half const*, half const*, half const*, half)' into 'run_model(half*)' (../main_5_slices.cpp:365:5)
+INFO: [HLS 214-131] Inlining function 'reluf(half)' into 'run_model(half*)' (../main_5_slices.cpp:366:49)
+INFO: [HLS 214-188] Unrolling loop 'Loop3_1Big' (../main_5_slices.cpp:111:25) in function 'conv_bn_act_pool' partially with a factor of 2 (../main_5_slices.cpp:79:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_var4': Complete partitioning on dimension 1. (../slice4_weights.h:17315:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_mean4': Complete partitioning on dimension 1. (../slice4_weights.h:17309:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_beta4': Complete partitioning on dimension 1. (../slice4_weights.h:17303:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_gamma4': Complete partitioning on dimension 1. (../slice4_weights.h:17297:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_var3': Complete partitioning on dimension 1. (../slice3_weights.h:17315:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_mean3': Complete partitioning on dimension 1. (../slice3_weights.h:17309:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_beta3': Complete partitioning on dimension 1. (../slice3_weights.h:17303:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_gamma3': Complete partitioning on dimension 1. (../slice3_weights.h:17297:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_var2': Complete partitioning on dimension 1. (../slice2_weights.h:17315:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_mean2': Complete partitioning on dimension 1. (../slice2_weights.h:17309:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_beta2': Complete partitioning on dimension 1. (../slice2_weights.h:17303:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_gamma2': Complete partitioning on dimension 1. (../slice2_weights.h:17297:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_var1': Complete partitioning on dimension 1. (../slice1_weights.h:17315:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_mean1': Complete partitioning on dimension 1. (../slice1_weights.h:17309:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_beta1': Complete partitioning on dimension 1. (../slice1_weights.h:17303:0)
+INFO: [HLS 214-248] Applying array_partition to 'BN1_gamma1': Complete partitioning on dimension 1. (../slice1_weights.h:17297:0)
+INFO: [HLS 214-248] Applying array_partition to 'a_bn': Complete partitioning on dimension 1. (../main_5_slices.cpp:84:10)
+INFO: [HLS 214-248] Applying array_partition to 'b_bn': Complete partitioning on dimension 1. (../main_5_slices.cpp:84:19)
+INFO: [HLS 214-248] Applying array_partition to 'pool_acc': Complete partitioning on dimension 1. (../main_5_slices.cpp:98:10)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< InnerLoopDense> at ../main_5_slices.cpp:206:25 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< Loop3_1Big> at ../main_5_slices.cpp:111:25 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_146_1> at ../main_5_slices.cpp:146:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< Loop3_2_1LSTM> at ../main_5_slices.cpp:163:28 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< Loop2_1LSTM> at ../main_5_slices.cpp:155:15 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MergedLoop> at ../main_5_slices.cpp:279:17 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MergedLoop0> at ../main_5_slices.cpp:292:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MergedLoop1> at ../main_5_slices.cpp:306:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MergedLoop2> at ../main_5_slices.cpp:320:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MergedLoop3> at ../main_5_slices.cpp:334:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MergedLoop4> at ../main_5_slices.cpp:348:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< ReLULoop1> at ../main_5_slices.cpp:366:16 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< ReLULoop2> at ../main_5_slices.cpp:371:16 
+INFO: [HLS 214-291] Loop 'Loop4Big' is marked as complete unroll implied by the pipeline pragma (../main_5_slices.cpp:116:27)
+INFO: [HLS 214-186] Unrolling loop 'Loop4Big' (../main_5_slices.cpp:116:27) in function 'conv_bn_act_pool' completely with a factor of 32 (../main_5_slices.cpp:79:0)
+INFO: [HLS 214-421] Automatically partitioning small array 'y_lin' completely based on array size. (../main_5_slices.cpp:373:10)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=65 dim=1' for array 'ConvW1' due to pipeline pragma (../slice1_weights.h:16393:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=65 dim=1' for array 'ConvW2' due to pipeline pragma (../slice2_weights.h:16393:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=65 dim=1' for array 'ConvW3' due to pipeline pragma (../slice3_weights.h:16393:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=65 dim=1' for array 'ConvW4' due to pipeline pragma (../slice4_weights.h:16393:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=32 dim=1' for array 'X_slice12' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=32 dim=1' for array 'X_slice27' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=32 dim=1' for array 'X_slice42' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=32 dim=1' for array 'X_slice57' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'y_lin' due to pipeline pragma (../main_5_slices.cpp:373:10)
+INFO: [HLS 214-248] Applying array_partition to 'X_slice57': Cyclic partitioning with factor 32 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'X_slice42': Cyclic partitioning with factor 32 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'X_slice27': Cyclic partitioning with factor 32 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'X_slice12': Cyclic partitioning with factor 32 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'ConvW4': Cyclic partitioning with factor 65 on dimension 1. (../slice4_weights.h:16393:0)
+INFO: [HLS 214-248] Applying array_partition to 'ConvW3': Cyclic partitioning with factor 65 on dimension 1. (../slice3_weights.h:16393:0)
+INFO: [HLS 214-248] Applying array_partition to 'ConvW2': Cyclic partitioning with factor 65 on dimension 1. (../slice2_weights.h:16393:0)
+INFO: [HLS 214-248] Applying array_partition to 'ConvW1': Cyclic partitioning with factor 65 on dimension 1. (../slice1_weights.h:16393:0)
+INFO: [HLS 214-248] Applying array_partition to 'y_lin': Complete partitioning on dimension 1. (../main_5_slices.cpp:373:10)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 44.67 seconds. CPU system time: 0.55 seconds. Elapsed time: 48.84 seconds; current allocated memory: 239.008 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 239.008 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 12.33 seconds. CPU system time: 0.01 seconds. Elapsed time: 12.35 seconds; current allocated memory: 279.625 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'dense_forward' into 'run_model' (../main_5_slices.cpp:364) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'run_model' (../main_5_slices.cpp:369) automatically.
+WARNING: [SYNCHK 200-77] The top function 'run_model' (../main_5_slices.cpp:354) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 3.7 seconds. CPU system time: 0.02 seconds. Elapsed time: 3.73 seconds; current allocated memory: 313.762 MB.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4 to 3 for loop 'Loop3_1Big' (../main_5_slices.cpp:81:15) in function 'conv_bn_act_pool.4'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 4 to 3 for loop 'Loop3_1Big' (../main_5_slices.cpp:81:15) in function 'conv_bn_act_pool.4'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4 to 3 for loop 'Loop3_1Big' (../main_5_slices.cpp:81:15) in function 'conv_bn_act_pool.3'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 4 to 3 for loop 'Loop3_1Big' (../main_5_slices.cpp:81:15) in function 'conv_bn_act_pool.3'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4 to 3 for loop 'Loop3_1Big' (../main_5_slices.cpp:81:15) in function 'conv_bn_act_pool.2'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 4 to 3 for loop 'Loop3_1Big' (../main_5_slices.cpp:81:15) in function 'conv_bn_act_pool.2'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4 to 3 for loop 'Loop3_1Big' (../main_5_slices.cpp:81:15) in function 'conv_bn_act_pool'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 4 to 3 for loop 'Loop3_1Big' (../main_5_slices.cpp:81:15) in function 'conv_bn_act_pool'.
+INFO: [XFORM 203-602] Inlining function 'dense_forward' into 'run_model' (../main_5_slices.cpp:364) automatically.
+INFO: [XFORM 203-602] Inlining function 'dense_forward.1' into 'run_model' (../main_5_slices.cpp:369) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:278:9) to (../main_5_slices.cpp:292:22) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:278:9) to (../main_5_slices.cpp:306:22) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:278:9) to (../main_5_slices.cpp:320:22) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:278:9) to (../main_5_slices.cpp:334:22) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:278:9) to (../main_5_slices.cpp:348:22) in function 'run_all_slices_unrolled'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:177:9) to (../main_5_slices.cpp:176:22) in function 'lstm_forward_unidir'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:101:9) to (../main_5_slices.cpp:100:15) in function 'conv_bn_act_pool.4'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:101:9) to (../main_5_slices.cpp:100:15) in function 'conv_bn_act_pool.3'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:101:9) to (../main_5_slices.cpp:100:15) in function 'conv_bn_act_pool.2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../main_5_slices.cpp:101:9) to (../main_5_slices.cpp:100:15) in function 'conv_bn_act_pool'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 40.75 seconds. CPU system time: 0.03 seconds. Elapsed time: 40.95 seconds; current allocated memory: 356.574 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'OuterLoopDense'(../main_5_slices.cpp:203:21) and 'InnerLoopDense'(../main_5_slices.cpp:206:25) in function 'run_model' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'OuterLoopDense'(../main_5_slices.cpp:203:21) and 'InnerLoopDense'(../main_5_slices.cpp:206:25) in function 'run_model' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Loop2_2LSTM'(../main_5_slices.cpp:159:22) and 'Loop3_2_1LSTM'(../main_5_slices.cpp:163:28) in function 'lstm_forward_unidir' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Loop2_3LSTM'(../main_5_slices.cpp:166:22) and 'Loop3_3_1LSTM'(../main_5_slices.cpp:170:28) in function 'lstm_forward_unidir' into perfectly nested loops.
+INFO: [HLS 200-2060] Failed to convert nested loops 'Loop2Big'(../main_5_slices.cpp:108:12) and 'Loop3_1Big'(../main_5_slices.cpp:111:25) in function 'conv_bn_act_pool.4' into perfectly nested loops.
+INFO: [HLS 200-2060] Failed to convert nested loops 'Loop2Big'(../main_5_slices.cpp:108:12) and 'Loop3_1Big'(../main_5_slices.cpp:111:25) in function 'conv_bn_act_pool.3' into perfectly nested loops.
+INFO: [HLS 200-2060] Failed to convert nested loops 'Loop2Big'(../main_5_slices.cpp:108:12) and 'Loop3_1Big'(../main_5_slices.cpp:111:25) in function 'conv_bn_act_pool.2' into perfectly nested loops.
+INFO: [HLS 200-2060] Failed to convert nested loops 'Loop2Big'(../main_5_slices.cpp:108:12) and 'Loop3_1Big'(../main_5_slices.cpp:111:25) in function 'conv_bn_act_pool' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'OuterLoopDense' (../main_5_slices.cpp:203:21) in function 'run_model'.
+INFO: [XFORM 203-541] Flattening a loop nest 'OuterLoopDense' (../main_5_slices.cpp:203:21) in function 'run_model'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop2_2LSTM' (../main_5_slices.cpp:159:22) in function 'lstm_forward_unidir'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop2_3LSTM' (../main_5_slices.cpp:166:22) in function 'lstm_forward_unidir'.
+WARNING: [HLS 200-960] Cannot flatten loop 'Loop2Big' (../main_5_slices.cpp:108:12) in function 'conv_bn_act_pool.4' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'Loop2Big' (../main_5_slices.cpp:108:12) in function 'conv_bn_act_pool.3' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'Loop2Big' (../main_5_slices.cpp:108:12) in function 'conv_bn_act_pool.2' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'Loop2Big' (../main_5_slices.cpp:108:12) in function 'conv_bn_act_pool' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 36.71 seconds. CPU system time: 0.2 seconds. Elapsed time: 37 seconds; current allocated memory: 833.301 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'run_model' ...
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2_Pipeline_BNParamsLoop' to 'conv_bn_act_pool_2_Pipeline_BNParamsLoop'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2_Pipeline_Loop3_1Big' to 'conv_bn_act_pool_2_Pipeline_Loop3_1Big'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2_Pipeline_Loop3_2Big' to 'conv_bn_act_pool_2_Pipeline_Loop3_2Big'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.2' to 'conv_bn_act_pool_2'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3_Pipeline_BNParamsLoop' to 'conv_bn_act_pool_3_Pipeline_BNParamsLoop'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3_Pipeline_Loop3_1Big' to 'conv_bn_act_pool_3_Pipeline_Loop3_1Big'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3_Pipeline_Loop3_2Big' to 'conv_bn_act_pool_3_Pipeline_Loop3_2Big'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.3' to 'conv_bn_act_pool_3'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.4_Pipeline_BNParamsLoop' to 'conv_bn_act_pool_4_Pipeline_BNParamsLoop'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.4_Pipeline_Loop3_1Big' to 'conv_bn_act_pool_4_Pipeline_Loop3_1Big'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.4_Pipeline_Loop3_2Big' to 'conv_bn_act_pool_4_Pipeline_Loop3_2Big'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_bn_act_pool.4' to 'conv_bn_act_pool_4'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_MergedLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MergedLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'MergedLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 15.08 seconds. CPU system time: 0.07 seconds. Elapsed time: 15.17 seconds; current allocated memory: 843.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 843.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lstm_forward_unidir_Pipeline_VITIS_LOOP_146_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_146_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_146_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 843.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 843.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lstm_forward_unidir_Pipeline_Loop2_1LSTM' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop2_1LSTM'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'Loop2_1LSTM'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 843.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 843.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lstm_forward_unidir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop2_2LSTM_Loop3_2_1LSTM'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop2_3LSTM_Loop3_3_1LSTM'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 13, loop 'Loop2_2LSTM_Loop3_2_1LSTM'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 13, loop 'Loop2_3LSTM_Loop3_3_1LSTM'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 844.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 844.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_Loop_BN' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_BN'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 39, loop 'Loop_BN'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 845.102 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 845.102 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_MergedLoop0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MergedLoop0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'MergedLoop0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 845.582 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 845.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_Pipeline_BNParamsLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'BNParamsLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 38, loop 'BNParamsLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 847.746 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 847.746 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_Pipeline_Loop3_1Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop3_1Big'.
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 241, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 249, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 253, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 255, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 256, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive for loop 'Loop3_1Big': unable to pipeline.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 16.77 seconds. CPU system time: 0.08 seconds. Elapsed time: 16.89 seconds; current allocated memory: 935.375 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 15.61 seconds. CPU system time: 0.06 seconds. Elapsed time: 15.8 seconds; current allocated memory: 942.816 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_Pipeline_Loop3_2Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop3_2Big'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, loop 'Loop3_2Big'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.37 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.44 seconds; current allocated memory: 948.953 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 948.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 948.953 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 948.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_Loop_BN2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_BN'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 39, loop 'Loop_BN'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 948.953 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 948.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_MergedLoop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MergedLoop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'MergedLoop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 949.480 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 949.480 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_2_Pipeline_BNParamsLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'BNParamsLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 38, loop 'BNParamsLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 951.121 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 951.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop3_1Big'.
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 241, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 249, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 253, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 255, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 256, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive for loop 'Loop3_1Big': unable to pipeline.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 16.35 seconds. CPU system time: 0.08 seconds. Elapsed time: 16.47 seconds; current allocated memory: 1.014 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 15.67 seconds. CPU system time: 0.06 seconds. Elapsed time: 15.78 seconds; current allocated memory: 1.022 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_2_Pipeline_Loop3_2Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop3_2Big'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, loop 'Loop3_2Big'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.43 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.5 seconds; current allocated memory: 1.028 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.028 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_Loop_BN3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_BN'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 39, loop 'Loop_BN'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 1.028 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_MergedLoop2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MergedLoop2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'MergedLoop2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.028 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_3_Pipeline_BNParamsLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'BNParamsLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 38, loop 'BNParamsLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.030 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop3_1Big'.
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 241, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 249, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 253, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 255, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 256, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive for loop 'Loop3_1Big': unable to pipeline.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 16.78 seconds. CPU system time: 0.1 seconds. Elapsed time: 16.96 seconds; current allocated memory: 1.115 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 16.25 seconds. CPU system time: 0.06 seconds. Elapsed time: 16.37 seconds; current allocated memory: 1.123 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_3_Pipeline_Loop3_2Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop3_2Big'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, loop 'Loop3_2Big'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.45 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.54 seconds; current allocated memory: 1.129 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.129 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 1.129 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.129 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_Loop_BN4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_BN'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 39, loop 'Loop_BN'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 1.129 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.129 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_MergedLoop3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MergedLoop3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'MergedLoop3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.130 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.130 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_4_Pipeline_BNParamsLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'BNParamsLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 38, loop 'BNParamsLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.131 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.131 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop3_1Big'.
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 241, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 249, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 253, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 255, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' (loop 'Loop3_1Big'): Unable to enforce a carried dependence constraint (II = 256, distance = 1, offset = 1) between 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118) and 'hadd' operation 16 bit ('acc', ../main_5_slices.cpp:118).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive for loop 'Loop3_1Big': unable to pipeline.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 17.84 seconds. CPU system time: 0.06 seconds. Elapsed time: 17.94 seconds; current allocated memory: 1.216 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 13.41 seconds. CPU system time: 0.05 seconds. Elapsed time: 13.49 seconds; current allocated memory: 1.224 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_4_Pipeline_Loop3_2Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop3_2Big'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, loop 'Loop3_2Big'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.16 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.21 seconds; current allocated memory: 1.230 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.230 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_act_pool_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.230 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 1.230 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_Loop_BN5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_BN'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 39, loop 'Loop_BN'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.230 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.230 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled_Pipeline_MergedLoop4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MergedLoop4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'MergedLoop4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.231 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.231 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_all_slices_unrolled' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.231 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 1.232 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_model_Pipeline_Loop_BN' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_BN'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 42, loop 'Loop_BN'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.74 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.81 seconds; current allocated memory: 1.232 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.232 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_model_Pipeline_ReLULoop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ReLULoop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'ReLULoop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.233 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.233 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_model_Pipeline_Loop_BN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_BN'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 42, loop 'Loop_BN'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.233 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.233 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_model_Pipeline_ReLULoop2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ReLULoop2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'ReLULoop2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.234 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.234 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_model' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'OuterLoopDense_InnerLoopDense'.
+WARNING: [HLS 200-880] The II Violation in module 'run_model' (loop 'OuterLoopDense_InnerLoopDense'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('acc_write_ln202', ../main_5_slices.cpp:202->../main_5_slices.cpp:364) of variable 'acc', ../main_5_slices.cpp:208->../main_5_slices.cpp:364 on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:364 and 'load' operation 16 bit ('acc_load', ../main_5_slices.cpp:204->../main_5_slices.cpp:364) on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:364.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'run_model' (loop 'OuterLoopDense_InnerLoopDense'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('acc_write_ln202', ../main_5_slices.cpp:202->../main_5_slices.cpp:364) of variable 'acc', ../main_5_slices.cpp:208->../main_5_slices.cpp:364 on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:364 and 'load' operation 16 bit ('acc_load', ../main_5_slices.cpp:204->../main_5_slices.cpp:364) on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:364.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'run_model' (loop 'OuterLoopDense_InnerLoopDense'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('acc_write_ln202', ../main_5_slices.cpp:202->../main_5_slices.cpp:364) of variable 'acc', ../main_5_slices.cpp:208->../main_5_slices.cpp:364 on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:364 and 'load' operation 16 bit ('acc_load', ../main_5_slices.cpp:204->../main_5_slices.cpp:364) on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:364.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [SCHED 204-61] Pipelining loop 'OuterLoopDense_InnerLoopDense'.
+WARNING: [HLS 200-880] The II Violation in module 'run_model' (loop 'OuterLoopDense_InnerLoopDense'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('acc_2_write_ln202', ../main_5_slices.cpp:202->../main_5_slices.cpp:369) of variable 'acc', ../main_5_slices.cpp:208->../main_5_slices.cpp:369 on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:369 and 'load' operation 16 bit ('acc_2_load', ../main_5_slices.cpp:204->../main_5_slices.cpp:369) on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:369.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'run_model' (loop 'OuterLoopDense_InnerLoopDense'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('acc_2_write_ln202', ../main_5_slices.cpp:202->../main_5_slices.cpp:369) of variable 'acc', ../main_5_slices.cpp:208->../main_5_slices.cpp:369 on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:369 and 'load' operation 16 bit ('acc_2_load', ../main_5_slices.cpp:204->../main_5_slices.cpp:369) on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:369.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'run_model' (loop 'OuterLoopDense_InnerLoopDense'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('acc_2_write_ln202', ../main_5_slices.cpp:202->../main_5_slices.cpp:369) of variable 'acc', ../main_5_slices.cpp:208->../main_5_slices.cpp:369 on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:369 and 'load' operation 16 bit ('acc_2_load', ../main_5_slices.cpp:204->../main_5_slices.cpp:369) on local variable 'acc', ../main_5_slices.cpp:202->../main_5_slices.cpp:369.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 13, loop 'OuterLoopDense_InnerLoopDense'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 13, loop 'OuterLoopDense_InnerLoopDense'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.234 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.47 seconds. CPU system time: 0 seconds. Elapsed time: 0.47 seconds; current allocated memory: 1.236 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_MergedLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_MergedLoop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.11 seconds; current allocated memory: 1.236 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_unidir_Pipeline_VITIS_LOOP_146_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_unidir_Pipeline_VITIS_LOOP_146_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 1.237 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_unidir_Pipeline_Loop2_1LSTM' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'lstm_forward_unidir_Pipeline_Loop2_1LSTM' pipeline 'Loop2_1LSTM' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_unidir_Pipeline_Loop2_1LSTM'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.237 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_unidir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fexp_32ns_32ns_32_8_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_unidir'.
+INFO: [RTMG 210-278] Implementing memory 'run_model_lstm_forward_unidir_c_slice_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'run_model_lstm_forward_unidir_z_RAM_AUTO_3R2W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.240 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_Loop_BN' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_Loop_BN' pipeline 'Loop_BN' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_Loop_BN'.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_Pipeline_Loop_BN_BN2_var0_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 1.245 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_MergedLoop0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_MergedLoop0' pipeline 'MergedLoop0' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_MergedLoop0'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.246 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_Pipeline_BNParamsLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv_bn_act_pool_Pipeline_BNParamsLoop' pipeline 'BNParamsLoop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_Pipeline_BNParamsLoop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.88 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.97 seconds; current allocated memory: 1.254 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_Pipeline_Loop3_1Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13ns_15ns_27_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_131_7_16_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_13ns_8ns_7_17_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_Pipeline_Loop3_1Big'.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_5_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_6_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_7_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_8_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_9_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_10_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_11_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_12_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_13_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_14_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_15_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_16_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_17_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_18_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_19_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_20_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_21_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_22_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_23_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_24_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_25_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_26_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_27_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_28_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_29_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_30_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_31_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_32_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_33_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_34_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_35_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_36_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_37_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_38_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_39_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_40_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_41_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_42_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_43_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_44_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_45_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_46_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_47_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_48_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_49_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_50_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_51_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_52_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_53_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_54_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_55_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_56_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_57_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_58_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_59_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_60_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_61_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_62_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_63_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_ConvW1_64_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_5_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_6_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_7_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_8_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_9_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_10_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_11_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_12_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_13_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_14_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_15_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_16_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_17_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_18_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_19_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_20_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_21_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_22_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_23_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_24_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_25_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_26_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_27_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_28_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_29_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_30_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_Pipeline_Loop3_1Big_X_slice12_31_ROM_AUTO_3R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 8.12 seconds. CPU system time: 0.14 seconds. Elapsed time: 8.3 seconds; current allocated memory: 1.372 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_Pipeline_Loop3_2Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv_bn_act_pool_Pipeline_Loop3_2Big' pipeline 'Loop3_2Big' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_Pipeline_Loop3_2Big'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4.12 seconds. CPU system time: 0.45 seconds. Elapsed time: 4.63 seconds; current allocated memory: 1.504 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'conv_bn_act_pool/grp_fu_1848_p_opcode' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.44 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.48 seconds; current allocated memory: 1.510 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_Loop_BN2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_Loop_BN2' pipeline 'Loop_BN' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_Loop_BN2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.65 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.7 seconds; current allocated memory: 1.517 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_MergedLoop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_MergedLoop1' pipeline 'MergedLoop1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_MergedLoop1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 1.518 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_2_Pipeline_BNParamsLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv_bn_act_pool_2_Pipeline_BNParamsLoop' pipeline 'BNParamsLoop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_2_Pipeline_BNParamsLoop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.59 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.61 seconds; current allocated memory: 1.525 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_2_Pipeline_Loop3_1Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13ns_15ns_27_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_131_7_16_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_13ns_8ns_7_17_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_2_Pipeline_Loop3_1Big'.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_5_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_6_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_7_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_8_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_9_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_10_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_11_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_12_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_13_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_14_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_15_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_16_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_17_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_18_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_19_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_20_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_21_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_22_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_23_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_24_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_25_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_26_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_27_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_28_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_29_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_30_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_31_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_32_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_33_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_34_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_35_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_36_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_37_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_38_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_39_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_40_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_41_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_42_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_43_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_44_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_45_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_46_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_47_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_48_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_49_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_50_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_51_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_52_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_53_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_54_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_55_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_56_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_57_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_58_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_59_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_60_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_61_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_62_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_63_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_ConvW2_64_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_5_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_6_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_7_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_8_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_9_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_10_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_11_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_12_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_13_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_14_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_15_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_16_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_17_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_18_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_19_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_20_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_21_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_22_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_23_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_24_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_25_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_26_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_27_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_28_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_29_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_30_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_2_Pipeline_Loop3_1Big_X_slice27_31_ROM_AUTO_3R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 8.43 seconds. CPU system time: 0.14 seconds. Elapsed time: 8.59 seconds; current allocated memory: 1.652 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_2_Pipeline_Loop3_2Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv_bn_act_pool_2_Pipeline_Loop3_2Big' pipeline 'Loop3_2Big' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_2_Pipeline_Loop3_2Big'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3.45 seconds. CPU system time: 0.38 seconds. Elapsed time: 3.88 seconds; current allocated memory: 1.814 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'conv_bn_act_pool_2/grp_fu_1848_p_opcode' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.29 seconds; current allocated memory: 1.819 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_Loop_BN3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_Loop_BN3' pipeline 'Loop_BN' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_Loop_BN3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.4 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.43 seconds; current allocated memory: 1.826 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_MergedLoop2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_MergedLoop2' pipeline 'MergedLoop2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_MergedLoop2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.828 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_3_Pipeline_BNParamsLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv_bn_act_pool_3_Pipeline_BNParamsLoop' pipeline 'BNParamsLoop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_3_Pipeline_BNParamsLoop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.48 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.835 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_3_Pipeline_Loop3_1Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13ns_15ns_27_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_131_7_16_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_13ns_8ns_7_17_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_3_Pipeline_Loop3_1Big'.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_5_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_6_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_7_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_8_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_9_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_10_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_11_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_12_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_13_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_14_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_15_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_16_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_17_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_18_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_19_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_20_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_21_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_22_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_23_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_24_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_25_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_26_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_27_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_28_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_29_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_30_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_31_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_32_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_33_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_34_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_35_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_36_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_37_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_38_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_39_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_40_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_41_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_42_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_43_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_44_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_45_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_46_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_47_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_48_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_49_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_50_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_51_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_52_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_53_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_54_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_55_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_56_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_57_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_58_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_59_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_60_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_61_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_62_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_63_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_ConvW3_64_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_5_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_6_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_7_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_8_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_9_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_10_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_11_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_12_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_13_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_14_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_15_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_16_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_17_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_18_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_19_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_20_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_21_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_22_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_23_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_24_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_25_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_26_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_27_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_28_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_29_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_30_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_3_Pipeline_Loop3_1Big_X_slice42_31_ROM_AUTO_3R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 8.38 seconds. CPU system time: 0.3 seconds. Elapsed time: 8.7 seconds; current allocated memory: 1.961 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_3_Pipeline_Loop3_2Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv_bn_act_pool_3_Pipeline_Loop3_2Big' pipeline 'Loop3_2Big' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_3_Pipeline_Loop3_2Big'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3.28 seconds. CPU system time: 0.34 seconds. Elapsed time: 3.68 seconds; current allocated memory: 2.121 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'conv_bn_act_pool_3/grp_fu_1848_p_opcode' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.61 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.69 seconds; current allocated memory: 2.121 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_Loop_BN4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_Loop_BN4' pipeline 'Loop_BN' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_Loop_BN4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.61 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.64 seconds; current allocated memory: 2.121 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_MergedLoop3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_MergedLoop3' pipeline 'MergedLoop3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_MergedLoop3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.28 seconds; current allocated memory: 2.121 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_4_Pipeline_BNParamsLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv_bn_act_pool_4_Pipeline_BNParamsLoop' pipeline 'BNParamsLoop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_4_Pipeline_BNParamsLoop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.71 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.73 seconds; current allocated memory: 2.121 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_4_Pipeline_Loop3_1Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13ns_15ns_27_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_131_7_16_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_13ns_8ns_7_17_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_4_Pipeline_Loop3_1Big'.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_5_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_6_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_7_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_8_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_9_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_10_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_11_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_12_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_13_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_14_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_15_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_16_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_17_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_18_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_19_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_20_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_21_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_22_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_23_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_24_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_25_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_26_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_27_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_28_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_29_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_30_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_31_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_32_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_33_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_34_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_35_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_36_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_37_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_38_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_39_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_40_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_41_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_42_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_43_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_44_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_45_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_46_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_47_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_48_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_49_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_50_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_51_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_52_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_53_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_54_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_55_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_56_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_57_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_58_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_59_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_60_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_61_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_62_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_63_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_ConvW4_64_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_5_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_6_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_7_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_8_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_9_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_10_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_11_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_12_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_13_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_14_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_15_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_16_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_17_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_18_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_19_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_20_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_21_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_22_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_23_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_24_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_25_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_26_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_27_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_28_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_29_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_30_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_conv_bn_act_pool_4_Pipeline_Loop3_1Big_X_slice57_31_ROM_AUTO_3R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 10.68 seconds. CPU system time: 0.18 seconds. Elapsed time: 10.91 seconds; current allocated memory: 2.241 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_4_Pipeline_Loop3_2Big' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv_bn_act_pool_4_Pipeline_Loop3_2Big' pipeline 'Loop3_2Big' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_4_Pipeline_Loop3_2Big'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4.05 seconds. CPU system time: 0.45 seconds. Elapsed time: 4.59 seconds; current allocated memory: 2.374 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_act_pool_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'conv_bn_act_pool_4/grp_fu_1848_p_opcode' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_act_pool_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.47 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.51 seconds; current allocated memory: 2.380 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_Loop_BN5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_Loop_BN5' pipeline 'Loop_BN' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_Loop_BN5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.51 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.55 seconds; current allocated memory: 2.386 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled_Pipeline_MergedLoop4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_all_slices_unrolled_Pipeline_MergedLoop4' pipeline 'MergedLoop4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled_Pipeline_MergedLoop4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 2.390 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_all_slices_unrolled' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hdiv_16ns_16ns_16_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_all_slices_unrolled'.
+INFO: [RTMG 210-278] Implementing memory 'run_model_run_all_slices_unrolled_h_slice_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'run_model_run_all_slices_unrolled_U_slice_RAM_AUTO_3R2W' using auto RAMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_W_ifog0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_R_ifog0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_b_ifog0_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_W_ifog1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_R_ifog1_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_W_ifog2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_R_ifog2_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_W_ifog3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_R_ifog3_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_W_ifog4_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_all_slices_unrolled_LSTM_R_ifog4_ROM_AUTO_3R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.69 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.71 seconds; current allocated memory: 2.394 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_model_Pipeline_Loop_BN' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_model_Pipeline_Loop_BN' pipeline 'Loop_BN' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_model_Pipeline_Loop_BN'.
+INFO: [RTMG 210-279] Implementing memory 'run_model_run_model_Pipeline_Loop_BN_fc_0_bn_var_ROM_AUTO_3R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.12 seconds; current allocated memory: 2.397 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_model_Pipeline_ReLULoop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_model_Pipeline_ReLULoop1' pipeline 'ReLULoop1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_model_Pipeline_ReLULoop1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.31 seconds; current allocated memory: 2.401 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_model_Pipeline_Loop_BN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_model_Pipeline_Loop_BN1' pipeline 'Loop_BN' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_model_Pipeline_Loop_BN1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.38 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.51 seconds; current allocated memory: 2.403 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_model_Pipeline_ReLULoop2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_model_Pipeline_ReLULoop2' pipeline 'ReLULoop2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_model_Pipeline_ReLULoop2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.37 seconds; current allocated memory: 2.405 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_model' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'run_model/y_hat_out' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'run_model' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'run_model/y_hat_out' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_model'.
+INFO: [RTMG 210-279] Implementing memory 'run_model_fc_0_W_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_model_fc_1_W_ROM_AUTO_3R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'run_model_merged_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'run_model_z1_RAM_AUTO_3R2W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.48 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.5 seconds; current allocated memory: 2.407 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.89 seconds. CPU system time: 0.45 seconds. Elapsed time: 2.34 seconds; current allocated memory: 2.409 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 8.05 seconds. CPU system time: 0.07 seconds. Elapsed time: 8.2 seconds; current allocated memory: 2.445 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for run_model.
+INFO: [VLOG 209-307] Generating Verilog RTL for run_model.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 127.44 MHz
+INFO: [HLS 200-112] Total CPU user time: 391.23 seconds. Total CPU system time: 7.26 seconds. Total elapsed time: 404.15 seconds; peak allocated memory: 2.447 GB.
+INFO: [v++ 60-791] Total elapsed time: 0h 6m 49s

@@ -1,0 +1,135 @@
+{
+  "0": {
+    "basicblocks": 11,
+    "calls": "1 6 5 2 6 5 2 6 9",
+    "file": "main_5_slices.cpp",
+    "fileloc": 365,
+    "instructions": 69,
+    "loads": {
+      "L": 3
+    },
+    "name": "run_model",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 2947
+  },
+  "1": {
+    "basicblocks": 31,
+    "calls": "3 4 8 5 7 3 4 8 5 7 3 4 8 5 7 3 4 8 5 7 3 4 8 5 7",
+    "file": "main_5_slices.cpp",
+    "fileloc": 223,
+    "instructions": 177,
+    "loads": {
+      "G": 5,
+      "L": 5
+    },
+    "name": "run_all_slices_unrolled",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 2657
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 51,
+    "instructions": 6,
+    "name": "reluf",
+    "total_instructions": 6
+  },
+  "3": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 58,
+    "instructions": 41,
+    "loads": {
+      "L": 2
+    },
+    "name": "embedding_forward_dyn",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 41
+  },
+  "4": {
+    "basicblocks": 49,
+    "calls": "2 7 9",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 194,
+    "loads": {
+      "L": 11
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 221
+  },
+  "5": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 195,
+    "instructions": 37,
+    "loads": {
+      "L": 5
+    },
+    "name": "bn_vector",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 37
+  },
+  "6": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 205,
+    "instructions": 41,
+    "loads": {
+      "L": 3
+    },
+    "name": "dense_forward",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 41
+  },
+  "7": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 43,
+    "instructions": 9,
+    "name": "tanhf_fast",
+    "total_instructions": 9
+  },
+  "8": {
+    "basicblocks": 47,
+    "calls": "7 7",
+    "file": "main_5_slices.cpp",
+    "fileloc": 140,
+    "instructions": 170,
+    "loads": {
+      "L": 12
+    },
+    "name": "lstm_forward_unidir",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 188
+  },
+  "9": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 34,
+    "instructions": 12,
+    "name": "sigmoidf",
+    "total_instructions": 12
+  }
+}

@@ -1,0 +1,120 @@
+INFO: [HLS 200-2005] Using work_dir /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/head_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/head_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/main_5_slices.cpp' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/main_5_slices.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice0_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice0_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice1_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice1_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice2_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice2_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice3_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice3_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice4_weights.h' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/slice4_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=run_model' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-3' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-3'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(15)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 4 seconds. CPU system time: 0.23 seconds. Elapsed time: 3.92 seconds; current allocated memory: 233.789 MB.
+INFO: [HLS 200-10] Analyzing design file '../main_5_slices.cpp' ... 
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:87:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:89:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:100:9)
+WARNING: [HLS 207-5570] unexpected pragma argument 'End Of Pramga Line', expects '=' (../main_5_slices.cpp:113:26)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:209:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:211:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:213:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:215:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:217:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:219:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:221:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:223:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:228:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:230:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:232:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:234:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:236:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:238:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:240:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:242:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:247:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:249:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:251:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:253:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:255:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:257:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:259:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:261:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:266:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:268:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:270:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:272:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:274:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:276:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:278:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:280:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:285:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:287:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:289:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:291:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:293:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:295:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:297:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../main_5_slices.cpp:299:9)
+WARNING: [HLS 207-5292] unused parameter 'C' (../main_5_slices.cpp:77:9)
+WARNING: [HLS 207-5292] unused parameter 'y_hat_out' (../main_5_slices.cpp:380:66)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 21.63 seconds. CPU system time: 1.44 seconds. Elapsed time: 23.4 seconds; current allocated memory: 238.371 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 3,022 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'reluf(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)' (../main_5_slices.cpp:119:35)
+INFO: [HLS 214-131] Inlining function 'sigmoidf(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)' (../main_5_slices.cpp:119:79)
+INFO: [HLS 214-131] Inlining function 'tanhf_fast(half)' into 'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)' (../main_5_slices.cpp:119:63)
+INFO: [HLS 214-131] Inlining function 'tanhf_fast(half)' into 'lstm_forward_unidir(half const*, int, int, half const*, half const*, half const*, half*, half*)' (../main_5_slices.cpp:169:22)
+INFO: [HLS 214-131] Inlining function 'bn_vector(half*, int, half const*, half const*, half const*, half const*, half)' into 'run_all_slices_unrolled(half*)' (../main_5_slices.cpp:317:9)
+INFO: [HLS 214-131] Inlining function 'tanhf_fast(half)' into 'run_all_slices_unrolled(half*)' (../main_5_slices.cpp:375:26)
+INFO: [HLS 214-131] Inlining function 'bn_vector(half*, int, half const*, half const*, half const*, half const*, half)' into 'run_model(half*)' (../main_5_slices.cpp:391:5)
+INFO: [HLS 214-131] Inlining function 'reluf(half)' into 'run_model(half*)' (../main_5_slices.cpp:392:49)
+ERROR: [HLS 214-221] Global/static variable 'ConvW0' with bind_storage implementation 'register_auto' cannot be initialized. (../slice0_weights.h:16393:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_gamma0' with bind_storage implementation 'register_auto' cannot be initialized. (../slice0_weights.h:17297:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_var0' with bind_storage implementation 'register_auto' cannot be initialized. (../slice0_weights.h:17315:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_W_ifog0' with bind_storage implementation 'register_auto' cannot be initialized. (../slice0_weights.h:17321:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_R_ifog0' with bind_storage implementation 'register_auto' cannot be initialized. (../slice0_weights.h:17835:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_b_ifog0' with bind_storage implementation 'register_auto' cannot be initialized. (../slice0_weights.h:18349:0)
+ERROR: [HLS 214-221] Global/static variable 'ConvW1' with bind_storage implementation 'register_auto' cannot be initialized. (../slice1_weights.h:16393:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_gamma1' with bind_storage implementation 'register_auto' cannot be initialized. (../slice1_weights.h:17297:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_var1' with bind_storage implementation 'register_auto' cannot be initialized. (../slice1_weights.h:17315:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_W_ifog1' with bind_storage implementation 'register_auto' cannot be initialized. (../slice1_weights.h:17321:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_R_ifog1' with bind_storage implementation 'register_auto' cannot be initialized. (../slice1_weights.h:17835:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_b_ifog1' with bind_storage implementation 'register_auto' cannot be initialized. (../slice1_weights.h:18349:0)
+ERROR: [HLS 214-221] Global/static variable 'ConvW2' with bind_storage implementation 'register_auto' cannot be initialized. (../slice2_weights.h:16393:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_gamma2' with bind_storage implementation 'register_auto' cannot be initialized. (../slice2_weights.h:17297:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_var2' with bind_storage implementation 'register_auto' cannot be initialized. (../slice2_weights.h:17315:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_W_ifog2' with bind_storage implementation 'register_auto' cannot be initialized. (../slice2_weights.h:17321:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_R_ifog2' with bind_storage implementation 'register_auto' cannot be initialized. (../slice2_weights.h:17835:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_b_ifog2' with bind_storage implementation 'register_auto' cannot be initialized. (../slice2_weights.h:18349:0)
+ERROR: [HLS 214-221] Global/static variable 'ConvW3' with bind_storage implementation 'register_auto' cannot be initialized. (../slice3_weights.h:16393:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_gamma3' with bind_storage implementation 'register_auto' cannot be initialized. (../slice3_weights.h:17297:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_var3' with bind_storage implementation 'register_auto' cannot be initialized. (../slice3_weights.h:17315:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_W_ifog3' with bind_storage implementation 'register_auto' cannot be initialized. (../slice3_weights.h:17321:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_R_ifog3' with bind_storage implementation 'register_auto' cannot be initialized. (../slice3_weights.h:17835:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_b_ifog3' with bind_storage implementation 'register_auto' cannot be initialized. (../slice3_weights.h:18349:0)
+ERROR: [HLS 214-221] Global/static variable 'ConvW4' with bind_storage implementation 'register_auto' cannot be initialized. (../slice4_weights.h:16393:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_gamma4' with bind_storage implementation 'register_auto' cannot be initialized. (../slice4_weights.h:17297:0)
+ERROR: [HLS 214-221] Global/static variable 'BN1_var4' with bind_storage implementation 'register_auto' cannot be initialized. (../slice4_weights.h:17315:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_W_ifog4' with bind_storage implementation 'register_auto' cannot be initialized. (../slice4_weights.h:17321:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_R_ifog4' with bind_storage implementation 'register_auto' cannot be initialized. (../slice4_weights.h:17835:0)
+ERROR: [HLS 214-221] Global/static variable 'LSTM_b_ifog4' with bind_storage implementation 'register_auto' cannot be initialized. (../slice4_weights.h:18349:0)
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: Pre-synthesis failed.
+INFO: [HLS 200-112] Total CPU user time: 28.69 seconds. Total CPU system time: 2 seconds. Total elapsed time: 35.67 seconds; peak allocated memory: 238.898 MB.

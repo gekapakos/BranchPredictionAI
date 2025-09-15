@@ -1,0 +1,622 @@
+{
+    "0": {
+        "name": "run_model",
+        "file": "main_5_slices.cpp",
+        "fileloc": "365",
+        "instructions": "114",
+        "total_instructions": "5537",
+        "calls": "27 2 24 10 14",
+        "basicblocks": "11",
+        "loads": {
+            "G": "2",
+            "L": "10"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "2"
+        }
+    },
+    "1": {
+        "name": "run_all_slices_unrolled_Pipeline_Loop_BN",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "302",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "3",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "run_model_Pipeline_Loop_BN",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "376",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "run_all_slices_unrolled_Pipeline_Loop_BN5",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "358",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "3",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "conv_bn_act_pool.3_Pipeline_Loop3_2Big",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "81",
+        "instructions": "119",
+        "total_instructions": "119",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "lstm_forward_unidir_Pipeline_Loop2_1LSTM",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "155",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "conv_bn_act_pool.3_Pipeline_BNParamsLoop",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "84",
+        "instructions": "315",
+        "total_instructions": "315",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "L": "65"
+        },
+        "stores": {
+            "L": "66"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "conv_bn_act_pool",
+        "file": "main_5_slices.cpp",
+        "fileloc": "74",
+        "instructions": "391",
+        "total_instructions": "825",
+        "calls": "6 4",
+        "basicblocks": "46",
+        "loads": {
+            "G": "4",
+            "L": "99"
+        },
+        "stores": {
+            "L": "71"
+        },
+        "loops": {
+            "L": "1",
+            "N": "2"
+        }
+    },
+    "8": {
+        "name": "conv_bn_act_pool",
+        "file": "main_5_slices.cpp",
+        "fileloc": "74",
+        "instructions": "391",
+        "total_instructions": "825",
+        "calls": "19 18",
+        "basicblocks": "46",
+        "loads": {
+            "G": "4",
+            "L": "99"
+        },
+        "stores": {
+            "L": "71"
+        },
+        "loops": {
+            "L": "1",
+            "N": "2"
+        }
+    },
+    "9": {
+        "name": "run_all_slices_unrolled_Pipeline_MergedLoop0",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "289",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "run_model_Pipeline_Loop_BN1",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "381",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "run_all_slices_unrolled_Pipeline_Loop_BN3",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "330",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "3",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "lstm_forward_unidir_Pipeline_Loop2_4LSTM",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "144",
+        "instructions": "140",
+        "total_instructions": "140",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "22"
+        },
+        "stores": {
+            "G": "2",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "conv_bn_act_pool",
+        "file": "main_5_slices.cpp",
+        "fileloc": "74",
+        "instructions": "391",
+        "total_instructions": "825",
+        "calls": "23 21",
+        "basicblocks": "46",
+        "loads": {
+            "G": "4",
+            "L": "99"
+        },
+        "stores": {
+            "L": "71"
+        },
+        "loops": {
+            "L": "1",
+            "N": "2"
+        }
+    },
+    "14": {
+        "name": "run_model_Pipeline_ReLULoop2",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "368",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "run_all_slices_unrolled_Pipeline_MergedLoop4",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "289",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "lstm_forward_unidir",
+        "file": "main_5_slices.cpp",
+        "fileloc": "140",
+        "instructions": "142",
+        "total_instructions": "343",
+        "calls": "30 5 12",
+        "basicblocks": "22",
+        "loads": {
+            "G": "4",
+            "L": "11"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1",
+            "N": "2"
+        }
+    },
+    "17": {
+        "name": "run_all_slices_unrolled_Pipeline_Loop_BN2",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "316",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "3",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "conv_bn_act_pool_Pipeline_Loop3_2Big",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "81",
+        "instructions": "119",
+        "total_instructions": "119",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "conv_bn_act_pool_Pipeline_BNParamsLoop",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "84",
+        "instructions": "315",
+        "total_instructions": "315",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "L": "65"
+        },
+        "stores": {
+            "L": "66"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "run_all_slices_unrolled_Pipeline_MergedLoop3",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "289",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "conv_bn_act_pool.4_Pipeline_Loop3_2Big",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "81",
+        "instructions": "119",
+        "total_instructions": "119",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "run_all_slices_unrolled_Pipeline_MergedLoop",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "289",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "conv_bn_act_pool.4_Pipeline_BNParamsLoop",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "84",
+        "instructions": "315",
+        "total_instructions": "315",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "L": "65"
+        },
+        "stores": {
+            "L": "66"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "run_model_Pipeline_ReLULoop1",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "368",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "run_all_slices_unrolled_Pipeline_MergedLoop1",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "289",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "conv_bn_act_pool.2_Pipeline_BNParamsLoop",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "84",
+        "instructions": "315",
+        "total_instructions": "315",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "L": "65"
+        },
+        "stores": {
+            "L": "66"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "run_all_slices_unrolled",
+        "file": "main_5_slices.cpp",
+        "fileloc": "223",
+        "instructions": "21",
+        "total_instructions": "5327",
+        "calls": "22 16 1 9 8 16 17 25 32 16 11 31 7 16 29 20 13 16 3 15",
+        "basicblocks": "1"
+    },
+    "28": {
+        "name": "conv_bn_act_pool.2_Pipeline_Loop3_2Big",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "81",
+        "instructions": "119",
+        "total_instructions": "119",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "run_all_slices_unrolled_Pipeline_Loop_BN4",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "344",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "3",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "30": {
+        "name": "lstm_forward_unidir_Pipeline_VITIS_LOOP_145_1",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "144",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "2",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "run_all_slices_unrolled_Pipeline_MergedLoop2",
+        "file": "..\/main_5_slices.cpp",
+        "fileloc": "289",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "32": {
+        "name": "conv_bn_act_pool",
+        "file": "main_5_slices.cpp",
+        "fileloc": "74",
+        "instructions": "391",
+        "total_instructions": "825",
+        "calls": "26 28",
+        "basicblocks": "46",
+        "loads": {
+            "G": "4",
+            "L": "99"
+        },
+        "stores": {
+            "L": "71"
+        },
+        "loops": {
+            "L": "1",
+            "N": "2"
+        }
+    }
+}

@@ -1,0 +1,1872 @@
+
+
+================================================================
+== Vitis HLS Report for 'run_all_slices_unrolled'
+================================================================
+* Date:           Mon Sep 15 15:50:17 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        run_model
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.847 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +----------+----------+-----------+-----------+----------+----------+---------+
+    |   Latency (cycles)  |   Latency (absolute)  |       Interval      | Pipeline|
+    |    min   |    max   |    min    |    max    |    min   |    max   |   Type  |
+    +----------+----------+-----------+-----------+----------+----------+---------+
+    |  40081252|  40125532|  0.401 sec|  0.401 sec|  40081252|  40125532|       no|
+    +----------+----------+-----------+-----------+----------+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------+----------------------------------------------+----------+----------+-----------+-----------+----------+----------+------------------------------------------------+
+        |                                                         |                                              |   Latency (cycles)  |   Latency (absolute)  |       Interval      |                    Pipeline                    |
+        |                         Instance                        |                    Module                    |    min   |    max   |    min    |    max    |    min   |    max   |                      Type                      |
+        +---------------------------------------------------------+----------------------------------------------+----------+----------+-----------+-----------+----------+----------+------------------------------------------------+
+        |grp_run_all_slices_unrolled_Pipeline_MergedLoop_fu_96    |run_all_slices_unrolled_Pipeline_MergedLoop   |        34|        34|   0.340 us|   0.340 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_lstm_forward_unidir_fu_102                           |lstm_forward_unidir                           |    101244|    101244|   1.012 ms|   1.012 ms|    101244|    101244|                                              no|
+        |grp_run_all_slices_unrolled_Pipeline_Loop_BN_fu_124      |run_all_slices_unrolled_Pipeline_Loop_BN      |        71|        71|   0.710 us|   0.710 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_conv_bn_act_pool_fu_134                              |conv_bn_act_pool                              |   2638369|   2641321|  26.384 ms|  26.413 ms|   2638369|   2641321|                                              no|
+        |grp_run_all_slices_unrolled_Pipeline_MergedLoop0_fu_144  |run_all_slices_unrolled_Pipeline_MergedLoop0  |        40|        40|   0.400 us|   0.400 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_run_all_slices_unrolled_Pipeline_Loop_BN2_fu_152     |run_all_slices_unrolled_Pipeline_Loop_BN2     |        71|        71|   0.710 us|   0.710 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_conv_bn_act_pool_2_fu_162                            |conv_bn_act_pool_2                            |   5276665|   5282569|  52.767 ms|  52.826 ms|   5276665|   5282569|                                              no|
+        |grp_run_all_slices_unrolled_Pipeline_MergedLoop1_fu_172  |run_all_slices_unrolled_Pipeline_MergedLoop1  |        40|        40|   0.400 us|   0.400 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_run_all_slices_unrolled_Pipeline_Loop_BN3_fu_180     |run_all_slices_unrolled_Pipeline_Loop_BN3     |        71|        71|   0.710 us|   0.710 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_conv_bn_act_pool_3_fu_190                            |conv_bn_act_pool_3                            |  10553257|  10565065|  0.106 sec|  0.106 sec|  10553257|  10565065|                                              no|
+        |grp_run_all_slices_unrolled_Pipeline_MergedLoop2_fu_200  |run_all_slices_unrolled_Pipeline_MergedLoop2  |        40|        40|   0.400 us|   0.400 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_run_all_slices_unrolled_Pipeline_Loop_BN4_fu_208     |run_all_slices_unrolled_Pipeline_Loop_BN4     |        71|        71|   0.710 us|   0.710 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_conv_bn_act_pool_4_fu_218                            |conv_bn_act_pool_4                            |  21106441|  21130057|  0.211 sec|  0.211 sec|  21106441|  21130057|                                              no|
+        |grp_run_all_slices_unrolled_Pipeline_MergedLoop3_fu_228  |run_all_slices_unrolled_Pipeline_MergedLoop3  |        40|        40|   0.400 us|   0.400 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_run_all_slices_unrolled_Pipeline_Loop_BN5_fu_236     |run_all_slices_unrolled_Pipeline_Loop_BN5     |        71|        71|   0.710 us|   0.710 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_run_all_slices_unrolled_Pipeline_MergedLoop4_fu_246  |run_all_slices_unrolled_Pipeline_MergedLoop4  |        40|        40|   0.400 us|   0.400 us|        33|        33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +---------------------------------------------------------+----------------------------------------------+----------+----------+-----------+-----------+----------+----------+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     10|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |       92|   49|   20382|  21588|    0|
+|Memory           |       41|    -|     384|      8|    0|
+|Multiplexer      |        -|    -|       0|   2333|    -|
+|Register         |        -|    -|      46|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |      133|   49|   20812|  23939|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       47|   22|      19|     44|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------+----------------------------------------------+---------+----+------+------+-----+
+    |                         Instance                        |                    Module                    | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+------+------+-----+
+    |grp_conv_bn_act_pool_fu_134                              |conv_bn_act_pool                              |       12|   0|  2855|  2705|    0|
+    |grp_conv_bn_act_pool_2_fu_162                            |conv_bn_act_pool_2                            |       16|   0|  2859|  2708|    0|
+    |grp_conv_bn_act_pool_3_fu_190                            |conv_bn_act_pool_3                            |       24|   0|  2863|  2711|    0|
+    |grp_conv_bn_act_pool_4_fu_218                            |conv_bn_act_pool_4                            |       40|   0|  2867|  2714|    0|
+    |fadd_32ns_32ns_32_4_full_dsp_1_U707                      |fadd_32ns_32ns_32_4_full_dsp_1                |        0|   2|   227|   403|    0|
+    |fdiv_32ns_32ns_32_10_no_dsp_1_U693                       |fdiv_32ns_32ns_32_10_no_dsp_1                 |        0|   0|     0|     0|    0|
+    |fmul_32ns_32ns_32_3_max_dsp_1_U702                       |fmul_32ns_32ns_32_3_max_dsp_1                 |        0|   3|   128|   320|    0|
+    |fmul_32ns_32ns_32_3_max_dsp_1_U708                       |fmul_32ns_32ns_32_3_max_dsp_1                 |        0|   3|   128|   320|    0|
+    |fsqrt_32ns_32ns_32_10_no_dsp_1_U694                      |fsqrt_32ns_32ns_32_10_no_dsp_1                |        0|   0|     0|     0|    0|
+    |fsub_32ns_32ns_32_4_full_dsp_1_U701                      |fsub_32ns_32ns_32_4_full_dsp_1                |        0|   2|   227|   403|    0|
+    |hadd_16ns_16ns_16_5_full_dsp_1_U691                      |hadd_16ns_16ns_16_5_full_dsp_1                |        0|   2|   109|   116|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U700                         |hcmp_16ns_16ns_1_2_no_dsp_1                   |        0|   0|     0|     0|    0|
+    |hdiv_16ns_16ns_16_6_no_dsp_1_U706                        |hdiv_16ns_16ns_16_6_no_dsp_1                  |        0|   0|     0|     0|    0|
+    |hmul_16ns_16ns_16_4_max_dsp_1_U692                       |hmul_16ns_16ns_16_4_max_dsp_1                 |        0|   2|    91|    35|    0|
+    |hptosp_16ns_32_2_no_dsp_1_U696                           |hptosp_16ns_32_2_no_dsp_1                     |        0|   0|     0|     0|    0|
+    |hptosp_16ns_32_2_no_dsp_1_U697                           |hptosp_16ns_32_2_no_dsp_1                     |        0|   0|     0|     0|    0|
+    |grp_lstm_forward_unidir_fu_102                           |lstm_forward_unidir                           |        0|  35|  5210|  7813|    0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN_fu_124      |run_all_slices_unrolled_Pipeline_Loop_BN      |        0|   0|   440|   146|    0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN2_fu_152     |run_all_slices_unrolled_Pipeline_Loop_BN2     |        0|   0|   440|   146|    0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN3_fu_180     |run_all_slices_unrolled_Pipeline_Loop_BN3     |        0|   0|   440|   146|    0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN4_fu_208     |run_all_slices_unrolled_Pipeline_Loop_BN4     |        0|   0|   440|   146|    0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN5_fu_236     |run_all_slices_unrolled_Pipeline_Loop_BN5     |        0|   0|   440|   146|    0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop_fu_96    |run_all_slices_unrolled_Pipeline_MergedLoop   |        0|   0|     8|    55|    0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop0_fu_144  |run_all_slices_unrolled_Pipeline_MergedLoop0  |        0|   0|   122|   111|    0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop1_fu_172  |run_all_slices_unrolled_Pipeline_MergedLoop1  |        0|   0|   122|   111|    0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop2_fu_200  |run_all_slices_unrolled_Pipeline_MergedLoop2  |        0|   0|   122|   111|    0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop3_fu_228  |run_all_slices_unrolled_Pipeline_MergedLoop3  |        0|   0|   122|   111|    0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop4_fu_246  |run_all_slices_unrolled_Pipeline_MergedLoop4  |        0|   0|   122|   111|    0|
+    |sptohp_32ns_16_2_no_dsp_1_U695                           |sptohp_32ns_16_2_no_dsp_1                     |        0|   0|     0|     0|    0|
+    |sptohp_32ns_16_2_no_dsp_1_U705                           |sptohp_32ns_16_2_no_dsp_1                     |        0|   0|     0|     0|    0|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+------+------+-----+
+    |Total                                                    |                                              |       92|  49| 20382| 21588|    0|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------------+--------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |     Memory     |                      Module                      | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------------+--------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |LSTM_R_ifog0_U  |run_all_slices_unrolled_LSTM_R_ifog0_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_R_ifog1_U  |run_all_slices_unrolled_LSTM_R_ifog1_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_R_ifog2_U  |run_all_slices_unrolled_LSTM_R_ifog2_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_R_ifog3_U  |run_all_slices_unrolled_LSTM_R_ifog3_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_R_ifog4_U  |run_all_slices_unrolled_LSTM_R_ifog4_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_W_ifog0_U  |run_all_slices_unrolled_LSTM_W_ifog0_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_W_ifog1_U  |run_all_slices_unrolled_LSTM_W_ifog1_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_W_ifog2_U  |run_all_slices_unrolled_LSTM_W_ifog2_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_W_ifog3_U  |run_all_slices_unrolled_LSTM_W_ifog3_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |LSTM_W_ifog4_U  |run_all_slices_unrolled_LSTM_W_ifog4_ROM_AUTO_3R  |        4|  32|   0|    0|  4096|   16|     1|        65536|
+    |U_slice_U       |run_all_slices_unrolled_U_slice_RAM_AUTO_3R2W     |        1|  32|   0|    0|   384|   16|     1|         6144|
+    |h_slice_U       |run_all_slices_unrolled_h_slice_RAM_AUTO_1R1W     |        0|  32|   8|    0|    32|   16|     1|          512|
+    +----------------+--------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total           |                                                  |       41| 384|   8|    0| 41376|  192|    12|       662016|
+    +----------------+--------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |ap_block_state10_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state16_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state22_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2_on_subcall_done   |        or|   0|  0|   2|           1|           1|
+    |ap_block_state4_on_subcall_done   |        or|   0|  0|   2|           1|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  10|           5|           5|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------+-----+-----------+-----+-----------+
+    |                   Name                   | LUT | Input Size| Bits| Total Bits|
+    +------------------------------------------+-----+-----------+-----+-----------+
+    |LSTM_R_ifog0_ce0                          |    9|          2|    1|          2|
+    |LSTM_R_ifog1_ce0                          |    9|          2|    1|          2|
+    |LSTM_R_ifog2_ce0                          |    9|          2|    1|          2|
+    |LSTM_R_ifog3_ce0                          |    9|          2|    1|          2|
+    |LSTM_R_ifog4_ce0                          |    9|          2|    1|          2|
+    |LSTM_W_ifog0_ce0                          |    9|          2|    1|          2|
+    |LSTM_W_ifog1_ce0                          |    9|          2|    1|          2|
+    |LSTM_W_ifog2_ce0                          |    9|          2|    1|          2|
+    |LSTM_W_ifog3_ce0                          |    9|          2|    1|          2|
+    |LSTM_W_ifog4_ce0                          |    9|          2|    1|          2|
+    |U_slice_address0                          |   25|          6|    9|         54|
+    |U_slice_ce0                               |   25|          6|    1|          6|
+    |U_slice_d0                                |   21|          5|   16|         80|
+    |U_slice_we0                               |   21|          5|    1|          5|
+    |ap_NS_fsm                                 |  145|         31|    1|         31|
+    |grp_fu_254_ce                             |   25|          6|    1|          6|
+    |grp_fu_254_p0                             |   25|          6|   16|         96|
+    |grp_fu_254_p1                             |   25|          6|   16|         96|
+    |grp_fu_258_ce                             |   21|          5|    1|          5|
+    |grp_fu_258_p0                             |   21|          5|   16|         80|
+    |grp_fu_258_p1                             |   21|          5|   16|         80|
+    |grp_fu_262_ce                             |   21|          5|    1|          5|
+    |grp_fu_262_p0                             |   21|          5|   16|         80|
+    |grp_fu_262_p1                             |   21|          5|   16|         80|
+    |grp_fu_266_ce                             |   21|          5|    1|          5|
+    |grp_fu_266_p0                             |   21|          5|   32|        160|
+    |grp_fu_266_p1                             |   21|          5|   32|        160|
+    |grp_fu_270_ce                             |   21|          5|    1|          5|
+    |grp_fu_270_p0                             |   21|          5|   32|        160|
+    |grp_fu_270_p1                             |   21|          5|   32|        160|
+    |grp_fu_274_ce                             |   21|          5|    1|          5|
+    |grp_fu_274_p0                             |   21|          5|   32|        160|
+    |grp_fu_277_ce                             |   21|          5|    1|          5|
+    |grp_fu_277_p0                             |   21|          5|   16|         80|
+    |grp_fu_280_ce                             |   21|          5|    1|          5|
+    |grp_fu_280_p0                             |   21|          5|   16|         80|
+    |grp_fu_283_ce                             |   45|         11|    1|         11|
+    |grp_fu_283_p0                             |   45|         11|   16|        176|
+    |grp_fu_283_p1                             |   45|         11|   16|        176|
+    |grp_fu_287_ce                             |   41|         10|    1|         10|
+    |grp_fu_287_opcode                         |   41|         10|    5|         50|
+    |grp_fu_287_p0                             |   41|         10|   16|        160|
+    |grp_fu_287_p1                             |   41|         10|   16|        160|
+    |grp_fu_291_ce                             |   25|          6|    1|          6|
+    |grp_fu_291_opcode                         |   25|          6|    5|         30|
+    |grp_fu_291_p0                             |   25|          6|   16|         96|
+    |grp_fu_291_p1                             |   25|          6|   16|         96|
+    |grp_fu_295_ce                             |   21|          5|    1|          5|
+    |grp_fu_295_p0                             |   21|          5|   32|        160|
+    |grp_fu_295_p1                             |   21|          5|   32|        160|
+    |grp_fu_299_ce                             |   21|          5|    1|          5|
+    |grp_fu_299_p0                             |   21|          5|   32|        160|
+    |grp_fu_299_p1                             |   21|          5|   32|        160|
+    |grp_fu_303_ce                             |   25|          6|    1|          6|
+    |grp_fu_303_p0                             |   25|          6|   32|        192|
+    |grp_fu_303_p1                             |   25|          6|   32|        192|
+    |grp_fu_307_ce                             |   25|          6|    1|          6|
+    |grp_fu_307_p0                             |   25|          6|   32|        192|
+    |grp_fu_307_p1                             |   25|          6|   32|        192|
+    |grp_fu_311_ce                             |   21|          5|    1|          5|
+    |grp_fu_311_p0                             |   21|          5|   32|        160|
+    |grp_fu_314_ce                             |   21|          5|    1|          5|
+    |grp_fu_314_p0                             |   21|          5|   16|         80|
+    |grp_fu_314_p1                             |   21|          5|   16|         80|
+    |grp_fu_318_ce                             |   21|          5|    1|          5|
+    |grp_fu_318_p0                             |   21|          5|   32|        160|
+    |grp_fu_318_p1                             |   21|          5|   32|        160|
+    |grp_fu_322_ce                             |   21|          5|    1|          5|
+    |grp_fu_322_p0                             |   21|          5|   32|        160|
+    |grp_fu_322_p1                             |   21|          5|   32|        160|
+    |grp_fu_326_ce                             |   25|          6|    1|          6|
+    |grp_fu_326_p0                             |   25|          6|   32|        192|
+    |grp_fu_329_ce                             |   25|          6|    1|          6|
+    |grp_fu_329_p0                             |   25|          6|   16|         96|
+    |grp_fu_332_ce                             |   25|          6|    1|          6|
+    |grp_fu_332_p0                             |   25|          6|   16|         96|
+    |grp_fu_335_ce                             |   25|          6|    1|          6|
+    |grp_fu_335_p0                             |   25|          6|   16|         96|
+    |grp_fu_335_p1                             |   25|          6|   16|         96|
+    |grp_lstm_forward_unidir_fu_102_R_ifog_q0  |   25|          6|   16|         96|
+    |grp_lstm_forward_unidir_fu_102_W_ifog_q0  |   25|          6|   16|         96|
+    |h_slice_address0                          |   49|         12|    5|         60|
+    |h_slice_address1                          |   25|          6|    5|         30|
+    |h_slice_ce0                               |   49|         12|    1|         12|
+    |h_slice_ce1                               |   25|          6|    1|          6|
+    |h_slice_d0                                |   29|          7|   16|        112|
+    |h_slice_we0                               |   29|          7|    1|          7|
+    |merged_address0                           |   29|          7|    5|         35|
+    |merged_address1                           |   25|          6|    5|         30|
+    |merged_ce0                                |   29|          7|    1|          7|
+    |merged_ce1                                |   25|          6|    1|          6|
+    |merged_d0                                 |   29|          7|   16|        112|
+    |merged_we0                                |   29|          7|    1|          7|
+    +------------------------------------------+-----+-----------+-----+-----------+
+    |Total                                     | 2333|        555| 1089|       6306|
+    +------------------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------------+----+----+-----+-----------+
+    |                                 Name                                 | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                             |  30|   0|   30|          0|
+    |grp_conv_bn_act_pool_2_fu_162_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_conv_bn_act_pool_3_fu_190_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_conv_bn_act_pool_4_fu_218_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_conv_bn_act_pool_fu_134_ap_start_reg                              |   1|   0|    1|          0|
+    |grp_lstm_forward_unidir_fu_102_ap_start_reg                           |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN2_fu_152_ap_start_reg     |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN3_fu_180_ap_start_reg     |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN4_fu_208_ap_start_reg     |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN5_fu_236_ap_start_reg     |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_Loop_BN_fu_124_ap_start_reg      |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop0_fu_144_ap_start_reg  |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop1_fu_172_ap_start_reg  |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop2_fu_200_ap_start_reg  |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop3_fu_228_ap_start_reg  |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop4_fu_246_ap_start_reg  |   1|   0|    1|          0|
+    |grp_run_all_slices_unrolled_Pipeline_MergedLoop_fu_96_ap_start_reg    |   1|   0|    1|          0|
+    +----------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                 |  46|   0|   46|          0|
+    +----------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+-------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++---------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_823_p_din0    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_823_p_din1    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_823_p_dout0   |   in|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_823_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_359_p_din0    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_359_p_din1    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_359_p_dout0   |   in|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_359_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_827_p_din0    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_827_p_din1    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_827_p_opcode  |  out|    5|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_827_p_dout0   |   in|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_827_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_831_p_din0    |  out|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_831_p_din1    |  out|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_831_p_dout0   |   in|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_831_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_835_p_din0    |  out|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_835_p_din1    |  out|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_835_p_dout0   |   in|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_835_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_839_p_din0    |  out|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_839_p_dout0   |   in|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_839_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_842_p_din0    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_842_p_dout0   |   in|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_842_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_845_p_din0    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_845_p_dout0   |   in|   32|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_845_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_365_p_din0    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_365_p_din1    |  out|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_365_p_dout0   |   in|   16|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|grp_fu_365_p_ce      |  out|    1|  ap_ctrl_hs|  run_all_slices_unrolled|  return value|
+|merged_address0      |  out|    5|   ap_memory|                   merged|         array|
+|merged_ce0           |  out|    1|   ap_memory|                   merged|         array|
+|merged_we0           |  out|    1|   ap_memory|                   merged|         array|
+|merged_d0            |  out|   16|   ap_memory|                   merged|         array|
+|merged_address1      |  out|    5|   ap_memory|                   merged|         array|
+|merged_ce1           |  out|    1|   ap_memory|                   merged|         array|
+|merged_q1            |   in|   16|   ap_memory|                   merged|         array|
++---------------------+-----+-----+------------+-------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 30
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.73>
+ST_1 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop, i16 %merged"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 32 [2/2] (0.73ns)   --->   "%call_ln301 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog0, i16 %LSTM_R_ifog0, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:301]   --->   Operation 32 'call' 'call_ln301' <Predicate = true> <Delay = 0.73> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 3.80>
+ST_2 : Operation 33 [1/2] (3.80ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop, i16 %merged"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 3.80> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 34 [1/2] (1.40ns)   --->   "%call_ln301 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog0, i16 %LSTM_R_ifog0, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:301]   --->   Operation 34 'call' 'call_ln301' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN, i16 %h_slice, i16 %BN2_var0, i16 %BN2_gamma0"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln312 = call void @conv_bn_act_pool, i16 %X_slice12, i16 %ConvW1, i16 %U_slice" [../main_5_slices.cpp:312]   --->   Operation 36 'call' 'call_ln312' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.57>
+ST_4 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN, i16 %h_slice, i16 %BN2_var0, i16 %BN2_gamma0"   --->   Operation 37 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 38 [1/2] (1.57ns)   --->   "%call_ln312 = call void @conv_bn_act_pool, i16 %X_slice12, i16 %ConvW1, i16 %U_slice" [../main_5_slices.cpp:312]   --->   Operation 38 'call' 'call_ln312' <Predicate = true> <Delay = 1.57> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 39 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop0, i16 %merged, i16 %h_slice"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 40 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop0, i16 %merged, i16 %h_slice"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.73>
+ST_7 : Operation 41 [2/2] (0.73ns)   --->   "%call_ln315 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog1, i16 %LSTM_R_ifog1, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:315]   --->   Operation 41 'call' 'call_ln315' <Predicate = true> <Delay = 0.73> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 1.40>
+ST_8 : Operation 42 [1/2] (1.40ns)   --->   "%call_ln315 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog1, i16 %LSTM_R_ifog1, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:315]   --->   Operation 42 'call' 'call_ln315' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 43 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN2, i16 %h_slice, i16 %BN2_var1, i16 %BN2_gamma1"   --->   Operation 43 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 44 [2/2] (0.00ns)   --->   "%call_ln326 = call void @conv_bn_act_pool.2, i16 %X_slice27, i16 %ConvW2, i16 %U_slice" [../main_5_slices.cpp:326]   --->   Operation 44 'call' 'call_ln326' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 1.62>
+ST_10 : Operation 45 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN2, i16 %h_slice, i16 %BN2_var1, i16 %BN2_gamma1"   --->   Operation 45 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 46 [1/2] (1.62ns)   --->   "%call_ln326 = call void @conv_bn_act_pool.2, i16 %X_slice27, i16 %ConvW2, i16 %U_slice" [../main_5_slices.cpp:326]   --->   Operation 46 'call' 'call_ln326' <Predicate = true> <Delay = 1.62> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop1, i16 %merged, i16 %h_slice"   --->   Operation 47 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop1, i16 %merged, i16 %h_slice"   --->   Operation 48 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.73>
+ST_13 : Operation 49 [2/2] (0.73ns)   --->   "%call_ln329 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog2, i16 %LSTM_R_ifog2, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:329]   --->   Operation 49 'call' 'call_ln329' <Predicate = true> <Delay = 0.73> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 1.40>
+ST_14 : Operation 50 [1/2] (1.40ns)   --->   "%call_ln329 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog2, i16 %LSTM_R_ifog2, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:329]   --->   Operation 50 'call' 'call_ln329' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 51 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN3, i16 %h_slice, i16 %BN2_var2, i16 %BN2_gamma2"   --->   Operation 51 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 52 [2/2] (0.00ns)   --->   "%call_ln340 = call void @conv_bn_act_pool.3, i16 %X_slice42, i16 %ConvW3, i16 %U_slice" [../main_5_slices.cpp:340]   --->   Operation 52 'call' 'call_ln340' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 1.62>
+ST_16 : Operation 53 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN3, i16 %h_slice, i16 %BN2_var2, i16 %BN2_gamma2"   --->   Operation 53 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 54 [1/2] (1.62ns)   --->   "%call_ln340 = call void @conv_bn_act_pool.3, i16 %X_slice42, i16 %ConvW3, i16 %U_slice" [../main_5_slices.cpp:340]   --->   Operation 54 'call' 'call_ln340' <Predicate = true> <Delay = 1.62> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 55 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop2, i16 %merged, i16 %h_slice"   --->   Operation 55 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop2, i16 %merged, i16 %h_slice"   --->   Operation 56 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 0.73>
+ST_19 : Operation 57 [2/2] (0.73ns)   --->   "%call_ln343 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog3, i16 %LSTM_R_ifog3, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:343]   --->   Operation 57 'call' 'call_ln343' <Predicate = true> <Delay = 0.73> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 1.40>
+ST_20 : Operation 58 [1/2] (1.40ns)   --->   "%call_ln343 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog3, i16 %LSTM_R_ifog3, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:343]   --->   Operation 58 'call' 'call_ln343' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 0.00>
+ST_21 : Operation 59 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN4, i16 %h_slice, i16 %BN2_var3, i16 %BN2_gamma3"   --->   Operation 59 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_21 : Operation 60 [2/2] (0.00ns)   --->   "%call_ln354 = call void @conv_bn_act_pool.4, i16 %X_slice57, i16 %ConvW4, i16 %U_slice" [../main_5_slices.cpp:354]   --->   Operation 60 'call' 'call_ln354' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 1.62>
+ST_22 : Operation 61 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN4, i16 %h_slice, i16 %BN2_var3, i16 %BN2_gamma3"   --->   Operation 61 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 62 [1/2] (1.62ns)   --->   "%call_ln354 = call void @conv_bn_act_pool.4, i16 %X_slice57, i16 %ConvW4, i16 %U_slice" [../main_5_slices.cpp:354]   --->   Operation 62 'call' 'call_ln354' <Predicate = true> <Delay = 1.62> <CoreType = "Generic">   --->   Generic Core
+
+State 23 <SV = 22> <Delay = 0.00>
+ST_23 : Operation 63 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop3, i16 %merged, i16 %h_slice"   --->   Operation 63 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 24 <SV = 23> <Delay = 0.00>
+ST_24 : Operation 64 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop3, i16 %merged, i16 %h_slice"   --->   Operation 64 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 24> <Delay = 0.73>
+ST_25 : Operation 65 [2/2] (0.73ns)   --->   "%call_ln357 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog4, i16 %LSTM_R_ifog4, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:357]   --->   Operation 65 'call' 'call_ln357' <Predicate = true> <Delay = 0.73> <CoreType = "Generic">   --->   Generic Core
+
+State 26 <SV = 25> <Delay = 1.40>
+ST_26 : Operation 66 [1/2] (1.40ns)   --->   "%call_ln357 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog4, i16 %LSTM_R_ifog4, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:357]   --->   Operation 66 'call' 'call_ln357' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 27 <SV = 26> <Delay = 0.00>
+ST_27 : Operation 67 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN5, i16 %h_slice, i16 %BN2_var4, i16 %BN2_gamma4"   --->   Operation 67 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 28 <SV = 27> <Delay = 0.00>
+ST_28 : Operation 68 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN5, i16 %h_slice, i16 %BN2_var4, i16 %BN2_gamma4"   --->   Operation 68 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 29 <SV = 28> <Delay = 0.00>
+ST_29 : Operation 69 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop4, i16 %merged, i16 %h_slice"   --->   Operation 69 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 30 <SV = 29> <Delay = 0.00>
+ST_30 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop4, i16 %merged, i16 %h_slice"   --->   Operation 70 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_30 : Operation 71 [1/1] (0.00ns)   --->   "%ret_ln363 = ret" [../main_5_slices.cpp:363]   --->   Operation 71 'ret' 'ret_ln363' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ merged]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[01]; IO mode=ap_memory:ce=0
+Port [ h_slice]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ c_slice]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[01]; IO mode=ap_memory:ce=0
+Port [ U_slice]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ LSTM_W_ifog0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_R_ifog0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_var0]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_gamma0]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ X_slice12]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ ConvW1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_W_ifog1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_R_ifog1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_var1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_gamma1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ X_slice27]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ ConvW2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_W_ifog2]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_R_ifog2]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_var2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_gamma2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ X_slice42]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ ConvW3]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_W_ifog3]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_R_ifog3]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_var3]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_gamma3]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ X_slice57]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ ConvW4]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_W_ifog4]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ LSTM_R_ifog4]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_var4]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ BN2_gamma4]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln301 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln312 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln315 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln326 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln329 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln340 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln343 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln354 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln357 (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+call_ln0   (call) [ 0000000000000000000000000000000]
+ret_ln363  (ret ) [ 0000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="merged">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="merged"/><MemPortTyVec>0 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="h_slice">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="h_slice"/><MemPortTyVec>2 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="c_slice">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="c_slice"/><MemPortTyVec>0 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="U_slice">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="U_slice"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="LSTM_W_ifog0">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_W_ifog0"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="LSTM_R_ifog0">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_R_ifog0"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="BN2_var0">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_var0"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="BN2_gamma0">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_gamma0"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="X_slice12">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="X_slice12"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="ConvW1">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ConvW1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="LSTM_W_ifog1">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_W_ifog1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="LSTM_R_ifog1">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_R_ifog1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="BN2_var1">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_var1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="BN2_gamma1">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_gamma1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="X_slice27">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="X_slice27"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="ConvW2">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ConvW2"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="LSTM_W_ifog2">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_W_ifog2"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1000" name="LSTM_R_ifog2">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_R_ifog2"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1000" name="BN2_var2">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_var2"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1000" name="BN2_gamma2">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_gamma2"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1000" name="X_slice42">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="X_slice42"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1000" name="ConvW3">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ConvW3"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1000" name="LSTM_W_ifog3">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_W_ifog3"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1000" name="LSTM_R_ifog3">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_R_ifog3"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1000" name="BN2_var3">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_var3"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1000" name="BN2_gamma3">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_gamma3"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1000" name="X_slice57">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="X_slice57"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1000" name="ConvW4">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ConvW4"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1000" name="LSTM_W_ifog4">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_W_ifog4"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1000" name="LSTM_R_ifog4">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LSTM_R_ifog4"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1000" name="BN2_var4">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_var4"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1000" name="BN2_gamma4">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="BN2_gamma4"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_MergedLoop"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="lstm_forward_unidir"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_Loop_BN"/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1001" name="const_70">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conv_bn_act_pool"/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1001" name="const_72">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_MergedLoop0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1001" name="const_74">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_Loop_BN2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1001" name="const_76">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conv_bn_act_pool.2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1001" name="const_78">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_MergedLoop1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1001" name="const_80">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_Loop_BN3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1001" name="const_82">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conv_bn_act_pool.3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1001" name="const_84">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_MergedLoop2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1001" name="const_86">
+<pin_list>
+<pin id="87" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_Loop_BN4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="88" class="1001" name="const_88">
+<pin_list>
+<pin id="89" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conv_bn_act_pool.4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="90" class="1001" name="const_90">
+<pin_list>
+<pin id="91" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_MergedLoop3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="92" class="1001" name="const_92">
+<pin_list>
+<pin id="93" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_Loop_BN5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="94" class="1001" name="const_94">
+<pin_list>
+<pin id="95" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="run_all_slices_unrolled_Pipeline_MergedLoop4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="96" class="1004" name="grp_run_all_slices_unrolled_Pipeline_MergedLoop_fu_96">
+<pin_list>
+<pin id="97" dir="0" index="0" bw="0" slack="0"/>
+<pin id="98" dir="0" index="1" bw="16" slack="0"/>
+<pin id="99" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="102" class="1004" name="grp_lstm_forward_unidir_fu_102">
+<pin_list>
+<pin id="103" dir="0" index="0" bw="0" slack="0"/>
+<pin id="104" dir="0" index="1" bw="16" slack="0"/>
+<pin id="105" dir="0" index="2" bw="16" slack="0"/>
+<pin id="106" dir="0" index="3" bw="16" slack="0"/>
+<pin id="107" dir="0" index="4" bw="16" slack="0"/>
+<pin id="108" dir="0" index="5" bw="16" slack="0"/>
+<pin id="109" dir="1" index="6" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln301/1 call_ln315/7 call_ln329/13 call_ln343/19 call_ln357/25 "/>
+</bind>
+</comp>
+
+<comp id="124" class="1004" name="grp_run_all_slices_unrolled_Pipeline_Loop_BN_fu_124">
+<pin_list>
+<pin id="125" dir="0" index="0" bw="0" slack="0"/>
+<pin id="126" dir="0" index="1" bw="16" slack="0"/>
+<pin id="127" dir="0" index="2" bw="16" slack="0"/>
+<pin id="128" dir="0" index="3" bw="16" slack="0"/>
+<pin id="129" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/3 "/>
+</bind>
+</comp>
+
+<comp id="134" class="1004" name="grp_conv_bn_act_pool_fu_134">
+<pin_list>
+<pin id="135" dir="0" index="0" bw="0" slack="0"/>
+<pin id="136" dir="0" index="1" bw="16" slack="0"/>
+<pin id="137" dir="0" index="2" bw="16" slack="0"/>
+<pin id="138" dir="0" index="3" bw="16" slack="0"/>
+<pin id="139" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln312/3 "/>
+</bind>
+</comp>
+
+<comp id="144" class="1004" name="grp_run_all_slices_unrolled_Pipeline_MergedLoop0_fu_144">
+<pin_list>
+<pin id="145" dir="0" index="0" bw="0" slack="0"/>
+<pin id="146" dir="0" index="1" bw="16" slack="0"/>
+<pin id="147" dir="0" index="2" bw="16" slack="0"/>
+<pin id="148" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/5 "/>
+</bind>
+</comp>
+
+<comp id="152" class="1004" name="grp_run_all_slices_unrolled_Pipeline_Loop_BN2_fu_152">
+<pin_list>
+<pin id="153" dir="0" index="0" bw="0" slack="0"/>
+<pin id="154" dir="0" index="1" bw="16" slack="0"/>
+<pin id="155" dir="0" index="2" bw="16" slack="0"/>
+<pin id="156" dir="0" index="3" bw="16" slack="0"/>
+<pin id="157" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/9 "/>
+</bind>
+</comp>
+
+<comp id="162" class="1004" name="grp_conv_bn_act_pool_2_fu_162">
+<pin_list>
+<pin id="163" dir="0" index="0" bw="0" slack="0"/>
+<pin id="164" dir="0" index="1" bw="16" slack="0"/>
+<pin id="165" dir="0" index="2" bw="16" slack="0"/>
+<pin id="166" dir="0" index="3" bw="16" slack="0"/>
+<pin id="167" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln326/9 "/>
+</bind>
+</comp>
+
+<comp id="172" class="1004" name="grp_run_all_slices_unrolled_Pipeline_MergedLoop1_fu_172">
+<pin_list>
+<pin id="173" dir="0" index="0" bw="0" slack="0"/>
+<pin id="174" dir="0" index="1" bw="16" slack="0"/>
+<pin id="175" dir="0" index="2" bw="16" slack="0"/>
+<pin id="176" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/11 "/>
+</bind>
+</comp>
+
+<comp id="180" class="1004" name="grp_run_all_slices_unrolled_Pipeline_Loop_BN3_fu_180">
+<pin_list>
+<pin id="181" dir="0" index="0" bw="0" slack="0"/>
+<pin id="182" dir="0" index="1" bw="16" slack="0"/>
+<pin id="183" dir="0" index="2" bw="16" slack="0"/>
+<pin id="184" dir="0" index="3" bw="16" slack="0"/>
+<pin id="185" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/15 "/>
+</bind>
+</comp>
+
+<comp id="190" class="1004" name="grp_conv_bn_act_pool_3_fu_190">
+<pin_list>
+<pin id="191" dir="0" index="0" bw="0" slack="0"/>
+<pin id="192" dir="0" index="1" bw="16" slack="0"/>
+<pin id="193" dir="0" index="2" bw="16" slack="0"/>
+<pin id="194" dir="0" index="3" bw="16" slack="0"/>
+<pin id="195" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln340/15 "/>
+</bind>
+</comp>
+
+<comp id="200" class="1004" name="grp_run_all_slices_unrolled_Pipeline_MergedLoop2_fu_200">
+<pin_list>
+<pin id="201" dir="0" index="0" bw="0" slack="0"/>
+<pin id="202" dir="0" index="1" bw="16" slack="0"/>
+<pin id="203" dir="0" index="2" bw="16" slack="0"/>
+<pin id="204" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/17 "/>
+</bind>
+</comp>
+
+<comp id="208" class="1004" name="grp_run_all_slices_unrolled_Pipeline_Loop_BN4_fu_208">
+<pin_list>
+<pin id="209" dir="0" index="0" bw="0" slack="0"/>
+<pin id="210" dir="0" index="1" bw="16" slack="0"/>
+<pin id="211" dir="0" index="2" bw="16" slack="0"/>
+<pin id="212" dir="0" index="3" bw="16" slack="0"/>
+<pin id="213" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/21 "/>
+</bind>
+</comp>
+
+<comp id="218" class="1004" name="grp_conv_bn_act_pool_4_fu_218">
+<pin_list>
+<pin id="219" dir="0" index="0" bw="0" slack="0"/>
+<pin id="220" dir="0" index="1" bw="16" slack="0"/>
+<pin id="221" dir="0" index="2" bw="16" slack="0"/>
+<pin id="222" dir="0" index="3" bw="16" slack="0"/>
+<pin id="223" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln354/21 "/>
+</bind>
+</comp>
+
+<comp id="228" class="1004" name="grp_run_all_slices_unrolled_Pipeline_MergedLoop3_fu_228">
+<pin_list>
+<pin id="229" dir="0" index="0" bw="0" slack="0"/>
+<pin id="230" dir="0" index="1" bw="16" slack="0"/>
+<pin id="231" dir="0" index="2" bw="16" slack="0"/>
+<pin id="232" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/23 "/>
+</bind>
+</comp>
+
+<comp id="236" class="1004" name="grp_run_all_slices_unrolled_Pipeline_Loop_BN5_fu_236">
+<pin_list>
+<pin id="237" dir="0" index="0" bw="0" slack="0"/>
+<pin id="238" dir="0" index="1" bw="16" slack="0"/>
+<pin id="239" dir="0" index="2" bw="16" slack="0"/>
+<pin id="240" dir="0" index="3" bw="16" slack="0"/>
+<pin id="241" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/27 "/>
+</bind>
+</comp>
+
+<comp id="246" class="1004" name="grp_run_all_slices_unrolled_Pipeline_MergedLoop4_fu_246">
+<pin_list>
+<pin id="247" dir="0" index="0" bw="0" slack="0"/>
+<pin id="248" dir="0" index="1" bw="16" slack="0"/>
+<pin id="249" dir="0" index="2" bw="16" slack="0"/>
+<pin id="250" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/29 "/>
+</bind>
+</comp>
+
+<comp id="254" class="1004" name="grp_fu_254">
+<pin_list>
+<pin id="255" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="256" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="257" dir="1" index="2" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hadd(534) " fcode="hadd"/>
+<opset="add_i/2 add_i2/2 add_i3/2 add_i4/2 add11_i5/35 "/>
+</bind>
+</comp>
+
+<comp id="258" class="1004" name="grp_fu_258">
+<pin_list>
+<pin id="259" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="260" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="261" dir="1" index="2" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hadd(534) " fcode="hadd"/>
+<opset="add11_i/35 add11_i2/35 add11_i3/35 add11_i4/35 "/>
+</bind>
+</comp>
+
+<comp id="262" class="1004" name="grp_fu_262">
+<pin_list>
+<pin id="263" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="264" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="265" dir="1" index="2" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hmul(536) " fcode="hmul"/>
+<opset="mul_i/31 mul_i2/31 mul_i3/31 mul_i4/31 "/>
+</bind>
+</comp>
+
+<comp id="266" class="1004" name="grp_fu_266">
+<pin_list>
+<pin id="267" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="268" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="269" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fdiv(16) " fcode="fdiv"/>
+<opset="div_i/19 div_i2/19 div_i3/19 div_i4/19 "/>
+</bind>
+</comp>
+
+<comp id="270" class="1004" name="grp_fu_270">
+<pin_list>
+<pin id="271" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="272" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="273" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fsqrt(503) " fcode="fsqrt"/>
+<opset="tmp/9 tmp_2/9 tmp_3/9 tmp_4/9 "/>
+</bind>
+</comp>
+
+<comp id="274" class="1004" name="grp_fu_274">
+<pin_list>
+<pin id="275" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="276" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="sptohp(532) " fcode="sptohp"/>
+<opset="n/29 n/29 n/29 n/29 "/>
+</bind>
+</comp>
+
+<comp id="277" class="1004" name="grp_fu_277">
+<pin_list>
+<pin id="278" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="279" dir="1" index="1" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hptosp(533) " fcode="hptosp"/>
+<opset="conv5_i/7 conv5_i2/7 conv5_i3/7 conv5_i4/7 "/>
+</bind>
+</comp>
+
+<comp id="280" class="1004" name="grp_fu_280">
+<pin_list>
+<pin id="281" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="282" dir="1" index="1" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hptosp(533) " fcode="hptosp"/>
+<opset="conv_i/17 conv_i2/17 conv_i3/17 conv_i4/17 "/>
+</bind>
+</comp>
+
+<comp id="283" class="1004" name="grp_fu_283">
+<pin_list>
+<pin id="284" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="285" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="286" dir="1" index="2" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hadd(534) " fcode="hadd"/>
+<opset="add/4 acc_10/13 acc/18 pool_acc_35/35 add1/4 acc_8/13 acc/18 pool_acc_34/35 add2/4 acc_6/13 acc/18 pool_acc_33/35 add3/4 acc_4/13 acc/18 pool_acc_32/35 add_i5/2 add4/4 "/>
+</bind>
+</comp>
+
+<comp id="287" class="1004" name="grp_fu_287">
+<pin_list>
+<pin id="288" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="289" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="290" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hcmp(539) " fcode="hcmp"/>
+<opset="cmp_i/2 cmp_i/33 cmp_i2/2 cmp_i/33 cmp_i3/2 cmp_i/33 cmp_i4/2 cmp_i/33 cmp_i1/2 "/>
+</bind>
+</comp>
+
+<comp id="291" class="1004" name="grp_fu_291">
+<pin_list>
+<pin id="292" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="293" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="294" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hcmp(539) " fcode="hcmp"/>
+<opset="cmp1_i1/2 cmp1_i2/2 cmp1_i3/2 cmp1_i4/2 cmp1_i/2 "/>
+</bind>
+</comp>
+
+<comp id="295" class="1004" name="grp_fu_295">
+<pin_list>
+<pin id="296" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="297" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="298" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fsub(11) " fcode="fadd"/>
+<opset="b_f/33 b_f/33 b_f/33 b_f/33 "/>
+</bind>
+</comp>
+
+<comp id="299" class="1004" name="grp_fu_299">
+<pin_list>
+<pin id="300" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="301" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="302" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fmul(13) " fcode="fmul"/>
+<opset="mul/30 mul/30 mul/30 mul/30 "/>
+</bind>
+</comp>
+
+<comp id="303" class="1004" name="grp_fu_303">
+<pin_list>
+<pin id="304" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="305" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="306" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fdiv(16) " fcode="fdiv"/>
+<opset="inv/17 inv/17 inv/17 inv/17 div_i5/19 "/>
+</bind>
+</comp>
+
+<comp id="307" class="1004" name="grp_fu_307">
+<pin_list>
+<pin id="308" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="309" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="310" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fsqrt(503) " fcode="fsqrt"/>
+<opset="tmp_s/7 tmp_s/7 tmp_s/7 tmp_s/7 tmp_5/9 "/>
+</bind>
+</comp>
+
+<comp id="311" class="1004" name="grp_fu_311">
+<pin_list>
+<pin id="312" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="313" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="sptohp(532) " fcode="sptohp"/>
+<opset="b_bn/37 b_bn/37 b_bn/37 b_bn/37 "/>
+</bind>
+</comp>
+
+<comp id="314" class="1004" name="grp_fu_314">
+<pin_list>
+<pin id="315" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="316" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="317" dir="1" index="2" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hdiv(537) " fcode="hdiv"/>
+<opset="div/2 div/2 div/2 div/2 "/>
+</bind>
+</comp>
+
+<comp id="318" class="1004" name="grp_fu_318">
+<pin_list>
+<pin id="319" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="320" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="321" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fadd(9) " fcode="fadd"/>
+<opset="add/28 add3/3 add/28 add3/3 add/28 add3/3 add/28 add3/3 "/>
+</bind>
+</comp>
+
+<comp id="322" class="1004" name="grp_fu_322">
+<pin_list>
+<pin id="323" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="324" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="325" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fmul(13) " fcode="fmul"/>
+<opset="mul2/25 a_f/27 mul9/25 a_f/27 mul7/25 a_f/27 mul5/25 a_f/27 "/>
+</bind>
+</comp>
+
+<comp id="326" class="1004" name="grp_fu_326">
+<pin_list>
+<pin id="327" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="328" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="sptohp(532) " fcode="sptohp"/>
+<opset="y_4/32 a_bn/30 y_3/32 a_bn/30 y_2/32 a_bn/30 y_1/32 a_bn/30 n/29 "/>
+</bind>
+</comp>
+
+<comp id="329" class="1004" name="grp_fu_329">
+<pin_list>
+<pin id="330" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="331" dir="1" index="1" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hptosp(533) " fcode="hptosp"/>
+<opset="conv1/23 conv3/26 conv/1 conv6/23 conv8/26 conv/1 conv3/23 conv5/26 conv/1 conv8/23 conv2/26 conv/1 conv5_i5/7 "/>
+</bind>
+</comp>
+
+<comp id="332" class="1004" name="grp_fu_332">
+<pin_list>
+<pin id="333" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="334" dir="1" index="1" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hptosp(533) " fcode="hptosp"/>
+<opset="conv2/23 conv9/28 conv7/23 conv9/28 conv4/23 conv9/28 conv1/23 conv9/28 conv_i5/17 "/>
+</bind>
+</comp>
+
+<comp id="335" class="1004" name="grp_fu_335">
+<pin_list>
+<pin id="336" dir="0" index="0" bw="16" slack="2147483647"/>
+<pin id="337" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="338" dir="1" index="2" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="hmul(536) " fcode="hmul"/>
+<opset="mul3/9 mul58_1/10 mul1/9 mul58_1/10 mul8/9 mul58_1/10 mul6/9 mul58_1/10 mul_i5/31 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="100"><net_src comp="64" pin="0"/><net_sink comp="96" pin=0"/></net>
+
+<net id="101"><net_src comp="0" pin="0"/><net_sink comp="96" pin=1"/></net>
+
+<net id="110"><net_src comp="66" pin="0"/><net_sink comp="102" pin=0"/></net>
+
+<net id="111"><net_src comp="8" pin="0"/><net_sink comp="102" pin=1"/></net>
+
+<net id="112"><net_src comp="10" pin="0"/><net_sink comp="102" pin=2"/></net>
+
+<net id="113"><net_src comp="2" pin="0"/><net_sink comp="102" pin=3"/></net>
+
+<net id="114"><net_src comp="4" pin="0"/><net_sink comp="102" pin=4"/></net>
+
+<net id="115"><net_src comp="6" pin="0"/><net_sink comp="102" pin=5"/></net>
+
+<net id="116"><net_src comp="20" pin="0"/><net_sink comp="102" pin=1"/></net>
+
+<net id="117"><net_src comp="22" pin="0"/><net_sink comp="102" pin=2"/></net>
+
+<net id="118"><net_src comp="32" pin="0"/><net_sink comp="102" pin=1"/></net>
+
+<net id="119"><net_src comp="34" pin="0"/><net_sink comp="102" pin=2"/></net>
+
+<net id="120"><net_src comp="44" pin="0"/><net_sink comp="102" pin=1"/></net>
+
+<net id="121"><net_src comp="46" pin="0"/><net_sink comp="102" pin=2"/></net>
+
+<net id="122"><net_src comp="56" pin="0"/><net_sink comp="102" pin=1"/></net>
+
+<net id="123"><net_src comp="58" pin="0"/><net_sink comp="102" pin=2"/></net>
+
+<net id="130"><net_src comp="68" pin="0"/><net_sink comp="124" pin=0"/></net>
+
+<net id="131"><net_src comp="2" pin="0"/><net_sink comp="124" pin=1"/></net>
+
+<net id="132"><net_src comp="12" pin="0"/><net_sink comp="124" pin=2"/></net>
+
+<net id="133"><net_src comp="14" pin="0"/><net_sink comp="124" pin=3"/></net>
+
+<net id="140"><net_src comp="70" pin="0"/><net_sink comp="134" pin=0"/></net>
+
+<net id="141"><net_src comp="16" pin="0"/><net_sink comp="134" pin=1"/></net>
+
+<net id="142"><net_src comp="18" pin="0"/><net_sink comp="134" pin=2"/></net>
+
+<net id="143"><net_src comp="6" pin="0"/><net_sink comp="134" pin=3"/></net>
+
+<net id="149"><net_src comp="72" pin="0"/><net_sink comp="144" pin=0"/></net>
+
+<net id="150"><net_src comp="0" pin="0"/><net_sink comp="144" pin=1"/></net>
+
+<net id="151"><net_src comp="2" pin="0"/><net_sink comp="144" pin=2"/></net>
+
+<net id="158"><net_src comp="74" pin="0"/><net_sink comp="152" pin=0"/></net>
+
+<net id="159"><net_src comp="2" pin="0"/><net_sink comp="152" pin=1"/></net>
+
+<net id="160"><net_src comp="24" pin="0"/><net_sink comp="152" pin=2"/></net>
+
+<net id="161"><net_src comp="26" pin="0"/><net_sink comp="152" pin=3"/></net>
+
+<net id="168"><net_src comp="76" pin="0"/><net_sink comp="162" pin=0"/></net>
+
+<net id="169"><net_src comp="28" pin="0"/><net_sink comp="162" pin=1"/></net>
+
+<net id="170"><net_src comp="30" pin="0"/><net_sink comp="162" pin=2"/></net>
+
+<net id="171"><net_src comp="6" pin="0"/><net_sink comp="162" pin=3"/></net>
+
+<net id="177"><net_src comp="78" pin="0"/><net_sink comp="172" pin=0"/></net>
+
+<net id="178"><net_src comp="0" pin="0"/><net_sink comp="172" pin=1"/></net>
+
+<net id="179"><net_src comp="2" pin="0"/><net_sink comp="172" pin=2"/></net>
+
+<net id="186"><net_src comp="80" pin="0"/><net_sink comp="180" pin=0"/></net>
+
+<net id="187"><net_src comp="2" pin="0"/><net_sink comp="180" pin=1"/></net>
+
+<net id="188"><net_src comp="36" pin="0"/><net_sink comp="180" pin=2"/></net>
+
+<net id="189"><net_src comp="38" pin="0"/><net_sink comp="180" pin=3"/></net>
+
+<net id="196"><net_src comp="82" pin="0"/><net_sink comp="190" pin=0"/></net>
+
+<net id="197"><net_src comp="40" pin="0"/><net_sink comp="190" pin=1"/></net>
+
+<net id="198"><net_src comp="42" pin="0"/><net_sink comp="190" pin=2"/></net>
+
+<net id="199"><net_src comp="6" pin="0"/><net_sink comp="190" pin=3"/></net>
+
+<net id="205"><net_src comp="84" pin="0"/><net_sink comp="200" pin=0"/></net>
+
+<net id="206"><net_src comp="0" pin="0"/><net_sink comp="200" pin=1"/></net>
+
+<net id="207"><net_src comp="2" pin="0"/><net_sink comp="200" pin=2"/></net>
+
+<net id="214"><net_src comp="86" pin="0"/><net_sink comp="208" pin=0"/></net>
+
+<net id="215"><net_src comp="2" pin="0"/><net_sink comp="208" pin=1"/></net>
+
+<net id="216"><net_src comp="48" pin="0"/><net_sink comp="208" pin=2"/></net>
+
+<net id="217"><net_src comp="50" pin="0"/><net_sink comp="208" pin=3"/></net>
+
+<net id="224"><net_src comp="88" pin="0"/><net_sink comp="218" pin=0"/></net>
+
+<net id="225"><net_src comp="52" pin="0"/><net_sink comp="218" pin=1"/></net>
+
+<net id="226"><net_src comp="54" pin="0"/><net_sink comp="218" pin=2"/></net>
+
+<net id="227"><net_src comp="6" pin="0"/><net_sink comp="218" pin=3"/></net>
+
+<net id="233"><net_src comp="90" pin="0"/><net_sink comp="228" pin=0"/></net>
+
+<net id="234"><net_src comp="0" pin="0"/><net_sink comp="228" pin=1"/></net>
+
+<net id="235"><net_src comp="2" pin="0"/><net_sink comp="228" pin=2"/></net>
+
+<net id="242"><net_src comp="92" pin="0"/><net_sink comp="236" pin=0"/></net>
+
+<net id="243"><net_src comp="2" pin="0"/><net_sink comp="236" pin=1"/></net>
+
+<net id="244"><net_src comp="60" pin="0"/><net_sink comp="236" pin=2"/></net>
+
+<net id="245"><net_src comp="62" pin="0"/><net_sink comp="236" pin=3"/></net>
+
+<net id="251"><net_src comp="94" pin="0"/><net_sink comp="246" pin=0"/></net>
+
+<net id="252"><net_src comp="0" pin="0"/><net_sink comp="246" pin=1"/></net>
+
+<net id="253"><net_src comp="2" pin="0"/><net_sink comp="246" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: merged | {1 2 5 6 11 12 17 18 23 24 29 30 }
+	Port: h_slice | {1 2 3 4 7 8 9 10 13 14 15 16 19 20 21 22 25 26 27 28 }
+	Port: c_slice | {1 2 7 8 13 14 19 20 25 26 }
+	Port: U_slice | {3 4 9 10 15 16 21 22 }
+	Port: LSTM_W_ifog0 | {}
+	Port: LSTM_R_ifog0 | {}
+	Port: BN2_var0 | {}
+	Port: BN2_gamma0 | {}
+	Port: X_slice12 | {}
+	Port: ConvW1 | {}
+	Port: LSTM_W_ifog1 | {}
+	Port: LSTM_R_ifog1 | {}
+	Port: BN2_var1 | {}
+	Port: BN2_gamma1 | {}
+	Port: X_slice27 | {}
+	Port: ConvW2 | {}
+	Port: LSTM_W_ifog2 | {}
+	Port: LSTM_R_ifog2 | {}
+	Port: BN2_var2 | {}
+	Port: BN2_gamma2 | {}
+	Port: X_slice42 | {}
+	Port: ConvW3 | {}
+	Port: LSTM_W_ifog3 | {}
+	Port: LSTM_R_ifog3 | {}
+	Port: BN2_var3 | {}
+	Port: BN2_gamma3 | {}
+	Port: X_slice57 | {}
+	Port: ConvW4 | {}
+	Port: LSTM_W_ifog4 | {}
+	Port: LSTM_R_ifog4 | {}
+	Port: BN2_var4 | {}
+	Port: BN2_gamma4 | {}
+ - Input state : 
+	Port: run_all_slices_unrolled : merged | {5 6 11 12 17 18 23 24 29 30 }
+	Port: run_all_slices_unrolled : h_slice | {1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 }
+	Port: run_all_slices_unrolled : c_slice | {1 2 7 8 13 14 19 20 25 26 }
+	Port: run_all_slices_unrolled : U_slice | {1 2 7 8 13 14 19 20 25 26 }
+	Port: run_all_slices_unrolled : LSTM_W_ifog0 | {1 2 }
+	Port: run_all_slices_unrolled : LSTM_R_ifog0 | {1 2 }
+	Port: run_all_slices_unrolled : BN2_var0 | {3 4 }
+	Port: run_all_slices_unrolled : BN2_gamma0 | {3 4 }
+	Port: run_all_slices_unrolled : X_slice12 | {3 4 }
+	Port: run_all_slices_unrolled : ConvW1 | {3 4 }
+	Port: run_all_slices_unrolled : LSTM_W_ifog1 | {7 8 }
+	Port: run_all_slices_unrolled : LSTM_R_ifog1 | {7 8 }
+	Port: run_all_slices_unrolled : BN2_var1 | {9 10 }
+	Port: run_all_slices_unrolled : BN2_gamma1 | {9 10 }
+	Port: run_all_slices_unrolled : X_slice27 | {9 10 }
+	Port: run_all_slices_unrolled : ConvW2 | {9 10 }
+	Port: run_all_slices_unrolled : LSTM_W_ifog2 | {13 14 }
+	Port: run_all_slices_unrolled : LSTM_R_ifog2 | {13 14 }
+	Port: run_all_slices_unrolled : BN2_var2 | {15 16 }
+	Port: run_all_slices_unrolled : BN2_gamma2 | {15 16 }
+	Port: run_all_slices_unrolled : X_slice42 | {15 16 }
+	Port: run_all_slices_unrolled : ConvW3 | {15 16 }
+	Port: run_all_slices_unrolled : LSTM_W_ifog3 | {19 20 }
+	Port: run_all_slices_unrolled : LSTM_R_ifog3 | {19 20 }
+	Port: run_all_slices_unrolled : BN2_var3 | {21 22 }
+	Port: run_all_slices_unrolled : BN2_gamma3 | {21 22 }
+	Port: run_all_slices_unrolled : X_slice57 | {21 22 }
+	Port: run_all_slices_unrolled : ConvW4 | {21 22 }
+	Port: run_all_slices_unrolled : LSTM_W_ifog4 | {25 26 }
+	Port: run_all_slices_unrolled : LSTM_R_ifog4 | {25 26 }
+	Port: run_all_slices_unrolled : BN2_var4 | {27 28 }
+	Port: run_all_slices_unrolled : BN2_gamma4 | {27 28 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|                     Functional Unit                     |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          |  grp_run_all_slices_unrolled_Pipeline_MergedLoop_fu_96  |    0    |    0    |    0    |    6    |    28   |    0    |
+|          |              grp_lstm_forward_unidir_fu_102             |    0    |    39   | 34.3434 |   3974  |   6634  |    0    |
+|          |   grp_run_all_slices_unrolled_Pipeline_Loop_BN_fu_124   |    0    |    6    |  4.584  |   555   |   331   |    0    |
+|          |               grp_conv_bn_act_pool_fu_134               |    0    |    24   | 16.2961 |   5107  |   4452  |    0    |
+|          | grp_run_all_slices_unrolled_Pipeline_MergedLoop0_fu_144 |    0    |    2    |  4.584  |   174   |   193   |    0    |
+|          |   grp_run_all_slices_unrolled_Pipeline_Loop_BN2_fu_152  |    0    |    6    |  4.584  |   555   |   331   |    0    |
+|          |              grp_conv_bn_act_pool_2_fu_162              |    0    |    24   | 16.2961 |   5113  |   4455  |    0    |
+|   call   | grp_run_all_slices_unrolled_Pipeline_MergedLoop1_fu_172 |    0    |    2    |  4.584  |   174   |   193   |    0    |
+|          |   grp_run_all_slices_unrolled_Pipeline_Loop_BN3_fu_180  |    0    |    6    |  4.584  |   555   |   331   |    0    |
+|          |              grp_conv_bn_act_pool_3_fu_190              |    0    |    24   | 16.2961 |   5119  |   4458  |    0    |
+|          | grp_run_all_slices_unrolled_Pipeline_MergedLoop2_fu_200 |    0    |    2    |  4.584  |   174   |   193   |    0    |
+|          |   grp_run_all_slices_unrolled_Pipeline_Loop_BN4_fu_208  |    0    |    6    |  4.584  |   555   |   331   |    0    |
+|          |              grp_conv_bn_act_pool_4_fu_218              |    0    |    24   | 16.2961 |   5125  |   4461  |    0    |
+|          | grp_run_all_slices_unrolled_Pipeline_MergedLoop3_fu_228 |    0    |    2    |  4.584  |   174   |   193   |    0    |
+|          |   grp_run_all_slices_unrolled_Pipeline_Loop_BN5_fu_236  |    0    |    6    |  4.584  |   555   |   331   |    0    |
+|          | grp_run_all_slices_unrolled_Pipeline_MergedLoop4_fu_246 |    0    |    2    |  4.584  |   174   |   193   |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   fadd   |                        grp_fu_295                       |    0    |    2    |    0    |   227   |   403   |    0    |
+|          |                        grp_fu_318                       |    0    |    2    |    0    |   227   |   403   |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   fmul   |                        grp_fu_299                       |    0    |    3    |    0    |   128   |   320   |    0    |
+|          |                        grp_fu_322                       |    0    |    3    |    0    |   128   |   320   |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          |                        grp_fu_254                       |    0    |    2    |    0    |   109   |   116   |    0    |
+|   hadd   |                        grp_fu_258                       |    0    |    2    |    0    |   109   |   116   |    0    |
+|          |                        grp_fu_283                       |    0    |    2    |    0    |   109   |   116   |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   hmul   |                        grp_fu_262                       |    0    |    2    |    0    |    91   |    35   |    0    |
+|          |                        grp_fu_335                       |    0    |    2    |    0    |    91   |    35   |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   fdiv   |                        grp_fu_266                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                        grp_fu_303                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   fsqrt  |                        grp_fu_270                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                        grp_fu_307                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          |                        grp_fu_274                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|  sptohp  |                        grp_fu_311                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                        grp_fu_326                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          |                        grp_fu_277                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|  hptosp  |                        grp_fu_280                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                        grp_fu_329                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                        grp_fu_332                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   hcmp   |                        grp_fu_287                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                        grp_fu_291                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   hdiv   |                        grp_fu_314                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                                         |    0    |   195   | 145.368 |  29308  |  28972  |    0    |
+|----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------------------------------|------|------|------|--------||---------||---------||---------|
+|              Comp              |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|--------------------------------|------|------|------|--------||---------||---------||---------|
+| grp_lstm_forward_unidir_fu_102 |  p1  |   5  |  16  |   80   ||    0    ||    21   |
+| grp_lstm_forward_unidir_fu_102 |  p2  |   5  |  16  |   80   ||    0    ||    21   |
+|--------------------------------|------|------|------|--------||---------||---------||---------|
+|              Total             |      |      |      |   160  || 2.44329 ||    0    ||    42   |
+|--------------------------------|------|------|------|--------||---------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    0   |   195  |   145  |  29308 |  28972 |    0   |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    2   |    0   |   42   |    -   |
+|  Register |    -   |    -   |    -   |    -   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |    0   |   195  |   147  |  29308 |  29014 |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

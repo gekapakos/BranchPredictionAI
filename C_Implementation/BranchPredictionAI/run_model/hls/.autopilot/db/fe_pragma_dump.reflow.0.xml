@@ -1,0 +1,51 @@
+<pragmas>
+<pragma file="../main_5_slices.cpp" line="228" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_gamma0"/>
+<pragma file="../main_5_slices.cpp" line="229" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_beta0"/>
+<pragma file="../main_5_slices.cpp" line="230" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_mean0"/>
+<pragma file="../main_5_slices.cpp" line="231" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_var0"/>
+<pragma file="../main_5_slices.cpp" line="232" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="LSTM_b_ifog0"/>
+<pragma file="../main_5_slices.cpp" line="240" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_gamma1"/>
+<pragma file="../main_5_slices.cpp" line="241" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_beta1"/>
+<pragma file="../main_5_slices.cpp" line="242" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_mean1"/>
+<pragma file="../main_5_slices.cpp" line="243" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_var1"/>
+<pragma file="../main_5_slices.cpp" line="244" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="LSTM_b_ifog1"/>
+<pragma file="../main_5_slices.cpp" line="252" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_gamma2"/>
+<pragma file="../main_5_slices.cpp" line="253" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_beta2"/>
+<pragma file="../main_5_slices.cpp" line="254" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_mean2"/>
+<pragma file="../main_5_slices.cpp" line="255" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_var2"/>
+<pragma file="../main_5_slices.cpp" line="256" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="LSTM_b_ifog2"/>
+<pragma file="../main_5_slices.cpp" line="264" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_gamma3"/>
+<pragma file="../main_5_slices.cpp" line="265" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_beta3"/>
+<pragma file="../main_5_slices.cpp" line="266" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_mean3"/>
+<pragma file="../main_5_slices.cpp" line="267" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_var3"/>
+<pragma file="../main_5_slices.cpp" line="268" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="LSTM_b_ifog3"/>
+<pragma file="../main_5_slices.cpp" line="276" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_gamma4"/>
+<pragma file="../main_5_slices.cpp" line="277" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_beta4"/>
+<pragma file="../main_5_slices.cpp" line="278" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_mean4"/>
+<pragma file="../main_5_slices.cpp" line="279" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="BN1_var4"/>
+<pragma file="../main_5_slices.cpp" line="280" pragmaType="array_partition" parentfunction="run_all_slices_unrolled" dim="1" factor="0" mode="complete" dynamic="0" variable="LSTM_b_ifog4"/>
+<pragma file="../main_5_slices.cpp" line="210" pragmaType="pipeline" parentfunction="dense_forward" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="197" pragmaType="inline" parentfunction="bn_vector" off="0" region="0" recursive="0"/>
+<pragma file="../main_5_slices.cpp" line="199" pragmaType="pipeline" parentfunction="bn_vector" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="52" pragmaType="inline" parentfunction="reluf" off="0" region="0" recursive="0"/>
+<pragma file="../main_5_slices.cpp" line="35" pragmaType="inline" parentfunction="sigmoidf" off="0" region="0" recursive="0"/>
+<pragma file="../main_5_slices.cpp" line="153" pragmaType="pipeline" parentfunction="lstm_forward_unidir" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="156" pragmaType="pipeline" parentfunction="lstm_forward_unidir" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="163" pragmaType="pipeline" parentfunction="lstm_forward_unidir" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="173" pragmaType="pipeline" parentfunction="lstm_forward_unidir" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="183" pragmaType="pipeline" parentfunction="lstm_forward_unidir" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="167" pragmaType="pipeline" parentfunction="lstm_forward_unidir" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="177" pragmaType="pipeline" parentfunction="lstm_forward_unidir" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="146" pragmaType="pipeline" parentfunction="lstm_forward_unidir" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="44" pragmaType="inline" parentfunction="tanhf_fast" off="0" region="0" recursive="0"/>
+<pragma file="../main_5_slices.cpp" line="107" pragmaType="pipeline" parentfunction="conv_bn_act_pool" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="109" pragmaType="pipeline" parentfunction="conv_bn_act_pool" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="127" pragmaType="pipeline" parentfunction="conv_bn_act_pool" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="112" pragmaType="pipeline" parentfunction="conv_bn_act_pool" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="116" pragmaType="unroll" parentfunction="conv_bn_act_pool" factor="2" skip_exit_check="0"/>
+<pragma file="../main_5_slices.cpp" line="101" pragmaType="pipeline" parentfunction="conv_bn_act_pool" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="90" pragmaType="pipeline" parentfunction="conv_bn_act_pool" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../main_5_slices.cpp" line="86" pragmaType="array_partition" parentfunction="conv_bn_act_pool" dim="1" factor="0" mode="complete" dynamic="0" variable="a_bn"/>
+<pragma file="../main_5_slices.cpp" line="87" pragmaType="array_partition" parentfunction="conv_bn_act_pool" dim="1" factor="0" mode="complete" dynamic="0" variable="b_bn"/>
+<pragma file="../main_5_slices.cpp" line="99" pragmaType="array_partition" parentfunction="conv_bn_act_pool" dim="1" factor="0" mode="complete" dynamic="0" variable="pool_acc"/>
+</pragmas>

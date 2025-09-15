@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vitis HLS Report for 'run_model_Pipeline_ReLULoop2'
+================================================================
+* Date:           Mon Sep 15 15:50:18 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        run_model
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.565 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |      134|      134|  1.340 us|  1.340 us|  129|  129|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- ReLULoop2  |      132|      132|         6|          1|          1|   128|       yes|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     49|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     36|    -|
+|Register         |        -|    -|     106|     32|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     106|    117|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln382_fu_71_p2    |         +|   0|  0|  15|           8|           1|
+    |icmp_ln382_fu_65_p2   |      icmp|   0|  0|  16|           8|           9|
+    |select_ln53_fu_87_p3  |    select|   0|  0|  16|           1|          16|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  49|          18|          28|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_1     |   9|          2|    8|         16|
+    |j_fu_30                  |   9|          2|    8|         16|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   18|         36|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   1|   0|    1|          0|
+    |j_fu_30                           |   8|   0|    8|          0|
+    |z1_addr_reg_106                   |   7|   0|    7|          0|
+    |z1_load_reg_112                   |  16|   0|   16|          0|
+    |z1_addr_reg_106                   |  64|  32|    7|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 106|  32|   49|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |         Source Object        |    C Type    |
++---------------------+-----+-----+------------+------------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|grp_fu_827_p_din0    |  out|   16|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|grp_fu_827_p_din1    |  out|   16|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|grp_fu_827_p_opcode  |  out|    5|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|grp_fu_827_p_dout0   |   in|    1|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|grp_fu_827_p_ce      |  out|    1|  ap_ctrl_hs|  run_model_Pipeline_ReLULoop2|  return value|
+|z1_address0          |  out|    7|   ap_memory|                            z1|         array|
+|z1_ce0               |  out|    1|   ap_memory|                            z1|         array|
+|z1_we0               |  out|    1|   ap_memory|                            z1|         array|
+|z1_d0                |  out|   16|   ap_memory|                            z1|         array|
+|z1_address1          |  out|    7|   ap_memory|                            z1|         array|
+|z1_ce1               |  out|    1|   ap_memory|                            z1|         array|
+|z1_q1                |   in|   16|   ap_memory|                            z1|         array|
++---------------------+-----+-----+------------+------------------------------+--------------+
+

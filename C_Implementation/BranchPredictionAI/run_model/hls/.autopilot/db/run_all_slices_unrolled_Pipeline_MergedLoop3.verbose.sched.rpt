@@ -1,0 +1,212 @@
+
+
+================================================================
+== Vitis HLS Report for 'run_all_slices_unrolled_Pipeline_MergedLoop3'
+================================================================
+* Date:           Mon Sep 15 15:50:09 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        run_model
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.994 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       40|       40|  0.400 us|  0.400 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- MergedLoop3  |       38|       38|         8|          1|          1|    32|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 8
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 8, States = { 1 2 3 4 5 6 7 8 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.80>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [../main_5_slices.cpp:289]   --->   Operation 11 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.14ns)   --->   "%store_ln289 = store i6 0, i6 %j" [../main_5_slices.cpp:289]   --->   Operation 12 'store' 'store_ln289' <Predicate = true> <Delay = 1.14>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body47"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%j_4 = load i6 %j" [../main_5_slices.cpp:345]   --->   Operation 14 'load' 'j_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.51ns)   --->   "%icmp_ln345 = icmp_eq  i6 %j_4, i6 32" [../main_5_slices.cpp:345]   --->   Operation 15 'icmp' 'icmp_ln345' <Predicate = true> <Delay = 1.51> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (1.51ns)   --->   "%add_ln345 = add i6 %j_4, i6 1" [../main_5_slices.cpp:345]   --->   Operation 16 'add' 'add_ln345' <Predicate = true> <Delay = 1.51> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln345 = br i1 %icmp_ln345, void %for.body47.split_ifconv, void %for.end56.exitStub" [../main_5_slices.cpp:345]   --->   Operation 17 'br' 'br_ln345' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln345 = zext i6 %j_4" [../main_5_slices.cpp:345]   --->   Operation 18 'zext' 'zext_ln345' <Predicate = (!icmp_ln345)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%h_slice_addr = getelementptr i16 %h_slice, i64 0, i64 %zext_ln345" [../main_5_slices.cpp:346]   --->   Operation 19 'getelementptr' 'h_slice_addr' <Predicate = (!icmp_ln345)> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (1.56ns)   --->   "%h_slice_load = load i5 %h_slice_addr" [../main_5_slices.cpp:346]   --->   Operation 20 'load' 'h_slice_load' <Predicate = (!icmp_ln345)> <Delay = 1.56> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%merged_addr = getelementptr i16 %merged, i64 0, i64 %zext_ln345" [../main_5_slices.cpp:346]   --->   Operation 21 'getelementptr' 'merged_addr' <Predicate = (!icmp_ln345)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.14ns)   --->   "%store_ln289 = store i6 %add_ln345, i6 %j" [../main_5_slices.cpp:289]   --->   Operation 22 'store' 'store_ln289' <Predicate = (!icmp_ln345)> <Delay = 1.14>
+
+State 2 <SV = 1> <Delay = 5.41>
+ST_2 : Operation 23 [1/2] ( I:1.56ns O:1.56ns )   --->   "%h_slice_load = load i5 %h_slice_addr" [../main_5_slices.cpp:346]   --->   Operation 23 'load' 'h_slice_load' <Predicate = true> <Delay = 1.56> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_2 : Operation 24 [2/2] (3.84ns)   --->   "%cmp_i4 = fcmp_olt  i16 %h_slice_load, i16 -1" [../main_5_slices.cpp:46->../main_5_slices.cpp:346]   --->   Operation 24 'hcmp' 'cmp_i4' <Predicate = true> <Delay = 3.84> <CoreInst = "HCompare">   --->   Core 56 'HCompare' <Latency = 1> <II = 1> <Delay = 3.84> <FuncUnit> <Opcode : 'hcmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [2/2] (3.84ns)   --->   "%cmp1_i4 = fcmp_ogt  i16 %h_slice_load, i16 1" [../main_5_slices.cpp:47->../main_5_slices.cpp:346]   --->   Operation 25 'hcmp' 'cmp1_i4' <Predicate = true> <Delay = 3.84> <CoreInst = "HCompare">   --->   Core 56 'HCompare' <Latency = 1> <II = 1> <Delay = 3.84> <FuncUnit> <Opcode : 'hcmp'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 5.70>
+ST_3 : Operation 26 [1/2] (3.84ns)   --->   "%cmp_i4 = fcmp_olt  i16 %h_slice_load, i16 -1" [../main_5_slices.cpp:46->../main_5_slices.cpp:346]   --->   Operation 26 'hcmp' 'cmp_i4' <Predicate = true> <Delay = 3.84> <CoreInst = "HCompare">   --->   Core 56 'HCompare' <Latency = 1> <II = 1> <Delay = 3.84> <FuncUnit> <Opcode : 'hcmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 27 [1/2] (3.84ns)   --->   "%cmp1_i4 = fcmp_ogt  i16 %h_slice_load, i16 1" [../main_5_slices.cpp:47->../main_5_slices.cpp:346]   --->   Operation 27 'hcmp' 'cmp1_i4' <Predicate = true> <Delay = 3.84> <CoreInst = "HCompare">   --->   Core 56 'HCompare' <Latency = 1> <II = 1> <Delay = 3.84> <FuncUnit> <Opcode : 'hcmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node and_ln47)   --->   "%xor_ln46 = xor i1 %cmp_i4, i1 1" [../main_5_slices.cpp:46->../main_5_slices.cpp:346]   --->   Operation 28 'xor' 'xor_ln46' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (0.71ns) (out node of the LUT)   --->   "%and_ln47 = and i1 %cmp1_i4, i1 %xor_ln46" [../main_5_slices.cpp:47->../main_5_slices.cpp:346]   --->   Operation 29 'and' 'and_ln47' <Predicate = true> <Delay = 0.71> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%sel_tmp1 = bitconcatenate i2 @_ssdm_op_BitConcatenate.i2.i1.i1, i1 %cmp_i4, i1 %and_ln47" [../main_5_slices.cpp:46->../main_5_slices.cpp:346]   --->   Operation 30 'bitconcatenate' 'sel_tmp1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (1.14ns)   --->   "%retval_0_i4 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.3half.half.i2, i2 2, i16 -1, i2 1, i16 1, i2 0, i16 %h_slice_load, i16 <undef>, i2 %sel_tmp1" [../main_5_slices.cpp:346]   --->   Operation 31 'sparsemux' 'retval_0_i4' <Predicate = true> <Delay = 1.14> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 140 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 32 [2/2] (1.56ns)   --->   "%merged_load = load i5 %merged_addr" [../main_5_slices.cpp:346]   --->   Operation 32 'load' 'merged_load' <Predicate = true> <Delay = 1.56> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+
+State 4 <SV = 3> <Delay = 6.99>
+ST_4 : Operation 33 [1/2] ( I:1.56ns O:1.56ns )   --->   "%merged_load = load i5 %merged_addr" [../main_5_slices.cpp:346]   --->   Operation 33 'load' 'merged_load' <Predicate = true> <Delay = 1.56> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_4 : Operation 34 [5/5] (5.42ns)   --->   "%add3 = hadd i16 %merged_load, i16 %retval_0_i4" [../main_5_slices.cpp:346]   --->   Operation 34 'hadd' 'add3' <Predicate = true> <Delay = 5.42> <CoreInst = "HAddSub_fulldsp">   --->   Core 55 'HAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 5.42> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.42>
+ST_5 : Operation 35 [4/5] (5.42ns)   --->   "%add3 = hadd i16 %merged_load, i16 %retval_0_i4" [../main_5_slices.cpp:346]   --->   Operation 35 'hadd' 'add3' <Predicate = true> <Delay = 5.42> <CoreInst = "HAddSub_fulldsp">   --->   Core 55 'HAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 5.42> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.42>
+ST_6 : Operation 36 [3/5] (5.42ns)   --->   "%add3 = hadd i16 %merged_load, i16 %retval_0_i4" [../main_5_slices.cpp:346]   --->   Operation 36 'hadd' 'add3' <Predicate = true> <Delay = 5.42> <CoreInst = "HAddSub_fulldsp">   --->   Core 55 'HAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 5.42> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.42>
+ST_7 : Operation 37 [2/5] (5.42ns)   --->   "%add3 = hadd i16 %merged_load, i16 %retval_0_i4" [../main_5_slices.cpp:346]   --->   Operation 37 'hadd' 'add3' <Predicate = true> <Delay = 5.42> <CoreInst = "HAddSub_fulldsp">   --->   Core 55 'HAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 5.42> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 44 [1/1] (1.14ns)   --->   "%ret_ln0 = ret"   --->   Operation 44 'ret' 'ret_ln0' <Predicate = (icmp_ln345)> <Delay = 1.14>
+
+State 8 <SV = 7> <Delay = 6.99>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%specpipeline_ln289 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_18" [../main_5_slices.cpp:289]   --->   Operation 38 'specpipeline' 'specpipeline_ln289' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%speclooptripcount_ln289 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [../main_5_slices.cpp:289]   --->   Operation 39 'speclooptripcount' 'speclooptripcount_ln289' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%specloopname_ln345 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [../main_5_slices.cpp:345]   --->   Operation 40 'specloopname' 'specloopname_ln345' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/5] (5.42ns)   --->   "%add3 = hadd i16 %merged_load, i16 %retval_0_i4" [../main_5_slices.cpp:346]   --->   Operation 41 'hadd' 'add3' <Predicate = true> <Delay = 5.42> <CoreInst = "HAddSub_fulldsp">   --->   Core 55 'HAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 5.42> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 42 [1/1] ( I:1.56ns O:1.56ns )   --->   "%store_ln346 = store i16 %add3, i5 %merged_addr" [../main_5_slices.cpp:346]   --->   Operation 42 'store' 'store_ln346' <Predicate = true> <Delay = 1.56> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln345 = br void %for.body47" [../main_5_slices.cpp:345]   --->   Operation 43 'br' 'br_ln345' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 3.808ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln289', ../main_5_slices.cpp:289) of constant 0 on local variable 'j', ../main_5_slices.cpp:289 [4]  (1.146 ns)
+	'load' operation 6 bit ('j', ../main_5_slices.cpp:345) on local variable 'j', ../main_5_slices.cpp:289 [7]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln345', ../main_5_slices.cpp:345) [8]  (1.516 ns)
+	'store' operation 0 bit ('store_ln289', ../main_5_slices.cpp:289) of variable 'add_ln345', ../main_5_slices.cpp:345 on local variable 'j', ../main_5_slices.cpp:289 [28]  (1.146 ns)
+
+ <State 2>: 5.412ns
+The critical path consists of the following:
+	'load' operation 16 bit ('x', ../main_5_slices.cpp:346) on array 'h_slice' [17]  (1.566 ns)
+	'hcmp' operation 1 bit ('cmp_i4', ../main_5_slices.cpp:46->../main_5_slices.cpp:346) [18]  (3.846 ns)
+
+ <State 3>: 5.704ns
+The critical path consists of the following:
+	'hcmp' operation 1 bit ('cmp_i4', ../main_5_slices.cpp:46->../main_5_slices.cpp:346) [18]  (3.846 ns)
+	'xor' operation 1 bit ('xor_ln46', ../main_5_slices.cpp:46->../main_5_slices.cpp:346) [20]  (0.000 ns)
+	'and' operation 1 bit ('and_ln47', ../main_5_slices.cpp:47->../main_5_slices.cpp:346) [21]  (0.712 ns)
+	'sparsemux' operation 16 bit ('retval_0_i4', ../main_5_slices.cpp:346) [23]  (1.146 ns)
+
+ <State 4>: 6.994ns
+The critical path consists of the following:
+	'load' operation 16 bit ('merged_load', ../main_5_slices.cpp:346) on array 'merged' [25]  (1.566 ns)
+	'hadd' operation 16 bit ('add3', ../main_5_slices.cpp:346) [26]  (5.428 ns)
+
+ <State 5>: 5.428ns
+The critical path consists of the following:
+	'hadd' operation 16 bit ('add3', ../main_5_slices.cpp:346) [26]  (5.428 ns)
+
+ <State 6>: 5.428ns
+The critical path consists of the following:
+	'hadd' operation 16 bit ('add3', ../main_5_slices.cpp:346) [26]  (5.428 ns)
+
+ <State 7>: 5.428ns
+The critical path consists of the following:
+	'hadd' operation 16 bit ('add3', ../main_5_slices.cpp:346) [26]  (5.428 ns)
+
+ <State 8>: 6.994ns
+The critical path consists of the following:
+	'hadd' operation 16 bit ('add3', ../main_5_slices.cpp:346) [26]  (5.428 ns)
+	'store' operation 0 bit ('store_ln346', ../main_5_slices.cpp:346) of variable 'add3', ../main_5_slices.cpp:346 on array 'merged' [27]  (1.566 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

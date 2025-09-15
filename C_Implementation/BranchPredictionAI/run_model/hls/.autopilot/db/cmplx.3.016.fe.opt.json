@@ -1,0 +1,152 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "4 8 6",
+    "file": "main_5_slices.cpp",
+    "fileloc": 365,
+    "instructions": 96,
+    "loads": {
+      "G": 8,
+      "L": 4
+    },
+    "name": "run_model",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 4393
+  },
+  "1": {
+    "basicblocks": 124,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 624,
+    "loads": {
+      "G": 5,
+      "L": 64
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "G": 1,
+      "L": 96
+    },
+    "total_instructions": 624
+  },
+  "2": {
+    "basicblocks": 49,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 140,
+    "instructions": 294,
+    "loads": {
+      "G": 3,
+      "L": 32
+    },
+    "name": "lstm_forward_unidir",
+    "stores": {
+      "G": 4,
+      "L": 15
+    },
+    "total_instructions": 294
+  },
+  "3": {
+    "basicblocks": 124,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 624,
+    "loads": {
+      "G": 5,
+      "L": 64
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "G": 1,
+      "L": 96
+    },
+    "total_instructions": 624
+  },
+  "4": {
+    "basicblocks": 49,
+    "calls": "2 5 2 1 2 3 2 7 2",
+    "file": "main_5_slices.cpp",
+    "fileloc": 223,
+    "instructions": 271,
+    "loads": {
+      "G": 30,
+      "L": 5
+    },
+    "name": "run_all_slices_unrolled",
+    "stores": {
+      "G": 5,
+      "L": 6
+    },
+    "total_instructions": 4237
+  },
+  "5": {
+    "basicblocks": 124,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 624,
+    "loads": {
+      "G": 5,
+      "L": 64
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "G": 1,
+      "L": 96
+    },
+    "total_instructions": 624
+  },
+  "6": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 205,
+    "instructions": 30,
+    "loads": {
+      "G": 2,
+      "L": 1
+    },
+    "name": "dense_forward",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 30
+  },
+  "7": {
+    "basicblocks": 124,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 624,
+    "loads": {
+      "G": 5,
+      "L": 64
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "G": 1,
+      "L": 96
+    },
+    "total_instructions": 624
+  },
+  "8": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 205,
+    "instructions": 30,
+    "loads": {
+      "G": 2,
+      "L": 1
+    },
+    "name": "dense_forward",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 30
+  }
+}

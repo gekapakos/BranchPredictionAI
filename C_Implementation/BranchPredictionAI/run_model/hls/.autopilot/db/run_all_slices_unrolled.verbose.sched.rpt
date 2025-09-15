@@ -1,0 +1,356 @@
+
+
+================================================================
+== Vitis HLS Report for 'run_all_slices_unrolled'
+================================================================
+* Date:           Mon Sep 15 15:50:10 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        run_model
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.847 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +----------+----------+-----------+-----------+----------+----------+---------+
+    |   Latency (cycles)  |   Latency (absolute)  |       Interval      | Pipeline|
+    |    min   |    max   |    min    |    max    |    min   |    max   |   Type  |
+    +----------+----------+-----------+-----------+----------+----------+---------+
+    |  40081252|  40125532|  0.401 sec|  0.401 sec|  40081252|  40125532|       no|
+    +----------+----------+-----------+-----------+----------+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 30
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop, i16 %merged"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln301 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog0, i16 %LSTM_R_ifog0, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:301]   --->   Operation 32 'call' 'call_ln301' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 3.80>
+ST_2 : Operation 33 [1/2] (3.80ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop, i16 %merged"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 3.80> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 34 [1/2] (1.40ns)   --->   "%call_ln301 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog0, i16 %LSTM_R_ifog0, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:301]   --->   Operation 34 'call' 'call_ln301' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN, i16 %h_slice, i16 %BN2_var0, i16 %BN2_gamma0"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln312 = call void @conv_bn_act_pool, i16 %X_slice12, i16 %ConvW1, i16 %U_slice" [../main_5_slices.cpp:312]   --->   Operation 36 'call' 'call_ln312' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.57>
+ST_4 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN, i16 %h_slice, i16 %BN2_var0, i16 %BN2_gamma0"   --->   Operation 37 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 38 [1/2] (1.57ns)   --->   "%call_ln312 = call void @conv_bn_act_pool, i16 %X_slice12, i16 %ConvW1, i16 %U_slice" [../main_5_slices.cpp:312]   --->   Operation 38 'call' 'call_ln312' <Predicate = true> <Delay = 1.57> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 39 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop0, i16 %merged, i16 %h_slice"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 40 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop0, i16 %merged, i16 %h_slice"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 41 [2/2] (0.00ns)   --->   "%call_ln315 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog1, i16 %LSTM_R_ifog1, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:315]   --->   Operation 41 'call' 'call_ln315' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 1.40>
+ST_8 : Operation 42 [1/2] (1.40ns)   --->   "%call_ln315 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog1, i16 %LSTM_R_ifog1, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:315]   --->   Operation 42 'call' 'call_ln315' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 43 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN2, i16 %h_slice, i16 %BN2_var1, i16 %BN2_gamma1"   --->   Operation 43 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 44 [2/2] (0.00ns)   --->   "%call_ln326 = call void @conv_bn_act_pool.2, i16 %X_slice27, i16 %ConvW2, i16 %U_slice" [../main_5_slices.cpp:326]   --->   Operation 44 'call' 'call_ln326' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 1.62>
+ST_10 : Operation 45 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN2, i16 %h_slice, i16 %BN2_var1, i16 %BN2_gamma1"   --->   Operation 45 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 46 [1/2] (1.62ns)   --->   "%call_ln326 = call void @conv_bn_act_pool.2, i16 %X_slice27, i16 %ConvW2, i16 %U_slice" [../main_5_slices.cpp:326]   --->   Operation 46 'call' 'call_ln326' <Predicate = true> <Delay = 1.62> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop1, i16 %merged, i16 %h_slice"   --->   Operation 47 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop1, i16 %merged, i16 %h_slice"   --->   Operation 48 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 49 [2/2] (0.00ns)   --->   "%call_ln329 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog2, i16 %LSTM_R_ifog2, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:329]   --->   Operation 49 'call' 'call_ln329' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 1.40>
+ST_14 : Operation 50 [1/2] (1.40ns)   --->   "%call_ln329 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog2, i16 %LSTM_R_ifog2, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:329]   --->   Operation 50 'call' 'call_ln329' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 51 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN3, i16 %h_slice, i16 %BN2_var2, i16 %BN2_gamma2"   --->   Operation 51 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 52 [2/2] (0.00ns)   --->   "%call_ln340 = call void @conv_bn_act_pool.3, i16 %X_slice42, i16 %ConvW3, i16 %U_slice" [../main_5_slices.cpp:340]   --->   Operation 52 'call' 'call_ln340' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 1.62>
+ST_16 : Operation 53 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN3, i16 %h_slice, i16 %BN2_var2, i16 %BN2_gamma2"   --->   Operation 53 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 54 [1/2] (1.62ns)   --->   "%call_ln340 = call void @conv_bn_act_pool.3, i16 %X_slice42, i16 %ConvW3, i16 %U_slice" [../main_5_slices.cpp:340]   --->   Operation 54 'call' 'call_ln340' <Predicate = true> <Delay = 1.62> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 55 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop2, i16 %merged, i16 %h_slice"   --->   Operation 55 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop2, i16 %merged, i16 %h_slice"   --->   Operation 56 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 0.00>
+ST_19 : Operation 57 [2/2] (0.00ns)   --->   "%call_ln343 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog3, i16 %LSTM_R_ifog3, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:343]   --->   Operation 57 'call' 'call_ln343' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 1.40>
+ST_20 : Operation 58 [1/2] (1.40ns)   --->   "%call_ln343 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog3, i16 %LSTM_R_ifog3, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:343]   --->   Operation 58 'call' 'call_ln343' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 0.00>
+ST_21 : Operation 59 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN4, i16 %h_slice, i16 %BN2_var3, i16 %BN2_gamma3"   --->   Operation 59 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_21 : Operation 60 [2/2] (0.00ns)   --->   "%call_ln354 = call void @conv_bn_act_pool.4, i16 %X_slice57, i16 %ConvW4, i16 %U_slice" [../main_5_slices.cpp:354]   --->   Operation 60 'call' 'call_ln354' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 1.62>
+ST_22 : Operation 61 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN4, i16 %h_slice, i16 %BN2_var3, i16 %BN2_gamma3"   --->   Operation 61 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 62 [1/2] (1.62ns)   --->   "%call_ln354 = call void @conv_bn_act_pool.4, i16 %X_slice57, i16 %ConvW4, i16 %U_slice" [../main_5_slices.cpp:354]   --->   Operation 62 'call' 'call_ln354' <Predicate = true> <Delay = 1.62> <CoreType = "Generic">   --->   Generic Core
+
+State 23 <SV = 22> <Delay = 0.00>
+ST_23 : Operation 63 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop3, i16 %merged, i16 %h_slice"   --->   Operation 63 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 24 <SV = 23> <Delay = 0.00>
+ST_24 : Operation 64 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop3, i16 %merged, i16 %h_slice"   --->   Operation 64 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 24> <Delay = 0.00>
+ST_25 : Operation 65 [2/2] (0.00ns)   --->   "%call_ln357 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog4, i16 %LSTM_R_ifog4, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:357]   --->   Operation 65 'call' 'call_ln357' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 26 <SV = 25> <Delay = 1.40>
+ST_26 : Operation 66 [1/2] (1.40ns)   --->   "%call_ln357 = call void @lstm_forward_unidir, i16 %LSTM_W_ifog4, i16 %LSTM_R_ifog4, i16 %h_slice, i16 %c_slice, i16 %U_slice" [../main_5_slices.cpp:357]   --->   Operation 66 'call' 'call_ln357' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 27 <SV = 26> <Delay = 0.00>
+ST_27 : Operation 67 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN5, i16 %h_slice, i16 %BN2_var4, i16 %BN2_gamma4"   --->   Operation 67 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 28 <SV = 27> <Delay = 0.00>
+ST_28 : Operation 68 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_Loop_BN5, i16 %h_slice, i16 %BN2_var4, i16 %BN2_gamma4"   --->   Operation 68 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 29 <SV = 28> <Delay = 0.00>
+ST_29 : Operation 69 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop4, i16 %merged, i16 %h_slice"   --->   Operation 69 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 30 <SV = 29> <Delay = 0.00>
+ST_30 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_all_slices_unrolled_Pipeline_MergedLoop4, i16 %merged, i16 %h_slice"   --->   Operation 70 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_30 : Operation 71 [1/1] (0.00ns)   --->   "%ret_ln363 = ret" [../main_5_slices.cpp:363]   --->   Operation 71 'ret' 'ret_ln363' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 3.808ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'run_all_slices_unrolled_Pipeline_MergedLoop' [33]  (3.808 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 1.572ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln312', ../main_5_slices.cpp:312) to 'conv_bn_act_pool' [37]  (1.572 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 1.406ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln315', ../main_5_slices.cpp:315) to 'lstm_forward_unidir' [38]  (1.406 ns)
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 1.627ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln326', ../main_5_slices.cpp:326) to 'conv_bn_act_pool.2' [41]  (1.627 ns)
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 1.406ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln329', ../main_5_slices.cpp:329) to 'lstm_forward_unidir' [42]  (1.406 ns)
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 1.628ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln340', ../main_5_slices.cpp:340) to 'conv_bn_act_pool.3' [45]  (1.628 ns)
+
+ <State 17>: 0.000ns
+The critical path consists of the following:
+
+ <State 18>: 0.000ns
+The critical path consists of the following:
+
+ <State 19>: 0.000ns
+The critical path consists of the following:
+
+ <State 20>: 1.406ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln343', ../main_5_slices.cpp:343) to 'lstm_forward_unidir' [46]  (1.406 ns)
+
+ <State 21>: 0.000ns
+The critical path consists of the following:
+
+ <State 22>: 1.629ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln354', ../main_5_slices.cpp:354) to 'conv_bn_act_pool.4' [49]  (1.629 ns)
+
+ <State 23>: 0.000ns
+The critical path consists of the following:
+
+ <State 24>: 0.000ns
+The critical path consists of the following:
+
+ <State 25>: 0.000ns
+The critical path consists of the following:
+
+ <State 26>: 1.406ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln357', ../main_5_slices.cpp:357) to 'lstm_forward_unidir' [50]  (1.406 ns)
+
+ <State 27>: 0.000ns
+The critical path consists of the following:
+
+ <State 28>: 0.000ns
+The critical path consists of the following:
+
+ <State 29>: 0.000ns
+The critical path consists of the following:
+
+ <State 30>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

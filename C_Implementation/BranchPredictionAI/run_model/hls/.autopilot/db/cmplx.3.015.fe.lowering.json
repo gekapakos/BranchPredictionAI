@@ -1,0 +1,161 @@
+{
+  "0": {
+    "basicblocks": 9,
+    "calls": "5 1 4 7",
+    "file": "main_5_slices.cpp",
+    "fileloc": 365,
+    "instructions": 83,
+    "loads": {
+      "G": 8,
+      "L": 4
+    },
+    "name": "run_model",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 4521
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 205,
+    "instructions": 24,
+    "loads": {
+      "G": 2,
+      "L": 1
+    },
+    "name": "dense_forward",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 24
+  },
+  "2": {
+    "basicblocks": 117,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 693,
+    "loads": {
+      "G": 5,
+      "L": 64
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "G": 1,
+      "L": 96
+    },
+    "total_instructions": 693
+  },
+  "3": {
+    "basicblocks": 117,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 693,
+    "loads": {
+      "G": 5,
+      "L": 64
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "G": 1,
+      "L": 96
+    },
+    "total_instructions": 693
+  },
+  "4": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 205,
+    "instructions": 24,
+    "loads": {
+      "G": 2,
+      "L": 1
+    },
+    "name": "dense_forward",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 24
+  },
+  "5": {
+    "basicblocks": 38,
+    "calls": "9 6 9 3 9 2 9 8 9",
+    "file": "main_5_slices.cpp",
+    "fileloc": 223,
+    "instructions": 227,
+    "loads": {
+      "G": 30,
+      "L": 5
+    },
+    "name": "run_all_slices_unrolled",
+    "stores": {
+      "G": 5,
+      "L": 6
+    },
+    "total_instructions": 4384
+  },
+  "6": {
+    "basicblocks": 117,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 693,
+    "loads": {
+      "G": 5,
+      "L": 64
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "G": 1,
+      "L": 96
+    },
+    "total_instructions": 693
+  },
+  "7": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 0,
+    "instructions": 6,
+    "name": "_Z9run_modelPDh_",
+    "total_instructions": 6
+  },
+  "8": {
+    "basicblocks": 117,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 74,
+    "instructions": 693,
+    "loads": {
+      "G": 5,
+      "L": 64
+    },
+    "name": "conv_bn_act_pool",
+    "stores": {
+      "G": 1,
+      "L": 96
+    },
+    "total_instructions": 693
+  },
+  "9": {
+    "basicblocks": 41,
+    "calls": "",
+    "file": "main_5_slices.cpp",
+    "fileloc": 140,
+    "instructions": 277,
+    "loads": {
+      "G": 3,
+      "L": 32
+    },
+    "name": "lstm_forward_unidir",
+    "stores": {
+      "G": 4,
+      "L": 15
+    },
+    "total_instructions": 277
+  }
+}

@@ -1,0 +1,63 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 2,947        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 2,061        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 1,771        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 1,666        | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 1,666        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 5,485        | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 4,557        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 4,557        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 4,557        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 5,316        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 4,160        | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 3,777        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 4,621        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 4,531        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 4,521        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 4,393        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++----------------------------+-----------------------+-----------------+----------------+-----------------+-----------------+-----------------+
+| Function                   | Location              | Compile/Link    | Unroll/Inline  | Array/Struct    | Performance     | HW Transforms   |
++----------------------------+-----------------------+-----------------+----------------+-----------------+-----------------+-----------------+
+| + run_model                | main_5_slices.cpp:365 | 2,947           | 1,666          | 5,316           | 4,531           | 4,393           |
+|  + run_all_slices_unrolled | main_5_slices.cpp:223 | 2,657           | 1,463          | 5,165           | 4,384           | 4,237           |
+|     embedding_forward_dyn  | main_5_slices.cpp:58  |  205 (5 calls)  |                |                 |                 |                 |
+|   + conv_bn_act_pool       | main_5_slices.cpp:74  | 1,105 (5 calls) |  580 (4 calls) | 3,668 (4 calls) | 2,772 (4 calls) | 2,496 (4 calls) |
+|      reluf                 | main_5_slices.cpp:51  |   30 (5 calls)  |                |                 |                 |                 |
+|      tanhf_fast            | main_5_slices.cpp:43  |   45 (5 calls)  |                |                 |                 |                 |
+|      sigmoidf              | main_5_slices.cpp:34  |   60 (5 calls)  |                |                 |                 |                 |
+|   + lstm_forward_unidir    | main_5_slices.cpp:140 |  940 (5 calls)  |  635 (5 calls) | 1,270 (5 calls) | 1,385 (5 calls) | 1,470 (5 calls) |
+|      tanhf_fast            | main_5_slices.cpp:43  |   90 (10 calls) |                |                 |                 |                 |
+|     bn_vector              | main_5_slices.cpp:195 |  185 (5 calls)  |                |                 |                 |                 |
+|     tanhf_fast             | main_5_slices.cpp:43  |   45 (5 calls)  |                |                 |                 |                 |
+|    dense_forward           | main_5_slices.cpp:205 |  123 (3 calls)  |  114 (3 calls) |   66 (3 calls)  |   62 (3 calls)  |   60 (2 calls)  |
+|    bn_vector               | main_5_slices.cpp:195 |   74 (2 calls)  |                |                 |                 |                 |
+|    reluf                   | main_5_slices.cpp:51  |   12 (2 calls)  |                |                 |                 |                 |
+|    sigmoidf                | main_5_slices.cpp:34  |   12            |                |                 |                 |                 |
++----------------------------+-----------------------+-----------------+----------------+-----------------+-----------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

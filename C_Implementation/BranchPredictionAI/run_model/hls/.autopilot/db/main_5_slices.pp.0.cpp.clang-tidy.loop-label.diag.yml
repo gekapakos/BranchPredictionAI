@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/.autopilot/db/main_5_slices.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_1:  '
+    FileOffset:      145
+    FilePath:        /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/main_5_slices.cpp
+    Replacements:    
+      - FilePath:        /home/gkapakos/Desktop/ECE/10th_Semester/Architecture_of_Parallel_Systems/Project/BranchPredictionAI/C_Implementation/BranchPredictionAI/run_model/hls/.autopilot/db/main_5_slices.pp.0.cpp
+        Offset:          13653693
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_1: '
+...

@@ -1,0 +1,1234 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 122, Column: 35 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'reluf(half)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 51, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 122, Column: 79 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sigmoidf(half)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 34, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 122, Column: 63 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tanhf_fast(half)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 43, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 187, Column: 22 }
+Function:        _ZL19lstm_forward_unidirPKDhiiS0_S0_S0_PDhS1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tanhf_fast(half)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 43, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'lstm_forward_unidir(half const*, int, int, half const*, half const*, half const*, half*, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 143, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 297, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'embedding_forward_dyn(unsigned short const*, int, half const*, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 60, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 298, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 301, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'lstm_forward_unidir(half const*, int, int, half const*, half const*, half const*, half*, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 302, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn_vector(half*, int, half const*, half const*, half const*, half const*, half)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 360, Column: 26 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tanhf_fast(half)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 43, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 369, Column: 5 }
+Function:        _Z9run_modelPDh
+Args:            
+  - Callee:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 375, Column: 5 }
+Function:        _Z9run_modelPDh
+Args:            
+  - Callee:          'dense_forward(half const*, int, half const*, half const*, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 207, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 376, Column: 5 }
+Function:        _Z9run_modelPDh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bn_vector(half*, int, half const*, half const*, half const*, half const*, half)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 377, Column: 49 }
+Function:        _Z9run_modelPDh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'reluf(half)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 51, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Loop4Big
+  - String:          ''' ('
+  - LoopLoc:         '../main_5_slices.cpp:115:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_bn_act_pool
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '2'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 301, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'lstm_forward_unidir(half const*, int, int, half const*, half const*, half const*, half*, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 312, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 369, Column: 5 }
+Function:        _Z9run_modelPDh
+Args:            
+  - Callee:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 375, Column: 5 }
+Function:        _Z9run_modelPDh
+Args:            
+  - Callee:          'dense_forward(half const*, int, half const*, half const*, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 207, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_run_model_ir
+Args:            
+  - Callee:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_run_model_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice4_weights.h, Line: 18349, Column: 0 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          LSTM_b_ifog4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice4_weights.h, Line: 17315, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_var4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice4_weights.h, Line: 17309, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_mean4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice4_weights.h, Line: 17303, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_beta4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice4_weights.h, Line: 17297, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_gamma4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice3_weights.h, Line: 18349, Column: 0 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          LSTM_b_ifog3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice3_weights.h, Line: 17315, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_var3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice3_weights.h, Line: 17309, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_mean3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice3_weights.h, Line: 17303, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_beta3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice3_weights.h, Line: 17297, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_gamma3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice2_weights.h, Line: 18349, Column: 0 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          LSTM_b_ifog2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice2_weights.h, Line: 17315, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_var2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice2_weights.h, Line: 17309, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_mean2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice2_weights.h, Line: 17303, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_beta2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice2_weights.h, Line: 17297, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_gamma2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice1_weights.h, Line: 18349, Column: 0 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          LSTM_b_ifog1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice1_weights.h, Line: 17315, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_var1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice1_weights.h, Line: 17309, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_mean1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice1_weights.h, Line: 17303, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_beta1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice1_weights.h, Line: 17297, Column: 0 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BN1_gamma1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../slice0_weights.h, Line: 18349, Column: 0 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          LSTM_b_ifog0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 84, Column: 10 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a_bn
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 84, Column: 19 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b_bn
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 98, Column: 10 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pool_acc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 84, Column: 10 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a_bn
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 84, Column: 19 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b_bn
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 98, Column: 10 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pool_acc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 84, Column: 10 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a_bn
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 84, Column: 19 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b_bn
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 98, Column: 10 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pool_acc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 84, Column: 10 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a_bn
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 84, Column: 19 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b_bn
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 98, Column: 10 }
+Function:        _ZL16conv_bn_act_poolPKDhiS0_iS0_iS0_S0_S0_S0_Dh5act_tiPDh.clone.clone.clone
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pool_acc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        InnerLoopDense
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:212:25'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        InnerLoopDense
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:212:25'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        InnerLoopDense
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:212:25'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Loop4Big
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:115:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Loop4Big
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:115:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Loop4Big
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:115:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Loop4Big
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:115:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MergedLoop
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:290:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MergedLoop0
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:303:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MergedLoop1
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:317:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MergedLoop2
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:331:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MergedLoop3
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:345:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MergedLoop4
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:359:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        ReLULoop1
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:377:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        ReLULoop2
+  - String:          '> at '
+  - LoopLoc:         '../main_5_slices.cpp:382:16'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 384, Column: 10 }
+Function:        _Z9run_modelPDh
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           y_lin
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 150, Column: 10 }
+Function:        _ZL19lstm_forward_unidirPKDhiiS0_S0_S0_PDhS1_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=5 variable=z'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  lstm_forward_unidir
+  - String:          ' '
+  - varLoc:          '../main_5_slices.cpp:150:10'
+  - String:          ' '
+  - PragmaSrcLoc:    '../main_5_slices.cpp:183:9'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 183, Column: 9 }
+  - VarName:         z
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 183, Column: 9 }
+Function:        _ZL19lstm_forward_unidirPKDhiiS0_S0_S0_PDhS1_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '5'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            z
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 384, Column: 10 }
+Function:        _Z9run_modelPDh
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=y_lin'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  run_model
+  - String:          ' '
+  - varLoc:          '../main_5_slices.cpp:384:10'
+  - String:          ' '
+  - VarName:         y_lin
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 384, Column: 10 }
+Function:        _Z9run_modelPDh
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            y_lin
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 150, Column: 10 }
+Function:        _ZL19lstm_forward_unidirPKDhiiS0_S0_S0_PDhS1_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          z
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '5'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 384, Column: 10 }
+Function:        _Z9run_modelPDh
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          y_lin
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 301, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'lstm_forward_unidir(half const*, int, int, half const*, half const*, half const*, half*, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 312, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 326, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*) (.clone)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 340, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*) (.clone.clone)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 354, Column: 9 }
+Function:        _ZL23run_all_slices_unrolledPDh
+Args:            
+  - Callee:          'conv_bn_act_pool(half const*, int, half const*, int, half const*, int, half const*, half const*, half const*, half const*, half, act_t, int, half*) (.clone.clone.clone)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 79, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 369, Column: 5 }
+Function:        _Z9run_modelPDh
+Args:            
+  - Callee:          'run_all_slices_unrolled(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 223, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 375, Column: 5 }
+Function:        _Z9run_modelPDh
+Args:            
+  - Callee:          'dense_forward(half const*, int, half const*, half const*, int, half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 207, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../main_5_slices.cpp, Line: 380, Column: 5 }
+Function:        _Z9run_modelPDh
+Args:            
+  - Callee:          'dense_forward(half const*, int, half const*, half const*, int, half*) (.clone)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 207, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'run_model(half*)'
+    DebugLoc:        { File: ../main_5_slices.cpp, Line: 365, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
